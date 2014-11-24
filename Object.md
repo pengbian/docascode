@@ -1,6 +1,7 @@
 ---
 namespace: System
 class: Object
+
 ---
 
 Supports all classes in the .NET Framework class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all classes in the .NET Framework; it is the root of the type hierarchy.
@@ -132,6 +133,8 @@ Public static (**Shared** in Visual Basic) members of this type are thread safe.
 ---
 constructor: Object()
 
+---
+
 Initializes a new instance of the Object class.
 
 This constructor is called by constructors in derived classes, but it can also be used to directly create an instance of the Object class.
@@ -141,6 +144,8 @@ method: Equals(Object obj)
 parameters:
   obj: The object to compare with the current object.
 returns: **true** if the specified object is equal to the current object; otherwise, **false**.
+
+---
 
 Determines whether the specified object is equal to the current object.
 
@@ -153,6 +158,8 @@ parameters:
   objB: The second object to compare.
 returns: **true** if the objects are considered equal; otherwise, **false**. If both *objA* and *objB* are **null**, the method returns **true**.
 
+---
+
 Determines whether the specified object instances are considered equal.
 
 The static Equals(Object, Object) method indicates whether two objects, *objA* and *objB*, are equal. It also enables you to test objects whose value is **null** for equality. It compares *objA* and *objB* for equality as follows:
@@ -164,6 +171,8 @@ The static Equals(Object, Object) method indicates whether two objects, *objA* a
 ---
 method: Finalize()
 
+---
+
 Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.
 
 The Finalize method is used to perform cleanup operations on unmanaged resources held by the current object before the object is destroyed. The method is protected and therefore is accessible only through this class or through a derived class.
@@ -172,13 +181,17 @@ The Finalize method is used to perform cleanup operations on unmanaged resources
 method: GetHashCode()
 returns: A hash code for the current object.
 
+---
+
 Serves as the default hash function.
 
 A hash code is a numeric value that is used to insert and identify an object in a hash-based collection such as the @Dictionary<,> class, the @Hashtable class, or a type derived from the @DictionaryBase class. The GetHashCode method provides this hash code for algorithms that need quick checks of object equality.
 
 ---
-method: GetMethod()
+method: GetType()
 returns: The exact runtime type of the current instance.
+
+---
 
 Gets the @Type of the current instance.
 
@@ -187,6 +200,8 @@ For two objects *x* and *y* that have identical runtime types, `Object.Reference
 ---
 method: MemberwiseClone()
 returns: A shallow copy of the current @Object.
+
+---
 
 Creates a shallow copy of the current Object.
 
@@ -208,6 +223,8 @@ parameters:
   objB: The second object to compare.
 returns: **true** if *objA* is the same instance as *objB* or if both are **null**; otherwise, **false**.
 
+---
+
 Determines whether the specified @Object instances are the same instance.
 
 Unlike the @Equals method and the equality operator, the ReferenceEquals method cannot be overridden. Because of this, if you want to test two object references for equality and you are unsure about the implementation of the **Equals** method, you can call the ReferenceEquals method.
@@ -215,6 +232,8 @@ Unlike the @Equals method and the equality operator, the ReferenceEquals method 
 ---
 method: ToString()
 returns: A string that represents the current object.
+
+---
 
 Returns a string that represents the current object.
 
