@@ -1,27 +1,26 @@
-apiName: System.Object
-
-Object Class
-============
+---
+namespace: System
+class: Object
 
 Supports all classes in the .NET Framework class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all classes in the .NET Framework; it is the root of the type hierarchy.
 
-[!INCLUDE [TypeInfo](Object.TypeInfo.md)]
-
-[!INCLUDE [Syntax](Object.Syntax.md)]
-
-[!INCLUDE [Members](Object.Members.md)]
+To browse the .NET Framework source code for this type, see the [Reference Source][1].
 
 Remarks
 -------
+> **Note**
+>
+> To view the .NET Framework source code for this type, see the [Reference Source][1]. You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions][2].
+
 Languages typically do not require a class to declare inheritance from Object because the inheritance is implicit.
 
 Because all classes in the .NET Framework are derived from Object, every method defined in the Object class is available in all objects in the system.
 Derived classes can and do override some of these methods, including:
 
-* Equals - Supports comparisons between objects.
-* Finalize - Performs cleanup operations before an object is automatically reclaimed.
-* GetHashCode - Generates a number corresponding to the value of the object to support the use of a hash table.
-* ToString - Manufactures a human-readable text string that describes an instance of the class.
+* @Equals - Supports comparisons between objects.
+* @Finalize - Performs cleanup operations before an object is automatically reclaimed.
+* @GetHashCode - Generates a number corresponding to the value of the object to support the use of a hash table.
+* @ToString - Manufactures a human-readable text string that describes an instance of the class.
 
 ##### Performance Considerations
 If you are designing a class, such as a collection, that must handle any type of object, you can create class members that accept instances of the Object class.
@@ -121,3 +120,101 @@ public sealed class App {
 // p1's value is: (1, 2) 
 //
 ```
+
+Thread Safety
+-------------
+Public static (**Shared** in Visual Basic) members of this type are thread safe. Instance members are not guaranteed to be thread-safe.
+
+[1]: http://referencesource.microsoft.com/#mscorlib/system/object.cs#d9262ceecc1719ab
+[2]: http://referencesource.microsoft.com/
+
+---
+constructor: Object()
+
+Initializes a new instance of the Object class.
+
+This constructor is called by constructors in derived classes, but it can also be used to directly create an instance of the Object class.
+
+---
+method: Equals(Object obj)
+parameters:
+  obj: The object to compare with the current object.
+returns: **true** if the specified object is equal to the current object; otherwise, **false**.
+
+Determines whether the specified object is equal to the current object.
+
+The type of comparison between the current instance and the *obj* parameter depends on whether the current instance is a reference type or a value type.
+
+---
+method: Equals(Object objA, Object objB)
+parameters:
+  objA: The first object to compare.
+  objB: The second object to compare.
+returns: **true** if the objects are considered equal; otherwise, **false**. If both *objA* and *objB* are **null**, the method returns **true**.
+
+Determines whether the specified object instances are considered equal.
+
+The static Equals(Object, Object) method indicates whether two objects, *objA* and *objB*, are equal. It also enables you to test objects whose value is **null** for equality. It compares *objA* and *objB* for equality as follows:
+
+* It determines whether the two objects represent the same object reference. If they do, the method returns **true**. This test is equivalent to calling the @ReferenceEquals method. In addition, if both *objA* and *objB* are **null**, the method returns **true**.
+* It determines whether either *objA* or *objB* is **null**. If so, it returns **false**.
+* If the two objects do not represent the same object reference and neither is **null**, it calls *objA*.Equals(*objB*) and returns the result. This means that if *objA* overrides the @Equals(Object) method, this override is called.
+
+---
+method: Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.
+
+The Finalize method is used to perform cleanup operations on unmanaged resources held by the current object before the object is destroyed. The method is protected and therefore is accessible only through this class or through a derived class.
+
+---
+method: GetHashCode()
+returns: A hash code for the current object.
+
+Serves as the default hash function.
+
+A hash code is a numeric value that is used to insert and identify an object in a hash-based collection such as the @Dictionary<,> class, the @Hashtable class, or a type derived from the @DictionaryBase class. The GetHashCode method provides this hash code for algorithms that need quick checks of object equality.
+
+---
+method: GetMethod()
+returns: The exact runtime type of the current instance.
+
+Gets the @Type of the current instance.
+
+For two objects *x* and *y* that have identical runtime types, `Object.ReferenceEquals(x.GetType(),y.GetType())` returns **true**. The following example uses the GetType method with the @ReferenceEquals method to determine whether one numeric value is the same type as two other numeric values.
+
+---
+method: MemberwiseClone()
+returns: A shallow copy of the current @Object.
+
+Creates a shallow copy of the current Object.
+
+The MemberwiseClone method creates a shallow copy by creating a new object, and then copying the nonstatic fields of the current object to the new object. If a field is a value type, a bit-by-bit copy of the field is performed. If a field is a reference type, the reference is copied but the referred object is not; therefore, the original object and its clone refer to the same object.
+
+For example, consider an object called X that references objects A and B. Object B, in turn, references object C. A shallow copy of X creates new object X2 that also references objects A and B. In contrast, a deep copy of X creates a new object X2 that references the new objects A2 and B2, which are copies of A and B. B2, in turn, references the new object C2, which is a copy of C. The example illustrates the difference between a shallow and a deep copy operation.
+
+There are numerous ways to implement a deep copy operation if the shallow copy operation performed by the MemberwiseClone method does not meet your needs. These include the following:
+
+* Call a class constructor of the object to be copied to create a second object with property values taken from the first object. This assumes that the values of an object are entirely defined by its class constructor.
+* Call the MemberwiseClone method to create a shallow copy of an object, and then assign new objects whose values are the same as the original object to any properties or fields whose values are reference types. The DeepCopy method in the example illustrates this approach.
+* Serialize the object to be deep copied, and then restore the serialized data to a different object variable.
+* Use reflection with recursion to perform the deep copy operation.
+
+---
+method: ReferenceEquals(Object objA, Obect objB)
+parameters:
+  objA: The first object to compare.
+  objB: The second object to compare.
+returns: **true** if *objA* is the same instance as *objB* or if both are **null**; otherwise, **false**.
+
+Determines whether the specified @Object instances are the same instance.
+
+Unlike the @Equals method and the equality operator, the ReferenceEquals method cannot be overridden. Because of this, if you want to test two object references for equality and you are unsure about the implementation of the **Equals** method, you can call the ReferenceEquals method.
+
+---
+method: ToString()
+returns: A string that represents the current object.
+
+Returns a string that represents the current object.
+
+ToString is the major formatting method in the .NET Framework. It converts an object to its string representation so that it is suitable for display. (For information about formatting support in the .NET Framework, see [Formatting Types in the .NET Framework](http://msdn.microsoft.com/en-us/library/26etazsy.aspx).)
