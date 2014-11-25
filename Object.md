@@ -1,6 +1,6 @@
 ---
-namespace: System
-class: Object
+namespace: System  
+class: Object  
 
 ---
 
@@ -131,7 +131,7 @@ Public static (**Shared** in Visual Basic) members of this type are thread safe.
 [2]: http://referencesource.microsoft.com/
 
 ---
-constructor: Object()
+constructor: Object()  
 
 ---
 
@@ -140,10 +140,10 @@ Initializes a new instance of the Object class.
 This constructor is called by constructors in derived classes, but it can also be used to directly create an instance of the Object class.
 
 ---
-method: Equals(Object obj)
-parameters:
-  obj: The object to compare with the current object.
-returns: **true** if the specified object is equal to the current object; otherwise, **false**.
+method: Equals(Object obj)  
+parameters:  
+  obj: The object to compare with the current object.  
+returns: **true** if the specified object is equal to the current object; otherwise, **false**.  
 
 ---
 
@@ -152,11 +152,11 @@ Determines whether the specified object is equal to the current object.
 The type of comparison between the current instance and the *obj* parameter depends on whether the current instance is a reference type or a value type.
 
 ---
-method: Equals(Object objA, Object objB)
-parameters:
-  objA: The first object to compare.
-  objB: The second object to compare.
-returns: **true** if the objects are considered equal; otherwise, **false**. If both *objA* and *objB* are **null**, the method returns **true**.
+method: Equals(Object objA, Object objB)  
+parameters:  
+  objA: The first object to compare.  
+  objB: The second object to compare.  
+returns: **true** if the objects are considered equal; otherwise, **false**. If both *objA* and *objB* are **null**, the method returns **true**.  
 
 ---
 
@@ -169,7 +169,7 @@ The static Equals(Object, Object) method indicates whether two objects, *objA* a
 * If the two objects do not represent the same object reference and neither is **null**, it calls *objA*.Equals(*objB*) and returns the result. This means that if *objA* overrides the @Equals(Object) method, this override is called.
 
 ---
-method: Finalize()
+method: Finalize()  
 
 ---
 
@@ -178,8 +178,8 @@ Allows an object to try to free resources and perform other cleanup operations b
 The Finalize method is used to perform cleanup operations on unmanaged resources held by the current object before the object is destroyed. The method is protected and therefore is accessible only through this class or through a derived class.
 
 ---
-method: GetHashCode()
-returns: A hash code for the current object.
+method: GetHashCode()  
+returns: A hash code for the current object.  
 
 ---
 
@@ -188,8 +188,8 @@ Serves as the default hash function.
 A hash code is a numeric value that is used to insert and identify an object in a hash-based collection such as the @Dictionary<,> class, the @Hashtable class, or a type derived from the @DictionaryBase class. The GetHashCode method provides this hash code for algorithms that need quick checks of object equality.
 
 ---
-method: GetType()
-returns: The exact runtime type of the current instance.
+method: GetType()  
+returns: The exact runtime type of the current instance.  
 
 ---
 
@@ -198,8 +198,8 @@ Gets the @Type of the current instance.
 For two objects *x* and *y* that have identical runtime types, `Object.ReferenceEquals(x.GetType(),y.GetType())` returns **true**. The following example uses the GetType method with the @ReferenceEquals method to determine whether one numeric value is the same type as two other numeric values.
 
 ---
-method: MemberwiseClone()
-returns: A shallow copy of the current @Object.
+method: MemberwiseClone()  
+returns: A shallow copy of the current @Object.  
 
 ---
 
@@ -217,11 +217,11 @@ There are numerous ways to implement a deep copy operation if the shallow copy o
 * Use reflection with recursion to perform the deep copy operation.
 
 ---
-method: ReferenceEquals(Object objA, Obect objB)
-parameters:
-  objA: The first object to compare.
-  objB: The second object to compare.
-returns: **true** if *objA* is the same instance as *objB* or if both are **null**; otherwise, **false**.
+method: ReferenceEquals(Object objA, Obect objB)  
+parameters:  
+  objA: The first object to compare.  
+  objB: The second object to compare.  
+returns: **true** if *objA* is the same instance as *objB* or if both are **null**; otherwise, **false**.  
 
 ---
 
@@ -230,8 +230,8 @@ Determines whether the specified @Object instances are the same instance.
 Unlike the @Equals method and the equality operator, the ReferenceEquals method cannot be overridden. Because of this, if you want to test two object references for equality and you are unsure about the implementation of the **Equals** method, you can call the ReferenceEquals method.
 
 ---
-method: ToString()
-returns: A string that represents the current object.
+method: ToString()  
+returns: A string that represents the current object.  
 
 ---
 
