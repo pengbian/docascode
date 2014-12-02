@@ -1,19 +1,14 @@
-﻿using Microsoft.CodeAnalysis;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace GenDocMetadata
+namespace DocAsCode.EntityModel
 {
     /// <summary>
     /// Doc metadata is per project
     /// </summary>
-    public class AssemblyDocMetadata : Metadata
+    public class AssemblyDocMetadata : DocMetadata
     {
         private ConcurrentDictionary<Identity, NamespaceDocMetadata> _namespaces = new ConcurrentDictionary<Identity, NamespaceDocMetadata>();
         public IEnumerable<NamespaceDocMetadata> Namespaces { get { return _namespaces.Values; } }
@@ -28,7 +23,7 @@ namespace GenDocMetadata
         }
     }
 
-    public class MemeberDocMetadata : Metadata
+    public class MemeberDocMetadata : DocMetadata
     {
         public Identity Namespace { get; set; }
 
@@ -40,7 +35,7 @@ namespace GenDocMetadata
         {
         }
 
-        public MemeberDocMetadata(Metadata mta) : base(mta.Id)
+        public MemeberDocMetadata(DocMetadata mta) : base(mta.Id)
         {
             this.MscorlibVersion = mta.MscorlibVersion;
             this.XmlDocumentation = mta.XmlDocumentation;
@@ -64,7 +59,7 @@ namespace GenDocMetadata
         {
         }
 
-        public NamespaceDocMetadata(Metadata mta) : base(mta)
+        public NamespaceDocMetadata(DocMetadata mta) : base(mta)
         {
         }
 
@@ -85,7 +80,7 @@ namespace GenDocMetadata
         public IReadOnlyList<ConstructorDocMetadata> Constructors { get; set; }
         public IReadOnlyList<PropertyDocMetadata> Properties { get; set; }
 
-        public ClassDocMetadata(Metadata mta) : base(mta)
+        public ClassDocMetadata(DocMetadata mta) : base(mta)
         {
         }
 
@@ -126,7 +121,7 @@ namespace GenDocMetadata
         {
         }
 
-        public MethodDocMetadata(Metadata mta) : base(mta)
+        public MethodDocMetadata(DocMetadata mta) : base(mta)
         {
         }
     }
@@ -138,14 +133,14 @@ namespace GenDocMetadata
         }
     }
 
-    public class EventDocMetadataDefinition : Metadata
+    public class EventDocMetadataDefinition : DocMetadata
     {
         public EventDocMetadataDefinition(string name) : base(name)
         {
         }
     }
 
-    public class ConstructorDocMetadata : Metadata
+    public class ConstructorDocMetadata : DocMetadata
     {
         public ConstructorDocMetadata(string name) : base(name)
         {
@@ -160,7 +155,7 @@ namespace GenDocMetadata
         }
     }
 
-    public class StructDocMetadata : Metadata
+    public class StructDocMetadata : DocMetadata
     {
 
         public StructDocMetadata(string name) : base(name)
@@ -168,7 +163,7 @@ namespace GenDocMetadata
         }
     }
 
-    public class DelegateDocMetadata : Metadata
+    public class DelegateDocMetadata : DocMetadata
     {
 
         public DelegateDocMetadata(string name) : base(name)
@@ -176,7 +171,7 @@ namespace GenDocMetadata
         }
     }
 
-    public class EnumDocMetadata : Metadata
+    public class EnumDocMetadata : DocMetadata
     {
 
         public EnumDocMetadata(string name) : base(name)
@@ -184,7 +179,7 @@ namespace GenDocMetadata
         }
     }
 
-    public class Metadata
+    public class DocMetadata
     {
         public Identity Id { get; set; }
 
@@ -194,7 +189,7 @@ namespace GenDocMetadata
 
         public Version MscorlibVersion { get; set; }
 
-        public Metadata(string name)
+        public DocMetadata(string name)
         {
             this.Id = new Identity(name);
         }
@@ -239,22 +234,6 @@ namespace GenDocMetadata
                 default:
                     return commendId.Substring(0, 1);
             }
-        }
-
-        /// <summary>
-        /// Export metadata file
-        /// </summary>
-        /// <param name="stream"></param>
-        public virtual void WriteMetadata(TextWriter writer)
-        {
-            JsonSerializerSettings settings = new JsonSerializerSettings();
-            settings.Formatting = Formatting.Indented;
-            settings.DefaultValueHandling = DefaultValueHandling.Ignore;
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
-            serializer.Formatting = Formatting.Indented;
-            serializer.Converters.Add(new IdentityJsonConverter());
-            serializer.Serialize(writer, this);
         }
     }
 
@@ -331,28 +310,5 @@ namespace GenDocMetadata
         Struct,
         Delegate,
         Enum
-    }
-
-    public class IdentityJsonConverter : JsonConverter
-    {
-        public override bool CanConvert(Type objectType)
-        {
-            if (objectType == typeof(Identity))
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-        {
-            writer.WriteValue(value.ToString());
-        }
     }
 }

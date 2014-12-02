@@ -5,14 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DocAsCode.EntityModel;
+using DocAsCode.Utility;
 
-namespace GenDocMetadata
+namespace DocAsCode.GenDocMetadata
 {
     interface IMetadataGenerator
     {
         bool CanGenerate(ISymbol symbol);
 
-        Metadata GenerateFrom(ISymbol symbol);
+        DocMetadata GenerateFrom(ISymbol symbol);
     }
 
     public class DefaultGenerator : IMetadataGenerator
@@ -32,9 +34,9 @@ namespace GenDocMetadata
             return false;
         }
 
-        public virtual Metadata GenerateFrom(ISymbol symbol)
+        public virtual DocMetadata GenerateFrom(ISymbol symbol)
         {
-            Metadata mta = new Metadata(symbol.GetDocumentationCommentId());
+            DocMetadata mta = new DocMetadata(symbol.GetDocumentationCommentId());
             mta.XmlDocumentation = symbol.GetDocumentationCommentXml();
             return mta;
         }
@@ -58,7 +60,7 @@ namespace GenDocMetadata
             return base.CanGenerate(symbol);
         }
 
-        public override Metadata GenerateFrom(ISymbol symbol)
+        public override DocMetadata GenerateFrom(ISymbol symbol)
         {
             var syntax = GetSyntaxNode(symbol) as NamespaceDeclarationSyntax;
 
@@ -92,7 +94,7 @@ namespace GenDocMetadata
             return base.CanGenerate(symbol);
         }
 
-        public override Metadata GenerateFrom(ISymbol symbol)
+        public override DocMetadata GenerateFrom(ISymbol symbol)
         {
             var syntax = GetSyntaxNode(symbol) as ClassDeclarationSyntax;
 
@@ -101,7 +103,7 @@ namespace GenDocMetadata
                 return null;
             }
 
-            Metadata mta = base.GenerateFrom(symbol);
+            DocMetadata mta = base.GenerateFrom(symbol);
             var classMta = new ClassDocMetadata(mta);
 
             classMta.Syntax = new SyntaxDocFragment
@@ -135,7 +137,7 @@ namespace GenDocMetadata
             return base.CanGenerate(symbol);
         }
 
-        public override Metadata GenerateFrom(ISymbol symbol)
+        public override DocMetadata GenerateFrom(ISymbol symbol)
         {
             // Property is AccessorDeclarationSyntax
             var syntax = GetSyntaxNode(symbol) as MethodDeclarationSyntax;
@@ -145,7 +147,7 @@ namespace GenDocMetadata
                 return null;
             }
 
-            Metadata mta = base.GenerateFrom(symbol);
+            DocMetadata mta = base.GenerateFrom(symbol);
             var methodMta = new MethodDocMetadata(mta);
 
             methodMta.Syntax = new MethodSyntax
@@ -173,7 +175,7 @@ namespace GenDocMetadata
             new DefaultGenerator()
         };
 
-        public static Metadata Convert(ISymbol symbol)
+        public static DocMetadata Convert(ISymbol symbol)
         {
             foreach(var converter in _supportedConverters)
             {

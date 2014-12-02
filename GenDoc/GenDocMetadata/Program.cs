@@ -11,8 +11,10 @@ using System.IO;
 using Microsoft.CodeAnalysis.MSBuild;
 using Newtonsoft.Json;
 using System.Collections;
+using DocAsCode.EntityModel;
+using DocAsCode.Utility;
 
-namespace GenDocMetadata
+namespace DocAsCode.GenDocMetadata
 {
     public class Program
     {
