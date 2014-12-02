@@ -65,9 +65,15 @@ namespace GenDocMetadata
 
         private static void ExportMetadataFile(AssemblyDocMetadata assemblyDocMetadata, string baseDirectory)
         {
+            if (Directory.Exists(baseDirectory))
+            {
+                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
+            }
+
+            Directory.CreateDirectory(baseDirectory);
             // For metadata file, per assembly per file
             var metadataFilePath = Path.Combine(baseDirectory, (assemblyDocMetadata.Id + ".docmta").ToValidFilePath());
-                   
+            
             Console.WriteLine("Generating metadata file {0}", metadataFilePath);
             using (StreamWriter streamWriter = new StreamWriter(metadataFilePath))
             {
@@ -88,10 +94,10 @@ namespace GenDocMetadata
         /// <param name="directory"></param>
         private static void ExportMarkdownToc(AssemblyDocMetadata assemblyDocMetadata, string baseDirectory)
         {
-            string markdownSkeletonTocDirectory = Path.Combine(baseDirectory, assemblyDocMetadata.Id);
-            if (Directory.Exists(markdownSkeletonTocDirectory))
+            baseDirectory = Path.Combine(baseDirectory, assemblyDocMetadata.Id);
+            if (Directory.Exists(baseDirectory))
             {
-                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", markdownSkeletonTocDirectory));
+                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
             }
 
             if (!assemblyDocMetadata.Namespaces.Any())
@@ -99,7 +105,7 @@ namespace GenDocMetadata
                 Console.Error.WriteLine("Warning:" + string.Format("No namespace is found inside current assembly {0}", assemblyDocMetadata.Id));
             }
 
-            Directory.CreateDirectory(markdownSkeletonTocDirectory);
+            Directory.CreateDirectory(baseDirectory);
 
             foreach (var ns in assemblyDocMetadata.Namespaces)
             {
