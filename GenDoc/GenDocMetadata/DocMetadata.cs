@@ -26,38 +26,6 @@ namespace GenDocMetadata
         {
             return _namespaces.TryAdd(mta.Id, mta);
         }
-
-        /// <summary>
-        /// |--AssemblyName
-        ///         |--NamespaceId1
-        ///                 |--NamespaceId1.md
-        ///                 |--ClassId1.md
-        ///                 |--ClassId2.md
-        ///         |--NamepsaceId2
-        ///                 |--NamespaceId2.md
-        ///                 |--ClassId3.md
-        /// </summary>
-        /// <param name="directory"></param>
-        public void ExportMarkdownSkeletonToc(string baseDirectory)
-        {
-            string markdownSkeletonTocDirectory = Path.Combine(baseDirectory, this.Id);
-            if (Directory.Exists(markdownSkeletonTocDirectory))
-            {
-                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", markdownSkeletonTocDirectory));
-            }
-
-            if (!Namespaces.Any())
-            {
-                Console.Error.WriteLine("Warning:" + string.Format("No namespace is found inside current assembly {0}", this.Id));
-            }
-
-            Directory.CreateDirectory(markdownSkeletonTocDirectory);
-
-            foreach(var @namespace in Namespaces)
-            {
-                @namespace.ExportMarkdownSkeletonToc(markdownSkeletonTocDirectory);
-            }
-        }
     }
 
     public class MemeberDocMetadata : Metadata
@@ -76,19 +44,6 @@ namespace GenDocMetadata
         {
             this.MscorlibVersion = mta.MscorlibVersion;
             this.XmlDocumentation = mta.XmlDocumentation;
-        }
-
-        public override void WriteMarkdownSkeleton(TextWriter writer)
-        {
-            base.WriteMarkdownSkeleton(writer);
-
-            if (Syntax != null)
-            {
-                // TODO: convert from Syntax.Language
-                writer.WriteLine("```csharp");
-                writer.WriteLine(Syntax.Content);
-                writer.WriteLine("```");
-            }
         }
     }
 
@@ -116,42 +71,6 @@ namespace GenDocMetadata
         public bool TryAddClass(ClassDocMetadata classMetadata)
         {
             return _classes.TryAdd(classMetadata.Id, classMetadata);
-        }
-
-        /// <summary>
-        ///         |--NamespaceId1
-        ///                 |--NamespaceId1.md
-        ///                 |--ClassId1.md
-        ///                 |--ClassId2.md
-        /// </summary>
-        /// <param name="directory"></param>
-        public void ExportMarkdownSkeletonToc(string baseDirectory)
-        {
-            string directory = Path.Combine(baseDirectory, this.Id.ToString().ToValidFilePath());
-            if (Directory.Exists(directory))
-            {
-            }
-
-            if (!Classes.Any())
-            {
-                Console.Error.WriteLine("Warning:" + string.Format("No class is found inside current assembly {0}", this.Id));
-            }
-
-            Directory.CreateDirectory(directory);
-            var namespaceFile = Path.Combine(directory, this.Id.ToString().ToValidFilePath()) + ".md";
-            using (StreamWriter writer = new StreamWriter(namespaceFile))
-            {
-                this.WriteMarkdownSkeleton(writer);
-            }
-
-            foreach (var @class in Classes)
-            {
-                var classFile = Path.Combine(directory, @class.Id.ToString().ToValidFilePath()) + ".md";
-                using (StreamWriter writer = new StreamWriter(classFile))
-                {
-                    @class.WriteMarkdownSkeleton(writer);
-                }
-            }
         }
     }
 
@@ -282,16 +201,44 @@ namespace GenDocMetadata
 
         /// <summary>
         /// Export Markdown file
-        /// ```
-        /// @M:SDSearchLib.Managers.ConsoleManager.ShowWindow(System.Boolean)
-        /// ```
+        /// ---
+        /// M:SDSearchLib.Managers.ConsoleManager.ShowWindow(System.Boolean)
+        /// ---
         /// </summary>
         /// <param name="stream"></param>
         public virtual void WriteMarkdownSkeleton(TextWriter writer)
         {
-            writer.WriteLine("```");
-            writer.WriteLine("@" + this.Id);
-            writer.WriteLine("```");
+            writer.WriteLine("---");
+            writer.WriteLine(ConvertCommentIdToYamlHeader(this.Id));
+            writer.WriteLine("---");
+        }
+
+        private string ConvertCommentIdToYamlHeader(string commendId)
+        {
+            if (string.IsNullOrEmpty(commendId))
+            {
+                throw new ArgumentNullException("commendId");
+            }
+
+            return this.GetYamlHeaderPrefix(commendId) + ": " + commendId.Substring(2);
+        }
+
+        private string GetYamlHeaderPrefix(string commendId)
+        {
+            string prefix = commendId.Substring(0, 2);
+            switch (prefix)
+            {
+                case "N:":
+                    return "namespace";
+                case "T:":
+                    return "class";
+                case "M:":
+                    return "method";
+                case "P:":
+                    return "property";
+                default:
+                    return commendId.Substring(0, 1);
+            }
         }
 
         /// <summary>

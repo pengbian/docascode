@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace GenDocMetadata
 {
-    interface IDocFeeder
+    interface IMetadataGenerator
     {
-        bool CanFeed(ISymbol symbol);
+        bool CanGenerate(ISymbol symbol);
 
-        Metadata FeedFrom(ISymbol symbol);
+        Metadata GenerateFrom(ISymbol symbol);
     }
 
-    public class DefaultFeeder : IDocFeeder
+    public class DefaultGenerator : IMetadataGenerator
     {
-        public virtual bool CanFeed(ISymbol symbol)
+        public virtual bool CanGenerate(ISymbol symbol)
         {
             if (symbol.DeclaredAccessibility.HasFlag(Accessibility.Public))
             {
@@ -32,7 +32,7 @@ namespace GenDocMetadata
             return false;
         }
 
-        public virtual Metadata FeedFrom(ISymbol symbol)
+        public virtual Metadata GenerateFrom(ISymbol symbol)
         {
             Metadata mta = new Metadata(symbol.GetDocumentationCommentId());
             mta.XmlDocumentation = symbol.GetDocumentationCommentXml();
@@ -45,9 +45,9 @@ namespace GenDocMetadata
         }
     }
 
-    public class NamespaceSymbolFeeder : DefaultFeeder
+    public class NamespaceSymbolGenerator : DefaultGenerator
     {
-        public override bool CanFeed(ISymbol symbol)
+        public override bool CanGenerate(ISymbol symbol)
         {
             var namespaceSymbol = symbol as INamespaceSymbol;
             if (namespaceSymbol == null)
@@ -55,10 +55,10 @@ namespace GenDocMetadata
                 return false;
             }
 
-            return base.CanFeed(symbol);
+            return base.CanGenerate(symbol);
         }
 
-        public override Metadata FeedFrom(ISymbol symbol)
+        public override Metadata GenerateFrom(ISymbol symbol)
         {
             var syntax = GetSyntaxNode(symbol) as NamespaceDeclarationSyntax;
 
@@ -67,15 +67,15 @@ namespace GenDocMetadata
                 return null;
             }
 
-            var mta = new NamespaceDocMetadata(base.FeedFrom(symbol));
+            var mta = new NamespaceDocMetadata(base.GenerateFrom(symbol));
 
             return mta;
         }
     }
 
-    public class NameTypeSymbolFeeder : DefaultFeeder
+    public class NameTypeSymbolGenerator : DefaultGenerator
     {
-        public override bool CanFeed(ISymbol symbol)
+        public override bool CanGenerate(ISymbol symbol)
         {
             var nameTypedSymbol = symbol as INamedTypeSymbol;
             if (nameTypedSymbol == null)
@@ -89,10 +89,10 @@ namespace GenDocMetadata
                 return false;
             }
 
-            return base.CanFeed(symbol);
+            return base.CanGenerate(symbol);
         }
 
-        public override Metadata FeedFrom(ISymbol symbol)
+        public override Metadata GenerateFrom(ISymbol symbol)
         {
             var syntax = GetSyntaxNode(symbol) as ClassDeclarationSyntax;
 
@@ -101,7 +101,7 @@ namespace GenDocMetadata
                 return null;
             }
 
-            Metadata mta = base.FeedFrom(symbol);
+            Metadata mta = base.GenerateFrom(symbol);
             var classMta = new ClassDocMetadata(mta);
 
             classMta.Syntax = new SyntaxDocFragment
@@ -122,9 +122,9 @@ namespace GenDocMetadata
         }
     }
 
-    public class MethodSymbolFeeder : DefaultFeeder
+    public class MethodSymbolGenerator : DefaultGenerator
     {
-        public override bool CanFeed(ISymbol symbol)
+        public override bool CanGenerate(ISymbol symbol)
         {
             // Currently only support Methods
             if (symbol.Kind != SymbolKind.Method)
@@ -132,10 +132,10 @@ namespace GenDocMetadata
                 return false;
             }
 
-            return base.CanFeed(symbol);
+            return base.CanGenerate(symbol);
         }
 
-        public override Metadata FeedFrom(ISymbol symbol)
+        public override Metadata GenerateFrom(ISymbol symbol)
         {
             // Property is AccessorDeclarationSyntax
             var syntax = GetSyntaxNode(symbol) as MethodDeclarationSyntax;
@@ -145,7 +145,7 @@ namespace GenDocMetadata
                 return null;
             }
 
-            Metadata mta = base.FeedFrom(symbol);
+            Metadata mta = base.GenerateFrom(symbol);
             var methodMta = new MethodDocMetadata(mta);
 
             methodMta.Syntax = new MethodSyntax
@@ -165,21 +165,21 @@ namespace GenDocMetadata
         /// <summary>
         /// Order matters
         /// </summary>
-        private static IList<IDocFeeder> _supportedConverters = new List<IDocFeeder>
+        private static IList<IMetadataGenerator> _supportedConverters = new List<IMetadataGenerator>
         {
-            new NamespaceSymbolFeeder(),
-            new NameTypeSymbolFeeder(),
-            new MethodSymbolFeeder(),
-            new DefaultFeeder()
+            new NamespaceSymbolGenerator(),
+            new NameTypeSymbolGenerator(),
+            new MethodSymbolGenerator(),
+            new DefaultGenerator()
         };
 
         public static Metadata Convert(ISymbol symbol)
         {
             foreach(var converter in _supportedConverters)
             {
-                if (converter.CanFeed(symbol))
+                if (converter.CanGenerate(symbol))
                 {
-                    return converter.FeedFrom(symbol);
+                    return converter.GenerateFrom(symbol);
                 }
             }
 
