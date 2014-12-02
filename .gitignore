@@ -8,7 +8,7 @@
 /**/csx/
 /**/obj/
 /**/node_modules/
-/GenDoc/packages/
+/**/*.sln.ide/
 ###############
 #  temp file  #
 ###############
