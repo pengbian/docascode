@@ -1,9 +1,11 @@
 var mdConvertor = require("../MdConvertor/MdConvertor");
 var fs = require("fs");
+var mdtoc_path = "./GenDocMetadata/mdtoc/GenDocMetadata";
 
-function json2html(json, mdtoc_path) {
+function json2html(json, path) {
+    mdtoc_path = path;
     var res = "";
-    //Whole Data
+    //Whole File
     res += ("<div class='title'>" + json.Id + "</div>\n");
     res += ("<div class='comment'>" + "" + "</div>\n");
     //Namespaces
@@ -36,18 +38,13 @@ function id2yaml(id) {
     return id.replace(/^N:/, "namespace: ").replace(/^T:/, "class: ").replace(/^M:/, "method: ");
 }
 function getcomment(namespaceId, fileId, targetId) {
-    var mdtoc_path = "./GenDocMetadata/mdtoc/GenDocMetadata/";
     var namespace_path = id2path(namespaceId);
     var filename = id2file(fileId);
     var tagetyaml = id2yaml(targetId);
     var reg = "---\r\n" + tagetyaml.replace(/\./g, "\\.").replace(/\(/g, "\\(").replace(/\)/g, "\\)") + "\r\n---\r\n([\\s\\S]*?)---";
     var regExp = new RegExp(reg, "m");
-    var str = fs.readFileSync(mdtoc_path + namespace_path + "/" + filename, 'utf-8') + "---";
-    //console.log(reg);
-    //console.log(str);
-    //regExp = new RegExp("a\\.b", "m");
+    var str = fs.readFileSync(mdtoc_path + "/" + namespace_path + "/" + filename, 'utf-8') + "---";
     return mdConvertor.md2html(regExp.exec(str)[1]);
 }
 
 exports.json2html = json2html;
-exports.getcomment = getcomment; 

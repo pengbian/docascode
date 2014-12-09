@@ -2,8 +2,8 @@ var mdConvertor = require("./MdConvertor/MdConvertor");
 var jsonConvertor = require("./JsonConvertor/JsonConvertor");
 var fs = require("fs");
 
-var mta_path = "./GenDocMetadata/mta/GenDocMetadata.docmta";
-var mdtoc_path = "./GenDocMetadata/mdtoc/GenDocMetadata/";
+//var mta_path = "./GenDocMetadata/mta/GenDocMetadata.docmta";
+//var mdtoc_path = "./GenDocMetadata/mdtoc/GenDocMetadata/";
 
 var htmlTemplate = '<!DOCTYPE html>\
 <html>\
@@ -22,13 +22,22 @@ var htmlTemplate = '<!DOCTYPE html>\
 </html>';
 
 function main() {
-    var json = JSON.parse(fs.readFileSync(mta_path, 'utf-8'));
-    var resultHtml;
-    resultHtml = jsonConvertor.json2html(json, mdtoc_path);
-    //resultHtml = mdConvertor.md2html(resultHtml);
-    fs.writeFileSync("./Output/resultHtml.html", htmlTemplate.replace("<!--come here-->",resultHtml) , 'utf-8');
-    //console.log(resultHtml);
-    //console.log(jsonConvertor.getcomment("N:GenDocMetadata", "T:GenDocMetadata.AssemblyDocMetadata", "M:GenDocMetadata.AssemblyDocMetadata.TryAddNamespace(GenDocMetadata.NamespaceDocMetadata)"));
+    if (process.argv[2]) {
+        var fileList = fs.readdirSync(process.argv[2] + "/mta");
+        //For every one .docmta file, build one .html file
+        fileList.forEach(function (item) {
+            var json = JSON.parse(fs.readFileSync(process.argv[2] + "/mta/" + item, 'utf-8'));
+            var resultHtml;
+            resultHtml = jsonConvertor.json2html(json, process.argv[2] + "/mdtoc/" + item.replace(".docmta", ""));
+            if (!fs.existsSync(process.argv[2] + "/OutputHtml/")) {
+                fs.mkdirSync(process.argv[2] + "/OutputHtml/", 0755);
+            }
+            fs.writeFileSync(process.argv[2] + "/OutputHtml/" + item.replace(".docmta",".html"), htmlTemplate.replace("<!--come here-->",resultHtml) , 'utf-8');
+        });
+    }
+    else {
+        console.log("You should input the metadata file path!");
+    }
 }
 
 main();
