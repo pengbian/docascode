@@ -3,9 +3,13 @@ using System.Linq;
 using System.IO;
 using Newtonsoft.Json;
 using DocAsCode.EntityModel;
+using Newtonsoft.Json.Linq;
 
 namespace DocAsCode.Utility
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class FileExtensions
     {
         private static char[] InvalidFilePathChars = Path.GetInvalidFileNameChars();
@@ -22,6 +26,11 @@ namespace DocAsCode.Utility
 
     public static class DocMetadataExtensions
     {
+        public static void WriteHtml()
+        {
+
+        }
+
         public static void WriteMetadata(this DocMetadata metadata, TextWriter writer)
         {
             JsonSerializerSettings settings = new JsonSerializerSettings();
@@ -32,6 +41,11 @@ namespace DocAsCode.Utility
             serializer.Formatting = Formatting.Indented;
             serializer.Converters.Add(new IdentityJsonConverter());
             serializer.Serialize(writer, metadata);
+        }
+
+        public static T LoadMetadata<T>(TextReader reader) where T : DocMetadata
+        {
+            return JsonConvert.DeserializeObject<T>(reader.ReadToEnd(), new IdentityJsonConverter());
         }
 
         private class IdentityJsonConverter : JsonConverter
@@ -48,7 +62,13 @@ namespace DocAsCode.Utility
 
             public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
             {
-                throw new NotImplementedException();
+
+                if (reader.TokenType != JsonToken.String)
+                {
+                    return null;
+                }
+
+                return new Identity((string)reader.Value);
             }
 
             public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)

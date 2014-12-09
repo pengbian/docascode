@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace DocAsCode.EntityModel
 {
@@ -11,7 +12,18 @@ namespace DocAsCode.EntityModel
     public class AssemblyDocMetadata : DocMetadata
     {
         private ConcurrentDictionary<Identity, NamespaceDocMetadata> _namespaces = new ConcurrentDictionary<Identity, NamespaceDocMetadata>();
-        public IEnumerable<NamespaceDocMetadata> Namespaces { get { return _namespaces.Values; } }
+        public IEnumerable<NamespaceDocMetadata> Namespaces
+        {
+            get { return _namespaces.Values; }
+            set
+            {
+                _namespaces = new ConcurrentDictionary<Identity, NamespaceDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
+        public AssemblyDocMetadata()
+        {
+        }
 
         public AssemblyDocMetadata(string name) : base(name)
         {
@@ -20,6 +32,20 @@ namespace DocAsCode.EntityModel
         public bool TryAddNamespace(NamespaceDocMetadata mta)
         {
             return _namespaces.TryAdd(mta.Id, mta);
+        }
+
+        /// <summary>
+        /// TODO: implement this to return all the supported DocMetadata
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<DocMetadata> GetChildrenDocMetadata()
+        {
+            throw new NotImplementedException();
+            foreach(var ns in Namespaces)
+            {
+                yield return ns;
+                // Namespaces' Children
+            }
         }
     }
 
@@ -31,6 +57,7 @@ namespace DocAsCode.EntityModel
 
         public SyntaxDocFragment Syntax { get; set; }
 
+        public MemeberDocMetadata() { }
         public MemeberDocMetadata(string name) : base(name)
         {
         }
@@ -49,11 +76,21 @@ namespace DocAsCode.EntityModel
     {
         private ConcurrentDictionary<Identity, ClassDocMetadata> _classes =
             new ConcurrentDictionary<Identity, ClassDocMetadata>();
-        public IEnumerable<ClassDocMetadata> Classes { get { return _classes.Values; } }
+        public IEnumerable<ClassDocMetadata> Classes
+        {
+            get { return _classes.Values; }
+            set
+            {
+                _classes = new ConcurrentDictionary<Identity, ClassDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
         public IReadOnlyList<InterfaceDocMetadata> Interfaces { get; set; }
         public IReadOnlyList<StructDocMetadata> Structs { get; set; }
         public IReadOnlyList<DelegateDocMetadata> Delegates { get; set; }
         public IReadOnlyList<EnumDocMetadata> Enums { get; set; }
+
+        public NamespaceDocMetadata() { }
 
         public NamespaceDocMetadata(string name) : base(name)
         {
@@ -73,12 +110,20 @@ namespace DocAsCode.EntityModel
     {
         private ConcurrentDictionary<Identity, MethodDocMetadata> _methods =
             new ConcurrentDictionary<Identity, MethodDocMetadata>();
-        public IEnumerable<MethodDocMetadata> Methods { get { return _methods.Values; } }
+        public IEnumerable<MethodDocMetadata> Methods
+        {
+            get { return _methods.Values; }
+            set
+            {
+                _methods = new ConcurrentDictionary<Identity, MethodDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
         public Stack<Identity> InheritanceHierarchy { get; set; }
 
         public IReadOnlyList<EventDocMetadataDefinition> Events { get; set; }
         public IReadOnlyList<ConstructorDocMetadata> Constructors { get; set; }
         public IReadOnlyList<PropertyDocMetadata> Properties { get; set; }
+        public ClassDocMetadata() { }
 
         public ClassDocMetadata(DocMetadata mta) : base(mta)
         {
@@ -117,6 +162,8 @@ namespace DocAsCode.EntityModel
 
     public class MethodDocMetadata : MemeberDocMetadata
     {
+        public MethodDocMetadata() { }
+
         public MethodDocMetadata(string name) : base(name)
         {
         }
@@ -128,6 +175,7 @@ namespace DocAsCode.EntityModel
 
     public class PropertyDocMetadata : MemeberDocMetadata
     {
+        public PropertyDocMetadata() { }
         public PropertyDocMetadata(string name) : base(name)
         {
         }
@@ -135,6 +183,7 @@ namespace DocAsCode.EntityModel
 
     public class EventDocMetadataDefinition : DocMetadata
     {
+        public EventDocMetadataDefinition() { }
         public EventDocMetadataDefinition(string name) : base(name)
         {
         }
@@ -142,6 +191,7 @@ namespace DocAsCode.EntityModel
 
     public class ConstructorDocMetadata : DocMetadata
     {
+        public ConstructorDocMetadata() { }
         public ConstructorDocMetadata(string name) : base(name)
         {
         }
@@ -150,6 +200,7 @@ namespace DocAsCode.EntityModel
     public class InterfaceDocMetadata : MemeberDocMetadata
     {
 
+        public InterfaceDocMetadata() { }
         public InterfaceDocMetadata(string name) : base(name)
         {
         }
@@ -158,6 +209,7 @@ namespace DocAsCode.EntityModel
     public class StructDocMetadata : DocMetadata
     {
 
+        public StructDocMetadata() { }
         public StructDocMetadata(string name) : base(name)
         {
         }
@@ -166,6 +218,7 @@ namespace DocAsCode.EntityModel
     public class DelegateDocMetadata : DocMetadata
     {
 
+        public DelegateDocMetadata() { }
         public DelegateDocMetadata(string name) : base(name)
         {
         }
@@ -174,6 +227,7 @@ namespace DocAsCode.EntityModel
     public class EnumDocMetadata : DocMetadata
     {
 
+        public EnumDocMetadata() { }
         public EnumDocMetadata(string name) : base(name)
         {
         }
@@ -187,12 +241,30 @@ namespace DocAsCode.EntityModel
 
         public string XmlDocumentation { get; set; }
 
+        public string MarkdownContent { get; set; }
+
         public Version MscorlibVersion { get; set; }
+        public DocMetadata()
+        {
+        }
 
         public DocMetadata(string name)
         {
             this.Id = new Identity(name);
         }
+
+        /// <summary>
+        /// TODO: use razor engine to generate html
+        /// </summary>
+        /// <param name="writer"></param>
+        /// <param name="additionalContent"></param>
+        public virtual void WriteHtml(TextWriter writer, string additionalContent)
+        {
+            writer.WriteLine(string.Format("<h>{0}</h>", Id));
+            writer.WriteLine(string.Format("<p>{0}<p>"), XmlDocumentation);
+            writer.WriteLine(string.Format("<p>{0}<p>"), additionalContent);
+        }
+
 
         /// <summary>
         /// Export Markdown file
@@ -203,9 +275,7 @@ namespace DocAsCode.EntityModel
         /// <param name="stream"></param>
         public virtual void WriteMarkdownSkeleton(TextWriter writer)
         {
-            writer.WriteLine("---");
             writer.WriteLine(ConvertCommentIdToYamlHeader(this.Id));
-            writer.WriteLine("---");
         }
 
         private string ConvertCommentIdToYamlHeader(string commendId)
@@ -215,25 +285,7 @@ namespace DocAsCode.EntityModel
                 throw new ArgumentNullException("commendId");
             }
 
-            return this.GetYamlHeaderPrefix(commendId) + ": " + commendId.Substring(2);
-        }
-
-        private string GetYamlHeaderPrefix(string commendId)
-        {
-            string prefix = commendId.Substring(0, 2);
-            switch (prefix)
-            {
-                case "N:":
-                    return "namespace";
-                case "T:":
-                    return "class";
-                case "M:":
-                    return "method";
-                case "P:":
-                    return "property";
-                default:
-                    return commendId.Substring(0, 1);
-            }
+            return (string)new CommentIdToYamlHeaderConverter().ConvertTo(commendId, typeof(string));
         }
     }
 
