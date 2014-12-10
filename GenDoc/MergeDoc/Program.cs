@@ -126,13 +126,13 @@ namespace DocAsCode.MergeDoc
             string mtaFile = @"TestData\GenDocMetadata.docmta";
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
-            string templateDirecotry = "Templates";
+            string templateDirectory = "Template";
 
             var options = new Option[]
                 {
                     new Option(null, s => mtaFile = s, helpName: "metadataFile", defaultValue: mtaFile, helpText: @"The doc metadata file, only file with .docmta is recognized"),
                     new Option("outputDirectory", s => outputDirectory = s, defaultValue: outputDirectory, helpText: "The output html files will be generated into this folder"),
-                    new Option("templateDirecotry", s => templateDirecotry = s, defaultValue: templateDirecotry, helpText: "The template folder for generated html, the folder should contain class.html and namespace.html, the former one is the html template for Class pages, and the latter one is the html template for Namespace pages"),
+                    new Option("templateDirectory", s => templateDirectory = s, defaultValue: templateDirectory, helpText: "The template folder for generated html, the folder should contain class.html and namespace.html, the former one is the html template for Class pages, and the latter one is the html template for Namespace pages"),
                     new Option("delimitedMdFiles", s => delimitedMdFiles = s, defaultValue: delimitedMdFiles, helpName: "delimitedMdFiles", helpText: "Markdown files delimited by comma, only files with .md extension will be recognized"),
                 };
 
@@ -153,8 +153,8 @@ namespace DocAsCode.MergeDoc
 
             Directory.CreateDirectory(outputDirectory);
 
-            string classTemplate = File.ReadAllText(Path.Combine(templateDirecotry, "class.html"));
-            string nsTemplate = File.ReadAllText(Path.Combine(templateDirecotry, "namespace.html"));
+            string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class.html"));
+            string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace.html"));
 
             foreach (var ns in assemblyMta.Namespaces)
             {
@@ -267,13 +267,14 @@ namespace DocAsCode.MergeDoc
             MarkdownSection lastSection = null;
             markdown = new MarkdownFile { FilePath = markdownFilePath };
 
+            MarkdownSection section;
+
             // TODO: current assumption is : match is in order, need confirmation
             foreach (Match match in matches)
             {
                 lastCommentId = (string)_converter.ConvertFrom(match.Value);
                 startIndex = match.Index + match.Length;
 
-                MarkdownSection section;
                 // If current Id is already set, ignore the duplicate one
                 if (lastSection != null && !sections.TryGetValue(lastCommentId, out section))
                 {
@@ -286,6 +287,11 @@ namespace DocAsCode.MergeDoc
                 }
 
                 lastSection = new MarkdownSection { Id = lastCommentId, ContentStartIndex = startIndex, ContentEndIndex = length }; // endIndex should be set from next match if there is next match
+            }
+
+            if (lastSection != null && !sections.TryGetValue(lastCommentId, out section))
+            {
+                sections.Add(lastCommentId, lastSection);
             }
 
             markdown.Sections = sections.Values.ToList();

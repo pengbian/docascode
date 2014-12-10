@@ -74,10 +74,10 @@
   <ItemGroup>
     <Content Include="Styles\default.css" />
     <Content Include="Styles\default.js" />
-    <None Include="Templates\class.html">
+    <None Include="Template\class.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Templates\namespace.html">
+    <None Include="Template\namespace.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

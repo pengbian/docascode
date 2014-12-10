@@ -11,7 +11,7 @@ namespace DocAsCode.Utility
 {
     public class DelimitedStringArrayConverter : TypeConverter
     {
-        private readonly char[] _delimiter = { ',', ' ' };
+        private readonly char[] _delimiter = { ',', };
 
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
         {
