@@ -23,6 +23,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <!-- TO BE REMOVED TO USE THE ONE IN REFERENCE -->
     <Content Include="DocumentProject1.docmta" />
     <Folder Include="template"/>
     <Content Include="template\class.html">
@@ -35,7 +36,12 @@
     <Exec Command="$(DocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;template&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
     <!-- <Exec Command='"$(MSBuildProjetDirectory)\exe\MergeDoc.exe "' /> -->
   </Target>
-  <Target Name ="GetFrameworkPaths">
-    
+  <Target Name ="Clean">
+    <!-- TO BE IMPLEMENTED-->
   </Target>
+  <Target Name ="ReBuild">
+    <CallTarget Targets="Clean" />
+    <CallTarget Targets="Build" />
+  </Target>
+  <Target Name ="GetFrameworkPaths" />
 </Project>

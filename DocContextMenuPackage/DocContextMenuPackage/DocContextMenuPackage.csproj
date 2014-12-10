@@ -9,12 +9,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3B3B48BC-84C8-4F2B-AEA9-DF6154E357A1}</ProjectGuid>
+    <ProjectGuid>{7A625105-CE07-4B48-9639-80F0A84ECB6D}</ProjectGuid>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MicrosoftIT.DocProject</RootNamespace>
-    <AssemblyName>DocProject</AssemblyName>
+    <RootNamespace>Company.MyPackage</RootNamespace>
+    <AssemblyName>MyPackage</AssemblyName>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -62,11 +62,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.VisualStudio.Designer.Interfaces, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="Microsoft.Build.Tasks.v4.0" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="EnvDTE">
@@ -81,6 +76,15 @@
     <COMReference Include="EnvDTE100">
       <Guid>{26AD1324-4B7C-44BC-84F8-B86AED45729F}</Guid>
       <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="EnvDTE80">
+      <Guid>{1A31287A-4D7D-413E-8E32-3B374931BD89}</Guid>
+      <VersionMajor>8</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
@@ -116,6 +120,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDocProjectOperation.cs" />
+    <Compile Include="ReferenceDocumentHeler.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -123,20 +129,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="DocProjectPackage.cs" />
+    <Compile Include="MyPackagePackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates\Projects\DocProject\DocProjectFactory.cs" />
-    <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
-    <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
-    <Content Include="Templates\Projects\DocProject\DocumentProject1.docmta">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\class1.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\namespace1.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <Compile Include="PkgCmdID.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
@@ -150,38 +145,30 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Templates\Projects\DocProject\template\class.html">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\template\namespace.html">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Templates\Projects\DocProject\DocProject.docproj">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
   </ItemGroup>
   <ItemGroup>
+    <VSCTCompile Include="MyPackage.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+      <SubType>Designer</SubType>
+    </VSCTCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Resources\Package.ico" />
-    <Content Include="Templates\Projects\DocProject\DocProject.ico">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
   </ItemGroup>
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
-  <PropertyGroup>
-    <ProjectBasePath>..\mpfproj11-16810\Dev11\Src\CSharp\</ProjectBasePath>
-    <RegisterWithCodebase>true</RegisterWithCodebase>
-  </PropertyGroup>
-  <Import Project="$(ProjectBasePath)\ProjectBase.Files" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
