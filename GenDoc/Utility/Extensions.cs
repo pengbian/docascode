@@ -4,9 +4,47 @@ using System.IO;
 using Newtonsoft.Json;
 using DocAsCode.EntityModel;
 using Newtonsoft.Json.Linq;
+using System.ComponentModel;
+using System.Globalization;
 
 namespace DocAsCode.Utility
 {
+    public class DelimitedStringArrayConverter : TypeConverter
+    {
+        private readonly char[] _delimiter = { ',', ' ' };
+
+        public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
+        {
+            if (sourceType == typeof(string))
+            {
+                return true;
+            }
+
+            return base.CanConvertFrom(context, sourceType);
+        }
+
+        public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
+        {
+            return false;
+        }
+
+        public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
+        {
+            string stringValue = value as string;
+            if (string.IsNullOrEmpty(stringValue))
+            {
+                return null;
+            }
+
+            return stringValue.Split(_delimiter, StringSplitOptions.RemoveEmptyEntries);
+        }
+
+        public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     /// <summary>
     /// 
     /// </summary>

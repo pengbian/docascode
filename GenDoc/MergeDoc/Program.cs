@@ -8,49 +8,147 @@ using DocAsCode.Utility;
 using System.IO;
 using RazorEngine;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace DocAsCode.MergeDoc
 {
-    class Program
+    class Option
+    {
+        public string Name { get; set; }
+        public string HelpName { get; set; }
+        public string DefaultValue { get; set; }
+        public Action<string> Setter { get; set; }
+        public bool Required { get; set; }
+        public string HelpText { get; set; }
+
+        public Option(string name, Action<string> setter, string helpName = null, bool required = false, string defaultValue = null, string helpText = null)
+        {
+            Name = name;
+            Setter = setter;
+            HelpName = helpName;
+            DefaultValue = defaultValue;
+            Required = required;
+            HelpText = helpText;
+        }
+    }
+
+    class ConsoleParameterParser
     {
         static string[] helpCommand = new[] { "/?", "?", "-?", "/help", "/h", "--help", "-h", "--?" };
-        static void PrintUsage()
+        public static bool ParseParameters(IEnumerable<Option> options, string[] args)
         {
-            Console.Error.WriteLine(@"Usage: 
-    MergeDoc    (<.docmta File Path>=TestData\GenDocMetadata.docmta)
-                (<MarkdownDirectory>=TestData) 
-                (<OutputDirectory>=output)
-                (<TemplateDirectory>=Templates)");
+            if (args.Length == 1 && helpCommand.Contains(args[0], StringComparer.OrdinalIgnoreCase))
+            {
+                PrintUsage(options);
+            }
+
+            // Set default value first
+            foreach (var o in options)
+            {
+                o.Setter(o.DefaultValue);
+            }
+
+            Regex paramRegex = new Regex(@"^/(\w+):(.+)$");
+            var optionDict = options.ToDictionary(o => o.Name ?? string.Empty, o => o);
+            try
+            {
+                foreach (var a in args)
+                {
+                    var match = paramRegex.Match(a);
+                    string key;
+                    string value;
+                    if (match.Success && optionDict.ContainsKey(match.Groups[1].Value))
+                    {
+                        key = match.Groups[1].Value;
+                        value = match.Groups[2].Value;
+                    }
+                    else if (optionDict.ContainsKey(string.Empty))
+                    {
+                        key = string.Empty;
+                        value = a;
+                    }
+                    else throw new ArgumentException(string.Format("Unrecognized parameter: {0}.", a));
+                    optionDict[key].Setter(value);
+                    optionDict.Remove(key);
+                }
+
+                foreach (var o in optionDict.Values)
+                {
+                    if (o.Required) throw new ArgumentException(string.Format("{0} is not specified.", o.HelpName));
+                }
+
+                return true;
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine();
+                PrintUsage(options);
+                return false;
+            }
         }
 
-        static void Main(string[] args)
+        static void PrintUsage(IEnumerable<Option> options)
         {
-            if (args.Length == 1 && helpCommand.Contains(args[0]))
+            if (options == null)
             {
-                PrintUsage();
                 return;
             }
 
+            // Write usage
+            Console.Write(Process.GetCurrentProcess().ProcessName);
+            foreach (var o in options)
+            {
+                Console.Write(" ");
+                if (!o.Required) Console.Write("[");
+                if (o.Name != null) Console.Write("/{0}:", o.Name);
+                Console.Write(o.HelpName);
+                if (!o.Required) Console.Write("]");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Available parameters:");
+            foreach (var o in options)
+            {
+                if (o.Name != null) Console.Write("/{0}:", o.Name);
+                Console.WriteLine(o.HelpName);
+                if (o.HelpText != null) Console.WriteLine("  " + o.HelpText.Replace(Environment.NewLine, Environment.NewLine + "  "));
+            }
+        }
+    }
+
+    class Program
+    {
+        private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
+        static void Main(string[] args)
+        {
             string mtaFile = @"TestData\GenDocMetadata.docmta";
-            string mdDirectory = "TestData";
+            string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
             string templateDirecotry = "Templates";
-            if (args.Length > 0)
+
+            var options = new Option[]
+                {
+                    new Option(null, s => mtaFile = s, helpName: "metadataFile", defaultValue: mtaFile, helpText: @"The doc metadata file, only file with .docmta is recognized"),
+                    new Option("outputDirectory", s => outputDirectory = s, defaultValue: outputDirectory, helpText: "The output html files will be generated into this folder"),
+                    new Option("templateDirecotry", s => templateDirecotry = s, defaultValue: templateDirecotry, helpText: "The template folder for generated html, the folder should contain class.html and namespace.html, the former one is the html template for Class pages, and the latter one is the html template for Namespace pages"),
+                    new Option("delimitedMdFiles", s => delimitedMdFiles = s, defaultValue: delimitedMdFiles, helpName: "delimitedMdFiles", helpText: "Markdown files delimited by comma, only files with .md extension will be recognized"),
+                };
+
+            if (!ConsoleParameterParser.ParseParameters(options, args))
             {
-                mtaFile = args.Length > 0 ? args[0] : mtaFile;
-                mdDirectory = args.Length > 1 ? args[1] : mdDirectory;
-                outputDirectory = args.Length > 2 ? args[2] : outputDirectory;
-                templateDirecotry = args.Length > 3 ? args[3] : templateDirecotry;
+                return;
             }
 
             // Input.1. docmta per ProjectReference
             // TODO: what if the file is extremely large?
             AssemblyDocMetadata assemblyMta = LoadAssemblyDocMetadataFromFile(mtaFile);
-            
+
             // Input.2. a set of md files user inputs
             // Scan available md files' yaml headers to get available custom markdown content
             // TODO: what if the collection is extremely large?
-            MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdDirectory);
+            string[] mdFiles = (string[])_delimitedArrayConverter.ConvertFrom(delimitedMdFiles);
+            MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdFiles);
 
             Directory.CreateDirectory(outputDirectory);
 
@@ -107,12 +205,10 @@ namespace DocAsCode.MergeDoc
         }
     }
 
-
-
     public class MarkdownCollectionCache : Dictionary<string, string>
     {
-        public MarkdownCollectionCache(string directory)
-            : base(Directory.EnumerateFiles(directory, "*.md").SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))
+        public MarkdownCollectionCache(IEnumerable<string> mdFiles)
+            : base(mdFiles.Where(s => s.EndsWith(".md", StringComparison.OrdinalIgnoreCase)).SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))
         {
         }
     }
