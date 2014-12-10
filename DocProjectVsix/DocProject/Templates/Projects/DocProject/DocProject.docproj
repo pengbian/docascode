@@ -1,0 +1,41 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <OutputType>Html</OutputType>
+    <DocToolPath Condition=" '$(DocToolPath)' == '' ">C:\Users\lianwei\Repo\docascode\GenDoc\MergeDoc\bin\Debug\MergeDoc.exe</DocToolPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentProject1.docmta">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="namespace1.md">
+    </Compile>
+    <Compile Include="class1.md">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DocumentProject1.docmta" />
+    <Folder Include="template"/>
+    <Content Include="template\class.html">
+    </Content>
+    <Content Include="template\namespace.html">
+    </Content>
+  </ItemGroup>
+  <Target Name="Build">
+    <Message Text="Executing $(DocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirecotry:&quot;template&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
+    <Exec Command="$(DocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;template&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
+    <!-- <Exec Command='"$(MSBuildProjetDirectory)\exe\MergeDoc.exe "' /> -->
+  </Target>
+  <Target Name ="GetFrameworkPaths">
+    
+  </Target>
+</Project>
