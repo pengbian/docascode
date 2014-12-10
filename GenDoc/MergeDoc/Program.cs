@@ -40,6 +40,7 @@ namespace DocAsCode.MergeDoc
             if (args.Length == 1 && helpCommand.Contains(args[0], StringComparer.OrdinalIgnoreCase))
             {
                 PrintUsage(options);
+                return false;
             }
 
             // Set default value first
