@@ -53,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Targets\Microsoft.DocProject.targets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="TestData\GenDocMetadata.docmta">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -74,10 +77,10 @@
   <ItemGroup>
     <Content Include="Styles\default.css" />
     <Content Include="Styles\default.js" />
-    <None Include="Template\class.html">
+    <None Include="Templates\class.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Template\namespace.html">
+    <None Include="Templates\namespace.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

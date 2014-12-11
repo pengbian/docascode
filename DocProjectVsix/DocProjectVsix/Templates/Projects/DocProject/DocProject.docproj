@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <OutputType>Html</OutputType>
-    <DocToolPath Condition=" '$(DocToolPath)' == '' ">C:\Users\lianwei\Repo\docascode\GenDoc\MergeDoc\bin\Debug\MergeDoc.exe</DocToolPath>
+    <DocToolExtensionsPath Condition=" '$(DocToolExtensionsPath)' == '' ">C:\Users\lianwei\Repo\docascode\GenDoc\MergeDoc\bin\Debug</DocToolExtensionsPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,25 +23,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <!-- TO BE REMOVED TO USE THE ONE IN REFERENCE -->
     <Content Include="DocumentProject1.docmta" />
-    <Folder Include="template"/>
-    <Content Include="template\class.html">
+    <Folder Include="style"/>
+    <Content Include="style\default.css">
     </Content>
-    <Content Include="template\namespace.html">
+    <Content Include="style\default.js">
     </Content>
   </ItemGroup>
-  <Target Name="Build">
-    <Message Text="Executing $(DocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirecotry:&quot;template&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
-    <Exec Command="$(DocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;template&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
-    <!-- <Exec Command='"$(MSBuildProjetDirectory)\exe\MergeDoc.exe "' /> -->
-  </Target>
-  <Target Name ="Clean">
-    <!-- TO BE IMPLEMENTED-->
-  </Target>
-  <Target Name ="ReBuild">
-    <CallTarget Targets="Clean" />
-    <CallTarget Targets="Build" />
-  </Target>
-  <Target Name ="GetFrameworkPaths" />
+  <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />
 </Project>

@@ -127,6 +127,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates\Projects\DocProject\DocProjectFactory.cs" />
     <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
+    <Content Include="Templates\Projects\DocProject\style\default.js">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Templates\Projects\DocProject\style\default.css">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
     <Content Include="Templates\Projects\DocProject\DocumentProject1.docmta">
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -150,13 +156,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Templates\Projects\DocProject\template\class.html">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Templates\Projects\DocProject\BlankDocProject.ico">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\template\namespace.html">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
