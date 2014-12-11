@@ -126,7 +126,7 @@ namespace DocAsCode.MergeDoc
             string mtaFile = @"TestData\GenDocMetadata.docmta";
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
-            string templateDirecotry = "Templates";
+            string templateDirectory = "Templates";
             string cssDirecotry = "Css";
             string scriptDirecotry = "Script";
 
@@ -167,7 +167,7 @@ namespace DocAsCode.MergeDoc
                 }
                 string assemblyFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
                 string assemblyFile = assemblyFolder + ".html";
-                string result = Razor.Parse(nsTemplate, assemblyMta);
+                string result = Razor.Parse(nsTemplate, ns);
                 File.WriteAllText(assemblyFile, result);
                 Console.Error.WriteLine("Successfully saved {0}", assemblyFile);
 

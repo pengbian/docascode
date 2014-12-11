@@ -9,11 +9,8 @@ div#document{
     width: 70%;
     height: 100%;
 }
-em.sub-title-class{
+em.title-class{
     color:#2980B9;
-}
-em.sub-title-classname{
-    ;
 }
 div.sub-title-methodbox{
     display: inline-block;
@@ -26,12 +23,43 @@ em.sub-title-method{
     color:#2980B9;
 }
 em.sub-title-methodhider{
-    color:blue;
+    color:grey;
     cursor:pointer;
+    font-size:12px;
 }
 div.class-detailbox{
     padding-left:2em;
 }
-div.method-detailbox{
+div.sub-method-detailbox{
     padding-left:2em;
+    display:none;
+}
+/*For namespace*/
+em.title-ns{
+    color:#2980B9;
+}
+div.ns-detailbox{
+    padding-left:2em;
+}
+div.ns-detailbox{
+    padding-left:2em;
+}
+div.sub-class-detailbox{
+    padding-left:2em;
+    display:none;
+}
+div.sub-title-classbox{
+    display: inline-block;
+    margin: 6px 0;
+    background: #e7f2fa;
+    border-top: solid 3px #6ab0de;
+    padding: 6px;
+}
+em.sub-title-class{
+    color:#2980B9;
+}
+em.sub-title-classhider{
+    color:grey;
+    cursor:pointer;
+    font-size:12px;
 }

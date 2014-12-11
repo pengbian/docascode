@@ -4,15 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="../script/default.js"></script>
     <title>@Model.Id.ToString()</title>
 </head>
-<body>
+<body onload="init()">
     <div id="document">
         <!--Class tile-->
         <h1>
-            <em class="sub-title-class">Class </em>
-            <em class="sub-title-classname">@Model.Id.ToString().Substring(2)</em>
+            <em class="title-class">Class </em>
+            <em class="title-classname">@Model.Id.ToString().Substring(2)</em>
         </h1>
         <hr>
         <!--Class discription-->
@@ -23,21 +24,23 @@
             <p class="detail-md">@Model.MarkdownContent</p>
         </div>
         <!--Methods-->
+        @{var i=0;}
         @foreach (var method in Model.Methods)
         {
+        i++;
         <!--method title-->
         <div class="sub-title-methodbox">
             <h3>
                 <em class="sub-title-method">Method </em>
-                <em class="sub-title-methodname">@method.Id.ToString().Substring(2) </em>
-                <em class="sub-title-methodhider">Details</em>
+                <em class="sub-title-methodname">@method.Id.ToString().Substring(2)</em>
+                <em class="sub-title-methodhider" id="hider-@i">     Details</em>
             </h3>
         </div>
-        <div class="method-detailbox">
+        <div class="sub-method-detailbox" id='detail-@i'>
             <p class="comment">//From triple slashes</p>
-            <p>@method.XmlDocumentation</p>
+            <p class="detail-xml">@method.XmlDocumentation</p>
             <p class="comment">//From customed markdown</p>
-            <p>@method.MarkdownContent</p>
+            <p class="detail-md">@method.MarkdownContent</p>
         </div>
         }
 

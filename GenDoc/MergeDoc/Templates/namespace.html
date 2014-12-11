@@ -3,12 +3,51 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="script/default.js"></script>
     <title>@Model.Id.ToString()</title>
 </head>
-<body>
-    XmlDocument to be parsed
-    <p>@Model.XmlDocumentation</p>
-    Markdown to be parsed
-    <p>@Model.MarkdownContent</p>
+<body onload="init()">
+    <div id="document">
+        <!--Namespace tile-->
+        <h1>
+            <em class="title-ns">Namespace </em>
+            <em class="title-nsname">@Model.Id.ToString().Substring(2)</em>
+        </h1>
+        <hr>
+        <!--Class discription-->
+        <div class="ns-detailbox">
+            <p class="comment">//From triple slashes</p>
+            <p class="detail-xml">@Model.XmlDocumentation</p>
+            <p class="comment">//From customed markdown</p>
+            <p class="detail-md">@Model.MarkdownContent</p>
+        </div>
+        <!--Methods-->
+        @{var i=0;}
+        @foreach (var vclass in Model.Classes)
+        {
+        i++;
+        var classPath = Model.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
+        <!--method title-->
+        <div class="sub-title-classbox">
+            <h3>
+                <em class="sub-title-class">Class </em>
+                <a href="@classPath">
+                    <em class="sub-title-classname">@vclass.Id.ToString().Substring(2)</em>
+                </a>
+                <em class="sub-title-classhider" id="hider-@i">     Details</em>
+            </h3>
+        </div>
+        <div class="divider"></div>
+        <div class="sub-class-detailbox" id='detail-@i'>
+            <p class="comment">//From triple slashes</p>
+            <p class="detail-xml">@vclass.XmlDocumentation</p>
+            <p class="comment">//From customed markdown</p>
+            <p class="detail-md">@vclass.MarkdownContent</p>
+        </div>
+        }
+
+    </div>
 </body>
 </html>
