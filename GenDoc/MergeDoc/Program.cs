@@ -37,7 +37,7 @@ namespace DocAsCode.MergeDoc
         static string[] helpCommand = new[] { "/?", "?", "-?", "/help", "/h", "--help", "-h", "--?" };
         public static bool ParseParameters(IEnumerable<Option> options, string[] args)
         {
-            if (args.Length == 1 && helpCommand.Contains(args[0], StringComparer.OrdinalIgnoreCase))
+            if (args.Length == 2 && helpCommand.Contains(args[1], StringComparer.OrdinalIgnoreCase))
             {
                 PrintUsage(options);
             }
@@ -126,6 +126,8 @@ namespace DocAsCode.MergeDoc
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
             string templateDirecotry = "Templates";
+            string cssDirecotry = "Css";
+            string scriptDirecotry = "Script";
 
             var options = new Option[]
                 {
@@ -187,6 +189,48 @@ namespace DocAsCode.MergeDoc
                     result = Razor.Parse(classTemplate, c);
                     File.WriteAllText(classPath, result);
                     Console.Error.WriteLine("Successfully saved {0}", classPath);
+                }
+            }
+
+            //Copy the css and js
+            CopyDir(cssDirecotry, outputDirectory + @"\css", true, true);
+            CopyDir(scriptDirecotry, outputDirectory + @"\script", true, true);
+        }
+
+        static string GetRealName(string id)
+        {
+            return id.Substring(id.LastIndexOf(":") + 1);
+        }
+
+        static void CopyDir(string sourceDir, string targetDir, bool overWrite, bool copySubDir)
+        {
+            Directory.CreateDirectory(targetDir);
+            //Copy files   
+            foreach (string sourceFileName in Directory.GetFiles(sourceDir))
+            {
+                string targetFileName = Path.Combine(targetDir, sourceFileName.Substring(sourceFileName.LastIndexOf("\\") + 1));
+                if (File.Exists(targetFileName))
+                {
+                    if (overWrite == true)
+                    {
+                        File.SetAttributes(targetFileName, FileAttributes.Normal);
+                        File.Copy(sourceFileName, targetFileName, overWrite);
+                    }
+                }
+                else
+                {
+                    File.Copy(sourceFileName, targetFileName, overWrite);
+                }
+            }
+            //copy sub directories
+            if (copySubDir)
+            {
+                foreach (string sourceSubDir in Directory.GetDirectories(sourceDir))
+                {
+                    string targetSubDir = Path.Combine(targetDir, sourceSubDir.Substring(sourceSubDir.LastIndexOf("\\") + 1));
+                    if (!Directory.Exists(targetSubDir))
+                        Directory.CreateDirectory(targetSubDir);
+                    CopyDir(sourceSubDir, targetSubDir, overWrite, true);
                 }
             }
         }

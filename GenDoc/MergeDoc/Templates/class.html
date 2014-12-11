@@ -3,12 +3,44 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <script type="text/javascript" src="../script/default.js"></script>
     <title>@Model.Id.ToString()</title>
 </head>
 <body>
-    XmlDocument to be parsed
-    <p>@Model.XmlDocumentation</p>
-    Markdown to be parsed
-    <p>@Model.MarkdownContent</p>
+    <div id="document">
+        <!--Class tile-->
+        <h1>
+            <em class="sub-title-class">Class </em>
+            <em class="sub-title-classname">@Model.Id.ToString().Substring(2)</em>
+        </h1>
+        <hr>
+        <!--Class discription-->
+        <div class="class-detailbox">
+            <p class="comment">//From triple slashes</p>
+            <p class="detail-xml">@Model.XmlDocumentation</p>
+            <p class="comment">//From customed markdown</p>
+            <p class="detail-md">@Model.MarkdownContent</p>
+        </div>
+        <!--Methods-->
+        @foreach (var method in Model.Methods)
+        {
+        <!--method title-->
+        <div class="sub-title-methodbox">
+            <h3>
+                <em class="sub-title-method">Method </em>
+                <em class="sub-title-methodname">@method.Id.ToString().Substring(2) </em>
+                <em class="sub-title-methodhider">Details</em>
+            </h3>
+        </div>
+        <div class="method-detailbox">
+            <p class="comment">//From triple slashes</p>
+            <p>@method.XmlDocumentation</p>
+            <p class="comment">//From customed markdown</p>
+            <p>@method.MarkdownContent</p>
+        </div>
+        }
+
+    </div>
 </body>
 </html>
