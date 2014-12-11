@@ -37,7 +37,7 @@ namespace DocAsCode.MergeDoc
         static string[] helpCommand = new[] { "/?", "?", "-?", "/help", "/h", "--help", "-h", "--?" };
         public static bool ParseParameters(IEnumerable<Option> options, string[] args)
         {
-            if (args.Length == 2 && helpCommand.Contains(args[1], StringComparer.OrdinalIgnoreCase))
+            if (args.Length == 1 && helpCommand.Contains(args[0], StringComparer.OrdinalIgnoreCase))
             {
                 PrintUsage(options);
                 return false;
