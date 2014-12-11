@@ -1,0 +1,32 @@
+﻿{
+  "Namespaces": [
+    {
+      "Classes": [
+        {
+          "Methods": [
+            {
+              "Syntax": {
+                "Content": "public void Method1()",
+                "XmlDocumentation": "<member name=\"M:DocumentProject1.Class1.Method1\">\r\n    <summary>\r\n    This is the description for Method1\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "M:DocumentProject1.Class1.Method1",
+              "XmlDocumentation": "<member name=\"M:DocumentProject1.Class1.Method1\">\r\n    <summary>\r\n    This is the description for Method1\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public class Class1",
+            "XmlDocumentation": "<member name=\"T:DocumentProject1.Class1\">\r\n    <summary>\r\n    This is the description for Class1\r\n    </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:DocumentProject1.Class1",
+          "XmlDocumentation": "<member name=\"T:DocumentProject1.Class1\">\r\n    <summary>\r\n    This is the description for Class1\r\n    </summary>\r\n</member>\r\n"
+        }
+      ],
+      "Id": "N:DocumentProject1",
+      "XmlDocumentation": ""
+    }
+  ],
+  "Id": "DocumentProject1",
+  "MscorlibVersion": {
+    "Major": 4
+  }
+}

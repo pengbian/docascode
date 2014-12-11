@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Targets\Microsoft.DocProject.targets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="TestData\GenDocMetadata.docmta">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

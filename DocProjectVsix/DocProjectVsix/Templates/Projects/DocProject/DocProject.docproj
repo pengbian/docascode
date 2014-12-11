@@ -1,0 +1,34 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <OutputType>Html</OutputType>
+    <DocToolExtensionsPath Condition=" '$(DocToolExtensionsPath)' == '' ">C:\Users\lianwei\Repo\docascode\GenDoc\MergeDoc\bin\Debug</DocToolExtensionsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentProject1.docmta">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="namespace1.md">
+    </Compile>
+    <Compile Include="class1.md">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DocumentProject1.docmta" />
+    <Folder Include="style"/>
+    <Content Include="style\default.css">
+    </Content>
+    <Content Include="style\default.js">
+    </Content>
+  </ItemGroup>
+  <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />
+</Project>
