@@ -127,8 +127,8 @@ namespace DocAsCode.MergeDoc
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
             string templateDirectory = "Templates";
-            string cssDirecotry = "Css";
-            string scriptDirecotry = "Script";
+            string cssDirecotry = "css";
+            string scriptDirecotry = "script";
 
             var options = new Option[]
                 {
@@ -194,8 +194,8 @@ namespace DocAsCode.MergeDoc
             }
 
             //Copy the css and js
-            CopyDir(cssDirecotry, outputDirectory + @"\css", true, true);
-            CopyDir(scriptDirecotry, outputDirectory + @"\script", true, true);
+            CopyDir(Path.Combine(templateDirectory,cssDirecotry), Path.Combine(outputDirectory, cssDirecotry), true, true);
+            CopyDir(Path.Combine(templateDirectory,scriptDirecotry), Path.Combine(outputDirectory, scriptDirecotry), true, true);
         }
 
         static string GetRealName(string id)
@@ -203,35 +203,35 @@ namespace DocAsCode.MergeDoc
             return id.Substring(id.LastIndexOf(":") + 1);
         }
 
-        static void CopyDir(string sourceDir, string targetDir, bool overWrite, bool copySubDir)
+        static void CopyDir(string sourceDir, string targetDir, bool overwrite, bool copySubdir)
         {
             Directory.CreateDirectory(targetDir);
             //Copy files   
             foreach (string sourceFileName in Directory.GetFiles(sourceDir))
             {
-                string targetFileName = Path.Combine(targetDir, sourceFileName.Substring(sourceFileName.LastIndexOf("\\") + 1));
+                string targetFileName = Path.Combine(targetDir, Path.GetFileName(sourceFileName));
                 if (File.Exists(targetFileName))
                 {
-                    if (overWrite == true)
+                    if (overwrite == true)
                     {
                         File.SetAttributes(targetFileName, FileAttributes.Normal);
-                        File.Copy(sourceFileName, targetFileName, overWrite);
+                        File.Copy(sourceFileName, targetFileName, overwrite);
                     }
                 }
                 else
                 {
-                    File.Copy(sourceFileName, targetFileName, overWrite);
+                    File.Copy(sourceFileName, targetFileName, overwrite);
                 }
             }
             //copy sub directories
-            if (copySubDir)
+            if (copySubdir)
             {
                 foreach (string sourceSubDir in Directory.GetDirectories(sourceDir))
                 {
                     string targetSubDir = Path.Combine(targetDir, sourceSubDir.Substring(sourceSubDir.LastIndexOf("\\") + 1));
                     if (!Directory.Exists(targetSubDir))
                         Directory.CreateDirectory(targetSubDir);
-                    CopyDir(sourceSubDir, targetSubDir, overWrite, true);
+                    CopyDir(sourceSubDir, targetSubDir, overwrite, true);
                 }
             }
         }
@@ -342,5 +342,4 @@ namespace DocAsCode.MergeDoc
             return true;
         }
     }
-
 }
