@@ -81,6 +81,9 @@
     <Content Include="Templates\script\default.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Templates\script\jquery-2.1.0.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Templates\class.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

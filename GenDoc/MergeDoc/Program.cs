@@ -214,7 +214,6 @@ namespace DocAsCode.MergeDoc
                 {
                     if (overwrite == true)
                     {
-                        File.SetAttributes(targetFileName, FileAttributes.Normal);
                         File.Copy(sourceFileName, targetFileName, overwrite);
                     }
                 }
@@ -226,12 +225,12 @@ namespace DocAsCode.MergeDoc
             //copy sub directories
             if (copySubdir)
             {
-                foreach (string sourceSubDir in Directory.GetDirectories(sourceDir))
+                foreach (string sourceSubdir in Directory.GetDirectories(sourceDir))
                 {
-                    string targetSubDir = Path.Combine(targetDir, sourceSubDir.Substring(sourceSubDir.LastIndexOf("\\") + 1));
+                    string targetSubDir = Path.Combine(targetDir, sourceSubdir.Substring(sourceSubdir.LastIndexOf("\\") + 1));
                     if (!Directory.Exists(targetSubDir))
                         Directory.CreateDirectory(targetSubDir);
-                    CopyDir(sourceSubDir, targetSubDir, overwrite, true);
+                    CopyDir(sourceSubdir, targetSubDir, overwrite, true);
                 }
             }
         }
