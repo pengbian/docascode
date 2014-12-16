@@ -11,7 +11,7 @@ namespace DocAsCode.EntityModel
         /// <summary>
         /// TODO: currently only support N|T|M|P
         /// </summary>
-        public static Regex CommentIdRegex = new Regex(@"^(?<type>N|T|M|P):(?<id>[0-9a-zA-Z\(\)\.,_<>:]+)$", RegexOptions.Compiled);
+        public static Regex CommentIdRegex = new Regex(@"^(?<type>N|T|M|P):(?<id>[0-9a-zA-Z\(\)\.\{\}`\[\],_<>:]+)$", RegexOptions.Compiled);
 
         /// <summary>
         /// Yaml style: 

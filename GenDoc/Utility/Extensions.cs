@@ -7,12 +7,24 @@ using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Globalization;
 
+/// <summary>
+/// The utility class for docascode project
+/// </summary>
 namespace DocAsCode.Utility
 {
+    /// <summary>
+    /// The converter to transform strings delimited by comma into string arrays
+    /// </summary>
     public class DelimitedStringArrayConverter : TypeConverter
     {
         private readonly char[] _delimiter = { ',', };
 
+        /// <summary>
+        /// Specifies if the current type can be converted from
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="sourceType"></param>
+        /// <returns></returns>
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
         {
             if (sourceType == typeof(string))
