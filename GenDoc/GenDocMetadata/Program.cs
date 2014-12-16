@@ -31,14 +31,14 @@ namespace DocAsCode.GenDocMetadata
         static void Main(string[] args)
         {
             string slnPath = null;
-            string outputDirectory = "output";
+            string outputDirectory = null;
             string delimitedProjectFilenames = null;
             OutputType outputType = OutputType.Both;
 
             var options = new Option[]
                 {
                     new Option(null, s => slnPath = s, helpName: "solutionPath", required: true, helpText: @"The path of the solution whose metadata is to be generated"),
-                    new Option("o", s => outputDirectory = s, defaultValue: outputDirectory, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder"),
+                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
                     new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
                     new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "Specifiy if the docmta or the markdown file will be generated, by default both the docmta and the markdown file will be generated"),
                 };
@@ -46,6 +46,12 @@ namespace DocAsCode.GenDocMetadata
             if (!ConsoleParameterParser.ParseParameters(options, args))
             {
                 return;
+            }
+
+            if (string.IsNullOrEmpty(outputDirectory))
+            {
+                // use the sln name as the default output directory
+                outputDirectory = Path.GetFileNameWithoutExtension(slnPath);
             }
 
             if (Directory.Exists(outputDirectory))
