@@ -1,14 +1,39 @@
+/*For the whole page*/
 h3{
     margin:0;
 }
 p.comment{
     color:green;
 }
-div#document{
+/*For the toc framework*/
+div#page-container{    
     margin: auto;
     width: 70%;
     height: 100%;
+    background-color:lightgrey;
 }
+div#toc{
+    width:30%;
+    height:100%;
+    overflow:hidden;
+    float:left;
+}
+div#footer{
+    clear:both;
+}
+div#document{
+    background-color:white;
+    float:right;
+    width:70%;
+}
+/*For the toc*/
+div.toc-ns-detailbox{
+    padding-left:2em;
+}
+p.toc-namespace{
+    cursor:pointer;
+}
+/*For class page*/
 em.title-class{
     color:#2980B9;
 }
@@ -34,7 +59,7 @@ div.sub-method-detailbox{
     padding-left:2em;
     display:none;
 }
-/*For namespace*/
+/*For namespace page*/
 em.title-ns{
     color:#2980B9;
 }

@@ -6,48 +6,66 @@
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <script type="text/javascript" src="script/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="script/default.js"></script>
-    <title>@Model.Id.ToString()</title>
+    <base href="@Model.baseURL">
+    <title>@Model.namespaceMta.Id.ToString()</title>
 </head>
 <body onload="init()">
-    <div id="document">
-        <!--Namespace tile-->
-        <h1>
-            <em class="title-ns">Namespace </em>
-            <em class="title-nsname">@Model.Id.ToString().Substring(2)</em>
-        </h1>
-        <hr>
-        <!--Class discription-->
-        <div class="ns-detailbox">
-            <p class="comment">//From triple slashes</p>
-            <p class="detail-xml">@Model.XmlDocumentation</p>
-            <p class="comment">//From customed markdown</p>
-            <p class="detail-md">@Model.MarkdownContent</p>
+    <div id="page-container">
+        <div id="toc">            
+            @{var i=0;}
+            @foreach (var ns in Model.assemblyMta.Namespaces)
+            {
+            i++;
+            <p class="toc-namespace" id="toc-ns-@i">@ns.Id.ToString()</p>
+            <div class="toc-ns-detailbox" id="toc-nsdetail-@i">
+                @foreach (var vclass in ns.Classes)
+                {
+                var classPath = ns.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
+                <p class="toc-class"><a href="@classPath">@vclass.Id.ToString()</a></p>
+                }
+            </div>
+            }
         </div>
-        <!--Methods-->
-        @{var i=0;}
-        @foreach (var vclass in Model.Classes)
-        {
-        i++;
-        var classPath = Model.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
-        <!--method title-->
-        <div class="sub-title-classbox">
-            <h3>
-                <em class="sub-title-class">Class </em>
-                <a href="@classPath">
-                    <em class="sub-title-classname">@vclass.Id.ToString().Substring(2)</em>
-                </a>
-                <em class="sub-title-classhider" id="hider-@i">     Details</em>
-            </h3>
+        <div id="document">
+            <!--Namespace tile-->
+            <h1>
+                <em class="title-ns">Namespace </em>
+                <em class="title-nsname">@Model.namespaceMta.Id.ToString().Substring(2)</em>
+            </h1>
+            <hr>
+            <!--Class discription-->
+            <div class="ns-detailbox">
+                <p class="comment">//From triple slashes</p>
+                <p class="detail-xml">@Raw(Model.namespaceMta.XmlDocumentation)</p>
+                <p class="comment">//From customed markdown</p>
+                <p class="detail-md">@Raw(Model.namespaceMta.MarkdownContent)</p>
+            </div>
+            <!--Methods-->
+            @{i=0;}
+            @foreach (var vclass in Model.namespaceMta.Classes)
+            {
+            i++;
+            var classPath = Model.namespaceMta.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
+            <!--method title-->
+            <div class="sub-title-classbox">
+                <h3>
+                    <em class="sub-title-class">Class </em>
+                    <a href="@classPath">
+                        <em class="sub-title-classname">@vclass.Id.ToString().Substring(2)</em>
+                    </a>
+                    <em class="sub-title-classhider" id="hider-@i">     Details</em>
+                </h3>
+            </div>
+            <div class="divider"></div>
+            <div class="sub-class-detailbox" id='detail-@i'>
+                <p class="comment">//From triple slashes</p>
+                <p class="detail-xml">@Raw(vclass.XmlDocumentation)</p>
+                <p class="comment">//From customed markdown</p>
+                <p class="detail-md">@Raw(vclass.MarkdownContent)</p>
+            </div>
+            }
         </div>
-        <div class="divider"></div>
-        <div class="sub-class-detailbox" id='detail-@i'>
-            <p class="comment">//From triple slashes</p>
-            <p class="detail-xml">@vclass.XmlDocumentation</p>
-            <p class="comment">//From customed markdown</p>
-            <p class="detail-md">@vclass.MarkdownContent</p>
-        </div>
-        }
-
+        <div id="footer"></div>
     </div>
 </body>
 </html>
