@@ -23,12 +23,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="css"/>
+    <Folder Include="script"/>
+    <Content Include="css\default.css">
+    </Content>
+    <Content Include="script\default.js">
+    </Content>
+    <Content Include="script\jquery-2.1.0.min.js">
+    </Content>
     <Content Include="DocumentProject1.docmta" />
-    <Folder Include="style"/>
-    <Content Include="style\default.css">
-    </Content>
-    <Content Include="style\default.js">
-    </Content>
   </ItemGroup>
   <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />
 </Project>

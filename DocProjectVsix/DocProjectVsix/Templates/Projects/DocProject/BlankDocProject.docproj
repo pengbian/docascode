@@ -13,10 +13,13 @@
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="style"/>
-    <Content Include="style\default.css">
+    <Folder Include="css"/>
+    <Folder Include="script"/>
+    <Content Include="css\default.css">
     </Content>
-    <Content Include="style\default.js">
+    <Content Include="script\default.js">
+    </Content>
+    <Content Include="script\jquery-2.1.0.min.js">
     </Content>
   </ItemGroup>
   <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />

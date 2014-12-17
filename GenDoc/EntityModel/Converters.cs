@@ -9,9 +9,20 @@ namespace DocAsCode.EntityModel
     public class CommentIdToYamlHeaderConverter : TypeConverter
     {
         /// <summary>
-        /// TODO: currently only support N|T|M|P
+        /// Refer to http://msdn.microsoft.com/en-us/library/fsbx0t7x.aspx
+        /// ELEMENT_TYPE_PTR is represented as a '*' following the modified type.
+        /// ELEMENT_TYPE_BYREF is represented as a '@' following the modified type.
+        /// ELEMENT_TYPE_PINNED is represented as a '^' following the modified type. The C# compiler never generates this.
+        /// ELEMENT_TYPE_CMOD_REQ is represented as a '|' and the fully qualified name of the modifier class, following the modified type.The C# compiler never generates this.
+        /// ELEMENT_TYPE_CMOD_OPT is represented as a '!' and the fully qualified name of the modifier class, following the modified type.
+        /// ELEMENT_TYPE_SZARRAY is represented as "[]" following the element type of the array.
+        /// ELEMENT_TYPE_GENERICARRAY is represented as "[?]" following the element type of the array.The C# compiler never generates this.
+        /// ELEMENT_TYPE_ARRAY is represented as [lowerbound: size, lowerbound:size] where the number of commas is the rank - 1, and the lower bounds and size of each dimension, if known, are represented in decimal. If a lower bound or size is not specified, it is simply omitted. If the lower bound and size for a particular dimension are omitted, the ':' is omitted as well.For example, a 2-dimensional array with 1 as the lower bounds and unspecified sizes is [1:,1:].
+        /// ELEMENT_TYPE_FNPTR is represented as "=FUNC:type(signature)", where type is the return type, and signature is the arguments of the method.If there are no arguments, the parentheses are omitted. The C# compiler never generates this.
+        /// For conversion operators only (op_Implicit and op_Explicit), the return value of the method is encoded as a '~' followed by the return type.
+        /// For generic types, the name of the type will be followed by a back tick and then a number that indicates the number of generic type parameters
         /// </summary>
-        public static Regex CommentIdRegex = new Regex(@"^(?<type>N|T|M|P):(?<id>[0-9a-zA-Z\(\)\._<>:]+)$", RegexOptions.Compiled);
+        public static Regex CommentIdRegex = new Regex(@"^(?<type>N|T|M|P|F|E):(?<id>((?![0-9])[\w_])+[\w\(\)\.\{\}\[\]\|\*\^~#@!`,_<>:]*)$", RegexOptions.Compiled);
 
         /// <summary>
         /// Yaml style: 
@@ -19,7 +30,7 @@ namespace DocAsCode.EntityModel
         /// Second line: start with method| namespace| class, could prefix whitespaces, and must append one *{space}* and one *:*
         /// Third line: start with ---, and could append whitespaces, must contain a *\n* EOL
         /// </summary>
-        public static Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<type>method|namespace|class|property): (?<id>\S*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
+        public static Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<type>method|namespace|class|property|field|event): (?<id>\S*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
 
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
         {
@@ -125,6 +136,10 @@ namespace DocAsCode.EntityModel
                     return "method";
                 case "P":
                     return "property";
+                //case "F":
+                //    return "field";
+                //case "E":
+                //    return "event";
                 default:
                     throw new NotSupportedException(type);
             }
@@ -142,6 +157,10 @@ namespace DocAsCode.EntityModel
                     return "M";
                 case "property":
                     return "P";
+                //case "field":
+                //    return "F";
+                //case "event":
+                //    return "E";
                 default:
                     throw new NotSupportedException(type);
             }

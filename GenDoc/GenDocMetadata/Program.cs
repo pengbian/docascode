@@ -16,21 +16,42 @@ using DocAsCode.Utility;
 
 namespace DocAsCode.GenDocMetadata
 {
+    [Flags]
+    enum OutputType
+    {
+        Metadata = 0x1,
+        Markdown = 0x2,
+        Both = 0x3,
+    }
+
     public class Program
     {
+        private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
+
         static void Main(string[] args)
         {
-            if (args.Length > 2 || args.Length < 1)
+            string slnPath = null;
+            string outputDirectory = null;
+            string delimitedProjectFilenames = null;
+            OutputType outputType = OutputType.Both;
+
+            var options = new Option[]
+                {
+                    new Option(null, s => slnPath = s, helpName: "solutionPath", required: true, helpText: @"The path of the solution whose metadata is to be generated"),
+                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
+                    new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
+                    new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "Specifiy if the docmta or the markdown file will be generated, by default both the docmta and the markdown file will be generated"),
+                };
+
+            if (!ConsoleParameterParser.ParseParameters(options, args))
             {
-                PrintUsage();
                 return;
             }
 
-            var slnPath = args[0];
-            var outputDirectory = Path.GetFileNameWithoutExtension(slnPath);
-            if (args.Length == 2)
+            if (string.IsNullOrEmpty(outputDirectory))
             {
-                outputDirectory = args[1];
+                // use the sln name as the default output directory
+                outputDirectory = Path.GetFileNameWithoutExtension(slnPath);
             }
 
             if (Directory.Exists(outputDirectory))
@@ -42,14 +63,28 @@ namespace DocAsCode.GenDocMetadata
             try
             {
                 var solution = MSBuildWorkspace.Create().OpenSolutionAsync(slnPath).Result;
-                var projectIds = solution.GetProjectDependencyGraph().GetTopologicallySortedProjects();
-                foreach (var projectId in projectIds)
+                var projects = solution.Projects;
+                string[] specifiedProjectFilenames = delimitedProjectFilenames == null ? null : (string[])_delimitedArrayConverter.ConvertFrom(delimitedProjectFilenames);
+
+                foreach (var project in projects)
                 {
-                    var project = solution.GetProject(projectId);
+                    if (specifiedProjectFilenames != null && !specifiedProjectFilenames.Contains(Path.GetFileName(project.FilePath), StringComparer.OrdinalIgnoreCase))
+                    {
+                        Console.Error.WriteLine("Project {0} is not in the specified file list, will be ignored.", project.Name);
+                        continue;
+                    }
+
                     var assemblyDocMetadata = GenerateAssemblyDocMetadata(project);
 
-                    ExportMetadataFile(assemblyDocMetadata, Path.Combine(outputDirectory, "mta"));
-                    ExportMarkdownToc(assemblyDocMetadata, Path.Combine(outputDirectory, "mdtoc"));
+                    if (outputType.HasFlag(OutputType.Metadata))
+                    {
+                        ExportMetadataFile(assemblyDocMetadata, Path.Combine(outputDirectory, "mta"));
+                    }
+
+                    if (outputType.HasFlag(OutputType.Markdown))
+                    {
+                        ExportMarkdownToc(assemblyDocMetadata, Path.Combine(outputDirectory, "mdtoc"));
+                    }
                 }
 
                 Console.WriteLine("Metadata files successfully generated under {0}", outputDirectory);
