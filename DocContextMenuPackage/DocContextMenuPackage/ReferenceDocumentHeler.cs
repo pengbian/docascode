@@ -1,5 +1,11 @@
 ﻿using EnvDTE;
+using Microsoft.VisualStudio.Project.Automation;
+using Microsoft.VisualStudio.Shell.Interop;
 using System;
+using System.IO;
+using System.Reflection;
+using System.Windows.Forms;
+using VSLangProj;
 
 namespace Company.MyPackage
 {
@@ -7,7 +13,8 @@ namespace Company.MyPackage
     {
         private Project _project;
         private Project _docProject;
-        private ProjectItem _projectDocFolder;
+        public ProjectItem _docsFolder;
+        public ProjectItem _projectDocFolder;
 
         public ReferenceDocumentHeler(Project project, Project docProject)
         {
@@ -18,37 +25,46 @@ namespace Company.MyPackage
 
         private ProjectItem getProjectDocFolder(Project project, Project docProject)
         {
-            ProjectItem docsfolder = null;
             bool flag = false;
             for (int index = 1; index <= docProject.ProjectItems.Count; index++)
             {
                 ProjectItem item = docProject.ProjectItems.Item(index);
                 if (item.Name.Equals("Docs"))
                 {
-                    docsfolder = docProject.ProjectItems.Item("Docs");
+                    _docsFolder = docProject.ProjectItems.Item("Docs");
                     flag = true;
                     break;
                 }
             }
             if (!flag)
             {
-                docsfolder = docProject.ProjectItems.AddFolder("Docs");
+                _docsFolder = docProject.ProjectItems.AddFolder("Docs");
             }
-            for (int index = 1; index <= docsfolder.ProjectItems.Count; index++)
+
+            if (!Directory.Exists(_docsFolder.Properties.Item("FullPath").Value.ToString() + _project.Name))
             {
-                ProjectItem item = docsfolder.ProjectItems.Item(index);
+                Directory.CreateDirectory(_docsFolder.Properties.Item("FullPath").Value.ToString() + _project.Name);
+            }
+
+            for (int index = 1; index <= _docsFolder.ProjectItems.Count; index++)
+            {
+                ProjectItem item = _docsFolder.ProjectItems.Item(index);
                 if (item.Name.Equals(project.Name))
                 {
-                    return docsfolder.ProjectItems.Item(index);
+                    return _docsFolder.ProjectItems.Item(index);
                 }
             }
 
-            return docsfolder.ProjectItems.AddFolder(project.Name);
+            return _docsFolder.ProjectItems.AddFolder(project.Name);
         }
 
         public void extractReference()
         {
-
+            var docProject = (Microsoft.VisualStudio.Project.ProjectNode)(_docProject.Object);
+            var containerNode = new Microsoft.VisualStudio.Project.ReferenceContainerNode(docProject);
+            var references = new OAReferences(containerNode);
+            references.AddProject(_project);
         }
+
     }
 }
