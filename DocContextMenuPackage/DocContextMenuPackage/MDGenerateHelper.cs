@@ -22,7 +22,7 @@ namespace Company.DocContextMenuPackage
             _projectDocFolder = projectDocFolder;
         }
 
-        public async void GenMarkDownFile(int timeoutInMilliseconds)
+        public async Task GenMarkDownFileAsync(int timeoutInMilliseconds)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
             string exeFilePath = typeof(DocAsCode.GenDocMetadata.Program).Assembly.Location;
@@ -61,7 +61,8 @@ namespace Company.DocContextMenuPackage
                     File.Delete(file);
                 }
 
-                for (int i = 1; i<= _projectDocFolder.ProjectItems.Count;)
+                int itemCount = _projectDocFolder.ProjectItems.Count;
+                for (int i=itemCount; i>=1; i--)
                 {
                     _projectDocFolder.ProjectItems.Item(i).Remove();
 

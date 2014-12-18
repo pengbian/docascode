@@ -93,12 +93,12 @@ namespace Company.DocContextMenuPackage
             return _docsFolder.ProjectItems.AddFolder(selectedProject.Name);
         }
 
-        public void operate()
+        public async void operate()
         {
             ReferenceDocumentHeler helper = new ReferenceDocumentHeler(_selectedProject, _docProject);
             helper.extractReference();
             MDGenerateHelper mdHelper = new MDGenerateHelper(_dte, _selectedProject, _docsFolder, _projectDocFolder);
-            mdHelper.GenMarkDownFile(100000);
+            await mdHelper.GenMarkDownFileAsync(100000);
         }
     }
 }
