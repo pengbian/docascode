@@ -1,22 +1,23 @@
 ﻿using EnvDTE;
 using EnvDTE80;
-using System;
-using System.Diagnostics;
 using System.IO;
 
-namespace Company.MyPackage
+namespace Company.DocContextMenuPackage
 {
     class AddDocProjectOperation
     {
-        private Project _selectedProject;
         private DTE _dte;
+        private Project _selectedProject;
         private Project _docProject;
+        private ProjectItem _docsFolder;
+        private ProjectItem _projectDocFolder;
 
         public AddDocProjectOperation(DTE dte, Project selectedProject)
         {
             _selectedProject = selectedProject;
             _dte = dte;
             _docProject = getDocProject();
+            _projectDocFolder = getProjectDocFolder(_selectedProject, _docProject);
         }
 
         private Project getDocProject()
@@ -57,52 +58,47 @@ namespace Company.MyPackage
             return docProject;
         }
 
-        private void GenDocMetadata(ProjectItem docsFolder, ProjectItem projectDocsFolder)
+        private ProjectItem getProjectDocFolder(Project selectedProject, Project docProject)
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.CreateNoWindow = true;
-            startInfo.UseShellExecute = false;
-            startInfo.FileName = System.IO.Directory.GetCurrentDirectory() + @"\..\..\..\..\GenDoc\GenDocMetadata\bin\Debug\GenDocMetadata.exe";
-            //startInfo.FileName = System.IO.Path.GetDirectoryName(_dte.Solution.Projects.i)
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            string docMetadataPath = System.IO.Path.GetDirectoryName(docsFolder.Properties.Item("FullPath").Value.ToString());
-            startInfo.Arguments = string.Format("\"{0}\" /o:\"{1}\" /t:\"Markdown\"", _dte.Solution.FullName, docMetadataPath);
-
-            try
+            bool flag = false;
+            for (int index = 1; index <= docProject.ProjectItems.Count; index++)
             {
-                using (System.Diagnostics.Process exeProcess = System.Diagnostics.Process.Start(startInfo))
+                ProjectItem item = docProject.ProjectItems.Item(index);
+                if (item.Name.Equals("Docs"))
                 {
-                    exeProcess.WaitForExit();
-
-                    foreach (string file in Directory.GetFiles(docMetadataPath + "\\" + _selectedProject.Name))
-                    {
-                        File.Delete(file);
-                    }
-                    for (int i = 1; i <= projectDocsFolder.ProjectItems.Count;)
-                    {
-                        projectDocsFolder.ProjectItems.Item(i).Remove();
-
-                    }
-                    foreach (string dir in Directory.GetDirectories(docMetadataPath + "\\mdtoc\\" + _selectedProject.Name))
-                    {
-                        foreach (string file in Directory.GetFiles(dir))
-                        {
-                            projectDocsFolder.ProjectItems.AddFromFile(file);
-                        }
-                    }
+                    _docsFolder = docProject.ProjectItems.Item("Docs");
+                    flag = true;
+                    break;
                 }
             }
-            catch (Exception e)
+            if (!flag)
             {
-                Console.WriteLine(e.Message);
+                _docsFolder = docProject.ProjectItems.AddFolder("Docs");
             }
+            string projectDocFolderPath = _docsFolder.Properties.Item("FullPath").Value.ToString() + selectedProject.Name;
+            if (!Directory.Exists(projectDocFolderPath))
+            {
+                Directory.CreateDirectory(projectDocFolderPath);
+            }
+
+            for (int index = 1; index <= _docsFolder.ProjectItems.Count; index++)
+            {
+                ProjectItem item = _docsFolder.ProjectItems.Item(index);
+                if (item.Name.Equals(selectedProject.Name))
+                {
+                    return _docsFolder.ProjectItems.Item(index);
+                }
+            }
+
+            return _docsFolder.ProjectItems.AddFolder(selectedProject.Name);
         }
 
         public void operate()
         {
             ReferenceDocumentHeler helper = new ReferenceDocumentHeler(_selectedProject, _docProject);
             helper.extractReference();
-            GenDocMetadata(helper._docsFolder, helper._projectDocFolder);
+            MDGenerateHelper mdHelper = new MDGenerateHelper(_dte, _selectedProject, _docsFolder, _projectDocFolder);
+            mdHelper.GenMarkDownFile(100000);
         }
     }
 }

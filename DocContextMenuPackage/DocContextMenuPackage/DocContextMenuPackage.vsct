@@ -25,7 +25,7 @@
 
   <!--The Commands section is where we the commands, menus and menu groups are defined.
       This section uses a Guid to identify the package that provides the command defined inside it. -->
-  <Commands package="guidMyPackagePkg">
+  <Commands package="guidDocContextMenuPackagePkg">
     <!-- Inside this section we have different sub-sections: one for the menus, another  
     for the menu groups, one for the buttons (the actual commands), one for the combos 
     and the last one for the bitmaps used. Each element is identified by a command id that  
@@ -40,7 +40,7 @@
          group as the part of a menu contained between two lines. The parent of a group 
          must be a menu. -->
     <Groups>
-      <Group guid="guidMyPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="guidDocContextMenuPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
       </Group>
 
@@ -58,8 +58,8 @@
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
 
-      <Button guid="guidMyPackageCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
-        <Parent guid="guidMyPackageCmdSet" id="MyMenuGroup" />
+      <Button guid="guidDocContextMenuPackageCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
+        <Parent guid="guidDocContextMenuPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Generate Doc Projects</ButtonText>
@@ -89,10 +89,10 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidMyPackagePkg" value="{5f89250c-1405-4d24-a40b-8a15404cabeb}" />
+    <GuidSymbol name="guidDocContextMenuPackagePkg" value="{5f89250c-1405-4d24-a40b-8a15404cabeb}" />
     
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidMyPackageCmdSet" value="{0be74276-7d6f-4c26-9029-402bc9b533e1}">
+    <GuidSymbol name="guidDocContextMenuPackageCmdSet" value="{0be74276-7d6f-4c26-9029-402bc9b533e1}">
 
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="cmdidMyCommand" value="0x0100" />
