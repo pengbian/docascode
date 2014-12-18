@@ -239,6 +239,10 @@
       <Project>{4a25a6d2-4ff3-46b2-8762-233db53897ef}</Project>
       <Name>GenDocMetadata</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\GenDoc\Utility\Utility.csproj">
+      <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>

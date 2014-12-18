@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.ComponentModel;
 
-namespace Utility
+namespace DocAsCode.Utility
 {
     public class ProcessDetail
     {
