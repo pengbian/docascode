@@ -58,7 +58,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-    <None Include="TestData2\DocProject.docmta" />
     <None Include="TestData\GenDocMetadata.docmta">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
