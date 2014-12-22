@@ -1,6 +1,7 @@
 ﻿using EnvDTE;
 using EnvDTE80;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Company.DocContextMenuPackage
 {
@@ -93,7 +94,7 @@ namespace Company.DocContextMenuPackage
             return _docsFolder.ProjectItems.AddFolder(selectedProject.Name);
         }
 
-        public async void operate()
+        public async Task operate()
         {
             ReferenceDocumentHeler helper = new ReferenceDocumentHeler(_selectedProject, _docProject);
             helper.extractReference();

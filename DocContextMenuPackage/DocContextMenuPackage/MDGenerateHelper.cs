@@ -24,7 +24,7 @@ namespace Company.DocContextMenuPackage
         {
             string executorPath = typeof(DocAsCode.GenDocMetadata.Program).Assembly.Location;
             string workingDirectory = Path.GetDirectoryName(executorPath);
-            string projectName = extractProjectName(_project);
+            string projectName = Path.GetFileName(_project.FullName);
             string docMetadataPath = Path.GetDirectoryName(_docsFolder.Properties.Item("FullPath").Value.ToString());
             string arguments = string.Format("\"{0}\" /o:\"{1}\" /p:\"{2}\" /t:\"Markdown\"", _dte.Solution.FullName, docMetadataPath, projectName);
 
@@ -48,11 +48,5 @@ namespace Company.DocContextMenuPackage
             }
       }
 
-       private string extractProjectName(Project project)
-       {
-           string fullName = project.FullName;
-           int index = fullName.LastIndexOf("\\");
-           return fullName.Substring(index + 1);
-       }
    }
 }
