@@ -18,13 +18,15 @@ namespace DocAsCode.MergeDoc
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
         static void Main(string[] args)
         {
-            string mtaFile = @"TestData\GenDocMetadata.docmta";
+            string mtaFile = @"TestData\DocProject.docmta";
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
             string templateDirectory = "Templates";
             string cssDirecotry = "css";
             string scriptDirecotry = "script";
+            //Create a ViewModel for Razor to render the template
             ViewModel viewModel = new ViewModel();
+            //This Dictionary stores the output file path for every namespace,class and method
             Dictionary<string, string> idPathRelativeMapping = new Dictionary<string, string>();
             MarkDownConvertor mdConvertor = new MarkDownConvertor();
             mdConvertor.init(idPathRelativeMapping);
@@ -72,7 +74,7 @@ namespace DocAsCode.MergeDoc
             Directory.CreateDirectory(outputDirectory);
             string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class.html"));
             string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace.html"));
-            //This is for @ link
+            //Add baseUrl to the template,this is for @ link
             viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
             viewModel.assemblyMta = assemblyMta;
 
@@ -86,7 +88,7 @@ namespace DocAsCode.MergeDoc
                 }
                 string assemblyFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
                 string assemblyFile = assemblyFolder + ".html";
-                //This may not be a good solution
+                //This may not be a good solution, just display the summary of triple slashes
                 ns.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"];
                 ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
                 string result;
@@ -95,7 +97,7 @@ namespace DocAsCode.MergeDoc
                 foreach(var c in ns.Classes)
                 {
                     viewModel.classMta = c;
-                    //This may not be a good solution
+                    //This may not be a good solution, just display the summary of triple slashes
                     c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
                     c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
                     if (markdownCollectionCache.TryGetValue(c.Id, out content))
@@ -105,7 +107,7 @@ namespace DocAsCode.MergeDoc
                     foreach (var m in c.Methods)
                     {
                         viewModel.methodMta = m;
-                        //This may not be a good solution
+                        //This may not be a good solution, just display the summary of triple slashes
                         m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
                         m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
                         if (markdownCollectionCache.TryGetValue(m.Id, out content))
@@ -274,7 +276,7 @@ namespace DocAsCode.MergeDoc
     }
 
     /// <summary>
-    /// Refer to <seealso cref="Exception"/> @T:System.Exception
+    /// Resolve the triple slashes
     /// </summary>
     public class TripleSlashPraser
     {
