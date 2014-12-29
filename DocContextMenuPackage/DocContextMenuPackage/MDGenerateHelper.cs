@@ -29,7 +29,9 @@ namespace Company.DocContextMenuPackage
             string arguments = string.Format("\"{0}\" /o:\"{1}\" /p:\"{2}\" /t:\"Markdown\"", _dte.Solution.FullName, docMetadataPath, projectName);
 
             await ProcessUtility.ExecuteWin32ProcessAsync(executorPath, arguments, workingDirectory, 100000);
-            foreach (string file in Directory.GetFiles(docMetadataPath + "\\" + _project.Name))
+
+            string projectDocfolderPath = Path.GetDirectoryName(_projectDocFolder.Properties.Item("FullPath").Value.ToString());
+            foreach (string file in Directory.GetFiles(projectDocfolderPath))
             {
                File.Delete(file);
             }
@@ -39,7 +41,9 @@ namespace Company.DocContextMenuPackage
             {
                _projectDocFolder.ProjectItems.Item(i).Remove();
             }
-            foreach (string dir in Directory.GetDirectories(docMetadataPath + "\\mdtoc\\" + _project.Name))
+
+            string tempMDPath = docMetadataPath + "\\mdtoc\\" + _project.Properties.Item("AssemblyName").Value.ToString();
+            foreach (string dir in Directory.GetDirectories(tempMDPath))
             {
                 foreach (string file in Directory.GetFiles(dir))
                 {
