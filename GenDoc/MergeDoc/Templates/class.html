@@ -6,44 +6,69 @@
     <link rel="stylesheet" type="text/css" href="../css/default.css">
     <script type="text/javascript" src="../script/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="../script/default.js"></script>
-    <title>@Model.Id.ToString()</title>
+    <base href="@Model.baseURL">
+    <title>@Model.classMta.Id.ToString()</title>
 </head>
 <body onload="init()">
-    <div id="document">
-        <!--Class tile-->
-        <h1>
-            <em class="title-class">Class </em>
-            <em class="title-classname">@Model.Id.ToString().Substring(2)</em>
-        </h1>
-        <hr>
-        <!--Class discription-->
-        <div class="class-detailbox">
-            <p class="comment">//From triple slashes</p>
-            <p class="detail-xml">@Model.XmlDocumentation</p>
-            <p class="comment">//From customed markdown</p>
-            <p class="detail-md">@Model.MarkdownContent</p>
+    <div id="page-container">
+        <div id="toc">
+            @{var i=0;}
+            @foreach (var ns in Model.assemblyMta.Namespaces)
+            {
+            i++;
+            <p class="toc-namespace" id="toc-ns-@i">@ns.Id.ToString().Substring(2)</p>
+            <div class="toc-ns-detailbox" id="toc-nsdetail-@i">
+                @foreach (var vclass in ns.Classes)
+                {
+                var classPath = ns.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
+                if(vclass==@Model.classMta)
+                {
+                <p class="toc-class toc-highlight"><a href="@classPath">@vclass.Id.ToString().Substring(vclass.Id.ToString().LastIndexOf(".")+1)</a></p>
+                }
+                else
+                {
+                <p class="toc-class"><a href="@classPath">@vclass.Id.ToString().Substring(vclass.Id.ToString().LastIndexOf(".")+1)</a></p>
+                }
+                }
+            </div>
+            }
         </div>
-        <!--Methods-->
-        @{var i=0;}
-        @foreach (var method in Model.Methods)
-        {
-        i++;
-        <!--method title-->
-        <div class="sub-title-methodbox">
-            <h3>
-                <em class="sub-title-method">Method </em>
-                <em class="sub-title-methodname">@method.Id.ToString().Substring(2)</em>
-                <em class="sub-title-methodhider" id="hider-@i">     Details</em>
-            </h3>
+        <div id="document">
+            <!--Class tile-->
+            <h1>
+                <em class="title-class">Class </em>
+                <em class="title-classname">@Model.classMta.Id.ToString().Substring(2)</em>
+            </h1>
+            <hr>
+            <!--Class discription-->
+            <div class="class-detailbox">
+                <p class="comment">//From triple slashes</p>
+                <p class="detail-xml">@Raw(Model.classMta.XmlDocumentation)</p>
+                <p class="comment">//From customed markdown</p>
+                <p class="detail-md">@Raw(Model.classMta.MarkdownContent)</p>
+            </div>
+            <!--Methods-->
+            @{i=0;}
+            @foreach (var method in Model.classMta.Methods)
+            {
+            i++;
+            <!--method title-->
+            <div class="sub-title-methodbox">
+                <h3>
+                    <em class="sub-title-method">Method </em>
+                    <em class="sub-title-methodname">@method.Id.ToString().Substring(2)</em>
+                    <em class="sub-title-methodhider" id="hider-@i">     Details</em>
+                </h3>
+            </div>
+            <div class="sub-method-detailbox" id='detail-@i'>
+                <p class="comment">//From triple slashes</p>
+                <p class="detail-xml">@Raw(method.XmlDocumentation)</p>
+                <p class="comment">//From customed markdown</p>
+                <p class="detail-md">@Raw(method.MarkdownContent)</p>
+            </div>
+            }
         </div>
-        <div class="sub-method-detailbox" id='detail-@i'>
-            <p class="comment">//From triple slashes</p>
-            <p class="detail-xml">@method.XmlDocumentation</p>
-            <p class="comment">//From customed markdown</p>
-            <p class="detail-md">@method.MarkdownContent</p>
-        </div>
-        }
-
+        <div id="footer"></div>
     </div>
 </body>
 </html>
