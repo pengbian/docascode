@@ -2,7 +2,7 @@
 // MUST match PkgCmdID.h
 using System;
 
-namespace Company.MyPackage
+namespace Company.DocContextMenuPackage
 {
     static class PkgCmdIDList
     {

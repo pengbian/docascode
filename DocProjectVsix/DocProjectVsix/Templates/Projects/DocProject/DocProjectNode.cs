@@ -13,7 +13,7 @@ namespace MicrosoftIT.DocProject
 
         static DocProjectNode()
         {
-            imageList = Utilities.GetImageList(typeof(DocProjectNode).Assembly.GetManifestResourceStream("MicrosoftIT.SimpleProject.Resources.SimpleProjectNode.bmp"));
+            imageList = Utilities.GetImageList(typeof(DocProjectNode).Assembly.GetManifestResourceStream("MicrosoftIT.DocProject.Resources.DocProjectNode.bmp"));
         }
 
         public DocProjectNode(DocProjectPackage package)
