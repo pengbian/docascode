@@ -39,7 +39,7 @@ namespace DocAsCode.GenDocMetadata
                 {
                     new Option(null, s => slnPath = s, helpName: "solutionPath", required: true, helpText: @"The path of the solution whose metadata is to be generated"),
                     new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
-                    new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
+                    new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specqifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
                     new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "Specifiy if the docmta or the markdown file will be generated, by default both the docmta and the markdown file will be generated"),
                 };
 
@@ -152,9 +152,9 @@ namespace DocAsCode.GenDocMetadata
                     Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", directory));
                 }
 
-                if (!ns.Classes.Any())
+                if (!ns.Members.Any())
                 {
-                    Console.Error.WriteLine("Warning:" + string.Format("No class is found inside current assembly {0}", ns.Id));
+                    Console.Error.WriteLine("Warning:" + string.Format("No member is found inside current assembly {0}", ns.Id));
                 }
 
                 Directory.CreateDirectory(directory);
@@ -164,12 +164,12 @@ namespace DocAsCode.GenDocMetadata
                     ns.WriteMarkdownSkeleton(writer);
                 }
 
-                foreach (var @class in ns.Classes)
+                foreach (var member in ns.Members)
                 {
-                    var classFile = Path.Combine(directory, @class.Id.ToString().ToValidFilePath()) + ".md";
-                    using (StreamWriter writer = new StreamWriter(classFile))
+                    var memberFile = Path.Combine(directory, member.Id.ToString().ToValidFilePath()) + ".md";
+                    using (StreamWriter writer = new StreamWriter(memberFile))
                     {
-                        @class.WriteMarkdownSkeleton(writer);
+                        member.WriteMarkdownSkeleton(writer);
                     }
                 }
             }
@@ -226,27 +226,66 @@ namespace DocAsCode.GenDocMetadata
                 // Namespace:
                 foreach (var type in types)
                 {
-                    var metadata = DocMetadataConverterFactory.Convert(type) as ClassDocMetadata;
-                    if (metadata == null)
+                    var classMetadata = DocMetadataConverterFactory.Convert(type) as ClassDocMetadata;
+                    if (classMetadata != null)
                     {
-                        continue;
+                        namespaceDocMetadata.TryAddClass(classMetadata);
+
+                        foreach (var member in type.GetMembers())
+                        {
+                            var methodMta = DocMetadataConverterFactory.Convert(member) as MethodDocMetadata;
+                            if (methodMta != null)
+                            {
+                                classMetadata.TryAddMethod(methodMta);
+                                continue;
+                            }
+
+                            var propertyMta = DocMetadataConverterFactory.Convert(member) as PropertyDocMetadata;
+                            if (propertyMta != null)
+                            {
+                                classMetadata.TryAddProperty(propertyMta);
+                                continue;
+                            }
+                            var fieldMta = DocMetadataConverterFactory.Convert(member) as FieldDocMetadata;
+                            if (fieldMta != null)
+                            {
+                                classMetadata.TryAddField(fieldMta);
+                                continue;
+                            }
+                            var eventMta = DocMetadataConverterFactory.Convert(member) as EventDocMetadataDefinition;
+                            if (eventMta != null)
+                            {
+                                classMetadata.TryAddEvent(eventMta);
+                                continue;
+                            }
+                        }
                     }
 
-                    namespaceDocMetadata.TryAddClass(metadata);
-
-                    foreach (var member in type.GetMembers())
+                    var enumMetadata = DocMetadataConverterFactory.Convert(type) as EnumDocMetadata;
+                    if (enumMetadata != null)
                     {
-                        var memberMta = DocMetadataConverterFactory.Convert(member) as MethodDocMetadata;
-                        if (memberMta == null)
-                        {
-                            continue;
-                        }
-
-                        metadata.TryAddMethod(memberMta);
+                        namespaceDocMetadata.TryAddEnum(enumMetadata);
+                        continue;
+                    }
+                    var structMetadata = DocMetadataConverterFactory.Convert(type) as StructDocMetadata;
+                    if (structMetadata != null)
+                    {
+                        namespaceDocMetadata.TryAddStruct(structMetadata);
+                        continue;
+                    }
+                    var interfaceMetadata = DocMetadataConverterFactory.Convert(type) as InterfaceDocMetadata;
+                    if (interfaceMetadata != null)
+                    {
+                        namespaceDocMetadata.TryAddInterface(interfaceMetadata);
+                        continue;
+                    }
+                    var delegateMetadata = DocMetadataConverterFactory.Convert(type) as DelegateDocMetadata;
+                    if (delegateMetadata != null)
+                    {
+                        namespaceDocMetadata.TryAddDelegate(delegateMetadata);
                     }
                 }
             }
-
             return assemblyDocMetadata;
         }
     }

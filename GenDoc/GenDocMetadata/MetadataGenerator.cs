@@ -31,7 +31,7 @@ namespace DocAsCode.GenDocMetadata
                 return true;
             }
 
-            return false;
+            return true;
         }
 
         public virtual DocMetadata GenerateFrom(ISymbol symbol)
@@ -86,7 +86,9 @@ namespace DocAsCode.GenDocMetadata
             }
 
             // Currently only support Class
-            if (nameTypedSymbol.TypeKind != TypeKind.Class)
+            if ((nameTypedSymbol.TypeKind != TypeKind.Class) && (nameTypedSymbol.TypeKind != TypeKind.Enum)
+                && (nameTypedSymbol.TypeKind != TypeKind.Interface) && (nameTypedSymbol.TypeKind != TypeKind.Struct)
+                && (nameTypedSymbol.TypeKind != TypeKind.Delegate))
             {
                 return false;
             }
@@ -96,40 +98,130 @@ namespace DocAsCode.GenDocMetadata
 
         public override DocMetadata GenerateFrom(ISymbol symbol)
         {
-            var syntax = GetSyntaxNode(symbol) as ClassDeclarationSyntax;
-
-            if (syntax == null)
+            var nameTypedSymbol = symbol as INamedTypeSymbol;
+            switch (nameTypedSymbol.TypeKind)
             {
-                return null;
+                case TypeKind.Class:
+                    {
+                        var syntax = GetSyntaxNode(symbol) as ClassDeclarationSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var classMta = new ClassDocMetadata(mta);
+
+                        classMta.Syntax = new SyntaxDocFragment
+                        {
+                            Content = syntax
+                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                            .WithBaseList(null)
+                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                            .Trim(),
+                            XmlDocumentation = classMta.XmlDocumentation,
+                        };
+                        return classMta;
+                    };
+                case TypeKind.Enum:
+                    {
+                        var syntax = GetSyntaxNode(symbol) as EnumDeclarationSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var EnumMta = new EnumDocMetadata(mta.Id);
+
+                        return EnumMta;
+                    };
+                case TypeKind.Interface:
+                    {
+                        var syntax = GetSyntaxNode(symbol) as InterfaceDeclarationSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var interfaceMta = new InterfaceDocMetadata(mta);
+
+                        interfaceMta.Syntax = new SyntaxDocFragment
+                        {
+                            Content = syntax
+                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                            .WithBaseList(null)
+                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                            .Trim(),
+                            XmlDocumentation = interfaceMta.XmlDocumentation,
+                        };
+                        return interfaceMta;
+                    };
+                case TypeKind.Struct:
+                    {
+                        var syntax = GetSyntaxNode(symbol) as StructDeclarationSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var StructMta = new StructDocMetadata(mta);
+
+                        StructMta.Syntax = new SyntaxDocFragment
+                        {
+                            Content = syntax
+                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                            .WithBaseList(null)
+                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                            .Trim(),
+                            XmlDocumentation = StructMta.XmlDocumentation,
+                        };
+                        return StructMta;
+                    };
+                case TypeKind.Delegate:
+                    {
+                        var syntax = GetSyntaxNode(symbol) as DelegateDeclarationSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var delegateMta = new DelegateDocMetadata(mta.Id);
+
+                        return delegateMta;
+                    };
+                default: return new DocMetadata();
             }
-
-            DocMetadata mta = base.GenerateFrom(symbol);
-            var classMta = new ClassDocMetadata(mta);
-
-            classMta.Syntax = new SyntaxDocFragment
-            {
-                Content = syntax
-                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                .WithBaseList(null)
-                .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                .NormalizeWhitespace()
-                .ToString()
-                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                .Trim(),
-                XmlDocumentation = classMta.XmlDocumentation,
-            };
-
-            return classMta;
         }
     }
 
-    public class MethodSymbolGenerator : DefaultGenerator
+    public class ClassSymbolGenerator : DefaultGenerator
     {
         public override bool CanGenerate(ISymbol symbol)
         {
-            // Currently only support Methods
-            if (symbol.Kind != SymbolKind.Method)
+            // Currently only support Methods, property
+            if ((symbol.Kind != SymbolKind.Method) && (symbol.Kind != SymbolKind.Property) 
+                && (symbol.Kind != SymbolKind.Field) && (symbol.Kind != SymbolKind.Event))
             {
                 return false;
             }
@@ -139,26 +231,117 @@ namespace DocAsCode.GenDocMetadata
 
         public override DocMetadata GenerateFrom(ISymbol symbol)
         {
-            // Property is AccessorDeclarationSyntax
-            var syntax = GetSyntaxNode(symbol) as MethodDeclarationSyntax;
-
-            if (syntax == null)
+            switch (symbol.Kind)
             {
-                return null;
+                case (SymbolKind.Method):
+                    {
+                        var syntax = GetSyntaxNode(symbol) as MethodDeclarationSyntax;
+
+                        if (syntax != null)
+                        {
+                            DocMetadata mta = base.GenerateFrom(symbol);
+                            var methodMta = new MethodDocMetadata(mta);
+
+                            methodMta.Syntax = new MethodSyntax
+                            {
+                                Content = syntax.WithBody(null)
+                                .NormalizeWhitespace()
+                                .ToString(),
+                                XmlDocumentation = methodMta.XmlDocumentation,
+                            };
+                            return methodMta;
+                        }
+                        else
+                        {
+                            var constructorSyntax = GetSyntaxNode(symbol) as ConstructorDeclarationSyntax;
+                            if (constructorSyntax != null)
+                            {
+                                DocMetadata mta = base.GenerateFrom(symbol);
+                                var constuctorMta = new MethodDocMetadata(mta);
+
+                                constuctorMta.Syntax = new MethodSyntax
+                                {
+                                    Content = constructorSyntax.WithBody(null)
+                                    .NormalizeWhitespace()
+                                    .ToString(),
+                                    XmlDocumentation = constuctorMta.XmlDocumentation,
+                                };
+                                return constuctorMta;
+                            }
+                        }
+                        return null;
+                    };
+                case (SymbolKind.Property):
+                    {
+                        var syntax = GetSyntaxNode(symbol) as PropertyDeclarationSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var propertyMta = new PropertyDocMetadata(mta);
+
+                        propertyMta.Syntax = new PropertySyntax
+                        {
+                            Content = syntax
+                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                            .WithAccessorList(null)
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim(),
+                            XmlDocumentation = propertyMta.XmlDocumentation,
+                        };
+                        return propertyMta;
+                    };
+                case (SymbolKind.Field):
+                    {
+                        var syntax = GetSyntaxNode(symbol) as VariableDeclaratorSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var FieldMta = new FieldDocMetadata(mta);
+
+                        FieldMta.Syntax = new FieldSyntax
+                        {
+                            Content = syntax
+                            .WithInitializer(null)
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim(),
+                            XmlDocumentation = FieldMta.XmlDocumentation,
+                        };
+                        return FieldMta;
+                    };
+                case (SymbolKind.Event):
+                    {
+                        var syntax = GetSyntaxNode(symbol) as VariableDeclaratorSyntax;
+
+                        if (syntax == null)
+                        {
+                            return null;
+                        }
+
+                        DocMetadata mta = base.GenerateFrom(symbol);
+                        var eventMta = new EventDocMetadataDefinition(mta);
+
+                        eventMta.Syntax = new EventSyntax
+                        {
+                            Content = syntax
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim(),
+                            XmlDocumentation = eventMta.XmlDocumentation,
+                        };
+                        return eventMta;
+                    };
+                default: return new DocMetadata();
             }
-
-            DocMetadata mta = base.GenerateFrom(symbol);
-            var methodMta = new MethodDocMetadata(mta);
-
-            methodMta.Syntax = new MethodSyntax
-            {
-                Content = syntax.WithBody(null)
-                .NormalizeWhitespace()
-                .ToString(),
-                XmlDocumentation = methodMta.XmlDocumentation,
-            };
-
-            return methodMta;
         }
     }
 
@@ -171,7 +354,7 @@ namespace DocAsCode.GenDocMetadata
         {
             new NamespaceSymbolGenerator(),
             new NameTypeSymbolGenerator(),
-            new MethodSymbolGenerator(),
+            new ClassSymbolGenerator(),
             new DefaultGenerator()
         };
 

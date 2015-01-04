@@ -136,10 +136,10 @@ namespace DocAsCode.EntityModel
                     return "method";
                 case "P":
                     return "property";
-                //case "F":
-                //    return "field";
-                //case "E":
-                //    return "event";
+                case "F":
+                    return "field";
+                case "E":
+                    return "event";
                 default:
                     throw new NotSupportedException(type);
             }
@@ -157,10 +157,10 @@ namespace DocAsCode.EntityModel
                     return "M";
                 case "property":
                     return "P";
-                //case "field":
-                //    return "F";
-                //case "event":
-                //    return "E";
+                case "field":
+                    return "F";
+                case "event":
+                    return "E";
                 default:
                     throw new NotSupportedException(type);
             }

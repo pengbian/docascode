@@ -74,21 +74,91 @@ namespace DocAsCode.EntityModel
     /// </summary>
     public class NamespaceDocMetadata : MemeberDocMetadata
     {
-        private ConcurrentDictionary<Identity, ClassDocMetadata> _classes =
-            new ConcurrentDictionary<Identity, ClassDocMetadata>();
+        private  ConcurrentDictionary<Identity, ClassDocMetadata> _classes = new ConcurrentDictionary<Identity,ClassDocMetadata>();
+        private  ConcurrentDictionary<Identity, InterfaceDocMetadata> _interfaces = new ConcurrentDictionary<Identity, InterfaceDocMetadata>();
+        private ConcurrentDictionary<Identity, StructDocMetadata> _structs = new ConcurrentDictionary<Identity, StructDocMetadata>();
+        private ConcurrentDictionary<Identity, DelegateDocMetadata> _delegates = new ConcurrentDictionary<Identity, DelegateDocMetadata>();
+        private ConcurrentDictionary<Identity, EnumDocMetadata> _enums = new ConcurrentDictionary<Identity, EnumDocMetadata>();
+
+        private Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
+            new Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>()
+            {
+                { MemberType.Class, new ConcurrentDictionary<Identity,DocMetadata>() },
+                { MemberType.Interface, new ConcurrentDictionary<Identity, DocMetadata>()},
+                { MemberType.Struct, new ConcurrentDictionary<Identity, DocMetadata>()},
+                { MemberType.Delegate, new ConcurrentDictionary<Identity, DocMetadata>()},
+                { MemberType.Enum, new ConcurrentDictionary<Identity, DocMetadata>()}
+            };
+
+        public IEnumerable<DocMetadata> Members
+        {
+            get
+            {
+                List<DocMetadata> list = new List<DocMetadata>();
+                foreach(var member in _members.Values)
+                {
+                    foreach (var value in member.Values)
+                    {
+                        list.Add(value);
+                    }
+                }
+               
+                return list;
+            }
+        }
+
         public IEnumerable<ClassDocMetadata> Classes
         {
-            get { return _classes.Values; }
+            get {
+                //return _classes.Values;
+                List<ClassDocMetadata> list = new List<ClassDocMetadata>();
+                foreach (var value in _members[MemberType.Class].Values)
+                {
+                    list.Add((ClassDocMetadata)value);
+                }
+                return list;
+            }
             set
             {
                 _classes = new ConcurrentDictionary<Identity, ClassDocMetadata>(value.ToDictionary(s => s.Id, s => s));
             }
         }
 
-        public IReadOnlyList<InterfaceDocMetadata> Interfaces { get; set; }
-        public IReadOnlyList<StructDocMetadata> Structs { get; set; }
-        public IReadOnlyList<DelegateDocMetadata> Delegates { get; set; }
-        public IReadOnlyList<EnumDocMetadata> Enums { get; set; }
+        public IEnumerable<InterfaceDocMetadata> Interfaces
+        {
+            get { return _interfaces.Values; }
+            set
+            {
+                _interfaces = new ConcurrentDictionary<Identity, InterfaceDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
+        public IEnumerable<StructDocMetadata> Structs
+        {
+            get { return _structs.Values; }
+            set
+            {
+                _structs = new ConcurrentDictionary<Identity, StructDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
+        public IEnumerable<DelegateDocMetadata> Delegates
+        {
+            get { return _delegates.Values; }
+            set
+            {
+                _delegates = new ConcurrentDictionary<Identity, DelegateDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
+        public IEnumerable<EnumDocMetadata> Enums
+        {
+            get { return _enums.Values; }
+            set
+            {
+                _enums = new ConcurrentDictionary<Identity, EnumDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
 
         public NamespaceDocMetadata() { }
 
@@ -102,14 +172,66 @@ namespace DocAsCode.EntityModel
 
         public bool TryAddClass(ClassDocMetadata classMetadata)
         {
-            return _classes.TryAdd(classMetadata.Id, classMetadata);
+            //return _classes.TryAdd(classMetadata.Id, classMetadata);
+            return _members[MemberType.Class].TryAdd(classMetadata.Id, classMetadata);
+        }
+
+        public bool TryAddInterface(InterfaceDocMetadata interfaceMetadata)
+        {
+            return _members[MemberType.Interface].TryAdd(interfaceMetadata.Id, interfaceMetadata);
+        }
+        public bool TryAddDelegate(DelegateDocMetadata delegateMetadata)
+        {
+            return _members[MemberType.Delegate].TryAdd(delegateMetadata.Id, delegateMetadata);
+        }
+        public bool TryAddStruct(StructDocMetadata structMetadata)
+        {
+            return _members[MemberType.Struct].TryAdd(structMetadata.Id, structMetadata);
+        }
+        public bool TryAddEnum(EnumDocMetadata enumMetadata)
+        {
+            _members[MemberType.Enum].TryAdd(enumMetadata.Id, enumMetadata);
+            return _members[MemberType.Enum].TryAdd(enumMetadata.Id, enumMetadata);
         }
     }
 
     public class ClassDocMetadata : MemeberDocMetadata
     {
-        private ConcurrentDictionary<Identity, MethodDocMetadata> _methods =
-            new ConcurrentDictionary<Identity, MethodDocMetadata>();
+        private ConcurrentDictionary<Identity, MethodDocMetadata> _methods = new ConcurrentDictionary<Identity, MethodDocMetadata>();
+        private ConcurrentDictionary<Identity, EventDocMetadataDefinition> _events = new ConcurrentDictionary<Identity, EventDocMetadataDefinition>();
+        private ConcurrentDictionary<Identity, ConstructorDocMetadata> _constructs = new ConcurrentDictionary<Identity, ConstructorDocMetadata>();
+        private ConcurrentDictionary<Identity, PropertyDocMetadata> _properties = new ConcurrentDictionary<Identity, PropertyDocMetadata>();
+        private ConcurrentDictionary<Identity, FieldDocMetadata> _fields = new ConcurrentDictionary<Identity, FieldDocMetadata>();
+
+        public IEnumerable<DocMetadata> ClassMembers
+        {
+            get
+            {
+                List<DocMetadata> list = new List<DocMetadata>();
+                foreach (var item in _methods.Values)
+                {
+                    list.Add(item);
+                }
+                foreach (var item in _events.Values)
+                {
+                    list.Add(item);
+                }
+                foreach (var item in _constructs.Values)
+                {
+                    list.Add(item);
+                }
+                foreach (var item in _properties.Values)
+                {
+                    list.Add(item);
+                }
+                foreach (var item in _fields.Values)
+                {
+                    list.Add(item);
+                }
+                return list;
+            }
+        }
+
         public IEnumerable<MethodDocMetadata> Methods
         {
             get { return _methods.Values; }
@@ -118,11 +240,42 @@ namespace DocAsCode.EntityModel
                 _methods = new ConcurrentDictionary<Identity, MethodDocMetadata>(value.ToDictionary(s => s.Id, s => s));
             }
         }
+        public IEnumerable<EventDocMetadataDefinition> Events
+        {
+            get { return _events.Values; }
+            set
+            {
+                _events = new ConcurrentDictionary<Identity, EventDocMetadataDefinition>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+        public IEnumerable<ConstructorDocMetadata> Constructs
+        {
+            get { return _constructs.Values; }
+            set
+            {
+                _constructs = new ConcurrentDictionary<Identity, ConstructorDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+        public IEnumerable<PropertyDocMetadata> Properties
+        {
+            get { return _properties.Values; }
+            set
+            {
+                _properties = new ConcurrentDictionary<Identity, PropertyDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
+        public IEnumerable<FieldDocMetadata> Fields
+        {
+            get { return _fields.Values; }
+            set
+            {
+                _fields = new ConcurrentDictionary<Identity, FieldDocMetadata>(value.ToDictionary(s => s.Id, s => s));
+            }
+        }
+
         public Stack<Identity> InheritanceHierarchy { get; set; }
 
-        public IReadOnlyList<EventDocMetadataDefinition> Events { get; set; }
-        public IReadOnlyList<ConstructorDocMetadata> Constructors { get; set; }
-        public IReadOnlyList<PropertyDocMetadata> Properties { get; set; }
         public ClassDocMetadata() { }
 
         public ClassDocMetadata(DocMetadata mta) : base(mta)
@@ -147,15 +300,31 @@ namespace DocAsCode.EntityModel
         {
             return _methods.TryAdd(mta.Id, mta);
         }
+        public bool TryAddEvent(EventDocMetadataDefinition mta)
+        {
+            return _events.TryAdd(mta.Id, mta);
+        }
+        public bool TryAddConstruct(ConstructorDocMetadata mta)
+        {
+            return _constructs.TryAdd(mta.Id, mta);
+        }
+        public bool TryAddProperty(PropertyDocMetadata mta)
+        {
+            return _properties.TryAdd(mta.Id, mta);
+        }
+        public bool TryAddField(FieldDocMetadata mta)
+        {
+            return _fields.TryAdd(mta.Id, mta);
+        }
 
         public override void WriteMarkdownSkeleton(TextWriter writer)
         {
             base.WriteMarkdownSkeleton(writer);
 
             // TODO: normalize other members into one collection
-            foreach (var method in Methods)
+            foreach (var member in ClassMembers)
             {
-                method.WriteMarkdownSkeleton(writer);
+                member.WriteMarkdownSkeleton(writer);
             }
         }
     }
@@ -179,12 +348,29 @@ namespace DocAsCode.EntityModel
         public PropertyDocMetadata(string name) : base(name)
         {
         }
+        public PropertyDocMetadata(DocMetadata mta) : base(mta)
+        {
+        }
     }
 
-    public class EventDocMetadataDefinition : DocMetadata
+    public class FieldDocMetadata : MemeberDocMetadata
+    {
+        public FieldDocMetadata() { }
+        public FieldDocMetadata(string name) : base(name)
+        {
+        }
+        public FieldDocMetadata(DocMetadata mta) : base(mta)
+        {
+        }
+    }
+
+    public class EventDocMetadataDefinition : MemeberDocMetadata
     {
         public EventDocMetadataDefinition() { }
         public EventDocMetadataDefinition(string name) : base(name)
+        {
+        }
+        public EventDocMetadataDefinition(DocMetadata mta) : base(mta)
         {
         }
     }
@@ -204,13 +390,19 @@ namespace DocAsCode.EntityModel
         public InterfaceDocMetadata(string name) : base(name)
         {
         }
+        public InterfaceDocMetadata(DocMetadata mta) : base(mta)
+        {
+        }
     }
 
-    public class StructDocMetadata : DocMetadata
+    public class StructDocMetadata : MemeberDocMetadata
     {
 
         public StructDocMetadata() { }
         public StructDocMetadata(string name) : base(name)
+        {
+        }
+        public StructDocMetadata(DocMetadata mta) : base(mta)
         {
         }
     }
@@ -297,6 +489,15 @@ namespace DocAsCode.EntityModel
         public Identity PropertyType { get; set; }
 
         public IReadOnlyList<Identity> Implements { get; set; }
+    }
+
+    public class FieldSyntax : SyntaxDocFragment
+    {
+        public Identity FieldType { get; set; }
+    }
+    public class EventSyntax : SyntaxDocFragment
+    {
+        public Identity EventType { get; set; }
     }
 
     /// <summary>
