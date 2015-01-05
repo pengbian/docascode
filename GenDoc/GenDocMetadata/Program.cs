@@ -230,7 +230,7 @@ namespace DocAsCode.GenDocMetadata
                     if (classMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(classMetadata, MemberType.Class);
-                        classMetadata = DocMetadataConverterFactory.ExpandSymbolMembers(type, classMetadata);
+                        classMetadata = DocMetadataConverterFactory.ExpandSymbolMembers(type, (CompositeDocMetadata)classMetadata) as ClassDocMetadata;
                         continue;
                     }
 
@@ -244,12 +244,14 @@ namespace DocAsCode.GenDocMetadata
                     if (structMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(structMetadata, MemberType.Struct);
+                        structMetadata = DocMetadataConverterFactory.ExpandSymbolMembers(type, (CompositeDocMetadata)structMetadata) as StructDocMetadata;
                         continue;
                     }
                     var interfaceMetadata = DocMetadataConverterFactory.Convert(type) as InterfaceDocMetadata;
                     if (interfaceMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(interfaceMetadata, MemberType.Interface);
+                        interfaceMetadata = DocMetadataConverterFactory.ExpandSymbolMembers(type, (CompositeDocMetadata)interfaceMetadata) as InterfaceDocMetadata;
                         continue;
                     }
                     var delegateMetadata = DocMetadataConverterFactory.Convert(type) as DelegateDocMetadata;

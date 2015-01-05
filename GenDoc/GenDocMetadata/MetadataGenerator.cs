@@ -138,7 +138,20 @@ namespace DocAsCode.GenDocMetadata
                         }
 
                         DocMetadata mta = base.GenerateFrom(symbol);
-                        var EnumMta = new EnumDocMetadata(mta.Id);
+                        var EnumMta = new EnumDocMetadata(mta);
+                        EnumMta.Syntax = new SyntaxDocFragment
+                        {
+                            Content = syntax
+                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                            .WithBaseList(null)
+                            .WithMembers(new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                            .Trim(),
+                            XmlDocumentation = EnumMta.XmlDocumentation,
+                        };
 
                         return EnumMta;
                     };
@@ -206,8 +219,17 @@ namespace DocAsCode.GenDocMetadata
                         }
 
                         DocMetadata mta = base.GenerateFrom(symbol);
-                        var delegateMta = new DelegateDocMetadata(mta.Id);
+                        var delegateMta = new DelegateDocMetadata(mta);
 
+                        delegateMta.Syntax = new SyntaxDocFragment
+                        {
+                            Content = syntax
+                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                            .NormalizeWhitespace()
+                            .ToString()
+                            .Trim(),
+                            XmlDocumentation = delegateMta.XmlDocumentation,
+                        };
                         return delegateMta;
                     };
                 default: return new DocMetadata();
@@ -307,7 +329,7 @@ namespace DocAsCode.GenDocMetadata
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var FieldMta = new FieldDocMetadata(mta);
 
-                        FieldMta.Syntax = new FieldSyntax
+                        FieldMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
                             .WithInitializer(null)
@@ -330,7 +352,7 @@ namespace DocAsCode.GenDocMetadata
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var eventMta = new EventDocMetadataDefinition(mta);
 
-                        eventMta.Syntax = new EventSyntax
+                        eventMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
                             .NormalizeWhitespace()
@@ -378,33 +400,33 @@ namespace DocAsCode.GenDocMetadata
             Struct,
         }
 
-        public static ClassDocMetadata ExpandSymbolMembers(INamedTypeSymbol type, ClassDocMetadata mta)
+        public static CompositeDocMetadata ExpandSymbolMembers(INamedTypeSymbol type, CompositeDocMetadata mta)
         {
             foreach (var member in type.GetMembers())
             {
                 var methodMta = DocMetadataConverterFactory.Convert(member) as MethodDocMetadata;
                 if (methodMta != null)
                 {
-                    mta.TryAddMethod(methodMta);
+                    mta.TryAdd(methodMta, SubMemberType.Method);
                     continue;
                 }
 
                 var propertyMta = DocMetadataConverterFactory.Convert(member) as PropertyDocMetadata;
                 if (propertyMta != null)
                 {
-                    mta.TryAddProperty(propertyMta);
+                    mta.TryAdd(propertyMta, SubMemberType.Property);
                     continue;
                 }
                 var fieldMta = DocMetadataConverterFactory.Convert(member) as FieldDocMetadata;
                 if (fieldMta != null)
                 {
-                    mta.TryAddField(fieldMta);
+                    mta.TryAdd(fieldMta, SubMemberType.Field);
                     continue;
                 }
                 var eventMta = DocMetadataConverterFactory.Convert(member) as EventDocMetadataDefinition;
                 if (eventMta != null)
                 {
-                    mta.TryAddEvent(eventMta);
+                    mta.TryAdd(eventMta, SubMemberType.Event);
                     continue;
                 }
             }
