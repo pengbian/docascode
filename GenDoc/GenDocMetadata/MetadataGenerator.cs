@@ -31,7 +31,7 @@ namespace DocAsCode.GenDocMetadata
                 return true;
             }
 
-            return true;
+            return true; //For test
         }
 
         public virtual DocMetadata GenerateFrom(ISymbol symbol)
@@ -139,7 +139,7 @@ namespace DocAsCode.GenDocMetadata
 
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var EnumMta = new EnumDocMetadata(mta);
-                        EnumMta.Syntax = new SyntaxDocFragment
+                        EnumMta.Syntax = new ConstructorSyntax
                         {
                             Content = syntax
                             .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
@@ -241,7 +241,7 @@ namespace DocAsCode.GenDocMetadata
     {
         public override bool CanGenerate(ISymbol symbol)
         {
-            // Currently only support Methods, property
+            // Currently support Methods, property, field and event.
             if ((symbol.Kind != SymbolKind.Method) && (symbol.Kind != SymbolKind.Property) 
                 && (symbol.Kind != SymbolKind.Field) && (symbol.Kind != SymbolKind.Event))
             {
@@ -393,13 +393,6 @@ namespace DocAsCode.GenDocMetadata
             return null;
         }
 
-        public enum TypeToBeExpanded
-        {
-            Class,
-            Interface,
-            Struct,
-        }
-
         public static CompositeDocMetadata ExpandSymbolMembers(INamedTypeSymbol type, CompositeDocMetadata mta)
         {
             foreach (var member in type.GetMembers())
@@ -433,39 +426,5 @@ namespace DocAsCode.GenDocMetadata
 
             return mta;
         }
-      /*  public static ClassDocMetadata ExpandSymbolMembers(INamedTypeSymbol type, StructDocMetadata mta)
-        {
-            foreach (var member in type.GetMembers())
-            {
-                var methodMta = DocMetadataConverterFactory.Convert(member) as StructDocMetadata;
-                if (methodMta != null)
-                {
-                    mta.TryAddMethod(methodMta);
-                    continue;
-                }
-
-                var propertyMta = DocMetadataConverterFactory.Convert(member) as PropertyDocMetadata;
-                if (propertyMta != null)
-                {
-                    mta.TryAddProperty(propertyMta);
-                    continue;
-                }
-                var fieldMta = DocMetadataConverterFactory.Convert(member) as FieldDocMetadata;
-                if (fieldMta != null)
-                {
-                    mta.TryAddField(fieldMta);
-                    continue;
-                }
-                var eventMta = DocMetadataConverterFactory.Convert(member) as EventDocMetadataDefinition;
-                if (eventMta != null)
-                {
-                    mta.TryAddEvent(eventMta);
-                    continue;
-                }
-            }
-
-            return mta;
-        }*/
-
     }
 }

@@ -71,7 +71,7 @@ namespace DocAsCode.EntityModel
 
     public class CompositeDocMetadata : MemberDocMetadata
     {
-        public Dictionary<SubMemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
+        private Dictionary<SubMemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
             new Dictionary<SubMemberType, ConcurrentDictionary<Identity, DocMetadata>>()
             {
                 { SubMemberType.Method, new ConcurrentDictionary<Identity,DocMetadata>() },
@@ -103,6 +103,7 @@ namespace DocAsCode.EntityModel
         }
 
         public CompositeDocMetadata() { }
+
         public CompositeDocMetadata(string name) : base(name)
         {
         }
@@ -219,41 +220,6 @@ namespace DocAsCode.EntityModel
 
     public class ClassDocMetadata : CompositeDocMetadata
     {
-        public IEnumerable<DocMetadata> Methods
-        {
-            get { return _members[SubMemberType.Method].Values; }
-            set
-            {
-                _members[SubMemberType.Method] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-        public IEnumerable<DocMetadata> Events
-        {
-            get { return _members[SubMemberType.Event].Values; }
-            set
-            {
-                _members[SubMemberType.Event] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public IEnumerable<DocMetadata> Properties
-        {
-            get { return _members[SubMemberType.Property].Values; }
-            set
-            {
-                _members[SubMemberType.Property] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public IEnumerable<DocMetadata> Fields
-        {
-            get { return _members[SubMemberType.Field].Values; }
-            set
-            {
-                _members[SubMemberType.Field] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
         public Stack<Identity> InheritanceHierarchy { get; set; }
 
         public ClassDocMetadata() { }
@@ -357,7 +323,6 @@ namespace DocAsCode.EntityModel
         }
     }
 
-
     public class EnumDocMetadata : MemberDocMetadata
     {
 
@@ -434,6 +399,14 @@ namespace DocAsCode.EntityModel
         public Identity PropertyType { get; set; }
 
         public IReadOnlyList<Identity> Implements { get; set; }
+    }
+
+    /// <summary>
+    /// http://msdn.microsoft.com/zh-cn/library/tz6bzkbf(v=vs.110).aspx
+    /// </summary>
+    public class ConstructorSyntax : SyntaxDocFragment
+    {
+        public IReadOnlyDictionary<Identity, string> Parameters { get; set; }
     }
 
     /// <summary>
