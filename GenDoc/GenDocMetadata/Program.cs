@@ -229,60 +229,33 @@ namespace DocAsCode.GenDocMetadata
                     var classMetadata = DocMetadataConverterFactory.Convert(type) as ClassDocMetadata;
                     if (classMetadata != null)
                     {
-                        namespaceDocMetadata.TryAddClass(classMetadata);
-
-                        foreach (var member in type.GetMembers())
-                        {
-                            var methodMta = DocMetadataConverterFactory.Convert(member) as MethodDocMetadata;
-                            if (methodMta != null)
-                            {
-                                classMetadata.TryAddMethod(methodMta);
-                                continue;
-                            }
-
-                            var propertyMta = DocMetadataConverterFactory.Convert(member) as PropertyDocMetadata;
-                            if (propertyMta != null)
-                            {
-                                classMetadata.TryAddProperty(propertyMta);
-                                continue;
-                            }
-                            var fieldMta = DocMetadataConverterFactory.Convert(member) as FieldDocMetadata;
-                            if (fieldMta != null)
-                            {
-                                classMetadata.TryAddField(fieldMta);
-                                continue;
-                            }
-                            var eventMta = DocMetadataConverterFactory.Convert(member) as EventDocMetadataDefinition;
-                            if (eventMta != null)
-                            {
-                                classMetadata.TryAddEvent(eventMta);
-                                continue;
-                            }
-                        }
+                        namespaceDocMetadata.TryAdd(classMetadata, MemberType.Class);
+                        classMetadata = DocMetadataConverterFactory.ExpandSymbolMembers(type, classMetadata);
+                        continue;
                     }
 
                     var enumMetadata = DocMetadataConverterFactory.Convert(type) as EnumDocMetadata;
                     if (enumMetadata != null)
                     {
-                        namespaceDocMetadata.TryAddEnum(enumMetadata);
+                        namespaceDocMetadata.TryAdd(enumMetadata, MemberType.Enum);
                         continue;
                     }
                     var structMetadata = DocMetadataConverterFactory.Convert(type) as StructDocMetadata;
                     if (structMetadata != null)
                     {
-                        namespaceDocMetadata.TryAddStruct(structMetadata);
+                        namespaceDocMetadata.TryAdd(structMetadata, MemberType.Struct);
                         continue;
                     }
                     var interfaceMetadata = DocMetadataConverterFactory.Convert(type) as InterfaceDocMetadata;
                     if (interfaceMetadata != null)
                     {
-                        namespaceDocMetadata.TryAddInterface(interfaceMetadata);
+                        namespaceDocMetadata.TryAdd(interfaceMetadata, MemberType.Interface);
                         continue;
                     }
                     var delegateMetadata = DocMetadataConverterFactory.Convert(type) as DelegateDocMetadata;
                     if (delegateMetadata != null)
                     {
-                        namespaceDocMetadata.TryAddDelegate(delegateMetadata);
+                        namespaceDocMetadata.TryAdd(delegateMetadata, MemberType.Delegate);
                     }
                 }
             }

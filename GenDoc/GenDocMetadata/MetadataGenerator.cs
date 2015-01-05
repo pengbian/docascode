@@ -370,5 +370,80 @@ namespace DocAsCode.GenDocMetadata
 
             return null;
         }
+
+        public enum TypeToBeExpanded
+        {
+            Class,
+            Interface,
+            Struct,
+        }
+
+        public static ClassDocMetadata ExpandSymbolMembers(INamedTypeSymbol type, ClassDocMetadata mta)
+        {
+            foreach (var member in type.GetMembers())
+            {
+                var methodMta = DocMetadataConverterFactory.Convert(member) as MethodDocMetadata;
+                if (methodMta != null)
+                {
+                    mta.TryAddMethod(methodMta);
+                    continue;
+                }
+
+                var propertyMta = DocMetadataConverterFactory.Convert(member) as PropertyDocMetadata;
+                if (propertyMta != null)
+                {
+                    mta.TryAddProperty(propertyMta);
+                    continue;
+                }
+                var fieldMta = DocMetadataConverterFactory.Convert(member) as FieldDocMetadata;
+                if (fieldMta != null)
+                {
+                    mta.TryAddField(fieldMta);
+                    continue;
+                }
+                var eventMta = DocMetadataConverterFactory.Convert(member) as EventDocMetadataDefinition;
+                if (eventMta != null)
+                {
+                    mta.TryAddEvent(eventMta);
+                    continue;
+                }
+            }
+
+            return mta;
+        }
+      /*  public static ClassDocMetadata ExpandSymbolMembers(INamedTypeSymbol type, StructDocMetadata mta)
+        {
+            foreach (var member in type.GetMembers())
+            {
+                var methodMta = DocMetadataConverterFactory.Convert(member) as StructDocMetadata;
+                if (methodMta != null)
+                {
+                    mta.TryAddMethod(methodMta);
+                    continue;
+                }
+
+                var propertyMta = DocMetadataConverterFactory.Convert(member) as PropertyDocMetadata;
+                if (propertyMta != null)
+                {
+                    mta.TryAddProperty(propertyMta);
+                    continue;
+                }
+                var fieldMta = DocMetadataConverterFactory.Convert(member) as FieldDocMetadata;
+                if (fieldMta != null)
+                {
+                    mta.TryAddField(fieldMta);
+                    continue;
+                }
+                var eventMta = DocMetadataConverterFactory.Convert(member) as EventDocMetadataDefinition;
+                if (eventMta != null)
+                {
+                    mta.TryAddEvent(eventMta);
+                    continue;
+                }
+            }
+
+            return mta;
+        }*/
+
     }
 }
