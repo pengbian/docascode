@@ -16,7 +16,7 @@ namespace DocAsCode.MergeDoc
     class Program
     {
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             string mtaFile = @"TestData2\DocProject.docmta";
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
@@ -24,111 +24,120 @@ namespace DocAsCode.MergeDoc
             string templateDirectory = "Templates";
             string cssDirecotry = "css";
             string scriptDirecotry = "script";
-            //Create a ViewModel for Razor to render the template
-            ViewModel viewModel = new ViewModel();
-            //This Dictionary stores the output file path for every namespace,class and method
-            Dictionary<string, string> idPathRelativeMapping = new Dictionary<string, string>();
-            MarkDownConvertor mdConvertor = new MarkDownConvertor();
-            mdConvertor.init(idPathRelativeMapping);
+            try
+            {
+                //Create a ViewModel for Razor to render the template
+                ViewModel viewModel = new ViewModel();
+                //This Dictionary stores the output file path for every namespace,class and method
+                Dictionary<string, string> idPathRelativeMapping = new Dictionary<string, string>();
+                MarkDownConvertor mdConvertor = new MarkDownConvertor();
+                mdConvertor.init(idPathRelativeMapping);
 
-            var options = new Option[]
-                {
+                var options = new Option[]
+                    {
                     new Option(null, s => mtaFile = s, helpName: "metadataFile", defaultValue: mtaFile, helpText: @"The doc metadata file, only file with .docmta is recognized"),
                     new Option("outputDirectory", s => outputDirectory = s, defaultValue: outputDirectory, helpText: "The output html files will be generated into this folder"),
                     new Option("templateDirectory", s => templateDirectory = s, defaultValue: templateDirectory, helpText: "The template folder for generated html, the folder should contain class.html and namespace.html, the former one is the html template for Class pages, and the latter one is the html template for Namespace pages"),
                     new Option("delimitedMdFiles", s => delimitedMdFiles = s, defaultValue: delimitedMdFiles, helpName: "delimitedMdFiles", helpText: "Markdown files delimited by comma, only files with .md extension will be recognized"),
-                };
+                    };
 
-            if (!ConsoleParameterParser.ParseParameters(options, args))
-            {
-                return;
-            }
-
-            // Input.1. docmta per ProjectReference
-            // TODO: what if the file is extremely large?
-            AssemblyDocMetadata assemblyMta = LoadAssemblyDocMetadataFromFile(mtaFile);
-
-            // Input.2. a set of md files user inputs
-            // Scan available md files' yaml headers to get available custom markdown content
-            // TODO: what if the collection is extremely large?
-            string[] mdFiles = (string[])_delimitedArrayConverter.ConvertFrom(delimitedMdFiles);
-            MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdFiles);
-
-            // Step.1. create the id-path mapping
-            foreach (var ns in assemblyMta.Namespaces)
-            {
-                string assemblyFile = ns.Id.ToString().ToValidFilePath() + ".html";
-                idPathRelativeMapping.Add(ns.Id, assemblyFile);
-                foreach (var c in ns.Classes)
+                if (!ConsoleParameterParser.ParseParameters(options, args))
                 {
-                    string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
-                    foreach (var m in c.Methods)
-                    {
-                        idPathRelativeMapping.Add(m.Id, classPath);
-                    }
-                    idPathRelativeMapping.Add(c.Id, classPath);
+                    return 1;
                 }
-            }
 
-            // Step.2. write contents to those files
-            Directory.CreateDirectory(outputDirectory);
-            string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class.html"));
-            string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace.html"));
-            //Add baseUrl to the template,this is for @ link
-            viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
-            viewModel.assemblyMta = assemblyMta;
+                // Input.1. docmta per ProjectReference
+                // TODO: what if the file is extremely large?
+                AssemblyDocMetadata assemblyMta = LoadAssemblyDocMetadataFromFile(mtaFile);
 
-            foreach (var ns in assemblyMta.Namespaces)
-            {
-                viewModel.namespaceMta = ns;
-                string content;
-                if (markdownCollectionCache.TryGetValue(ns.Id, out content))
+                // Input.2. a set of md files user inputs
+                // Scan available md files' yaml headers to get available custom markdown content
+                // TODO: what if the collection is extremely large?
+                string[] mdFiles = (string[])_delimitedArrayConverter.ConvertFrom(delimitedMdFiles);
+                MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdFiles);
+
+                // Step.1. create the id-path mapping
+                foreach (var ns in assemblyMta.Namespaces)
                 {
-                    ns.MarkdownContent = mdConvertor.ConvertToHTML(content);
-                }
-                string assemblyFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
-                string assemblyFile = assemblyFolder + ".html";
-                //This may not be a good solution, just display the summary of triple slashes
-                ns.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"];
-                ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
-                string result;
-
-                Directory.CreateDirectory(assemblyFolder);
-                foreach(var c in ns.Classes)
-                {
-                    viewModel.classMta = c;
-                    //This may not be a good solution, just display the summary of triple slashes
-                    c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
-                    c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
-                    if (markdownCollectionCache.TryGetValue(c.Id, out content))
+                    string assemblyFile = ns.Id.ToString().ToValidFilePath() + ".html";
+                    idPathRelativeMapping.Add(ns.Id, assemblyFile);
+                    foreach (var c in ns.Classes)
                     {
-                        c.MarkdownContent = mdConvertor.ConvertToHTML(content);
-                    }
-                    foreach (var m in c.Methods)
-                    {
-                        viewModel.methodMta = m;
-                        //This may not be a good solution, just display the summary of triple slashes
-                        m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
-                        m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
-                        if (markdownCollectionCache.TryGetValue(m.Id, out content))
+                        string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
+                        foreach (var m in c.Methods)
                         {
-                            m.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                            idPathRelativeMapping.Add(m.Id, classPath);
                         }
+                        idPathRelativeMapping.Add(c.Id, classPath);
                     }
-
-                    string classPath = Path.Combine(assemblyFolder, c.Id.ToString().ToValidFilePath() + ".html");
-                    result = Razor.Parse(classTemplate, viewModel);
-                    File.WriteAllText(classPath, result);
-                    Console.Error.WriteLine("Successfully saved {0}", classPath);
                 }
-                result = Razor.Parse(nsTemplate, viewModel);
-                File.WriteAllText(assemblyFile, result);
-                Console.Error.WriteLine("Successfully saved {0}", assemblyFile);
-            }
 
-            //Copy the css and js
-            CopyDir(Path.Combine(templateDirectory,cssDirecotry), Path.Combine(outputDirectory, cssDirecotry), true, true);
-            CopyDir(Path.Combine(templateDirectory,scriptDirecotry), Path.Combine(outputDirectory, scriptDirecotry), true, true);
+                // Step.2. write contents to those files
+                Directory.CreateDirectory(outputDirectory);
+                string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class.html"));
+                string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace.html"));
+                //Add baseUrl to the template,this is for @ link
+                viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
+                viewModel.assemblyMta = assemblyMta;
+
+                foreach (var ns in assemblyMta.Namespaces)
+                {
+                    viewModel.namespaceMta = ns;
+                    string content;
+                    if (markdownCollectionCache.TryGetValue(ns.Id, out content))
+                    {
+                        ns.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                    }
+                    string assemblyFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
+                    string assemblyFile = assemblyFolder + ".html";
+                    //This may not be a good solution, just display the summary of triple slashes
+                    ns.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"];
+                    ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
+                    string result;
+
+                    Directory.CreateDirectory(assemblyFolder);
+                    foreach (var c in ns.Classes)
+                    {
+                        viewModel.classMta = c;
+                        //This may not be a good solution, just display the summary of triple slashes
+                        c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
+                        c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
+                        if (markdownCollectionCache.TryGetValue(c.Id, out content))
+                        {
+                            c.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                        }
+                        foreach (var m in c.Methods)
+                        {
+                            viewModel.methodMta = m;
+                            //This may not be a good solution, just display the summary of triple slashes
+                            m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
+                            m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
+                            if (markdownCollectionCache.TryGetValue(m.Id, out content))
+                            {
+                                m.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                            }
+                        }
+
+                        string classPath = Path.Combine(assemblyFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                        result = Razor.Parse(classTemplate, viewModel);
+                        File.WriteAllText(classPath, result);
+                        Console.Error.WriteLine("Successfully saved {0}", classPath);
+                    }
+                    result = Razor.Parse(nsTemplate, viewModel);
+                    File.WriteAllText(assemblyFile, result);
+                    Console.Error.WriteLine("Successfully saved {0}", assemblyFile);
+                }
+
+                //Copy the css and js
+                CopyDir(Path.Combine(templateDirectory, cssDirecotry), Path.Combine(outputDirectory, cssDirecotry), true, true);
+                CopyDir(Path.Combine(templateDirectory, scriptDirecotry), Path.Combine(outputDirectory, scriptDirecotry), true, true);
+                return 0;
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine("Failing in merging document from {0}: {1}", mtaFile, e);
+                return 1;
+            }
         }
 
         static string GetRealName(string id)
@@ -255,7 +264,7 @@ namespace DocAsCode.MergeDoc
                 if (lastSection != null && !sections.TryGetValue(lastCommentId, out section))
                 {
                     lastSection.ContentEndIndex = match.Index - 1;
-                    if (lastSection.ContentEndIndex >= lastSection.ContentStartIndex)
+                    if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
                     {
                         lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex, lastSection.ContentEndIndex - lastSection.ContentStartIndex + 1);
                         sections.Add(lastCommentId, lastSection);
@@ -263,6 +272,10 @@ namespace DocAsCode.MergeDoc
                 }
 
                 lastSection = new MarkdownSection { Id = lastCommentId, ContentStartIndex = startIndex, ContentEndIndex = length }; // endIndex should be set from next match if there is next match
+                if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
+                {
+                    lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex);
+                }
             }
 
             if (lastSection != null && !sections.TryGetValue(lastCommentId, out section))

@@ -1,12 +1,18 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <GenDocMetadataToolPath Condition=" '$(GenDocMetadataToolPath)' == '' ">$(DocToolExtensionsPath)\GenDocMetadata.exe</GenDocMetadataToolPath>
     <MergeDocToolPath Condition=" '$(MergeDocToolPath)' == '' ">$(DocToolExtensionsPath)\MergeDoc.exe</MergeDocToolPath>
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
+    <TempOutputDirectory>doctemp</TempOutputDirectory>
   </PropertyGroup>
+  <ItemGroup>
+    <DocMta Include="$(MSBuildProjectDirectory)\**\*.docmta" />
+  </ItemGroup>
   <Target Name="Build">
-    <Message Text="Executing $(MergeDocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirecotry:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
-    <Exec Command="$(MergeDocToolPath) &quot;%(Reference.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ',')" Condition="'%(Reference.Extension)' == '.docmta'"/>
-    <!-- <Exec Command='"$(MSBuildProjetDirectory)\exe\MergeDoc.exe "' /> -->
+    <Message Text ="%(DocMta.FullPath)" />
+    <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
+    <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
+    <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
   </Target>
   <Target Name ="Clean">
     <!-- TO BE IMPLEMENTED-->

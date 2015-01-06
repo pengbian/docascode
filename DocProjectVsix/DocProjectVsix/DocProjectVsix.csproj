@@ -129,6 +129,7 @@
     <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
     <Content Include="..\..\GenDoc\MergeDoc\Templates\css\default.css">
       <Link>Templates\Projects\DocProject\css\default.css</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="..\..\GenDoc\MergeDoc\Templates\script\default.js">
       <Link>Templates\Projects\DocProject\script\default.js</Link>
