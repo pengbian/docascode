@@ -98,8 +98,9 @@ namespace Company.DocContextMenuPackage
         {
             ReferenceDocumentHeler helper = new ReferenceDocumentHeler(_selectedProject, _docProject);
             helper.extractReference();
-            MDGenerateHelper mdHelper = new MDGenerateHelper(_dte, _selectedProject, _docsFolder, _projectDocFolder);
-            await mdHelper.GenMarkDownFileAsync(100000);
+
+            // MDGenerateHelper mdHelper = new MDGenerateHelper(_dte, _selectedProject, _docsFolder, _projectDocFolder);
+            // await mdHelper.GenMarkDownFileAsync(100000);
         }
     }
 }

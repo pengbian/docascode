@@ -39,7 +39,7 @@
 
   <Target Name="PreviewWebsite">
     <ItemGroup>
-      <OutputHomepage Include="$(OutputPath)\*.html" />
+      <OutputHomepage Include="$(OutputPath)\index.html" />
     </ItemGroup>
     <Message Text ="Opening %(OutputHomepage.FullPath)" />
     <Exec Command="&quot;%(OutputHomepage.FullPath)&quot;" />

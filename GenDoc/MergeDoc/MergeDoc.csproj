@@ -89,6 +89,9 @@
     <Content Include="Templates\css\default.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Templates\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\namespace-ios.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
