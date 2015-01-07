@@ -72,8 +72,8 @@ namespace DocAsCode.MergeDoc
 
             // Step.2. write contents to those files
             Directory.CreateDirectory(outputDirectory);
-            string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class.html"));
-            string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace.html"));
+            string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class-ios.html"));
+            string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
             //Add baseUrl to the template,this is for @ link
             viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
             viewModel.assemblyMta = assemblyMta;
@@ -89,7 +89,7 @@ namespace DocAsCode.MergeDoc
                 string assemblyFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
                 string assemblyFile = assemblyFolder + ".html";
                 //This may not be a good solution, just display the summary of triple slashes
-                ns.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"];
+                ns.XmlDocumentation = TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"];
                 ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
                 string result;
 
@@ -98,7 +98,7 @@ namespace DocAsCode.MergeDoc
                 {
                     viewModel.classMta = c;
                     //This may not be a good solution, just display the summary of triple slashes
-                    c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
+                    c.XmlDocumentation = TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
                     c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
                     if (markdownCollectionCache.TryGetValue(c.Id, out content))
                     {
@@ -108,7 +108,7 @@ namespace DocAsCode.MergeDoc
                     {
                         viewModel.methodMta = m;
                         //This may not be a good solution, just display the summary of triple slashes
-                        m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
+                        m.XmlDocumentation = TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
                         m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
                         if (markdownCollectionCache.TryGetValue(m.Id, out content))
                         {
