@@ -14,7 +14,7 @@ namespace Company.DocContextMenuPackage
 
         public MDGenerateHelper(DTE dte, Project project, ProjectItem docsFolder, ProjectItem projectDocFolder)
         {
-             _dte = dte;
+            _dte = dte;
             _project = project;
             _docsFolder = docsFolder;
             _projectDocFolder = projectDocFolder;
@@ -35,9 +35,10 @@ namespace Company.DocContextMenuPackage
                 throw new System.ApplicationException(string.Format("Error executing {0} {1} : {2}", executorPath, arguments, processingDetail.StandardOutput + processingDetail.StandardError));
             }
 
-            foreach (string file in Directory.GetFiles(docMetadataPath + "\\" + _project.Name))
+            string projectDocfolderPath = Path.GetDirectoryName(_projectDocFolder.Properties.Item("FullPath").Value.ToString());
+            foreach (string file in Directory.GetFiles(projectDocfolderPath))
             {
-               File.Delete(file);
+                File.Delete(file);
             }
 
             int itemCount = _projectDocFolder.ProjectItems.Count;
@@ -46,14 +47,15 @@ namespace Company.DocContextMenuPackage
                 _projectDocFolder.ProjectItems.Item(i).Remove();
             }
 
-            foreach (string dir in Directory.GetDirectories(docMetadataPath + "\\mdtoc\\" + _project.Name))
+            string tempMDPath = docMetadataPath + "\\mdtoc\\" + _project.Properties.Item("AssemblyName").Value.ToString();
+            foreach (string dir in Directory.GetDirectories(tempMDPath))
             {
                 foreach (string file in Directory.GetFiles(dir))
                 {
                     _projectDocFolder.ProjectItems.AddFromFile(file);
                 }
             }
-      }
+        }
 
-   }
+    }
 }
