@@ -3,14 +3,16 @@
     <GenDocMetadataToolPath Condition=" '$(GenDocMetadataToolPath)' == '' ">$(DocToolExtensionsPath)\GenDocMetadata.exe</GenDocMetadataToolPath>
     <MergeDocToolPath Condition=" '$(MergeDocToolPath)' == '' ">$(DocToolExtensionsPath)\MergeDoc.exe</MergeDocToolPath>
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
-    <TempOutputDirectory>doctemp</TempOutputDirectory>
+    <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
   </PropertyGroup>
   <ItemGroup>
-    <DocMta Include="$(MSBuildProjectDirectory)\**\*.docmta" />
+    <DocMta Include="$(OutputPath)\**\*.docmta" />
     <OutputHomepage Include="$(OutputPath)\*.html" />
   </ItemGroup>
   <Target Name="Build">
     <Message Text ="%(DocMta.FullPath)" />
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(DocMta)" />
     <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
     <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
     <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
