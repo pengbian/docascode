@@ -71,44 +71,87 @@ namespace DocAsCode.EntityModel
 
     public class CompositeDocMetadata : MemberDocMetadata
     {
-        private Dictionary<SubMemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
-            new Dictionary<SubMemberType, ConcurrentDictionary<Identity, DocMetadata>>()
-            {
-                { SubMemberType.Method, new ConcurrentDictionary<Identity,DocMetadata>() },
-                { SubMemberType.Property, new ConcurrentDictionary<Identity, DocMetadata>()},
-                { SubMemberType.Event, new ConcurrentDictionary<Identity, DocMetadata>()},
-                { SubMemberType.Field, new ConcurrentDictionary<Identity, DocMetadata>()}
-            };
+        private Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
+            new Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>();
 
+        protected List<MemberType> AllowedMemberTypes { get; set; }
+
+      //  [JsonIgnore]
         public IEnumerable<DocMetadata> Members
         {
             get
             {
                 List<DocMetadata> list = new List<DocMetadata>();
-                foreach (var member in _members.Values)
+                for (int i = 0; i < AllowedMemberTypes.Count; i++)
                 {
-                    foreach (var value in member.Values)
+                    var type = AllowedMemberTypes[i];
+                    if (_members.ContainsKey(type))
                     {
-                        list.Add(value);
+                        foreach (var value in _members[type].Values)
+                        {
+                            list.Add(value);
+                        }
                     }
                 }
-
                 return list;
             }
         }
 
-        public bool TryAdd(MemberDocMetadata metadata, SubMemberType type)
+        public Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> MemberDict
         {
-            return _members[type].TryAdd(metadata.Id, metadata);
+            get { return _members; }
+            set
+            {
+                _members = value;
+            }
         }
 
-        public CompositeDocMetadata() { }
+        public bool TryAdd(MemberDocMetadata metadata, MemberType type)
+        {
+            if (!AllowedMemberTypes.Contains(type))
+            {
+                throw new Exception(string.Format("The metadata of type {0} cannot be generated.", type.ToString()));
+            }
+
+          //  var dict = _members.GetOrAdd(type, new ConcurrentDictionary<Identity, DocMetadata>());
+
+            return _members[type].TryAdd(metadata.Id, metadata);
+        }
+         
+        public IEnumerable<DocMetadata> GetMemberType(MemberType type)
+        {
+            if (!AllowedMemberTypes.Contains(type))
+            {
+                throw new Exception(string.Format("The metadata of type {0} is not allowed.", type.ToString()));
+            }
+            if (_members.ContainsKey(type))
+            {
+                return _members[type].Values;
+            }
+            else
+            {
+                return new List<DocMetadata>();
+            }
+        }
+
+        protected void Init()
+        {
+            if (AllowedMemberTypes != null)
+            {
+                foreach(var i in AllowedMemberTypes)
+                {
+                    _members.Add(i, new ConcurrentDictionary<Identity, DocMetadata>());
+                }
+            }
+        }
+        public CompositeDocMetadata() {
+        }
 
         public CompositeDocMetadata(string name) : base(name)
         {
         }
 
-        public CompositeDocMetadata(DocMetadata mta) : base(mta.Id)
+        public CompositeDocMetadata(DocMetadata mta) : base(mta)
         {
         }
 
@@ -126,95 +169,49 @@ namespace DocAsCode.EntityModel
     /// <summary>
     /// TODO: what if no namespace?
     /// </summary>
-    public class NamespaceDocMetadata : MemberDocMetadata
+    public class NamespaceDocMetadata : CompositeDocMetadata
     {
-        private Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
-            new Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>()
+        private ConcurrentDictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
+            new ConcurrentDictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>();
+
+        public NamespaceDocMetadata()
+        {
+            AllowedMemberTypes = new List<MemberType>()
             {
-                { MemberType.Class, new ConcurrentDictionary<Identity,DocMetadata>() },
-                { MemberType.Interface, new ConcurrentDictionary<Identity, DocMetadata>()},
-                { MemberType.Struct, new ConcurrentDictionary<Identity, DocMetadata>()},
-                { MemberType.Delegate, new ConcurrentDictionary<Identity, DocMetadata>()},
-                { MemberType.Enum, new ConcurrentDictionary<Identity, DocMetadata>()}
+                MemberType.Class,
+                MemberType.Interface,
+                MemberType.Struct,
+                MemberType.Delegate,
+                MemberType.Enum
             };
 
-        public IEnumerable<DocMetadata> Members
-        {
-            get
-            {
-                List<DocMetadata> list = new List<DocMetadata>();
-                foreach(var member in _members.Values)
-                {
-                    foreach (var value in member.Values)
-                    {
-                        list.Add(value);
-                    }
-                }
-               
-                return list;
-            }
+           base.Init();
         }
-
-        public IEnumerable<DocMetadata> Classes
-        {
-            get {
-                return _members[MemberType.Class].Values;
-            }
-            set
-            {
-                _members[MemberType.Class] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public IEnumerable<DocMetadata> Interfaces
-        {
-            get { return _members[MemberType.Interface].Values; }
-            set
-            {
-                _members[MemberType.Interface] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public IEnumerable<DocMetadata> Structs
-        {
-            get { return _members[MemberType.Struct].Values; }
-            set
-            {
-                _members[MemberType.Struct] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public IEnumerable<DocMetadata> Delegates
-        {
-            get { return _members[MemberType.Delegate].Values; }
-            set
-            {
-                _members[MemberType.Delegate] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public IEnumerable<DocMetadata> Enums
-        {
-            get { return _members[MemberType.Enum].Values; }
-            set
-            {
-                _members[MemberType.Enum] = new ConcurrentDictionary<Identity, DocMetadata>(value.ToDictionary(s => s.Id, s => s));
-            }
-        }
-
-        public NamespaceDocMetadata() { }
 
         public NamespaceDocMetadata(string name) : base(name)
         {
+            AllowedMemberTypes = new List<MemberType>()
+            {
+                MemberType.Class,
+                MemberType.Interface,
+                MemberType.Struct,
+                MemberType.Delegate,
+                MemberType.Enum
+            };
+            base.Init();
         }
 
         public NamespaceDocMetadata(DocMetadata mta) : base(mta)
         {
-        }
-
-        public bool TryAdd(DocMetadata metadata, MemberType type)
-        {
-            return _members[type].TryAdd(metadata.Id, metadata);
+            AllowedMemberTypes = new List<MemberType>()
+            {
+                MemberType.Class,
+                MemberType.Interface,
+                MemberType.Struct,
+                MemberType.Delegate,
+                MemberType.Enum
+            };
+            base.Init();
         }
     }
 
@@ -222,17 +219,46 @@ namespace DocAsCode.EntityModel
     {
         public Stack<Identity> InheritanceHierarchy { get; set; }
 
-        public ClassDocMetadata() { }
-
-        public ClassDocMetadata(DocMetadata mta) : base(mta)
+        public ClassDocMetadata()
         {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Field,
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Constructor,
+                MemberType.Method,
+            };
+            base.Init();
         }
 
         public ClassDocMetadata(string name) : base(name)
         {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Field,
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Constructor,
+                MemberType.Method,
+            };
+            base.Init();
         }
 
-       /* public MethodDocMetadata CreateMethod(string name)
+        public ClassDocMetadata(DocMetadata mta) : base(mta)
+        {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Field,
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Constructor,
+                MemberType.Method,
+            };
+            base.Init();
+        }
+
+        /*public MethodDocMetadata CreateMethod(string name)
         {
             return _members[SubMemberType.Method].GetOrAdd(name, s => new DocMetadata(s)
             {
@@ -252,6 +278,18 @@ namespace DocAsCode.EntityModel
         }
 
         public MethodDocMetadata(DocMetadata mta) : base(mta)
+        {
+        }
+    }
+    public class ConstructorDocMetadata : MemberDocMetadata
+    {
+        public ConstructorDocMetadata() { }
+
+        public ConstructorDocMetadata(string name) : base(name)
+        {
+        }
+
+        public ConstructorDocMetadata(DocMetadata mta) : base(mta)
         {
         }
     }
@@ -291,23 +329,75 @@ namespace DocAsCode.EntityModel
 
     public class InterfaceDocMetadata : CompositeDocMetadata
     {
-        public InterfaceDocMetadata() { }
+        public InterfaceDocMetadata()
+        {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Method,
+            };
+            base.Init();
+        }
         public InterfaceDocMetadata(string name) : base(name)
         {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Method,
+            };
+            base.Init();
         }
         public InterfaceDocMetadata(DocMetadata mta) : base(mta)
         {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Method,
+            };
+            base.Init();
         }
     }
 
     public class StructDocMetadata : CompositeDocMetadata
     {
-        public StructDocMetadata() { }
+        public StructDocMetadata()
+        {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Field,
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Constructor,
+                MemberType.Method,
+            };
+            base.Init();
+        }
         public StructDocMetadata(string name) : base(name)
         {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Field,
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Constructor,
+                MemberType.Method,
+            };
+            base.Init();
         }
         public StructDocMetadata(DocMetadata mta) : base(mta)
         {
+            AllowedMemberTypes = new List<MemberType>
+            {
+                MemberType.Field,
+                MemberType.Property,
+                MemberType.Event,
+                MemberType.Constructor,
+                MemberType.Method,
+            };
+            base.Init();
         }
     }
 
@@ -463,15 +553,11 @@ namespace DocAsCode.EntityModel
         Interface,
         Struct,
         Delegate,
-        Enum
-    }
-
-    public enum SubMemberType
-    {
-        Method,
+        Enum,
         Field,
         Property,
         Event,
         Constructor,
+        Method,
     }
 }

@@ -59,14 +59,15 @@ namespace DocAsCode.MergeDoc
             {
                 string assemblyFile = ns.Id.ToString().ToValidFilePath() + ".html";
                 idPathRelativeMapping.Add(ns.Id, assemblyFile);
-                foreach (var c in ns.Classes)
+                foreach (var c in ns.GetMemberType(MemberType.Class))
                 {
-                    string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
-                    foreach (var m in c.Methods)
+                    var @class = c as ClassDocMetadata;
+                    string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), @class.Id.ToString().ToValidFilePath() + ".html");
+                    foreach (var m in @class.GetMemberType(MemberType.Method))
                     {
                         idPathRelativeMapping.Add(m.Id, classPath);
                     }
-                    idPathRelativeMapping.Add(c.Id, classPath);
+                    idPathRelativeMapping.Add(@class.Id, classPath);
                 }
             }
 
@@ -94,29 +95,31 @@ namespace DocAsCode.MergeDoc
                 string result;
 
                 Directory.CreateDirectory(assemblyFolder);
-                foreach(var c in ns.Classes)
+                foreach(var c in ns.GetMemberType(MemberType.Class))
                 {
-                    viewModel.classMta = c;
+                    var @class = c as ClassDocMetadata;
+                    viewModel.classMta = @class;
                     //This may not be a good solution, just display the summary of triple slashes
-                    c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
-                    c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
-                    if (markdownCollectionCache.TryGetValue(c.Id, out content))
+                    @class.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(@class.XmlDocumentation)["summary"];
+                    @class.XmlDocumentation = mdConvertor.ConvertToHTML(@class.XmlDocumentation);
+                    if (markdownCollectionCache.TryGetValue(@class.Id, out content))
                     {
-                        c.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                        @class.MarkdownContent = mdConvertor.ConvertToHTML(content);
                     }
-                    foreach (var m in c.Methods)
+                    foreach (var m in @class.GetMemberType(MemberType.Method))
                     {
-                        viewModel.methodMta = m;
+                        var method = m as MethodDocMetadata;
+                        viewModel.methodMta = method;
                         //This may not be a good solution, just display the summary of triple slashes
-                        m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
-                        m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
-                        if (markdownCollectionCache.TryGetValue(m.Id, out content))
+                        method.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(method.XmlDocumentation)["summary"];
+                        method.XmlDocumentation = mdConvertor.ConvertToHTML(method.XmlDocumentation);
+                        if (markdownCollectionCache.TryGetValue(method.Id, out content))
                         {
-                            m.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                            method.MarkdownContent = mdConvertor.ConvertToHTML(content);
                         }
                     }
 
-                    string classPath = Path.Combine(assemblyFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                    string classPath = Path.Combine(assemblyFolder, @class.Id.ToString().ToValidFilePath() + ".html");
                     result = Razor.Parse(classTemplate, viewModel);
                     File.WriteAllText(classPath, result);
                     Console.Error.WriteLine("Successfully saved {0}", classPath);

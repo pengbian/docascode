@@ -226,7 +226,8 @@ namespace DocAsCode.GenDocMetadata
                 // Namespace:
                 foreach (var type in types)
                 {
-                    var classMetadata = DocMetadataConverterFactory.Convert(type) as ClassDocMetadata;
+                    var metadata = DocMetadataConverterFactory.Convert(type);
+                    var classMetadata = metadata as ClassDocMetadata;
                     if (classMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(classMetadata, MemberType.Class);
@@ -235,13 +236,13 @@ namespace DocAsCode.GenDocMetadata
                         continue;
                     }
 
-                    var enumMetadata = DocMetadataConverterFactory.Convert(type) as EnumDocMetadata;
+                    var enumMetadata = metadata as EnumDocMetadata;
                     if (enumMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(enumMetadata, MemberType.Enum);
                         continue;
                     }
-                    var structMetadata = DocMetadataConverterFactory.Convert(type) as StructDocMetadata;
+                    var structMetadata = metadata as StructDocMetadata;
                     if (structMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(structMetadata, MemberType.Struct);
@@ -249,7 +250,7 @@ namespace DocAsCode.GenDocMetadata
                             .ExpandSymbolMembers(type, (CompositeDocMetadata)structMetadata) as StructDocMetadata;
                         continue;
                     }
-                    var interfaceMetadata = DocMetadataConverterFactory.Convert(type) as InterfaceDocMetadata;
+                    var interfaceMetadata = metadata as InterfaceDocMetadata;
                     if (interfaceMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(interfaceMetadata, MemberType.Interface);
@@ -257,7 +258,7 @@ namespace DocAsCode.GenDocMetadata
                             .ExpandSymbolMembers(type, (CompositeDocMetadata)interfaceMetadata) as InterfaceDocMetadata;
                         continue;
                     }
-                    var delegateMetadata = DocMetadataConverterFactory.Convert(type) as DelegateDocMetadata;
+                    var delegateMetadata = metadata as DelegateDocMetadata;
                     if (delegateMetadata != null)
                     {
                         namespaceDocMetadata.TryAdd(delegateMetadata, MemberType.Delegate);
