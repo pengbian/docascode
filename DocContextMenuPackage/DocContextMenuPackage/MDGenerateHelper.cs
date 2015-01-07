@@ -28,7 +28,12 @@ namespace Company.DocContextMenuPackage
             string docMetadataPath = Path.GetDirectoryName(_docsFolder.Properties.Item("FullPath").Value.ToString());
             string arguments = string.Format("\"{0}\" /o:\"{1}\" /p:\"{2}\" /t:\"Markdown\"", _dte.Solution.FullName, docMetadataPath, projectName);
 
-            await ProcessUtility.ExecuteWin32ProcessAsync(executorPath, arguments, workingDirectory, 100000);
+            var processingDetail = await ProcessUtility.ExecuteWin32ProcessAsync(executorPath, arguments, workingDirectory, 100000);
+
+            if (processingDetail.ExitCode != 0)
+            {
+                throw new System.ApplicationException(string.Format("Error executing {0} {1} : {2}", executorPath, arguments, processingDetail.StandardOutput + processingDetail.StandardError));
+            }
 
             string projectDocfolderPath = Path.GetDirectoryName(_projectDocFolder.Properties.Item("FullPath").Value.ToString());
             foreach (string file in Directory.GetFiles(projectDocfolderPath))
@@ -37,9 +42,9 @@ namespace Company.DocContextMenuPackage
             }
 
             int itemCount = _projectDocFolder.ProjectItems.Count;
-            for (int i=itemCount; i>=1; i--)
+            for (int i = itemCount; i >= 1; i--)
             {
-               _projectDocFolder.ProjectItems.Item(i).Remove();
+                _projectDocFolder.ProjectItems.Item(i).Remove();
             }
 
             string tempMDPath = docMetadataPath + "\\mdtoc\\" + _project.Properties.Item("AssemblyName").Value.ToString();

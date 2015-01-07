@@ -28,42 +28,57 @@ namespace DocAsCode.GenDocMetadata
     {
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
 
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            string slnPath = null;
+            string slnOrProjectPath = null;
             string outputDirectory = null;
             string delimitedProjectFilenames = null;
             OutputType outputType = OutputType.Both;
 
-            var options = new Option[]
-                {
-                    new Option(null, s => slnPath = s, helpName: "solutionPath", required: true, helpText: @"The path of the solution whose metadata is to be generated"),
-                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
-                    new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
-                    new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "Specifiy if the docmta or the markdown file will be generated, by default both the docmta and the markdown file will be generated"),
-                };
-
-            if (!ConsoleParameterParser.ParseParameters(options, args))
-            {
-                return;
-            }
-
-            if (string.IsNullOrEmpty(outputDirectory))
-            {
-                // use the sln name as the default output directory
-                outputDirectory = Path.GetFileNameWithoutExtension(slnPath);
-            }
-
-            if (Directory.Exists(outputDirectory))
-            {
-                Console.Error.WriteLine("Warning: {0} directory already exists.", outputDirectory);
-            }
-
-            Directory.CreateDirectory(outputDirectory);
             try
             {
-                var solution = MSBuildWorkspace.Create().OpenSolutionAsync(slnPath).Result;
-                var projects = solution.Projects;
+                var options = new Option[]
+                    {
+                    new Option(null, s => slnOrProjectPath = s, helpName: "solutionPath/projectPath", required: true, helpText: @"The path of the solution or the project whose metadata is to be generated"),
+                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
+                    new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
+                    new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "could be Both, Metadata or Markdown; specifiy if the docmta or the markdown file will be generated, by default is Both as both the docmta and the markdown file will be generated"),
+                    };
+
+                if (!ConsoleParameterParser.ParseParameters(options, args))
+                {
+                    return 1;
+                }
+
+                if (string.IsNullOrEmpty(outputDirectory))
+                {
+                    // use the sln/project name as the default output directory
+                    outputDirectory = Path.GetFileNameWithoutExtension(slnOrProjectPath);
+                }
+
+                if (Directory.Exists(outputDirectory))
+                {
+                    Console.Error.WriteLine("Warning: {0} directory already exists.", outputDirectory);
+                }
+
+                Directory.CreateDirectory(outputDirectory);
+                List<Project> projects = new List<Project>();
+                var fileExtension = Path.GetExtension(slnOrProjectPath);
+                if (fileExtension == ".sln")
+                {
+                    var solution = MSBuildWorkspace.Create().OpenSolutionAsync(slnOrProjectPath).Result;
+                    projects = solution.Projects.ToList();
+                }
+                else if (fileExtension == ".csproj")
+                {
+                    var project = MSBuildWorkspace.Create().OpenProjectAsync(slnOrProjectPath).Result;
+                    projects.Add(project);
+                }
+                else
+                {
+                    throw new NotSupportedException(string.Format("Project type {0} is currently not supported", fileExtension));
+                }
+
                 string[] specifiedProjectFilenames = delimitedProjectFilenames == null ? null : (string[])_delimitedArrayConverter.ConvertFrom(delimitedProjectFilenames);
 
                 foreach (var project in projects)
@@ -88,10 +103,12 @@ namespace DocAsCode.GenDocMetadata
                 }
 
                 Console.WriteLine("Metadata files successfully generated under {0}", outputDirectory);
+                return 0;
             }
             catch (Exception e)
             {
-                Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnPath, e);
+                Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnOrProjectPath, e);
+                return 1;
             }
         }
 
