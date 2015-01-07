@@ -5,19 +5,13 @@
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
   </PropertyGroup>
-  <ItemGroup>
-    <DocMta Include="$(OutputPath)\**\*.docmta" />
-    <OutputHomepage Include="$(OutputPath)\*.html" />
-  </ItemGroup>
   <Target Name="Build">
     <Message Text ="%(DocMta.FullPath)" />
-    <!-- Cleanup existing docmta -->
-    <Delete Files="@(DocMta)" />
+    <CallTarget Targets="CleanupExistingDocmta" />
     <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
     <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
-    <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
-    <Message Text ="Opening %(OutputHomepage.FullPath)" />
-    <Exec Command="&quot;%(OutputHomepage.FullPath)&quot;" />
+    <CallTarget Targets="MergeDoc" />
+    <CallTarget Targets="PreviewWebsite" />
   </Target>
   <Target Name ="Clean">
     <!-- TO BE IMPLEMENTED-->
@@ -27,4 +21,27 @@
     <CallTarget Targets="Build" />
   </Target>
   <Target Name ="GetFrameworkPaths" />
+
+  <Target Name="CleanupExistingDocmta">
+    <ItemGroup>
+      <DocMta Include="$(OutputPath)\**\*.docmta" />
+    </ItemGroup>
+    <!-- Cleanup existing docmta -->
+    <Delete Files="@(DocMta)" />
+  </Target>
+
+  <Target Name="MergeDoc">
+    <ItemGroup>
+      <DocMta Include="$(OutputPath)\**\*.docmta" />
+    </ItemGroup>
+    <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
+  </Target>
+
+  <Target Name="PreviewWebsite">
+    <ItemGroup>
+      <OutputHomepage Include="$(OutputPath)\*.html" />
+    </ItemGroup>
+    <Message Text ="Opening %(OutputHomepage.FullPath)" />
+    <Exec Command="&quot;%(OutputHomepage.FullPath)&quot;" />
+  </Target>
 </Project>
