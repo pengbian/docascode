@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace DocAsCode.EntityModel
 {
@@ -71,12 +72,12 @@ namespace DocAsCode.EntityModel
 
     public class CompositeDocMetadata : MemberDocMetadata
     {
-        private Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
+        protected Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
             new Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>();
 
         protected List<MemberType> AllowedMemberTypes { get; set; }
 
-      //  [JsonIgnore]
+        [JsonIgnore]
         public IEnumerable<DocMetadata> Members
         {
             get
@@ -97,6 +98,7 @@ namespace DocAsCode.EntityModel
             }
         }
 
+        [JsonIgnore]
         public Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> MemberDict
         {
             get { return _members; }
@@ -106,14 +108,41 @@ namespace DocAsCode.EntityModel
             }
         }
 
+        protected IEnumerable<T> GetMetadata<T>(MemberType type) where T : DocMetadata
+        {
+            List<T> list = null;
+            if (_members != null && _members.ContainsKey(type))
+            {
+                foreach (var member in _members[type].Values)
+                {
+                    if (list == null)
+                    {
+                        list = new List<T>();
+                    }
+                    list.Add(member as T);
+                }
+            }
+
+            return list;
+        }
+
+        protected void SetMetadata<T>(MemberType type, IEnumerable<T> value) where T : DocMetadata
+        {
+            if (_members != null && _members.ContainsKey(type))
+            {
+                foreach (var member in value)
+                {
+                    _members[type].TryAdd(member.Id, member);
+                }
+            }
+
+        }
         public bool TryAdd(MemberDocMetadata metadata, MemberType type)
         {
             if (!AllowedMemberTypes.Contains(type))
             {
                 throw new Exception(string.Format("The metadata of type {0} cannot be generated.", type.ToString()));
             }
-
-          //  var dict = _members.GetOrAdd(type, new ConcurrentDictionary<Identity, DocMetadata>());
 
             return _members[type].TryAdd(metadata.Id, metadata);
         }
@@ -171,8 +200,66 @@ namespace DocAsCode.EntityModel
     /// </summary>
     public class NamespaceDocMetadata : CompositeDocMetadata
     {
-        private ConcurrentDictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
-            new ConcurrentDictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>();
+
+        public IEnumerable<ClassDocMetadata> Classes
+        {
+            get
+            {
+                return GetMetadata<ClassDocMetadata>(MemberType.Class);
+            }
+            set
+            {
+                SetMetadata<ClassDocMetadata>(MemberType.Class, value);
+            }
+        }
+
+        public IEnumerable<InterfaceDocMetadata> Interfaces
+        {
+            get
+            {
+                return GetMetadata<InterfaceDocMetadata>(MemberType.Interface);
+            }
+            set
+            {
+                SetMetadata<InterfaceDocMetadata>(MemberType.Interface, value);
+            }
+        }
+
+        public IEnumerable<StructDocMetadata> Structs
+        {
+            get
+            {
+                return GetMetadata<StructDocMetadata>(MemberType.Struct);
+            }
+            set
+            {
+                SetMetadata<StructDocMetadata>(MemberType.Struct, value);
+            }
+        }
+
+        public IEnumerable<DelegateDocMetadata> Delegates
+        {
+            get
+            {
+                return GetMetadata<DelegateDocMetadata>(MemberType.Delegate);
+            }
+            set
+            {
+                SetMetadata<DelegateDocMetadata>(MemberType.Delegate, value);
+            }
+        }
+
+        public IEnumerable<EnumDocMetadata> Enums
+        {
+            get
+            {
+                return GetMetadata<EnumDocMetadata>(MemberType.Enum);
+            }
+            set
+            {
+                SetMetadata<EnumDocMetadata>(MemberType.Enum, value);
+            }
+        }
 
         public NamespaceDocMetadata()
         {
@@ -218,6 +305,66 @@ namespace DocAsCode.EntityModel
     public class ClassDocMetadata : CompositeDocMetadata
     {
         public Stack<Identity> InheritanceHierarchy { get; set; }
+
+        public IEnumerable<MethodDocMetadata> Methods
+        {
+            get
+            {
+                return GetMetadata<MethodDocMetadata>(MemberType.Method);
+            }
+            set
+            {
+                SetMetadata<MethodDocMetadata>(MemberType.Method, value);
+            }
+        }
+
+        public IEnumerable<FieldDocMetadata> Fields
+        {
+            get
+            {
+                return GetMetadata<FieldDocMetadata>(MemberType.Field);
+            }
+            set
+            {
+                SetMetadata<FieldDocMetadata>(MemberType.Field, value);
+            }
+        }
+
+        public IEnumerable<PropertyDocMetadata> Properties
+        {
+            get
+            {
+                return GetMetadata<PropertyDocMetadata>(MemberType.Property);
+            }
+            set
+            {
+                SetMetadata<PropertyDocMetadata>(MemberType.Property, value);
+            }
+        }
+
+        public IEnumerable<EventDocMetadataDefinition> Events
+        {
+            get
+            {
+                return GetMetadata<EventDocMetadataDefinition>(MemberType.Event);
+            }
+            set
+            {
+                SetMetadata<EventDocMetadataDefinition>(MemberType.Event, value);
+            }
+        }
+
+        public IEnumerable<ConstructorDocMetadata> Constructors
+        {
+            get
+            {
+                return GetMetadata<ConstructorDocMetadata>(MemberType.Constructor);
+            }
+            set
+            {
+                SetMetadata<ConstructorDocMetadata>(MemberType.Constructor, value);
+            }
+        }
 
         public ClassDocMetadata()
         {
@@ -329,6 +476,41 @@ namespace DocAsCode.EntityModel
 
     public class InterfaceDocMetadata : CompositeDocMetadata
     {
+        public IEnumerable<MethodDocMetadata> Methods
+        {
+            get
+            {
+                return GetMetadata<MethodDocMetadata>(MemberType.Method);
+            }
+            set
+            {
+                SetMetadata<MethodDocMetadata>(MemberType.Method, value);
+            }
+        }
+
+        public IEnumerable<PropertyDocMetadata> Properties
+        {
+            get
+            {
+                return GetMetadata<PropertyDocMetadata>(MemberType.Property);
+            }
+            set
+            {
+                SetMetadata<PropertyDocMetadata>(MemberType.Property, value);
+            }
+        }
+
+        public IEnumerable<EventDocMetadataDefinition> Events
+        {
+            get
+            {
+                return GetMetadata<EventDocMetadataDefinition>(MemberType.Event);
+            }
+            set
+            {
+                SetMetadata<EventDocMetadataDefinition>(MemberType.Event, value);
+            }
+        }
         public InterfaceDocMetadata()
         {
             AllowedMemberTypes = new List<MemberType>
@@ -363,6 +545,66 @@ namespace DocAsCode.EntityModel
 
     public class StructDocMetadata : CompositeDocMetadata
     {
+        public IEnumerable<MethodDocMetadata> Methods
+        {
+            get
+            {
+                return GetMetadata<MethodDocMetadata>(MemberType.Method);
+            }
+            set
+            {
+                SetMetadata<MethodDocMetadata>(MemberType.Method, value);
+            }
+        }
+
+        public IEnumerable<FieldDocMetadata> Fields
+        {
+            get
+            {
+                return GetMetadata<FieldDocMetadata>(MemberType.Field);
+            }
+            set
+            {
+                SetMetadata<FieldDocMetadata>(MemberType.Field, value);
+            }
+        }
+
+        public IEnumerable<PropertyDocMetadata> Properties
+        {
+            get
+            {
+                return GetMetadata<PropertyDocMetadata>(MemberType.Property);
+            }
+            set
+            {
+                SetMetadata<PropertyDocMetadata>(MemberType.Property, value);
+            }
+        }
+
+        public IEnumerable<EventDocMetadataDefinition> Events
+        {
+            get
+            {
+                return GetMetadata<EventDocMetadataDefinition>(MemberType.Event);
+            }
+            set
+            {
+                SetMetadata<EventDocMetadataDefinition>(MemberType.Event, value);
+            }
+        }
+
+        public IEnumerable<ConstructorDocMetadata> Constructors
+        {
+            get
+            {
+                return GetMetadata<ConstructorDocMetadata>(MemberType.Constructor);
+            }
+            set
+            {
+                SetMetadata<ConstructorDocMetadata>(MemberType.Constructor, value);
+            }
+        }
+
         public StructDocMetadata()
         {
             AllowedMemberTypes = new List<MemberType>

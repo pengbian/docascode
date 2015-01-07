@@ -18,7 +18,7 @@ namespace DocAsCode.MergeDoc
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
         static int Main(string[] args)
         {
-            string mtaFile = @"TestData2\DocProject.docmta";
+            string mtaFile = @"TestData2\MergeDoc.docmta";
             string delimitedMdFiles = @"TestData\T_GenDocMetadata.AssemblyDocMetadata.md";
             string outputDirectory = "output";
             string templateDirectory = "Templates";
@@ -61,15 +61,14 @@ namespace DocAsCode.MergeDoc
                 {
                     string assemblyFile = ns.Id.ToString().ToValidFilePath() + ".html";
                     idPathRelativeMapping.Add(ns.Id, assemblyFile);
-                    foreach (var c in ns.GetMemberType(MemberType.Class))
+                    foreach (var c in ns.Classes)
                     {
-                        var @class = c as ClassDocMetadata;
-                        string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), @class.Id.ToString().ToValidFilePath() + ".html");
-                        foreach (var m in @class.GetMemberType(MemberType.Method))
+                        string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
+                        foreach (var m in c.GetMemberType(MemberType.Method))
                         {
                             idPathRelativeMapping.Add(m.Id, classPath);
                         }
-                        idPathRelativeMapping.Add(@class.Id, classPath);
+                        idPathRelativeMapping.Add(c.Id, classPath);
                     }
                 }
 
@@ -97,8 +96,9 @@ namespace DocAsCode.MergeDoc
                     string result;
 
                     Directory.CreateDirectory(assemblyFolder);
-                    foreach (var c in ns.Classes)
+                    foreach (var type in ns.GetMemberType(MemberType.Class))
                     {
+                        var c = type as ClassDocMetadata;
                         viewModel.classMta = c;
                         //This may not be a good solution, just display the summary of triple slashes
                         c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
@@ -107,8 +107,9 @@ namespace DocAsCode.MergeDoc
                         {
                             c.MarkdownContent = mdConvertor.ConvertToHTML(content);
                         }
-                        foreach (var m in c.Methods)
+                        foreach (var method in c.GetMemberType(MemberType.Method))
                         {
+                            var m = method as MethodDocMetadata;
                             viewModel.methodMta = m;
                             //This may not be a good solution, just display the summary of triple slashes
                             m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
@@ -234,7 +235,7 @@ namespace DocAsCode.MergeDoc
 
             public int ContentEndIndex { get; set; }
         }
-        
+
         private static bool TryParseCustomizedMarkdown(string markdownFilePath, out MarkdownFile markdown)
         {
             string markdownFile = File.ReadAllText(markdownFilePath);
@@ -309,11 +310,11 @@ namespace DocAsCode.MergeDoc
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {
             Dictionary<string, string> result = new Dictionary<string, string>();
-            foreach(string type in tripleSlashTypes)
+            foreach (string type in tripleSlashTypes)
             {
-                string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>",type);
+                string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>", type);
                 Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Compiled | RegexOptions.Multiline);
-                result.Add(type,typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
+                result.Add(type, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
             }
             return result;
         }
@@ -348,7 +349,7 @@ namespace DocAsCode.MergeDoc
         {
             string filePath;
             string id = match.Groups["ATcontent"].Value;
-            if (idPathRelativeMapping.TryGetValue(id,out filePath))
+            if (idPathRelativeMapping.TryGetValue(id, out filePath))
             {
                 return string.Format("[{0}]({1})", match.Value, filePath); ;
             }
@@ -366,7 +367,7 @@ namespace DocAsCode.MergeDoc
 
         public ViewModel()
         {
-            
+
         }
     }
 
