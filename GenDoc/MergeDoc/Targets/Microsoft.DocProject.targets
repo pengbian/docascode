@@ -7,12 +7,15 @@
   </PropertyGroup>
   <ItemGroup>
     <DocMta Include="$(MSBuildProjectDirectory)\**\*.docmta" />
+    <OutputHomepage Include="$(OutputPath)\*.html" />
   </ItemGroup>
   <Target Name="Build">
     <Message Text ="%(DocMta.FullPath)" />
     <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
     <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
     <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
+    <Message Text ="Opening %(OutputHomepage.FullPath)" />
+    <Exec Command="&quot;%(OutputHomepage.FullPath)&quot;" />
   </Target>
   <Target Name ="Clean">
     <!-- TO BE IMPLEMENTED-->
