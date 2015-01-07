@@ -140,15 +140,6 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
-    <Content Include="Templates\Projects\DocProject\DocumentProject1.docmta">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\class1.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\namespace1.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
