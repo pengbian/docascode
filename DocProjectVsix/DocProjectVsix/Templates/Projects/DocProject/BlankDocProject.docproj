@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <OutputType>Html</OutputType>
-    <DocToolExtensionsPath Condition=" '$(DocToolExtensionsPath)' == '' ">C:\Users\t-hax\myCode\codeCopy\GenDoc\MergeDoc\bin\Debug</DocToolExtensionsPath>
+    <DocToolExtensionsPath Condition=" '$(DocToolExtensionsPath)' == '' "></DocToolExtensionsPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

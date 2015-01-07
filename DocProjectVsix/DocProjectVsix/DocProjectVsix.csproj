@@ -129,6 +129,7 @@
     <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
     <Content Include="..\..\GenDoc\MergeDoc\Templates\css\default.css">
       <Link>Templates\Projects\DocProject\css\default.css</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="..\..\GenDoc\MergeDoc\Templates\script\default.js">
       <Link>Templates\Projects\DocProject\script\default.js</Link>
@@ -139,15 +140,6 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
-    <Content Include="Templates\Projects\DocProject\DocumentProject1.docmta">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\class1.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\namespace1.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
