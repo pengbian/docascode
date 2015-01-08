@@ -59,8 +59,8 @@ namespace DocAsCode.MergeDoc
                 // Step.1. create the id-path mapping
                 foreach (var ns in assemblyMta.Namespaces)
                 {
-                    string assemblyFile = ns.Id.ToString().ToValidFilePath() + ".html";
-                    idPathRelativeMapping.Add(ns.Id, assemblyFile);
+                    string nsFile = ns.Id.ToString().ToValidFilePath() + ".html";
+                    idPathRelativeMapping.Add(ns.Id, nsFile);
                     foreach (var c in ns.Classes)
                     {
                         string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
@@ -74,11 +74,13 @@ namespace DocAsCode.MergeDoc
 
                 // Step.2. write contents to those files
                 Directory.CreateDirectory(outputDirectory);
-                string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class.html"));
-                string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace.html"));
+                string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class-ios.html"));
+                string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
+                string asmTemplate = File.ReadAllText(Path.Combine(templateDirectory, "index.html"));
                 //Add baseUrl to the template,this is for @ link
                 viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
                 viewModel.assemblyMta = assemblyMta;
+                string assemblyFile = Path.Combine(outputDirectory, "index.html");
 
                 foreach (var ns in assemblyMta.Namespaces)
                 {
@@ -88,20 +90,25 @@ namespace DocAsCode.MergeDoc
                     {
                         ns.MarkdownContent = mdConvertor.ConvertToHTML(content);
                     }
-                    string assemblyFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
-                    string assemblyFile = assemblyFolder + ".html";
+                    string namespaceFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
+                    string namespaceFile = namespaceFolder + ".html";
                     //This may not be a good solution, just display the summary of triple slashes
-                    ns.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"];
+                    ns.XmlDocumentation = TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"].Trim();
                     ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
                     string result;
 
+<<<<<<< HEAD
                     Directory.CreateDirectory(assemblyFolder);
                     foreach (var type in ns.GetMemberType(MemberType.Class))
+=======
+                    Directory.CreateDirectory(namespaceFolder);
+                    foreach (var c in ns.Classes)
+>>>>>>> cee4ea0ba9631c5c2752205ced478837c7f08de5
                     {
                         var c = type as ClassDocMetadata;
                         viewModel.classMta = c;
                         //This may not be a good solution, just display the summary of triple slashes
-                        c.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(c.XmlDocumentation)["summary"];
+                        c.XmlDocumentation = TripleSlashPraser.Parse(c.XmlDocumentation)["summary"].Trim();
                         c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
                         if (markdownCollectionCache.TryGetValue(c.Id, out content))
                         {
@@ -112,23 +119,34 @@ namespace DocAsCode.MergeDoc
                             var m = method as MethodDocMetadata;
                             viewModel.methodMta = m;
                             //This may not be a good solution, just display the summary of triple slashes
-                            m.XmlDocumentation = "###summary###" + TripleSlashPraser.Parse(m.XmlDocumentation)["summary"];
+                            m.XmlDocumentation = TripleSlashPraser.Parse(m.XmlDocumentation)["summary"].Trim();
                             m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
+                            
                             if (markdownCollectionCache.TryGetValue(m.Id, out content))
                             {
                                 m.MarkdownContent = mdConvertor.ConvertToHTML(content);
                             }
+
+                            m.Syntax.Content = mdConvertor.ConvertToHTML(string.Format(@"
+```
+{0}
+```
+", m.Syntax.Content));
                         }
 
-                        string classPath = Path.Combine(assemblyFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                        string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
                         result = Razor.Parse(classTemplate, viewModel);
                         File.WriteAllText(classPath, result);
                         Console.Error.WriteLine("Successfully saved {0}", classPath);
                     }
                     result = Razor.Parse(nsTemplate, viewModel);
-                    File.WriteAllText(assemblyFile, result);
-                    Console.Error.WriteLine("Successfully saved {0}", assemblyFile);
+                    File.WriteAllText(namespaceFile, result);
+                    Console.Error.WriteLine("Successfully saved {0}", namespaceFile);
                 }
+
+                var resultAsm = Razor.Parse(asmTemplate, viewModel);
+                File.WriteAllText(assemblyFile, resultAsm);
+                Console.Error.WriteLine("Successfully saved {0}", assemblyFile);
 
                 //Copy the css and js
                 CopyDir(Path.Combine(templateDirectory, cssDirecotry), Path.Combine(outputDirectory, cssDirecotry), true, true);
@@ -269,7 +287,7 @@ namespace DocAsCode.MergeDoc
                     if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
                     {
                         lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex, lastSection.ContentEndIndex - lastSection.ContentStartIndex + 1);
-                        sections.Add(lastCommentId, lastSection);
+                        sections.Add(lastSection.Id, lastSection);
                     }
                 }
 
@@ -307,14 +325,25 @@ namespace DocAsCode.MergeDoc
                                                         "author",
                                                         "file",
                                                         "copyright"  };
+        static private Regex SeeCrefRegex = new Regex(@"<see cref=""(?<ref>[\s\S]*?)""/>", RegexOptions.Compiled);
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {
             Dictionary<string, string> result = new Dictionary<string, string>();
+<<<<<<< HEAD
             foreach (string type in tripleSlashTypes)
             {
                 string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>", type);
                 Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Compiled | RegexOptions.Multiline);
                 result.Add(type, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
+=======
+            // Replace <see cref=""/>
+
+            foreach(string type in tripleSlashTypes)
+            {
+                string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>",type);
+                Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Multiline);
+                result.Add(type,typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
+>>>>>>> cee4ea0ba9631c5c2752205ced478837c7f08de5
             }
             return result;
         }
@@ -351,7 +380,7 @@ namespace DocAsCode.MergeDoc
             string id = match.Groups["ATcontent"].Value;
             if (idPathRelativeMapping.TryGetValue(id, out filePath))
             {
-                return string.Format("[{0}]({1})", match.Value, filePath); ;
+                return string.Format("[{0}]({1})", match.Value.Trim().Substring(3), filePath); ;
             }
             return match.Value;
         }

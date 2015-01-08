@@ -1,0 +1,320 @@
+{
+  "Namespaces": [
+    {
+      "Class": [
+        {
+          "MemberDict": {
+            "Field": {
+              "F:DocAsCode.MergeDoc.MarkdownFile._converter": {
+                "Syntax": {
+                  "Content": "_converter",
+                  "XmlDocumentation": ""
+                },
+                "Id": "F:DocAsCode.MergeDoc.MarkdownFile._converter",
+                "XmlDocumentation": ""
+              }
+            },
+            "Property": {
+              "P:DocAsCode.MergeDoc.MarkdownFile.Sections": {
+                "Syntax": {
+                  "Content": "public IReadOnlyList<MarkdownSection> Sections",
+                  "XmlDocumentation": ""
+                },
+                "Id": "P:DocAsCode.MergeDoc.MarkdownFile.Sections",
+                "XmlDocumentation": ""
+              },
+              "P:DocAsCode.MergeDoc.MarkdownFile.FilePath": {
+                "Syntax": {
+                  "Content": "public string FilePath",
+                  "XmlDocumentation": ""
+                },
+                "Id": "P:DocAsCode.MergeDoc.MarkdownFile.FilePath",
+                "XmlDocumentation": ""
+              }
+            },
+            "Event": {},
+            "Constructor": {},
+            "Method": {
+              "M:DocAsCode.MergeDoc.MarkdownFile.TryParseCustomizedMarkdown(System.String,DocAsCode.MergeDoc.MarkdownFile@)": {
+                "Syntax": {
+                  "Content": "private static bool TryParseCustomizedMarkdown(string markdownFilePath, out MarkdownFile markdown)",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.MarkdownFile.TryParseCustomizedMarkdown(System.String,DocAsCode.MergeDoc.MarkdownFile@)",
+                "XmlDocumentation": ""
+              },
+              "M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)": {
+                "Syntax": {
+                  "Content": "public static MarkdownFile Load(string filePath)",
+                  "XmlDocumentation": "<member name=\"M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)\">\r\n    <summary>\r\n    TODO: Load from md file\r\n    ---\r\n    method: A()\r\n    ---\r\n    </summary>\r\n    <param name=\"filePath\"></param>\r\n    <returns></returns>\r\n</member>\r\n"
+                },
+                "Id": "M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)",
+                "XmlDocumentation": "<member name=\"M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)\">\r\n    <summary>\r\n    TODO: Load from md file\r\n    ---\r\n    method: A()\r\n    ---\r\n    </summary>\r\n    <param name=\"filePath\"></param>\r\n    <returns></returns>\r\n</member>\r\n"
+              }
+            }
+          },
+          "Syntax": {
+            "Content": "public class MarkdownFile",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:DocAsCode.MergeDoc.MarkdownFile",
+          "XmlDocumentation": ""
+        },
+        {
+          "MemberDict": {
+            "Field": {},
+            "Property": {},
+            "Event": {},
+            "Constructor": {
+              "M:DocAsCode.MergeDoc.MarkdownCollectionCache.#ctor(System.Collections.Generic.IEnumerable{System.String})": {
+                "Syntax": {
+                  "Content": "public MarkdownCollectionCache(IEnumerable<string> mdFiles): base (mdFiles.Where(s => s.EndsWith(\".md\", StringComparison.OrdinalIgnoreCase)).SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.MarkdownCollectionCache.#ctor(System.Collections.Generic.IEnumerable{System.String})",
+                "XmlDocumentation": ""
+              }
+            },
+            "Method": {}
+          },
+          "Syntax": {
+            "Content": "public class MarkdownCollectionCache",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:DocAsCode.MergeDoc.MarkdownCollectionCache",
+          "XmlDocumentation": ""
+        },
+        {
+          "MemberDict": {
+            "Field": {
+              "F:DocAsCode.MergeDoc.Program._delimitedArrayConverter": {
+                "Syntax": {
+                  "Content": "_delimitedArrayConverter",
+                  "XmlDocumentation": ""
+                },
+                "Id": "F:DocAsCode.MergeDoc.Program._delimitedArrayConverter",
+                "XmlDocumentation": ""
+              }
+            },
+            "Property": {},
+            "Event": {},
+            "Constructor": {},
+            "Method": {
+              "M:DocAsCode.MergeDoc.Program.CopyDir(System.String,System.String,System.Boolean,System.Boolean)": {
+                "Syntax": {
+                  "Content": "static void CopyDir(string sourceDir, string targetDir, bool overwrite, bool copySubdir)",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.Program.CopyDir(System.String,System.String,System.Boolean,System.Boolean)",
+                "XmlDocumentation": ""
+              },
+              "M:DocAsCode.MergeDoc.Program.GetRealName(System.String)": {
+                "Syntax": {
+                  "Content": "static string GetRealName(string id)",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.Program.GetRealName(System.String)",
+                "XmlDocumentation": ""
+              },
+              "M:DocAsCode.MergeDoc.Program.Main(System.String[])": {
+                "Syntax": {
+                  "Content": "static void Main(string[] args)",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.Program.Main(System.String[])",
+                "XmlDocumentation": ""
+              },
+              "M:DocAsCode.MergeDoc.Program.LoadAssemblyDocMetadataFromFile(System.String)": {
+                "Syntax": {
+                  "Content": "public static AssemblyDocMetadata LoadAssemblyDocMetadataFromFile(string filePath)",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.Program.LoadAssemblyDocMetadataFromFile(System.String)",
+                "XmlDocumentation": ""
+              },
+              "M:DocAsCode.MergeDoc.Program.GetHtmlOutputFile(DocAsCode.EntityModel.Identity)": {
+                "Syntax": {
+                  "Content": "static string GetHtmlOutputFile(Identity id)",
+                  "XmlDocumentation": ""
+                },
+                "Id": "M:DocAsCode.MergeDoc.Program.GetHtmlOutputFile(DocAsCode.EntityModel.Identity)",
+                "XmlDocumentation": ""
+              }
+            }
+          },
+          "Syntax": {
+            "Content": "class Program",
+            "XmlDocumentation": ""
+          },
+          "Id": "T:DocAsCode.MergeDoc.Program",
+          "XmlDocumentation": ""
+        }
+      ],
+      "Interface": [],
+      "Struct": [],
+      "Delegate": [],
+      "Enum": [],
+      "MemberDict": {
+        "Class": {
+          "T:DocAsCode.MergeDoc.MarkdownFile": {
+            "MemberDict": {
+              "Field": {
+                "F:DocAsCode.MergeDoc.MarkdownFile._converter": {
+                  "Syntax": {
+                    "Content": "_converter",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "F:DocAsCode.MergeDoc.MarkdownFile._converter",
+                  "XmlDocumentation": ""
+                }
+              },
+              "Property": {
+                "P:DocAsCode.MergeDoc.MarkdownFile.Sections": {
+                  "Syntax": {
+                    "Content": "public IReadOnlyList<MarkdownSection> Sections",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "P:DocAsCode.MergeDoc.MarkdownFile.Sections",
+                  "XmlDocumentation": ""
+                },
+                "P:DocAsCode.MergeDoc.MarkdownFile.FilePath": {
+                  "Syntax": {
+                    "Content": "public string FilePath",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "P:DocAsCode.MergeDoc.MarkdownFile.FilePath",
+                  "XmlDocumentation": ""
+                }
+              },
+              "Event": {},
+              "Constructor": {},
+              "Method": {
+                "M:DocAsCode.MergeDoc.MarkdownFile.TryParseCustomizedMarkdown(System.String,DocAsCode.MergeDoc.MarkdownFile@)": {
+                  "Syntax": {
+                    "Content": "private static bool TryParseCustomizedMarkdown(string markdownFilePath, out MarkdownFile markdown)",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.MarkdownFile.TryParseCustomizedMarkdown(System.String,DocAsCode.MergeDoc.MarkdownFile@)",
+                  "XmlDocumentation": ""
+                },
+                "M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)": {
+                  "Syntax": {
+                    "Content": "public static MarkdownFile Load(string filePath)",
+                    "XmlDocumentation": "<member name=\"M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)\">\r\n    <summary>\r\n    TODO: Load from md file\r\n    ---\r\n    method: A()\r\n    ---\r\n    </summary>\r\n    <param name=\"filePath\"></param>\r\n    <returns></returns>\r\n</member>\r\n"
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)",
+                  "XmlDocumentation": "<member name=\"M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)\">\r\n    <summary>\r\n    TODO: Load from md file\r\n    ---\r\n    method: A()\r\n    ---\r\n    </summary>\r\n    <param name=\"filePath\"></param>\r\n    <returns></returns>\r\n</member>\r\n"
+                }
+              }
+            },
+            "Syntax": {
+              "Content": "public class MarkdownFile",
+              "XmlDocumentation": ""
+            },
+            "Id": "T:DocAsCode.MergeDoc.MarkdownFile",
+            "XmlDocumentation": ""
+          },
+          "T:DocAsCode.MergeDoc.MarkdownCollectionCache": {
+            "MemberDict": {
+              "Field": {},
+              "Property": {},
+              "Event": {},
+              "Constructor": {
+                "M:DocAsCode.MergeDoc.MarkdownCollectionCache.#ctor(System.Collections.Generic.IEnumerable{System.String})": {
+                  "Syntax": {
+                    "Content": "public MarkdownCollectionCache(IEnumerable<string> mdFiles): base (mdFiles.Where(s => s.EndsWith(\".md\", StringComparison.OrdinalIgnoreCase)).SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.MarkdownCollectionCache.#ctor(System.Collections.Generic.IEnumerable{System.String})",
+                  "XmlDocumentation": ""
+                }
+              },
+              "Method": {}
+            },
+            "Syntax": {
+              "Content": "public class MarkdownCollectionCache",
+              "XmlDocumentation": ""
+            },
+            "Id": "T:DocAsCode.MergeDoc.MarkdownCollectionCache",
+            "XmlDocumentation": ""
+          },
+          "T:DocAsCode.MergeDoc.Program": {
+            "MemberDict": {
+              "Field": {
+                "F:DocAsCode.MergeDoc.Program._delimitedArrayConverter": {
+                  "Syntax": {
+                    "Content": "_delimitedArrayConverter",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "F:DocAsCode.MergeDoc.Program._delimitedArrayConverter",
+                  "XmlDocumentation": ""
+                }
+              },
+              "Property": {},
+              "Event": {},
+              "Constructor": {},
+              "Method": {
+                "M:DocAsCode.MergeDoc.Program.CopyDir(System.String,System.String,System.Boolean,System.Boolean)": {
+                  "Syntax": {
+                    "Content": "static void CopyDir(string sourceDir, string targetDir, bool overwrite, bool copySubdir)",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.Program.CopyDir(System.String,System.String,System.Boolean,System.Boolean)",
+                  "XmlDocumentation": ""
+                },
+                "M:DocAsCode.MergeDoc.Program.GetRealName(System.String)": {
+                  "Syntax": {
+                    "Content": "static string GetRealName(string id)",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.Program.GetRealName(System.String)",
+                  "XmlDocumentation": ""
+                },
+                "M:DocAsCode.MergeDoc.Program.Main(System.String[])": {
+                  "Syntax": {
+                    "Content": "static void Main(string[] args)",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.Program.Main(System.String[])",
+                  "XmlDocumentation": ""
+                },
+                "M:DocAsCode.MergeDoc.Program.LoadAssemblyDocMetadataFromFile(System.String)": {
+                  "Syntax": {
+                    "Content": "public static AssemblyDocMetadata LoadAssemblyDocMetadataFromFile(string filePath)",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.Program.LoadAssemblyDocMetadataFromFile(System.String)",
+                  "XmlDocumentation": ""
+                },
+                "M:DocAsCode.MergeDoc.Program.GetHtmlOutputFile(DocAsCode.EntityModel.Identity)": {
+                  "Syntax": {
+                    "Content": "static string GetHtmlOutputFile(Identity id)",
+                    "XmlDocumentation": ""
+                  },
+                  "Id": "M:DocAsCode.MergeDoc.Program.GetHtmlOutputFile(DocAsCode.EntityModel.Identity)",
+                  "XmlDocumentation": ""
+                }
+              }
+            },
+            "Syntax": {
+              "Content": "class Program",
+              "XmlDocumentation": ""
+            },
+            "Id": "T:DocAsCode.MergeDoc.Program",
+            "XmlDocumentation": ""
+          }
+        },
+        "Interface": {},
+        "Struct": {},
+        "Delegate": {},
+        "Enum": {}
+      },
+      "Id": "N:DocAsCode.MergeDoc",
+      "XmlDocumentation": ""
+    }
+  ],
+  "Id": "MergeDoc",
+  "MscorlibVersion": {
+    "Major": 4
+  }
+}

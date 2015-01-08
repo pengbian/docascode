@@ -39,7 +39,7 @@ namespace DocAsCode.Utility
                     RedirectStandardOutput = true,
                     FileName = executorPath,
                     Arguments = arguments,
-                    CreateNoWindow = true,
+                    CreateNoWindow = false,
                     WorkingDirectory = workingDirectory
                 }
             };

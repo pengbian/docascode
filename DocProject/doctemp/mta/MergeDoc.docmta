@@ -1,0 +1,1793 @@
+{
+  "$type": "DocAsCode.EntityModel.AssemblyDocMetadata, EntityModel",
+  "Namespaces": {
+    "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[DocAsCode.EntityModel.NamespaceDocMetadata, EntityModel]], mscorlib",
+    "$values": [
+      {
+        "$type": "DocAsCode.EntityModel.NamespaceDocMetadata, EntityModel",
+        "MemberDict": {
+          "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+          "Class": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+            "T:MarkdownSharp.MarkdownOptions": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "P:MarkdownSharp.MarkdownOptions.EncodeProblemUrlCharacters": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool EncodeProblemUrlCharacters",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.EncodeProblemUrlCharacters\">\r\n    <summary>\r\n    when true, problematic URL characters like [, ], (, and so forth will be encoded \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.MarkdownOptions.EncodeProblemUrlCharacters",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.EncodeProblemUrlCharacters\">\r\n    <summary>\r\n    when true, problematic URL characters like [, ], (, and so forth will be encoded \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.MarkdownOptions.AutoHyperlink": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool AutoHyperlink",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.AutoHyperlink\">\r\n    <summary>\r\n    when true, (most) bare plain URLs are auto-hyperlinked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.MarkdownOptions.AutoHyperlink",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.AutoHyperlink\">\r\n    <summary>\r\n    when true, (most) bare plain URLs are auto-hyperlinked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.MarkdownOptions.EmptyElementSuffix": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public string EmptyElementSuffix",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.EmptyElementSuffix\">\r\n    <summary>\r\n    use \">\" for HTML output, or \" />\" for XHTML output\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.MarkdownOptions.EmptyElementSuffix",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.EmptyElementSuffix\">\r\n    <summary>\r\n    use \">\" for HTML output, or \" />\" for XHTML output\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.MarkdownOptions.AutoNewlines": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool AutoNewlines",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.AutoNewlines\">\r\n    <summary>\r\n    when true, RETURN becomes a literal newline  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.MarkdownOptions.AutoNewlines",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.AutoNewlines\">\r\n    <summary>\r\n    when true, RETURN becomes a literal newline  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.MarkdownOptions.StrictBoldItalic": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool StrictBoldItalic",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.StrictBoldItalic\">\r\n    <summary>\r\n    when true, bold and italic require non-word characters on either side  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.MarkdownOptions.StrictBoldItalic",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.StrictBoldItalic\">\r\n    <summary>\r\n    when true, bold and italic require non-word characters on either side  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.MarkdownOptions.LinkEmails": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool LinkEmails",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.LinkEmails\">\r\n    <summary>\r\n    when false, email addresses will never be auto-linked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.MarkdownOptions.LinkEmails",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.MarkdownOptions.LinkEmails\">\r\n    <summary>\r\n    when false, email addresses will never be auto-linked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  }
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class MarkdownOptions",
+                "XmlDocumentation": ""
+              },
+              "Id": "T:MarkdownSharp.MarkdownOptions",
+              "XmlDocumentation": ""
+            },
+            "T:MarkdownSharp.Markdown": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "F:MarkdownSharp.Markdown._imagesInline": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_imagesInline",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._imagesInline",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._listTopLevel": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_listTopLevel",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._listTopLevel",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._newlinesLeadingTrailing": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_newlinesLeadingTrailing",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._newlinesLeadingTrailing",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._amps": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_amps",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._amps",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._angles": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_angles",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._angles",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._newlinesMultiple": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_newlinesMultiple",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._newlinesMultiple",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._bold": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_bold",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._bold",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._urls": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_urls",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._urls",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._wholeList": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_wholeList",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._wholeList",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._headerSetext": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_headerSetext",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._headerSetext",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._codeBlock": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_codeBlock",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._codeBlock",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._imagesRef": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_imagesRef",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._imagesRef",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._anchorRef": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_anchorRef",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._anchorRef",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._nestedBracketsPattern": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_nestedBracketsPattern",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._nestedBracketsPattern",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._horizontalRules": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_horizontalRules",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._horizontalRules",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._problemUrlChars": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_problemUrlChars",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._problemUrlChars",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._escapeTable": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_escapeTable",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._escapeTable",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._headerAtx": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_headerAtx",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._headerAtx",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._htmlTokens": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_htmlTokens",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._htmlTokens",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._codeEncoder": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_codeEncoder",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._codeEncoder",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._linkDef": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_linkDef",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._linkDef",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._nestedParensPattern": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_nestedParensPattern",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._nestedParensPattern",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._htmlBlocks": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_htmlBlocks",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._htmlBlocks",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._invertedEscapeTable": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_invertedEscapeTable",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._invertedEscapeTable",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._listNested": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_listNested",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._listNested",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._strictBoldItalic": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_strictBoldItalic",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._strictBoldItalic",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._backslashEscapes": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_backslashEscapes",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._backslashEscapes",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._italic": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_italic",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._italic",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._leadingWhitespace": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_leadingWhitespace",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._leadingWhitespace",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._anchorInline": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_anchorInline",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._anchorInline",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._markerUL": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_markerUL",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._markerUL",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._strictItalic": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_strictItalic",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._strictItalic",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._linkEmails": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_linkEmails",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._linkEmails",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._autolinkBare": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_autolinkBare",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._autolinkBare",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._listLevel": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_listLevel",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._listLevel",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._titles": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_titles",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._titles",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._emptyElementSuffix": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_emptyElementSuffix",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._emptyElementSuffix",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._backslashEscapeTable": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_backslashEscapeTable",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._backslashEscapeTable",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._version": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_version",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._version",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._blockquote": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_blockquote",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._blockquote",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._blocksHtml": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_blocksHtml",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._blocksHtml",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._autoHyperlink": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_autoHyperlink",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._autoHyperlink",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._nestDepth": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_nestDepth",
+                      "XmlDocumentation": "<member name=\"F:MarkdownSharp.Markdown._nestDepth\">\r\n    <summary>\r\n    maximum nested depth of [] and () supported by the transform; implementation detail\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._nestDepth",
+                    "XmlDocumentation": "<member name=\"F:MarkdownSharp.Markdown._nestDepth\">\r\n    <summary>\r\n    maximum nested depth of [] and () supported by the transform; implementation detail\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "F:MarkdownSharp.Markdown._encodeProblemUrlCharacters": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_encodeProblemUrlCharacters",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._encodeProblemUrlCharacters",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._anchorRefShortcut": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_anchorRefShortcut",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._anchorRefShortcut",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._autoNewlines": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_autoNewlines",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._autoNewlines",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._codeSpan": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_codeSpan",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._codeSpan",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._unescapes": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_unescapes",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._unescapes",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._tabWidth": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_tabWidth",
+                      "XmlDocumentation": "<member name=\"F:MarkdownSharp.Markdown._tabWidth\">\r\n    <summary>\r\n    Tabs are automatically converted to spaces as part of the transform  \r\n    this constant determines how \"wide\" those tabs become in spaces  \r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._tabWidth",
+                    "XmlDocumentation": "<member name=\"F:MarkdownSharp.Markdown._tabWidth\">\r\n    <summary>\r\n    Tabs are automatically converted to spaces as part of the transform  \r\n    this constant determines how \"wide\" those tabs become in spaces  \r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "F:MarkdownSharp.Markdown._outDent": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_outDent",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._outDent",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._strictBold": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_strictBold",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._strictBold",
+                    "XmlDocumentation": ""
+                  },
+                  "F:MarkdownSharp.Markdown._markerOL": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_markerOL",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:MarkdownSharp.Markdown._markerOL",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "P:MarkdownSharp.Markdown.StrictBoldItalic": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool StrictBoldItalic",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.StrictBoldItalic\">\r\n    <summary>\r\n    when true, bold and italic require non-word characters on either side  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.StrictBoldItalic",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.StrictBoldItalic\">\r\n    <summary>\r\n    when true, bold and italic require non-word characters on either side  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.Markdown.AutoNewLines": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool AutoNewLines",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.AutoNewLines\">\r\n    <summary>\r\n    when true, RETURN becomes a literal newline  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.AutoNewLines",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.AutoNewLines\">\r\n    <summary>\r\n    when true, RETURN becomes a literal newline  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.Markdown.EncodeProblemUrlCharacters": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool EncodeProblemUrlCharacters",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.EncodeProblemUrlCharacters\">\r\n    <summary>\r\n    when true, problematic URL characters like [, ], (, and so forth will be encoded \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.EncodeProblemUrlCharacters",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.EncodeProblemUrlCharacters\">\r\n    <summary>\r\n    when true, problematic URL characters like [, ], (, and so forth will be encoded \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.Markdown.AutoHyperlink": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool AutoHyperlink",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.AutoHyperlink\">\r\n    <summary>\r\n    when true, (most) bare plain URLs are auto-hyperlinked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.AutoHyperlink",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.AutoHyperlink\">\r\n    <summary>\r\n    when true, (most) bare plain URLs are auto-hyperlinked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.Markdown.LinkEmails": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public bool LinkEmails",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.LinkEmails\">\r\n    <summary>\r\n    when false, email addresses will never be auto-linked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.LinkEmails",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.LinkEmails\">\r\n    <summary>\r\n    when false, email addresses will never be auto-linked  \r\n    WARNING: this is a significant deviation from the markdown spec\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.Markdown.EmptyElementSuffix": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public string EmptyElementSuffix",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.EmptyElementSuffix\">\r\n    <summary>\r\n    use \">\" for HTML output, or \" />\" for XHTML output\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.EmptyElementSuffix",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.EmptyElementSuffix\">\r\n    <summary>\r\n    use \">\" for HTML output, or \" />\" for XHTML output\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "P:MarkdownSharp.Markdown.Version": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public string Version",
+                      "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.Version\">\r\n    <summary>\r\n    current version of MarkdownSharp;  \r\n    see http://code.google.com/p/markdownsharp/ for the latest code or to contribute\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "P:MarkdownSharp.Markdown.Version",
+                    "XmlDocumentation": "<member name=\"P:MarkdownSharp.Markdown.Version\">\r\n    <summary>\r\n    current version of MarkdownSharp;  \r\n    see http://code.google.com/p/markdownsharp/ for the latest code or to contribute\r\n    </summary>\r\n</member>\r\n"
+                  }
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:MarkdownSharp.Markdown.#ctor": {
+                    "$type": "DocAsCode.EntityModel.ConstructorDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "public Markdown(): this (false)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#ctor\">\r\n    <summary>\r\n    Create a new Markdown instance using default options\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.#ctor",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#ctor\">\r\n    <summary>\r\n    Create a new Markdown instance using default options\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.#cctor": {
+                    "$type": "DocAsCode.EntityModel.ConstructorDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "static Markdown()",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#cctor\">\r\n    <summary>\r\n    In the static constuctor we'll initialize what stays the same across all transforms.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.#cctor",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#cctor\">\r\n    <summary>\r\n    In the static constuctor we'll initialize what stays the same across all transforms.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.#ctor(MarkdownSharp.MarkdownOptions)": {
+                    "$type": "DocAsCode.EntityModel.ConstructorDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "public Markdown(MarkdownOptions options)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#ctor(MarkdownSharp.MarkdownOptions)\">\r\n    <summary>\r\n    Create a new Markdown instance and set the options from the MarkdownOptions object.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.#ctor(MarkdownSharp.MarkdownOptions)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#ctor(MarkdownSharp.MarkdownOptions)\">\r\n    <summary>\r\n    Create a new Markdown instance and set the options from the MarkdownOptions object.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.#ctor(System.Boolean)": {
+                    "$type": "DocAsCode.EntityModel.ConstructorDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "public Markdown(bool loadOptionsFromConfigFile)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#ctor(System.Boolean)\">\r\n    <summary>\r\n    Create a new Markdown instance and optionally load options from a configuration\r\n    file. There they should be stored in the appSettings section, available options are:\r\n    \r\n        Markdown.StrictBoldItalic (true/false)\r\n        Markdown.EmptyElementSuffix (\">\" or \" />\" without the quotes)\r\n        Markdown.LinkEmails (true/false)\r\n        Markdown.AutoNewLines (true/false)\r\n        Markdown.AutoHyperlink (true/false)\r\n        Markdown.EncodeProblemUrlCharacters (true/false) \r\n        \r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.#ctor(System.Boolean)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.#ctor(System.Boolean)\">\r\n    <summary>\r\n    Create a new Markdown instance and optionally load options from a configuration\r\n    file. There they should be stored in the appSettings section, available options are:\r\n    \r\n        Markdown.StrictBoldItalic (true/false)\r\n        Markdown.EmptyElementSuffix (\">\" or \" />\" without the quotes)\r\n        Markdown.LinkEmails (true/false)\r\n        Markdown.AutoNewLines (true/false)\r\n        Markdown.AutoHyperlink (true/false)\r\n        Markdown.EncodeProblemUrlCharacters (true/false) \r\n        \r\n    </summary>\r\n</member>\r\n"
+                  }
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:MarkdownSharp.Markdown.Normalize(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string Normalize(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Normalize(System.String)\">\r\n    <summary>\r\n    convert all tabs to _tabWidth spaces; \r\n    standardizes line endings from DOS (CR LF) or Mac (CR) to UNIX (LF); \r\n    makes sure text ends with a couple of newlines; \r\n    removes any blank lines (only spaces) in the text\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.Normalize(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Normalize(System.String)\">\r\n    <summary>\r\n    convert all tabs to _tabWidth spaces; \r\n    standardizes line endings from DOS (CR LF) or Mac (CR) to UNIX (LF); \r\n    makes sure text ends with a couple of newlines; \r\n    removes any blank lines (only spaces) in the text\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.DoHardBreaks(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoHardBreaks(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoHardBreaks(System.String)\">\r\n    <summary>\r\n    Turn markdown line breaks (two space at end of line) into HTML break tags\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoHardBreaks(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoHardBreaks(System.String)\">\r\n    <summary>\r\n    Turn markdown line breaks (two space at end of line) into HTML break tags\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.HtmlEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string HtmlEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.HtmlEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.SetextHeaderEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string SetextHeaderEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.SetextHeaderEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.Transform(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "public string Transform(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Transform(System.String)\">\r\n    <summary>\r\n    Transforms the provided Markdown-formatted text to HTML;  \r\n    see http://en.wikipedia.org/wiki/Markdown\r\n    </summary>\r\n    <remarks>\r\n    The order in which other subs are called here is\r\n    essential. Link and image substitutions need to happen before\r\n    EscapeSpecialChars(), so that any *'s or _'s in the a\r\n    and img tags get encoded.\r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.Transform(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Transform(System.String)\">\r\n    <summary>\r\n    Transforms the provided Markdown-formatted text to HTML;  \r\n    see http://en.wikipedia.org/wiki/Markdown\r\n    </summary>\r\n    <remarks>\r\n    The order in which other subs are called here is\r\n    essential. Link and image substitutions need to happen before\r\n    EscapeSpecialChars(), so that any *'s or _'s in the a\r\n    and img tags get encoded.\r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.HyperlinkEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string HyperlinkEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.HyperlinkEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.DoItalicsAndBold(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoItalicsAndBold(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoItalicsAndBold(System.String)\">\r\n    <summary>\r\n    Turn Markdown *italics* and **bold** into HTML strong and em tags\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoItalicsAndBold(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoItalicsAndBold(System.String)\">\r\n    <summary>\r\n    Turn Markdown *italics* and **bold** into HTML strong and em tags\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.DoCodeBlocks(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoCodeBlocks(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoCodeBlocks(System.String)\">\r\n    <summary>\r\n    /// Turn Markdown 4-space indented code into HTML pre code blocks\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoCodeBlocks(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoCodeBlocks(System.String)\">\r\n    <summary>\r\n    /// Turn Markdown 4-space indented code into HTML pre code blocks\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EncodeProblemUrlChars(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EncodeProblemUrlChars(string url)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeProblemUrlChars(System.String)\">\r\n    <summary>\r\n    hex-encodes some unusual \"problem\" chars in URLs to avoid URL detection problems \r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EncodeProblemUrlChars(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeProblemUrlChars(System.String)\">\r\n    <summary>\r\n    hex-encodes some unusual \"problem\" chars in URLs to avoid URL detection problems \r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.RunSpanGamut(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string RunSpanGamut(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.RunSpanGamut(System.String)\">\r\n    <summary>\r\n    Perform transformations that occur *within* block-level tags like paragraphs, headers, and list items.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.RunSpanGamut(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.RunSpanGamut(System.String)\">\r\n    <summary>\r\n    Perform transformations that occur *within* block-level tags like paragraphs, headers, and list items.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.DoCodeSpans(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoCodeSpans(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoCodeSpans(System.String)\">\r\n    <summary>\r\n    Turn Markdown `code spans` into HTML code tags\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoCodeSpans(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoCodeSpans(System.String)\">\r\n    <summary>\r\n    Turn Markdown `code spans` into HTML code tags\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EncodeAmpsAndAngles(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EncodeAmpsAndAngles(string s)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeAmpsAndAngles(System.String)\">\r\n    <summary>\r\n    Encode any ampersands (that aren't part of an HTML entity) and left or right angle brackets\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EncodeAmpsAndAngles(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeAmpsAndAngles(System.String)\">\r\n    <summary>\r\n    Encode any ampersands (that aren't part of an HTML entity) and left or right angle brackets\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.UnescapeEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string UnescapeEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.UnescapeEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.RepeatString(System.String,System.Int32)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private static string RepeatString(string text, int count)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.RepeatString(System.String,System.Int32)\">\r\n    <summary>\r\n    this is to emulate what's evailable in PHP\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.RepeatString(System.String,System.Int32)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.RepeatString(System.String,System.Int32)\">\r\n    <summary>\r\n    this is to emulate what's evailable in PHP\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.DoImages(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoImages(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoImages(System.String)\">\r\n    <summary>\r\n    Turn Markdown image shortcuts into HTML img tags. \r\n    </summary>\r\n    <remarks>\r\n    ![alt text][id]\r\n    ![alt text](url \"optional title\")\r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoImages(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoImages(System.String)\">\r\n    <summary>\r\n    Turn Markdown image shortcuts into HTML img tags. \r\n    </summary>\r\n    <remarks>\r\n    ![alt text][id]\r\n    ![alt text](url \"optional title\")\r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.AtxHeaderEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string AtxHeaderEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.AtxHeaderEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.ListEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string ListEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.ListEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.EscapeBackslashes(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EscapeBackslashes(string s)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EscapeBackslashes(System.String)\">\r\n    <summary>\r\n    Encodes any escaped characters such as \\`, \\*, \\[ etc\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EscapeBackslashes(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EscapeBackslashes(System.String)\">\r\n    <summary>\r\n    Encodes any escaped characters such as \\`, \\*, \\[ etc\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EncodeCodeEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EncodeCodeEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EncodeCodeEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.AnchorRefShortcutEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string AnchorRefShortcutEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.AnchorRefShortcutEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.EncodeCode(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EncodeCode(string code)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeCode(System.String)\">\r\n    <summary>\r\n    Encode/escape certain Markdown characters inside code blocks and spans where they are literals\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EncodeCode(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeCode(System.String)\">\r\n    <summary>\r\n    Encode/escape certain Markdown characters inside code blocks and spans where they are literals\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.ImageReferenceEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string ImageReferenceEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.ImageReferenceEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.Cleanup": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private void Cleanup()",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.Cleanup",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.EscapeSpecialCharsWithinTagAttributes(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EscapeSpecialCharsWithinTagAttributes(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EscapeSpecialCharsWithinTagAttributes(System.String)\">\r\n    <summary>\r\n    Within tags -- meaning between &lt; and &gt; -- encode [\\ ` * _] so they \r\n    don't conflict with their use in Markdown for code, italics and strong. \r\n    We're replacing each such character with its corresponding hash \r\n    value; this is likely overkill, but it should prevent us from colliding \r\n    with the escape values by accident.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EscapeSpecialCharsWithinTagAttributes(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EscapeSpecialCharsWithinTagAttributes(System.String)\">\r\n    <summary>\r\n    Within tags -- meaning between &lt; and &gt; -- encode [\\ ` * _] so they \r\n    don't conflict with their use in Markdown for code, italics and strong. \r\n    We're replacing each such character with its corresponding hash \r\n    value; this is likely overkill, but it should prevent us from colliding \r\n    with the escape values by accident.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EscapeBackslashesEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EscapeBackslashesEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EscapeBackslashesEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.TokenizeHTML(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private List<Token> TokenizeHTML(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.TokenizeHTML(System.String)\">\r\n    <summary>\r\n    returns an array of HTML tokens comprising the input string. Each token is \r\n    either a tag (possibly with nested, tags contained therein, such \r\n    as &lt;a href=\"&lt;MTFoo&gt;\"&gt;, or a run of text between tags. Each element of the \r\n    array is a two-element array; the first is either 'tag' or 'text'; the second is \r\n    the actual value.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.TokenizeHTML(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.TokenizeHTML(System.String)\">\r\n    <summary>\r\n    returns an array of HTML tokens comprising the input string. Each token is \r\n    either a tag (possibly with nested, tags contained therein, such \r\n    as &lt;a href=\"&lt;MTFoo&gt;\"&gt;, or a run of text between tags. Each element of the \r\n    array is a two-element array; the first is either 'tag' or 'text'; the second is \r\n    the actual value.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EscapeBoldItalic(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EscapeBoldItalic(string s)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EscapeBoldItalic(System.String)\">\r\n    <summary>\r\n    escapes Bold [ * ] and Italic [ _ ] characters\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EscapeBoldItalic(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EscapeBoldItalic(System.String)\">\r\n    <summary>\r\n    escapes Bold [ * ] and Italic [ _ ] characters\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.ProcessListItems(System.String,System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string ProcessListItems(string list, string marker)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.ProcessListItems(System.String,System.String)\">\r\n    <summary>\r\n    Process the contents of a single ordered or unordered list, splitting it\r\n    into individual list items.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.ProcessListItems(System.String,System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.ProcessListItems(System.String,System.String)\">\r\n    <summary>\r\n    Process the contents of a single ordered or unordered list, splitting it\r\n    into individual list items.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EmailEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EmailEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EmailEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.BlockQuoteEvaluator2(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string BlockQuoteEvaluator2(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.BlockQuoteEvaluator2(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.DoBlockQuotes(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoBlockQuotes(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoBlockQuotes(System.String)\">\r\n    <summary>\r\n    Turn Markdown > quoted blocks into HTML blockquote blocks\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoBlockQuotes(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoBlockQuotes(System.String)\">\r\n    <summary>\r\n    Turn Markdown > quoted blocks into HTML blockquote blocks\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.GetNestedParensPattern": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private static string GetNestedParensPattern()",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.GetNestedParensPattern\">\r\n    <summary>\r\n    Reusable pattern to match balanced (parens). See Friedl's \r\n    \"Mastering Regular Expressions\", 2nd Ed., pp. 328-331.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.GetNestedParensPattern",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.GetNestedParensPattern\">\r\n    <summary>\r\n    Reusable pattern to match balanced (parens). See Friedl's \r\n    \"Mastering Regular Expressions\", 2nd Ed., pp. 328-331.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.ListItemEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string ListItemEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.ListItemEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.BlockQuoteEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string BlockQuoteEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.BlockQuoteEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.Setup": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private void Setup()",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.Setup",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.DoAutoLinks(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoAutoLinks(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoAutoLinks(System.String)\">\r\n    <summary>\r\n    Turn angle-delimited URLs into HTML anchor tags\r\n    </summary>\r\n    <remarks>\r\n    &lt;http://www.example.com&gt;\r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoAutoLinks(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoAutoLinks(System.String)\">\r\n    <summary>\r\n    Turn angle-delimited URLs into HTML anchor tags\r\n    </summary>\r\n    <remarks>\r\n    &lt;http://www.example.com&gt;\r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.CodeBlockEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string CodeBlockEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.CodeBlockEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.LinkEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string LinkEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.LinkEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.AnchorInlineEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string AnchorInlineEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.AnchorInlineEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.DoHeaders(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoHeaders(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoHeaders(System.String)\">\r\n    <summary>\r\n    Turn Markdown headers into HTML header tags\r\n    </summary>\r\n    <remarks>\r\n    Header 1  \r\n    ========  \r\n    \r\n    Header 2  \r\n    --------  \r\n    \r\n    # Header 1  \r\n    ## Header 2  \r\n    ## Header 2 with closing hashes ##  \r\n    ...  \r\n    ###### Header 6  \r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoHeaders(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoHeaders(System.String)\">\r\n    <summary>\r\n    Turn Markdown headers into HTML header tags\r\n    </summary>\r\n    <remarks>\r\n    Header 1  \r\n    ========  \r\n    \r\n    Header 2  \r\n    --------  \r\n    \r\n    # Header 1  \r\n    ## Header 2  \r\n    ## Header 2 with closing hashes ##  \r\n    ...  \r\n    ###### Header 6  \r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.DoLists(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoLists(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoLists(System.String)\">\r\n    <summary>\r\n    Turn Markdown lists into HTML ul and ol and li tags\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoLists(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoLists(System.String)\">\r\n    <summary>\r\n    Turn Markdown lists into HTML ul and ol and li tags\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.GetNestedBracketsPattern": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private static string GetNestedBracketsPattern()",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.GetNestedBracketsPattern\">\r\n    <summary>\r\n    Reusable pattern to match balanced [brackets]. See Friedl's \r\n    \"Mastering Regular Expressions\", 2nd Ed., pp. 328-331.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.GetNestedBracketsPattern",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.GetNestedBracketsPattern\">\r\n    <summary>\r\n    Reusable pattern to match balanced [brackets]. See Friedl's \r\n    \"Mastering Regular Expressions\", 2nd Ed., pp. 328-331.\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.CodeSpanEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string CodeSpanEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.CodeSpanEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.Unescape(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string Unescape(string s)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Unescape(System.String)\">\r\n    <summary>\r\n    swap back in all the special characters we've hidden\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.Unescape(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Unescape(System.String)\">\r\n    <summary>\r\n    swap back in all the special characters we've hidden\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.EncodeEmailAddress(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string EncodeEmailAddress(string addr)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeEmailAddress(System.String)\">\r\n    <summary>\r\n    encodes email address randomly  \r\n    roughly 10% raw, 45% hex, 45% dec \r\n    note that @ is always encoded and : never is\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.EncodeEmailAddress(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.EncodeEmailAddress(System.String)\">\r\n    <summary>\r\n    encodes email address randomly  \r\n    roughly 10% raw, 45% hex, 45% dec \r\n    note that @ is always encoded and : never is\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.DoHorizontalRules(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoHorizontalRules(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoHorizontalRules(System.String)\">\r\n    <summary>\r\n    Turn Markdown horizontal rules into HTML hr tags\r\n    </summary>\r\n    <remarks>\r\n    ***  \r\n    * * *  \r\n    ---\r\n    - - -\r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoHorizontalRules(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoHorizontalRules(System.String)\">\r\n    <summary>\r\n    Turn Markdown horizontal rules into HTML hr tags\r\n    </summary>\r\n    <remarks>\r\n    ***  \r\n    * * *  \r\n    ---\r\n    - - -\r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.GetBlockPattern": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private static string GetBlockPattern()",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.GetBlockPattern\">\r\n    <summary>\r\n    derived pretty much verbatim from PHP Markdown\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.GetBlockPattern",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.GetBlockPattern\">\r\n    <summary>\r\n    derived pretty much verbatim from PHP Markdown\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.HashHTMLBlocks(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string HashHTMLBlocks(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.HashHTMLBlocks(System.String)\">\r\n    <summary>\r\n    replaces any block-level HTML blocks with hash entries\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.HashHTMLBlocks(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.HashHTMLBlocks(System.String)\">\r\n    <summary>\r\n    replaces any block-level HTML blocks with hash entries\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.ImageInlineEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string ImageInlineEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.ImageInlineEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.DoAnchors(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string DoAnchors(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoAnchors(System.String)\">\r\n    <summary>\r\n    Turn Markdown link shortcuts into HTML anchor tags\r\n    </summary>\r\n    <remarks>\r\n    [link text](url \"title\") \r\n    [link text][id] \r\n    [id] \r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.DoAnchors(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.DoAnchors(System.String)\">\r\n    <summary>\r\n    Turn Markdown link shortcuts into HTML anchor tags\r\n    </summary>\r\n    <remarks>\r\n    [link text](url \"title\") \r\n    [link text][id] \r\n    [id] \r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.StripLinkDefinitions(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string StripLinkDefinitions(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.StripLinkDefinitions(System.String)\">\r\n    <summary>\r\n    Strips link definitions from text, stores the URLs and titles in hash references.\r\n    </summary>\r\n    <remarks>\r\n    ^[id]: url \"optional title\"\r\n    </remarks>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.StripLinkDefinitions(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.StripLinkDefinitions(System.String)\">\r\n    <summary>\r\n    Strips link definitions from text, stores the URLs and titles in hash references.\r\n    </summary>\r\n    <remarks>\r\n    ^[id]: url \"optional title\"\r\n    </remarks>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.Outdent(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string Outdent(string block)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Outdent(System.String)\">\r\n    <summary>\r\n    Remove one level of line-leading spaces\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.Outdent(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.Outdent(System.String)\">\r\n    <summary>\r\n    Remove one level of line-leading spaces\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.AnchorRefEvaluator(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string AnchorRefEvaluator(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.AnchorRefEvaluator(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.FormParagraphs(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string FormParagraphs(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.FormParagraphs(System.String)\">\r\n    <summary>\r\n    splits on two or more newlines, to form \"paragraphs\";    \r\n    each paragraph is then unhashed (if it is a hash) or wrapped in HTML p tag\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.FormParagraphs(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.FormParagraphs(System.String)\">\r\n    <summary>\r\n    splits on two or more newlines, to form \"paragraphs\";    \r\n    each paragraph is then unhashed (if it is a hash) or wrapped in HTML p tag\r\n    </summary>\r\n</member>\r\n"
+                  },
+                  "M:MarkdownSharp.Markdown.GetHashKey(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private static string GetHashKey(string s)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.GetHashKey(System.String)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:MarkdownSharp.Markdown.RunBlockGamut(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string RunBlockGamut(string text)",
+                      "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.RunBlockGamut(System.String)\">\r\n    <summary>\r\n    Perform transformations that form block-level tags like paragraphs, headers, and list items.\r\n    </summary>\r\n</member>\r\n"
+                    },
+                    "Id": "M:MarkdownSharp.Markdown.RunBlockGamut(System.String)",
+                    "XmlDocumentation": "<member name=\"M:MarkdownSharp.Markdown.RunBlockGamut(System.String)\">\r\n    <summary>\r\n    Perform transformations that form block-level tags like paragraphs, headers, and list items.\r\n    </summary>\r\n</member>\r\n"
+                  }
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class Markdown",
+                "XmlDocumentation": "<member name=\"T:MarkdownSharp.Markdown\">\r\n    <summary>\r\n    Markdown is a text-to-HTML conversion tool for web writers. \r\n    Markdown allows you to write using an easy-to-read, easy-to-write plain text format, \r\n    then convert it to structurally valid XHTML (or HTML).\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "T:MarkdownSharp.Markdown",
+              "XmlDocumentation": "<member name=\"T:MarkdownSharp.Markdown\">\r\n    <summary>\r\n    Markdown is a text-to-HTML conversion tool for web writers. \r\n    Markdown allows you to write using an easy-to-read, easy-to-write plain text format, \r\n    then convert it to structurally valid XHTML (or HTML).\r\n    </summary>\r\n</member>\r\n"
+            }
+          },
+          "Interface": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          },
+          "Struct": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          },
+          "Delegate": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          },
+          "Enum": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          }
+        },
+        "Id": "N:MarkdownSharp",
+        "XmlDocumentation": ""
+      },
+      {
+        "$type": "DocAsCode.EntityModel.NamespaceDocMetadata, EntityModel",
+        "MemberDict": {
+          "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+          "Class": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+            "T:DocAsCode.MergeDoc.TripleSlashPraser": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "F:DocAsCode.MergeDoc.TripleSlashPraser.tripleSlashTypes": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "tripleSlashTypes",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.TripleSlashPraser.tripleSlashTypes",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:DocAsCode.MergeDoc.TripleSlashPraser.Parse(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "static public Dictionary<string, string> Parse(string tripleSlashStr)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.TripleSlashPraser.Parse(System.String)",
+                    "XmlDocumentation": ""
+                  }
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class TripleSlashPraser",
+                "XmlDocumentation": "<member name=\"T:DocAsCode.MergeDoc.TripleSlashPraser\">\r\n    <summary>\r\n    Resolve the triple slashes\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "T:DocAsCode.MergeDoc.TripleSlashPraser",
+              "XmlDocumentation": "<member name=\"T:DocAsCode.MergeDoc.TripleSlashPraser\">\r\n    <summary>\r\n    Resolve the triple slashes\r\n    </summary>\r\n</member>\r\n"
+            },
+            "T:DocAsCode.MergeDoc.MarkdownCollectionCache": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:DocAsCode.MergeDoc.MarkdownCollectionCache.#ctor(System.Collections.Generic.IEnumerable{System.String})": {
+                    "$type": "DocAsCode.EntityModel.ConstructorDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "public MarkdownCollectionCache(IEnumerable<string> mdFiles): base (mdFiles.Where(s => s.EndsWith(\".md\", StringComparison.OrdinalIgnoreCase)).SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkdownCollectionCache.#ctor(System.Collections.Generic.IEnumerable{System.String})",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class MarkdownCollectionCache",
+                "XmlDocumentation": ""
+              },
+              "Id": "T:DocAsCode.MergeDoc.MarkdownCollectionCache",
+              "XmlDocumentation": ""
+            },
+            "T:DocAsCode.MergeDoc.MarkDownConvertor": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "F:DocAsCode.MergeDoc.MarkDownConvertor.idPathRelativeMapping": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "idPathRelativeMapping",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.MarkDownConvertor.idPathRelativeMapping",
+                    "XmlDocumentation": ""
+                  },
+                  "F:DocAsCode.MergeDoc.MarkDownConvertor.markdown": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "markdown",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.MarkDownConvertor.markdown",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:DocAsCode.MergeDoc.MarkDownConvertor.ATResolver(System.Text.RegularExpressions.Match)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private string ATResolver(Match match)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkDownConvertor.ATResolver(System.Text.RegularExpressions.Match)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.MarkDownConvertor.init(System.Collections.Generic.Dictionary{System.String,System.String})": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "public void init(Dictionary<string, string> iprm)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkDownConvertor.init(System.Collections.Generic.Dictionary{System.String,System.String})",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.MarkDownConvertor.ResolveAT(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "public string ResolveAT(string md)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkDownConvertor.ResolveAT(System.String)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.MarkDownConvertor.ConvertToHTML(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "public string ConvertToHTML(string md)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkDownConvertor.ConvertToHTML(System.String)",
+                    "XmlDocumentation": ""
+                  }
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class MarkDownConvertor",
+                "XmlDocumentation": ""
+              },
+              "Id": "T:DocAsCode.MergeDoc.MarkDownConvertor",
+              "XmlDocumentation": ""
+            },
+            "T:DocAsCode.MergeDoc.MarkdownFile": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "F:DocAsCode.MergeDoc.MarkdownFile._converter": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_converter",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.MarkdownFile._converter",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "P:DocAsCode.MergeDoc.MarkdownFile.Sections": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public IReadOnlyList<MarkdownSection> Sections",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "P:DocAsCode.MergeDoc.MarkdownFile.Sections",
+                    "XmlDocumentation": ""
+                  },
+                  "P:DocAsCode.MergeDoc.MarkdownFile.FilePath": {
+                    "$type": "DocAsCode.EntityModel.PropertyDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.PropertySyntax, EntityModel",
+                      "Content": "public string FilePath",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "P:DocAsCode.MergeDoc.MarkdownFile.FilePath",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:DocAsCode.MergeDoc.MarkdownFile.TryParseCustomizedMarkdown(System.String,DocAsCode.MergeDoc.MarkdownFile@)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "private static bool TryParseCustomizedMarkdown(string markdownFilePath, out MarkdownFile markdown)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkdownFile.TryParseCustomizedMarkdown(System.String,DocAsCode.MergeDoc.MarkdownFile@)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "public static MarkdownFile Load(string filePath)",
+                      "XmlDocumentation": "<member name=\"M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)\">\r\n    <summary>\r\n    TODO: Load from md file\r\n    ---\r\n    method: A()\r\n    ---\r\n    </summary>\r\n    <param name=\"filePath\"></param>\r\n    <returns></returns>\r\n</member>\r\n"
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)",
+                    "XmlDocumentation": "<member name=\"M:DocAsCode.MergeDoc.MarkdownFile.Load(System.String)\">\r\n    <summary>\r\n    TODO: Load from md file\r\n    ---\r\n    method: A()\r\n    ---\r\n    </summary>\r\n    <param name=\"filePath\"></param>\r\n    <returns></returns>\r\n</member>\r\n"
+                  }
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class MarkdownFile",
+                "XmlDocumentation": ""
+              },
+              "Id": "T:DocAsCode.MergeDoc.MarkdownFile",
+              "XmlDocumentation": ""
+            },
+            "T:DocAsCode.MergeDoc.Program": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "F:DocAsCode.MergeDoc.Program._delimitedArrayConverter": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "_delimitedArrayConverter",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.Program._delimitedArrayConverter",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:DocAsCode.MergeDoc.Program.Main(System.String[])": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "static int Main(string[] args)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.Program.Main(System.String[])",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.Program.GetRealName(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "static string GetRealName(string id)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.Program.GetRealName(System.String)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.Program.CopyDir(System.String,System.String,System.Boolean,System.Boolean)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "static void CopyDir(string sourceDir, string targetDir, bool overwrite, bool copySubdir)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.Program.CopyDir(System.String,System.String,System.Boolean,System.Boolean)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.Program.GetHtmlOutputFile(DocAsCode.EntityModel.Identity)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "static string GetHtmlOutputFile(Identity id)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.Program.GetHtmlOutputFile(DocAsCode.EntityModel.Identity)",
+                    "XmlDocumentation": ""
+                  },
+                  "M:DocAsCode.MergeDoc.Program.LoadAssemblyDocMetadataFromFile(System.String)": {
+                    "$type": "DocAsCode.EntityModel.MethodDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.MethodSyntax, EntityModel",
+                      "Content": "public static AssemblyDocMetadata LoadAssemblyDocMetadataFromFile(string filePath)",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.Program.LoadAssemblyDocMetadataFromFile(System.String)",
+                    "XmlDocumentation": ""
+                  }
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "class Program",
+                "XmlDocumentation": ""
+              },
+              "Id": "T:DocAsCode.MergeDoc.Program",
+              "XmlDocumentation": ""
+            },
+            "T:DocAsCode.MergeDoc.ViewModel": {
+              "$type": "DocAsCode.EntityModel.ClassDocMetadata, EntityModel",
+              "MemberDict": {
+                "$type": "System.Collections.Generic.Dictionary`2[[DocAsCode.EntityModel.MemberType, EntityModel],[System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib]], mscorlib",
+                "Field": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "F:DocAsCode.MergeDoc.ViewModel.methodMta": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "methodMta",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.ViewModel.methodMta",
+                    "XmlDocumentation": ""
+                  },
+                  "F:DocAsCode.MergeDoc.ViewModel.assemblyMta": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "assemblyMta",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.ViewModel.assemblyMta",
+                    "XmlDocumentation": ""
+                  },
+                  "F:DocAsCode.MergeDoc.ViewModel.classMta": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "classMta",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.ViewModel.classMta",
+                    "XmlDocumentation": ""
+                  },
+                  "F:DocAsCode.MergeDoc.ViewModel.baseURL": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "baseURL",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.ViewModel.baseURL",
+                    "XmlDocumentation": ""
+                  },
+                  "F:DocAsCode.MergeDoc.ViewModel.namespaceMta": {
+                    "$type": "DocAsCode.EntityModel.FieldDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "namespaceMta",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "F:DocAsCode.MergeDoc.ViewModel.namespaceMta",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Property": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Event": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                },
+                "Constructor": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib",
+                  "M:DocAsCode.MergeDoc.ViewModel.#ctor": {
+                    "$type": "DocAsCode.EntityModel.ConstructorDocMetadata, EntityModel",
+                    "Syntax": {
+                      "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                      "Content": "public ViewModel()",
+                      "XmlDocumentation": ""
+                    },
+                    "Id": "M:DocAsCode.MergeDoc.ViewModel.#ctor",
+                    "XmlDocumentation": ""
+                  }
+                },
+                "Method": {
+                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+                }
+              },
+              "Syntax": {
+                "$type": "DocAsCode.EntityModel.SyntaxDocFragment, EntityModel",
+                "Content": "public class ViewModel",
+                "XmlDocumentation": ""
+              },
+              "Id": "T:DocAsCode.MergeDoc.ViewModel",
+              "XmlDocumentation": ""
+            }
+          },
+          "Interface": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          },
+          "Struct": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          },
+          "Delegate": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          },
+          "Enum": {
+            "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[DocAsCode.EntityModel.Identity, EntityModel],[DocAsCode.EntityModel.DocMetadata, EntityModel]], mscorlib"
+          }
+        },
+        "Id": "N:DocAsCode.MergeDoc",
+        "XmlDocumentation": ""
+      }
+    ]
+  },
+  "Id": "MergeDoc",
+  "MscorlibVersion": {
+    "$type": "System.Version, mscorlib",
+    "Major": 4
+  }
+}

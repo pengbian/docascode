@@ -1,0 +1,4 @@
+---
+class: DocAsCode.MergeDoc.MarkdownCollectionCache
+---
+

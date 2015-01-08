@@ -14,7 +14,7 @@ namespace Company.DocContextMenuPackage
 
         public MDGenerateHelper(DTE dte, Project project, ProjectItem docsFolder, ProjectItem projectDocFolder)
         {
-             _dte = dte;
+            _dte = dte;
             _project = project;
             _docsFolder = docsFolder;
             _projectDocFolder = projectDocFolder;
@@ -38,7 +38,7 @@ namespace Company.DocContextMenuPackage
             string projectDocfolderPath = Path.GetDirectoryName(_projectDocFolder.Properties.Item("FullPath").Value.ToString());
             foreach (string file in Directory.GetFiles(projectDocfolderPath))
             {
-               File.Delete(file);
+                File.Delete(file);
             }
 
             int itemCount = _projectDocFolder.ProjectItems.Count;
@@ -55,7 +55,7 @@ namespace Company.DocContextMenuPackage
                     _projectDocFolder.ProjectItems.AddFromFile(file);
                 }
             }
-      }
+        }
 
-   }
+    }
 }

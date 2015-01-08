@@ -13,16 +13,6 @@
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DocumentProject1.docmta">
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="namespace1.md">
-    </Compile>
-    <Compile Include="class1.md">
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="css"/>
     <Folder Include="script"/>
     <Content Include="css\default.css">
@@ -31,7 +21,6 @@
     </Content>
     <Content Include="script\jquery-2.1.0.min.js">
     </Content>
-    <Content Include="DocumentProject1.docmta" />
   </ItemGroup>
   <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />
 </Project>
