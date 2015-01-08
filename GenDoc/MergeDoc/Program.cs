@@ -61,15 +61,22 @@ namespace DocAsCode.MergeDoc
                 {
                     string nsFile = ns.Id.ToString().ToValidFilePath() + ".html";
                     idPathRelativeMapping.Add(ns.Id, nsFile);
-                    foreach (var c in ns.Classes)
+                    if(ns.Classes != null)
                     {
-                        string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
-                        foreach (var m in c.GetMemberType(MemberType.Method))
+                        foreach (var c in ns.Classes)
                         {
-                            idPathRelativeMapping.Add(m.Id, classPath);
+                            string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
+                            if(c.Methods != null)
+                            {
+                                foreach (var m in c.Methods)
+                                {
+                                    idPathRelativeMapping.Add(m.Id, classPath);
+                                }
+                                idPathRelativeMapping.Add(c.Id, classPath);
+                            }
                         }
-                        idPathRelativeMapping.Add(c.Id, classPath);
                     }
+                    
                 }
 
                 // Step.2. write contents to those files
@@ -97,47 +104,46 @@ namespace DocAsCode.MergeDoc
                     ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
                     string result;
 
-<<<<<<< HEAD
-                    Directory.CreateDirectory(assemblyFolder);
-                    foreach (var type in ns.GetMemberType(MemberType.Class))
-=======
                     Directory.CreateDirectory(namespaceFolder);
-                    foreach (var c in ns.Classes)
->>>>>>> cee4ea0ba9631c5c2752205ced478837c7f08de5
+                    if(ns.Classes != null)
                     {
-                        var c = type as ClassDocMetadata;
-                        viewModel.classMta = c;
-                        //This may not be a good solution, just display the summary of triple slashes
-                        c.XmlDocumentation = TripleSlashPraser.Parse(c.XmlDocumentation)["summary"].Trim();
-                        c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
-                        if (markdownCollectionCache.TryGetValue(c.Id, out content))
+                        foreach (var c in ns.Classes)
                         {
-                            c.MarkdownContent = mdConvertor.ConvertToHTML(content);
-                        }
-                        foreach (var method in c.GetMemberType(MemberType.Method))
-                        {
-                            var m = method as MethodDocMetadata;
-                            viewModel.methodMta = m;
+                            viewModel.classMta = c;
                             //This may not be a good solution, just display the summary of triple slashes
-                            m.XmlDocumentation = TripleSlashPraser.Parse(m.XmlDocumentation)["summary"].Trim();
-                            m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
-                            
-                            if (markdownCollectionCache.TryGetValue(m.Id, out content))
+                            c.XmlDocumentation = TripleSlashPraser.Parse(c.XmlDocumentation)["summary"].Trim();
+                            c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
+                            if (markdownCollectionCache.TryGetValue(c.Id, out content))
                             {
-                                m.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                                c.MarkdownContent = mdConvertor.ConvertToHTML(content);
                             }
+                            if(c.Methods != null)
+                            {
+                                foreach (var m in c.Methods)
+                                {
+                                    viewModel.methodMta = m;
+                                    //This may not be a good solution, just display the summary of triple slashes
+                                    m.XmlDocumentation = TripleSlashPraser.Parse(m.XmlDocumentation)["summary"].Trim();
+                                    m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
 
-                            m.Syntax.Content = mdConvertor.ConvertToHTML(string.Format(@"
+                                    if (markdownCollectionCache.TryGetValue(m.Id, out content))
+                                    {
+                                        m.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                                    }
+
+                                    m.Syntax.Content = mdConvertor.ConvertToHTML(string.Format(@"
 ```
 {0}
 ```
 ", m.Syntax.Content));
-                        }
+                                }
+                            }
 
-                        string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
-                        result = Razor.Parse(classTemplate, viewModel);
-                        File.WriteAllText(classPath, result);
-                        Console.Error.WriteLine("Successfully saved {0}", classPath);
+                            string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                            result = Razor.Parse(classTemplate, viewModel);
+                            File.WriteAllText(classPath, result);
+                            Console.Error.WriteLine("Successfully saved {0}", classPath);
+                        }
                     }
                     result = Razor.Parse(nsTemplate, viewModel);
                     File.WriteAllText(namespaceFile, result);
@@ -329,21 +335,13 @@ namespace DocAsCode.MergeDoc
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {
             Dictionary<string, string> result = new Dictionary<string, string>();
-<<<<<<< HEAD
+            // Replace <see cref=""/>
+
             foreach (string type in tripleSlashTypes)
             {
                 string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>", type);
-                Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Compiled | RegexOptions.Multiline);
-                result.Add(type, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
-=======
-            // Replace <see cref=""/>
-
-            foreach(string type in tripleSlashTypes)
-            {
-                string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>",type);
                 Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Multiline);
-                result.Add(type,typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
->>>>>>> cee4ea0ba9631c5c2752205ced478837c7f08de5
+                result.Add(type, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
             }
             return result;
         }

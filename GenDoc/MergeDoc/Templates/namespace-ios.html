@@ -48,14 +48,14 @@
                 <li class="namespace-name @ns_open">
                     <a class="namespace-link" href="@nsPath">@ns.Id.ToString().Substring(2)</a>
                     <ul class="nav-classes">
-                        @foreach (var vclass in ns.Classes)
+                        @if(ns.Classes != null) {foreach (var vclass in ns.Classes)
                         {
                         var classPath = ns.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
                         string c_open = "";
                         <li class="class-name @c_open">
                             <a class="class-link" href="@classPath">@vclass.Id.ToString().Substring(vclass.Id.ToString().LastIndexOf(".")+1)</a>
                         </li>
-                        }
+                        }}
                     </ul>
                 </li>
                 }}
@@ -72,7 +72,7 @@
                 <div class="section">
                     <h3 class="article-name">Classes</h3>
                     <table>
-                        @foreach (var vclass in Model.namespaceMta.Classes)
+                        @if(Model.namespaceMta.Classes != null){ foreach (var vclass in Model.namespaceMta.Classes)
                         {             
                         var classPath = Model.namespaceMta.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
                         <tr>
@@ -85,7 +85,7 @@
                                 @Raw(vclass.XmlDocumentation)
                             </td>
                         </tr>
-                        }
+                        }}
                     </table>                   
                 </div>
             </section>
