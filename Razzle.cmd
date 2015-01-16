@@ -1,6 +1,6 @@
 
 :SetDocToolExtensionsPath
-SET DocToolExtensionsPath=c:\users\t-hax\myCode\codeCopy\Drop\Debug
+SET DocToolExtensionsPath=c:\users\lianwei\repo\codeCopy\Drop\Debug
 
 :StartSolution
 START ALL.SLN
