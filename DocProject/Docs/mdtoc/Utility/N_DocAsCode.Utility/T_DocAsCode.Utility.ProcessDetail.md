@@ -1,4 +1,0 @@
----
-class: DocAsCode.Utility.ProcessDetail
----
-
