@@ -31,7 +31,7 @@ namespace DocAsCode.GenDocMetadata
                 return true;
             }
 
-            return true; //For test
+            return false;
         }
 
         public virtual DocMetadata GenerateFrom(ISymbol symbol)
