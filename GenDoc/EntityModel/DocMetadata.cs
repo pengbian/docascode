@@ -759,6 +759,8 @@ namespace DocAsCode.EntityModel
     public class MethodSyntax : SyntaxDocFragment
     {
         public SortedDictionary<string, string> Parameters { get; set; }
+        public Dictionary<string, string> Returns { get; set; }
+
         public IReadOnlyList<Identity> Implements { get; set; }
     }
 
