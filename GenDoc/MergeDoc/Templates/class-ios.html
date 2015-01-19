@@ -99,7 +99,34 @@
                                             Id: @method.Id.ToString()
                                         </p>
                                         <div class="pointy-thing"></div>
-                                        @Raw(method.Syntax.Content)
+                                        <div class="declaration">
+                                            <h4>Declaration</h4>
+                                            @Raw(method.Syntax.Content)
+                                        </div> 
+                                        <div class="parameters">
+                                            <h4>Parameters</h4>
+                                            <table class="graybox" border="0" cellspacing="0" cellpadding="5">
+                                                <tbody>
+                                                    @foreach (var param in method.MethodSyntax.Parameters.Keys){
+                                                    <tr>
+                                                        <td scope="row">
+                                                            <code class="code-voice">
+                                                                <em class="term">@param</em>
+                                                            </code>
+                                                        </td>
+                                                        <td>
+                                                            <div class="definition">
+                                                                <p class="para">
+                                                                    @Raw(method.MethodSyntax.Parameters[param])
+                                                                </p>
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </section>
                                 </div>
                             </li>

@@ -264,12 +264,21 @@ namespace DocAsCode.GenDocMetadata
                             DocMetadata mta = base.GenerateFrom(symbol);
                             var methodMta = new MethodDocMetadata(mta);
 
+                            var parametersDic = new SortedDictionary<string, string>() { };
+
+                            foreach (var p in syntax.ParameterList.Parameters)
+                            {
+                                var param = String.Format("{0} : {1}", p.Type.ToString(), p.Identifier.ToString());
+                                parametersDic.Add(param, ""); 
+                            };
+
                             methodMta.Syntax = new MethodSyntax
                             {
                                 Content = syntax.WithBody(null)
                                 .NormalizeWhitespace()
                                 .ToString(),
                                 XmlDocumentation = methodMta.XmlDocumentation,
+                                Parameters = parametersDic,
                             };
                             return methodMta;
                         }

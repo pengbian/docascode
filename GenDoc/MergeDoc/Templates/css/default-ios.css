@@ -321,6 +321,15 @@ article div.pointy-thing {
     position: absolute;
     width: 12px;
 }
+
+article .section .declaration {
+    margin-top: 21px;
+}
+
+article .section .parameters {
+    margin-top: 21px;
+}
+
 article div.height-container{
     font-size: 14px;
 }

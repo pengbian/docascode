@@ -418,6 +418,18 @@ namespace DocAsCode.EntityModel
 
     public class MethodDocMetadata : MemberDocMetadata
     {
+        public MethodSyntax MethodSyntax
+        {
+            get
+            {
+                return this.Syntax as MethodSyntax; 
+            }
+            set
+            {
+                this.Syntax = value;
+            }
+        }
+
         public MethodDocMetadata() { }
 
         public MethodDocMetadata(string name) : base(name)
@@ -746,7 +758,7 @@ namespace DocAsCode.EntityModel
     /// </summary>
     public class MethodSyntax : SyntaxDocFragment
     {
-        public IReadOnlyDictionary<Identity, string> Parameters { get; set; }
+        public SortedDictionary<string, string> Parameters { get; set; }
         public IReadOnlyList<Identity> Implements { get; set; }
     }
 
