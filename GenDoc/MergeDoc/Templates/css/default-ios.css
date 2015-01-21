@@ -351,3 +351,8 @@ article table code{
     word-wrap: break-word; /* Internet Explorer 5.5+ */ 
     white-space : normal ; /* Internet Explorer 5.5+ */ 
 }
+/*For the xml and md section, the css should be customed*/
+article table td.xml-section{
+    /*<pre>,<code>?*/
+    color:blue;
+}
