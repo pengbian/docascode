@@ -116,14 +116,14 @@ namespace DocAsCode.GenDocMetadata
                         classMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithBaseList(null)
-                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                            .Trim(),
+                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                .WithBaseList(null)
+                                .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                                .Trim(),
                             XmlDocumentation = classMta.XmlDocumentation,
                         };
                         return classMta;
@@ -142,14 +142,14 @@ namespace DocAsCode.GenDocMetadata
                         EnumMta.Syntax = new ConstructorSyntax
                         {
                             Content = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithBaseList(null)
-                            .WithMembers(new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                            .Trim(),
+                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                .WithBaseList(null)
+                                .WithMembers(new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                                .Trim(),
                             XmlDocumentation = EnumMta.XmlDocumentation,
                         };
 
@@ -170,14 +170,14 @@ namespace DocAsCode.GenDocMetadata
                         interfaceMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithBaseList(null)
-                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                            .Trim(),
+                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                .WithBaseList(null)
+                                .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                                .Trim(),
                             XmlDocumentation = interfaceMta.XmlDocumentation,
                         };
                         return interfaceMta;
@@ -197,14 +197,14 @@ namespace DocAsCode.GenDocMetadata
                         StructMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithBaseList(null)
-                            .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                            .Trim(),
+                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                .WithBaseList(null)
+                                .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
+                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
+                                .Trim(),
                             XmlDocumentation = StructMta.XmlDocumentation,
                         };
                         return StructMta;
@@ -224,10 +224,10 @@ namespace DocAsCode.GenDocMetadata
                         delegateMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim(),
+                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim(),
                             XmlDocumentation = delegateMta.XmlDocumentation,
                         };
                         return delegateMta;
@@ -264,12 +264,24 @@ namespace DocAsCode.GenDocMetadata
                             DocMetadata mta = base.GenerateFrom(symbol);
                             var methodMta = new MethodDocMetadata(mta);
 
+                            var parametersDic = new SortedDictionary<string, string>() { };
+
+                            foreach (var p in syntax.ParameterList.Parameters)
+                            {
+                                var param = String.Format("{0} : {1}", p.Type.ToString(), p.Identifier.ToString());
+                                parametersDic.Add(param, ""); 
+                            };
+
                             methodMta.Syntax = new MethodSyntax
                             {
+                                Parameters = parametersDic,
+                                Returns = new Dictionary<string, string> { { syntax.ReturnType.ToString(), "" },},
                                 Content = syntax.WithBody(null)
-                                .NormalizeWhitespace()
-                                .ToString(),
+                                    .NormalizeWhitespace()
+                                    .ToString()
+                                    .Trim(),
                                 XmlDocumentation = methodMta.XmlDocumentation,
+                               
                             };
                             return methodMta;
                         }
@@ -284,8 +296,9 @@ namespace DocAsCode.GenDocMetadata
                                 constuctorMta.Syntax = new SyntaxDocFragment
                                 {
                                     Content = constructorSyntax.WithBody(null)
-                                    .NormalizeWhitespace()
-                                    .ToString(),
+                                        .NormalizeWhitespace()
+                                        .ToString()
+                                        .Trim(),
                                     XmlDocumentation = constuctorMta.XmlDocumentation,
                                 };
                                 return constuctorMta;
@@ -308,11 +321,11 @@ namespace DocAsCode.GenDocMetadata
                         propertyMta.Syntax = new PropertySyntax
                         {
                             Content = syntax
-                            .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
-                            .WithAccessorList(null)
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim(),
+                                .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
+                                .WithAccessorList(null)
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim(),
                             XmlDocumentation = propertyMta.XmlDocumentation,
                         };
                         return propertyMta;
@@ -332,10 +345,10 @@ namespace DocAsCode.GenDocMetadata
                         FieldMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
-                            .WithInitializer(null)
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim(),
+                                .WithInitializer(null)
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim(),
                             XmlDocumentation = FieldMta.XmlDocumentation,
                         };
                         return FieldMta;
@@ -355,9 +368,9 @@ namespace DocAsCode.GenDocMetadata
                         eventMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
-                            .NormalizeWhitespace()
-                            .ToString()
-                            .Trim(),
+                                .NormalizeWhitespace()
+                                .ToString()
+                                .Trim(),
                             XmlDocumentation = eventMta.XmlDocumentation,
                         };
                         return eventMta;

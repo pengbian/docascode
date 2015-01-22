@@ -100,7 +100,7 @@ namespace DocAsCode.MergeDoc
                     string namespaceFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
                     string namespaceFile = namespaceFolder + ".html";
                     //This may not be a good solution, just display the summary of triple slashes
-                    ns.XmlDocumentation = TripleSlashPraser.Parse(ns.XmlDocumentation)["summary"].Trim();
+                    ns.XmlDocumentation = TripleSlashParser.Parse(ns.XmlDocumentation)["summary"].Trim();
                     ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
                     string result;
 
@@ -111,7 +111,7 @@ namespace DocAsCode.MergeDoc
                         {
                             viewModel.classMta = c;
                             //This may not be a good solution, just display the summary of triple slashes
-                            c.XmlDocumentation = TripleSlashPraser.Parse(c.XmlDocumentation)["summary"].Trim();
+                            c.XmlDocumentation = TripleSlashParser.Parse(c.XmlDocumentation)["summary"].Trim();
                             c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
                             if (markdownCollectionCache.TryGetValue(c.Id, out content))
                             {
@@ -122,8 +122,21 @@ namespace DocAsCode.MergeDoc
                                 foreach (var m in c.Methods)
                                 {
                                     viewModel.methodMta = m;
+                                    m.MethodSyntax.Parameters = TripleSlashParser.ParseParam(m.XmlDocumentation, m.MethodSyntax.Parameters);
+
+                                    for (int i = 0; i < m.MethodSyntax.Parameters.Count; i++)
+                                    {
+                                        string param = m.MethodSyntax.Parameters.ElementAt(i).Key;
+                                        string description = m.MethodSyntax.Parameters.ElementAt(i).Value;
+                                        m.MethodSyntax.Parameters[param] = mdConvertor.ConvertToHTML(description);
+                                    }
+
+                                    var parseDic = TripleSlashParser.Parse(m.XmlDocumentation);
+                                    string returnType = m.MethodSyntax.Returns.Keys.FirstOrDefault();
+                                    m.MethodSyntax.Returns[returnType] = mdConvertor.ConvertToHTML(parseDic["returns"].Trim());
+
                                     //This may not be a good solution, just display the summary of triple slashes
-                                    m.XmlDocumentation = TripleSlashPraser.Parse(m.XmlDocumentation)["summary"].Trim();
+                                    m.XmlDocumentation = parseDic["summary"].Trim();
                                     m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
 
                                     if (markdownCollectionCache.TryGetValue(m.Id, out content))
@@ -317,7 +330,7 @@ namespace DocAsCode.MergeDoc
     /// <summary>
     /// Resolve the triple slashes
     /// </summary>
-    public class TripleSlashPraser
+    public class TripleSlashParser
     {
         static private string[] tripleSlashTypes = {    "summary",
                                                         "param",
@@ -332,6 +345,7 @@ namespace DocAsCode.MergeDoc
                                                         "file",
                                                         "copyright"  };
         static private Regex SeeCrefRegex = new Regex(@"<see cref=""(?<ref>[\s\S]*?)""/>", RegexOptions.Compiled);
+
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {
             Dictionary<string, string> result = new Dictionary<string, string>();
@@ -345,6 +359,28 @@ namespace DocAsCode.MergeDoc
             }
             return result;
         }
+
+        static public SortedDictionary<string, string> ParseParam(string tripleSlashStr, SortedDictionary<string, string> parameters)
+        {
+            SortedDictionary<string, string> result = new SortedDictionary<string, string>();
+
+            for(int i = 0; i < parameters.Count; i++)
+            {
+                string param = parameters.ElementAt(i).Key;
+                int index = param.IndexOf(":");
+                if(index != -1 && index + 2 < param.Length)
+                {
+                    param = param.Substring(index + 2);
+                }
+
+                string typeRegexPatten = string.Format("<param name=\"{0}\">(?<typeContent>[\\s\\S]*?)</param>", param);
+                Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Multiline);
+                result.Add(param, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
+            }
+
+            return result;
+        }
+
     }
 
     public class MarkDownConvertor
