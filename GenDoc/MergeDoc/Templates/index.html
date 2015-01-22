@@ -64,14 +64,14 @@
         </nav>
         <!--article-content-->
         <article class="article-content">
-            <div id="article-title">
+            <div id="article-header">
                 <h1 class="article-name">
                     Assembly @Model.assemblyMta.Id.ToString()
                 </h1>
             </div>
             <section id="article-body">
                 <div class="section">
-                    <h3 class="article-name">Namespaces</h3>
+                    <h3 class="section-name">Namespaces</h3>
                     <table>
                         @foreach (var ns in Model.assemblyMta.Namespaces)
                         {         
