@@ -63,98 +63,104 @@
         </nav>
         <!--article-content-->
         <article class="article-content">
-            <div id="article-title">
+            <div id="article-header">
                 <h1 class="article-name">
                     @Model.classMta.Id.ToString().Replace("T:", "Class ")
                 </h1>
-                <section class="section-content">
+                <section class="article-header-content">
                     Id: @Model.classMta.Id.ToString()
-                    @Raw(Model.classMta.XmlDocumentation)
-                    @Raw(Model.classMta.MarkdownContent)
+                    <div class="xml-section">
+                        @Raw(Model.classMta.XmlDocumentation)
+                    </div>
+                    <div class="md-section">
+                        @Raw(Model.classMta.MarkdownContent)
+                    </div>
                 </section>
             </div>
             <section id="article-body">
                 <div class="section">
-                    <h3 class="article-name">Methods</h3>
-                    @if(Model.classMta.Methods != null){ foreach (var method in Model.classMta.Methods)
-                    {
-                    string temp = @Model.classMta.Id.ToString().Replace("T:","M:")+".";
-                    <div class="section-name-container">
-                        <h3 class="section-name">
-                            @method.Id.ToString().Replace(temp,"");
-                        </h3>
-                        <section class="section-content">
-                            @Raw(method.XmlDocumentation)
-                            @Raw(method.MarkdownContent)
-                        </section>
-                        <ul class="section-members">
-                            <li class="section-member">
-                                <a class="section-member-name">
-                                    details
-                                </a>
-                                <div class="height-container">
-                                    <div class="pointy-thing-container"></div>
-                                    <section>
-                                        <p class="section-content">
-                                            Id: @method.Id.ToString()
-                                        </p>
-                                        <div class="pointy-thing"></div>
-                                        <div class="declaration">
-                                            <h4>Declaration</h4>
-                                            @Raw(method.Syntax.Content)
-                                        </div> 
-                                        <div class="parameters">
-                                            <h4>Parameters</h4>
-                                            <table class="graybox" border="0" cellspacing="0" cellpadding="5">
-                                                <tbody>
-                                                    @foreach (var param in method.MethodSyntax.Parameters.Keys){
-                                                    <tr>
-                                                        <td scope="row">
-                                                            <code class="code-voice">
-                                                                <em class="term">@param</em>
-                                                            </code>
-                                                        </td>
-                                                        <td>
-                                                            <div class="definition">
-                                                                <p class="para">
-                                                                    @Raw(method.MethodSyntax.Parameters[param])
-                                                                </p>
-
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    }
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="Returns">
-                                            <h4>Returns</h4>
-                                            <table class="graybox" border="0" cellspacing="0" cellpadding="5">
-                                                <tbody>
-                                                    <tr>
-                                                        <td scope="row">
-                                                            <code class="code-voice">
-                                                                <em class="term">@method.MethodSyntax.Returns.Keys.FirstOrDefault()</em>
-                                                            </code>
-                                                        </td>
-                                                        <td>
-                                                            <div class="definition">
-                                                                <p class="para">
-                                                                    @Raw(method.MethodSyntax.Returns.Values.FirstOrDefault())
-                                                                </p>
-
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </section>
+                    <h3 class="section-name">Methods</h3>
+                    <ul class="section-members">
+                        @if(Model.classMta.Methods != null){ foreach (var method in Model.classMta.Methods)
+                        {
+                        string temp = @Model.classMta.Id.ToString().Replace("T:","M:")+".";
+                        <li class="section-member">
+                            <div class="section-member-header">
+                                <h3 class="section-member-name">
+                                    @method.Id.ToString().Replace(temp,"");
+                                </h3>
+                                <div class="xml-section">
+                                    @Raw(method.XmlDocumentation)
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    }}
+                                <div class="md-section">
+                                    @Raw(method.MarkdownContent)
+                                </div>
+                            </div>
+                            <a class="section-member-detail">
+                                details
+                            </a>
+                            <div class="height-container">
+                                <div class="pointy-thing-container"></div>
+                                <section>
+                                    <div class="pointy-thing"></div>
+                                    <div class="section-member-content">
+                                        Id: @method.Id.ToString()
+                                        <div class="methodsyntax-section">
+                                            <div class="declaration">
+                                                <h4>Declaration</h4>
+                                                @Raw(method.Syntax.Content)
+                                            </div>
+                                            <div class="parameters">
+                                                <h4>Parameters</h4>
+                                                <table class="graybox" border="0" cellspacing="0" cellpadding="5">
+                                                    <tbody>
+                                                        @foreach (var param in method.MethodSyntax.Parameters.Keys){
+                                                        <tr>
+                                                            <td scope="row">
+                                                                <code class="code-voice">
+                                                                    <em class="term">@param</em>
+                                                                </code>
+                                                            </td>
+                                                            <td>
+                                                                <div class="definition">
+                                                                    <p class="para">
+                                                                        @Raw(method.MethodSyntax.Parameters[param])
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="Returns">
+                                                <h4>Returns</h4>
+                                                <table class="graybox" border="0" cellspacing="0" cellpadding="5">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row">
+                                                                <code class="code-voice">
+                                                                    <em class="term">@method.MethodSyntax.Returns.Keys.FirstOrDefault()</em>
+                                                                </code>
+                                                            </td>
+                                                            <td>
+                                                                <div class="definition">
+                                                                    <p class="para">
+                                                                        @Raw(method.MethodSyntax.Returns.Values.FirstOrDefault())
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                        }}
+                    </ul>
                 </div>
             </section>
         </article>

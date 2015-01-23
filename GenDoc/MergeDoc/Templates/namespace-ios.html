@@ -63,14 +63,14 @@
         </nav>
         <!--article-content-->
         <article class="article-content">
-            <div id="article-title">
+            <div id="article-header">
                 <h1 class="article-name">
                     @Model.namespaceMta.Id.ToString().Replace("N:", "Namespace ")
                 </h1>
             </div>
             <section id="article-body">
                 <div class="section">
-                    <h3 class="article-name">Classes</h3>
+                    <h3 class="section-name">Classes</h3>
                     <table>
                         @if(Model.namespaceMta.Classes != null){ foreach (var vclass in Model.namespaceMta.Classes)
                         {             
@@ -82,7 +82,9 @@
                                 </a>
                             </td>
                             <td>
-                                @Raw(vclass.XmlDocumentation)
+                                <div class="xml-section">
+                                    @Raw(vclass.XmlDocumentation)
+                                </div>
                             </td>
                         </tr>
                         }}
