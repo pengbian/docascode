@@ -3,10 +3,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DocAsCode.EntityModel;
-using DocAsCode.Utility;
 
 namespace DocAsCode.GenDocMetadata
 {
@@ -112,6 +109,13 @@ namespace DocAsCode.GenDocMetadata
 
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var classMta = new ClassDocMetadata(mta);
+                        classMta.InheritanceHierarchy = new Stack<Identity>();
+                        var type = nameTypedSymbol.BaseType;
+                        while(type != null)
+                        {
+                            classMta.InheritanceHierarchy.Push(new Identity(type.GetDocumentationCommentId()));
+                            type = type.BaseType;
+                        }
 
                         classMta.Syntax = new SyntaxDocFragment
                         {

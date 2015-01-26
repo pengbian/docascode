@@ -76,6 +76,34 @@
                         @Raw(Model.classMta.MarkdownContent)
                     </div>
                 </section>
+                <section id="metadata_table">
+                    <div class="inheritance-table">
+                        <p class="para">Inheritance</p>
+                        <hr>
+                            @helper call(){
+                            <div class="inheritance-table-line">
+                                @{
+                                    string id = Model.classMta.InheritanceHierarchy.Pop().ToString();
+                                    string path;
+                                    if(Model.idPathRelativeMapping.ContainsKey(id)){
+                                        path = Model.idPathRelativeMapping[id];
+                                    }
+                                    else{
+                                        path = "https://msdn.microsoft.com/en-us/library/" + @id.Substring(2);
+                                    }
+                                    <a href="@path"> @id.Substring(2)</a>
+                                    if(Model.classMta.InheritanceHierarchy.Count != 0) { @call(); }
+                                    else {
+                                        <div class="inheritance-table-last-line">
+                                            <p>@Model.classMta.Id.ToString().Substring(2)</p>
+                                        </div>
+                                    }
+                                }
+                             </div>
+                            }
+                            @call()
+                    </div>
+                </section>
             </div>
             <section id="article-body">
                 <div class="section">

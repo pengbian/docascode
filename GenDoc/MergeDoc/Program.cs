@@ -32,6 +32,7 @@ namespace DocAsCode.MergeDoc
                 Dictionary<string, string> idPathRelativeMapping = new Dictionary<string, string>();
                 MarkDownConvertor mdConvertor = new MarkDownConvertor();
                 mdConvertor.init(idPathRelativeMapping);
+                viewModel.idPathRelativeMapping = idPathRelativeMapping;
 
                 var options = new Option[]
                     {
@@ -152,6 +153,7 @@ namespace DocAsCode.MergeDoc
                                 }
                             }
 
+                            c.InheritanceHierarchy = new Stack<Identity>(c.InheritanceHierarchy);
                             string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
                             result = Razor.Parse(classTemplate, viewModel);
                             File.WriteAllText(classPath, result);
@@ -427,10 +429,10 @@ namespace DocAsCode.MergeDoc
         public NamespaceDocMetadata namespaceMta;
         public ClassDocMetadata classMta;
         public MethodDocMetadata methodMta;
+        public Dictionary<string, string> idPathRelativeMapping;
 
         public ViewModel()
         {
-
         }
     }
 
