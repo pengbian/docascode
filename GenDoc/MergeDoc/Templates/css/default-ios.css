@@ -328,6 +328,10 @@ article li.section-member a{
 article li.section-member a.section-member-detail::before{
     content: '+ ';
 }
+
+article li.section-member table a {
+    font-size: 12px;
+}
 article div.height-container {
     /*height: 0;*/
     display:none;

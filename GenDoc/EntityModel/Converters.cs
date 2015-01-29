@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Text;
@@ -6,6 +7,10 @@ using System.Text.RegularExpressions;
 
 namespace DocAsCode.EntityModel
 {
+    /// <summary>
+    /// <see cref="string"/>
+    /// <see cref="AssemblyDocMetadata.mymethod"/>
+    /// </summary>
     public class CommentIdToYamlHeaderConverter : TypeConverter
     {
         /// <summary>
@@ -32,6 +37,10 @@ namespace DocAsCode.EntityModel
         /// </summary>
         public static Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<type>method|namespace|class|property|field|event): (?<id>\S*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
 
+        public void myTest1(int[] myArray)
+        {
+
+        }
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
         {
             if (sourceType == typeof(string))

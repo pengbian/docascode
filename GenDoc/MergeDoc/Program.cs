@@ -26,14 +26,6 @@ namespace DocAsCode.MergeDoc
             string scriptDirecotry = "script";
             try
             {
-                //Create a ViewModel for Razor to render the template
-                ViewModel viewModel = new ViewModel();
-                //This Dictionary stores the output file path for every namespace,class and method
-                Dictionary<string, string> idPathRelativeMapping = new Dictionary<string, string>();
-                MarkDownConvertor mdConvertor = new MarkDownConvertor();
-                mdConvertor.init(idPathRelativeMapping);
-                viewModel.idPathRelativeMapping = idPathRelativeMapping;
-
                 var options = new Option[]
                     {
                     new Option(null, s => mtaFile = s, helpName: "metadataFile", defaultValue: mtaFile, helpText: @"The doc metadata file, only file with .docmta is recognized"),
@@ -57,112 +49,44 @@ namespace DocAsCode.MergeDoc
                 string[] mdFiles = (string[])_delimitedArrayConverter.ConvertFrom(delimitedMdFiles);
                 MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdFiles);
 
-                // Step.1. create the id-path mapping
-                foreach (var ns in assemblyMta.Namespaces)
-                {
-                    string nsFile = ns.Id.ToString().ToValidFilePath() + ".html";
-                    idPathRelativeMapping.Add(ns.Id, nsFile);
-                    if(ns.Classes != null)
-                    {
-                        foreach (var c in ns.Classes)
-                        {
-                            string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
-                            if(c.Methods != null)
-                            {
-                                foreach (var m in c.Methods)
-                                {
-                                    idPathRelativeMapping.Add(m.Id, classPath);
-                                }
-                                idPathRelativeMapping.Add(c.Id, classPath);
-                            }
-                        }
-                    }
-                    
-                }
-
                 // Step.2. write contents to those files
                 Directory.CreateDirectory(outputDirectory);
                 string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class-ios.html"));
                 string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
                 string asmTemplate = File.ReadAllText(Path.Combine(templateDirectory, "index.html"));
+
                 //Add baseUrl to the template,this is for @ link
+                ViewModel viewModel = new ViewModel(assemblyMta);
                 viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
-                viewModel.assemblyMta = assemblyMta;
+
                 string assemblyFile = Path.Combine(outputDirectory, "index.html");
 
-                foreach (var ns in assemblyMta.Namespaces)
+                if (assemblyMta.Namespaces != null)
                 {
-                    viewModel.namespaceMta = ns;
-                    string content;
-                    if (markdownCollectionCache.TryGetValue(ns.Id, out content))
+                    foreach (var ns in assemblyMta.Namespaces)
                     {
-                        ns.MarkdownContent = mdConvertor.ConvertToHTML(content);
-                    }
-                    string namespaceFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
-                    string namespaceFile = namespaceFolder + ".html";
-                    //This may not be a good solution, just display the summary of triple slashes
-                    ns.XmlDocumentation = TripleSlashParser.Parse(ns.XmlDocumentation)["summary"].Trim();
-                    ns.XmlDocumentation = mdConvertor.ConvertToHTML(ns.XmlDocumentation);
-                    string result;
+                        viewModel.namespaceMta = ns;
+                        string namespaceFolder = Path.Combine(outputDirectory, ns.Id.ToString().ToValidFilePath());
+                        string namespaceFile = namespaceFolder + ".html";
+                        string result;
 
-                    Directory.CreateDirectory(namespaceFolder);
-                    if(ns.Classes != null)
-                    {
-                        foreach (var c in ns.Classes)
+                        Directory.CreateDirectory(namespaceFolder);
+                        if (ns.Classes != null)
                         {
-                            viewModel.classMta = c;
-                            //This may not be a good solution, just display the summary of triple slashes
-                            c.XmlDocumentation = TripleSlashParser.Parse(c.XmlDocumentation)["summary"].Trim();
-                            c.XmlDocumentation = mdConvertor.ConvertToHTML(c.XmlDocumentation);
-                            if (markdownCollectionCache.TryGetValue(c.Id, out content))
-                            {
-                                c.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                            foreach (var c in ns.Classes)
+                            { 
+                                viewModel.classMta = c;
+                                viewModel.resolveContent(markdownCollectionCache);
+                                string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                                result = Razor.Parse(classTemplate, viewModel);
+                                File.WriteAllText(classPath, result);
+                                Console.Error.WriteLine("Successfully saved {0}", classPath);
                             }
-                            if(c.Methods != null)
-                            {
-                                foreach (var m in c.Methods)
-                                {
-                                    viewModel.methodMta = m;
-                                    m.MethodSyntax.Parameters = TripleSlashParser.ParseParam(m.XmlDocumentation, m.MethodSyntax.Parameters);
-
-                                    for (int i = 0; i < m.MethodSyntax.Parameters.Count; i++)
-                                    {
-                                        string param = m.MethodSyntax.Parameters.ElementAt(i).Key;
-                                        string description = m.MethodSyntax.Parameters.ElementAt(i).Value;
-                                        m.MethodSyntax.Parameters[param] = mdConvertor.ConvertToHTML(description);
-                                    }
-
-                                    var parseDic = TripleSlashParser.Parse(m.XmlDocumentation);
-                                    string returnType = m.MethodSyntax.Returns.Keys.FirstOrDefault();
-                                    m.MethodSyntax.Returns[returnType] = mdConvertor.ConvertToHTML(parseDic["returns"].Trim());
-
-                                    //This may not be a good solution, just display the summary of triple slashes
-                                    m.XmlDocumentation = parseDic["summary"].Trim();
-                                    m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
-
-                                    if (markdownCollectionCache.TryGetValue(m.Id, out content))
-                                    {
-                                        m.MarkdownContent = mdConvertor.ConvertToHTML(content);
-                                    }
-
-                                    m.Syntax.Content = mdConvertor.ConvertToHTML(string.Format(@"
-```
-{0}
-```
-", m.Syntax.Content));
-                                }
-                            }
-
-                            c.InheritanceHierarchy = new Stack<Identity>(c.InheritanceHierarchy);
-                            string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
-                            result = Razor.Parse(classTemplate, viewModel);
-                            File.WriteAllText(classPath, result);
-                            Console.Error.WriteLine("Successfully saved {0}", classPath);
                         }
+                        result = Razor.Parse(nsTemplate, viewModel);
+                        File.WriteAllText(namespaceFile, result);
+                        Console.Error.WriteLine("Successfully saved {0}", namespaceFile);
                     }
-                    result = Razor.Parse(nsTemplate, viewModel);
-                    File.WriteAllText(namespaceFile, result);
-                    Console.Error.WriteLine("Successfully saved {0}", namespaceFile);
                 }
 
                 var resultAsm = Razor.Parse(asmTemplate, viewModel);
@@ -179,11 +103,6 @@ namespace DocAsCode.MergeDoc
                 Console.Error.WriteLine("Failing in merging document from {0}: {1}", mtaFile, e);
                 return 1;
             }
-        }
-
-        static string GetRealName(string id)
-        {
-            return id.Substring(id.LastIndexOf(":") + 1);
         }
 
         static void CopyDir(string sourceDir, string targetDir, bool overwrite, bool copySubdir)
@@ -218,10 +137,6 @@ namespace DocAsCode.MergeDoc
             }
         }
 
-        static string GetHtmlOutputFile(Identity id)
-        {
-            return id.ToString().ToValidFilePath() + ".html";
-        }
 
         public static AssemblyDocMetadata LoadAssemblyDocMetadataFromFile(string filePath)
         {
@@ -229,210 +144,6 @@ namespace DocAsCode.MergeDoc
             {
                 return DocMetadataExtensions.LoadMetadata<AssemblyDocMetadata>(reader);
             }
-        }
-    }
-
-    public class MarkdownCollectionCache : Dictionary<string, string>
-    {
-        public MarkdownCollectionCache(IEnumerable<string> mdFiles)
-            : base(mdFiles.Where(s => s.EndsWith(".md", StringComparison.OrdinalIgnoreCase)).SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))
-        {
-        }
-    }
-
-    public class MarkdownFile
-    {
-        private static CommentIdToYamlHeaderConverter _converter = new CommentIdToYamlHeaderConverter();
-
-        public string FilePath { get; set; }
-
-        public IReadOnlyList<MarkdownSection> Sections { get; set; }
-
-        /// <summary>
-        /// TODO: Load from md file
-        /// ---
-        /// method: A()
-        /// ---
-        /// </summary>
-        /// <param name="filePath"></param>
-        /// <returns></returns>
-        public static MarkdownFile Load(string filePath)
-        {
-            MarkdownFile file;
-            TryParseCustomizedMarkdown(filePath, out file);
-
-            return file;
-        }
-
-        public class MarkdownSection
-        {
-            public string Id { get; set; }
-
-            public string MarkdownContent { get; set; }
-
-            public int ContentStartIndex { get; set; }
-
-            public int ContentEndIndex { get; set; }
-        }
-
-        private static bool TryParseCustomizedMarkdown(string markdownFilePath, out MarkdownFile markdown)
-        {
-            string markdownFile = File.ReadAllText(markdownFilePath);
-            int length = markdownFile.Length;
-            Dictionary<string, MarkdownSection> sections = new Dictionary<string, MarkdownSection>();
-            var yamlRegex = CommentIdToYamlHeaderConverter.YamlHeaderRegex;
-            MatchCollection matches = yamlRegex.Matches(markdownFile);
-            if (matches.Count == 0)
-            {
-                markdown = null;
-                return false;
-            }
-
-            int startIndex = 0;
-            string lastCommentId = null;
-            MarkdownSection lastSection = null;
-            markdown = new MarkdownFile { FilePath = markdownFilePath };
-
-            MarkdownSection section;
-
-            // TODO: current assumption is : match is in order, need confirmation
-            foreach (Match match in matches)
-            {
-                lastCommentId = (string)_converter.ConvertFrom(match.Value);
-                startIndex = match.Index + match.Length;
-
-                // If current Id is already set, ignore the duplicate one
-                if (lastSection != null && !sections.TryGetValue(lastCommentId, out section))
-                {
-                    lastSection.ContentEndIndex = match.Index - 1;
-                    if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
-                    {
-                        lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex, lastSection.ContentEndIndex - lastSection.ContentStartIndex + 1);
-                        sections.Add(lastSection.Id, lastSection);
-                    }
-                }
-
-                lastSection = new MarkdownSection { Id = lastCommentId, ContentStartIndex = startIndex, ContentEndIndex = length }; // endIndex should be set from next match if there is next match
-                if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
-                {
-                    lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex);
-                }
-            }
-
-            if (lastSection != null && !sections.TryGetValue(lastCommentId, out section))
-            {
-                sections.Add(lastCommentId, lastSection);
-            }
-
-            markdown.Sections = sections.Values.ToList();
-            return true;
-        }
-    }
-
-    /// <summary>
-    /// Resolve the triple slashes
-    /// </summary>
-    public class TripleSlashParser
-    {
-        static private string[] tripleSlashTypes = {    "summary",
-                                                        "param",
-                                                        "returns",
-                                                        "example",
-                                                        "code",
-                                                        "see",
-                                                        "seealso",
-                                                        "list",
-                                                        "value",
-                                                        "author",
-                                                        "file",
-                                                        "copyright"  };
-        static private Regex SeeCrefRegex = new Regex(@"<see cref=""(?<ref>[\s\S]*?)""/>", RegexOptions.Compiled);
-
-        static public Dictionary<string, string> Parse(string tripleSlashStr)
-        {
-            Dictionary<string, string> result = new Dictionary<string, string>();
-            // Replace <see cref=""/>
-
-            foreach (string type in tripleSlashTypes)
-            {
-                string typeRegexPatten = string.Format(@"<{0}>(?<typeContent>[\s\S]*?)</{0}>", type);
-                Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Multiline);
-                result.Add(type, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
-            }
-            return result;
-        }
-
-        static public SortedDictionary<string, string> ParseParam(string tripleSlashStr, SortedDictionary<string, string> parameters)
-        {
-            SortedDictionary<string, string> result = new SortedDictionary<string, string>();
-
-            for(int i = 0; i < parameters.Count; i++)
-            {
-                string param = parameters.ElementAt(i).Key;
-                int index = param.IndexOf(":");
-                if(index != -1 && index + 2 < param.Length)
-                {
-                    param = param.Substring(index + 2);
-                }
-
-                string typeRegexPatten = string.Format("<param name=\"{0}\">(?<typeContent>[\\s\\S]*?)</param>", param);
-                Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Multiline);
-                result.Add(param, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
-            }
-
-            return result;
-        }
-
-    }
-
-    public class MarkDownConvertor
-    {
-        private Markdown markdown = new Markdown();
-        Dictionary<string, string> idPathRelativeMapping;
-        public void init(Dictionary<string, string> iprm)
-        {
-            markdown.AutoHyperlink = true;
-            markdown.AutoNewLines = true;
-            markdown.EmptyElementSuffix = ">";
-            markdown.EncodeProblemUrlCharacters = true;
-            markdown.LinkEmails = false;
-            markdown.StrictBoldItalic = true;
-            idPathRelativeMapping = iprm;
-        }
-        public string ConvertToHTML(string md)
-        {
-            string result = ResolveAT(md);
-            result = markdown.Transform(result);
-            return result;
-        }
-        public string ResolveAT(string md)
-        {
-            md = Regex.Replace(md, @"@(?<ATcontent>\S*)\s", new MatchEvaluator(ATResolver), RegexOptions.Compiled);
-            return md;
-        }
-        private string ATResolver(Match match)
-        {
-            string filePath;
-            string id = match.Groups["ATcontent"].Value;
-            if (idPathRelativeMapping.TryGetValue(id, out filePath))
-            {
-                return string.Format("[{0}]({1})", match.Value.Trim().Substring(3), filePath); ;
-            }
-            return match.Value;
-        }
-    }
-
-    public class ViewModel
-    {
-        public string baseURL;
-        public AssemblyDocMetadata assemblyMta;
-        public NamespaceDocMetadata namespaceMta;
-        public ClassDocMetadata classMta;
-        public MethodDocMetadata methodMta;
-        public Dictionary<string, string> idPathRelativeMapping;
-
-        public ViewModel()
-        {
         }
     }
 

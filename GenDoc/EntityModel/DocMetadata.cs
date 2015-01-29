@@ -13,9 +13,20 @@ namespace DocAsCode.EntityModel
     public class AssemblyDocMetadata : DocMetadata
     {
         private ConcurrentDictionary<Identity, NamespaceDocMetadata> _namespaces = new ConcurrentDictionary<Identity, NamespaceDocMetadata>();
+
         public IEnumerable<NamespaceDocMetadata> Namespaces
         {
-            get { return _namespaces.Values; }
+            get
+            {
+                if(_namespaces == null || _namespaces.Count == 0)
+                {
+                    return null;
+                }
+                else
+                {
+                    return _namespaces.Values.OrderBy(q => q.Id.ToString()).ToList();
+                }
+            }
             set
             {
                 _namespaces = new ConcurrentDictionary<Identity, NamespaceDocMetadata>(value.ToDictionary(s => s.Id, s => s));
@@ -32,6 +43,7 @@ namespace DocAsCode.EntityModel
 
         public bool TryAddNamespace(NamespaceDocMetadata mta)
         {
+            mta.Parent = this.Id;
             return _namespaces.TryAdd(mta.Id, mta);
         }
 
@@ -123,6 +135,11 @@ namespace DocAsCode.EntityModel
                 }
             }
 
+            if (list != null)
+            {
+                list = list.OrderBy(q => q.Id.ToString()).ToList();
+            }
+
             return list;
         }
 
@@ -137,6 +154,7 @@ namespace DocAsCode.EntityModel
             }
 
         }
+
         public bool TryAdd(MemberDocMetadata metadata, MemberType type)
         {
             if (!AllowedMemberTypes.Contains(type))
@@ -144,6 +162,7 @@ namespace DocAsCode.EntityModel
                 throw new Exception(string.Format("The metadata of type {0} cannot be generated.", type.ToString()));
             }
 
+            metadata.Parent = this.Id;
             return _members[type].TryAdd(metadata.Id, metadata);
         }
          
@@ -304,7 +323,19 @@ namespace DocAsCode.EntityModel
 
     public class ClassDocMetadata : CompositeDocMetadata
     {
-        public Stack<Identity> InheritanceHierarchy { get; set; }
+        private Stack<Identity> _inheritancehierarchy;
+
+        public Stack<Identity> InheritanceHierarchy
+        {
+            get
+            {
+                return _inheritancehierarchy;
+            }
+            set
+            {
+                _inheritancehierarchy = new Stack<Identity>(value);
+            }
+        }
 
         public IEnumerable<MethodDocMetadata> Methods
         {
@@ -683,6 +714,8 @@ namespace DocAsCode.EntityModel
     {
         public Identity Id { get; set; }
 
+        public Identity Parent { get; set; }
+
         public MemberType MemberType { get; set; }
 
         public string XmlDocumentation { get; set; }
@@ -697,6 +730,7 @@ namespace DocAsCode.EntityModel
         public DocMetadata(string name)
         {
             this.Id = new Identity(name);
+            this.Parent = null;
         }
 
         /// <summary>

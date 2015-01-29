@@ -29,7 +29,10 @@
         <div class="content-wrapper">
             <p id="hierarchial_navigation">
                 <span id="book_title">
-                    @Model.namespaceMta.Id.ToString() > @Model.classMta.Id.ToString()
+                    <a href="index.html">@Model.assemblyMta.Id.ToString()</a>
+                    >
+                    <a href="@Model.idPathRelativeMapping[Model.namespaceMta.Id.ToString()]"> @Model.namespaceMta.Id.ToString()</a>
+                    > @Model.classMta.Id.ToString()
                 </span>
             </p>
         </div>
@@ -39,21 +42,21 @@
         <!--article-navigator-->
         <nav id="navigator" role="navigation">
             <ul class="nav-namespace">
-                @foreach (var ns in Model.assemblyMta.Namespaces)
+                @if(Model.assemblyMta.Namespaces != null){ foreach (var ns in Model.assemblyMta.Namespaces)
                 {
-                    //if (ns.Classes.Any())
-                {
-                var nsPath = ns.Id.ToString().Replace(':','_') + ".html";
+                var nsPath = Model.idPathRelativeMapping[ns.Id.ToString()];
+                var nsName = Model.idDisplayNameRelativeMapping[ns.Id.ToString()];
                 string ns_open = ns==@Model.namespaceMta?"ns-open":"";
                 <li class="namespace-name @ns_open">
-                    <a class="namespace-link" href="@nsPath">@ns.Id.ToString().Substring(2)</a>
+                    <a class="namespace-link" href="@nsPath">@nsName</a>
                     <ul class="nav-classes">
                         @if(ns.Classes != null){ foreach (var vclass in ns.Classes)
                         {
-                        var classPath = ns.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
-                        string c_open = vclass==@Model.classMta?"c-open":"";
+                        var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
+                        var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
+                        string c_open = "";
                         <li class="class-name @c_open">
-                            <a class="class-link" href="@classPath">@vclass.Id.ToString().Substring(vclass.Id.ToString().LastIndexOf(".")+1)</a>
+                            <a class="class-link" href="@classPath">@className.Substring(className.LastIndexOf(".")+1)</a>
                         </li>
                         }}
                     </ul>
@@ -65,7 +68,8 @@
         <article class="article-content">
             <div id="article-header">
                 <h1 class="article-name">
-                    @Model.classMta.Id.ToString().Replace("T:", "Class ")
+                    Class&nbsp;
+                    @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]
                 </h1>
                 <section class="article-header-content">
                     Id: @Model.classMta.Id.ToString()
@@ -84,18 +88,11 @@
                             <div class="inheritance-table-line">
                                 @{
                                     string id = Model.classMta.InheritanceHierarchy.Pop().ToString();
-                                    string path;
-                                    if(Model.idPathRelativeMapping.ContainsKey(id)){
-                                        path = Model.idPathRelativeMapping[id];
-                                    }
-                                    else{
-                                        path = "https://msdn.microsoft.com/en-us/library/" + @id.Substring(2);
-                                    }
-                                    <a href="@path"> @id.Substring(2)</a>
+                                    @Raw(Model.resolveLink(id));
                                     if(Model.classMta.InheritanceHierarchy.Count != 0) { @call(); }
                                     else {
                                         <div class="inheritance-table-last-line">
-                                            <p>@Model.classMta.Id.ToString().Substring(2)</p>
+                                            <p>@Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]</p>
                                         </div>
                                     }
                                 }
@@ -111,11 +108,11 @@
                     <ul class="section-members">
                         @if(Model.classMta.Methods != null){ foreach (var method in Model.classMta.Methods)
                         {
-                        string temp = @Model.classMta.Id.ToString().Replace("T:","M:")+".";
+                        string temp = @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]+".";
                         <li class="section-member">
                             <div class="section-member-header">
                                 <h3 class="section-member-name">
-                                    @method.Id.ToString().Replace(temp,"");
+                                    @Model.idDisplayNameRelativeMapping[method.Id.ToString()].Replace(temp,"")
                                 </h3>
                                 <div class="xml-section">
                                     @Raw(method.XmlDocumentation)
@@ -146,7 +143,12 @@
                                                         <tr>
                                                             <td scope="row">
                                                                 <code class="code-voice">
-                                                                    <em class="term">@param</em>
+                                                                    @Raw(Model.resolveLink(param.Substring(0, param.LastIndexOf(":")).Trim()))
+                                                                </code>
+                                                            </td>
+                                                            <td scope="row">
+                                                                <code class="code-voice">
+                                                                    <em class="term">@param.Substring(param.LastIndexOf(":")+1).Trim()</em>
                                                                 </code>
                                                             </td>
                                                             <td>
@@ -168,7 +170,7 @@
                                                         <tr>
                                                             <td scope="row">
                                                                 <code class="code-voice">
-                                                                    <em class="term">@method.MethodSyntax.Returns.Keys.FirstOrDefault()</em>
+                                                                    @Raw(Model.resolveLink(method.MethodSyntax.Returns.Keys.FirstOrDefault()))
                                                                 </code>
                                                             </td>
                                                             <td>
