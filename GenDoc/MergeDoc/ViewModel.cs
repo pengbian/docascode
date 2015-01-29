@@ -73,7 +73,7 @@ namespace DocAsCode.MergeDoc
             }
             else
             {
-                return string.Format("<a href=\"{0}\">{1}</a><a>&lt;</a>{2}<a>&gt;</a>", path, name, right);
+                return string.Format("<a href=\"{0}\">{1}</a><a>&nbsp;&lt;</a>{2}<a>&gt;</a>", path, name, right);
             }
         }
 
