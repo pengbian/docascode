@@ -43,8 +43,12 @@ namespace DocAsCode.EntityModel
 
         public bool TryAddNamespace(NamespaceDocMetadata mta)
         {
-            mta.Parent = this.Id;
-            return _namespaces.TryAdd(mta.Id, mta);
+            bool flag =  _namespaces.TryAdd(mta.Id, mta);
+            if (flag)
+            {
+                mta.Parent = this.Id;
+            }
+            return flag;
         }
 
         /// <summary>
@@ -162,8 +166,12 @@ namespace DocAsCode.EntityModel
                 throw new Exception(string.Format("The metadata of type {0} cannot be generated.", type.ToString()));
             }
 
-            metadata.Parent = this.Id;
-            return _members[type].TryAdd(metadata.Id, metadata);
+            bool flag =  _members[type].TryAdd(metadata.Id, metadata);
+            if (flag)
+            {
+                metadata.Parent = this.Id;
+            }
+            return flag;
         }
          
         public IEnumerable<DocMetadata> GetMemberType(MemberType type)
