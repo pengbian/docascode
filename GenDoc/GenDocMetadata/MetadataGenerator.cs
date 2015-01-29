@@ -3,10 +3,8 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DocAsCode.EntityModel;
-using DocAsCode.Utility;
+using System.Text.RegularExpressions;
 
 namespace DocAsCode.GenDocMetadata
 {
@@ -112,6 +110,14 @@ namespace DocAsCode.GenDocMetadata
 
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var classMta = new ClassDocMetadata(mta);
+
+                        classMta.InheritanceHierarchy = new Stack<Identity>();
+                        var type = nameTypedSymbol.BaseType;
+                        while(type != null)
+                        {
+                            classMta.InheritanceHierarchy.Push(new Identity(type.GetDocumentationCommentId()));
+                            type = type.BaseType;
+                        }
 
                         classMta.Syntax = new SyntaxDocFragment
                         {
@@ -264,25 +270,33 @@ namespace DocAsCode.GenDocMetadata
                             DocMetadata mta = base.GenerateFrom(symbol);
                             var methodMta = new MethodDocMetadata(mta);
 
-                            var parametersDic = new SortedDictionary<string, string>() { };
+                            var methodSymbol = symbol as IMethodSymbol;
 
-                            foreach (var p in syntax.ParameterList.Parameters)
+                            if(methodSymbol != null)
                             {
-                                var param = String.Format("{0} : {1}", p.Type.ToString(), p.Identifier.ToString());
-                                parametersDic.Add(param, ""); 
-                            };
+                                var parametersDic = new SortedDictionary<string, string>() { };
 
-                            methodMta.Syntax = new MethodSyntax
-                            {
-                                Parameters = parametersDic,
-                                Returns = new Dictionary<string, string> { { syntax.ReturnType.ToString(), "" },},
-                                Content = syntax.WithBody(null)
-                                    .NormalizeWhitespace()
-                                    .ToString()
-                                    .Trim(),
-                                XmlDocumentation = methodMta.XmlDocumentation,
-                               
-                            };
+                                foreach (var p in methodSymbol.Parameters)
+                                {
+                                    var param = String.Format("{0} : {1}", p.Type.GetDocumentationCommentId() == null ? p.Type.BaseType.GetDocumentationCommentId() : p.Type.GetDocumentationCommentId(), p.Name);
+                                    parametersDic.Add(param, "");
+                                };
+
+                                var returnType = methodSymbol.ReturnType.GetDocumentationCommentId() == null ? methodSymbol.ReturnType.BaseType.GetDocumentationCommentId() : methodSymbol.ReturnType.GetDocumentationCommentId();
+
+                                methodMta.Syntax = new MethodSyntax
+                                {
+                                    Parameters = parametersDic,
+                                    Returns = new Dictionary<string, string> { { returnType, "" }, },
+                                    Content = syntax.WithBody(null)
+                                        .NormalizeWhitespace()
+                                        .ToString()
+                                        .Trim(),
+                                    XmlDocumentation = methodMta.XmlDocumentation,
+
+                                };
+                            }
+
                             return methodMta;
                         }
                         else

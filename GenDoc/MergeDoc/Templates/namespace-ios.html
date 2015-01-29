@@ -29,7 +29,8 @@
         <div class="content-wrapper">
             <p id="hierarchial_navigation">
                 <span id="book_title">
-                    @Model.namespaceMta.Id.ToString()
+                    <a href="index.html">@Model.assemblyMta.Id.ToString()</a>
+                    > @Model.namespaceMta.Id.ToString()
                 </span>
             </p>
         </div>
@@ -39,25 +40,25 @@
         <!--article-navigator-->
         <nav id="navigator" role="navigation">
             <ul class="nav-namespace">
-                @foreach (var ns in Model.assemblyMta.Namespaces)
+                @if(Model.assemblyMta.Namespaces != null){ foreach (var ns in Model.assemblyMta.Namespaces)
                 {
-                    //if (ns.Classes.Any())
-                {
-                var nsPath = ns.Id.ToString().Replace(':','_') + ".html";
-                string ns_open = ns==@Model.namespaceMta?"ns-open":"";
-                <li class="namespace-name @ns_open">
-                    <a class="namespace-link" href="@nsPath">@ns.Id.ToString().Substring(2)</a>
-                    <ul class="nav-classes">
-                        @if(ns.Classes != null) {foreach (var vclass in ns.Classes)
-                        {
-                        var classPath = ns.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
-                        string c_open = "";
-                        <li class="class-name @c_open">
-                            <a class="class-link" href="@classPath">@vclass.Id.ToString().Substring(vclass.Id.ToString().LastIndexOf(".")+1)</a>
-                        </li>
-                        }}
-                    </ul>
-                </li>
+                    var nsPath = Model.idPathRelativeMapping[ns.Id.ToString()];
+                    var nsName = Model.idDisplayNameRelativeMapping[ns.Id.ToString()];
+                    string ns_open = ns==@Model.namespaceMta?"ns-open":"";
+                    <li class="namespace-name @ns_open">
+                        <a class="namespace-link" href="@nsPath">@nsName</a>
+                        <ul class="nav-classes">
+                            @if(ns.Classes != null) {foreach (var vclass in ns.Classes)
+                            {
+                            var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
+                            var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
+                            string c_open = "";
+                            <li class="class-name @c_open">
+                                <a class="class-link" href="@classPath">@className.Substring(className.LastIndexOf(".")+1)</a>
+                            </li>
+                            }}
+                        </ul>
+                    </li>
                 }}
             </ul>
         </nav>
@@ -65,7 +66,7 @@
         <article class="article-content">
             <div id="article-header">
                 <h1 class="article-name">
-                    @Model.namespaceMta.Id.ToString().Replace("N:", "Namespace ")
+                    @Model.idDisplayNameRelativeMapping[Model.namespaceMta.Id.ToString()]
                 </h1>
             </div>
             <section id="article-body">
@@ -73,12 +74,13 @@
                     <h3 class="section-name">Classes</h3>
                     <table>
                         @if(Model.namespaceMta.Classes != null){ foreach (var vclass in Model.namespaceMta.Classes)
-                        {             
-                        var classPath = Model.namespaceMta.Id.ToString().Replace(':','_') + "/" + vclass.Id.ToString().Replace(':','_') + ".html";
+                        {
+                        var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
+                        var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
                         <tr>
                             <td>
                                 <a href="@classPath">
-                                    @vclass.Id.ToString().Substring(vclass.Id.ToString().LastIndexOf(".")+1)
+                                    @className.Substring(className.LastIndexOf(".")+1)
                                 </a>
                             </td>
                             <td>
@@ -88,7 +90,7 @@
                             </td>
                         </tr>
                         }}
-                    </table>                   
+                    </table>
                 </div>
             </section>
         </article>

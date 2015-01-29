@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace DocAsCode.EntityModel
 {
+
     public class CommentIdToYamlHeaderConverter : TypeConverter
     {
         /// <summary>
