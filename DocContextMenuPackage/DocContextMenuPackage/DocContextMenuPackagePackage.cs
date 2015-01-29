@@ -64,6 +64,11 @@ namespace Company.DocContextMenuPackage
                 CommandID menuCommandID = new CommandID(GuidList.guidDocContextMenuPackageCmdSet, (int)PkgCmdIDList.cmdidMyCommand);
                 MenuCommand menuItem = new MenuCommand(MenuItemCallback, menuCommandID );
                 mcs.AddCommand( menuItem );
+
+                // Create the 'publish' command for the menu item.
+                CommandID publishToGithubMenuCommandID = new CommandID(GuidList.guidDocContextMenuPackageCmdSet, (int)PkgCmdIDList.PublishToGithubCommand);
+                MenuCommand publishToGithubMenuItem = new MenuCommand(PublishToGithubMenuItemCallback, publishToGithubMenuCommandID);
+                mcs.AddCommand(publishToGithubMenuItem);
             }
         }
         #endregion
@@ -89,5 +94,25 @@ namespace Company.DocContextMenuPackage
             }
         }
 
+        /// <summary>
+        /// This function is the callback used to execute a command when the a menu item is clicked.
+        /// See the Initialize method to see how the menu item is associated to this function using
+        /// the OleMenuCommandService service and the MenuCommand class.
+        /// </summary>
+        private void PublishToGithubMenuItemCallback(object sender, EventArgs e)
+        {
+            //Generate the htmls
+            DTE dte = (DTE)GetService(typeof(DTE));
+            Project activeProject = null;
+            Array selectedProjects = (Array)dte.ActiveSolutionProjects;
+            if (selectedProjects.Length == 1)
+            {
+                activeProject = (Project)selectedProjects.GetValue(0);
+                if (!activeProject.FileName.EndsWith(".docproj"))
+                {
+                    PublishToGithubOperation.operate(activeProject);
+                }
+            }
+        }
     }
 }

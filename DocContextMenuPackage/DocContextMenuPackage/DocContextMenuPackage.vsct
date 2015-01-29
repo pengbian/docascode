@@ -34,6 +34,15 @@
     group; your package should define its own command set in order to avoid collisions  
     with command ids defined by other packages. -->
 
+    <Menus>
+      <Menu guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenu" priority="0x0200" type="Menu">
+        <Parent guid="guidDocContextMenuPackageCmdSet" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>Publish to</ButtonText>
+          <CommandName>Publish to</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
     
     <!-- In this section you can define new menu groups. A menu group is a container for 
          other menus or buttons (commands); from a visual point of view you can see the 
@@ -42,6 +51,9 @@
     <Groups>
       <Group guid="guidDocContextMenuPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
+      </Group>
+      <Group guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenuGroup" priority="0x0210">
+        <Parent guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenu"/>
       </Group>
 
     </Groups>
@@ -63,6 +75,13 @@
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Generate Doc Projects</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidDocContextMenuPackageCmdSet" id="PublishToGithubCommand" priority="0x0211" type="Button">
+        <Parent guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Github</ButtonText>
         </Strings>
       </Button>
 
@@ -94,8 +113,20 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidDocContextMenuPackageCmdSet" value="{0be74276-7d6f-4c26-9029-402bc9b533e1}">
 
+      <!--This project`s group-->
       <IDSymbol name="MyMenuGroup" value="0x1020" />
+      
+      <!--Generator doc command-->
       <IDSymbol name="cmdidMyCommand" value="0x0100" />
+      
+      <!--'Publish' submenu-->
+      <IDSymbol name="PublishSubMenu" value="0x0200"/>
+      
+      <!--'Publish' submenu group-->
+      <IDSymbol name="PublishSubMenuGroup" value="0x0210"/>
+      
+      <!--publish to github command-->
+      <IDSymbol name="PublishToGithubCommand" value="0x0211" />
     </GuidSymbol>
     
     

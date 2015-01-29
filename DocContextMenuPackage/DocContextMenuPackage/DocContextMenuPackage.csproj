@@ -145,6 +145,7 @@
   <ItemGroup>
     <Compile Include="AddDocProjectOperation.cs" />
     <Compile Include="MDGenerateHelper.cs" />
+    <Compile Include="PublishToGithubOperation.cs" />
     <Compile Include="ReferenceDocumentHeler.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="Resources.Designer.cs">
@@ -202,6 +203,10 @@
     <ProjectReference Include="..\..\GenDoc\Utility\Utility.csproj">
       <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
       <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PublishDoc\PublishDoc.csproj">
+      <Project>{f6cbb448-7a7d-4140-be6b-ecb4d6e95868}</Project>
+      <Name>PublishDoc</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -13,7 +13,7 @@ using MarkdownSharp;
 
 namespace DocAsCode.MergeDoc
 {
-    class Program
+    public class Program
     {
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
         static int Main(string[] args)
@@ -24,6 +24,7 @@ namespace DocAsCode.MergeDoc
             string templateDirectory = "Templates";
             string cssDirecotry = "css";
             string scriptDirecotry = "script";
+            string publishBaseUrl = "";
             try
             {
                 //Create a ViewModel for Razor to render the template
@@ -39,6 +40,7 @@ namespace DocAsCode.MergeDoc
                     new Option("outputDirectory", s => outputDirectory = s, defaultValue: outputDirectory, helpText: "The output html files will be generated into this folder"),
                     new Option("templateDirectory", s => templateDirectory = s, defaultValue: templateDirectory, helpText: "The template folder for generated html, the folder should contain class.html and namespace.html, the former one is the html template for Class pages, and the latter one is the html template for Namespace pages"),
                     new Option("delimitedMdFiles", s => delimitedMdFiles = s, defaultValue: delimitedMdFiles, helpName: "delimitedMdFiles", helpText: "Markdown files delimited by comma, only files with .md extension will be recognized"),
+                    new Option("publishBaseUrl", s => publishBaseUrl = s, defaultValue: publishBaseUrl, helpText: "Specify the baseurl of the published htmls."),
                     };
 
                 if (!ConsoleParameterParser.ParseParameters(options, args))
@@ -85,7 +87,14 @@ namespace DocAsCode.MergeDoc
                 string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
                 string asmTemplate = File.ReadAllText(Path.Combine(templateDirectory, "index.html"));
                 //Add baseUrl to the template,this is for @ link
-                viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
+                if (publishBaseUrl == "")
+                {
+                    viewModel.baseURL = Path.Combine(System.Environment.CurrentDirectory, outputDirectory) + "/";
+                }
+                else
+                {
+                    viewModel.baseURL = publishBaseUrl;
+                }
                 viewModel.assemblyMta = assemblyMta;
                 string assemblyFile = Path.Combine(outputDirectory, "index.html");
 
