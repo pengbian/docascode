@@ -29,7 +29,7 @@ namespace Company.DocContextMenuPackage
                 throw new System.ApplicationException(string.Format("Error executing {0} {1} : {2}", executorPath, arguments, processingDetail.StandardOutput + processingDetail.StandardError));
             }
 
-            string mtaFile = docMetadataPath + "\\mta\\" + selectedProject.Name + ".docmta";
+            string mtaFile = docMetadataPath + "\\mta\\" + selectedProject.Properties.Item("AssemblyName").Value.ToString() + ".docmta";
             //publish
             //typeof(DocAsCode.PublishDoc.Program).Assembly.Location;
             executorPath = System.Environment.CurrentDirectory + "\\..\\..\\..\\..\\PublishDoc\\bin\\Debug\\PublishDoc.exe";
