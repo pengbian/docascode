@@ -1,4 +1,0 @@
----
-class: DocAsCode.GenDocMetadata.Program
----
-
