@@ -9,7 +9,7 @@ namespace DocAsCode.PublishDoc
 {
     class GitRepositoryPublisher
     {
-        public static bool PublishToGit(string remoteGitPath, string localGitPath, string publishUrl, string userName, string passWord)
+        public static bool PublishToGit(string remoteGitPath, string localGitPath, string userName, string passWord)
         {
             //TODO: This function may throw exception, should I catch them and return false?
             //init

@@ -304,6 +304,10 @@ article .btn a{
     font-size: 14px;
 }
 
+article li.section-member div.btn{
+    display:none;
+}
+
 article h3.section-name{
     color: rgba(128,128,128,1);
     display: block;

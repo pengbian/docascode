@@ -13,37 +13,13 @@ namespace Company.DocContextMenuPackage
     {
         public static void operate(Project selectedProject)
         {
-            //Generate the mtafile
-            string executorPath = typeof(DocAsCode.GenDocMetadata.Program).Assembly.Location;
-            string workingDirectory = Path.GetDirectoryName(executorPath);
-            string projectName = selectedProject.FullName;
-            string docMetadataPath = System.Environment.CurrentDirectory + "\\..\\..\\..\\..\\PublishDoc\\bin\\Debug\\testData3";
-            string arguments = string.Format("\"{0}\" /o:\"{1}\"", projectName, docMetadataPath);
-            ProcessDetail processingDetail = null;
-            Task.Run(async () =>
+            Microsoft.Build.Evaluation.ProjectCollection projectCollection = new Microsoft.Build.Evaluation.ProjectCollection();
+            Microsoft.Build.Evaluation.Project docProject = projectCollection.LoadProject(selectedProject.FullName);
+            if (docProject == null)
             {
-                processingDetail = await ProcessUtility.ExecuteWin32ProcessAsync(executorPath, arguments, workingDirectory, 100000);
-            }).Wait();
-            if (processingDetail.ExitCode != 0)
-            {
-                throw new System.ApplicationException(string.Format("Error executing {0} {1} : {2}", executorPath, arguments, processingDetail.StandardOutput + processingDetail.StandardError));
+                docProject = new Microsoft.Build.Evaluation.Project(selectedProject.FullName);
             }
-
-            string mtaFile = docMetadataPath + "\\mta\\" + selectedProject.Properties.Item("AssemblyName").Value.ToString() + ".docmta";
-            //publish
-            //typeof(DocAsCode.PublishDoc.Program).Assembly.Location;
-            executorPath = System.Environment.CurrentDirectory + "\\..\\..\\..\\..\\PublishDoc\\bin\\Debug\\PublishDoc.exe";
-            workingDirectory = Path.GetDirectoryName(executorPath);
-            arguments = string.Format("{0}", mtaFile);
-            processingDetail = null;
-            Task.Run(async () =>
-            {
-                processingDetail = await ProcessUtility.ExecuteWin32ProcessAsync(executorPath, arguments, workingDirectory, 100000);
-            }).Wait();
-            if (processingDetail.ExitCode != 0)
-            {
-                throw new System.ApplicationException(string.Format("Error executing {0} {1} : {2}", executorPath, arguments, processingDetail.StandardOutput + processingDetail.StandardError));
-            }
+            bool result = docProject.Build(target: "PublishDoc");
         }
     }
 }

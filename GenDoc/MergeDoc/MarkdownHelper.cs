@@ -55,6 +55,8 @@ namespace DocAsCode.MergeDoc
         {
             public string Id { get; set; }
 
+            public int Startline { get; set; }
+
             public string MarkdownContent { get; set; }
 
             public int ContentStartIndex { get; set; }
