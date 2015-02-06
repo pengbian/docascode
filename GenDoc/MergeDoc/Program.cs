@@ -57,7 +57,7 @@ namespace DocAsCode.MergeDoc
                 string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
                 string asmTemplate = File.ReadAllText(Path.Combine(templateDirectory, "index.html"));
 
-                ViewModel viewModel = new ViewModel(assemblyMta);
+                ViewModel viewModel = new ViewModel(assemblyMta, mtaFile, markdownCollectionCache);
 
                 //Add baseUrl to the template,this is for @ link
                 if (publishBaseUrl == "")
@@ -86,7 +86,7 @@ namespace DocAsCode.MergeDoc
                             foreach (var c in ns.Classes)
                             { 
                                 viewModel.classMta = c;
-                                viewModel.resolveContent(markdownCollectionCache);
+                                viewModel.resolveContent();
                                 string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
                                 result = Razor.Parse(classTemplate, viewModel);
                                 File.WriteAllText(classPath, result);

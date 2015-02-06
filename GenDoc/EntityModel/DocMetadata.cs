@@ -332,6 +332,7 @@ namespace DocAsCode.EntityModel
     public class ClassDocMetadata : CompositeDocMetadata
     {
         private Stack<Identity> _inheritancehierarchy;
+        public string FilePath { get; set; }
 
         public Stack<Identity> InheritanceHierarchy
         {
@@ -816,6 +817,8 @@ namespace DocAsCode.EntityModel
         public string Language { get; set; }
 
         public string XmlDocumentation { get; set; }
+
+        public int StartLine { get; set; }
     }
 
     public class Identity

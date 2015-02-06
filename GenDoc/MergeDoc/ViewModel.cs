@@ -5,12 +5,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using LibGit2Sharp;
+using System.Net;
 
 namespace DocAsCode.MergeDoc
 {
     public class ViewModel
     {
         public string baseURL;
+        public string mataPath;
+        private string sourceGitUrl;
 
         public AssemblyDocMetadata assemblyMta;
         public NamespaceDocMetadata namespaceMta;
@@ -18,9 +22,10 @@ namespace DocAsCode.MergeDoc
         public MethodDocMetadata methodMta;
         public Dictionary<string, string> idPathRelativeMapping;
         public Dictionary<string, string> idDisplayNameRelativeMapping;
+        private MarkDownConvertor _mdConvertor;
+        private MarkdownCollectionCache _markdownCollectionCache;
 
-
-        public string resolveName(MemberDocMetadata mta)
+        public string ResolveName(MemberDocMetadata mta)
         {
             string id = mta.Id.ToString();
 
@@ -40,7 +45,7 @@ namespace DocAsCode.MergeDoc
             return name;
         }
 
-        public string resolveLink(string id)
+        public string ResolveLink(string id)
         {
             Regex typeRegex = new Regex((@"^(?<class>[\s\S]*?)(\{(?<type>[\s\S]*?)\})?$"));
 
@@ -53,7 +58,7 @@ namespace DocAsCode.MergeDoc
             {
                 if (!type.Equals("``0"))
                 {
-                    right = resolveLink("T:" + type);
+                    right = ResolveLink("T:" + type);
                 }
                 classId = classId + "`1";
             }
@@ -77,55 +82,147 @@ namespace DocAsCode.MergeDoc
             }
         }
 
-        public void resolveContent(MarkdownCollectionCache markdownCollectionCache)
+        public string DisplaySummary(string xmlDocumentation)
         {
-            MarkDownConvertor mdConvertor = new MarkDownConvertor();
-            mdConvertor.init(idPathRelativeMapping);
+            string summary = TripleSlashParser.Parse(xmlDocumentation)["summary"].Trim();
 
+            var refs = TripleSlashParser.SeeCrefRegex.Matches(summary);
+
+            for(int i = 0; i < refs.Count; i++)
+            {
+                var @ref = refs[i];
+                string link = ResolveLink(@ref.Groups["ref"].Value);
+                summary = summary.Replace(@ref.Groups["seeCrefMatch"].Value, "@" + link);
+            }
+            return summary;
+        }
+
+        public string GetClassSourceUrl(ClassDocMetadata classMta)
+        {
+            try
+            {
+                string gitPath = Repository.Discover(classMta.FilePath);
+                Repository repo = new Repository(Path.GetDirectoryName(gitPath));
+                Branch branch = repo.Head;
+                Remote remote = repo.Network.Remotes["origin"];
+                sourceGitUrl = Path.Combine(remote.Url.Replace(".git", "/blob"), branch.Name, classMta.FilePath.Replace(repo.Info.WorkingDirectory, "")).Replace("\\", "/");
+               /* if (!RemoteUrlExists(sourceGitUrl))
+                {
+                    sourceGitUrl = "";
+                    Console.Error.WriteLine("Cannot find source git url of class {0}", classMta.Id);
+                }*/
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine("Failing in finding source git url of class {0}", classMta.Id, e);
+                sourceGitUrl = "";
+            }
+            return sourceGitUrl;
+        }
+
+        public string GetMethodSourceUrl(MethodDocMetadata methodMta)
+        {
+            if (!sourceGitUrl.Equals(""))
+            {
+                return sourceGitUrl + "#L" + (methodMta.Syntax.StartLine + 1);
+            }
+            else
+            {
+                return sourceGitUrl;
+            }
+        }
+
+        public string GetMarkdownSourceUrl(ClassDocMetadata classMta)
+        {
+            string markdownGitURL = "";
+
+            string markdownFilePath;
+            try
+            {
+                if (_markdownCollectionCache.IdMarkdownFileMap.TryGetValue(classMta.Id, out markdownFilePath))
+                {
+                    string gitPath = Repository.Discover(markdownFilePath);
+                    Repository repo = new Repository(Path.GetDirectoryName(gitPath));
+                    Branch branch = repo.Head;
+                    Remote remote = repo.Network.Remotes["origin"];
+                    string relativePath = markdownFilePath.Replace(repo.Info.WorkingDirectory, "");
+                    markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/edit"), branch.Name, relativePath).Replace("\\", "/");
+                    if (!RemoteUrlExists(markdownGitURL))
+                    {
+                        markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/new"), branch.Name, Path.GetDirectoryName(relativePath), "?filename=" + Path.GetFileName(relativePath)).Replace("\\", "/");
+                        markdownGitURL += String.Format(string.Format("&value=---%0Dclass: {0}%0D---%0D", classMta.Id));
+                    }
+                }
+                else
+                {
+                    string gitPath = Repository.Discover(mataPath);
+                    Repository repo = new Repository(Path.GetDirectoryName(gitPath));
+                    Branch branch = repo.Head;
+                    Remote remote = repo.Network.Remotes["origin"];
+                    markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/new"), branch.Name, "?filename=" + FileExtensions.ToValidFilePath(classMta.Id) + ".md").Replace("\\", "/");
+                    markdownGitURL += String.Format(string.Format("&value=---%0Dclass: {0}%0D---%0D", classMta.Id));
+                }
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine("Failing in finding source git url of class {0}", classMta.Id, e);
+            }
+
+            return markdownGitURL;
+        }
+
+
+        private bool RemoteUrlExists(string url)
+        {
+            try
+            {
+                HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
+                request.Method = "HEAD";
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                return (response.StatusCode == HttpStatusCode.OK);
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public void resolveContent()
+        {
             string content;
-            if (markdownCollectionCache.TryGetValue(namespaceMta.Id, out content))
+            if (_markdownCollectionCache.TryGetValue(namespaceMta.Id, out content))
             {
-                namespaceMta.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                namespaceMta.MarkdownContent = _mdConvertor.ConvertToHTML(content);
             }
-            //This may not be a good solution, just display the summary of triple slashes
-            namespaceMta.XmlDocumentation = TripleSlashParser.Parse(namespaceMta.XmlDocumentation)["summary"].Trim();
-            namespaceMta.XmlDocumentation = mdConvertor.ConvertToHTML(namespaceMta.XmlDocumentation);
 
-            if (markdownCollectionCache.TryGetValue(classMta.Id, out content))
+            if (_markdownCollectionCache.TryGetValue(classMta.Id, out content))
             {
-                classMta.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                classMta.MarkdownContent = _mdConvertor.ConvertToHTML(content);
             }
-            classMta.XmlDocumentation = TripleSlashParser.Parse(classMta.XmlDocumentation)["summary"].Trim();
-            classMta.XmlDocumentation = mdConvertor.ConvertToHTML(classMta.XmlDocumentation);
-            resolveName(classMta);
 
             if (classMta.Methods != null)
             {
                 foreach (var m in classMta.Methods)
                 {
-                    resolveName(m);
                     m.MethodSyntax.Parameters = TripleSlashParser.ParseParam(m.XmlDocumentation, m.MethodSyntax.Parameters);
 
                     for (int i = 0; i < m.MethodSyntax.Parameters.Count; i++)
                     {
                         string param = m.MethodSyntax.Parameters.ElementAt(i).Key;
                         string description = m.MethodSyntax.Parameters.ElementAt(i).Value;
-                        m.MethodSyntax.Parameters[param] = mdConvertor.ConvertToHTML(description.Trim());
+                        m.MethodSyntax.Parameters[param] = _mdConvertor.ConvertToHTML(description.Trim());
                     }
 
-                    var parseDic = TripleSlashParser.Parse(m.XmlDocumentation);
                     string returnType = m.MethodSyntax.Returns.Keys.FirstOrDefault();
-                    m.MethodSyntax.Returns[returnType] = mdConvertor.ConvertToHTML(parseDic["returns"].Trim());
+                    m.MethodSyntax.Returns[returnType] = _mdConvertor.ConvertToHTML((TripleSlashParser.Parse(m.XmlDocumentation))["returns"].Trim());
 
-                    m.XmlDocumentation = parseDic["summary"].Trim();
-                    m.XmlDocumentation = mdConvertor.ConvertToHTML(m.XmlDocumentation);
-
-                    if (markdownCollectionCache.TryGetValue(m.Id, out content))
+                    if (_markdownCollectionCache.TryGetValue(m.Id, out content))
                     {
-                        m.MarkdownContent = mdConvertor.ConvertToHTML(content);
+                        m.MarkdownContent = _mdConvertor.ConvertToHTML(content);
+
                     }
 
-                    m.Syntax.Content = mdConvertor.ConvertToHTML(string.Format(@"
+                    m.Syntax.Content = _mdConvertor.ConvertToHTML(string.Format(@"
 ```
 {0}
 ```
@@ -156,7 +253,7 @@ namespace DocAsCode.MergeDoc
                             string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
                             idPathRelativeMapping.Add(c.Id, classPath);
 
-                            string className = resolveName(c);
+                            string className = ResolveName(c);
                             idDisplayNameRelativeMapping.Add(c.Id, className);
 
                             if (c.Methods != null)
@@ -165,7 +262,7 @@ namespace DocAsCode.MergeDoc
                                 {
                                     idPathRelativeMapping.Add(m.Id, classPath);
 
-                                    string methodName = resolveName(m);
+                                    string methodName = ResolveName(m);
                                     idDisplayNameRelativeMapping.Add(m.Id, methodName);
                                 }
                             }
@@ -173,13 +270,18 @@ namespace DocAsCode.MergeDoc
                     }
                 }
             }
+
+            this._mdConvertor = new MarkDownConvertor(idPathRelativeMapping);
         }
 
-        public ViewModel(AssemblyDocMetadata assemblyMta)
+        public ViewModel(AssemblyDocMetadata assemblyMta, string mataFilePath,MarkdownCollectionCache markdownCollectionCache)
         {
             this.assemblyMta = assemblyMta;
+            this.mataPath = mataFilePath;
+            this._markdownCollectionCache = markdownCollectionCache;
             init();
         }
+
 
     }
 
@@ -200,7 +302,7 @@ namespace DocAsCode.MergeDoc
                                                         "author",
                                                         "file",
                                                         "copyright"  };
-        static private Regex SeeCrefRegex = new Regex(@"<see cref=""(?<ref>[\s\S]*?)""/>", RegexOptions.Compiled);
+        static public Regex SeeCrefRegex = new Regex(@"(?<seeCrefMatch><see cref=""(?<ref>[\s\S]*?)""/>?)", RegexOptions.Compiled);
 
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {

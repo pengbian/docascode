@@ -6160,10 +6160,10 @@ namespace Microsoft.VisualStudio.Project
             else
             {
                 Guid guid = new Guid(projectGuid);
-               // if (! guid.Equals(this.projectIdGuid))
-               // {
+                if (guid != this.projectIdGuid)
+                {
                     this.projectIdGuid = guid;
-                //}
+                }
             }
         }
 
