@@ -32,6 +32,15 @@ namespace DocAsCode.MergeDoc
 
             string name = id.Substring(id.IndexOf(":") + 1).Trim().Replace(parentId.Substring(parentId.IndexOf(":") + 1).Trim(), idDisplayNameRelativeMapping[parentId]);
 
+            if (name.IndexOf(".#ctor") != -1)
+            {
+                name = name.Replace(".#ctor", "");
+                if (!name.EndsWith(")"))
+                {
+                    name += "()";
+                }
+            }
+
             if (name.IndexOf("``1") != -1 || name.IndexOf("`1") != -1)
             {
                 Regex typeRegex = new Regex(@"[\s\S]*\<(?<type>\w+)\>[\s\S]*\bwhere\b\s*\1\s*:\s*(?<baseType>[\S]*)");
@@ -41,6 +50,7 @@ namespace DocAsCode.MergeDoc
                 string templateType = baseType.Equals("") ? type : baseType;
                 return name.Replace("``1", string.Format("<{0}>", templateType)).Replace("`1", string.Format("<{0}>", templateType));
             }
+
             return name;
         }
 
@@ -314,6 +324,16 @@ namespace DocAsCode.MergeDoc
                                     idDisplayNameRelativeMapping.Add(m.Id, name);
                                 }
                             }
+                            /*if (c.Constructors != null)
+                            {
+                                foreach (var m in c.Constructors)
+                                {
+                                    idPathRelativeMapping.Add(m.Id, classPath);
+
+                                    string name = ResolveName(m);
+                                    idDisplayNameRelativeMapping.Add(m.Id, name);
+                                }
+                            }*/
                         }
                     }
                 }

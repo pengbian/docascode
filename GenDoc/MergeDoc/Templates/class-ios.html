@@ -114,7 +114,7 @@
                     <ul class="section-members">
                         @if(Model.classMta.Constructors != null){ foreach (var constructor in Model.classMta.Constructors)
                         {
-                        string temp = @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]+".";
+                        string temp = @Model.idDisplayNameRelativeMapping[Model.namespaceMta.Id.ToString()]+".";
                         <li class="section-member">
                             <div class="section-member-header">
                                 <h3 class="section-member-name">
