@@ -1,6 +1,6 @@
 
 :SetDocToolExtensionsPath
-SET DocToolExtensionsPath=c:\users\lianwei\repo\docascode\Drop\Debug
+SET DocToolExtensionsPath=C:\Users\t-shujia\Desktop\basecode\docascode\Drop\Debug
 
 :StartSolution
 START ALL.SLN
