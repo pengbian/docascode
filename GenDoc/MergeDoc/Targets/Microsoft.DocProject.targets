@@ -2,15 +2,12 @@
   <PropertyGroup>
     <GenDocMetadataToolPath Condition=" '$(GenDocMetadataToolPath)' == '' ">$(DocToolExtensionsPath)\GenDocMetadata.exe</GenDocMetadataToolPath>
     <MergeDocToolPath Condition=" '$(MergeDocToolPath)' == '' ">$(DocToolExtensionsPath)\MergeDoc.exe</MergeDocToolPath>
+    <PublishDocToolPath Condition=" '$(PublishDocToolPath)' == '' ">$(DocToolExtensionsPath)\PublishDoc.exe</PublishDocToolPath>
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
   </PropertyGroup>
   <Target Name="Build">
-    <Message Text ="%(DocMta.FullPath)" />
-    <CallTarget Targets="CleanupExistingDocmta" />
-    <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
-    <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
-    <CallTarget Targets="MergeDoc" />
+    <CallTarget Targets="BuildDoc" />
     <CallTarget Targets="PreviewWebsite" />
   </Target>
   <Target Name ="Clean">
@@ -30,11 +27,27 @@
     <Delete Files="@(DocMta)" />
   </Target>
 
+  <Target Name ="BuildDoc">
+    <Message Text ="%(DocMta.FullPath)" />
+    <CallTarget Targets="CleanupExistingDocmta" />
+    <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
+    <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
+    <CallTarget Targets="MergeDoc" />
+  </Target>
+
   <Target Name="MergeDoc">
     <ItemGroup>
       <DocMta Include="$(OutputPath)\**\*.docmta" />
     </ItemGroup>
     <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
+  </Target>
+
+  <Target Name="PublishDoc">
+    <ItemGroup>
+      <DocMta Include="$(OutputPath)\**\*.docmta" />
+    </ItemGroup>
+    <CallTarget Targets="BuildDoc" />
+    <Exec Command="$(PublishDocToolPath) /filesDirectory:&quot;$(OutputPath)&quot;" />
   </Target>
 
   <Target Name="PreviewWebsite">

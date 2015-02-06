@@ -14,7 +14,20 @@ namespace DocAsCode.PublishDoc
         [STAThread]
         public static void Main(string[] args)
         {
-            Publisher.PublishToGithub(args[0]);
+            string filesDirectory = "";
+
+            var options = new Option[]
+                {
+                    new Option("filesDirectory", s => filesDirectory = s, defaultValue: filesDirectory, helpText: "Specify the directory htmls to be published."),
+                };
+
+            if (!ConsoleParameterParser.ParseParameters(options, args))
+            {
+                Console.WriteLine("Error while parsing parameters!");
+                return ;
+            }
+
+            Publisher.PublishToGithub(filesDirectory);
         }
         
        

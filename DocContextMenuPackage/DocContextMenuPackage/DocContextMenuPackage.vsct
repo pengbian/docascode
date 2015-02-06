@@ -36,7 +36,7 @@
 
     <Menus>
       <Menu guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenu" priority="0x0200" type="Menu">
-        <Parent guid="guidDocContextMenuPackageCmdSet" id="MyMenuGroup"/>
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_BUILD"/>
         <Strings>
           <ButtonText>Publish to</ButtonText>
           <CommandName>Publish to</CommandName>
@@ -55,8 +55,8 @@
       <Group guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenuGroup" priority="0x0210">
         <Parent guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenu"/>
       </Group>
-
     </Groups>
+    
     
     <!--Buttons section. -->
     <!--This section defines the elements the user can interact with, like a menu command or a button 

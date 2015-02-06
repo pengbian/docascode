@@ -5,6 +5,8 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using System.ComponentModel.Design;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio;
 
 namespace Company.DocContextMenuPackage
 {
@@ -108,7 +110,7 @@ namespace Company.DocContextMenuPackage
             if (selectedProjects.Length == 1)
             {
                 activeProject = (Project)selectedProjects.GetValue(0);
-                if (!activeProject.FileName.EndsWith(".docproj"))
+                if (activeProject.FileName.EndsWith(".docproj"))
                 {
                     PublishToGithubOperation.operate(activeProject);
                 }
