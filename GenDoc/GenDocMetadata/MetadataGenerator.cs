@@ -296,7 +296,6 @@ namespace DocAsCode.GenDocMetadata
                                         .Trim(),
                                     XmlDocumentation = methodMta.XmlDocumentation,
                                     StartLine = syntax.SyntaxTree.GetLineSpan(syntax.Span).StartLinePosition.Line,
-
                                 };
                             }
 
@@ -310,18 +309,32 @@ namespace DocAsCode.GenDocMetadata
                                 DocMetadata mta = base.GenerateFrom(symbol);
                                 var constuctorMta = new ConstructorDocMetadata(mta);
 
-                                constuctorMta.Syntax = new SyntaxDocFragment
+                                var methodSymbol = symbol as IMethodSymbol;
+
+                                if (methodSymbol != null)
                                 {
-                                    Content = constructorSyntax.WithBody(null)
-                                        .NormalizeWhitespace()
-                                        .ToString()
-                                        .Trim(),
-                                    XmlDocumentation = constuctorMta.XmlDocumentation,
-                                };
+                                    var parametersDic = new SortedDictionary<string, string>() { };
+
+                                    foreach (var p in methodSymbol.Parameters)
+                                    {
+                                        var param = String.Format("{0} : {1}", p.Type.GetDocumentationCommentId() == null ? p.Type.BaseType.GetDocumentationCommentId() : p.Type.GetDocumentationCommentId(), p.Name);
+                                        parametersDic.Add(param, "");
+                                    };
+                                    constuctorMta.Syntax = new ConstructorSyntax
+                                    {
+                                        Parameters = parametersDic,
+                                        Content = constructorSyntax.WithBody(null)
+                                            .NormalizeWhitespace()
+                                            .ToString()
+                                            .Trim(),
+                                        XmlDocumentation = constuctorMta.XmlDocumentation,
+                                        StartLine = constructorSyntax.SyntaxTree.GetLineSpan(constructorSyntax.Span).StartLinePosition.Line,
+                                    };
+                                }
                                 return constuctorMta;
                             }
+                            return null;
                         }
-                        return null;
                     };
                 case (SymbolKind.Property):
                     {

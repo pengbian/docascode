@@ -19,7 +19,6 @@ namespace DocAsCode.MergeDoc
         public AssemblyDocMetadata assemblyMta;
         public NamespaceDocMetadata namespaceMta;
         public ClassDocMetadata classMta;
-        public MethodDocMetadata methodMta;
         public Dictionary<string, string> idPathRelativeMapping;
         public Dictionary<string, string> idDisplayNameRelativeMapping;
         private MarkDownConvertor _mdConvertor;
@@ -82,19 +81,17 @@ namespace DocAsCode.MergeDoc
             }
         }
 
-        public string DisplaySummary(string xmlDocumentation)
+        public string ResolveSeeCref(string description)
         {
-            string summary = TripleSlashParser.Parse(xmlDocumentation)["summary"].Trim();
+            var refs = TripleSlashParser.SeeCrefRegex.Matches(description);
 
-            var refs = TripleSlashParser.SeeCrefRegex.Matches(summary);
-
-            for(int i = 0; i < refs.Count; i++)
+            for (int i = 0; i < refs.Count; i++)
             {
                 var @ref = refs[i];
                 string link = ResolveLink(@ref.Groups["ref"].Value);
-                summary = summary.Replace(@ref.Groups["seeCrefMatch"].Value, "@" + link);
+                description = description.Replace(@ref.Groups["seeCrefMatch"].Value, "@" + link);
             }
-            return summary;
+            return description;
         }
 
         public string GetClassSourceUrl(ClassDocMetadata classMta)
@@ -120,7 +117,7 @@ namespace DocAsCode.MergeDoc
             return sourceGitUrl;
         }
 
-        public string GetMethodSourceUrl(MethodDocMetadata methodMta)
+        public string GetMemberSourceUrl(MemberDocMetadata methodMta)
         {
             if (!sourceGitUrl.Equals(""))
             {
@@ -171,7 +168,6 @@ namespace DocAsCode.MergeDoc
             return markdownGitURL;
         }
 
-
         private bool RemoteUrlExists(string url)
         {
             try
@@ -187,46 +183,78 @@ namespace DocAsCode.MergeDoc
             }
         }
 
-        public void resolveContent()
+        public string DisplaySummary(string xmlDocumentation)
+        {
+            string summary = TripleSlashParser.Parse(xmlDocumentation)["summary"].Trim();
+
+            return ResolveSeeCref(summary);
+        }
+
+        private string ExtractMarkdownContent(DocMetadata mta)
         {
             string content;
-            if (_markdownCollectionCache.TryGetValue(namespaceMta.Id, out content))
+            if (_markdownCollectionCache.TryGetValue(mta.Id, out content))
             {
-                namespaceMta.MarkdownContent = _mdConvertor.ConvertToHTML(content);
+                content = _mdConvertor.ConvertToHTML(content);
             }
+            return content;
+        }
 
-            if (_markdownCollectionCache.TryGetValue(classMta.Id, out content))
+        private SortedDictionary<string, string> ExtractParameters(DocMetadata mta, SortedDictionary<string, string> parameters)
+        {
+            parameters = TripleSlashParser.ParseParam(mta.XmlDocumentation, parameters);
+
+            for (int i = 0; i < parameters.Count; i++)
             {
-                classMta.MarkdownContent = _mdConvertor.ConvertToHTML(content);
+                string param = parameters.ElementAt(i).Key;
+                string description =parameters.ElementAt(i).Value;
+                parameters[param] = ResolveSeeCref(description.Trim());
             }
+            return parameters;
+        }
+
+        private Dictionary<string, string> ExtractReturn(MethodDocMetadata m)
+        {
+            var returns = m.MethodSyntax.Returns;
+            string description = (TripleSlashParser.Parse(m.XmlDocumentation))["returns"].Trim();
+            string returnType = returns.Keys.FirstOrDefault();
+            returns[returnType] = _mdConvertor.ConvertToHTML(description);
+            return returns;
+        }
+
+        private string ExtractSyntaxContent(MemberDocMetadata mta)
+        {
+            return _mdConvertor.ConvertToHTML(string.Format(@"
+```
+{0}
+```
+", mta.Syntax.Content));
+        }
+
+
+        public void ResolveContent()
+        {
+            ExtractMarkdownContent(namespaceMta);
+            ExtractMarkdownContent(classMta);
 
             if (classMta.Methods != null)
             {
                 foreach (var m in classMta.Methods)
                 {
-                    m.MethodSyntax.Parameters = TripleSlashParser.ParseParam(m.XmlDocumentation, m.MethodSyntax.Parameters);
+                    m.MethodSyntax.Parameters = ExtractParameters(m, m.MethodSyntax.Parameters);
+                    m.MethodSyntax.Returns = ExtractReturn(m);
+                    m.MarkdownContent = ExtractMarkdownContent(m);
+                    m.Syntax.Content = ExtractSyntaxContent(m);
+                }
+            }
 
-                    for (int i = 0; i < m.MethodSyntax.Parameters.Count; i++)
-                    {
-                        string param = m.MethodSyntax.Parameters.ElementAt(i).Key;
-                        string description = m.MethodSyntax.Parameters.ElementAt(i).Value;
-                        m.MethodSyntax.Parameters[param] = _mdConvertor.ConvertToHTML(description.Trim());
-                    }
-
-                    string returnType = m.MethodSyntax.Returns.Keys.FirstOrDefault();
-                    m.MethodSyntax.Returns[returnType] = _mdConvertor.ConvertToHTML((TripleSlashParser.Parse(m.XmlDocumentation))["returns"].Trim());
-
-                    if (_markdownCollectionCache.TryGetValue(m.Id, out content))
-                    {
-                        m.MarkdownContent = _mdConvertor.ConvertToHTML(content);
-
-                    }
-
-                    m.Syntax.Content = _mdConvertor.ConvertToHTML(string.Format(@"
-```
-{0}
-```
-", m.Syntax.Content));
+            if (classMta.Constructors != null)
+            {
+                foreach (var constructor in classMta.Constructors)
+                {
+                    constructor.ConstructorSyntax.Parameters = ExtractParameters(constructor, constructor.ConstructorSyntax.Parameters);
+                    constructor.MarkdownContent = ExtractMarkdownContent(constructor);
+                    constructor.Syntax.Content = ExtractSyntaxContent(constructor);
                 }
             }
         }
@@ -256,14 +284,14 @@ namespace DocAsCode.MergeDoc
                             string className = ResolveName(c);
                             idDisplayNameRelativeMapping.Add(c.Id, className);
 
-                            if (c.Methods != null)
+                            if (c.Members != null)
                             {
-                                foreach (var m in c.Methods)
+                                foreach (var m in c.Members)
                                 {
                                     idPathRelativeMapping.Add(m.Id, classPath);
 
-                                    string methodName = ResolveName(m);
-                                    idDisplayNameRelativeMapping.Add(m.Id, methodName);
+                                    string name = ResolveName(m);
+                                    idDisplayNameRelativeMapping.Add(m.Id, name);
                                 }
                             }
                         }
@@ -332,6 +360,7 @@ namespace DocAsCode.MergeDoc
                     string paramName = param.Substring(index + 1).Trim();
                     string typeRegexPatten = string.Format("<param name=\"{0}\">(?<typeContent>[\\s\\S]*?)</param>", paramName);
                     Regex typeRegex = new Regex(typeRegexPatten, RegexOptions.Multiline);
+
                     result.Add(param, typeRegex.Match(tripleSlashStr).Groups["typeContent"].Value);
                 }
             }
