@@ -32,7 +32,12 @@ namespace DocAsCode.EntityModel
         /// Third line: start with ---, and could append whitespaces, must contain a *\n* EOL
         /// </summary>
         public static Regex YamlHeaderRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<type>method|namespace|class|property|field|event): (?<id>\S*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
-
+        /// <summary>
+        /// <see cref="System.Object"/>
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="sourceType"></param>
+        /// <returns></returns>
         public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
         {
             if (sourceType == typeof(string))

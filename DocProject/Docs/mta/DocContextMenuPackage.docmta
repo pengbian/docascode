@@ -1,0 +1,64 @@
+{
+  "Namespaces": [
+    {
+      "Classes": [
+        {
+          "InheritanceHierarchy": [
+            "T:System.Object",
+            "T:Microsoft.VisualStudio.Shell.Package"
+          ],
+          "Methods": [
+            {
+              "MethodSyntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "protected override void Initialize()",
+                "XmlDocumentation": "<member name=\"M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.Initialize\">\r\n    <summary>\r\n    Initialization of the package; this method is called right after the package is sited, so this is the place\r\n    where you can put all the initialization code that rely on services provided by VisualStudio.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 53
+              },
+              "Syntax": {
+                "Parameters": {},
+                "Returns": {
+                  "T:System.Void": ""
+                },
+                "Content": "protected override void Initialize()",
+                "XmlDocumentation": "<member name=\"M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.Initialize\">\r\n    <summary>\r\n    Initialization of the package; this method is called right after the package is sited, so this is the place\r\n    where you can put all the initialization code that rely on services provided by VisualStudio.\r\n    </summary>\r\n</member>\r\n",
+                "StartLine": 53
+              },
+              "Id": "M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.Initialize",
+              "Parent": "T:Company.DocContextMenuPackage.DocContextMenuPackagePackage",
+              "XmlDocumentation": "<member name=\"M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.Initialize\">\r\n    <summary>\r\n    Initialization of the package; this method is called right after the package is sited, so this is the place\r\n    where you can put all the initialization code that rely on services provided by VisualStudio.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Constructors": [
+            {
+              "Syntax": {
+                "Content": "public DocContextMenuPackagePackage()",
+                "XmlDocumentation": "<member name=\"M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.#ctor\">\r\n    <summary>\r\n    Default constructor of the package.\r\n    Inside this method you can place any initialization code that does not require \r\n    any Visual Studio service because at this point the package object is created but \r\n    not sited yet inside Visual Studio environment. The place to do all the other \r\n    initialization is the Initialize method.\r\n    </summary>\r\n</member>\r\n"
+              },
+              "Id": "M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.#ctor",
+              "Parent": "T:Company.DocContextMenuPackage.DocContextMenuPackagePackage",
+              "XmlDocumentation": "<member name=\"M:Company.DocContextMenuPackage.DocContextMenuPackagePackage.#ctor\">\r\n    <summary>\r\n    Default constructor of the package.\r\n    Inside this method you can place any initialization code that does not require \r\n    any Visual Studio service because at this point the package object is created but \r\n    not sited yet inside Visual Studio environment. The place to do all the other \r\n    initialization is the Initialize method.\r\n    </summary>\r\n</member>\r\n"
+            }
+          ],
+          "Syntax": {
+            "Content": "public sealed class DocContextMenuPackagePackage",
+            "XmlDocumentation": "<member name=\"T:Company.DocContextMenuPackage.DocContextMenuPackagePackage\">\r\n     <summary>\r\n     This is the class that implements the package exposed by this assembly.\r\n    \r\n     The minimum requirement for a class to be considered a valid package for Visual Studio\r\n     is to implement the IVsPackage interface and register itself with the shell.\r\n     This package uses the helper classes defined inside the Managed Package Framework (MPF)\r\n     to do it: it derives from the Package class that provides the implementation of the \r\n     IVsPackage interface and uses the registration attributes defined in the framework to \r\n     register itself and its components with the shell.\r\n     </summary>\r\n</member>\r\n"
+          },
+          "Id": "T:Company.DocContextMenuPackage.DocContextMenuPackagePackage",
+          "Parent": "N:Company.DocContextMenuPackage",
+          "XmlDocumentation": "<member name=\"T:Company.DocContextMenuPackage.DocContextMenuPackagePackage\">\r\n     <summary>\r\n     This is the class that implements the package exposed by this assembly.\r\n    \r\n     The minimum requirement for a class to be considered a valid package for Visual Studio\r\n     is to implement the IVsPackage interface and register itself with the shell.\r\n     This package uses the helper classes defined inside the Managed Package Framework (MPF)\r\n     to do it: it derives from the Package class that provides the implementation of the \r\n     IVsPackage interface and uses the registration attributes defined in the framework to \r\n     register itself and its components with the shell.\r\n     </summary>\r\n</member>\r\n"
+        }
+      ],
+      "Id": "N:Company.DocContextMenuPackage",
+      "Parent": "DocContextMenuPackage",
+      "XmlDocumentation": ""
+    }
+  ],
+  "Id": "DocContextMenuPackage",
+  "MscorlibVersion": {
+    "Major": 4
+  }
+}

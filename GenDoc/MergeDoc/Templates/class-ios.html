@@ -7,7 +7,7 @@
     <script type="text/javascript" src="../script/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="../script/default-ios.js"></script>
     <meta charset="utf-8"> 
-    <base href="@Model.baseURL">
+    <base href="../">
     <title>@Model.classMta.Id.ToString()</title>
 </head>
 
@@ -71,10 +71,16 @@
                     Class&nbsp;
                     @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]
                 </h1>
+                <div class="improve-this-doc btn">
+                    <a href="@Model.GetMarkdownSourceUrl(Model.classMta)">Improve this Doc</a>
+                </div>
+                <div class="view-source btn">
+                    <a href="@Model.GetClassSourceUrl(Model.classMta)">View Source</a>
+                </div>
                 <section class="article-header-content">
                     Id: @Model.classMta.Id.ToString()
                     <div class="xml-section">
-                        @Raw(Model.classMta.XmlDocumentation)
+                        @Raw(Model.DisplaySummary(Model.classMta.XmlDocumentation))
                     </div>
                     <div class="md-section">
                         @Raw(Model.classMta.MarkdownContent)
@@ -88,7 +94,7 @@
                             <div class="inheritance-table-line">
                                 @{
                                     string id = Model.classMta.InheritanceHierarchy.Pop().ToString();
-                                    @Raw(Model.resolveLink(id));
+                                    @Raw(Model.ResolveLink(id));
                                     if(Model.classMta.InheritanceHierarchy.Count != 0) { @call(); }
                                     else {
                                         <div class="inheritance-table-last-line">
@@ -114,8 +120,11 @@
                                 <h3 class="section-member-name">
                                     @Model.idDisplayNameRelativeMapping[method.Id.ToString()].Replace(temp,"")
                                 </h3>
+                                <div class="view-source btn">
+                                    <a href="@Model.GetMethodSourceUrl(method)">View Source</a>
+                                </div>
                                 <div class="xml-section">
-                                    @Raw(method.XmlDocumentation)
+                                    @Raw(Model.DisplaySummary(method.XmlDocumentation))
                                 </div>
                                 <div class="md-section">
                                     @Raw(method.MarkdownContent)
@@ -143,7 +152,7 @@
                                                         <tr>
                                                             <td scope="row">
                                                                 <code class="code-voice">
-                                                                    @Raw(Model.resolveLink(param.Substring(0, param.LastIndexOf(":")).Trim()))
+                                                                    @Raw(Model.ResolveLink(param.Substring(0, param.LastIndexOf(":")).Trim()))
                                                                 </code>
                                                             </td>
                                                             <td scope="row">
@@ -170,7 +179,7 @@
                                                         <tr>
                                                             <td scope="row">
                                                                 <code class="code-voice">
-                                                                    @Raw(Model.resolveLink(method.MethodSyntax.Returns.Keys.FirstOrDefault()))
+                                                                    @Raw(Model.ResolveLink(method.MethodSyntax.Returns.Keys.FirstOrDefault()))
                                                                 </code>
                                                             </td>
                                                             <td>

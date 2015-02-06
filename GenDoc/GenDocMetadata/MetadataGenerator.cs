@@ -119,6 +119,8 @@ namespace DocAsCode.GenDocMetadata
                             type = type.BaseType;
                         }
 
+                        classMta.FilePath = syntax.SyntaxTree.FilePath;
+
                         classMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
@@ -293,6 +295,7 @@ namespace DocAsCode.GenDocMetadata
                                         .ToString()
                                         .Trim(),
                                     XmlDocumentation = methodMta.XmlDocumentation,
+                                    StartLine = syntax.SyntaxTree.GetLineSpan(syntax.Span).StartLinePosition.Line,
 
                                 };
                             }

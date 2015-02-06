@@ -10,9 +10,20 @@ namespace DocAsCode.MergeDoc
 {
     public class MarkdownCollectionCache : Dictionary<string, string>
     {
+        public Dictionary<string, string> IdMarkdownFileMap;
         public MarkdownCollectionCache(IEnumerable<string> mdFiles)
             : base(mdFiles.Where(s => s.EndsWith(".md", StringComparison.OrdinalIgnoreCase)).SelectMany(s => MarkdownFile.Load(s).Sections).Where(s => s != null).ToDictionary(s => s.Id, s => s.MarkdownContent))
         {
+            IdMarkdownFileMap = new Dictionary<string, string>();
+            var markdownFiles = mdFiles.Where(s => s.EndsWith(".md", StringComparison.OrdinalIgnoreCase)).Select(s => MarkdownFile.Load(s));
+
+            foreach (var file in markdownFiles)
+            {
+                foreach(var section in file.Sections)
+                {
+                    IdMarkdownFileMap.Add(section.Id, file.FilePath);
+                }
+            }
         }
     }
 
@@ -108,17 +119,19 @@ namespace DocAsCode.MergeDoc
     public class MarkDownConvertor
     {
         private Markdown markdown = new Markdown();
-        Dictionary<string, string> idPathRelativeMapping;
-        public void init(Dictionary<string, string> iprm)
+        private Dictionary<string, string> _idPathRelativeMapping;
+
+        public MarkDownConvertor(Dictionary<string, string> idPathRelativeMapping)
         {
+            this._idPathRelativeMapping = idPathRelativeMapping;
             markdown.AutoHyperlink = true;
             markdown.AutoNewLines = true;
             markdown.EmptyElementSuffix = ">";
             markdown.EncodeProblemUrlCharacters = true;
             markdown.LinkEmails = false;
             markdown.StrictBoldItalic = true;
-            idPathRelativeMapping = iprm;
         }
+
         public string ConvertToHTML(string md)
         {
             string result = ResolveAT(md);
@@ -134,7 +147,7 @@ namespace DocAsCode.MergeDoc
         {
             string filePath;
             string id = match.Groups["ATcontent"].Value;
-            if (idPathRelativeMapping.TryGetValue(id, out filePath))
+            if (_idPathRelativeMapping.TryGetValue(id, out filePath))
             {
                 return string.Format("[{0}]({1})", match.Value.Trim().Substring(3), filePath); ;
             }

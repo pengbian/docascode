@@ -505,6 +505,9 @@ namespace Microsoft.VisualStudio.Project
 
     /// <summary>
     /// Defines the event args for the active configuration chnage event.
+    /// <see cref="object"/>
+    /// <see cref="string"/>
+    /// <see cref="ProjectConfigProperties"/>
     /// </summary>
     public class ActiveConfigurationChangedEventArgs : EventArgs
     {

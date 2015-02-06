@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <OutputType>Html</OutputType>
+    <DocToolExtensionsPath Condition=" '$(DocToolExtensionsPath)' == '' ">
+    </DocToolExtensionsPath>
+    <AssemblyName>DocProject</AssemblyName>
+    <Name>DocProject</Name>
+    <RootNamespace>DocProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="css" />
+    <Folder Include="Docs\" />
+    <Folder Include="Docs\DocContextMenuPackage\" />
+    <Folder Include="Docs\DocProjectVsix\" />
+    <Folder Include="Docs\EntityModel\" />
+    <Folder Include="Docs\MergeDoc\" />
+    <Folder Include="Docs\PublishDoc\" />
+    <Folder Include="script" />
+    <Content Include="css\default.css">
+    </Content>
+    <Content Include="script\default.js">
+    </Content>
+    <Content Include="script\jquery-2.1.0.min.js">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocContextMenuPackage\DocContextMenuPackage\DocContextMenuPackage.csproj">
+      <Name>DocContextMenuPackage</Name>
+      <Project>{7a625105-ce07-4b48-9639-80f0a84ecb6d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DocProjectVsix\DocProjectVsix\DocProjectVsix.csproj">
+      <Name>DocProjectVsix</Name>
+      <Project>{3b3b48bc-84c8-4f2b-aea9-df6154e357a1}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\GenDoc\EntityModel\EntityModel.csproj">
+      <Name>EntityModel</Name>
+      <Project>{a4be543d-2cf1-40ab-9889-e9e48cbf7dfe}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\GenDoc\MergeDoc\MergeDoc.csproj">
+      <Name>MergeDoc</Name>
+      <Project>{1aa25be4-1d92-45b0-a11c-cee96e3125d3}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\PublishDoc\PublishDoc.csproj">
+      <Name>PublishDoc</Name>
+      <Project>{f6cbb448-7a7d-4140-be6b-ecb4d6e95868}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />
+</Project>
