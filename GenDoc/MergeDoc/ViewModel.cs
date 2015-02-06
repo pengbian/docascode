@@ -96,16 +96,38 @@ namespace DocAsCode.MergeDoc
             }
             return summary;
         }
+        private string GetSourceUrlWithoutExtension(string path, out Branch branch, out Repository repo)
+        {
+            try
+            {
+                string gitPath = Repository.Discover(path);
+                repo = new Repository(Path.GetDirectoryName(gitPath));
+                branch = repo.Head;
+                Remote remote = repo.Network.Remotes["origin"];
+                string url = remote.Url;
+                if (url.EndsWith(".git"))
+                {
+                    url = url.Substring(0, url.LastIndexOf(".git"));
+                }
+                return url;
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine("Failing in finding source git url without extension from path {0}", path, e);
+                branch = null;
+                repo = null;
+                return "";
+            }
+        }
 
         public string GetClassSourceUrl(ClassDocMetadata classMta)
         {
             try
             {
-                string gitPath = Repository.Discover(classMta.FilePath);
-                Repository repo = new Repository(Path.GetDirectoryName(gitPath));
-                Branch branch = repo.Head;
-                Remote remote = repo.Network.Remotes["origin"];
-                sourceGitUrl = Path.Combine(remote.Url.Replace(".git", "/blob"), branch.Name, classMta.FilePath.Replace(repo.Info.WorkingDirectory, "")).Replace("\\", "/");
+                Branch branch;
+                Repository repo;
+                string url = GetSourceUrlWithoutExtension(classMta.FilePath, out branch, out repo);
+                sourceGitUrl = Path.Combine(url, "blob", branch.Name, classMta.FilePath.Replace(repo.Info.WorkingDirectory, "")).Replace("\\", "/");
                /* if (!RemoteUrlExists(sourceGitUrl))
                 {
                     sourceGitUrl = "";
@@ -141,25 +163,23 @@ namespace DocAsCode.MergeDoc
             {
                 if (_markdownCollectionCache.IdMarkdownFileMap.TryGetValue(classMta.Id, out markdownFilePath))
                 {
-                    string gitPath = Repository.Discover(markdownFilePath);
-                    Repository repo = new Repository(Path.GetDirectoryName(gitPath));
-                    Branch branch = repo.Head;
-                    Remote remote = repo.Network.Remotes["origin"];
+                    Branch branch;
+                    Repository repo;
+                    string url = GetSourceUrlWithoutExtension(markdownFilePath, out branch, out repo);
                     string relativePath = markdownFilePath.Replace(repo.Info.WorkingDirectory, "");
-                    markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/edit"), branch.Name, relativePath).Replace("\\", "/");
+                    markdownGitURL = Path.Combine(url, "edit", branch.Name, relativePath).Replace("\\", "/");
                     if (!RemoteUrlExists(markdownGitURL))
                     {
-                        markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/new"), branch.Name, Path.GetDirectoryName(relativePath), "?filename=" + Path.GetFileName(relativePath)).Replace("\\", "/");
+                        markdownGitURL = Path.Combine(url, "new", branch.Name, Path.GetDirectoryName(relativePath), "?filename=" + Path.GetFileName(relativePath)).Replace("\\", "/");
                         markdownGitURL += String.Format(string.Format("&value=---%0Dclass: {0}%0D---%0D", classMta.Id));
                     }
                 }
                 else
                 {
-                    string gitPath = Repository.Discover(mataPath);
-                    Repository repo = new Repository(Path.GetDirectoryName(gitPath));
-                    Branch branch = repo.Head;
-                    Remote remote = repo.Network.Remotes["origin"];
-                    markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/new"), branch.Name, "?filename=" + FileExtensions.ToValidFilePath(classMta.Id) + ".md").Replace("\\", "/");
+                    Branch branch;
+                    Repository repo;
+                    string url = GetSourceUrlWithoutExtension(mataPath, out branch, out repo);
+                    markdownGitURL = Path.Combine(url, "new", branch.Name, "?filename=" + FileExtensions.ToValidFilePath(classMta.Id) + ".md").Replace("\\", "/");
                     markdownGitURL += String.Format(string.Format("&value=---%0Dclass: {0}%0D---%0D", classMta.Id));
                 }
             }
