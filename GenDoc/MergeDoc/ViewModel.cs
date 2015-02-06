@@ -150,6 +150,7 @@ namespace DocAsCode.MergeDoc
                     if (!RemoteUrlExists(markdownGitURL))
                     {
                         markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/new"), branch.Name, Path.GetDirectoryName(relativePath), "?filename=" + Path.GetFileName(relativePath)).Replace("\\", "/");
+                        markdownGitURL += String.Format(string.Format("&value=---%0Dclass: {0}%0D---%0D", classMta.Id));
                     }
                 }
                 else
@@ -159,6 +160,7 @@ namespace DocAsCode.MergeDoc
                     Branch branch = repo.Head;
                     Remote remote = repo.Network.Remotes["origin"];
                     markdownGitURL = Path.Combine(remote.Url.Replace(".git", "/new"), branch.Name, "?filename=" + FileExtensions.ToValidFilePath(classMta.Id) + ".md").Replace("\\", "/");
+                    markdownGitURL += String.Format(string.Format("&value=---%0Dclass: {0}%0D---%0D", classMta.Id));
                 }
             }
             catch (Exception e)
