@@ -12,6 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 a {
     text-decoration: none;
+    color: rgba(0,136,204,1);
 }
 a:hover {
     text-decoration: underline;
@@ -24,7 +25,7 @@ body{
     margin: 0 auto;
     -webkit-font-smoothing: subpixel-antialiased;
 }
-div.content-wrapper{    
+div.content-wrapper{
     background-color: rgba(242,242,242,1);
     margin: 0 auto;
     width: 980px;
@@ -338,12 +339,12 @@ article li.section-member{
     -moz-transition: -moz-transform .3s ease;
     -o-transition: -o-transform .3s ease;
     transition: transform .3s ease;    
-    cursor: pointer;
 }
 article li.section-member a{
     color: rgba(0,136,204,1);
     text-decoration: none;
 	font-size: 14px;
+    cursor: pointer;
 }
 article li.section-member a.section-member-detail::before{
     content: '+ ';
@@ -370,6 +371,11 @@ article div.height-container section {
     position: relative;
     width: 100%;
 }
+
+article div.height-container section div{
+     margin-top: 21px;
+}
+
 article div.pointy-thing-container {
     background: #fff;
     border-bottom: 1px solid rgba(233,233,233,1);
@@ -393,14 +399,6 @@ article div.pointy-thing {
     transform: rotate(45deg);
     position: absolute;
     width: 12px;
-}
-
-article .section .declaration {
-    margin-top: 21px;
-}
-
-article .section .parameters {
-    margin-top: 21px;
 }
 
 article div.height-container{

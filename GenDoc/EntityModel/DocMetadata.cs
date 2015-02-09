@@ -91,7 +91,23 @@ namespace DocAsCode.EntityModel
         protected Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>> _members =
             new Dictionary<MemberType, ConcurrentDictionary<Identity, DocMetadata>>();
 
-        protected List<MemberType> AllowedMemberTypes { get; set; }
+        public List<MemberType> AllowedMemberTypes { get; set; }
+
+        private Stack<Identity> _inheritancehierarchy;
+        public string FilePath { get; set; }
+
+        public Stack<Identity> InheritanceHierarchy
+        {
+            get
+            {
+                return _inheritancehierarchy;
+            }
+            set
+            {
+                _inheritancehierarchy = new Stack<Identity>(value);
+            }
+        }
+
 
         [JsonIgnore]
         public IEnumerable<MemberDocMetadata> Members
@@ -211,7 +227,7 @@ namespace DocAsCode.EntityModel
         {
         }
 
-        public override void WriteMarkdownSkeleton(TextWriter writer)
+        public override void WriteMarkdownSkeleton(TextWriter writer)                                    
         {
             base.WriteMarkdownSkeleton(writer);
 
@@ -331,21 +347,6 @@ namespace DocAsCode.EntityModel
 
     public class ClassDocMetadata : CompositeDocMetadata
     {
-        private Stack<Identity> _inheritancehierarchy;
-        public string FilePath { get; set; }
-
-        public Stack<Identity> InheritanceHierarchy
-        {
-            get
-            {
-                return _inheritancehierarchy;
-            }
-            set
-            {
-                _inheritancehierarchy = new Stack<Identity>(value);
-            }
-        }
-
         public IEnumerable<MethodDocMetadata> Methods
         {
             get
@@ -506,6 +507,18 @@ namespace DocAsCode.EntityModel
 
     public class PropertyDocMetadata : MemberDocMetadata
     {
+        public PropertySyntax PropertySyntax
+        {
+            get
+            {
+                return this.Syntax as PropertySyntax;
+            }
+            set
+            {
+                this.Syntax = value;
+            }
+        }
+
         public PropertyDocMetadata() { }
         public PropertyDocMetadata(string name) : base(name)
         {

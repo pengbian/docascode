@@ -147,7 +147,7 @@ namespace DocAsCode.GenDocMetadata
 
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var EnumMta = new EnumDocMetadata(mta);
-                        EnumMta.Syntax = new ConstructorSyntax
+                        EnumMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
                                 .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
@@ -175,6 +175,16 @@ namespace DocAsCode.GenDocMetadata
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var interfaceMta = new InterfaceDocMetadata(mta);
 
+                        interfaceMta.InheritanceHierarchy = new Stack<Identity>();
+                        var type = nameTypedSymbol.BaseType;
+                        while (type != null)
+                        {
+                            interfaceMta.InheritanceHierarchy.Push(new Identity(type.GetDocumentationCommentId()));
+                            type = type.BaseType;
+                        }
+
+                        interfaceMta.FilePath = syntax.SyntaxTree.FilePath;
+
                         interfaceMta.Syntax = new SyntaxDocFragment
                         {
                             Content = syntax
@@ -201,6 +211,16 @@ namespace DocAsCode.GenDocMetadata
 
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var StructMta = new StructDocMetadata(mta);
+
+                        StructMta.InheritanceHierarchy = new Stack<Identity>();
+                        var type = nameTypedSymbol.BaseType;
+                        while (type != null)
+                        {
+                            StructMta.InheritanceHierarchy.Push(new Identity(type.GetDocumentationCommentId()));
+                            type = type.BaseType;
+                        }
+
+                        StructMta.FilePath = syntax.SyntaxTree.FilePath;
 
                         StructMta.Syntax = new SyntaxDocFragment
                         {
@@ -348,6 +368,9 @@ namespace DocAsCode.GenDocMetadata
                         DocMetadata mta = base.GenerateFrom(symbol);
                         var propertyMta = new PropertyDocMetadata(mta);
 
+                        var propertySymbol = symbol as IPropertySymbol;
+                        string type = propertySymbol.Type.GetDocumentationCommentId() == null ? propertySymbol.Type.BaseType.GetDocumentationCommentId() : propertySymbol.Type.GetDocumentationCommentId();
+
                         propertyMta.Syntax = new PropertySyntax
                         {
                             Content = syntax
@@ -357,6 +380,8 @@ namespace DocAsCode.GenDocMetadata
                                 .ToString()
                                 .Trim(),
                             XmlDocumentation = propertyMta.XmlDocumentation,
+                            StartLine = syntax.SyntaxTree.GetLineSpan(syntax.Span).StartLinePosition.Line,
+                            PropertyType = type,
                         };
                         return propertyMta;
                     };
@@ -380,6 +405,7 @@ namespace DocAsCode.GenDocMetadata
                                 .ToString()
                                 .Trim(),
                             XmlDocumentation = FieldMta.XmlDocumentation,
+                            StartLine = syntax.SyntaxTree.GetLineSpan(syntax.Span).StartLinePosition.Line,
                         };
                         return FieldMta;
                     };
@@ -402,6 +428,7 @@ namespace DocAsCode.GenDocMetadata
                                 .ToString()
                                 .Trim(),
                             XmlDocumentation = eventMta.XmlDocumentation,
+                            StartLine = syntax.SyntaxTree.GetLineSpan(syntax.Span).StartLinePosition.Line,
                         };
                         return eventMta;
                     };
