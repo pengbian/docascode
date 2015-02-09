@@ -12,6 +12,10 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'PublishDoc' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\PublishDoc</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="css"/>
     <Folder Include="script"/>

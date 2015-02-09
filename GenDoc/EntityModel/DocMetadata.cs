@@ -94,11 +94,11 @@ namespace DocAsCode.EntityModel
         protected List<MemberType> AllowedMemberTypes { get; set; }
 
         [JsonIgnore]
-        public IEnumerable<DocMetadata> Members
+        public IEnumerable<MemberDocMetadata> Members
         {
             get
             {
-                List<DocMetadata> list = new List<DocMetadata>();
+                List<MemberDocMetadata> list = new List<MemberDocMetadata>();
                 for (int i = 0; i < AllowedMemberTypes.Count; i++)
                 {
                     var type = AllowedMemberTypes[i];
@@ -106,7 +106,7 @@ namespace DocAsCode.EntityModel
                     {
                         foreach (var value in _members[type].Values)
                         {
-                            list.Add(value);
+                            list.Add(value as MemberDocMetadata);
                         }
                     }
                 }
@@ -482,6 +482,17 @@ namespace DocAsCode.EntityModel
     }
     public class ConstructorDocMetadata : MemberDocMetadata
     {
+        public ConstructorSyntax ConstructorSyntax
+        {
+            get
+            {
+                return this.Syntax as ConstructorSyntax;
+            }
+            set
+            {
+                this.Syntax = value;
+            }
+        }
         public ConstructorDocMetadata() { }
 
         public ConstructorDocMetadata(string name) : base(name)
@@ -793,7 +804,7 @@ namespace DocAsCode.EntityModel
     /// </summary>
     public class ConstructorSyntax : SyntaxDocFragment
     {
-        public IReadOnlyDictionary<Identity, string> Parameters { get; set; }
+        public SortedDictionary<string, string> Parameters { get; set; }
     }
 
     /// <summary>

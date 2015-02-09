@@ -10,7 +10,8 @@
   </PropertyGroup>
   <Target Name="Build">
     <CallTarget Targets="BuildDoc" />
-    <CallTarget Targets="PreviewWebsite" />
+    <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />
+    <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
   </Target>
   <Target Name ="Clean">
     <!-- TO BE IMPLEMENTED-->
@@ -45,10 +46,6 @@
   </Target>
 
   <Target Name="PublishDoc">
-    <ItemGroup>
-      <DocMta Include="$(OutputPath)\**\*.docmta" />
-    </ItemGroup>
-    <CallTarget Targets="BuildDoc" />
     <Exec Command="$(PublishDocToolPath) /filesDirectory:&quot;$(OutputPath)&quot;" />
   </Target>
 

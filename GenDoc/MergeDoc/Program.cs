@@ -49,9 +49,17 @@ namespace DocAsCode.MergeDoc
                 // Scan available md files' yaml headers to get available custom markdown content
                 // TODO: what if the collection is extremely large?
                 string[] mdFiles = (string[])_delimitedArrayConverter.ConvertFrom(delimitedMdFiles);
+
+                // TODO: Support NULL
+                if (mdFiles == null)
+                {
+                    mdFiles = new string[0];
+                }
+
                 MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdFiles);
 
                 // Step.2. write contents to those files
+                // TODO: why "bin\debug\" can not pass argument parser
                 Directory.CreateDirectory(outputDirectory);
                 string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class-ios.html"));
                 string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
@@ -86,7 +94,7 @@ namespace DocAsCode.MergeDoc
                             foreach (var c in ns.Classes)
                             { 
                                 viewModel.classMta = c;
-                                viewModel.resolveContent();
+                                viewModel.ResolveContent();
                                 string classPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
                                 result = Razor.Parse(classTemplate, viewModel);
                                 File.WriteAllText(classPath, result);

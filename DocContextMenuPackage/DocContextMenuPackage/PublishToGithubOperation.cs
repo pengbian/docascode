@@ -14,14 +14,46 @@ namespace Company.DocContextMenuPackage
     {
         public static void operate(Project selectedProject)
         {
-            Microsoft.Build.Evaluation.ProjectCollection projectCollection = new Microsoft.Build.Evaluation.ProjectCollection();
-            projectCollection.RegisterLogger(new ConsoleLogger());
-            Microsoft.Build.Evaluation.Project docProject = projectCollection.LoadProject(selectedProject.FullName);
-            if (docProject == null)
+            var solutionBuild = selectedProject.DTE.Solution.SolutionBuild;
+            string currentConfigName = solutionBuild.ActiveConfiguration.Name;
+            string publishConfigName = "PublishDoc";
+            object[] k = (object[])selectedProject.ConfigurationManager.ConfigurationRowNames;
+            var configCount = solutionBuild.SolutionConfigurations.Count;
+            var list = new List<string>();
+            for (int i = 1; i <= configCount; i++)
             {
-                docProject = new Microsoft.Build.Evaluation.Project(selectedProject.FullName);
+                list.Add(solutionBuild.SolutionConfigurations.Item(i).Name);
             }
-            bool result = docProject.Build(target: "PublishDoc");
+
+            SolutionConfiguration item;
+            int index = list.IndexOf(publishConfigName);
+            if (index == -1)
+            {
+                solutionBuild.SolutionConfigurations.Add(publishConfigName, currentConfigName, true);
+                var countNew = solutionBuild.SolutionConfigurations.Count;
+                item = solutionBuild.SolutionConfigurations.Item(countNew);
+            }
+            else
+            {
+                item = solutionBuild.SolutionConfigurations.Item(index + 1);
+            }
+
+            var contextCount = item.SolutionContexts.Count;
+            for (int j = 1; j <= contextCount; j++)
+            {
+                var projectName = item.SolutionContexts.Item(j).ProjectName;
+                if (projectName == selectedProject.UniqueName)
+                {
+                    item.SolutionContexts.Item(j).ShouldBuild = true;
+                    item.SolutionContexts.Item(j).ConfigurationName = publishConfigName;
+                }
+                else
+                {
+                    item.SolutionContexts.Item(j).ShouldBuild = false;
+                }
+            }
+
+            solutionBuild.BuildProject(publishConfigName, selectedProject.UniqueName);
         }
     }
 }
