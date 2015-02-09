@@ -18,8 +18,8 @@ namespace DocAsCode.MergeDoc
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
         static int Main(string[] args)
         {
-            string mtaFile = @"C:\Users\t-hax\myCode\roslynCopy\src\DocProject1\bin\Debug\doctemp\mta\Microsoft.CodeAnalysis.docmta";
-            string delimitedMdFiles = @"C:\Users\t-hax\myCode\roslynCopy\src\DocProject1\Docs\CodeAnalysis\T_Microsoft.CodeAnalysis.Diagnostics.AnalyzerDriver.md,C:\Users\t-hax\myCode\roslynCopy\src\DocProject1\Docs\CodeAnalysis\T_Microsoft.CodeAnalysis.Emit.EmitOptions.md";
+            string mtaFile = @"";
+            string delimitedMdFiles = "";
             string outputDirectory = "output";
             string templateDirectory = "Templates";
             string cssDirecotry = "css";
@@ -49,9 +49,17 @@ namespace DocAsCode.MergeDoc
                 // Scan available md files' yaml headers to get available custom markdown content
                 // TODO: what if the collection is extremely large?
                 string[] mdFiles = (string[])_delimitedArrayConverter.ConvertFrom(delimitedMdFiles);
+
+                // TODO: Support NULL
+                if (mdFiles == null)
+                {
+                    mdFiles = new string[0];
+                }
+
                 MarkdownCollectionCache markdownCollectionCache = new MarkdownCollectionCache(mdFiles);
 
                 // Step.2. write contents to those files
+                // TODO: why "bin\debug\" can not pass argument parser
                 Directory.CreateDirectory(outputDirectory);
                 string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class-ios.html"));
                 string interfaceTemplate = File.ReadAllText(Path.Combine(templateDirectory, "interface-ios.html"));
