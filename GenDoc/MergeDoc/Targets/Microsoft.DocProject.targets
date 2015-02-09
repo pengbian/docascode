@@ -4,11 +4,12 @@
     <MergeDocToolPath Condition=" '$(MergeDocToolPath)' == '' ">$(DocToolExtensionsPath)\MergeDoc.exe</MergeDocToolPath>
     <PublishDocToolPath Condition=" '$(PublishDocToolPath)' == '' ">$(DocToolExtensionsPath)\PublishDoc.exe</PublishDocToolPath>
     <ConfigPublishToolPath Condition=" '$(ConfigPublishToolPath)' == '' ">$(DocToolExtensionsPath)\ConfigPublish.exe</ConfigPublishToolPath>
-    <GithubConfigPath Condition=" '$(GithubConfigPath)' == '' ">$(DocToolExtensionsPath)\GithubPublish.config</GithubConfigPath>
+    <GithubConfigPath Condition=" '$(GithubConfigPath)' == '' ">GithubPublish.config</GithubConfigPath>
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
   </PropertyGroup>
   <Target Name="Build">
+    <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="ConfigGithub" />
     <CallTarget Targets="BuildDoc" />
     <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
@@ -46,7 +47,11 @@
   </Target>
 
   <Target Name="PublishDoc">
-    <Exec Command="$(PublishDocToolPath) /filesDirectory:&quot;$(OutputPath)&quot;" />
+    <Exec Command="$(PublishDocToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
+  </Target>
+
+  <Target Name="ConfigGithub">
+    <Exec Command="$(ConfigPublishToolPath) /githubConfigFile:&quot;$(GithubConfigPath)&quot;" />
   </Target>
 
   <Target Name="PreviewWebsite">

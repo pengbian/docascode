@@ -20,7 +20,7 @@ namespace DocAsCode.PublishDoc
         public GithubConfiguration()
         {
             remoteGitPath = "https://github.com/openauthor/openauthor.github.io.git";
-            localGitPath = "PublishFiles";
+            localGitPath = "bin/PublishDoc";
             publishUrl = "/";
             userName = "openauthor";
             passWord = "open123";
