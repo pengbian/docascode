@@ -1,4 +1,5 @@
 ﻿using DocAsCode.Utility;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,29 +12,38 @@ namespace DocAsCode.PublishDoc
     public class Publisher
     {
         
-        public static void PublishToGithub(string filesDirectory)
+        public static void PublishToGithub(string githubConfigFile)
         {
+            GithubConfiguration githubFoncifguration = new GithubConfiguration();
+            JsonSerializer jsonSerializer = new JsonSerializer();
 
-            // Step 1. Show UI and configure
-            GithubConfigurationForm githubConfigurationForm = new GithubConfigurationForm();
-            githubConfigurationForm.localGitPath = filesDirectory;
-            if (githubConfigurationForm.ShowDialog()==false) return;
+            // Read configuration if exist
+            if (File.Exists(githubConfigFile))
+            {
+                StreamReader streamReader = new StreamReader(githubConfigFile);
+                Newtonsoft.Json.JsonTextReader jsonTextReader = new JsonTextReader(streamReader);
+                githubFoncifguration = jsonSerializer.Deserialize<GithubConfiguration>(jsonTextReader);
+                jsonTextReader.Close();
+                streamReader.Close();
+            }
 
-            string remoteGitPath = githubConfigurationForm.remoteGitPath;
-            string localGitPath = githubConfigurationForm.localGitPath;
-            string publishUrl = githubConfigurationForm.publishUrl;
-            string userName = githubConfigurationForm.userName;
-            string passWord = githubConfigurationForm.passWord;
-            string acessUrl = githubConfigurationForm.acessUrl;
-            bool clearLocalGit = githubConfigurationForm.clearLocalGit;
-            bool openSite = githubConfigurationForm.openSite;
+            string remoteGitPath = githubFoncifguration.remoteGitPath;
+            string localGitPath = githubFoncifguration.localGitPath;
+            string publishUrl = githubFoncifguration.publishUrl;
+            string userName = githubFoncifguration.userName;
+            string passWord = githubFoncifguration.passWord;
+            string acessUrl = githubFoncifguration.acessUrl;
+            bool clearLocalGit = githubFoncifguration.clearLocalGit;
+            bool openSite = githubFoncifguration.openSite;
 
             if (!Directory.Exists(localGitPath))
             {
                 return;
             }
+
             //publish
             GitRepositoryPublisher.PublishToGit(remoteGitPath, localGitPath, userName, passWord);
+
             //open browser
             if(openSite) System.Diagnostics.Process.Start(acessUrl);
         }

@@ -1,18 +1,16 @@
-﻿using System;
+﻿using DocAsCode.Utility;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DocAsCode.Utility;
-using System.IO;
-using LibGit2Sharp;
 
-namespace DocAsCode.PublishDoc
+namespace DocAsCode.ConfigPublish
 {
-    public class Program
+    class Program
     {
         [STAThread]
-        public static void Main(string[] args)
+        static int Main(string[] args)
         {
             string githubConfigFile = "GithubPublish.config";
 
@@ -24,10 +22,10 @@ namespace DocAsCode.PublishDoc
             if (!ConsoleParameterParser.ParseParameters(options, args))
             {
                 Console.WriteLine("Error while parsing parameters!");
-                return ;
+                return -1;
             }
 
-            Publisher.PublishToGithub(githubConfigFile);
+            return ConfigPublishToGithub.Configure(githubConfigFile);
         }
     }
 }

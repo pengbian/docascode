@@ -112,7 +112,11 @@ namespace Company.DocContextMenuPackage
                 activeProject = (Project)selectedProjects.GetValue(0);
                 if (activeProject.FileName.EndsWith(".docproj"))
                 {
-                    PublishToGithubOperation.operate(activeProject);
+                    System.Threading.Tasks.Task.Run(() => {
+                        PublishToGithubOperation.operate(activeProject);
+                    });
+
+                    //PublishToGithubOperation.operate(activeProject);
                 }
             }
         }

@@ -3,6 +3,8 @@
     <GenDocMetadataToolPath Condition=" '$(GenDocMetadataToolPath)' == '' ">$(DocToolExtensionsPath)\GenDocMetadata.exe</GenDocMetadataToolPath>
     <MergeDocToolPath Condition=" '$(MergeDocToolPath)' == '' ">$(DocToolExtensionsPath)\MergeDoc.exe</MergeDocToolPath>
     <PublishDocToolPath Condition=" '$(PublishDocToolPath)' == '' ">$(DocToolExtensionsPath)\PublishDoc.exe</PublishDocToolPath>
+    <ConfigPublishToolPath Condition=" '$(ConfigPublishToolPath)' == '' ">$(DocToolExtensionsPath)\ConfigPublish.exe</ConfigPublishToolPath>
+    <GithubConfigPath Condition=" '$(GithubConfigPath)' == '' ">$(DocToolExtensionsPath)\GithubPublish.config</GithubConfigPath>
     <MergeDocTemplatePath Condition=" '$(MergeDocTemplatePath)' == '' ">$(DocToolExtensionsPath)\Templates</MergeDocTemplatePath>
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
   </PropertyGroup>
