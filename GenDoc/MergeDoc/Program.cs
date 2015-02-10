@@ -18,8 +18,8 @@ namespace DocAsCode.MergeDoc
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
         static int Main(string[] args)
         {
-            string mtaFile = @"";
-            string delimitedMdFiles = "";
+            string mtaFile = @"C:\Users\t-shujia\Desktop\basecode\roslyn\roslyn\src\DocProject1\bin\Debug\doctemp\mta\Microsoft.CodeAnalysis.docmta";
+            string delimitedMdFiles = @"C:\Users\t-shujia\Desktop\basecode\roslyn\roslyn\src\DocProject1\Docs\CodeAnalysis\T_Microsoft.CodeAnalysis.Diagnostics.AnalyzerDriver.md,C:\Users\t-shujia\Desktop\basecode\roslyn\roslyn\src\DocProject1\Docs\CodeAnalysis\T_Microsoft.CodeAnalysis.Emit.EmitOptions.md";
             string outputDirectory = "output";
             string templateDirectory = "Templates";
             string cssDirecotry = "css";

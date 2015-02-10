@@ -31,17 +31,31 @@ namespace DocAsCode.PublishDoc
         public bool clearLocalGit { get; set; }
         public bool openSite { get; set; }
 
-        public GithubConfigurationForm()
+        public GithubConfigurationForm(GithubConfiguration githubFoncifguration)
         {
-            remoteGitPath = "https://github.com/openauthor/openauthor.github.io.git";
-            localGitPath = "PublishFiles";
-            publishUrl = "/";
-            userName = "openauthor";
-            passWord = "open123";
-            acessUrl = "http://openauthor.github.io";
-            clearLocalGit = true;
-            openSite = true;
+            remoteGitPath = githubFoncifguration.remoteGitPath;
+            localGitPath = githubFoncifguration.localGitPath;
+            publishUrl = githubFoncifguration.publishUrl;
+            userName = githubFoncifguration.userName;
+            passWord = githubFoncifguration.passWord;
+            acessUrl = githubFoncifguration.acessUrl;
+            clearLocalGit = githubFoncifguration.clearLocalGit;
+            openSite = githubFoncifguration.openSite;
             InitializeComponent();
+        }
+
+        public GithubConfiguration ExportGithubConfiguration()
+        {
+            GithubConfiguration githubFoncifguration = new GithubConfiguration();
+            githubFoncifguration.remoteGitPath = remoteGitPath;
+            githubFoncifguration.localGitPath = localGitPath;
+            githubFoncifguration.publishUrl = publishUrl;
+            githubFoncifguration.userName = userName;
+            githubFoncifguration.passWord = passWord;
+            githubFoncifguration.acessUrl = acessUrl;
+            githubFoncifguration.clearLocalGit = clearLocalGit;
+            githubFoncifguration.openSite = openSite;
+            return githubFoncifguration;
         }
 
         private void ButtonOK_Click(object sender, RoutedEventArgs e)
