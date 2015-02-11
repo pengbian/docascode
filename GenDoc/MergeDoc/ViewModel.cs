@@ -122,7 +122,7 @@ namespace DocAsCode.MergeDoc
             {
                 var @ref = refs[i];
                 string link = ResolveLink(@ref.Groups["ref"].Value);
-                description = description.Replace(@ref.Groups["seeCrefMatch"].Value, "@" + link);
+                description = description.Replace(@ref.Groups["seeCrefMatch"].Value, link);
             }
             return description;
         }
@@ -241,7 +241,9 @@ namespace DocAsCode.MergeDoc
         {
             string summary = TripleSlashParser.Parse(xmlDocumentation)["summary"].Trim();
 
-            return ResolveSeeCref(summary);
+            summary =  ResolveSeeCref(summary);
+
+            return _mdConvertor.ConvertToHTML(summary);
         }
 
         private string ExtractMarkdownContent(DocMetadata mta)
@@ -443,7 +445,7 @@ namespace DocAsCode.MergeDoc
                                                         "author",
                                                         "file",
                                                         "copyright"  };
-        static public Regex SeeCrefRegex = new Regex(@"(?<seeCrefMatch><see cref=""(?<ref>[\s\S]*?)""/>?)", RegexOptions.Compiled);
+        static public Regex SeeCrefRegex = new Regex(@"(?<seeCrefMatch><see(also)? cref=""(?<ref>[\s\S]*?)""/>?)", RegexOptions.Compiled);
 
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {

@@ -19,8 +19,6 @@
   <ItemGroup>
     <Folder Include="css"/>
     <Folder Include="script"/>
-    <Content Include="css\default.css">
-    </Content>
     <Content Include="script\default.js">
     </Content>
     <Content Include="script\jquery-2.1.0.min.js">
