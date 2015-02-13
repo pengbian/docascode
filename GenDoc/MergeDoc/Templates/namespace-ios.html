@@ -48,7 +48,25 @@
                     <li class="namespace-name @ns_open">
                         <a class="namespace-link" href="@nsPath">@nsName</a>
                         <ul class="nav-classes">
-                            @if(ns.Classes != null) {foreach (var vclass in ns.Classes)
+                            @if(ns.Classes != null){ foreach (var vclass in ns.Classes)
+                            {
+                            var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
+                            var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
+                            string c_open = "";
+                            <li class="class-name @c_open">
+                                <a class="class-link" href="@classPath">@className.Substring(className.LastIndexOf(".")+1)</a>
+                            </li>
+                            }}
+                            @if(ns.Interfaces != null){ foreach (var vclass in ns.Interfaces)
+                            {
+                            var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
+                            var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
+                            string c_open = "";
+                            <li class="class-name @c_open">
+                                <a class="class-link" href="@classPath">@className.Substring(className.LastIndexOf(".")+1)</a>
+                            </li>
+                            }}
+                            @if(ns.Structs != null){ foreach (var vclass in ns.Structs)
                             {
                             var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
                             var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
@@ -70,10 +88,11 @@
                 </h1>
             </div>
             <section id="article-body">
-                <div class="section">
-                    <h3 class="section-name">Classes</h3>
+                <div class="section class">
                     <table>
-                        @if(Model.namespaceMta.Classes != null){ foreach (var vclass in Model.namespaceMta.Classes)
+                        @if(Model.namespaceMta.Classes != null){
+                        <h3 class="section-name">Classes</h3>
+                        foreach (var vclass in Model.namespaceMta.Classes)
                         {
                         var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
                         var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
@@ -85,7 +104,53 @@
                             </td>
                             <td>
                                 <div class="xml-section">
-                                    @Raw(vclass.XmlDocumentation)
+                                    @Raw(Model.DisplaySummary(vclass.XmlDocumentation))
+                                </div>
+                            </td>
+                        </tr>
+                        }}
+                    </table>
+                </div>
+                <div class="section Interface">
+                    <table>
+                        @if(Model.namespaceMta.Interfaces != null){
+                        <h3 class="section-name">Interfaces</h3>
+                        foreach (var vinterface in Model.namespaceMta.Interfaces)
+                        {
+                        var interfacePath = Model.idPathRelativeMapping[vinterface.Id.ToString()];
+                        var interfaceName = Model.idDisplayNameRelativeMapping[vinterface.Id.ToString()];
+                        <tr>
+                            <td>
+                                <a href="@interfacePath">
+                                    @interfaceName.Substring(interfaceName.LastIndexOf(".")+1)
+                                </a>
+                            </td>
+                            <td>
+                                <div class="xml-section">
+                                    @Raw(Model.DisplaySummary(vinterface.XmlDocumentation))
+                                </div>
+                            </td>
+                        </tr>
+                        }}
+                    </table>
+                </div>
+                <div class="section Struct">
+                    <table>
+                        @if(Model.namespaceMta.Structs != null){
+                        <h3 class="section-name">Struct</h3>
+                        foreach (var vstruct in Model.namespaceMta.Structs)
+                        {
+                        var structPath = Model.idPathRelativeMapping[vstruct.Id.ToString()];
+                        var structName = Model.idDisplayNameRelativeMapping[vstruct.Id.ToString()];
+                        <tr>
+                            <td>
+                                <a href="@structPath">
+                                    @structName.Substring(structName.LastIndexOf(".")+1)
+                                </a>
+                            </td>
+                            <td>
+                                <div class="xml-section">
+                                    @Raw(Model.DisplaySummary(vstruct.XmlDocumentation))
                                 </div>
                             </td>
                         </tr>

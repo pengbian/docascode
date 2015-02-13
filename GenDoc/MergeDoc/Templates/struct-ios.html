@@ -2,13 +2,13 @@
 
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/default-ios.css">
     <script type="text/javascript" src="../script/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="../script/default-ios.js"></script>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <base href="../">
-    <title>@Model.classMta.Id.ToString()</title>
+    <title>@Model.structMta.Id.ToString()</title>
 </head>
 
 <body onload="init()">
@@ -32,7 +32,7 @@
                     <a href="index.html">@Model.assemblyMta.Id.ToString()</a>
                     >
                     <a href="@Model.idPathRelativeMapping[Model.namespaceMta.Id.ToString()]"> @Model.namespaceMta.Id.ToString()</a>
-                    > @Model.classMta.Id.ToString()
+                    > @Model.structMta.Id.ToString()
                 </span>
             </p>
         </div>
@@ -49,12 +49,12 @@
                 string ns_open = ns==@Model.namespaceMta?"ns-open":"";
                 <li class="namespace-name @ns_open">
                     <a class="namespace-link" href="@nsPath">@nsName</a>
-                    <ul class="nav-classes">
+                    <ul class="nav-Structs">
                         @if(ns.Classes != null){ foreach (var vclass in ns.Classes)
                         {
                         var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
                         var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
-                        string c_open = vclass==@Model.classMta? "c-open":"";
+                        string c_open = "";
                         <li class="class-name @c_open">
                             <a class="class-link" href="@classPath">@className.Substring(className.LastIndexOf(".")+1)</a>
                         </li>
@@ -72,7 +72,7 @@
                         {
                         var classPath = Model.idPathRelativeMapping[vclass.Id.ToString()];
                         var className = Model.idDisplayNameRelativeMapping[vclass.Id.ToString()];
-                        string c_open = "";
+                        string c_open = vclass==@Model.structMta?"c-open":"";
                         <li class="class-name @c_open">
                             <a class="class-link" href="@classPath">@className.Substring(className.LastIndexOf(".")+1)</a>
                         </li>
@@ -86,54 +86,54 @@
         <article class="article-content">
             <div id="article-header">
                 <h1 class="article-name">
-                    Class&nbsp;
-                    @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]
+                    Struct&nbsp;
+                    @Model.idDisplayNameRelativeMapping[Model.structMta.Id.ToString()]
                 </h1>
                 <div class="improve-this-doc btn">
-                    <a href="@Model.GetMarkdownSourceUrl(Model.classMta)">Improve this Doc</a>
+                    <a href="@Model.GetMarkdownSourceUrl(Model.structMta)">Improve this Doc</a>
                 </div>
                 <div class="view-source btn">
-                    <a href="@Model.GetClassSourceUrl(Model.classMta)">View Source</a>
+                    <a href="@Model.GetClassSourceUrl(Model.structMta)">View Source</a>
                 </div>
                 <section class="article-header-content">
-                    Id: @Model.classMta.Id.ToString()
+                    Id: @Model.structMta.Id.ToString()
                     <div class="xml-section">
-                        @Raw(Model.DisplaySummary(Model.classMta.XmlDocumentation))
+                        @Raw(Model.DisplaySummary(Model.structMta.XmlDocumentation))
                     </div>
                     <div class="md-section">
-                        @Raw(Model.classMta.MarkdownContent)
+                        @Raw(Model.structMta.MarkdownContent)
                     </div>
                 </section>
                 <section id="metadata_table">
                     <div class="inheritance-table">
                         <p class="para">Inheritance</p>
                         <hr>
-                            @helper call(){
-                            <div class="inheritance-table-line">
-                                @{
-                                    if(Model.classMta.InheritanceHierarchy.Count != 0){
-                                        string id = Model.classMta.InheritanceHierarchy.Pop().ToString();
-                                        @Raw(Model.ResolveLink(id));
-                                        if(Model.classMta.InheritanceHierarchy.Count != 0) { @call(); }
-                                        else {
-                                            <div class="inheritance-table-last-line">
-                                                <p>@Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]</p>
-                                            </div>
-                                        }
-                                    }
-                                }
-                             </div>
+                        @helper call(){
+                        <div class="inheritance-table-line">
+                            @{
+                            if(Model.structMta.InheritanceHierarchy.Count != 0){
+                            string id = Model.structMta.InheritanceHierarchy.Pop().ToString();
+                            @Raw(Model.ResolveLink(id));
+                            if(Model.structMta.InheritanceHierarchy.Count != 0) { @call(); }
+                            else {
+                            <div class="inheritance-table-last-line">
+                                <p>@Model.idDisplayNameRelativeMapping[Model.structMta.Id.ToString()]</p>
+                            </div>
                             }
-                            @call()
+                            }
+                            }
+                        </div>
+                        }
+                        @call()
                     </div>
                 </section>
             </div>
             <section id="article-body">
                 <div class="section">
                     <ul class="section-members constructors">
-                        @if(Model.classMta.Constructors != null){
+                        @if(Model.structMta.Constructors != null){
                         <h3 class="section-name">Constructors</h3>
-                        foreach (var constructor in Model.classMta.Constructors)
+                        foreach (var constructor in Model.structMta.Constructors)
                         {
                         string temp = @Model.idDisplayNameRelativeMapping[Model.namespaceMta.Id.ToString()]+".";
                         <li class="section-member">
@@ -202,11 +202,11 @@
                         }
                     </ul>
                     <ul class="section-members properties">
-                        @if(Model.classMta.Properties != null){
+                        @if(Model.structMta.Properties != null){
                         <h3 class="section-name">Properties</h3>
-                        foreach (var property in Model.classMta.Properties)
+                        foreach (var property in Model.structMta.Properties)
                         {
-                        string temp = @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]+".";
+                        string temp = @Model.idDisplayNameRelativeMapping[Model.structMta.Id.ToString()]+".";
                         <li class="section-member">
                             <div class="section-member-header">
                                 <h3 class="section-member-name">
@@ -259,11 +259,11 @@
                         }
                     </ul>
                     <ul class="section-members methods">
-                        @if(Model.classMta.Methods != null){
+                        @if(Model.structMta.Methods != null){
                         <h3 class="section-name">Methods</h3>
-                        foreach (var method in Model.classMta.Methods)
+                        foreach (var method in Model.structMta.Methods)
                         {
-                        string temp = @Model.idDisplayNameRelativeMapping[Model.classMta.Id.ToString()]+".";
+                        string temp = @Model.idDisplayNameRelativeMapping[Model.structMta.Id.ToString()]+".";
                         <li class="section-member">
                             <div class="section-member-header">
                                 <h3 class="section-member-name">

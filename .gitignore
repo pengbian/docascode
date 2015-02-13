@@ -9,6 +9,7 @@
 /**/obj/
 /**/node_modules/
 /**/*.sln.ide/
+/DocProject/
 
 ###############
 #  temp file  #
@@ -22,3 +23,4 @@
 *.csproj.user
 .gitattributes
 Razzle.cmd
+

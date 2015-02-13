@@ -18,8 +18,8 @@ namespace DocAsCode.MergeDoc
         private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
         static int Main(string[] args)
         {
-            string mtaFile = @"";
-            string delimitedMdFiles = "";
+            string mtaFile = @"C:\Users\t-shujia\Desktop\basecode\roslyn\roslyn\src\DocProject1\bin\Debug\doctemp\mta\Microsoft.CodeAnalysis.docmta";
+            string delimitedMdFiles = @"C:\Users\t-shujia\Desktop\basecode\roslyn\roslyn\src\DocProject1\Docs\CodeAnalysis\T_Microsoft.CodeAnalysis.Diagnostics.AnalyzerDriver.md,C:\Users\t-shujia\Desktop\basecode\roslyn\roslyn\src\DocProject1\Docs\CodeAnalysis\T_Microsoft.CodeAnalysis.Emit.EmitOptions.md";
             string outputDirectory = "output";
             string templateDirectory = "Templates";
             string cssDirecotry = "css";
@@ -62,6 +62,8 @@ namespace DocAsCode.MergeDoc
                 // TODO: why "bin\debug\" can not pass argument parser
                 Directory.CreateDirectory(outputDirectory);
                 string classTemplate = File.ReadAllText(Path.Combine(templateDirectory, "class-ios.html"));
+                string interfaceTemplate = File.ReadAllText(Path.Combine(templateDirectory, "interface-ios.html"));
+                string StructTemplate = File.ReadAllText(Path.Combine(templateDirectory, "struct-ios.html"));
                 string nsTemplate = File.ReadAllText(Path.Combine(templateDirectory, "namespace-ios.html"));
                 string asmTemplate = File.ReadAllText(Path.Combine(templateDirectory, "index.html"));
 
@@ -99,6 +101,30 @@ namespace DocAsCode.MergeDoc
                                 result = Razor.Parse(classTemplate, viewModel);
                                 File.WriteAllText(classPath, result);
                                 Console.Error.WriteLine("Successfully saved {0}", classPath);
+                            }
+                        }
+                        if (ns.Interfaces != null)
+                        {
+                            foreach (var c in ns.Interfaces)
+                            {
+                                viewModel.interfaceMta = c;
+                                viewModel.ResolveContent();
+                                string interfacePath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                                result = Razor.Parse(interfaceTemplate, viewModel);
+                                File.WriteAllText(interfacePath, result);
+                                Console.Error.WriteLine("Successfully saved {0}", interfacePath);
+                            }
+                        }
+                        if (ns.Structs != null)
+                        {
+                            foreach (var c in ns.Structs)
+                            {
+                                viewModel.structMta = c;
+                                viewModel.ResolveContent();
+                                string structPath = Path.Combine(namespaceFolder, c.Id.ToString().ToValidFilePath() + ".html");
+                                result = Razor.Parse(StructTemplate, viewModel);
+                                File.WriteAllText(structPath, result);
+                                Console.Error.WriteLine("Successfully saved {0}", structPath);
                             }
                         }
                         result = Razor.Parse(nsTemplate, viewModel);

@@ -19,18 +19,31 @@ namespace DocAsCode.MergeDoc
         public AssemblyDocMetadata assemblyMta;
         public NamespaceDocMetadata namespaceMta;
         public ClassDocMetadata classMta;
+        public InterfaceDocMetadata interfaceMta;
+        public StructDocMetadata structMta;
         public Dictionary<string, string> idPathRelativeMapping;
         public Dictionary<string, string> idDisplayNameRelativeMapping;
         private MarkDownConvertor _mdConvertor;
         private MarkdownCollectionCache _markdownCollectionCache;
 
+        /// <summary>
+        /// Resolve name from mta by the Id and syntax
+        /// e.g. methodA``1 to methodA<T>
+        /// </summary>
+        /// <param name="mta"></param>
+        /// <returns></returns>
         public string ResolveName(MemberDocMetadata mta)
         {
             string id = mta.Id.ToString();
+            string name = id.Substring(id.IndexOf(":") + 1).Trim();
 
+            string parentName;
             string parentId = mta.Parent.ToString();
 
-            string name = id.Substring(id.IndexOf(":") + 1).Trim().Replace(parentId.Substring(parentId.IndexOf(":") + 1).Trim(), idDisplayNameRelativeMapping[parentId]);
+            if (idDisplayNameRelativeMapping.TryGetValue(parentId, out parentName))
+            {
+               name = name.Replace(parentId.Substring(parentId.IndexOf(":") + 1).Trim(), parentName);
+            }
 
             if (name.IndexOf(".#ctor") != -1)
             {
@@ -54,6 +67,11 @@ namespace DocAsCode.MergeDoc
             return name;
         }
 
+        /// <summary>
+        /// Given an ID, return the link in html: <a href="path">displayName</a>
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public string ResolveLink(string id)
         {
             Regex typeRegex = new Regex((@"^(?<class>[\s\S]*?)(\{(?<type>[\s\S]*?)\})?$"));
@@ -91,6 +109,11 @@ namespace DocAsCode.MergeDoc
             }
         }
 
+        /// <summary>
+        /// To resolve triple slash component with <see cref=""/>, turn the crefed class to link
+        /// </summary>
+        /// <param name="description"></param>
+        /// <returns></returns>
         public string ResolveSeeCref(string description)
         {
             var refs = TripleSlashParser.SeeCrefRegex.Matches(description);
@@ -99,10 +122,11 @@ namespace DocAsCode.MergeDoc
             {
                 var @ref = refs[i];
                 string link = ResolveLink(@ref.Groups["ref"].Value);
-                description = description.Replace(@ref.Groups["seeCrefMatch"].Value, "@" + link);
+                description = description.Replace(@ref.Groups["seeCrefMatch"].Value, link);
             }
             return description;
         }
+
         private string GetSourceUrlWithoutExtension(string path, out Branch branch, out Repository repo)
         {
             try
@@ -127,7 +151,7 @@ namespace DocAsCode.MergeDoc
             }
         }
 
-        public string GetClassSourceUrl(ClassDocMetadata classMta)
+        public string GetClassSourceUrl(CompositeDocMetadata classMta)
         {
             try
             {
@@ -161,7 +185,7 @@ namespace DocAsCode.MergeDoc
             }
         }
 
-        public string GetMarkdownSourceUrl(ClassDocMetadata classMta)
+        public string GetMarkdownSourceUrl(DocMetadata classMta)
         {
             string markdownGitURL = "";
 
@@ -217,7 +241,9 @@ namespace DocAsCode.MergeDoc
         {
             string summary = TripleSlashParser.Parse(xmlDocumentation)["summary"].Trim();
 
-            return ResolveSeeCref(summary);
+            summary =  ResolveSeeCref(summary);
+
+            return _mdConvertor.ConvertToHTML(summary);
         }
 
         private string ExtractMarkdownContent(DocMetadata mta)
@@ -261,31 +287,100 @@ namespace DocAsCode.MergeDoc
 ", mta.Syntax.Content));
         }
 
+        public void ResolveClassTypeSymbolContent(CompositeDocMetadata mta)
+        {
+            if (mta == null) return;
+            foreach (var member in mta.MemberDict)
+            {
+                switch (member.Key)
+                {
+                    case MemberType.Method:
+                        {
+                            foreach (var m in member.Value.Values)
+                            {
+                                var method = m as MethodDocMetadata;
+                                method.MethodSyntax.Parameters = ExtractParameters(method, method.MethodSyntax.Parameters);
+                                method.MethodSyntax.Returns = ExtractReturn(method);
+                                method.MarkdownContent = ExtractMarkdownContent(method);
+                                method.Syntax.Content = ExtractSyntaxContent(method);
+                            }
+                            break;
+                        };
+                    case MemberType.Constructor:
+                        {
+                            foreach (var c in member.Value.Values)
+                            {
+                                var constructor = c as ConstructorDocMetadata;
+                                constructor.ConstructorSyntax.Parameters = ExtractParameters(constructor, constructor.ConstructorSyntax.Parameters);
+                                constructor.MarkdownContent = ExtractMarkdownContent(constructor);
+                                constructor.Syntax.Content = ExtractSyntaxContent(constructor);
+
+                            }
+                            break;
+                        };
+                    case MemberType.Property:
+                        {
+                            foreach (var p in member.Value.Values)
+                            {
+                                var property = p as PropertyDocMetadata;
+                                property.MarkdownContent = ExtractMarkdownContent(property);
+                                property.Syntax.Content = ExtractSyntaxContent(property);
+                            }
+                            break;
+                        }
+                }
+            }
+        }
 
         public void ResolveContent()
         {
             namespaceMta.MarkdownContent = ExtractMarkdownContent(namespaceMta);
             classMta.MarkdownContent = ExtractMarkdownContent(classMta);
 
-            if (classMta.Methods != null)
+            if(classMta != null)
             {
-                foreach (var m in classMta.Methods)
+                ResolveClassTypeSymbolContent(classMta);
+            }
+            if(interfaceMta != null)
+            {
+                ResolveClassTypeSymbolContent(interfaceMta);
+            }
+            if(structMta != null)
+            {
+                ResolveClassTypeSymbolContent(structMta);
+            }
+        }
+
+        private void AddToMap(MemberDocMetadata mta, bool isHtml, bool isChild)
+        {
+            string path;
+            if (!idPathRelativeMapping.TryGetValue(mta.Id, out path))
+            {
+                string filePath;
+
+                if (isChild && isHtml)
                 {
-                    m.MethodSyntax.Parameters = ExtractParameters(m, m.MethodSyntax.Parameters);
-                    m.MethodSyntax.Returns = ExtractReturn(m);
-                    m.MarkdownContent = ExtractMarkdownContent(m);
-                    m.Syntax.Content = ExtractSyntaxContent(m);
+                    filePath = Path.Combine(mta.Parent.ToString().ToValidFilePath(), mta.Id.ToString().ToValidFilePath() + ".html");
                 }
+                else
+                {
+                    if (isHtml)
+                    {
+                        filePath = mta.Id.ToString().ToValidFilePath() + ".html";
+                    }
+                    else
+                    {
+                        filePath = idDisplayNameRelativeMapping[mta.Parent.ToString()];
+                    }
+                }
+                idPathRelativeMapping.Add(mta.Id, filePath);
             }
 
-            if (classMta.Constructors != null)
+            string name;
+            if (!idDisplayNameRelativeMapping.TryGetValue(mta.Id, out name))
             {
-                foreach (var constructor in classMta.Constructors)
-                {
-                    constructor.ConstructorSyntax.Parameters = ExtractParameters(constructor, constructor.ConstructorSyntax.Parameters);
-                    constructor.MarkdownContent = ExtractMarkdownContent(constructor);
-                    constructor.Syntax.Content = ExtractSyntaxContent(constructor);
-                }
+                string mtaName = ResolveName(mta);
+                idDisplayNameRelativeMapping.Add(mta.Id, mtaName);
             }
         }
 
@@ -298,42 +393,22 @@ namespace DocAsCode.MergeDoc
             {
                 foreach (var ns in assemblyMta.Namespaces)
                 {
-                    string nsFile = ns.Id.ToString().ToValidFilePath() + ".html";
-                    idPathRelativeMapping.Add(ns.Id, nsFile);
+                    AddToMap(ns, true, false);
 
-                    string nsId = ns.Id.ToString();
-                    idDisplayNameRelativeMapping.Add(ns.Id, nsId.Substring(nsId.IndexOf(":") + 1).Trim());
-
-                    if (ns.Classes != null)
+                    if (ns.Members != null)
                     {
-                        foreach (var c in ns.Classes)
+                        foreach (var c in ns.Members)
                         {
-                            string classPath = Path.Combine(ns.Id.ToString().ToValidFilePath(), c.Id.ToString().ToValidFilePath() + ".html");
-                            idPathRelativeMapping.Add(c.Id, classPath);
+                            AddToMap(c, true, true);
 
-                            string className = ResolveName(c);
-                            idDisplayNameRelativeMapping.Add(c.Id, className);
-
-                            if (c.Members != null)
+                            var type = c as CompositeDocMetadata;
+                            if (type != null && type.Members != null)
                             {
-                                foreach (var m in c.Members)
+                                foreach (var m in type.Members)
                                 {
-                                    idPathRelativeMapping.Add(m.Id, classPath);
-
-                                    string name = ResolveName(m);
-                                    idDisplayNameRelativeMapping.Add(m.Id, name);
+                                    AddToMap(m, false, true);
                                 }
                             }
-                            /*if (c.Constructors != null)
-                            {
-                                foreach (var m in c.Constructors)
-                                {
-                                    idPathRelativeMapping.Add(m.Id, classPath);
-
-                                    string name = ResolveName(m);
-                                    idDisplayNameRelativeMapping.Add(m.Id, name);
-                                }
-                            }*/
                         }
                     }
                 }
@@ -370,7 +445,7 @@ namespace DocAsCode.MergeDoc
                                                         "author",
                                                         "file",
                                                         "copyright"  };
-        static public Regex SeeCrefRegex = new Regex(@"(?<seeCrefMatch><see cref=""(?<ref>[\s\S]*?)""/>?)", RegexOptions.Compiled);
+        static public Regex SeeCrefRegex = new Regex(@"(?<seeCrefMatch><see(also)? cref=""(?<ref>[\s\S]*?)""/>?)", RegexOptions.Compiled);
 
         static public Dictionary<string, string> Parse(string tripleSlashStr)
         {
