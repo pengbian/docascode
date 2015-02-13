@@ -264,8 +264,8 @@ namespace DocAsCode.MergeDoc
 
         public void ResolveContent()
         {
-            ExtractMarkdownContent(namespaceMta);
-            ExtractMarkdownContent(classMta);
+            namespaceMta.MarkdownContent = ExtractMarkdownContent(namespaceMta);
+            classMta.MarkdownContent = ExtractMarkdownContent(classMta);
 
             if (classMta.Methods != null)
             {
