@@ -54,8 +54,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MetadataModel\Comment.cs" />
+    <Compile Include="MetadataModel\Description.cs" />
+    <Compile Include="MetadataModel\Identify.cs" />
+    <Compile Include="MetadataModel\IHierarchy.cs" />
+    <Compile Include="MetadataModel\INamespaceMembersMember.cs" />
+    <Compile Include="MetadataModel\INamespaceMember.cs" />
+    <Compile Include="MetadataModel\NamespaceMemberMetadata.cs" />
+    <Compile Include="MetadataModel\NamespaceMetadata.cs" />
     <Compile Include="Converters.cs" />
     <Compile Include="DocMetadata.cs" />
+    <Compile Include="MetadataModel\BaseMetadata.cs" />
+    <Compile Include="MetadataModel\NamespaceMembersMemberMetadata.cs" />
+    <Compile Include="MetadataVisitor\LinkVisitor.cs" />
+    <Compile Include="MetadataVisitor\CommentVisitor.cs" />
+    <Compile Include="MetadataVisitor\IMetadataVisitor.cs" />
+    <Compile Include="MetadataModel\IMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
