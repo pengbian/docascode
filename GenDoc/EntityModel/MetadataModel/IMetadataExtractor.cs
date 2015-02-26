@@ -154,7 +154,7 @@ namespace EntityModel
             NamespaceMemberMetadata namespaceMemberMetadata = new NamespaceMemberMetadata();
 
             var syntaxNode = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMemberMetadata, symbol);
-
+            symbol.
             if (syntaxNode == null)
             {
                 return null;
@@ -172,7 +172,7 @@ namespace EntityModel
 
                 while (type != null)
                 {
-                    namespaceMemberMetadata.InheritanceHierarchy.Push(new Identity(type.GetDocumentationCommentId()));
+                    namespaceMemberMetadata.InheritanceHierarchy.Push(new Identity(type));
                     type = type.BaseType;
                 }
             }
@@ -446,7 +446,7 @@ namespace EntityModel
             {
                 // TODO: check what name is
                 // name = DescriptionConstants.ReturnName;
-                id = new Identity(typeSymbol.GetDocumentationCommentId() ?? typeSymbol.BaseType.GetDocumentationCommentId());
+                id = typeSymbol.GetDocumentationCommentId() ?? typeSymbol.BaseType.GetDocumentationCommentId();
             }
 
             var propertySymbol = symbol as IPropertySymbol;
@@ -454,7 +454,7 @@ namespace EntityModel
             {
                 // TODO: check what name is
                 // name = DescriptionConstants.ReturnName;
-                id = new Identity(propertySymbol.Type.GetDocumentationCommentId()) ?? propertySymbol.Type.BaseType.GetDocumentationCommentId();
+                id = propertySymbol.Type.GetDocumentationCommentId() ?? propertySymbol.Type.BaseType.GetDocumentationCommentId();
             }
 
             return new ParameterDescription() { Name = name, Type = new Identity(id), Comments = new List<IComment> { new TripleSlashComment { Raw = comment } } };

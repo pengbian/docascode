@@ -11,7 +11,6 @@ using System.IO;
 using Microsoft.CodeAnalysis.MSBuild;
 using Newtonsoft.Json;
 using System.Collections;
-using DocAsCode.EntityModel;
 using DocAsCode.Utility;
 using System.ComponentModel;
 using EntityModel;
@@ -211,9 +210,8 @@ namespace DocAsCode.BuildMeta
         {
         }
 
-        private class PreservedMapping
+        private class IdentityMapping<T> : ConcurrentDictionary<Identity, T>
         {
-
         }
 
         private static async Task GenerateMetadataAsync(Project[] projects)
@@ -223,8 +221,7 @@ namespace DocAsCode.BuildMeta
                 return;
             }
 
-            ConcurrentDictionary<string, NamespaceMetadata> namespaceCache
-            List<NamespaceMetadata> namespaces = new List<NamespaceMetadata>();
+            IdentityMapping<NamespaceMetadata> namespaceMapping = new IdentityMapping<NamespaceMetadata>();
 
             // Project.Name is unique per solution
             foreach (var project in projects)
@@ -253,8 +250,12 @@ namespace DocAsCode.BuildMeta
                     {
                         continue;
                     }
-
+                    
                     NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns) as NamespaceMetadata;
+
+                    // Namespace(N)--(N)Project is N-N mapping
+                    nsMetadata = namespaceMapping.GetOrAdd(nsMetadata.Identity, nsMetadata);
+
                     if (nsMetadata != null)
                     {
                         foreach(var nsMember in nsMembers)
@@ -262,6 +263,7 @@ namespace DocAsCode.BuildMeta
                             NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(nsMember) as NamespaceMemberMetadata;
                             if (nsMemberMetadata != null)
                             {
+                                // Will not check if members with duplicate Identify exists
                                 // Should not ignore the namespace's member even if it contains nothing because we can override the comments in markdown
                                 nsMetadata.Members.Add(nsMemberMetadata);
 
@@ -275,18 +277,8 @@ namespace DocAsCode.BuildMeta
                                         nsMemberMetadata.Members.Add(nsMembersMembersMetadata);
                                     }
                                 }
-
-                                nsMemberMetadata
                             }
                         }
-
-
-
-
-
-
-
-                        namespaces.Add(nsMetadata);
                     }
                 }
             }

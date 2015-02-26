@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,19 +16,34 @@ namespace EntityModel
             _fullyQualifiedName = Tuple.Create(fullyQualifiedName, suffix);
         }
 
+        public Identity(ISymbol symbol)
+        {
+            if (symbol == null)
+            {
+                _fullyQualifiedName = Tuple.Create(string.Empty, (string[])null);
+            }
+            else
+            {
+                _fullyQualifiedName = Tuple.Create(symbol.GetDocumentationCommentId(), (string[])null);
+            }
+        }
+
         public override string ToString()
         {
-            return _fullyQualifiedName.ToString();
+            if (_fullyQualifiedName.Item2 == null)
+            {
+                return _fullyQualifiedName.Item1;
+            }
+
+            return "(" + _fullyQualifiedName.Item1 + ", " + string.Join(",", _fullyQualifiedName.Item2) + ")";
         }
 
-        public static implicit operator string (Identity memberIdentity)
+        public static Identity Empty
         {
-            return memberIdentity.ToString();
-        }
-
-        public static implicit operator Identity(string name)
-        {
-            return new Identity(name);
+            get
+            {
+                return new Identity(string.Empty);
+            }
         }
     }
 }
