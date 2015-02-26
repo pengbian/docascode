@@ -12,7 +12,7 @@ namespace DocAsCode.PublishDoc
     public class Program
     {
         [STAThread]
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
             string githubConfigFile = "GithubPublish.config";
 
@@ -24,10 +24,19 @@ namespace DocAsCode.PublishDoc
             if (!ConsoleParameterParser.ParseParameters(options, args))
             {
                 Console.WriteLine("Error while parsing parameters!");
-                return ;
+                return 1;
             }
 
-            Publisher.PublishToGithub(githubConfigFile);
+            try
+            {
+                Publisher.PublishToGithub(githubConfigFile);
+                return 0;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(string.Format("Error publishing {0}", e.Message));
+                return 1;
+            }
         }
     }
 }

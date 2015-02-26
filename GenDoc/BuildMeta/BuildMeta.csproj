@@ -119,7 +119,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MetadataGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />

@@ -129,18 +129,30 @@ namespace DocAsCode.MergeDoc
 
         private string GetSourceUrlWithoutExtension(string path, out Branch branch, out Repository repo)
         {
+            branch = null;
+            repo = null;
+            if (string.IsNullOrEmpty(path))
+            {
+                return string.Empty;
+            }
             try
             {
                 string gitPath = Repository.Discover(path);
-                repo = new Repository(Path.GetDirectoryName(gitPath));
-                branch = repo.Head;
-                Remote remote = repo.Network.Remotes["origin"];
-                string url = remote.Url;
-                if (url.EndsWith(".git"))
+                if (gitPath != null)
                 {
-                    url = url.Substring(0, url.LastIndexOf(".git"));
+                    repo = new Repository(Path.GetDirectoryName(gitPath));
+                    branch = repo.Head;
+                    Remote remote = repo.Network.Remotes["origin"];
+                    string url = remote.Url;
+                    if (url.EndsWith(".git"))
+                    {
+                        url = url.Substring(0, url.LastIndexOf(".git"));
+                    }
+                    return url;
+                }else
+                {
+                    return string.Empty;
                 }
-                return url;
             }
             catch (Exception e)
             {
@@ -153,22 +165,25 @@ namespace DocAsCode.MergeDoc
 
         public string GetClassSourceUrl(CompositeDocMetadata classMta)
         {
+            sourceGitUrl = string.Empty;
             try
             {
                 Branch branch;
                 Repository repo;
                 string url = GetSourceUrlWithoutExtension(classMta.FilePath, out branch, out repo);
-                sourceGitUrl = Path.Combine(url, "blob", branch.Name, classMta.FilePath.Replace(repo.Info.WorkingDirectory, "")).Replace("\\", "/");
-               /* if (!RemoteUrlExists(sourceGitUrl))
+                if (repo != null && branch != null)
                 {
-                    sourceGitUrl = "";
-                    Console.Error.WriteLine("Cannot find source git url of class {0}", classMta.Id);
-                }*/
+                    sourceGitUrl = Path.Combine(url, "blob", branch.Name, classMta.FilePath.Replace(repo.Info.WorkingDirectory, "")).Replace("\\", "/");
+                }
+                /* if (!RemoteUrlExists(sourceGitUrl))
+                 {
+                     sourceGitUrl = "";
+                     Console.Error.WriteLine("Cannot find source git url of class {0}", classMta.Id);
+                 }*/
             }
             catch (Exception e)
             {
                 Console.Error.WriteLine("Failing in finding source git url of class {0}", classMta.Id, e);
-                sourceGitUrl = "";
             }
             return sourceGitUrl;
         }

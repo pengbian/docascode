@@ -33,192 +33,98 @@ namespace DocAsCode.BuildMeta
         Markdown = 0x2,
         Both = 0x3,
     }
-
-    public class Program
+    public static class DocAsCodeUtility
     {
-        static int Main(string[] args)
+        public static async Task<Tuple<bool, string>> TryGenerateMetadataAsync(string slnOrProjectPath, string outputDirectory, string delimitedProjectFileNames, OutputType outputType)
         {
-            string slnOrProjectPath = null;
-            string outputDirectory = null;
-            string delimitedProjectFileNames = null;
-            OutputType outputType = OutputType.Both;
-            
-            try
+            if (string.IsNullOrEmpty(slnOrProjectPath))
             {
-                var options = new Option[]
-                    {
-                    new Option(null, s => slnOrProjectPath = s, helpName: "solutionPath/projectPath", required: true, helpText: @"The path of the solution or the project whose metadata is to be generated"),
-                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
-                    new Option("p", s => delimitedProjectFileNames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma"),
-                    new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "could be Both, Metadata or Markdown; specifiy if the docmta or the markdown file will be generated, by default is Both as both the docmta and the markdown file will be generated"),
-                    };
+                throw new ArgumentNullException("slnOrProjectPath");
+            }
 
-                if (!ConsoleParameterParser.ParseParameters(options, args))
-                {
-                    return 1;
-                }
+            List<Project> projects = new List<Project>();
+            var fileExtension = Path.GetExtension(slnOrProjectPath);
+            if (fileExtension == ".sln")
+            {
+                var solution = MSBuildWorkspace.Create().OpenSolutionAsync(slnOrProjectPath).Result;
+                projects = solution.Projects.ToList();
+            }
+            else if (fileExtension == ".csproj")
+            {
+                var project = MSBuildWorkspace.Create().OpenProjectAsync(slnOrProjectPath).Result;
+                projects.Add(project);
+            }
+            else
+            {
+                throw new NotSupportedException(string.Format("Project type {0} is currently not supported", fileExtension));
+            }
 
-                if (string.IsNullOrEmpty(outputDirectory))
-                {
-                    // use the sln/project name as the default output directory
-                    outputDirectory = Path.GetFileNameWithoutExtension(slnOrProjectPath);
-                }
+            if (projects.Count == 0)
+            {
+                Console.Error.WriteLine("No project is found under {0}, exiting...", slnOrProjectPath);
+            }
 
-                if (Directory.Exists(outputDirectory))
-                {
-                    Console.Error.WriteLine("Warning: {0} directory already exists.", outputDirectory);
-                }
+            if (string.IsNullOrEmpty(outputDirectory))
+            {
+                // use the sln/project name as the default output directory
+                outputDirectory = Path.GetFileNameWithoutExtension(slnOrProjectPath);
+            }
 
-                Directory.CreateDirectory(outputDirectory);
-                List<Project> projects = new List<Project>();
-                var fileExtension = Path.GetExtension(slnOrProjectPath);
-                if (fileExtension == ".sln")
-                {
-                    var solution = MSBuildWorkspace.Create().OpenSolutionAsync(slnOrProjectPath).Result;
-                    projects = solution.Projects.ToList();
-                }
-                else if (fileExtension == ".csproj")
-                {
-                    var project = MSBuildWorkspace.Create().OpenProjectAsync(slnOrProjectPath).Result;
-                    projects.Add(project);
-                }
-                else
-                {
-                    throw new NotSupportedException(string.Format("Project type {0} is currently not supported", fileExtension));
-                }
+            if (Directory.Exists(outputDirectory))
+            {
+                Console.Error.WriteLine("Warning: {0} directory already exists.", outputDirectory);
+            }
 
+            Directory.CreateDirectory(outputDirectory);
+
+            if (!string.IsNullOrEmpty(delimitedProjectFileNames))
+            {
                 string[] specifiedProjectFileNames = delimitedProjectFileNames.ToArray(StringSplitOptions.RemoveEmptyEntries, ',');
-                var availableProjectNames = projects.Select(s => s.Name);
-                var intersection = availableProjectNames.Intersect(specifiedProjectFileNames, StringComparer.OrdinalIgnoreCase);
-                var invalidProjectFileNames = specifiedProjectFileNames.Except(intersection).Distinct();
-                Console.Error.WriteLine("Project(s) {0} is(are) not available in {1}, will be ignored", invalidProjectFileNames.ToDelimitedString(), slnOrProjectPath);
-
-                var excludedProjectNames = availableProjectNames.Except(intersection);
-                Console.Error.WriteLine("Project(s) {0} is(are) not in the specified file list, will be ignored.", excludedProjectNames.ToDelimitedString());
-
-                foreach (var project in projects)
+                if (specifiedProjectFileNames != null && specifiedProjectFileNames.Length > 0)
                 {
-                    if (intersection.Contains(project.Name))
-                    {
-                        continue;
-                    }
 
-                    var assemblyDocMetadata = GenerateAssemblyDocMetadata(project);
-
-                    if (outputType.HasFlag(OutputType.Metadata))
-                    {
-                        ExportMetadataFile(assemblyDocMetadata, Path.Combine(outputDirectory, "mta"));
-                    }
-
-                    if (outputType.HasFlag(OutputType.Markdown))
-                    {
-                        ExportMarkdownToc(assemblyDocMetadata, Path.Combine(outputDirectory, "mdtoc"));
-                    }
-                }
-
-                Console.WriteLine("Metadata files successfully generated under {0}", outputDirectory);
-                return 0;
-            }
-            catch (Exception e)
-            {
-                Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnOrProjectPath, e);
-                return 1;
-            }
-        }
-
-        static void PrintUsage()
-        {
-            Console.Error.WriteLine("Usage: GenDocMetadata <SolutionPath> (<OutputDirectory>)");
-        }
-
-        private static void ExportMetadataFile(AssemblyDocMetadata assemblyDocMetadata, string baseDirectory)
-        {
-            if (Directory.Exists(baseDirectory))
-            {
-                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
-            }
-
-            Directory.CreateDirectory(baseDirectory);
-            // For metadata file, per assembly per file
-            var metadataFilePath = Path.Combine(baseDirectory, (assemblyDocMetadata.Id + ".docmta").ToValidFilePath());
-            
-            Console.WriteLine("Generating metadata file {0}", metadataFilePath);
-            using (StreamWriter streamWriter = new StreamWriter(metadataFilePath))
-            {
-                assemblyDocMetadata.WriteMetadata(streamWriter);
-            }
-        }
-
-        /// <summary>
-        /// |--AssemblyName
-        ///         |--NamespaceId1
-        ///                 |--NamespaceId1.md
-        ///                 |--ClassId1.md
-        ///                 |--ClassId2.md
-        ///         |--NamepsaceId2
-        ///                 |--NamespaceId2.md
-        ///                 |--ClassId3.md
-        /// </summary>
-        /// <param name="directory"></param>
-        private static void ExportMarkdownToc(AssemblyDocMetadata assemblyDocMetadata, string baseDirectory)
-        {
-            baseDirectory = Path.Combine(baseDirectory, assemblyDocMetadata.Id);
-            if (Directory.Exists(baseDirectory))
-            {
-                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
-            }
-
-            if (!assemblyDocMetadata.Namespaces.Any())
-            {
-                Console.Error.WriteLine("Warning:" + string.Format("No namespace is found inside current assembly {0}", assemblyDocMetadata.Id));
-            }
-
-            Directory.CreateDirectory(baseDirectory);
-
-            foreach (var ns in assemblyDocMetadata.Namespaces)
-            {
-                string directory = Path.Combine(baseDirectory, ns.Id.ToString().ToValidFilePath());
-                if (Directory.Exists(directory))
-                {
-                    Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", directory));
-                }
-
-                if (!ns.Members.Any())
-                {
-                    Console.Error.WriteLine("Warning:" + string.Format("No member is found inside current assembly {0}", ns.Id));
-                }
-
-                Directory.CreateDirectory(directory);
-                var namespaceFile = Path.Combine(directory, ns.Id.ToString().ToValidFilePath()) + ".md";
-                using (StreamWriter writer = new StreamWriter(namespaceFile))
-                {
-                    ns.WriteMarkdownSkeleton(writer);
-                }
-
-                foreach (var member in ns.Members)
-                {
-                    var memberFile = Path.Combine(directory, member.Id.ToString().ToValidFilePath()) + ".md";
-                    using (StreamWriter writer = new StreamWriter(memberFile))
-                    {
-                        member.WriteMarkdownSkeleton(writer);
-                    }
                 }
             }
-        }
 
-        private class LocalCache
-        {
-        }
 
+            var intersection = projects.Select(s=>s.Name).Intersect(specifiedProjectFileNames, StringComparer.OrdinalIgnoreCase);
+            var invalidProjectFileNames = projects.Select(s => s.Name).Except(intersection).Distinct();
+            Console.Error.WriteLine("Project(s) {0} is(are) not available in {1}, will be ignored", invalidProjectFileNames.ToDelimitedString(), slnOrProjectPath);
+
+            var excludedProjectNames = availableProjectNames.Except(intersection);
+            Console.Error.WriteLine("Project(s) {0} is(are) not in the specified file list, will be ignored.", excludedProjectNames.ToDelimitedString());
+
+            foreach (var project in projects)
+            {
+                if (intersection.Contains(project.Name))
+                {
+                    continue;
+                }
+
+                var namespaceMapping = await GenerateMetadataAsync(projects.Where(s => intersection.Contains(s.Name)));
+
+                if (outputType.HasFlag(OutputType.Metadata))
+                {
+                    //ExportMetadataFile(assemblyDocMetadata, Path.Combine(outputDirectory, "mta"));
+                }
+
+                if (outputType.HasFlag(OutputType.Markdown))
+                {
+                    throw new NotImplementedException();
+                }
+            }
+
+            Console.WriteLine("Metadata files successfully generated under {0}", outputDirectory);
+        }
         private class IdentityMapping<T> : ConcurrentDictionary<Identity, T>
         {
         }
 
-        private static async Task GenerateMetadataAsync(Project[] projects)
+        private static async Task<IdentityMapping<NamespaceMetadata>> GenerateMetadataAsync(IEnumerable<Project> projects)
         {
-            if (projects == null || projects.Length == 0)
+            if (projects == null || !projects.Any())
             {
-                return;
+                return null;
             }
 
             IdentityMapping<NamespaceMetadata> namespaceMapping = new IdentityMapping<NamespaceMetadata>();
@@ -250,7 +156,7 @@ namespace DocAsCode.BuildMeta
                     {
                         continue;
                     }
-                    
+
                     NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns) as NamespaceMetadata;
 
                     // Namespace(N)--(N)Project is N-N mapping
@@ -258,7 +164,7 @@ namespace DocAsCode.BuildMeta
 
                     if (nsMetadata != null)
                     {
-                        foreach(var nsMember in nsMembers)
+                        foreach (var nsMember in nsMembers)
                         {
                             NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(nsMember) as NamespaceMemberMetadata;
                             if (nsMemberMetadata != null)
@@ -269,7 +175,7 @@ namespace DocAsCode.BuildMeta
 
                                 // Fulfill the nsMemberMetadata with detailed info extracted from symbol as well as its members
                                 var nsMembersMembers = nsMember.GetTypeMembers();
-                                foreach(var nsMembersMember in nsMembersMembers)
+                                foreach (var nsMembersMember in nsMembersMembers)
                                 {
                                     NamespaceMembersMemberMetadata nsMembersMembersMetadata = await MetadataExtractorManager.ExtractAsync(nsMembersMember) as NamespaceMembersMemberMetadata;
                                     if (nsMembersMembersMetadata != null)
@@ -283,83 +189,66 @@ namespace DocAsCode.BuildMeta
                 }
             }
 
-            return;
+            return namespaceMapping;
         }
+    }
 
-        private static AssemblyDocMetadata GenerateAssemblyDocMetadata(Project project)
+    public class Program
+    {
+        static int Main(string[] args)
         {
-            foreach (var ns in namespaceMembers)
+            string slnOrProjectPath = null;
+            string outputDirectory = null;
+            string delimitedProjectFileNames = null;
+            OutputType outputType = OutputType.Both;
+
+            try
             {
-                namespaceQueue.Enqueue(ns);
-            }
+                var options = new Option[]
+                    {
+                    new Option(null, s => slnOrProjectPath = s, helpName: "solutionPath/projectPath", required: true, helpText: @"The path of the solution or the project whose metadata is to be generated"),
+                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
+                    new Option("p", s => delimitedProjectFileNames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma"),
+                    new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "could be Both, Metadata or Markdown; specifiy if the docmta or the markdown file will be generated, by default is Both as both the docmta and the markdown file will be generated"),
+                    };
 
-            while (namespaceQueue.Count > 0)
+                if (!ConsoleParameterParser.ParseParameters(options, args))
+                {
+                    return 1;
+                }
+
+                var generateMetadataResult = DocAsCodeUtility.TryGenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Result;
+                return 0;
+            }
+            catch (Exception e)
             {
-                var ns = namespaceQueue.Dequeue();
-                foreach (var namespaceMember in ns.GetNamespaceMembers())
-                {
-                    namespaceQueue.Enqueue(namespaceMember);
-                }
-
-                var types = ns.GetTypeMembers();
-
-                if (!types.Any())
-                {
-                    continue;
-                }
-
-                // var identifier = syntaxRoot.DescendantNodes().OfType<NamespaceDeclarationSyntax>();
-                var namespaceDocMetadata = DocMetadataConverterFactory.Convert(ns) as NamespaceDocMetadata;
-                if (namespaceDocMetadata == null)
-                {
-                    continue;
-                }
-
-                assemblyDocMetadata.TryAddNamespace(namespaceDocMetadata);
-
-                // Namespace:
-                foreach (var type in types)
-                {
-                    var metadata = DocMetadataConverterFactory.Convert(type);
-                    var classMetadata = metadata as ClassDocMetadata;
-                    if (classMetadata != null)
-                    {
-                        namespaceDocMetadata.TryAdd(classMetadata, MemberType.Class);
-                        classMetadata = DocMetadataConverterFactory
-                            .ExpandSymbolMembers(type, (CompositeDocMetadata)classMetadata) as ClassDocMetadata;
-                        continue;
-                    }
-
-                    var enumMetadata = metadata as EnumDocMetadata;
-                    if (enumMetadata != null)
-                    {
-                        namespaceDocMetadata.TryAdd(enumMetadata, MemberType.Enum);
-                        continue;
-                    }
-                    var structMetadata = metadata as StructDocMetadata;
-                    if (structMetadata != null)
-                    {
-                        namespaceDocMetadata.TryAdd(structMetadata, MemberType.Struct);
-                        structMetadata = DocMetadataConverterFactory
-                            .ExpandSymbolMembers(type, (CompositeDocMetadata)structMetadata) as StructDocMetadata;
-                        continue;
-                    }
-                    var interfaceMetadata = metadata as InterfaceDocMetadata;
-                    if (interfaceMetadata != null)
-                    {
-                        namespaceDocMetadata.TryAdd(interfaceMetadata, MemberType.Interface);
-                        interfaceMetadata = DocMetadataConverterFactory
-                            .ExpandSymbolMembers(type, (CompositeDocMetadata)interfaceMetadata) as InterfaceDocMetadata;
-                        continue;
-                    }
-                    var delegateMetadata = metadata as DelegateDocMetadata;
-                    if (delegateMetadata != null)
-                    {
-                        namespaceDocMetadata.TryAdd(delegateMetadata, MemberType.Delegate);
-                    }
-                }
+                Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnOrProjectPath, e);
+                return 1;
             }
-            return assemblyDocMetadata;
         }
+
+        /// <summary>
+        /// ProjectName <-> Namespace
+        /// </summary>
+        /// <param name="namespaceMapping"></param>
+        /// <param name="baseDirectory"></param>
+        //private static void ExportMetadataFile(IdentityMapping<NamespaceMetadata> namespaceMapping, string baseDirectory)
+        //{
+        //    if (Directory.Exists(baseDirectory))
+        //    {
+        //        Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
+        //    }
+
+        //    Directory.CreateDirectory(baseDirectory);
+
+        //    // TODO: For metadata file, one file for each run(merge in the run) or per project per run(merge after the run)?
+        //    //var metadataFilePath = Path.Combine(baseDirectory, (assemblyDocMetadata.Id + ".docmta").ToValidFilePath());
+
+        //    //Console.WriteLine("Generating metadata file {0}", metadataFilePath);
+        //    //using (StreamWriter streamWriter = new StreamWriter(metadataFilePath))
+        //    //{
+        //    //    assemblyDocMetadata.WriteMetadata(streamWriter);
+        //    //}
+        //}
     }
 }
