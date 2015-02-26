@@ -8,16 +8,16 @@ namespace EntityModel
 {
     public class Identity
     {
-        string _fullyQualifiedName;
+        Tuple<string, string[]> _fullyQualifiedName;
 
-        public Identity(string fullyQualifiedName)
+        public Identity(string fullyQualifiedName, params string[] suffix)
         {
-            _fullyQualifiedName = fullyQualifiedName;
+            _fullyQualifiedName = Tuple.Create(fullyQualifiedName, suffix);
         }
 
         public override string ToString()
         {
-            return _fullyQualifiedName;
+            return _fullyQualifiedName.ToString();
         }
 
         public static implicit operator string (Identity memberIdentity)

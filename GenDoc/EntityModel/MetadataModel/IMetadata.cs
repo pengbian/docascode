@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-    public interface IMetadata : ISyntaxDescriptionGroup
+    public interface IMetadata
     {
         Identity Identity { get; set; }
 
@@ -15,6 +15,12 @@ namespace EntityModel
         MemberType MemberType { get; set; }
 
         Version MscorlibVersion { get; set; }
+
+        string FilePath { get; set; }
+
+        string AssemblyName { get; set; }
+
+        ISyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
 
         Task AcceptAsync<TContext>(IMetadataVisitor<TContext> visitor, TContext context);
     }

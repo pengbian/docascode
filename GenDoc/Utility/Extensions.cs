@@ -6,12 +6,36 @@ using DocAsCode.EntityModel;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Globalization;
+using System.Collections.Generic;
 
 /// <summary>
 /// The utility class for docascode project
 /// </summary>
 namespace DocAsCode.Utility
 {
+    public static class StringExtension
+    {
+        public static string[] ToArray(this string input, StringSplitOptions option, params char[] delimiter)
+        {
+            if (input == null)
+            {
+                return null;
+            }
+
+            return input.Split(delimiter, option);
+        }
+
+        public static string ToDelimitedString(this IEnumerable<string> input, string delimiter = ",")
+        {
+            if (input == null)
+            {
+                return null;
+            }
+
+            return string.Join(delimiter, input);
+        }
+    }
+
     /// <summary>
     /// The converter to transform strings delimited by comma into string arrays
     /// </summary>

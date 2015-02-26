@@ -9,6 +9,7 @@ namespace EntityModel
     public class NamespaceMemberMetadata : BaseMetadata, INamespaceMember
     {
         public List<INamespaceMembersMember> Members { get; set; }
-        public Stack<string> InheritanceHierarchy { get; set; }
+
+        public Stack<Identity> InheritanceHierarchy { get; set; }
     }
 }

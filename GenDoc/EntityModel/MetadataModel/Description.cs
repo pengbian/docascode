@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,7 +48,7 @@ namespace EntityModel
     /// </summary>
     public class ConstructorSyntaxDescription : SyntaxDescription
     {
-        public SortedDictionary<string, ParameterDescription> Parameters { get; set; }
+        public List<ParameterDescription> Parameters { get; set; }
     }
 
     /// <summary>
@@ -55,7 +56,7 @@ namespace EntityModel
     /// </summary>
     public class MethodSyntaxDescription : SyntaxDescription
     {
-        public SortedDictionary<string, ParameterDescription> Parameters { get; set; }
+        public List<ParameterDescription> Parameters { get; set; }
 
         public ParameterDescription Return { get; set; }
     }

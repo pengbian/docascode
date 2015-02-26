@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-    public class BaseMetadata : SyntaxDescriptionGroup, IMetadata
+    public class BaseMetadata : IMetadata
     {
         public Identity Identity { get; set; }
 
@@ -19,6 +19,8 @@ namespace EntityModel
         public string AssemblyName { get; set; }
 
         public string FilePath { get; set; }
+
+        public ISyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
 
         public Task AcceptAsync<TContext>(IMetadataVisitor<TContext> visitor, TContext context)
         {

@@ -13,9 +13,20 @@ using Newtonsoft.Json;
 using System.Collections;
 using DocAsCode.EntityModel;
 using DocAsCode.Utility;
+using System.ComponentModel;
+using EntityModel;
+using System.Threading.Tasks;
+using System.Collections.Concurrent;
 
-namespace DocAsCode.GenDocMetadata
+namespace DocAsCode.BuildMeta
 {
+    enum BuildType
+    {
+        GenerateMetadata,
+        BuildDocumentation,
+        PublishDocumentation
+    }
+
     [Flags]
     enum OutputType
     {
@@ -26,22 +37,20 @@ namespace DocAsCode.GenDocMetadata
 
     public class Program
     {
-        private static DelimitedStringArrayConverter _delimitedArrayConverter = new DelimitedStringArrayConverter();
-
         static int Main(string[] args)
         {
             string slnOrProjectPath = null;
             string outputDirectory = null;
-            string delimitedProjectFilenames = null;
+            string delimitedProjectFileNames = null;
             OutputType outputType = OutputType.Both;
-
+            
             try
             {
                 var options = new Option[]
                     {
                     new Option(null, s => slnOrProjectPath = s, helpName: "solutionPath/projectPath", required: true, helpText: @"The path of the solution or the project whose metadata is to be generated"),
                     new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
-                    new Option("p", s => delimitedProjectFilenames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma, only file names with .csproj extension will be recognized"),
+                    new Option("p", s => delimitedProjectFileNames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma"),
                     new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "could be Both, Metadata or Markdown; specifiy if the docmta or the markdown file will be generated, by default is Both as both the docmta and the markdown file will be generated"),
                     };
 
@@ -79,13 +88,19 @@ namespace DocAsCode.GenDocMetadata
                     throw new NotSupportedException(string.Format("Project type {0} is currently not supported", fileExtension));
                 }
 
-                string[] specifiedProjectFilenames = delimitedProjectFilenames == null ? null : (string[])_delimitedArrayConverter.ConvertFrom(delimitedProjectFilenames);
+                string[] specifiedProjectFileNames = delimitedProjectFileNames.ToArray(StringSplitOptions.RemoveEmptyEntries, ',');
+                var availableProjectNames = projects.Select(s => s.Name);
+                var intersection = availableProjectNames.Intersect(specifiedProjectFileNames, StringComparer.OrdinalIgnoreCase);
+                var invalidProjectFileNames = specifiedProjectFileNames.Except(intersection).Distinct();
+                Console.Error.WriteLine("Project(s) {0} is(are) not available in {1}, will be ignored", invalidProjectFileNames.ToDelimitedString(), slnOrProjectPath);
+
+                var excludedProjectNames = availableProjectNames.Except(intersection);
+                Console.Error.WriteLine("Project(s) {0} is(are) not in the specified file list, will be ignored.", excludedProjectNames.ToDelimitedString());
 
                 foreach (var project in projects)
                 {
-                    if (specifiedProjectFilenames != null && !specifiedProjectFilenames.Contains(Path.GetFileName(project.FilePath), StringComparer.OrdinalIgnoreCase))
+                    if (intersection.Contains(project.Name))
                     {
-                        Console.Error.WriteLine("Project {0} is not in the specified file list, will be ignored.", project.Name);
                         continue;
                     }
 
@@ -192,25 +207,95 @@ namespace DocAsCode.GenDocMetadata
             }
         }
 
+        private class LocalCache
+        {
+        }
+
+        private class PreservedMapping
+        {
+
+        }
+
+        private static async Task GenerateMetadataAsync(Project[] projects)
+        {
+            if (projects == null || projects.Length == 0)
+            {
+                return;
+            }
+
+            ConcurrentDictionary<string, NamespaceMetadata> namespaceCache
+            List<NamespaceMetadata> namespaces = new List<NamespaceMetadata>();
+
+            // Project.Name is unique per solution
+            foreach (var project in projects)
+            {
+                var compilation = await project.GetCompilationAsync();
+                var namespaceMembers = compilation.Assembly.GlobalNamespace.GetNamespaceMembers();
+                var namespaceQueue = new Queue<INamespaceSymbol>();
+
+                foreach (var ns in namespaceMembers)
+                {
+                    namespaceQueue.Enqueue(ns);
+                }
+
+                while (namespaceQueue.Count > 0)
+                {
+                    var ns = namespaceQueue.Dequeue();
+                    foreach (var namespaceMember in ns.GetNamespaceMembers())
+                    {
+                        namespaceQueue.Enqueue(namespaceMember);
+                    }
+
+                    var nsMembers = ns.GetTypeMembers();
+
+                    // Ignore current namespace if it contains none members
+                    if (!nsMembers.Any())
+                    {
+                        continue;
+                    }
+
+                    NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns) as NamespaceMetadata;
+                    if (nsMetadata != null)
+                    {
+                        foreach(var nsMember in nsMembers)
+                        {
+                            NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(nsMember) as NamespaceMemberMetadata;
+                            if (nsMemberMetadata != null)
+                            {
+                                // Should not ignore the namespace's member even if it contains nothing because we can override the comments in markdown
+                                nsMetadata.Members.Add(nsMemberMetadata);
+
+                                // Fulfill the nsMemberMetadata with detailed info extracted from symbol as well as its members
+                                var nsMembersMembers = nsMember.GetTypeMembers();
+                                foreach(var nsMembersMember in nsMembersMembers)
+                                {
+                                    NamespaceMembersMemberMetadata nsMembersMembersMetadata = await MetadataExtractorManager.ExtractAsync(nsMembersMember) as NamespaceMembersMemberMetadata;
+                                    if (nsMembersMembersMetadata != null)
+                                    {
+                                        nsMemberMetadata.Members.Add(nsMembersMembersMetadata);
+                                    }
+                                }
+
+                                nsMemberMetadata
+                            }
+                        }
+
+
+
+
+
+
+
+                        namespaces.Add(nsMetadata);
+                    }
+                }
+            }
+
+            return;
+        }
+
         private static AssemblyDocMetadata GenerateAssemblyDocMetadata(Project project)
         {
-            var compilation = project.GetCompilationAsync().Result;
-
-            // essentially you get the containing assembly of SpecialType.System_Object and get the assembly¡¯s version
-            var mscolibAssembly = compilation.GetSpecialType(SpecialType.System_Object).ContainingAssembly.Identity;
-            var version = mscolibAssembly.Version;
-
-            // Get AssemblySymbols for above compilation and the assembly (mscorlib) referenced by it.
-            IAssemblySymbol compilationAssembly = compilation.Assembly;
-
-            AssemblyDocMetadata assemblyDocMetadata = new AssemblyDocMetadata(compilationAssembly.Name)
-            {
-                MscorlibVersion = version,
-            };
-
-            var namespaceMembers = compilation.Assembly.GlobalNamespace.GetNamespaceMembers();
-            var namespaceQueue = new Queue<INamespaceSymbol>();
-
             foreach (var ns in namespaceMembers)
             {
                 namespaceQueue.Enqueue(ns);
