@@ -8,6 +8,7 @@ namespace EntityModel
 {
     public interface INamespaceMember : IHierarchy
     {
+        string ProjectName { get; set; }
     }
 
     public enum NamespaceMemberType

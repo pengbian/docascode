@@ -23,13 +23,13 @@ namespace EntityModel
             new DefaultExtractor()
         };
 
-        public static Task<IMetadata> ExtractAsync(ISymbol symbol)
+        public static Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             foreach (var converter in _supportedExtractors)
             {
                 if (converter.CanExtract(symbol))
                 {
-                    return converter.ExtractAsync(symbol);
+                    return converter.ExtractAsync(symbol, context);
                 }
             }
 
@@ -37,11 +37,21 @@ namespace EntityModel
         }
     }
 
+    public class MetadataExtractContext : IMetadataExtractContext
+    {
+        public string ProjectName { get; set; }
+    }
+
+    public interface IMetadataExtractContext
+    {
+        string ProjectName { get; set; }
+    }
+
     public interface IMetadataExtractor
     {
         bool CanExtract(ISymbol symbol);
 
-        Task<IMetadata> ExtractAsync(ISymbol symbol);
+        Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context);
     }
 
     public class DefaultExtractor : IMetadataExtractor
@@ -61,7 +71,7 @@ namespace EntityModel
             return false;
         }
 
-        public virtual Task<IMetadata> ExtractAsync(ISymbol symbol)
+        public virtual Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             return null;
         }
@@ -120,7 +130,7 @@ namespace EntityModel
             return base.CanExtract(symbol);
         }
 
-        public override async Task<IMetadata> ExtractAsync(ISymbol symbol)
+        public override async Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             NamespaceMetadata namespaceMetadata = new NamespaceMetadata();
             var syntax = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMetadata, symbol) as NamespaceDeclarationSyntax;
@@ -149,12 +159,12 @@ namespace EntityModel
             return base.CanExtract(symbol);
         }
 
-        public override async Task<IMetadata> ExtractAsync(ISymbol symbol)
+        public override async Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             NamespaceMemberMetadata namespaceMemberMetadata = new NamespaceMemberMetadata();
 
             var syntaxNode = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMemberMetadata, symbol);
-            symbol.
+            namespaceMemberMetadata.ProjectName = context.ProjectName;
             if (syntaxNode == null)
             {
                 return null;
@@ -285,7 +295,7 @@ namespace EntityModel
             return base.CanExtract(symbol);
         }
 
-        public override async Task<IMetadata> ExtractAsync(ISymbol symbol)
+        public override async Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             NamespaceMembersMemberMetadata membersMemberMetadata = new NamespaceMembersMemberMetadata();
 

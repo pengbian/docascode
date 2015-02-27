@@ -27,170 +27,11 @@ namespace DocAsCode.BuildMeta
     }
 
     [Flags]
-    enum OutputType
+    public enum OutputType
     {
         Metadata = 0x1,
         Markdown = 0x2,
         Both = 0x3,
-    }
-    public static class DocAsCodeUtility
-    {
-        public static async Task<Tuple<bool, string>> TryGenerateMetadataAsync(string slnOrProjectPath, string outputDirectory, string delimitedProjectFileNames, OutputType outputType)
-        {
-            if (string.IsNullOrEmpty(slnOrProjectPath))
-            {
-                throw new ArgumentNullException("slnOrProjectPath");
-            }
-
-            List<Project> projects = new List<Project>();
-            var fileExtension = Path.GetExtension(slnOrProjectPath);
-            if (fileExtension == ".sln")
-            {
-                var solution = MSBuildWorkspace.Create().OpenSolutionAsync(slnOrProjectPath).Result;
-                projects = solution.Projects.ToList();
-            }
-            else if (fileExtension == ".csproj")
-            {
-                var project = MSBuildWorkspace.Create().OpenProjectAsync(slnOrProjectPath).Result;
-                projects.Add(project);
-            }
-            else
-            {
-                throw new NotSupportedException(string.Format("Project type {0} is currently not supported", fileExtension));
-            }
-
-            if (projects.Count == 0)
-            {
-                Console.Error.WriteLine("No project is found under {0}, exiting...", slnOrProjectPath);
-            }
-
-            if (string.IsNullOrEmpty(outputDirectory))
-            {
-                // use the sln/project name as the default output directory
-                outputDirectory = Path.GetFileNameWithoutExtension(slnOrProjectPath);
-            }
-
-            if (Directory.Exists(outputDirectory))
-            {
-                Console.Error.WriteLine("Warning: {0} directory already exists.", outputDirectory);
-            }
-
-            Directory.CreateDirectory(outputDirectory);
-
-            if (!string.IsNullOrEmpty(delimitedProjectFileNames))
-            {
-                string[] specifiedProjectFileNames = delimitedProjectFileNames.ToArray(StringSplitOptions.RemoveEmptyEntries, ',');
-                if (specifiedProjectFileNames != null && specifiedProjectFileNames.Length > 0)
-                {
-
-                }
-            }
-
-
-            var intersection = projects.Select(s=>s.Name).Intersect(specifiedProjectFileNames, StringComparer.OrdinalIgnoreCase);
-            var invalidProjectFileNames = projects.Select(s => s.Name).Except(intersection).Distinct();
-            Console.Error.WriteLine("Project(s) {0} is(are) not available in {1}, will be ignored", invalidProjectFileNames.ToDelimitedString(), slnOrProjectPath);
-
-            var excludedProjectNames = availableProjectNames.Except(intersection);
-            Console.Error.WriteLine("Project(s) {0} is(are) not in the specified file list, will be ignored.", excludedProjectNames.ToDelimitedString());
-
-            foreach (var project in projects)
-            {
-                if (intersection.Contains(project.Name))
-                {
-                    continue;
-                }
-
-                var namespaceMapping = await GenerateMetadataAsync(projects.Where(s => intersection.Contains(s.Name)));
-
-                if (outputType.HasFlag(OutputType.Metadata))
-                {
-                    //ExportMetadataFile(assemblyDocMetadata, Path.Combine(outputDirectory, "mta"));
-                }
-
-                if (outputType.HasFlag(OutputType.Markdown))
-                {
-                    throw new NotImplementedException();
-                }
-            }
-
-            Console.WriteLine("Metadata files successfully generated under {0}", outputDirectory);
-        }
-        private class IdentityMapping<T> : ConcurrentDictionary<Identity, T>
-        {
-        }
-
-        private static async Task<IdentityMapping<NamespaceMetadata>> GenerateMetadataAsync(IEnumerable<Project> projects)
-        {
-            if (projects == null || !projects.Any())
-            {
-                return null;
-            }
-
-            IdentityMapping<NamespaceMetadata> namespaceMapping = new IdentityMapping<NamespaceMetadata>();
-
-            // Project.Name is unique per solution
-            foreach (var project in projects)
-            {
-                var compilation = await project.GetCompilationAsync();
-                var namespaceMembers = compilation.Assembly.GlobalNamespace.GetNamespaceMembers();
-                var namespaceQueue = new Queue<INamespaceSymbol>();
-
-                foreach (var ns in namespaceMembers)
-                {
-                    namespaceQueue.Enqueue(ns);
-                }
-
-                while (namespaceQueue.Count > 0)
-                {
-                    var ns = namespaceQueue.Dequeue();
-                    foreach (var namespaceMember in ns.GetNamespaceMembers())
-                    {
-                        namespaceQueue.Enqueue(namespaceMember);
-                    }
-
-                    var nsMembers = ns.GetTypeMembers();
-
-                    // Ignore current namespace if it contains none members
-                    if (!nsMembers.Any())
-                    {
-                        continue;
-                    }
-
-                    NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns) as NamespaceMetadata;
-
-                    // Namespace(N)--(N)Project is N-N mapping
-                    nsMetadata = namespaceMapping.GetOrAdd(nsMetadata.Identity, nsMetadata);
-
-                    if (nsMetadata != null)
-                    {
-                        foreach (var nsMember in nsMembers)
-                        {
-                            NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(nsMember) as NamespaceMemberMetadata;
-                            if (nsMemberMetadata != null)
-                            {
-                                // Will not check if members with duplicate Identify exists
-                                // Should not ignore the namespace's member even if it contains nothing because we can override the comments in markdown
-                                nsMetadata.Members.Add(nsMemberMetadata);
-
-                                // Fulfill the nsMemberMetadata with detailed info extracted from symbol as well as its members
-                                var nsMembersMembers = nsMember.GetTypeMembers();
-                                foreach (var nsMembersMember in nsMembersMembers)
-                                {
-                                    NamespaceMembersMemberMetadata nsMembersMembersMetadata = await MetadataExtractorManager.ExtractAsync(nsMembersMember) as NamespaceMembersMemberMetadata;
-                                    if (nsMembersMembersMetadata != null)
-                                    {
-                                        nsMemberMetadata.Members.Add(nsMembersMembersMetadata);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            return namespaceMapping;
-        }
     }
 
     public class Program
@@ -217,7 +58,7 @@ namespace DocAsCode.BuildMeta
                     return 1;
                 }
 
-                var generateMetadataResult = DocAsCodeUtility.TryGenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Result;
+                DocAsCodeUtility.GenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Wait();
                 return 0;
             }
             catch (Exception e)

@@ -10,7 +10,7 @@
 /**/node_modules/
 /**/*.sln.ide/
 /DocProject/
-
+/TestResults/
 ###############
 #  temp file  #
 ###############
