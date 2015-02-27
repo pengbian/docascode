@@ -98,6 +98,21 @@ namespace DocAsCode.Utility
         }
     }
 
+    public static class JsonUtility
+    {
+        public static void Serialize<T>(T input, TextWriter writer)
+        {
+            JsonSerializerSettings settings = new JsonSerializerSettings();
+            settings.Formatting = Formatting.Indented;
+            settings.DefaultValueHandling = DefaultValueHandling.Ignore;
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
+            serializer.Formatting = Formatting.Indented;
+            serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
+            serializer.Serialize(writer, input);
+        }
+    }
+
     public static class DocMetadataExtensions
     {
         public static void WriteHtml()
@@ -123,6 +138,38 @@ namespace DocAsCode.Utility
         }
 
         private class IdentityJsonConverter : JsonConverter
+        {
+            public override bool CanConvert(Type objectType)
+            {
+                if (objectType == typeof(Identity))
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            {
+
+                if (reader.TokenType != JsonToken.String)
+                {
+                    return null;
+                }
+
+                return new Identity((string)reader.Value);
+            }
+
+            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+            {
+                writer.WriteValue(value.ToString());
+            }
+        }
+    }
+
+    public static class CustomizedJsonConverters
+    {
+        public class IdentityJsonConverter : JsonConverter
         {
             public override bool CanConvert(Type objectType)
             {

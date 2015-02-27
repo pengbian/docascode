@@ -97,7 +97,7 @@ namespace EntityModel
                 Comments = new List<IComment> { tripleSlashComment }
             };
 
-            metadata.SyntaxDescriptionGroup.Add(SyntaxLanguage.CSharp, syntaxDescription);
+            metadata.SyntaxDescriptionGroup = new SyntaxDescriptionGroup() { { SyntaxLanguage.CSharp, syntaxDescription } };
             
             if (!symbol.DeclaringSyntaxReferences.Any())
             {
@@ -134,7 +134,7 @@ namespace EntityModel
         {
             NamespaceMetadata namespaceMetadata = new NamespaceMetadata();
             var syntax = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMetadata, symbol) as NamespaceDeclarationSyntax;
-
+            namespaceMetadata.MemberType = MemberType.Namespace;
             return syntax == null ? null : namespaceMetadata;
         }
     }
@@ -306,7 +306,7 @@ namespace EntityModel
                 return null;
             }
 
-            var nameTypedSymbol = symbol as INamedTypeSymbol;
+            var nameTypedSymbol = symbol as IMethodSymbol;
             Debug.Assert(nameTypedSymbol != null);
 
             switch (symbol.Kind)

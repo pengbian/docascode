@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,20 @@ namespace EntityModel
 {
     public class NamespaceMetadata : BaseMetadata
     {
-        public List<INamespaceMember> Members { get; set; }
+        private List<INamespaceMember> _members = new List<INamespaceMember>();
+
+        public List<INamespaceMember> Members { get { return _members; } set { _members = value; } }
     }
+
+    public class ProjectMetadata
+    {
+        public string ProjectName { get; set; }
+
+        public IdentityMapping<NamespaceMetadata> Namespaces { get; set; }
+    }
+
+    public class IdentityMapping<T> : ConcurrentDictionary<Identity, T>
+    {
+    }
+
 }

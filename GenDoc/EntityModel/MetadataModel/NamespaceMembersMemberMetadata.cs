@@ -8,8 +8,8 @@ namespace EntityModel
 {
     public class NamespaceMembersMemberMetadata : BaseMetadata, INamespaceMembersMember
     {
-        public List<INamespaceMembersMember> Members { get; set; }
+        private List<INamespaceMembersMember> _members = new List<INamespaceMembersMember>();
 
-        public ISyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
+        public List<INamespaceMembersMember> Members { get { return _members; } set { _members = value; } }
     }
 }

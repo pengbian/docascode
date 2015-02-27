@@ -41,7 +41,7 @@ namespace DocAsCode.BuildMeta
             string slnOrProjectPath = null;
             string outputDirectory = null;
             string delimitedProjectFileNames = null;
-            OutputType outputType = OutputType.Both;
+            OutputType outputType = OutputType.Metadata;
 
             try
             {
@@ -59,37 +59,21 @@ namespace DocAsCode.BuildMeta
                 }
 
                 DocAsCodeUtility.GenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Wait();
+
+#if DEBUG
+                Console.Read();
+#endif
                 return 0;
             }
             catch (Exception e)
             {
                 Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnOrProjectPath, e);
+
+#if DEBUG
+                Console.Read();
+#endif
                 return 1;
             }
         }
-
-        /// <summary>
-        /// ProjectName <-> Namespace
-        /// </summary>
-        /// <param name="namespaceMapping"></param>
-        /// <param name="baseDirectory"></param>
-        //private static void ExportMetadataFile(IdentityMapping<NamespaceMetadata> namespaceMapping, string baseDirectory)
-        //{
-        //    if (Directory.Exists(baseDirectory))
-        //    {
-        //        Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
-        //    }
-
-        //    Directory.CreateDirectory(baseDirectory);
-
-        //    // TODO: For metadata file, one file for each run(merge in the run) or per project per run(merge after the run)?
-        //    //var metadataFilePath = Path.Combine(baseDirectory, (assemblyDocMetadata.Id + ".docmta").ToValidFilePath());
-
-        //    //Console.WriteLine("Generating metadata file {0}", metadataFilePath);
-        //    //using (StreamWriter streamWriter = new StreamWriter(metadataFilePath))
-        //    //{
-        //    //    assemblyDocMetadata.WriteMetadata(streamWriter);
-        //    //}
-        //}
     }
 }

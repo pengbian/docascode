@@ -16,7 +16,6 @@ namespace UnitTest
     {
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        [Ignore]
         public async Task TestGenereateMetadataAsync()
         {
             string slnPath = "Assets/TestClass1/TestClass1.sln";
