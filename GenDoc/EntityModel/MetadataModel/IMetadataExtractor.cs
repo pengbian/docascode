@@ -33,7 +33,7 @@ namespace EntityModel
                 }
             }
 
-            return null;
+            return Task.FromResult<IMetadata>(null);
         }
     }
 

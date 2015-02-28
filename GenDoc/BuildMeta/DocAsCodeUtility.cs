@@ -157,20 +157,20 @@ namespace DocAsCode.BuildMeta
                             return null;
                         }
                     }
-                    , (current, parent) => GenerateMetadataForEachSymbol(current, parent, ns, context, namespaceMapping, symbolMetadataTable)
+                    , (current, parent) => GenerateMetadataForEachSymbol(current, parent, context, namespaceMapping, symbolMetadataTable)
                     );
             }
 
             return projectMetadata;
         }
 
-        private static async Task GenerateMetadataForEachSymbol(ISymbol current, ISymbol parent, INamespaceSymbol ns, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping, SymbolMetadataTable symbolMetadataTable)
+        private static async Task GenerateMetadataForEachSymbol(ISymbol current, ISymbol parent, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping, SymbolMetadataTable symbolMetadataTable)
         {
             var namespaceSymbol = current as INamespaceSymbol;
 
             if (namespaceSymbol != null)
             {
-                NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns, context) as NamespaceMetadata;
+                NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(current, context) as NamespaceMetadata;
                 context.OwnerNamespace = nsMetadata;
 
                 // Namespace(N)--(N)Project is N-N mapping

@@ -27,7 +27,7 @@ namespace UnitTest
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public async Task TestGenereateMetadataAsync()
+        public async Task TestGenereateMetadataAsync_Solution()
         {
             string slnPath = "Assets/TestClass1/TestClass1.sln";
             string outputDirectory = "output";
@@ -37,7 +37,6 @@ namespace UnitTest
         }
 
         [TestMethod]
-        [DeploymentItem("Assets", "Assets")]
         [DeploymentItem("Assets", "Assets")]
         public async Task TestGenereateMetadataAsync_Project()
         {
