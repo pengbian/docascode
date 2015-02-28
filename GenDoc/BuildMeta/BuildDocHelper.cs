@@ -221,6 +221,29 @@ namespace DocAsCode.BuildMeta
 
         }
 
+        class ResolveTripleSlashComments : IPipelineComponent
+        {
+
+        }
+
+        class ResolveMarkdownComments : IPipelineComponent
+        {
+
+        }
+
+        class GenerateHtmlOutput : IPipelineComponent
+        {
+
+        }
+
+        class GenerateMarkdownOutput : IPipelineComponent
+        {
+
+        }
+
+        /// <summary>
+        /// Generate TOC according to folder structure? or according to a toc file?
+        /// </summary>
         class GenerateToc : IPipelineComponent
         {
 
@@ -232,6 +255,21 @@ namespace DocAsCode.BuildMeta
         }
 
         class DuplicationIdentityValidation : IValidation
+        {
+
+        }
+
+        class NamespacePageViewModel
+        {
+
+        }
+
+        class ClassPageViewModel
+        {
+
+        }
+
+        class IndexPageViewModel
         {
 
         }
