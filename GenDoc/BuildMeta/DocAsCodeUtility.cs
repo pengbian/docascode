@@ -108,6 +108,10 @@ namespace DocAsCode.BuildMeta
             }
         }
 
+        private class SymbolMetadataTable : ConcurrentDictionary<ISymbol, IMetadata>
+        {
+        }
+
         private static async Task<ProjectMetadata> GenerateMetadataAsync(Project project)
         {
             if (project == null)
@@ -116,6 +120,9 @@ namespace DocAsCode.BuildMeta
             }
 
             IdentityMapping<NamespaceMetadata> namespaceMapping = new IdentityMapping<NamespaceMetadata>();
+
+            // Stores the generated IMetadata with the relationship to ISymbol
+            SymbolMetadataTable symbolMetadataTable = new SymbolMetadataTable();
 
             ProjectMetadata projectMetadata = new ProjectMetadata
             {
@@ -135,54 +142,74 @@ namespace DocAsCode.BuildMeta
 
             foreach (var ns in namespaceMembers)
             {
-                await TreeIterator.PreorderAsync<INamespaceSymbol>(ns, s => s.GetNamespaceMembers(), s => GetNamespaceMembersAsync(s, context, namespaceMapping));
+                await TreeIterator.PreorderAsync<ISymbol>(
+                    ns
+                    , null
+                    , s =>
+                    {
+                        var namespaceOrTypeSymbol = s as INamespaceOrTypeSymbol;
+                        if (namespaceOrTypeSymbol != null)
+                        {
+                            return namespaceOrTypeSymbol.GetMembers();
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                    , (current, parent) => GenerateMetadataForEachSymbol(current, parent, ns, context, namespaceMapping, symbolMetadataTable)
+                    );
             }
 
             return projectMetadata;
         }
 
-        private static async Task GetNamespaceMembersAsync(INamespaceSymbol ns, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping)
+        private static async Task GenerateMetadataForEachSymbol(ISymbol current, ISymbol parent, INamespaceSymbol ns, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping, SymbolMetadataTable symbolMetadataTable)
         {
-            // Get namespace members
-            var nsMembers = ns.GetMembers();
+            var namespaceSymbol = current as INamespaceSymbol;
 
-            // Ignore current namespace if it contains none members
-            if (!nsMembers.Any())
+            if (namespaceSymbol != null)
             {
-                return;
+                NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns, context) as NamespaceMetadata;
+                context.OwnerNamespace = nsMetadata;
+
+                // Namespace(N)--(N)Project is N-N mapping
+                nsMetadata = namespaceMapping.GetOrAdd(nsMetadata.Identity, nsMetadata);
+
+                Debug.Assert(!symbolMetadataTable.ContainsKey(current), "Should not contain current symbol in the first iteration");
+                symbolMetadataTable.TryAdd(current, nsMetadata);
             }
-
-            NamespaceMetadata nsMetadata = await MetadataExtractorManager.ExtractAsync(ns, context) as NamespaceMetadata;
-
-            // Namespace(N)--(N)Project is N-N mapping
-            nsMetadata = namespaceMapping.GetOrAdd(nsMetadata.Identity, nsMetadata);
-
-            if (nsMetadata != null)
+            else
             {
-                foreach (var nsTypeMember in nsMembers)
+                var currentAsTypeSymbol = current as ITypeSymbol;
+                var parentAsNamespaceSymbol = parent as INamespaceSymbol;
+
+                // Flatten TypeSymbol hierarchy
+                if (currentAsTypeSymbol != null || parentAsNamespaceSymbol != null)
                 {
-                    await TreeIterator.PreorderAsync<INamespaceOrTypeSymbol>(nsTypeMember, s => s.GetTypeMembers(), s => GetNamespaceMembersMemberAsync(s, context, nsMetadata));
+                    IMetadata parentMetadata;
+                    NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(current, context) as NamespaceMemberMetadata;
+                    if (nsMemberMetadata != null)
+                    {
+                        // Will not check if members with duplicate Identify exists
+                        // Should not ignore the namespace's member even if it contains nothing because we can override the comments in markdown
+                        ((NamespaceMetadata)context.OwnerNamespace).Members.Add(nsMemberMetadata);
+
+                        Debug.Assert(!symbolMetadataTable.ContainsKey(current), "Should not contain current symbol in the first iteration");
+                        symbolMetadataTable.TryAdd(current, nsMemberMetadata);
+                    }
                 }
-            }
-        }
-
-        private static async Task GetNamespaceMembersMemberAsync(INamespaceOrTypeSymbol nsMember, IMetadataExtractContext context, NamespaceMetadata nsMetadata)
-        {
-            NamespaceMemberMetadata nsMemberMetadata = await MetadataExtractorManager.ExtractAsync(nsMember, context) as NamespaceMemberMetadata;
-            if (nsMemberMetadata != null)
-            {
-                // Will not check if members with duplicate Identify exists
-                // Should not ignore the namespace's member even if it contains nothing because we can override the comments in markdown
-                nsMetadata.Members.Add(nsMemberMetadata);
-
-                // Fulfill the nsMemberMetadata with detailed info extracted from symbol as well as its members
-                var nsMembersMembers = nsMember.GetMembers();
-                foreach (var nsMembersMember in nsMembersMembers)
+                else
                 {
-                    NamespaceMembersMemberMetadata nsMembersMembersMetadata = await MetadataExtractorManager.ExtractAsync(nsMembersMember, context) as NamespaceMembersMemberMetadata;
+                    IMetadata parentMetadata;
+                    symbolMetadataTable.TryGetValue(parent, out parentMetadata);
+                    var parentNamespaceMetadata = parentMetadata as NamespaceMemberMetadata;
+                    Debug.Assert(parentNamespaceMetadata != null, "Non-INamespaceSymbol should correspond to NamespaceMemberMetadata");
+
+                    NamespaceMembersMemberMetadata nsMembersMembersMetadata = await MetadataExtractorManager.ExtractAsync(current, context) as NamespaceMembersMemberMetadata;
                     if (nsMembersMembersMetadata != null)
                     {
-                        nsMemberMetadata.Members.Add(nsMembersMembersMetadata);
+                        parentNamespaceMetadata.Members.Add(nsMembersMembersMetadata);
                     }
                 }
             }
@@ -190,26 +217,26 @@ namespace DocAsCode.BuildMeta
 
         class TreeIterator
         {
-            public static async Task PreorderAsync<T>(T root, Func<T, IEnumerable<T>> childrenGetter, Func<T, Task> action)
+            public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task> action)
             {
-                if (root == null || action == null)
+                if (current == null || action == null)
                 {
                     return;
                 }
 
-                await action(root);
+                await action(current, parent);
 
                 if (childrenGetter == null)
                 {
                     return;
                 }
 
-                var children = childrenGetter(root);
+                var children = childrenGetter(current);
                 if (children != null)
                 {
                     foreach(var child in children)
                     {
-                        await PreorderAsync(child, childrenGetter, action);
+                        await PreorderAsync(child, current, childrenGetter, action);
                     }
                 }
             }

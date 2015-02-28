@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,11 @@ namespace EntityModel
     {
         public Identity Identity { get; set; }
 
+        [JsonIgnore]
         public IMetadata Parent { get; set; }
+
+        [JsonIgnore]
+        public IMetadata OwnerNamespace { get; set; }
 
         public MemberType MemberType { get; set; }
 

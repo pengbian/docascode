@@ -21,8 +21,21 @@ namespace EntityModel
         public IdentityMapping<NamespaceMetadata> Namespaces { get; set; }
     }
 
-    public class IdentityMapping<T> : ConcurrentDictionary<Identity, T>
+    public class IdentityMapping<T> : SortedDictionary<Identity, T>
     {
+        public T GetOrAdd(Identity key, T value)
+        {
+            T outValue;
+            if (this.TryGetValue(key, out outValue))
+            {
+                return outValue;
+            }
+            else
+            {
+                this.Add(key, value);
+                return value;
+            }
+        }
     }
 
 }

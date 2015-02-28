@@ -16,13 +16,24 @@ namespace UnitTest
     {
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
+        public async Task TestGenereateMetadataAsync_SimpleProject()
+        {
+            string slnPath = "Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.csproj";
+            string outputDirectory = "output";
+            await DocAsCodeUtility.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
+
+            Assert.IsTrue(Directory.Exists(outputDirectory));
+        }
+
+        [TestMethod]
+        [DeploymentItem("Assets", "Assets")]
         public async Task TestGenereateMetadataAsync()
         {
             string slnPath = "Assets/TestClass1/TestClass1.sln";
             string outputDirectory = "output";
-            await DocAsCodeUtility.GenerateMetadataAsync(@"Assets\TestClass1\TestClass1.sln", outputDirectory, null, OutputType.Metadata);
+            await DocAsCodeUtility.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
 
-            Assert.IsTrue(Directory.Exists("output"));
+            Assert.IsTrue(Directory.Exists(outputDirectory));
         }
 
         [TestMethod]
@@ -30,11 +41,11 @@ namespace UnitTest
         [DeploymentItem("Assets", "Assets")]
         public async Task TestGenereateMetadataAsync_Project()
         {
-            string slnPath = "Assets/TestClass1/TestClass1.sln";
+            string slnPath = @"Assets\TestClass1\TestClass1\TestClass1.csproj";
             string outputDirectory = "output";
-            await DocAsCodeUtility.GenerateMetadataAsync(@"Assets\TestClass1\TestClass1\TestClass1.csproj", outputDirectory, null, OutputType.Metadata);
+            await DocAsCodeUtility.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
 
-            Assert.IsTrue(Directory.Exists("output"));
+            Assert.IsTrue(Directory.Exists(outputDirectory));
         }
     }
 }

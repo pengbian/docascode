@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-    public class Identity
+    public class Identity : IComparable<Identity>
     {
         Tuple<string, string[]> _fullyQualifiedName;
 
@@ -30,7 +30,7 @@ namespace EntityModel
 
         public override string ToString()
         {
-            if (_fullyQualifiedName.Item2 == null)
+            if (_fullyQualifiedName.Item2 == null || _fullyQualifiedName.Item2.Length == 0)
             {
                 return _fullyQualifiedName.Item1;
             }
@@ -44,6 +44,21 @@ namespace EntityModel
             {
                 return new Identity(string.Empty);
             }
+        }
+
+        public override int GetHashCode()
+        {
+            return _fullyQualifiedName.GetHashCode();
+        }
+
+        public int CompareTo(Identity other)
+        {
+            if (other == null)
+            {
+                return 1;
+            }
+
+            return this.ToString().CompareTo(other.ToString());
         }
     }
 }

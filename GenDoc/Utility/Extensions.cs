@@ -2,11 +2,12 @@
 using System.Linq;
 using System.IO;
 using Newtonsoft.Json;
-using DocAsCode.EntityModel;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Globalization;
 using System.Collections.Generic;
+using EntityModel;
+using Newtonsoft.Json.Converters;
 
 /// <summary>
 /// The utility class for docascode project
@@ -109,63 +110,64 @@ namespace DocAsCode.Utility
             serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
             serializer.Formatting = Formatting.Indented;
             serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
+            serializer.Converters.Add(new StringEnumConverter());
             serializer.Serialize(writer, input);
         }
     }
 
-    public static class DocMetadataExtensions
-    {
-        public static void WriteHtml()
-        {
+    //public static class DocMetadataExtensions
+    //{
+    //    public static void WriteHtml()
+    //    {
 
-        }
+    //    }
 
-        public static void WriteMetadata(this DocMetadata metadata, TextWriter writer)
-        {
-            JsonSerializerSettings settings = new JsonSerializerSettings();
-            settings.Formatting = Formatting.Indented;
-            settings.DefaultValueHandling = DefaultValueHandling.Ignore;
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
-            serializer.Formatting = Formatting.Indented;
-            serializer.Converters.Add(new IdentityJsonConverter());
-            serializer.Serialize(writer, metadata);
-        }
+    //    public static void WriteMetadata(this EntityModel.DocMetadata metadata, TextWriter writer)
+    //    {
+    //        JsonSerializerSettings settings = new JsonSerializerSettings();
+    //        settings.Formatting = Formatting.Indented;
+    //        settings.DefaultValueHandling = DefaultValueHandling.Ignore;
+    //        JsonSerializer serializer = new JsonSerializer();
+    //        serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
+    //        serializer.Formatting = Formatting.Indented;
+    //        serializer.Converters.Add(new IdentityJsonConverter());
+    //        serializer.Serialize(writer, metadata);
+    //    }
 
-        public static T LoadMetadata<T>(TextReader reader) where T : DocMetadata
-        {
-            return JsonConvert.DeserializeObject<T>(reader.ReadToEnd(), new IdentityJsonConverter());
-        }
+    //    public static T LoadMetadata<T>(TextReader reader) where T : EntityModel.DocMetadata
+    //    {
+    //        return JsonConvert.DeserializeObject<T>(reader.ReadToEnd(), new IdentityJsonConverter());
+    //    }
 
-        private class IdentityJsonConverter : JsonConverter
-        {
-            public override bool CanConvert(Type objectType)
-            {
-                if (objectType == typeof(Identity))
-                {
-                    return true;
-                }
+    //    private class IdentityJsonConverter : JsonConverter
+    //    {
+    //        public override bool CanConvert(Type objectType)
+    //        {
+    //            if (objectType == typeof(Identity))
+    //            {
+    //                return true;
+    //            }
 
-                return false;
-            }
+    //            return false;
+    //        }
 
-            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-            {
+    //        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+    //        {
 
-                if (reader.TokenType != JsonToken.String)
-                {
-                    return null;
-                }
+    //            if (reader.TokenType != JsonToken.String)
+    //            {
+    //                return null;
+    //            }
 
-                return new Identity((string)reader.Value);
-            }
+    //            return new Identity((string)reader.Value);
+    //        }
 
-            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-            {
-                writer.WriteValue(value.ToString());
-            }
-        }
-    }
+    //        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+    //        {
+    //            writer.WriteValue(value.ToString());
+    //        }
+    //    }
+    //}
 
     public static class CustomizedJsonConverters
     {

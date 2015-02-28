@@ -12,6 +12,8 @@ namespace EntityModel
 
         IMetadata Parent { get; set; }
 
+        IMetadata OwnerNamespace { get; set; }
+
         MemberType MemberType { get; set; }
 
         Version MscorlibVersion { get; set; }

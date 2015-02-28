@@ -48,7 +48,8 @@ namespace EntityModel
     /// </summary>
     public class ConstructorSyntaxDescription : SyntaxDescription
     {
-        public List<ParameterDescription> Parameters { get; set; }
+        private List<ParameterDescription> _parameters = new List<ParameterDescription>();
+        public List<ParameterDescription> Parameters { get { return _parameters; } set { _parameters = value; } }
     }
 
     /// <summary>
@@ -56,7 +57,8 @@ namespace EntityModel
     /// </summary>
     public class MethodSyntaxDescription : SyntaxDescription
     {
-        public List<ParameterDescription> Parameters { get; set; }
+        private List<ParameterDescription> _parameters = new List<ParameterDescription>();
+        public List<ParameterDescription> Parameters { get { return _parameters; } set { _parameters = value; } }
 
         public ParameterDescription Return { get; set; }
     }

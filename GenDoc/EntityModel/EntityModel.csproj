@@ -122,7 +122,6 @@
     <Compile Include="MetadataModel\NamespaceMemberMetadata.cs" />
     <Compile Include="MetadataModel\NamespaceMetadata.cs" />
     <Compile Include="Converters.cs" />
-    <Compile Include="DocMetadata.cs" />
     <Compile Include="MetadataModel\BaseMetadata.cs" />
     <Compile Include="MetadataModel\NamespaceMembersMemberMetadata.cs" />
     <Compile Include="MetadataVisitor\CommentVisitor.cs" />

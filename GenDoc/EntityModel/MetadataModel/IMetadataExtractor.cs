@@ -40,11 +40,15 @@ namespace EntityModel
     public class MetadataExtractContext : IMetadataExtractContext
     {
         public string ProjectName { get; set; }
+
+        public IMetadata OwnerNamespace { get; set; }
     }
 
     public interface IMetadataExtractContext
     {
         string ProjectName { get; set; }
+
+        IMetadata OwnerNamespace { get; set; }
     }
 
     public interface IMetadataExtractor
@@ -82,9 +86,10 @@ namespace EntityModel
         /// <param name="metadata"></param>
         /// <param name="symbol"></param>
         /// <returns></returns>
-        protected static async Task<SyntaxNode> SetCommonMetadataAndGetSyntaxNodeAsync(IMetadata metadata, ISymbol symbol)
+        protected static async Task<SyntaxNode> SetCommonMetadataAndGetSyntaxNodeAsync(IMetadata metadata, ISymbol symbol, IMetadataExtractContext context)
         {
             metadata.Identity = new Identity(symbol.GetDocumentationCommentId());
+            metadata.OwnerNamespace = context.OwnerNamespace;
 
             // TODO: how about version?
             metadata.AssemblyName = symbol.ContainingAssembly.ToDisplayString();
@@ -133,7 +138,7 @@ namespace EntityModel
         public override async Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             NamespaceMetadata namespaceMetadata = new NamespaceMetadata();
-            var syntax = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMetadata, symbol) as NamespaceDeclarationSyntax;
+            var syntax = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMetadata, symbol, context) as NamespaceDeclarationSyntax;
             namespaceMetadata.MemberType = MemberType.Namespace;
             return syntax == null ? null : namespaceMetadata;
         }
@@ -163,7 +168,7 @@ namespace EntityModel
         {
             NamespaceMemberMetadata namespaceMemberMetadata = new NamespaceMemberMetadata();
 
-            var syntaxNode = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMemberMetadata, symbol);
+            var syntaxNode = await SetCommonMetadataAndGetSyntaxNodeAsync(namespaceMemberMetadata, symbol, context);
             namespaceMemberMetadata.ProjectName = context.ProjectName;
             if (syntaxNode == null)
             {
@@ -299,16 +304,13 @@ namespace EntityModel
         {
             NamespaceMembersMemberMetadata membersMemberMetadata = new NamespaceMembersMemberMetadata();
 
-            var syntaxNode = await SetCommonMetadataAndGetSyntaxNodeAsync(membersMemberMetadata, symbol);
+            var syntaxNode = await SetCommonMetadataAndGetSyntaxNodeAsync(membersMemberMetadata, symbol, context);
 
             if (syntaxNode == null)
             {
                 return null;
             }
-
-            var nameTypedSymbol = symbol as IMethodSymbol;
-            Debug.Assert(nameTypedSymbol != null);
-
+            
             switch (symbol.Kind)
             {
                 case SymbolKind.Method:
@@ -402,21 +404,38 @@ namespace EntityModel
                     };
                 case SymbolKind.Field:
                     {
-                        var syntax = syntaxNode as VariableDeclaratorSyntax;
+                        if (syntaxNode is VariableDeclarationSyntax || syntaxNode is MemberDeclarationSyntax)
+                        {
+                            var baseSyntax = membersMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp];
+                            membersMemberMetadata.MemberType = MemberType.Field;
 
-                        if (syntax == null)
+                            var varSyntax = syntaxNode as VariableDeclaratorSyntax;
+                            if (varSyntax != null)
+                            {
+                                baseSyntax.Syntax = varSyntax
+                                        .WithInitializer(null)
+                                        .NormalizeWhitespace()
+                                        .ToString()
+                                        .Trim();
+                            }
+
+                            // For Enum's member
+                            var memberSyntax = syntaxNode as MemberDeclarationSyntax;
+
+                            if (memberSyntax != null)
+                            {
+                                baseSyntax.Syntax = memberSyntax
+                                        .NormalizeWhitespace()
+                                        .ToString()
+                                        .Trim();
+                            }
+
+                            return membersMemberMetadata;
+                        }
+                        else
                         {
                             return null;
                         }
-                        var baseSyntax = membersMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp];
-                        membersMemberMetadata.MemberType = MemberType.Field;
-
-                        baseSyntax.Syntax = syntax
-                                .WithInitializer(null)
-                                .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
-                        return membersMemberMetadata;
                     };
                 case SymbolKind.Event:
                     {
@@ -442,6 +461,8 @@ namespace EntityModel
         private ParameterDescription GetParameterDescription(ISymbol symbol)
         {
             string id = null;
+
+            // TODO: GetDocumentationCommentXml for parameters seems not accurate
             string comment = symbol.GetDocumentationCommentXml();
             string name = symbol.Name;
             var paraSymbol = symbol as IParameterSymbol;
