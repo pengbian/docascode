@@ -106,6 +106,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <None Include="Assets\Metadata\TestClass1.docmta">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -124,6 +127,7 @@
     <None Include="Assets\TestClass1\TestClass2\Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Compile Include="BuildDocUnitTest.cs" />
     <Compile Include="GenerateMetadataUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
@@ -132,6 +136,10 @@
     <ProjectReference Include="..\GenDoc\BuildMeta\BuildMeta.csproj">
       <Project>{72f23021-b92b-4f4a-960e-f6d55ce114f0}</Project>
       <Name>BuildMeta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GenDoc\EntityModel\EntityModel.csproj">
+      <Project>{a4be543d-2cf1-40ab-9889-e9e48cbf7dfe}</Project>
+      <Name>EntityModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

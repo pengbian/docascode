@@ -127,10 +127,11 @@ namespace DocAsCode.BuildMeta
             // Step1. Load metadata files
             foreach(var metadataFile in metadataFileNames)
             {
-                ProjectMetadata projectMetadata = new ProjectMetadata();
-                if (!TryParseMetadataFile(metadataFile, out projectMetadata))
+                ProjectMetadata projectMetadata;
+                string message;
+                if (!TryParseMetadataFile(metadataFile, out projectMetadata, out message))
                 {
-                    Console.Error.WriteLine("Warning: Invalid metadata file {0} will be ignored", metadataFile);
+                    Console.Error.WriteLine("Warning: Invalid metadata file {0} will be ignored, {1}", metadataFile, message);
                 }
                 else
                 {
@@ -157,9 +158,24 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        private static bool TryParseMetadataFile(string metadataFileName, out ProjectMetadata projectMetadata)
+        public static bool TryParseMetadataFile(string metadataFileName, out ProjectMetadata projectMetadata, out string message)
         {
-            throw new NotImplementedException();
+            projectMetadata = null;
+            message = string.Empty;
+            try
+            {
+                using (StreamReader reader = new StreamReader(metadataFileName))
+                {
+                    projectMetadata = JsonUtility.Deserialize<ProjectMetadata>(reader);
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                message = e.Message;
+                return false;
+            }
+
         }
 
         /// <summary>

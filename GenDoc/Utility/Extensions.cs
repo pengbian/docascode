@@ -101,18 +101,31 @@ namespace DocAsCode.Utility
 
     public static class JsonUtility
     {
+        private static JsonSerializerSettings settings = new JsonSerializerSettings()
+        {
+            Formatting = Formatting.Indented,
+            DefaultValueHandling = DefaultValueHandling.Ignore,
+        };
+        private static JsonSerializer _serializer;
+        static JsonUtility()
+        {
+            _serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
+            _serializer.Formatting = Formatting.Indented;
+            _serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
+            _serializer.Converters.Add(new CustomizedJsonConverters.IMetadataJsonConverter());
+            _serializer.Converters.Add(new StringEnumConverter());
+        }
         public static void Serialize<T>(T input, TextWriter writer)
         {
-            JsonSerializerSettings settings = new JsonSerializerSettings();
-            settings.Formatting = Formatting.Indented;
-            settings.DefaultValueHandling = DefaultValueHandling.Ignore;
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
-            serializer.Formatting = Formatting.Indented;
-            serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
-            serializer.Converters.Add(new CustomizedJsonConverters.IMetadataJsonConverter());
-            serializer.Converters.Add(new StringEnumConverter());
-            serializer.Serialize(writer, input);
+            _serializer.Serialize(writer, input);
+        }
+
+        public static T Deserialize<T>(TextReader reader)
+        {
+            using (JsonReader jsonReader = new JsonTextReader(reader))
+            {
+               return _serializer.Deserialize<T>(jsonReader);
+            }
         }
     }
 
