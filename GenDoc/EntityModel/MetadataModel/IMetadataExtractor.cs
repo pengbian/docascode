@@ -88,6 +88,7 @@ namespace EntityModel
         /// <returns></returns>
         protected static async Task<SyntaxNode> SetCommonMetadataAndGetSyntaxNodeAsync(IMetadata metadata, ISymbol symbol, IMetadataExtractContext context)
         {
+            // Consider CommentId as the glable unique Identity in one documentation project
             metadata.Identity = new Identity(symbol.GetDocumentationCommentId());
             metadata.OwnerNamespace = context.OwnerNamespace;
 

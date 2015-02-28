@@ -110,6 +110,7 @@ namespace DocAsCode.Utility
             serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
             serializer.Formatting = Formatting.Indented;
             serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
+            serializer.Converters.Add(new CustomizedJsonConverters.IMetadataJsonConverter());
             serializer.Converters.Add(new StringEnumConverter());
             serializer.Serialize(writer, input);
         }
@@ -197,6 +198,68 @@ namespace DocAsCode.Utility
             public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
             {
                 writer.WriteValue(value.ToString());
+            }
+        }
+
+        public class IMetadataJsonConverter : JsonConverter
+        {
+            public override bool CanConvert(Type objectType)
+            {
+                if (objectType == typeof(IMetadata))
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            {
+                JObject objectJ = JObject.Load(reader);
+                var a = this.Create(objectJ);
+                serializer.Populate(objectJ.CreateReader(), a);
+                return a;
+            }
+
+            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+            {
+                throw new NotImplementedException();
+            }
+
+            public override bool CanWrite
+            {
+                get
+                {
+                    return false;
+                }
+            }
+
+            private object Create(JObject jsonObject)
+            {
+                var typeName = jsonObject[MetadataConstant.MemberType].ToString();
+                MemberType memberType;
+                if (Enum.TryParse(typeName, true, out memberType))
+                {
+                    switch (memberType)
+                    {
+                        case MemberType.Namespace:
+                            return new NamespaceMetadata();
+                        case MemberType.Class:
+                        case MemberType.Delegate:
+                        case MemberType.Interface:
+                        case MemberType.Enum:
+                        case MemberType.Struct:
+                            return new NamespaceMemberMetadata();
+                        case MemberType.Field:
+                        case MemberType.Event:
+                        case MemberType.Method:
+                        case MemberType.Property:
+                        case MemberType.Constructor:
+                            return new NamespaceMembersMemberMetadata();
+                    }
+                }
+
+                return null;
             }
         }
     }

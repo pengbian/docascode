@@ -20,7 +20,7 @@ namespace UnitTest
         {
             string slnPath = "Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.csproj";
             string outputDirectory = "output";
-            await DocAsCodeUtility.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
+            await BuildMetaHelper.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
 
             Assert.IsTrue(Directory.Exists(outputDirectory));
         }
@@ -31,7 +31,7 @@ namespace UnitTest
         {
             string slnPath = "Assets/TestClass1/TestClass1.sln";
             string outputDirectory = "output";
-            await DocAsCodeUtility.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
+            await BuildMetaHelper.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
 
             Assert.IsTrue(Directory.Exists(outputDirectory));
         }
@@ -42,7 +42,7 @@ namespace UnitTest
         {
             string slnPath = @"Assets\TestClass1\TestClass1\TestClass1.csproj";
             string outputDirectory = "output";
-            await DocAsCodeUtility.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
+            await BuildMetaHelper.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
 
             Assert.IsTrue(Directory.Exists(outputDirectory));
         }

@@ -20,7 +20,7 @@ using System.Diagnostics;
 
 namespace DocAsCode.BuildMeta
 {
-    public static class DocAsCodeUtility
+    public static class BuildMetaHelper
     {
         public static async Task GenerateMetadataAsync(string slnOrProjectPath, string outputDirectory, string delimitedProjectFileNames, OutputType outputType)
         {

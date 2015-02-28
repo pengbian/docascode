@@ -58,20 +58,12 @@ namespace DocAsCode.BuildMeta
                     return 1;
                 }
 
-                DocAsCodeUtility.GenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Wait();
-
-#if DEBUG
-                Console.Read();
-#endif
+                BuildMetaHelper.GenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Wait();
                 return 0;
             }
             catch (Exception e)
             {
                 Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnOrProjectPath, e);
-
-#if DEBUG
-                Console.Read();
-#endif
                 return 1;
             }
         }

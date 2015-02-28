@@ -114,7 +114,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DocAsCodeUtility.cs" />
+    <Compile Include="BuildDocHelper.cs" />
+    <Compile Include="BuildMetaHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

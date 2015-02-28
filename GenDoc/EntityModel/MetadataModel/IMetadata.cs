@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
+    public static class MetadataConstant{
+        public const string MemberType = "MemberType";
+    }
     public interface IMetadata
     {
         Identity Identity { get; set; }

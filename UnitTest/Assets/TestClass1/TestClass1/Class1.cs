@@ -7,6 +7,16 @@ using TestClass1.Base;
 
 namespace TestClass1
 {
+    /// <summary>
+    /// Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
+    /// </summary>
+    public partial class Partial1
+    {
+        /// <summary>
+        /// This is the property from *partial* class
+        /// </summary>
+        public string Property2 { get; set; }
+    }
 
     /// <summary>
     /// This is a *Class1* in **TestClass1**
@@ -60,7 +70,8 @@ namespace TestClass1
         /// </summary>
         public void Test1(int k)
         {
-
+            Partial1 partial1 = new Partial1();
+            
         }
 
         /// <summary>

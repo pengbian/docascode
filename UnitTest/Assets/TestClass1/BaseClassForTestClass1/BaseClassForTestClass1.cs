@@ -14,3 +14,15 @@ namespace TestClass1.Base
         public string Property1 { get; set; }
     }
 }
+
+namespace TestClass1
+{
+    public partial class Partial1
+    {
+
+        /// <summary>
+        /// This is the property from *partial* class
+        /// </summary>
+        public string Property1 { get; set; }
+    }
+}
