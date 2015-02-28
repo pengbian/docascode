@@ -25,7 +25,10 @@ namespace EntityModel
 
         public string FilePath { get; set; }
 
-        public ISyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
+        /// <summary>
+        /// Use SyntaxDescriptionGroup instead of ISyntaxDescriptionGroup for instantiation in JsonDeserialization
+        /// </summary>
+        public SyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
 
         public Task AcceptAsync<TContext>(IMetadataVisitor<TContext> visitor, TContext context)
         {

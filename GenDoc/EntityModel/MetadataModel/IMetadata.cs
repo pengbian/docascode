@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-    public static class MetadataConstant{
+    public static class MetadataConstant
+    {
         public const string MemberType = "MemberType";
+        public const string SyntaxType = "SyntaxType";
     }
+
     public interface IMetadata
     {
         Identity Identity { get; set; }
@@ -25,7 +28,7 @@ namespace EntityModel
 
         string AssemblyName { get; set; }
 
-        ISyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
+        SyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
 
         Task AcceptAsync<TContext>(IMetadataVisitor<TContext> visitor, TContext context);
     }

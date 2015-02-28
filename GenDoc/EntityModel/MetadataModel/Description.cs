@@ -9,7 +9,9 @@ namespace EntityModel
 {
     public interface IDescription
     {
-        List<IComment> Comments { get; set; }
+        List<CommentBase> Comments { get; set; }
+
+        SyntaxType SyntaxType { get; set; }
     }
 
     public interface ISyntaxDescription : IDescription
@@ -32,7 +34,9 @@ namespace EntityModel
         /// </summary>
         public string Syntax { get; set; }
 
-        public List<IComment> Comments { get; set; }
+        public List<CommentBase> Comments { get; set; }
+
+        public SyntaxType SyntaxType { get; set; }
     }
 
     /// <summary>
@@ -41,6 +45,10 @@ namespace EntityModel
     public class PropertySyntaxDescription : SyntaxDescription
     {
         public ParameterDescription Property { get; set; }
+        public PropertySyntaxDescription()
+        {
+            SyntaxType = SyntaxType.PropertySyntax;
+        }
     }
 
     /// <summary>
@@ -50,6 +58,10 @@ namespace EntityModel
     {
         private List<ParameterDescription> _parameters = new List<ParameterDescription>();
         public List<ParameterDescription> Parameters { get { return _parameters; } set { _parameters = value; } }
+        public ConstructorSyntaxDescription()
+        {
+            SyntaxType = SyntaxType.MethodSyntax;
+        }
     }
 
     /// <summary>
@@ -61,6 +73,11 @@ namespace EntityModel
         public List<ParameterDescription> Parameters { get { return _parameters; } set { _parameters = value; } }
 
         public ParameterDescription Return { get; set; }
+
+        public MethodSyntaxDescription()
+        {
+            SyntaxType = SyntaxType.MethodSyntax;
+        }
     }
 
     public class ParameterDescription : IDescription
@@ -69,7 +86,22 @@ namespace EntityModel
 
         public Identity Type { get; set; }
 
-        public List<IComment> Comments { get; set; }
+        public List<CommentBase> Comments { get; set; }
+
+        public SyntaxType SyntaxType { get; set; }
+        public ParameterDescription()
+        {
+            SyntaxType = SyntaxType.ParameterSyntax;
+        }
+    }
+
+    public enum SyntaxType
+    {
+        DefaultSyntax,
+        ParameterSyntax,
+        MethodSyntax,
+        ConstructorSyntax,
+        PropertySyntax,
     }
 
     public enum SyntaxLanguage

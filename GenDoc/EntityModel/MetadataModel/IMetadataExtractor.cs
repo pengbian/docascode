@@ -100,7 +100,7 @@ namespace EntityModel
             // Set CSharp syntax
             var syntaxDescription = new SyntaxDescription
             {
-                Comments = new List<IComment> { tripleSlashComment }
+                Comments = new List<CommentBase> { tripleSlashComment }
             };
 
             metadata.SyntaxDescriptionGroup = new SyntaxDescriptionGroup() { { SyntaxLanguage.CSharp, syntaxDescription } };
@@ -184,11 +184,11 @@ namespace EntityModel
             var type = nameTypedSymbol.BaseType;
             if (type != null)
             {
-                namespaceMemberMetadata.InheritanceHierarchy = new Stack<Identity>();
+                namespaceMemberMetadata.InheritanceHierarchy = new List<Identity>();
 
                 while (type != null)
                 {
-                    namespaceMemberMetadata.InheritanceHierarchy.Push(new Identity(type));
+                    namespaceMemberMetadata.InheritanceHierarchy.Add(new Identity(type));
                     type = type.BaseType;
                 }
             }
@@ -489,7 +489,7 @@ namespace EntityModel
                 id = propertySymbol.Type.GetDocumentationCommentId() ?? propertySymbol.Type.BaseType.GetDocumentationCommentId();
             }
 
-            return new ParameterDescription() { Name = name, Type = new Identity(id), Comments = new List<IComment> { new TripleSlashComment { Raw = comment } } };
+            return new ParameterDescription() { Name = name, Type = new Identity(id), Comments = new List<CommentBase> { new TripleSlashComment { Raw = comment } } };
         }
     }
 }

@@ -95,8 +95,28 @@ namespace DocAsCode.BuildMeta
                 // Each project has its own metadata file
                 if (outputType.HasFlag(OutputType.Metadata))
                 {
-                    ExportMetadataFile(namespaceMapping, Path.Combine(outputDirectory, "mta"));
-                    Console.WriteLine("Metadata file for {0} is successfully generated under {1}", project.Name, outputDirectory);
+                    string baseDirectory = Path.Combine(outputDirectory, "mta");
+                    if (Directory.Exists(baseDirectory))
+                    {
+                        Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
+                    }
+                    else
+                    {
+                        Directory.CreateDirectory(baseDirectory);
+                    }
+
+                    // TODO: For metadata file, one file per project per run(merge after the run)
+                    var metadataFilePath = Path.Combine(baseDirectory, (project.Name + ".docmta").ToValidFilePath());
+
+                    string message;
+                    if (!TryExportMetadataFile(namespaceMapping, metadataFilePath, out message))
+                    {
+                        Console.Error.WriteLine("Error: error trying export metadata file {0}, {1}", metadataFilePath, message);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Metadata file for {0} is successfully generated under {1}", project.Name, outputDirectory);
+                    }
                 }
 
                 if (outputType.HasFlag(OutputType.Markdown))
@@ -242,25 +262,23 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        private static void ExportMetadataFile(ProjectMetadata projectMetadata, string baseDirectory)
+        public static bool TryExportMetadataFile(ProjectMetadata projectMetadata, string filePath, out string message)
         {
-            if (Directory.Exists(baseDirectory))
+            message = string.Empty;
+            try
             {
-                Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
+                using (StreamWriter streamWriter = new StreamWriter(filePath))
+                {
+                    JsonUtility.Serialize(projectMetadata, streamWriter);
+                    return true;
+                }
             }
-            else
+            catch (Exception e)
             {
-                Directory.CreateDirectory(baseDirectory);
+                message = e.Message;
+                return false;
             }
 
-            // TODO: For metadata file, one file per project per run(merge after the run)
-            var metadataFilePath = Path.Combine(baseDirectory, (projectMetadata.ProjectName + ".docmta").ToValidFilePath());
-
-            //Console.WriteLine("Generating metadata file {0}", metadataFilePath);
-            using (StreamWriter streamWriter = new StreamWriter(metadataFilePath))
-            {
-                JsonUtility.Serialize(projectMetadata, streamWriter);
-            }
         }
     }
 }

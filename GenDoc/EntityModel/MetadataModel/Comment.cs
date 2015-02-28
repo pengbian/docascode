@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace EntityModel
 {
-    public class TripleSlashComment : IComment
+    public class TripleSlashComment : CommentBase
     {
-        public string Raw { get; set; }
-        public int StartLine { get; set; }
     }
 
-    public class MarkdownComment : IComment
+    public class MarkdownComment : CommentBase
     {
-        public string Raw { get; set; }
-        public int StartLine { get; set; }
     }
 
-    public class PlainTextComment : IComment
+    public class PlainTextComment : CommentBase
+    {
+    }
+
+    public class CommentBase : IComment
     {
         public string Raw { get; set; }
         public int StartLine { get; set; }

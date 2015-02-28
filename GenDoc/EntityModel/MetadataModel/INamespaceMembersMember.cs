@@ -8,7 +8,7 @@ namespace EntityModel
 {
     public interface INamespaceMembersMember
     {
-        ISyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
+        SyntaxDescriptionGroup SyntaxDescriptionGroup { get; set; }
     }
 
     public enum NamespaceMembersMemberType

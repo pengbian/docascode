@@ -8,6 +8,6 @@ namespace EntityModel
 {
     public interface IHierarchy
     {
-        Stack<Identity> InheritanceHierarchy { get; set; }
+        List<Identity> InheritanceHierarchy { get; set; }
     }
 }

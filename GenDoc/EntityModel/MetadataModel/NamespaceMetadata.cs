@@ -9,9 +9,12 @@ namespace EntityModel
 {
     public class NamespaceMetadata : BaseMetadata
     {
-        private List<INamespaceMember> _members = new List<INamespaceMember>();
+        /// <summary>
+        /// Use NamespaceMemberMetadata instead of INamesapceMember otherwise it can not be instantiated in Json Deserialize
+        /// </summary>
+        private List<NamespaceMemberMetadata> _members = new List<NamespaceMemberMetadata>();
 
-        public List<INamespaceMember> Members { get { return _members; } set { _members = value; } }
+        public List<NamespaceMemberMetadata> Members { get { return _members; } set { _members = value; } }
     }
 
     public class ProjectMetadata

@@ -17,12 +17,20 @@ namespace UnitTest
         [DeploymentItem("Assets/Metadata/TestClass1.docmta", "Assets/Metadata/")]
         public async Task TestGenereateMetadataAsync_SimpleProject()
         {
-            string metadataFileName = "Assets/Metadata/TestClass1.docmta";
+            string metadataFileName = @"D:\Repo\docascode\UnitTest\Assets\Metadata\TestClass1.docmta"; //"Assets/Metadata/TestClass1.docmta";
             ProjectMetadata projectMetadata;
             string message;
             bool success = BuildDocHelper.TryParseMetadataFile(metadataFileName, out projectMetadata, out message);
             Assert.IsTrue(string.IsNullOrEmpty(message), message);
             Assert.IsTrue(success);
+
+            string exportMessage;
+            string output = @"D:\Repo\docascode\UnitTest\Assets\Metadata\TestClass1_actual.docmta"; // Path.GetRandomFileName();
+            success = BuildMetaHelper.TryExportMetadataFile(projectMetadata, output, out message);
+            Assert.IsTrue(string.IsNullOrEmpty(message), message);
+            Assert.IsTrue(success);
+
+            Assert.AreEqual(File.ReadAllText(metadataFileName), File.ReadAllText(output));
         }
     }
 }

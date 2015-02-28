@@ -8,12 +8,20 @@ using System.Globalization;
 using System.Collections.Generic;
 using EntityModel;
 using Newtonsoft.Json.Converters;
+using System.Collections;
 
 /// <summary>
 /// The utility class for docascode project
 /// </summary>
 namespace DocAsCode.Utility
 {
+    public static class TypeExtension
+    {
+        public static bool IsA(this Type thisType, Type targetType)
+        {
+            return targetType.IsAssignableFrom(thisType);
+        }
+    }
     public static class StringExtension
     {
         public static string[] ToArray(this string input, StringSplitOptions option, params char[] delimiter)
@@ -109,10 +117,13 @@ namespace DocAsCode.Utility
         private static JsonSerializer _serializer;
         static JsonUtility()
         {
+            _serializer = new JsonSerializer();
             _serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
             _serializer.Formatting = Formatting.Indented;
+            _serializer.Converters.Add(new CustomizedJsonConverters.IdentityMappingConverter<NamespaceMetadata>());
             _serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
-            _serializer.Converters.Add(new CustomizedJsonConverters.IMetadataJsonConverter());
+            _serializer.Converters.Add(new CustomizedJsonConverters.BaseMetadataInheritClassJsonConverter());
+            _serializer.Converters.Add(new CustomizedJsonConverters.SyntaxDescriptionInheritClassJsonConverter());
             _serializer.Converters.Add(new StringEnumConverter());
         }
         public static void Serialize<T>(T input, TextWriter writer)
@@ -214,11 +225,127 @@ namespace DocAsCode.Utility
             }
         }
 
-        public class IMetadataJsonConverter : JsonConverter
+        /// <summary>
+        /// Dictionary keys are not regarded as values and will not be run through the JsonConverters. 
+        /// http://stackoverflow.com/questions/6845364/json-net-specify-converter-for-dictionary-keys
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        public class IdentityMappingConverter<T> : JsonConverter
         {
             public override bool CanConvert(Type objectType)
             {
-                if (objectType == typeof(IMetadata))
+                if (objectType.IsA(typeof(IdentityMapping<T>)))
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            public override bool CanWrite
+            {
+                get { return false; }
+            }
+
+            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+            {
+                throw new NotSupportedException();
+            }
+
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            {
+                if (reader.TokenType == JsonToken.Null)
+                {
+                    return null;
+                }
+
+                var valueType = objectType.GetGenericArguments()[0];
+
+                // Create a intermediate dictionary with key as string
+                var intermediateDictionaryType = typeof(Dictionary<,>).MakeGenericType(typeof(string), valueType);
+                var intermediateDictionary = (IDictionary)Activator.CreateInstance(intermediateDictionaryType);
+                serializer.Populate(reader, intermediateDictionary);
+
+                var finalDictionary = (IDictionary)Activator.CreateInstance(objectType);
+                foreach (DictionaryEntry pair in intermediateDictionary)
+                {
+                    finalDictionary.Add(new Identity(pair.Key.ToString()), pair.Value);
+                }
+
+                return finalDictionary;
+            }
+        }
+
+        public class BaseMetadataInheritClassJsonConverter : InheritClassJsonConverter<IMetadata>
+        {
+            protected override object CreateInheritClass(JObject jsonObject)
+            {
+                JToken token;
+                if (jsonObject.TryGetValue(MetadataConstant.MemberType, out token))
+                {
+                    var typeName = token.Value<string>();
+                    MemberType memberType;
+                    if (Enum.TryParse(typeName, true, out memberType))
+                    {
+                        switch (memberType)
+                        {
+                            case MemberType.Namespace:
+                                return new NamespaceMetadata();
+                            case MemberType.Class:
+                            case MemberType.Delegate:
+                            case MemberType.Interface:
+                            case MemberType.Enum:
+                            case MemberType.Struct:
+                                return new NamespaceMemberMetadata();
+                            case MemberType.Field:
+                            case MemberType.Event:
+                            case MemberType.Method:
+                            case MemberType.Property:
+                            case MemberType.Constructor:
+                                return new NamespaceMembersMemberMetadata();
+                        }
+                    }
+                }
+                return null;
+            }
+        }
+
+        public class SyntaxDescriptionInheritClassJsonConverter : InheritClassJsonConverter<ISyntaxDescription>
+        {
+            protected override object CreateInheritClass(JObject jsonObject)
+            {
+                JToken token;
+                if (jsonObject.TryGetValue(MetadataConstant.SyntaxType, out token))
+                {
+                    var typeName = token.Value<string>();
+                    SyntaxType memberType;
+                    if (Enum.TryParse(typeName, true, out memberType))
+                    {
+                        switch (memberType)
+                        {
+                            case SyntaxType.ParameterSyntax:
+                                return new ParameterDescription();
+                            case SyntaxType.MethodSyntax:
+                                return new MethodSyntaxDescription();
+                            case SyntaxType.ConstructorSyntax:
+                                return new ConstructorSyntaxDescription();
+                            case SyntaxType.PropertySyntax:
+                                return new PropertySyntaxDescription();
+                        }
+                    }
+                }
+
+                return new SyntaxDescription();
+            }
+        }
+
+        public abstract class InheritClassJsonConverter<T> : JsonConverter
+        {
+            protected abstract object CreateInheritClass(JObject jsonObject);
+
+            public override bool CanConvert(Type objectType)
+            {
+                if (objectType.IsA(typeof(T)))
                 {
                     return true;
                 }
@@ -229,7 +356,7 @@ namespace DocAsCode.Utility
             public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
             {
                 JObject objectJ = JObject.Load(reader);
-                var a = this.Create(objectJ);
+                var a = this.CreateInheritClass(objectJ);
                 serializer.Populate(objectJ.CreateReader(), a);
                 return a;
             }
@@ -245,34 +372,6 @@ namespace DocAsCode.Utility
                 {
                     return false;
                 }
-            }
-
-            private object Create(JObject jsonObject)
-            {
-                var typeName = jsonObject[MetadataConstant.MemberType].ToString();
-                MemberType memberType;
-                if (Enum.TryParse(typeName, true, out memberType))
-                {
-                    switch (memberType)
-                    {
-                        case MemberType.Namespace:
-                            return new NamespaceMetadata();
-                        case MemberType.Class:
-                        case MemberType.Delegate:
-                        case MemberType.Interface:
-                        case MemberType.Enum:
-                        case MemberType.Struct:
-                            return new NamespaceMemberMetadata();
-                        case MemberType.Field:
-                        case MemberType.Event:
-                        case MemberType.Method:
-                        case MemberType.Property:
-                        case MemberType.Constructor:
-                            return new NamespaceMembersMemberMetadata();
-                    }
-                }
-
-                return null;
             }
         }
     }
