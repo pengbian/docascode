@@ -7,12 +7,17 @@ using System.Xml;
 
 namespace EntityModel.ViewModel
 {
+    /// <summary>
+    /// TODO: Rough idea, need refactor...
+    /// </summary>
     public static class ViewModelExtension
     {
         public static string ToComment(this IDescription des)
         {
             var raw = des.Comments[0].Raw;
             XmlDocument doc = new XmlDocument();
+
+            // Really Rough, need change
             doc.LoadXml(raw);
             return doc.InnerText;
         }
