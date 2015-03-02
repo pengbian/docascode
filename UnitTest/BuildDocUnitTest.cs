@@ -15,7 +15,7 @@ namespace UnitTest
     {
         [TestMethod]
         [DeploymentItem("Assets/Metadata/TestClass1.docmta", "Assets/Metadata/")]
-        public async Task TestGenereateMetadataAsync_SimpleProject()
+        public async Task TestParseMetadataFile()
         {
             string metadataFileName = @"D:\Repo\docascode\UnitTest\Assets\Metadata\TestClass1.docmta"; //"Assets/Metadata/TestClass1.docmta";
             ProjectMetadata projectMetadata;
@@ -26,7 +26,7 @@ namespace UnitTest
 
             string exportMessage;
             string output = @"D:\Repo\docascode\UnitTest\Assets\Metadata\TestClass1_actual.docmta"; // Path.GetRandomFileName();
-            success = BuildMetaHelper.TryExportMetadataFile(projectMetadata, output, out message);
+            success = BuildMetaHelper.TryExportMetadataFile(projectMetadata, output, ExportType.Json , out message);
             Assert.IsTrue(string.IsNullOrEmpty(message), message);
             Assert.IsTrue(success);
 

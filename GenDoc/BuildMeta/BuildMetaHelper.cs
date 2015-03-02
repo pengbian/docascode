@@ -17,6 +17,8 @@ using EntityModel;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Diagnostics;
+using EntityModel.ViewModel;
+using YamlDotNet.Serialization;
 
 namespace DocAsCode.BuildMeta
 {
@@ -109,7 +111,7 @@ namespace DocAsCode.BuildMeta
                     var metadataFilePath = Path.Combine(baseDirectory, (project.Name + ".docmta").ToValidFilePath());
 
                     string message;
-                    if (!TryExportMetadataFile(namespaceMapping, metadataFilePath, out message))
+                    if (!TryExportMetadataFile(namespaceMapping, metadataFilePath, ExportType.Json, out message) || !TryExportMetadataFile(namespaceMapping, metadataFilePath, ExportType.Yaml, out message))
                     {
                         Console.Error.WriteLine("Error: error trying export metadata file {0}, {1}", metadataFilePath, message);
                     }
@@ -262,14 +264,36 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        public static bool TryExportMetadataFile(ProjectMetadata projectMetadata, string filePath, out string message)
+        public static bool TryExportMetadataFile(ProjectMetadata projectMetadata, string filePath, ExportType exportType, out string message)
         {
             message = string.Empty;
             try
             {
+                if (exportType == ExportType.Json)
+                {
+                    filePath = Path.ChangeExtension(filePath, ".json");
+                }
+                else if (exportType == ExportType.Yaml)
+                {
+                    filePath = Path.ChangeExtension(filePath, ".yaml");
+                }
+
                 using (StreamWriter streamWriter = new StreamWriter(filePath))
                 {
-                    JsonUtility.Serialize(projectMetadata, streamWriter);
+                    if (exportType == ExportType.Json)
+                    {
+                        JsonUtility.Serialize(projectMetadata, streamWriter);
+                    }
+                    else if (exportType == ExportType.Yaml)                    {
+                        Serializer serializer = new Serializer();
+                        var viewModel = projectMetadata.ToYamlViewModel();
+                        serializer.Serialize(streamWriter, viewModel);
+                    }
+                    else
+                    {
+                        throw new NotSupportedException();
+                    }
+
                     return true;
                 }
             }
@@ -278,7 +302,12 @@ namespace DocAsCode.BuildMeta
                 message = e.Message;
                 return false;
             }
-
         }
+    }
+
+    public enum ExportType
+    {
+        Json,
+        Yaml
     }
 }

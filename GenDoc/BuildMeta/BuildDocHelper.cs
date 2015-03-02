@@ -157,7 +157,7 @@ namespace DocAsCode.BuildMeta
                 await ns.Value.AcceptAsync(commentVisitor, "");
             }
         }
-
+        
         public static bool TryParseMetadataFile(string metadataFileName, out ProjectMetadata projectMetadata, out string message)
         {
             projectMetadata = null;

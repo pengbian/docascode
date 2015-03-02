@@ -21,6 +21,22 @@ namespace DocAsCode.Utility
         {
             return targetType.IsAssignableFrom(thisType);
         }
+
+        public static string ToId(this Identity id)
+        {
+            if (id == null)
+            {
+                return null;
+            }
+
+            string str = id.ToString();
+            if (str.StartsWith("{") || str.Length < 3)
+            {
+                return str;
+            }
+
+            return id.ToString().Substring(2);
+        }
     }
     public static class StringExtension
     {
@@ -115,6 +131,8 @@ namespace DocAsCode.Utility
             DefaultValueHandling = DefaultValueHandling.Ignore,
         };
         private static JsonSerializer _serializer;
+
+        private static JsonSerializer _yamlserializer;
         static JsonUtility()
         {
             _serializer = new JsonSerializer();
@@ -125,6 +143,8 @@ namespace DocAsCode.Utility
             _serializer.Converters.Add(new CustomizedJsonConverters.BaseMetadataInheritClassJsonConverter());
             _serializer.Converters.Add(new CustomizedJsonConverters.SyntaxDescriptionInheritClassJsonConverter());
             _serializer.Converters.Add(new StringEnumConverter());
+
+            _yamlserializer = JsonSerializer.CreateDefault();
         }
         public static void Serialize<T>(T input, TextWriter writer)
         {
@@ -194,7 +214,69 @@ namespace DocAsCode.Utility
     //    }
     //}
 
-    public static class CustomizedJsonConverters
+    public static class CustomizedYamlConverters
+    {
+        public class DefaultYamlConverter : JsonConverter
+        {
+            public override bool CanConvert(Type objectType)
+            {
+                if (objectType == typeof(object))
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            public override bool CanRead
+            {
+                get
+                {
+                    return false;
+                }
+            }
+
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            {
+                throw new NotImplementedException();
+            }
+
+            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+            {
+                throw new NotImplementedException();
+            }
+        }
+        public class IdentityYamlConverter : JsonConverter
+        {
+            public override bool CanConvert(Type objectType)
+            {
+                if (objectType == typeof(Identity))
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            {
+
+                if (reader.TokenType != JsonToken.String)
+                {
+                    return null;
+                }
+
+                return new Identity((string)reader.Value);
+            }
+
+            public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+            {
+                writer.WriteValue(value.ToString());
+            }
+        }
+    }
+
+        public static class CustomizedJsonConverters
     {
         public class IdentityJsonConverter : JsonConverter
         {

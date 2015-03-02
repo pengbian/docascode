@@ -4,9 +4,9 @@ using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 
+
 namespace DocAsCode.EntityModel
 {
-
     public class CommentIdToYamlHeaderConverter : TypeConverter
     {
         /// <summary>
