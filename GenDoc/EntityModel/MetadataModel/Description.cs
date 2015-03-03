@@ -60,7 +60,7 @@ namespace EntityModel
         public List<ParameterDescription> Parameters { get { return _parameters; } set { _parameters = value; } }
         public ConstructorSyntaxDescription()
         {
-            SyntaxType = SyntaxType.MethodSyntax;
+            SyntaxType = SyntaxType.ConstructorSyntax;
         }
     }
 

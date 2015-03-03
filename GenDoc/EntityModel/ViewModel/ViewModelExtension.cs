@@ -171,7 +171,7 @@ namespace EntityModel.ViewModel
             memberItem.Comment = csharpSyntax.ToComment();
             memberItem.CommentLineNumber = csharpSyntax.ToCommentLineNumber();
             memberItem.Syntax = csharpSyntax.Syntax;
-            memberItem.Hierarchy = member.InheritanceHierarchy.Select(s => s.ToString().Substring(2)).ToList();
+            memberItem.Hierarchy = member.InheritanceHierarchy == null ? null : member.InheritanceHierarchy.Select(s => s.ToString().Substring(2)).ToList();
             memberItem.MemberType = member.MemberType;
 
             memberItem.Parameters = csharpSyntax.ToParams();

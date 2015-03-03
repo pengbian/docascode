@@ -186,8 +186,13 @@ namespace DocAsCode.BuildMeta
             return projectMetadata;
         }
 
-        private static async Task GenerateMetadataForEachSymbol(ISymbol current, ISymbol parent, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping, SymbolMetadataTable symbolMetadataTable)
+        private static async Task<bool> GenerateMetadataForEachSymbol(ISymbol current, ISymbol parent, IMetadataExtractContext context, IdentityMapping<NamespaceMetadata> namespaceMapping, SymbolMetadataTable symbolMetadataTable)
         {
+            if (!MetadataExtractorManager.CanExtract(current))
+            {
+                return false;
+            }
+
             var namespaceSymbol = current as INamespaceSymbol;
 
             if (namespaceSymbol != null)
@@ -235,18 +240,23 @@ namespace DocAsCode.BuildMeta
                     }
                 }
             }
+
+            return true;
         }
 
         class TreeIterator
         {
-            public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task> action)
+            public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task<bool>> action)
             {
                 if (current == null || action == null)
                 {
                     return;
                 }
 
-                await action(current, parent);
+                if (!await action(current, parent))
+                {
+                    return;
+                }
 
                 if (childrenGetter == null)
                 {

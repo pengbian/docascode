@@ -23,6 +23,19 @@ namespace EntityModel
             new DefaultExtractor()
         };
 
+        public static bool CanExtract(ISymbol symbol)
+        {
+            foreach (var converter in _supportedExtractors)
+            {
+                if (converter.CanExtract(symbol))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public static Task<IMetadata> ExtractAsync(ISymbol symbol, IMetadataExtractContext context)
         {
             foreach (var converter in _supportedExtractors)
@@ -192,7 +205,8 @@ namespace EntityModel
                     type = type.BaseType;
                 }
             }
-
+            string syntaxStr = string.Empty;
+            int openBracketIndex = -1;
             switch (nameTypedSymbol.TypeKind)
             {
                 case TypeKind.Class:
@@ -201,16 +215,14 @@ namespace EntityModel
                         Debug.Assert(syntax != null);
 
                         namespaceMemberMetadata.MemberType = MemberType.Class;
-                        namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax
+                        syntaxStr
                             = syntax
                             .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
                             .WithBaseList(null)
                             .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
                             .NormalizeWhitespace()
-                            .ToString()
-                            .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                            .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                            .Trim();
+                            .ToString();
+                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
                         break;
                     };
                 case TypeKind.Enum:
@@ -219,16 +231,14 @@ namespace EntityModel
                         Debug.Assert(syntax != null);
 
                         namespaceMemberMetadata.MemberType = MemberType.Enum;
-                        namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax
+                        syntaxStr
                             = syntax
                                 .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
                                 .WithBaseList(null)
                                 .WithMembers(new SeparatedSyntaxList<EnumMemberDeclarationSyntax>())
                                 .NormalizeWhitespace()
-                                .ToString()
-                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                            .Trim();
+                                .ToString();
+                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
                         break;
                     };
                 case TypeKind.Interface:
@@ -238,16 +248,15 @@ namespace EntityModel
 
                         namespaceMemberMetadata.MemberType = MemberType.Interface;
 
-                        namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax =
+                        syntaxStr =
                             syntax
                                 .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
                                 .WithBaseList(null)
                                 .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
                                 .NormalizeWhitespace()
-                                .ToString()
-                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                                .Trim();
+                                .ToString();
+
+                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
                         break;
                     };
                 case TypeKind.Struct:
@@ -256,16 +265,13 @@ namespace EntityModel
                         Debug.Assert(syntax != null);
 
                         namespaceMemberMetadata.MemberType = MemberType.Struct;
-
-                        namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax = syntax
+                        syntaxStr = syntax
                                 .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
                                 .WithBaseList(null)
                                 .WithMembers(new SyntaxList<MemberDeclarationSyntax>())
                                 .NormalizeWhitespace()
-                                .ToString()
-                                .Replace(syntax.OpenBraceToken.ValueText, string.Empty)
-                                .Replace(syntax.CloseBraceToken.ValueText, string.Empty)
-                                .Trim();
+                                .ToString();
+                        openBracketIndex = syntaxStr.IndexOf(syntax.OpenBraceToken.ValueText);
                         break;
                     };
                 case TypeKind.Delegate:
@@ -274,15 +280,23 @@ namespace EntityModel
                         Debug.Assert(syntax != null);
 
                         namespaceMemberMetadata.MemberType = MemberType.Delegate;
-                        namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax = syntax
+                        syntaxStr = syntax
                                 .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
                                 .NormalizeWhitespace()
-                                .ToString()
-                                .Trim();
+                                .ToString();
                         break;
                     };
+
             }
 
+            if (openBracketIndex > -1)
+            {
+                namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax = syntaxStr.Substring(0, openBracketIndex).Trim();
+            }
+            else
+            {
+                namespaceMemberMetadata.SyntaxDescriptionGroup[SyntaxLanguage.CSharp].Syntax = syntaxStr.Trim();
+            }
             return namespaceMemberMetadata;
         }
     }
@@ -354,7 +368,7 @@ namespace EntityModel
                             var syntaxDescription = new ConstructorSyntaxDescription();
                             syntaxDescription.Syntax = baseSyntax.Syntax;
                             syntaxDescription.Comments = baseSyntax.Comments;
-
+                            
                             var methodSymbol = symbol as IMethodSymbol;
                             Debug.Assert(methodSymbol != null);
 
@@ -363,7 +377,7 @@ namespace EntityModel
                                 syntaxDescription.Parameters.Add(GetParameterDescription(p));
                             }
 
-                            syntaxDescription.Syntax = syntax.WithBody(null)
+                            syntaxDescription.Syntax = constructorSyntax.WithBody(null)
                                     .NormalizeWhitespace()
                                     .ToString()
                                     .Trim();
