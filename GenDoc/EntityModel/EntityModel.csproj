@@ -132,6 +132,7 @@
     <Compile Include="MetadataVisitor\IMetadataVisitor.cs" />
     <Compile Include="MetadataModel\IMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ViewModelExtension.cs" />
     <Compile Include="ViewModel\YamlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

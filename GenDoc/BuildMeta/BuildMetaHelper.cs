@@ -284,10 +284,19 @@ namespace DocAsCode.BuildMeta
                     {
                         JsonUtility.Serialize(projectMetadata, streamWriter);
                     }
-                    else if (exportType == ExportType.Yaml)                    {
+                    else if (exportType == ExportType.Yaml)
+                    {
                         Serializer serializer = new Serializer();
                         var viewModel = projectMetadata.ToYamlViewModel();
-                        serializer.Serialize(streamWriter, viewModel);
+                        serializer.Serialize(streamWriter, viewModel.IndexYamlViewModel);
+                        using (StreamWriter sw = new StreamWriter(Path.ChangeExtension(filePath, "toc.yaml")))
+                        {
+                            serializer.Serialize(sw, viewModel.TocYamlViewModel);
+                        }
+                        using (StreamWriter sw = new StreamWriter(Path.ChangeExtension(filePath, "md.yaml")))
+                        {
+                            serializer.Serialize(sw, viewModel.MarkdownYamlViewModel);
+                        }
                     }
                     else
                     {

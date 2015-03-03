@@ -1,0 +1,453 @@
+{
+  "ProjectName": "TestClass1",
+  "Namespaces": {
+    "N:TestClass1": {
+      "Members": [
+        {
+          "Members": [
+            {
+              "Identity": "P:TestClass1.Partial1.Property2",
+              "MemberType": "Property",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Property": {
+                    "Name": "Property2",
+                    "Type": "T:System.String",
+                    "Comments": [
+                      {
+                        "Raw": "<member name=\"P:TestClass1.Partial1.Property2\">\r\n    <summary>\r\n    This is the property from *partial* class\r\n    </summary>\r\n</member>\r\n"
+                      }
+                    ],
+                    "SyntaxType": "ParameterSyntax"
+                  },
+                  "Syntax": "public string Property2",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"P:TestClass1.Partial1.Property2\">\r\n    <summary>\r\n    This is the property from *partial* class\r\n    </summary>\r\n</member>\r\n",
+                      "StartLine": 17
+                    }
+                  ],
+                  "SyntaxType": "PropertySyntax"
+                }
+              }
+            }
+          ],
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Partial1",
+          "MemberType": "Class",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public partial class Partial1",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Partial1\">\r\n    <summary>\r\n    Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 12
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Members": [
+            {
+              "Identity": "M:TestClass1.Class1.Test1(System.Int32)",
+              "MemberType": "Method",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Parameters": [
+                    {
+                      "Name": "k",
+                      "Type": "T:System.Int32",
+                      "Comments": [
+                        {
+                          "Raw": ""
+                        }
+                      ],
+                      "SyntaxType": "ParameterSyntax"
+                    }
+                  ],
+                  "Return": {
+                    "Name": "Void",
+                    "Type": "T:System.Void",
+                    "Comments": [
+                      {
+                        "Raw": "Specifies a return value type for a method that does not return a value.2"
+                      }
+                    ],
+                    "SyntaxType": "ParameterSyntax"
+                  },
+                  "Syntax": "public void Test1(int k)",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"M:TestClass1.Class1.Test1(System.Int32)\">\r\n    <summary>\r\n    This is a *test* with no return\r\n    </summary>\r\n</member>\r\n",
+                      "StartLine": 70
+                    }
+                  ],
+                  "SyntaxType": "MethodSyntax"
+                }
+              }
+            },
+            {
+              "Identity": "M:TestClass1.Class1.Test2",
+              "MemberType": "Method",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Parameters": [],
+                  "Return": {
+                    "Name": "Tuple",
+                    "Type": "T:System.Tuple{System.String,System.Int32}",
+                    "Comments": [
+                      {
+                        "Raw": "Represents a 2-tuple, or pair. The type of the tuple's first component.The type of the tuple's second component.2"
+                      }
+                    ],
+                    "SyntaxType": "ParameterSyntax"
+                  },
+                  "Syntax": "public Tuple<string, int> Test2()",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"M:TestClass1.Class1.Test2\">\r\n    <summary>\r\n    This is a *test* with return and should fail compilation\r\n    </summary>\r\n    <returns></returns>\r\n</member>\r\n",
+                      "StartLine": 80
+                    }
+                  ],
+                  "SyntaxType": "MethodSyntax"
+                }
+              }
+            },
+            {
+              "Identity": "M:TestClass1.Class1.Test3",
+              "MemberType": "Method",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Parameters": [],
+                  "Return": {
+                    "Name": "Task",
+                    "Type": "T:System.Threading.Tasks.Task{System.Tuple{System.String,System.Int32}}",
+                    "Comments": [
+                      {
+                        "Raw": "Represents an asynchronous operation that can return a value.The type of the result produced by this . "
+                      }
+                    ],
+                    "SyntaxType": "ParameterSyntax"
+                  },
+                  "Syntax": "public async Task<Tuple<string, int>> Test3()",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"M:TestClass1.Class1.Test3\">\r\n    <summary>\r\n    This is an async *test*\r\n    </summary>\r\n    <returns>Task</returns>\r\n</member>\r\n",
+                      "StartLine": 89
+                    }
+                  ],
+                  "SyntaxType": "MethodSyntax"
+                }
+              }
+            },
+            {
+              "Identity": "M:TestClass1.Class1.Test4``1(``0,``0@)",
+              "MemberType": "Method",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Parameters": [
+                    {
+                      "Name": "input",
+                      "Type": "!:T",
+                      "Comments": [
+                        {
+                          "Raw": ""
+                        }
+                      ],
+                      "SyntaxType": "ParameterSyntax"
+                    },
+                    {
+                      "Name": "output",
+                      "Type": "!:T",
+                      "Comments": [
+                        {
+                          "Raw": ""
+                        }
+                      ],
+                      "SyntaxType": "ParameterSyntax"
+                    }
+                  ],
+                  "Return": {
+                    "Name": "Void",
+                    "Type": "T:System.Void",
+                    "Comments": [
+                      {
+                        "Raw": "Specifies a return value type for a method that does not return a value.2"
+                      }
+                    ],
+                    "SyntaxType": "ParameterSyntax"
+                  },
+                  "Syntax": "public void Test4<T>(T input, out T output)where T : class",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"M:TestClass1.Class1.Test4``1(``0,``0@)\">\r\n    <summary>\r\n    This is a generic *test*\r\n    </summary>\r\n    <typeparam name=\"T\">This is a Type param</typeparam>\r\n    <param name=\"input\">This is the input</param>\r\n    <param name=\"output\">This is the output</param>\r\n</member>\r\n",
+                      "StartLine": 99
+                    }
+                  ],
+                  "SyntaxType": "MethodSyntax"
+                }
+              }
+            }
+          ],
+          "InheritanceHierarchy": [
+            "T:TestClass1.Base.BaseClassForTestClass1",
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Class1",
+          "MemberType": "Class",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public class Class1",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Class1\">\r\n    <summary>\r\n    This is a *Class1* in **TestClass1**\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 23
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Members": [],
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Class1.Class1InnerClass",
+          "MemberType": "Class",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public class Class1InnerClass",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Class1.Class1InnerClass\">\r\n    <summary>\r\n    This is a *Class1*'s inner class\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 28
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Members": [],
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass",
+          "MemberType": "Class",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public class Class1InnerClassesInnerClass",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass\">\r\n    <summary>\r\n    This is a *Class1*'s inner class's inner class\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 33
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Members": [
+            {
+              "Identity": "F:TestClass1.Class1.Class1InnerClass.TestEnum.A",
+              "MemberType": "Field",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Syntax": "A",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"F:TestClass1.Class1.Class1InnerClass.TestEnum.A\">\r\n    <summary>\r\n    This is Enum A\r\n    </summary>\r\n</member>\r\n",
+                      "StartLine": 45
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "Identity": "F:TestClass1.Class1.Class1InnerClass.TestEnum.B",
+              "MemberType": "Field",
+              "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+              "SyntaxDescriptionGroup": {
+                "CSharp": {
+                  "Syntax": "B",
+                  "Comments": [
+                    {
+                      "Raw": "<member name=\"F:TestClass1.Class1.Class1InnerClass.TestEnum.B\">\r\n    <summary>\r\n    This is Enum B\r\n    </summary>\r\n</member>\r\n",
+                      "StartLine": 50
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "InheritanceHierarchy": [
+            "T:System.Enum",
+            "T:System.ValueType",
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Class1.Class1InnerClass.TestEnum",
+          "MemberType": "Enum",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public enum TestEnum",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Class1.Class1InnerClass.TestEnum\">\r\n    <summary>\r\n    This is the TestEnum for inner class\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 40
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Members": [],
+          "InheritanceHierarchy": [
+            "T:System.ValueType",
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Class1.TestStruct",
+          "MemberType": "Struct",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public struct TestStruct",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Class1.TestStruct\">\r\n    <summary>\r\n    This is a Struct\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 57
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Members": [],
+          "InheritanceHierarchy": [
+            "T:System.MulticastDelegate",
+            "T:System.Delegate",
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.Class1.ADelegate",
+          "MemberType": "Delegate",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public delegate void ADelegate();",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.Class1.ADelegate\">\r\n    <summary>\r\n    This is a Delegate\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 65
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "Identity": "N:TestClass1",
+      "MemberType": "Namespace",
+      "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+      "SyntaxDescriptionGroup": {
+        "CSharp": {
+          "Comments": [
+            {
+              "Raw": "",
+              "StartLine": 7
+            }
+          ]
+        }
+      }
+    },
+    "N:TestClass1.TestClass1": {
+      "Members": [],
+      "Identity": "N:TestClass1.TestClass1",
+      "MemberType": "Namespace",
+      "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+      "SyntaxDescriptionGroup": {
+        "CSharp": {
+          "Comments": [
+            {
+              "Raw": "",
+              "StartLine": 105
+            }
+          ]
+        }
+      }
+    },
+    "N:TestClass1.TestClass1.TestClassInnerNamesapce": {
+      "Members": [
+        {
+          "Members": [],
+          "InheritanceHierarchy": [
+            "T:System.Object"
+          ],
+          "ProjectName": "TestClass1",
+          "Identity": "T:TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace",
+          "MemberType": "Class",
+          "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+          "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+          "SyntaxDescriptionGroup": {
+            "CSharp": {
+              "Syntax": "public class ClassInInnerNamespace",
+              "Comments": [
+                {
+                  "Raw": "<member name=\"T:TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace\">\r\n    <summary>\r\n    This is a class in inner namespace\r\n    </summary>\r\n</member>\r\n",
+                  "StartLine": 110
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "Identity": "N:TestClass1.TestClass1.TestClassInnerNamesapce",
+      "MemberType": "Namespace",
+      "AssemblyName": "TestClass1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "FilePath": "D:\\Repo\\docascode\\TestResults\\Deploy_lianwei 2015-02-28 23_20_10\\Out\\Assets\\TestClass1\\TestClass1\\Class1.cs",
+      "SyntaxDescriptionGroup": {
+        "CSharp": {
+          "Comments": [
+            {
+              "Raw": "",
+              "StartLine": 105
+            }
+          ]
+        }
+      }
+    }
+  }
+}
