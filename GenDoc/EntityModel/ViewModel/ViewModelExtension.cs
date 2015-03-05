@@ -53,7 +53,6 @@ namespace EntityModel.ViewModel
 
         public static string ToId(this Identity id)
         {
-            return id.ToString();
             if (id == null)
             {
                 return null;
@@ -68,7 +67,35 @@ namespace EntityModel.ViewModel
             return id.ToString().Substring(2);
         }
 
-        public static List<YamlItemParameterViewModel> ToParams(this SyntaxDescription csharpSyntax)
+        public static YamlItemParameterViewModel GetReturn(this SyntaxDescription csharpSyntax)
+        {
+            switch (csharpSyntax.SyntaxType)
+            {
+                case SyntaxType.MethodSyntax:
+                    {
+                        var description = (MethodSyntaxDescription)csharpSyntax;
+                        YamlItemParameterViewModel yamlReturn = new YamlItemParameterViewModel();
+                        var returnPara = description.Return;
+                        yamlReturn.Description = returnPara.ToComment();
+                        yamlReturn.Name = returnPara.Name;
+                        yamlReturn.Type =
+                            new LinkDetail
+                            {
+                                Name = returnPara.Type.ToId(),
+                            };
+                        return yamlReturn;
+                    }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// TODO: Resolve Link by passing in index view model
+        /// </summary>
+        /// <param name="csharpSyntax"></param>
+        /// <returns></returns>
+        public static List<YamlItemParameterViewModel> ToParams(this SyntaxDescription csharpSyntax, Dictionary<string, ApiLinkItemViewModel> apis)
         {
             List<YamlItemParameterViewModel> itemParams = new List<YamlItemParameterViewModel>();
             switch (csharpSyntax.SyntaxType)
@@ -79,22 +106,16 @@ namespace EntityModel.ViewModel
                         foreach (var desc in description.Parameters)
                         {
                             YamlItemParameterViewModel yamlParameter = new YamlItemParameterViewModel();
-                            yamlParameter.Comment = description.ToComment();
-                            yamlParameter.CommentLineNumber = description.ToCommentLineNumber();
-                            yamlParameter.Type = desc.Type.ToId();
-                            yamlParameter.ParameterType = ParameterType.Input;
+                            yamlParameter.Description = description.ToComment();
+                            yamlParameter.Type =
+                            new LinkDetail
+                            {
+                                Name = desc.Type.ToId(),
+                            };
+
                             yamlParameter.Name = desc.Name;
                             itemParams.Add(yamlParameter);
                         }
-
-                        YamlItemParameterViewModel yamlReturn = new YamlItemParameterViewModel();
-                        var returnPara = description.Return;
-                        yamlReturn.Comment = returnPara.ToComment();
-                        yamlReturn.CommentLineNumber = returnPara.ToCommentLineNumber();
-                        yamlReturn.Name = returnPara.Name;
-                        yamlReturn.Type = returnPara.Type.ToId();
-                        yamlReturn.ParameterType = ParameterType.Return;
-                        itemParams.Add(yamlReturn);
                         break;
                     }
                 case SyntaxType.ConstructorSyntax:
@@ -103,10 +124,12 @@ namespace EntityModel.ViewModel
                         foreach (var desc in description.Parameters)
                         {
                             YamlItemParameterViewModel yamlParameter = new YamlItemParameterViewModel();
-                            yamlParameter.Comment = description.ToComment();
-                            yamlParameter.CommentLineNumber = description.ToCommentLineNumber();
-                            yamlParameter.Type = desc.Type.ToId();
-                            yamlParameter.ParameterType = ParameterType.Input;
+                            yamlParameter.Description = description.ToComment();
+                            yamlParameter.Type =
+                            new LinkDetail
+                            {
+                                Name = desc.Type.ToId(),
+                            };
                             yamlParameter.Name = desc.Name;
                             itemParams.Add(yamlParameter);
                         }
@@ -118,10 +141,12 @@ namespace EntityModel.ViewModel
                         var desc = description.Property;
                         {
                             YamlItemParameterViewModel yamlParameter = new YamlItemParameterViewModel();
-                            yamlParameter.Comment = description.ToComment();
-                            yamlParameter.CommentLineNumber = description.ToCommentLineNumber();
-                            yamlParameter.Type = desc.Type.ToId();
-                            yamlParameter.ParameterType = ParameterType.Input;
+                            yamlParameter.Description = description.ToComment();
+                            yamlParameter.Type =
+                            new LinkDetail
+                            {
+                                Name = desc.Type.ToId(),
+                            };
                             yamlParameter.Name = desc.Name;
                             itemParams.Add(yamlParameter);
                         }
@@ -132,10 +157,26 @@ namespace EntityModel.ViewModel
                     break;
             }
 
+            // Resolve link
+            if (itemParams != null)
+            {
+                foreach (var param in itemParams)
+                {
+                    ApiLinkItemViewModel item;
+                    if (apis.TryGetValue(param.Type.Name, out item)){
+                        param.Type.Href = apis[param.Type.Name].Href;
+                    }else
+                    {
+                        // TODO: make it accurate
+                        param.Type.Href = string.Format("https://msdn.microsoft.com/en-us/library/{0}(v=vs.110).aspx", param.Type.Name);
+                    }
+                }
+            }
+
             return itemParams;
         }
 
-        public static YamlItemViewModel ToItem(this NamespaceMetadata member)
+        public static YamlItemViewModel ToItem(this IMetadata member, Dictionary<string, ApiLinkItemViewModel> apis)
         {
             var memberItem = new YamlItemViewModel();
             string[] assemblyInfos = member.AssemblyName.Split(new char[] { ' ', ',' });
@@ -144,108 +185,85 @@ namespace EntityModel.ViewModel
             {
                 version = "1.0.0.0";
             }
-            memberItem.Assembly = new AssemblyDetail()
+
+            memberItem.Name = member.Identity.ToId();
+            memberItem.Type = member.MemberType;
+            memberItem.Source = new SourceDetail
             {
-                Name = assemblyInfos[0],
-                Version = version,
+                Path = member.FilePath,
             };
-            memberItem.Items = new List<string>();
 
-            memberItem.Identity = member.Identity.ToId();
-            var csharpSyntax = member.SyntaxDescriptionGroup[SyntaxLanguage.CSharp];
-            memberItem.Comment = csharpSyntax.ToComment();
-            memberItem.CommentLineNumber = csharpSyntax.ToCommentLineNumber();
-            memberItem.Syntax = csharpSyntax.Syntax;
-            memberItem.MemberType = member.MemberType;
+            memberItem.Syntax = new List<SyntaxDetail>();
 
-            memberItem.Parameters = csharpSyntax.ToParams();
+            foreach(var syntaxDescription in member.SyntaxDescriptionGroup)
+            {
+                SyntaxDetail syntax = new SyntaxDetail
+                {
+                    Language = syntaxDescription.Key,
+                    Content = syntaxDescription.Value.ToComment(),
+                    Parameters = syntaxDescription.Value.ToParams(apis),
+                    Return = syntaxDescription.Value.GetReturn(),
+                };
+                memberItem.Syntax.Add(syntax);
+            }
             return memberItem;
         }
 
-        public static YamlItemViewModel ToItem(this NamespaceMemberMetadata member)
-        {
-            var memberItem = new YamlItemViewModel();
-            memberItem.Items = new List<string>();
-            memberItem.Identity = member.Identity.ToId();
-            var csharpSyntax = member.SyntaxDescriptionGroup[SyntaxLanguage.CSharp];
-            memberItem.Comment = csharpSyntax.ToComment();
-            memberItem.CommentLineNumber = csharpSyntax.ToCommentLineNumber();
-            memberItem.Syntax = csharpSyntax.Syntax;
-            memberItem.Hierarchy = member.InheritanceHierarchy == null ? null : member.InheritanceHierarchy.Select(s => s.ToString().Substring(2)).ToList();
-            memberItem.MemberType = member.MemberType;
-
-            memberItem.Parameters = csharpSyntax.ToParams();
-            return memberItem;
-        }
-
-        public static YamlItemViewModel ToItem(this NamespaceMembersMemberMetadata member)
-        {
-            var memberItem = new YamlItemViewModel();
-            memberItem.Identity = member.Identity.ToId();
-            var csharpSyntax = member.SyntaxDescriptionGroup[SyntaxLanguage.CSharp];
-            memberItem.Comment = csharpSyntax.ToComment();
-            memberItem.CommentLineNumber = csharpSyntax.ToCommentLineNumber();
-            memberItem.Syntax = csharpSyntax.Syntax;
-            memberItem.MemberType = member.MemberType;
-
-            memberItem.Parameters = csharpSyntax.ToParams();
-            return memberItem;
-        }
-
-        public static YamlViewModel ToYamlViewModel(this ProjectMetadata projectMetadata)
+        public static YamlViewModel ToYamlViewModel(this DocumentationMetadata docMetadata, string folderName)
         {
             YamlViewModel yamlViewModel = new YamlViewModel();
-            MarkdownYamlViewModel markdown = new MarkdownYamlViewModel();
-            // 1. Merge project metadata list
-            IndexYamlViewModel yaml = new IndexYamlViewModel();
-            yaml.BaseUrl = "https://localhost/";
-            yaml.RepositoryUrl = "https://github.com/vicancy/vicancy.github.io.git";
-            yaml.Items = new Dictionary<string, YamlItemViewModel>();
-            yaml.YamlUrl = projectMetadata.ProjectName + ".yaml";
-            yaml.Layout = DefaultLayoutItems;
-
-            foreach (var ns in projectMetadata.Namespaces)
+            yamlViewModel.MemberYamlViewModelList = new List<YamlItemViewModel>();
+            yamlViewModel.IndexYamlViewModel = docMetadata.AllMembers.Select(s => new ApiLinkItemViewModel
             {
-                YamlItemViewModel item = ns.Value.ToItem();
-                foreach (var member in ns.Value.Members)
-                {
-                    YamlItemViewModel memberItem = member.ToItem();
-                    memberItem.Assembly = item.Assembly;
+                Name = s.Key.ToId(),
+                Href = folderName + "/" + s.Key.ToId(),
+                YamlPath = folderName + "/" + s.Key.ToId() + ".yaml",
+            }).ToDictionary(s => s.Name, s => s);
+            var apis = yamlViewModel.IndexYamlViewModel;
+            var toc = new YamlItemViewModel();
+            yamlViewModel.TocYamlViewModel = toc;
+            toc.Type = MemberType.Toc;
+            toc.Items = new List<YamlItemViewModel>();
+            toc.Layout = DefaultLayoutItems;
 
-                    foreach (var membersMember in member.Members)
-                    {
-                        YamlItemViewModel membersMemberItem = membersMember.ToItem();
-                        membersMemberItem.Assembly = item.Assembly;
-                        memberItem.Items.Add(membersMemberItem.Identity);
-                        yaml.Items.Add(membersMemberItem.Identity, membersMemberItem);
-                    }
-
-                    item.Items.Add(memberItem.Identity);
-                    yaml.Items.Add(memberItem.Identity, memberItem);
-                }
-
-                yaml.Items.Add(item.Identity, item);
+            // Toc only need namespace
+            foreach (var ns in docMetadata.Namespaces)
+            {
+                YamlItemViewModel item = ns.Value.ToItem(apis);
+                toc.Items.Add(item);
             }
 
-            yaml.Items = yaml.Items.OrderBy(s => s.Value.MemberType).ToDictionary(s => s.Key, s => s.Value);
-
-            TocYamlViewModel toc = new TocYamlViewModel();
-            toc.AddRange(yaml.Items.Select(s =>
-            new TocYamlItemViewModel
+            // For namespaces and namespace's members, only need one layer 
+            foreach (var ns in docMetadata.Namespaces)
             {
-                DisplayName = s.Value.DisplayName,
-                Identity = s.Value.Identity,
-                Url = s.Value.Url,
-            }));
-            yamlViewModel.TocYamlViewModel = toc;
-            yamlViewModel.IndexYamlViewModel = yaml;
-            yamlViewModel.MarkdownYamlViewModel = markdown;
-            return yamlViewModel;
-        }
+                YamlItemViewModel item = ns.Value.ToItem(apis);
+                item.Items = new List<YamlItemViewModel>();
+                yamlViewModel.MemberYamlViewModelList.Add(item);
 
-        public static IndexYamlViewModel ToTocViewModel(List<IndexYamlViewModel> yamls)
-        {
-            throw new NotImplementedException();
+                foreach (var member in ns.Value.Members)
+                {
+                    YamlItemViewModel memberItem = member.ToItem(apis);
+                    item.Items.Add(memberItem);
+                    YamlItemViewModel memberItemDetail = member.ToItem(apis);
+                    memberItemDetail.Items = new List<YamlItemViewModel>();
+                    foreach(var membersMember in member.Members)
+                    {
+                        YamlItemViewModel membersMemberItem = membersMember.ToItem(apis);
+                        memberItemDetail.Items.Add(membersMemberItem);
+                    }
+
+                    yamlViewModel.MemberYamlViewModelList.Add(memberItemDetail);
+                }
+            }
+
+            // set href TODO: a better way???
+            foreach (var item in yamlViewModel.MemberYamlViewModelList)
+            {
+                item.Href = yamlViewModel.IndexYamlViewModel[item.Name].Href;
+                item.YamlPath = yamlViewModel.IndexYamlViewModel[item.Name].YamlPath;
+            }
+
+            return yamlViewModel;
         }
     }
 }

@@ -89,35 +89,27 @@ namespace DocAsCode.BuildMeta
                 }
             }
 
-            foreach(var project in projects)
+            List<ProjectMetadata> projectMetadata = new List<ProjectMetadata>();
+            foreach (var project in projects)
             {
                 var namespaceMapping = await GenerateMetadataAsync(project);
                 Debug.Assert(namespaceMapping != null);
+                projectMetadata.Add(namespaceMapping);
+            }
 
+            DocumentationMetadata doc = MergeProjectMetadata(projectMetadata);
+            { 
                 // Each project has its own metadata file
                 if (outputType.HasFlag(OutputType.Metadata))
                 {
-                    string baseDirectory = Path.Combine(outputDirectory, "mta");
-                    if (Directory.Exists(baseDirectory))
-                    {
-                        Console.Error.WriteLine("Warning:" + string.Format("Directory {0} already exists!", baseDirectory));
-                    }
-                    else
-                    {
-                        Directory.CreateDirectory(baseDirectory);
-                    }
-
-                    // TODO: For metadata file, one file per project per run(merge after the run)
-                    var metadataFilePath = Path.Combine(baseDirectory, (project.Name + ".docmta").ToValidFilePath());
-
                     string message;
-                    if (!TryExportMetadataFile(namespaceMapping, metadataFilePath, ExportType.Json, out message) || !TryExportMetadataFile(namespaceMapping, metadataFilePath, ExportType.Yaml, out message))
+                    if (!TryExportMetadataFile(doc, outputDirectory, out message))
                     {
-                        Console.Error.WriteLine("Error: error trying export metadata file {0}, {1}", metadataFilePath, message);
+                        Console.Error.WriteLine("Error: error trying export metadata file {0}, {1}", outputDirectory, message);
                     }
                     else
                     {
-                        Console.WriteLine("Metadata file for {0} is successfully generated under {1}", project.Name, outputDirectory);
+                        Console.WriteLine("Metadata file for {0} is successfully generated under {1}", outputDirectory, outputDirectory);
                     }
                 }
 
@@ -125,9 +117,54 @@ namespace DocAsCode.BuildMeta
                 {
                     throw new NotImplementedException();
                 }
-
-                Console.WriteLine("Metadata files successfully generated under {0}", Path.GetFullPath(outputDirectory));
             }
+        }
+
+        private static DocumentationMetadata MergeProjectMetadata(List<ProjectMetadata> projectMetadataList)
+        {
+            DocumentationMetadata document = new DocumentationMetadata();
+            document.Namespaces = new IdentityMapping<NamespaceMetadata>();
+            document.AllMembers = new IdentityMapping<IMetadata>();
+            if (projectMetadataList == null || projectMetadataList.Count == 0)
+            {
+                return null;
+            }
+
+            foreach (var project in projectMetadataList)
+            {
+                if (project.Namespaces != null)
+                {
+                    foreach (var ns in project.Namespaces)
+                    {
+                        NamespaceMetadata nsOther;
+                        if (document.Namespaces.TryGetValue(ns.Key, out nsOther))
+                        {
+                            ns.Value.Members.AddRange(nsOther.Members);
+                        }
+                        else
+                        {
+                            document.Namespaces.Add(ns.Key, ns.Value);
+                        }
+                        document.AllMembers.Add(ns.Key, ns.Value);
+                        if (ns.Value.Members != null)
+                        {
+                            ns.Value.Members.ForEach(s =>
+                            {
+                                document.AllMembers.Add(s.Identity, s);
+                                if (s.Members != null)
+                                {
+                                    s.Members.ForEach(s1 =>
+                                    {
+                                        document.AllMembers.Add(s1.Identity, s1);
+                                    });
+                                }
+                            });
+                        }
+                    }
+                }
+            }
+
+            return document;
         }
 
         private class SymbolMetadataTable : ConcurrentDictionary<ISymbol, IMetadata>
@@ -274,47 +311,49 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        public static bool TryExportMetadataFile(ProjectMetadata projectMetadata, string filePath, ExportType exportType, out string message)
+        public static bool TryExportMetadataFile(DocumentationMetadata doc, string folder, out string message)
         {
+            // Folder structure
+            // toc.yaml # toc containing all the namespaces
+            // api.yaml # id-yaml mapping
+            // api/{id}.yaml # items
             message = string.Empty;
+            const string YamlExtension = ".yaml";
+            const string TocYamlFileName = "toc" + YamlExtension;
+            const string ApiYamlFileName = "api" + YamlExtension;
+            const string ApiFolder = "api";
             try
             {
-                if (exportType == ExportType.Json)
+                Serializer serializer = new Serializer();
+                var viewModel = doc.ToYamlViewModel(ApiFolder);
+
+                // 1. generate toc.yaml
+                string tocFilePath = Path.Combine(folder, TocYamlFileName);
+                using (StreamWriter sw = new StreamWriter(tocFilePath))
                 {
-                    filePath = Path.ChangeExtension(filePath, ".json");
-                }
-                else if (exportType == ExportType.Yaml)
-                {
-                    filePath = Path.ChangeExtension(filePath, ".yaml");
+                    serializer.Serialize(sw, viewModel.TocYamlViewModel);
                 }
 
-                using (StreamWriter streamWriter = new StreamWriter(filePath))
-                {
-                    if (exportType == ExportType.Json)
-                    {
-                        JsonUtility.Serialize(projectMetadata, streamWriter);
-                    }
-                    else if (exportType == ExportType.Yaml)
-                    {
-                        Serializer serializer = new Serializer();
-                        var viewModel = projectMetadata.ToYamlViewModel();
-                        serializer.Serialize(streamWriter, viewModel.IndexYamlViewModel);
-                        using (StreamWriter sw = new StreamWriter(Path.ChangeExtension(filePath, "toc.yaml")))
-                        {
-                            serializer.Serialize(sw, viewModel.TocYamlViewModel);
-                        }
-                        using (StreamWriter sw = new StreamWriter(Path.ChangeExtension(filePath, "md.yaml")))
-                        {
-                            serializer.Serialize(sw, viewModel.MarkdownYamlViewModel);
-                        }
-                    }
-                    else
-                    {
-                        throw new NotSupportedException();
-                    }
+                // 2. generate api.yaml
+                string apiFilePath = Path.Combine(folder, ApiYamlFileName);
 
-                    return true;
+                using (StreamWriter sw = new StreamWriter(apiFilePath))
+                {
+                    serializer.Serialize(sw, viewModel.IndexYamlViewModel);
                 }
+
+                // 3. generate each item's yaml
+                foreach(var item in viewModel.MemberYamlViewModelList)
+                {
+                    string itemFilepath = Path.Combine(folder, item.YamlPath);
+                    Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
+                    using (StreamWriter sw = new StreamWriter(itemFilepath))
+                    {
+                        serializer.Serialize(sw, item);
+                    }
+                }
+
+                return true;
             }
             catch (Exception e)
             {
@@ -322,11 +361,5 @@ namespace DocAsCode.BuildMeta
                 return false;
             }
         }
-    }
-
-    public enum ExportType
-    {
-        Json,
-        Yaml
     }
 }

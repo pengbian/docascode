@@ -35,6 +35,7 @@ namespace EntityModel
 
     public enum MemberType
     {
+        Toc,
         Assembly,
         Namespace,
         Class,

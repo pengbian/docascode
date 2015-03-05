@@ -17,6 +17,12 @@ namespace EntityModel
         public List<NamespaceMemberMetadata> Members { get { return _members; } set { _members = value; } }
     }
 
+    public class DocumentationMetadata
+    {
+        public IdentityMapping<NamespaceMetadata> Namespaces { get; set; }
+        public IdentityMapping<IMetadata> AllMembers { get; set; }
+    }
+
     public class ProjectMetadata
     {
         public string ProjectName { get; set; }
