@@ -1,0 +1,33 @@
+name: namespace2
+id: namespace2
+type: namespace
+sourceurl: a
+description: Namespace
+remarks: Namespace-MD
+itemtypes:
+  - name: class
+    description: Classes
+  - name: interface
+    description: Interfaces
+  - name: struct
+    description: Structs
+items:
+  - name: class1
+    href: api/class1
+    description: test description
+    type: class
+  - name: class2
+    href: api/class2
+    type: class
+  - name: class3
+    href: api/class3
+    type: class
+  - name: interface1
+    href: api/interface1
+    type: interface
+  - name: interface2
+    href: api/interface2
+    type: interface
+  - name: interface3
+    href: api/interface3
+    type: interface

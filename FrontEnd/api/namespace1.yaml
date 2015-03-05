@@ -1,0 +1,7 @@
+name: namespace1
+id: namespace1
+type: namespace
+items:
+  class1:
+    name: class1
+    href: api/class1

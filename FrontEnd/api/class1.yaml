@@ -1,0 +1,47 @@
+name: class1
+id: class1
+type: class
+sourceurl: code_source url to be implemented
+remarksourceurl : markdown_source_to_be_implemented
+description: Class1 description
+remarks: Class1 remarks
+inheritence:
+  - name: class1.base
+    href: class1.base
+  - name: class1.base.base
+    href: class1.base.base
+itemtypes:
+  - name: method
+    description: Methods
+  - name: constructor
+    description: Constructors
+items:
+  - name: method1
+    href: api/method1
+    type: method
+    sourceurl: code_source url to be implemented
+    remarksourceurl : markdown_source_to_be_implemented
+    description: Class1 description
+    remarks: Class1 remarks
+    syntax:
+      - type: csharp
+        content: public void method1(int input)
+        parameters:
+          - name: input
+            type: 
+              name: System.int
+              href: http://msdn
+            description: description for input
+        return:
+          name: return
+          type: 
+            name: System.int
+            href: http://msdn
+          description: description for input
+  - name: ctor1
+    href: api/ctor1
+    type: constructor
+    sourceurl: code_source url to be implemented
+    remarksourceurl : markdown_source_to_be_implemented
+    description: Class1 description
+    remarks: Class1 remarks
