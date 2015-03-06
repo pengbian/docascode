@@ -110,6 +110,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <None Include="Assets\Markdown\About.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Assets\Metadata\TestClass1.docmta">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -131,7 +134,7 @@
     <None Include="Assets\TestClass1\TestClass2\Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Compile Include="BuildDocUnitTest.cs" />
+    <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
@@ -144,6 +147,10 @@
     <ProjectReference Include="..\GenDoc\EntityModel\EntityModel.csproj">
       <Project>{a4be543d-2cf1-40ab-9889-e9e48cbf7dfe}</Project>
       <Name>EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GenDoc\Utility\Utility.csproj">
+      <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
+      <Name>Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

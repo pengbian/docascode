@@ -95,7 +95,7 @@ namespace EntityModel.ViewModel
         /// </summary>
         /// <param name="csharpSyntax"></param>
         /// <returns></returns>
-        public static List<YamlItemParameterViewModel> ToParams(this SyntaxDescription csharpSyntax, Dictionary<string, ApiLinkItemViewModel> apis)
+        public static List<YamlItemParameterViewModel> ToParams(this SyntaxDescription csharpSyntax, Dictionary<string, IndexYamlItemViewModel> apis)
         {
             List<YamlItemParameterViewModel> itemParams = new List<YamlItemParameterViewModel>();
             switch (csharpSyntax.SyntaxType)
@@ -162,7 +162,7 @@ namespace EntityModel.ViewModel
             {
                 foreach (var param in itemParams)
                 {
-                    ApiLinkItemViewModel item;
+                    IndexYamlItemViewModel item;
                     if (apis.TryGetValue(param.Type.Name, out item)){
                         param.Type.Href = apis[param.Type.Name].Href;
                     }else
@@ -176,7 +176,7 @@ namespace EntityModel.ViewModel
             return itemParams;
         }
 
-        public static YamlItemViewModel ToItem(this IMetadata member, Dictionary<string, ApiLinkItemViewModel> apis)
+        public static YamlItemViewModel ToItem(this IMetadata member, Dictionary<string, IndexYamlItemViewModel> apis)
         {
             var memberItem = new YamlItemViewModel();
             string[] assemblyInfos = member.AssemblyName.Split(new char[] { ' ', ',' });
@@ -213,7 +213,7 @@ namespace EntityModel.ViewModel
         {
             YamlViewModel yamlViewModel = new YamlViewModel();
             yamlViewModel.MemberYamlViewModelList = new List<YamlItemViewModel>();
-            yamlViewModel.IndexYamlViewModel = docMetadata.AllMembers.Select(s => new ApiLinkItemViewModel
+            yamlViewModel.IndexYamlViewModel = docMetadata.AllMembers.Select(s => new IndexYamlItemViewModel
             {
                 Name = s.Key.ToId(),
                 Href = folderName + "/" + s.Key.ToId(),

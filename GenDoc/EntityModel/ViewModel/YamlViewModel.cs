@@ -55,6 +55,7 @@ namespace EntityModel.ViewModel
 
     public class YamlItemViewModel
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
         public string Name { get; set; }
         public string Href { get; set; }
         public string YamlPath { get; set; }
@@ -74,11 +75,11 @@ namespace EntityModel.ViewModel
     public class YamlViewModel
     {
         public YamlItemViewModel TocYamlViewModel { get; set; }
-        public Dictionary<string, ApiLinkItemViewModel> IndexYamlViewModel { get; set; }
+        public Dictionary<string, IndexYamlItemViewModel> IndexYamlViewModel { get; set; }
         public List<YamlItemViewModel> MemberYamlViewModelList { get; set; }
     }
 
-    public class ApiLinkItemViewModel
+    public class IndexYamlItemViewModel
     {
         public string Name { get; set; }
         public string YamlPath { get; set; }

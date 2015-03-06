@@ -118,8 +118,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuildDocHelper.cs" />
     <Compile Include="BuildMetaHelper.cs" />
+    <Compile Include="BuildMarkdownIndexHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

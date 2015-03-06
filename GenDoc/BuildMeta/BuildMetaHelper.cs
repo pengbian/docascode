@@ -24,111 +24,240 @@ namespace DocAsCode.BuildMeta
 {
     public static class BuildMetaHelper
     {
-        public static async Task GenerateMetadataAsync(string slnOrProjectPath, string outputDirectory, string delimitedProjectFileNames, OutputType outputType)
+        private const string ListFileExtension = ".list";
+        /// <summary>
+        /// Could be absolute path
+        /// </summary>
+        /// <param name="projectListFile"></param>
+        /// <param name="outputFolder"></param>
+        /// <param name="outputListFile"></param>
+        /// <returns></returns>
+        public static async Task<ParseResult> GenerateMetadataFromProjectListAsync(string projectListFile, string outputListFilePath)
         {
-            if (string.IsNullOrEmpty(slnOrProjectPath))
+            List<string> projectList;
+            if (Path.GetExtension(projectListFile) == ListFileExtension)
             {
-                throw new ArgumentNullException("slnOrProjectPath");
-            }
-
-            List<Project> projects = new List<Project>();
-            var fileExtension = Path.GetExtension(slnOrProjectPath);
-            var workspace = MSBuildWorkspace.Create();
-            if (fileExtension == ".sln")
-            {
-                var solution = await workspace.OpenSolutionAsync(slnOrProjectPath);
-                projects = solution.Projects.ToList();
-            }
-            else if (fileExtension == ".csproj")
-            {
-                var project = await workspace.OpenProjectAsync(slnOrProjectPath);
-                projects.Add(project);
+                projectList = FileExtensions.GetFileListFromFile(projectListFile);
             }
             else
             {
-                throw new NotSupportedException(string.Format("Project type {0} is currently not supported", fileExtension));
+                projectList = projectListFile.ToArray(StringSplitOptions.RemoveEmptyEntries, ',').ToList();
             }
 
-            if (projects.Count == 0)
+            if (projectList == null || projectList.Count == 0)
             {
-                Console.Error.WriteLine("No project is found under {0}, exiting...", slnOrProjectPath);
+                return new ParseResult(ResultLevel.Error, "No project file listed in {0}, Exiting", projectListFile);
             }
 
-            if (string.IsNullOrEmpty(outputDirectory))
+            string outputFolder = Path.GetDirectoryName(outputListFilePath);
+            if (string.IsNullOrEmpty(outputFolder))
             {
-                // use the sln/project name as the default output directory
-                outputDirectory = Path.GetFileNameWithoutExtension(slnOrProjectPath);
+                outputFolder = Path.GetRandomFileName();
             }
 
-            if (Directory.Exists(outputDirectory))
+            List<string> outputFileList = await GenerateMetadataFromProjectListCoreAsync(projectList, outputFolder);
+            if (outputFileList != null && outputFileList.Count > 0)
             {
-                Console.Error.WriteLine("Warning: {0} directory already exists.", outputDirectory);
+                FileExtensions.SaveFileListToFile(outputFileList, outputListFilePath);
+                return new ParseResult(ResultLevel.Success);
             }
-
-            Directory.CreateDirectory(outputDirectory);
-
-            if (!string.IsNullOrEmpty(delimitedProjectFileNames))
+            else
             {
-                string[] specifiedProjectFileNames = delimitedProjectFileNames.ToArray(StringSplitOptions.RemoveEmptyEntries, ',');
-                if (specifiedProjectFileNames != null && specifiedProjectFileNames.Length > 0)
-                {
-                    var intersection = projects.Select(s => s.Name).Intersect(specifiedProjectFileNames, StringComparer.OrdinalIgnoreCase);
-                    var invalidProjectFileNames = projects.Select(s => s.Name).Except(intersection).Distinct();
-                    if (invalidProjectFileNames.Any())
-                    {
-                        Console.Error.WriteLine("Project(s) {0} is(are) not available in {1}, will be ignored", invalidProjectFileNames.ToDelimitedString(), slnOrProjectPath);
-                    }
-
-                    var excludedProjectNames = projects.Select(s => s.Name).Except(intersection);
-                    if (excludedProjectNames.Any())
-                    {
-                        Console.Error.WriteLine("Project(s) {0} is(are) not in the specified file list, will be ignored.", excludedProjectNames.ToDelimitedString());
-                    }
-
-                    projects = projects.Where(s => intersection.Contains(s.Name)).ToList();
-                }
-            }
-
-            List<ProjectMetadata> projectMetadata = new List<ProjectMetadata>();
-            foreach (var project in projects)
-            {
-                var namespaceMapping = await GenerateMetadataAsync(project);
-                Debug.Assert(namespaceMapping != null);
-                projectMetadata.Add(namespaceMapping);
-            }
-
-            DocumentationMetadata doc = MergeProjectMetadata(projectMetadata);
-            { 
-                // Each project has its own metadata file
-                if (outputType.HasFlag(OutputType.Metadata))
-                {
-                    string message;
-                    if (!TryExportMetadataFile(doc, outputDirectory, out message))
-                    {
-                        Console.Error.WriteLine("Error: error trying export metadata file {0}, {1}", outputDirectory, message);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Metadata file for {0} is successfully generated under {1}", outputDirectory, outputDirectory);
-                    }
-                }
-
-                if (outputType.HasFlag(OutputType.Markdown))
-                {
-                    throw new NotImplementedException();
-                }
+                return new ParseResult(ResultLevel.Warn, "No metadata file generated for {0}", projectList.ToDelimitedString());
             }
         }
 
+        public static async Task<ParseResult> MergeMetadataFromMetadataListAsync(string metadataListFile, string outputFolder, string indexFileName)
+        {
+            if (string.IsNullOrWhiteSpace(outputFolder))
+            {
+                throw new ArgumentException("output folder is required when merging metadata from metadata list");
+            }
+
+            var metadataList = FileExtensions.GetFileListFromFile(metadataListFile);
+            if (metadataList == null || metadataList.Count == 0)
+            {
+                return new ParseResult(ResultLevel.Error, "No metadata file listed in {0}, Exiting", metadataListFile);
+            }
+
+            string indexFilePath = await MergeMetadataFromMetadataListCoreAsync(metadataList, outputFolder, indexFileName);
+            if (!string.IsNullOrEmpty(indexFilePath))
+            {
+                return new ParseResult(ResultLevel.Success);
+            }
+            else
+            {
+                return new ParseResult(ResultLevel.Warn, "No merged metadata file generated for {0}", metadataList.ToDelimitedString());
+            }
+        }
+
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName)
+        {
+            if (string.IsNullOrWhiteSpace(workingDirectory))
+            {
+                throw new ArgumentException("output folder is required when merging metadata from metadata list");
+            }
+
+            return Task.Run(() => {
+                var markdownList = FileExtensions.GetFileListFromFile(markdownListFile);
+                if (markdownList == null || markdownList.Count == 0)
+                {
+                    return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", markdownListFile);
+                }
+
+                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList);
+                if (!string.IsNullOrEmpty(indexFilePath))
+                {
+                    return new ParseResult(ResultLevel.Success);
+                }
+                else
+                {
+                    return new ParseResult(ResultLevel.Warn, "No markdown file is generated for {0}", markdownListFile);
+                }
+            });
+        }
+
+        private static MSBuildWorkspace workspace = MSBuildWorkspace.Create();
+
+        private static async Task<List<string>> GenerateMetadataFromProjectListCoreAsync(List<string> projectFiles, string outputFolder)
+        {
+            if (projectFiles == null || projectFiles.Count == 0)
+            {
+                return null;
+            }
+
+            List<string> outputFilePathList = new List<string>();
+            if (!string.IsNullOrEmpty(outputFolder))
+            {
+                if (Directory.Exists(outputFolder))
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "{0} directory already exists.", outputFolder);
+                }
+                else
+                {
+                    Directory.CreateDirectory(outputFolder);
+                }
+            }
+
+            HashSet<ProjectId> tempMapping = new HashSet<ProjectId>();
+
+            foreach (var projectFile in projectFiles)
+            {
+                List<Project> projects = new List<Project>();
+                var fileExtension = Path.GetExtension(projectFile);
+                if (fileExtension == ".sln")
+                {
+                    var solution = await workspace.OpenSolutionAsync(projectFile);
+                    projects = solution.Projects.ToList();
+                }
+                else if (fileExtension == ".csproj")
+                {
+                    var project = await workspace.OpenProjectAsync(projectFile);
+                    projects.Add(project);
+                }
+                else
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "Project type {0} is currently not supported, ignored", fileExtension);
+                    continue;
+                }
+
+                if (projects.Count == 0)
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "No project is found under {0}, ignored", projectFile);
+                    continue;
+                }
+
+                foreach (var project in projects)
+                {
+                    if (tempMapping.Contains(project.Id))
+                    {
+                        ParseResult.WriteToConsole(ResultLevel.Info, "Metadata for project {0} already generated.", project.Name);
+                        continue;
+                    }
+                    else
+                    {
+                        tempMapping.Add(project.Id);
+                    }
+
+                    string projectFilePath;
+                    var projectMetadata = await GenerateMetadataAsync(project);
+                    var result = TryExportMetadataFile(projectMetadata, outputFolder, UriKind.Absolute, out projectFilePath);
+                    if (result.ResultLevel == ResultLevel.Success)
+                    {
+                        outputFilePathList.Add(projectFilePath);
+                    }
+
+                    result.WriteToConsole();
+                }
+            }
+
+            return outputFilePathList;
+        }
+
+        private static async Task<string> MergeMetadataFromMetadataListCoreAsync(List<string> metadataFiles, string outputFolder, string indexFileName)
+        {
+            if (metadataFiles == null || metadataFiles.Count == 0)
+            {
+                return null;
+            }
+
+            List<string> outputFilePathList = new List<string>();
+            if (Directory.Exists(outputFolder))
+            {
+                ParseResult.WriteToConsole(ResultLevel.Warn, "{0} directory already exists.", outputFolder);
+            }
+            else
+            {
+                Directory.CreateDirectory(outputFolder);
+            }
+
+            List<ProjectMetadata> projectMetadataList = new List<ProjectMetadata>();
+            foreach (var metadataFile in metadataFiles)
+            {
+                string projectFilePath;
+                ProjectMetadata projectMetadata;
+                var result = TryParseMetadataFile(metadataFile, out projectMetadata);
+                if (result.ResultLevel == ResultLevel.Success)
+                {
+                    projectMetadataList.Add(projectMetadata);
+                }
+                else
+                {
+                    result.WriteToConsole();
+                }
+            }
+            DocumentationMetadata documentationMetadata = MergeProjectMetadata(projectMetadataList);
+
+            if (documentationMetadata == null)
+            {
+                ParseResult.WriteToConsole(ResultLevel.Error, "No metadata is generated for {0}.", metadataFiles.ToDelimitedString());
+            }
+            else
+            {
+                string indexFilePath;
+                ParseResult result = TryExportMetadataFile(documentationMetadata, outputFolder, indexFileName, out indexFilePath);
+                if (result.ResultLevel == ResultLevel.Success)
+                {
+                    return indexFilePath;
+                }
+                else
+                {
+                    result.WriteToConsole();
+                }
+            }
+
+            return null;
+        }
         private static DocumentationMetadata MergeProjectMetadata(List<ProjectMetadata> projectMetadataList)
         {
-            DocumentationMetadata document = new DocumentationMetadata();
-            document.Namespaces = new IdentityMapping<NamespaceMetadata>();
-            document.AllMembers = new IdentityMapping<IMetadata>();
             if (projectMetadataList == null || projectMetadataList.Count == 0)
             {
                 return null;
             }
+
+            DocumentationMetadata document = new DocumentationMetadata();
+            document.Namespaces = new IdentityMapping<NamespaceMetadata>();
+            document.AllMembers = new IdentityMapping<IMetadata>();
 
             foreach (var project in projectMetadataList)
             {
@@ -145,17 +274,36 @@ namespace DocAsCode.BuildMeta
                         {
                             document.Namespaces.Add(ns.Key, ns.Value);
                         }
-                        document.AllMembers.Add(ns.Key, ns.Value);
+
+                        document.AllMembers.GetOrAdd(ns.Key, ns.Value);
                         if (ns.Value.Members != null)
                         {
                             ns.Value.Members.ForEach(s =>
                             {
-                                document.AllMembers.Add(s.Identity, s);
+                                IMetadata existingMetadata;
+                                if (document.AllMembers.TryGetValue(s.Identity, out existingMetadata))
+                                {
+                                    ParseResult.WriteToConsole(ResultLevel.Error, "Duplicate member {0} is found from {1} and {2}, use the one in {1} and ignore the one from {2}", s.Identity.ToString(), existingMetadata.FilePath, s.FilePath);
+                                }
+                                else
+                                {
+                                    document.AllMembers.Add(s.Identity, s);
+
+                                }
+
                                 if (s.Members != null)
                                 {
                                     s.Members.ForEach(s1 =>
                                     {
-                                        document.AllMembers.Add(s1.Identity, s1);
+                                        IMetadata existingMetadata1;
+                                        if (document.AllMembers.TryGetValue(s1.Identity, out existingMetadata1))
+                                        {
+                                            ParseResult.WriteToConsole(ResultLevel.Error, "Duplicate member {0} is found from {1} and {2}, use the one in {1} and ignore the one from {2}", s1.Identity.ToString(), existingMetadata1.FilePath, s1.FilePath);
+                                        }
+                                        else
+                                        {
+                                            document.AllMembers.Add(s1.Identity, s1);
+                                        }
                                     });
                                 }
                             });
@@ -311,55 +459,117 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        public static bool TryExportMetadataFile(DocumentationMetadata doc, string folder, out string message)
+        private static ParseResult TryParseMetadataFile(string metadataFileName, out ProjectMetadata projectMetadata)
+        {
+            projectMetadata = null;
+            try
+            {
+                using (StreamReader reader = new StreamReader(metadataFileName))
+                {
+                    projectMetadata = JsonUtility.Deserialize<ProjectMetadata>(reader);
+                    return new ParseResult(ResultLevel.Success);
+                }
+            }
+            catch (Exception e)
+            {
+                return new ParseResult(ResultLevel.Error, e.Message);
+            }
+        }
+
+        private static ParseResult TryExportMetadataFile(ProjectMetadata doc, string folder, UriKind uriKind, out string filePath)
+        {
+            filePath = Path.Combine(folder, doc.ProjectName).FormatPath(uriKind, folder);
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    JsonUtility.Serialize(doc, writer);
+                    return new ParseResult(ResultLevel.Success, "Successfully generated metadata {0} for {1}", filePath, doc.ProjectName);
+                }
+            }
+            catch (Exception e)
+            {
+                return new ParseResult(ResultLevel.Error, e.Message);
+            }
+        }
+
+        private static ParseResult TryExportMetadataFile(DocumentationMetadata doc, string folder, string indexFileName, out string indexFilePath)
         {
             // Folder structure
             // toc.yaml # toc containing all the namespaces
             // api.yaml # id-yaml mapping
             // api/{id}.yaml # items
-            message = string.Empty;
             const string YamlExtension = ".yaml";
             const string TocYamlFileName = "toc" + YamlExtension;
-            const string ApiYamlFileName = "api" + YamlExtension;
             const string ApiFolder = "api";
-            try
+            indexFilePath = null;
+            var viewModel = doc.ToYamlViewModel(ApiFolder);
+
+            // 1. generate toc.yaml
+            string tocFilePath = Path.Combine(folder, TocYamlFileName);
+            using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
-                Serializer serializer = new Serializer();
-                var viewModel = doc.ToYamlViewModel(ApiFolder);
+                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlViewModel);
+            }
 
-                // 1. generate toc.yaml
-                string tocFilePath = Path.Combine(folder, TocYamlFileName);
-                using (StreamWriter sw = new StreamWriter(tocFilePath))
+            // 2. generate api.yaml
+            indexFilePath = Path.Combine(folder, indexFileName);
+            using (StreamWriter sw = new StreamWriter(indexFilePath))
+            {
+                YamlUtility.Serializer.Serialize(sw, viewModel.IndexYamlViewModel);
+            }
+
+            // 3. generate each item's yaml
+            foreach (var item in viewModel.MemberYamlViewModelList)
+            {
+                string itemFilepath = Path.Combine(folder, item.YamlPath);
+                Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
+                using (StreamWriter sw = new StreamWriter(itemFilepath))
                 {
-                    serializer.Serialize(sw, viewModel.TocYamlViewModel);
+                    YamlUtility.Serializer.Serialize(sw, item);
+                    ParseResult.WriteToConsole(ResultLevel.Success, "Metadata file for {0} is saved to {1}", item.Name, itemFilepath);
                 }
+            }
 
-                // 2. generate api.yaml
-                string apiFilePath = Path.Combine(folder, ApiYamlFileName);
+            return new ParseResult(ResultLevel.Success);
+        }
 
-                using (StreamWriter sw = new StreamWriter(apiFilePath))
+        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles)
+        {
+            Dictionary<string, IndexYamlItemViewModel> indexViewModel;
+
+            // Read index
+            string indexFilePath = Path.Combine(workingDirectory, indexFileName);
+            using (StreamReader sr = new StreamReader(indexFilePath))
+            {
+                indexViewModel = YamlUtility.Deserializer.Deserialize<Dictionary<string, IndexYamlItemViewModel>>(sr);
+            }
+
+            // Generate markdown index
+            if (mdFiles != null && mdFiles.Count > 0)
+            {
+                var mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel);
+                if (mdresult.Any())
                 {
-                    serializer.Serialize(sw, viewModel.IndexYamlViewModel);
-                }
-
-                // 3. generate each item's yaml
-                foreach(var item in viewModel.MemberYamlViewModelList)
-                {
-                    string itemFilepath = Path.Combine(folder, item.YamlPath);
-                    Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
-                    using (StreamWriter sw = new StreamWriter(itemFilepath))
+                    string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);
+                    using (StreamWriter sw = new StreamWriter(markdownIndexFilePath))
                     {
-                        serializer.Serialize(sw, item);
+                        YamlUtility.Serializer.Serialize(sw, mdresult);
+                        return markdownIndexFilePath;
                     }
                 }
-
-                return true;
+                else
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "No api matching the markdown file headers is found.");
+                }
             }
-            catch (Exception e)
+            else
             {
-                message = e.Message;
-                return false;
+                ParseResult.WriteToConsole(ResultLevel.Success, "Markdown index file {0} is successfully generated.", indexFilePath);
             }
+
+            return null;
         }
     }
 }

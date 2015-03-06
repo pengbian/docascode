@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using EntityModel;
 using Newtonsoft.Json.Converters;
 using System.Collections;
+using YamlDotNet.Serialization;
 
 /// <summary>
 /// The utility class for docascode project
@@ -121,6 +122,97 @@ namespace DocAsCode.Utility
 
             return new string(input.Select(s => InvalidFilePathChars.Contains(s) ? '_' : s).ToArray());
         }
+
+        public static void SaveFileListToFile(List<string> fileList, string filePath)
+        {
+            if (string.IsNullOrWhiteSpace(filePath) || fileList == null || fileList.Count == 0)
+            {
+                return;
+            }
+
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                fileList.ForEach(s => writer.WriteLine(s));
+            }
+        }
+
+        public static List<string> GetFileListFromFile(string filePath)
+        {
+            if (string.IsNullOrWhiteSpace(filePath))
+            {
+                return null;
+            }
+
+            List<string> fileList = new List<string>();
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                while (!reader.EndOfStream)
+                {
+                    fileList.Add(reader.ReadLine());
+                }
+            }
+
+            return fileList;
+        }
+
+        /// <summary>
+        /// Creates a relative path from one file or folder to another.
+        /// </summary>
+        /// <param name="basePath">Contains the directory that defines the start of the relative path.</param>
+        /// <param name="absolutePath">Contains the path that defines the endpoint of the relative path.</param>
+        /// <returns>The relative path from the start directory to the end path.</returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="UriFormatException"></exception>
+        /// <exception cref="InvalidOperationException"></exception>
+        public static string MakeRelativePath(string basePath, string absolutePath)
+        {
+            if (string.IsNullOrEmpty(basePath)) throw new ArgumentNullException("fromPath");
+            if (string.IsNullOrEmpty(absolutePath)) throw new ArgumentNullException("toPath");
+
+            Uri fromUri = new Uri(basePath);
+            Uri toUri = new Uri(absolutePath);
+
+            if (fromUri.Scheme != toUri.Scheme) { return absolutePath; } // path can't be made relative.
+
+            Uri relativeUri = fromUri.MakeRelativeUri(toUri);
+            string relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+
+            if (toUri.Scheme.ToUpperInvariant() == "FILE")
+            {
+                relativePath = relativePath.Replace(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar);
+            }
+
+            return relativePath;
+        }
+
+        public static string FormatPath(this string path, UriKind kind, string basePath = null)
+        {
+            if (kind == UriKind.RelativeOrAbsolute)
+            {
+                return path;
+            }
+            if (kind == UriKind.Absolute)
+            {
+                return Path.GetFullPath(path);
+            }
+            if (kind == UriKind.Relative)
+            {
+                if (basePath == null)
+                {
+                    return path;
+                }
+
+                return MakeRelativePath(basePath, path);
+            }
+
+            return null;
+        }
+    }
+
+    public static class YamlUtility
+    {
+        public static Serializer Serializer = new Serializer();
+        public static Deserializer Deserializer = new Deserializer();
     }
 
     public static class JsonUtility

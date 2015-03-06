@@ -26,44 +26,51 @@ namespace DocAsCode.BuildMeta
         PublishDocumentation
     }
 
-    [Flags]
-    public enum OutputType
-    {
-        Metadata = 0x1,
-        Markdown = 0x2,
-        Both = 0x3,
-    }
-
     public class Program
     {
         static int Main(string[] args)
         {
-            string slnOrProjectPath = null;
-            string outputDirectory = null;
-            string delimitedProjectFileNames = null;
-            OutputType outputType = OutputType.Metadata;
+            const string DefaultOutputListFileName = "output.list";
+            const string DefaultTocFileName = "toc.yaml";
+            const string DefaultIndexFileName = "index.yaml";
+            const string DefaultMarkdownFileName = "md.yaml";
+            const string DefaultApiFolderName = "api";
+            const string DefaultOutputFolderName = "output";
+            string projectListFile = null;
+            string outputFolder = null;
+            string outputListFile = null;
+            string markdownListFile = null;
+            string markdownIndexFileName = null;
+            string tocFileName = null;
+            string indexFileName = null;
+            string apiFolderName = null;
 
             try
             {
                 var options = new Option[]
                     {
-                    new Option(null, s => slnOrProjectPath = s, helpName: "solutionPath/projectPath", required: true, helpText: @"The path of the solution or the project whose metadata is to be generated"),
-                    new Option("o", s => outputDirectory = s, defaultValue: null, helpName: "outputDirectory", helpText: "The output metadata files will be generated into this folder. If not set, the default output directory would be under the current folder with the sln name"),
-                    new Option("p", s => delimitedProjectFileNames = s, defaultValue: null, helpName: "delimitedProjectFiles", helpText: "Specifiy the project names whose metadata file will be generated, delimits files with comma"),
-                    new Option("t", s => outputType = (OutputType)Enum.Parse(typeof(OutputType), s, true), defaultValue: outputType.ToString(), helpName: "outputType", helpText: "could be Both, Metadata or Markdown; specifiy if the docmta or the markdown file will be generated, by default is Both as both the docmta and the markdown file will be generated"),
+                    new Option(null, p => projectListFile = p, helpName: "projectListFile", required: true, helpText: "Required. Specify [1. the file path with extension .list | 2. the file list seperated by comma(,)] that contains all the project/solution paths whose metadata is to be generated."),
+                    new Option("m", s => markdownListFile = s, defaultValue: null, helpName: "markdownListFile", helpText: "Specify the file path that contains all the additional markdown files. (default: null)."),
+                    new Option("o", s => outputFolder = s, defaultValue: DefaultOutputFolderName, helpName: "outputFolder", helpText: "Specify the output folder that contains all the generated metadata files. (default: " + DefaultOutputFolderName + ")."),
+                    new Option("toc", s => tocFileName = s, defaultValue: DefaultTocFileName, helpName: "tocFileName", helpText: "Specify the file name containing all the namespace yaml file paths. (default: " + DefaultTocFileName + ")."),
+                    new Option("index", s => indexFileName = s, defaultValue: DefaultIndexFileName, helpName: "indexFileName", helpText: "Specify the file name containing all the available yaml files. (default: " + DefaultIndexFileName + ")."),
+                    new Option("md", s => markdownIndexFileName = s, defaultValue: DefaultMarkdownFileName, helpName: "markdownIndexFileName", helpText: "Specify the file name containing all the markdown index. (default: " + DefaultMarkdownFileName + ")."),
+                    new Option("folder", s => apiFolderName = s, defaultValue: DefaultApiFolderName, helpName: "apiFolderName", helpText: "Specify the subfolder name containing all the member's yaml file. (default: " + DefaultApiFolderName + ")."),
                     };
 
                 if (!ConsoleParameterParser.ParseParameters(options, args))
                 {
                     return 1;
                 }
-
-                BuildMetaHelper.GenerateMetadataAsync(slnOrProjectPath, outputDirectory, delimitedProjectFileNames, outputType).Wait();
+                outputListFile = Path.GetRandomFileName();
+                BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectListFile, outputListFile).Wait();
+                BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputListFile, outputFolder, indexFileName).Wait();
+                BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, indexFileName, markdownListFile, markdownIndexFileName).Wait();
                 return 0;
             }
             catch (Exception e)
             {
-                Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", slnOrProjectPath, e);
+                Console.Error.WriteLine("Failing in generating metadata from {0}: {1}", projectListFile, e);
                 return 1;
             }
         }

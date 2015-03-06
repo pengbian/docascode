@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DocAsCode.BuildMeta;
 using System.IO;
 using System.Threading.Tasks;
+using DocAsCode.Utility;
 
 namespace UnitTest
 {
@@ -19,21 +20,32 @@ namespace UnitTest
         public async Task TestGenereateMetadataAsync_SimpleProject()
         {
             string slnPath = "Assets/TestClass1/BaseClassForTestClass1/BaseClassForTestClass1.csproj";
+            string fileList = "filelist.list";
+            File.WriteAllText(fileList, slnPath);
+            string outputList = "output.list";
             string outputDirectory = "output";
-            await BuildMetaHelper.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
-
+            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
+            Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
         }
 
         [TestMethod]
         [DeploymentItem("Assets", "Assets")]
-        public async Task TestGenereateMetadataAsync_Solution()
+        public async Task TestGenereateMetadataAsync_Solution_Overall()
         {
-            string slnPath = "Assets/TestClass1/TestClass1.sln";
+            string[] slnPath = new string[] { "Assets/TestClass1/TestClass1.sln", @"Assets\TestClass1\TestClass1\TestClass1.csproj" };
+            string fileList = "filelist.list";
+            File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
+            string outputList = Path.GetRandomFileName();
             string outputDirectory = "output";
-            await BuildMetaHelper.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
-
+            string mdList = "md.list";
+            File.WriteAllText(mdList, "Assets/Markdown/About.md");
+            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml");
+            Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
+            Assert.Fail();
         }
 
         [TestMethod]
@@ -41,9 +53,12 @@ namespace UnitTest
         public async Task TestGenereateMetadataAsync_Project()
         {
             string slnPath = @"Assets\TestClass1\TestClass1\TestClass1.csproj";
+            string fileList = "filelist.list";
+            File.WriteAllText(fileList, slnPath);
+            string outputList = "output.list";
             string outputDirectory = "output";
-            await BuildMetaHelper.GenerateMetadataAsync(slnPath, outputDirectory, null, OutputType.Metadata);
-
+            await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
+            Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
         }
     }
