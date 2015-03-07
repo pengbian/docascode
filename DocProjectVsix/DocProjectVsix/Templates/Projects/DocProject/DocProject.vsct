@@ -93,7 +93,7 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidDocContextMenuPackagePkg" value="{197d8579-59cd-4d80-bf9e-8e01e270775d}" />
+    <GuidSymbol name="guidDocContextMenuPackagePkg" value="{197d8579-59cd-4d80-bf9e-8e01e270775c}" />
 
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidDocContextMenuPackageCmdSet" value="{0be74276-7d6f-4c26-9029-402bc9b533e1}">

@@ -135,7 +135,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Content Include="Resources\Package.ico" />
-    <Compile Include="DocContextMenuPackagePackage.cs" />
     <Compile Include="GeneralPropertyPage.cs" />
     <Compile Include="PkgCmdID.cs" />
     <Compile Include="PublishToGithubOperation.cs" />

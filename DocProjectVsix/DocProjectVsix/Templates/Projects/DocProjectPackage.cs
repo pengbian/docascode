@@ -35,6 +35,7 @@ namespace MicrosoftIT.DocProject
     ".\\NullPath", LanguageVsTemplate = "DocProject")]
     [Guid(GuidList.guidDocProjectPkgString)]
     [ProvideObject(typeof(GeneralPropertyPage))]
+    [ProvideMenuResource("Menus.ctmenu", 1)]
     public sealed class DocProjectPackage : ProjectPackage
     {
         /// <summary>
@@ -48,8 +49,6 @@ namespace MicrosoftIT.DocProject
         {
             Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
         }
-
-
 
         /////////////////////////////////////////////////////////////////////////////
         // Overridden Package Implementation
