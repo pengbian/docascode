@@ -33,6 +33,7 @@ namespace MicrosoftIT.DocProject
     "Doc Project Files (*.docproj);*.docproj", "docproj", "docproj",
     ".\\NullPath", LanguageVsTemplate = "DocProject")]
     [Guid(GuidList.guidDocProjectPkgString)]
+    [ProvideObject(typeof(GeneralPropertyPage))]
     public sealed class DocProjectPackage : ProjectPackage
     {
         /// <summary>

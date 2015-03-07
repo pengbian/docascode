@@ -95,7 +95,12 @@ namespace Microsoft.VisualStudio.Project
         /// <summary>
         /// The output type is an executable.
         /// </summary>
-        Exe
+        Exe,
+
+        /// <summary>
+        /// The output type is a documentation
+        /// </summary>
+        Documentation
     }
 
     /// <summary>

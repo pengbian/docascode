@@ -11,6 +11,10 @@ namespace MicrosoftIT.DocProject
         public const string guidDocProjectFactoryString = "11A2578D-D1B7-4B68-87F4-CFFB2F21F86E";
 
         public static readonly Guid guidDocProjectCmdSet = new Guid(guidDocProjectCmdSetString);
-        public static readonly Guid guidDocProjectFactory = new Guid(guidDocProjectFactoryString);
+        public static readonly Guid guidDocProjectFactory = new Guid(guidDocProjectFactoryString); public const string guidDocContextMenuPackagePkgString = "5f89250c-1405-4d24-a40b-8a15404cabeb";
+        public const string guidDocContextMenuPackageCmdSetString = "0be74276-7d6f-4c26-9029-402bc9b533e1";
+
+        public static readonly Guid guidDocContextMenuPackageCmdSet = new Guid(guidDocContextMenuPackageCmdSetString);
+
     };
 }

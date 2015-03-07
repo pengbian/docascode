@@ -81,6 +81,7 @@ namespace Microsoft.VisualStudio.Project
                 if(str == SR.GetString(SR.Exe, culture)) return OutputType.Exe;
                 if(str == SR.GetString(SR.Library, culture)) return OutputType.Library;
                 if(str == SR.GetString(SR.WinExe, culture)) return OutputType.WinExe;
+                if(str == SR.GetString(SR.Documentation, culture)) return OutputType.Documentation;
             }
 
             return base.ConvertFrom(context, culture, value);

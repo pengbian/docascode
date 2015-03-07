@@ -131,7 +131,16 @@
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
+    <Resource Include="Templates\Projects\DocProject\Images.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Resources\Package.ico" />
+    <Compile Include="AddDocProjectOperation.cs" />
+    <Compile Include="DocContextMenuPackagePackage.cs" />
+    <Compile Include="GeneralPropertyPage.cs" />
+    <Compile Include="PkgCmdID.cs" />
+    <Compile Include="PublishToGithubOperation.cs" />
+    <Compile Include="ReferenceDocumentHeler.cs" />
     <Compile Include="Templates\Projects\DocProject\DocProjectFactory.cs" />
     <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
     <Compile Include="Guids.cs" />
@@ -146,7 +155,7 @@
     <VSCTCompile Include="Templates\Projects\DocProject\DocProject.vsct">
       <SubType>Designer</SubType>
     </VSCTCompile>
-    <ZipProject  Include="Templates\Projects\DocProject\template\class-ios.html">
+    <ZipProject Include="Templates\Projects\DocProject\template\class-ios.html">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\template\namespace-ios.html">
@@ -158,24 +167,20 @@
     <ZipProject Include="Templates\Projects\DocProject\styles\default-ios.js">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\DocProject.vstemplate" >
+    <ZipProject Include="Templates\Projects\DocProject\DocProject.vstemplate">
       <RootPath>Templates\Projects\DocProject</RootPath>
-
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\Targets\Microsoft.DocProject.targets">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.docproj">
       <RootPath>Templates\Projects\DocProject</RootPath>
-
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\styles\jquery-2.1.0.min.js">
       <RootPath>Templates\Projects\DocProject</RootPath>
-
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
       <RootPath>Templates\Projects\DocProject</RootPath>
-
     </ZipProject>
   </ItemGroup>
   <PropertyGroup>

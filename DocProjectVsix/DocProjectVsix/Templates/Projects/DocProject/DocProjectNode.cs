@@ -50,5 +50,20 @@ namespace MicrosoftIT.DocProject
             this.FileTemplateProcessor.UntokenFile(source, target);
             this.FileTemplateProcessor.Reset();
         }
+
+        
+        protected override Guid[] GetConfigurationIndependentPropertyPages()
+        {
+            Guid[] result = new Guid[1];
+            result[0] = typeof(GeneralPropertyPage).GUID;
+            return result;
+        }
+
+        protected override Guid[] GetPriorityProjectDesignerPages()
+        {
+            Guid[] result = new Guid[1];
+            result[0] = typeof(GeneralPropertyPage).GUID;
+            return result;
+        }
     }
 }
