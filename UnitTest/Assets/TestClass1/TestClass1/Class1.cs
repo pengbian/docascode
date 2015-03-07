@@ -75,12 +75,12 @@ namespace TestClass1
         }
 
         /// <summary>
-        /// This is a *test* with return and should fail compilation
+        /// This is a *test* with return and <see cref="System.AccessViolationException"/> should fail compilation
         /// </summary>
         /// <returns></returns>
-        public Tuple<string, int> Test2()
+        public Tuple<string, int> Test1_3()
         {
-
+            return null;
         }
 
         /// <summary>

@@ -25,7 +25,7 @@ namespace TestClass1
         /// <returns></returns>
         public Tuple<string, int> Test2()
         {
-
+            return null;
         }
 
         /// <summary>

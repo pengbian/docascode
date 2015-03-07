@@ -21,8 +21,8 @@ namespace UnitTest
       <member name='T:TestClass1.Partial1'>
 
           <summary>
-
-          Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
+ A compilation end action can use a <see cref='CompilationEndAnalysisContext'/>to report <see cref='Diagnostic'/>s about a <see cref='CodeAnalysis.Compilation'/>
+          Parital classes <see cref='T:System.AccessViolationException'/>can not cross assemblies, ```Classes in assemblies are by definition complete.```
 
           </summary>
           <returns>Task</returns>
@@ -33,7 +33,7 @@ namespace UnitTest
      
            </member>";
             var summary = TripleSlashCommentParser.GetSummary(input, true);
-            Assert.AreEqual("Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
+            Assert.AreEqual("Parital classes @T:System.AccessViolationException can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
 
             var returns = TripleSlashCommentParser.GetReturns(input, true);
             Assert.AreEqual("Task", returns);

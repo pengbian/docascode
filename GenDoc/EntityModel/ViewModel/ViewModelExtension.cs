@@ -14,6 +14,32 @@ namespace EntityModel.ViewModel
     {
         public static string GetSummary(string xml, bool trim)
         {
+            // Resolve <see cref> to @ syntax
+            try
+            {
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.LoadXml(xml);
+                    var nav = doc.CreateNavigator();
+                    var iter = nav.Select("/member/summary/see[@cref]");
+                    foreach(XPathNavigator i in iter)
+                    {
+                        var node = i.SelectSingleNode("@cref");
+                        if (node != null)
+                        {
+                            var value = node.Value;
+                            i.InsertAfter("@" + value);
+                            i.DeleteSelf();
+                        }
+                    }
+
+                    xml = doc.InnerXml;
+                }
+            }
+            catch
+            {
+            }
+
             return GetSingleNode(xml, "/member/summary", trim, (e) => null);
         }
 

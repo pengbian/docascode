@@ -242,7 +242,7 @@ namespace DocAsCode.BuildMeta
             else
             {
                 string indexFilePath;
-                ParseResult result = TryExportMetadataFile(allMemebers, outputFolder, indexFileName, out indexFilePath);
+                ParseResult result = ResolveAndExportYamlMetadata(allMemebers, outputFolder, indexFileName, out indexFilePath);
                 if (result.ResultLevel == ResultLevel.Success)
                 {
                     return indexFilePath;
@@ -703,62 +703,14 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        private static ParseResult TryExportMetadataFile(Dictionary<string, YamlItemViewModel> allMembers, string folder, string indexFileName, out string indexFilePath)
+        private static ParseResult ResolveAndExportYamlMetadata(Dictionary<string, YamlItemViewModel> allMembers, string folder, string indexFileName, out string indexFilePath)
         {
-            // Folder structure
-            // toc.yaml # toc containing all the namespaces
-            // api.yaml # id-yaml mapping
-            // api/{id}.yaml # items
-            const string YamlExtension = ".yaml";
-            const string TocYamlFileName = "toc" + YamlExtension;
-            const string ApiFolder = "api";
             indexFilePath = null;
-            YamlViewModel viewModel = new YamlViewModel();
-            viewModel.IndexYamlViewModel = new Dictionary<string, IndexYamlItemViewModel>();
-            viewModel.TocYamlViewModel = new YamlItemViewModel() { Type = MemberType.Toc, Items = new List<YamlItemViewModel>() };
-            viewModel.MemberYamlViewModelList = new List<YamlItemViewModel>();
-            foreach(var member in allMembers.Values)
-            {
-                if (member.Type.IsPageLevel())
-                {
-                    // Add to member yaml list only if the member is in page level
-                    viewModel.MemberYamlViewModelList.Add(member);
 
-                    // If it is a page, follow the convention to generate the YamlPath
-                    member.YamlPath = Path.Combine(ApiFolder, member.Name + YamlExtension);
-                    member.Href = Path.Combine(ApiFolder, member.Name);
-                    if (member.Type == MemberType.Namespace)
-                    {
-                        // Add to index
-                        viewModel.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.YamlPath, Href = member.Href });
-                        // Use the shrinked version of child
-                        viewModel.TocYamlViewModel.Items.Add(member.ShrinkSelfAndChildren());
-                    }
-                    else
-                    {
-                        viewModel.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.YamlPath, Href = member.Href });
-                        if (member.Items != null)
-                        {
-                            // For those inside a page, e.g. method inside a class, inherit the owned classes href and YamlPath
-                            foreach (var i in member.Items)
-                            {
-                                Debug.Assert(!i.Type.IsPageLevel());
-                                if (!i.Type.IsPageLevel())
-                                {
-                                    i.YamlPath = member.YamlPath;
-                                    i.Href = member.Href;
-
-                                    // Add to index
-                                    viewModel.IndexYamlViewModel.Add(i.Name, new IndexYamlItemViewModel { Name = i.Name, YamlPath = i.YamlPath, Href = i.Href });
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            var viewModel = YamlMetadataResolver.ResolveMetadata(allMembers);
 
             // 1. generate toc.yaml
-            string tocFilePath = Path.Combine(folder, TocYamlFileName);
+            string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.YamlPath);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
             {
                 YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlViewModel);
