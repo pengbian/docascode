@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <OutputType>Documentation</OutputType>
-    <DocToolExtensionsPath>Targets</DocToolExtensionsPath>
+    <DocToolExtensionsPath Condition="'$(DocToolExtensionsPath)' == '' ">Targets</DocToolExtensionsPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,5 +27,5 @@
     <Content Include="template/class-ios.html" />
     <Content Include="template/namespace-ios.html" />
   </ItemGroup>
-  <Import Project="$(DocToolExtensionsPath)\Microsoft.DocProject.targets" />
+  <Import Project="Targets\Microsoft.DocProject.targets" />
 </Project>

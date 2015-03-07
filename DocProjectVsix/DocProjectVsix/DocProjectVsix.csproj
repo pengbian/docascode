@@ -118,6 +118,10 @@
   <ItemGroup>
     <None Include="Key.snk" />
     <None Include="packages.config" />
+    <Content Include="ProjectTemplates\DocProject.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -169,6 +173,7 @@
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\Targets\Microsoft.DocProject.targets">
       <RootPath>Templates\Projects\DocProject</RootPath>
+      <SubType>Designer</SubType>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.docproj">
       <RootPath>Templates\Projects\DocProject</RootPath>
@@ -180,6 +185,7 @@
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>

@@ -1,7 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <GenDocMetadataToolPath Condition=" '$(GenDocMetadataToolPath)' == '' ">$(DocToolExtensionsPath)\GenDocMetadata.exe</GenDocMetadataToolPath>
-    <MergeDocToolPath Condition=" '$(MergeDocToolPath)' == '' ">$(DocToolExtensionsPath)\MergeDoc.exe</MergeDocToolPath>
+    <BuildDocToolPath Condition=" '$(BuildDocToolPath)' == '' ">$(DocToolExtensionsPath)\BuildMeta.exe</BuildDocToolPath>
     <PublishDocToolPath Condition=" '$(PublishDocToolPath)' == '' ">$(DocToolExtensionsPath)\PublishDoc.exe</PublishDocToolPath>
     <ConfigPublishToolPath Condition=" '$(ConfigPublishToolPath)' == '' ">$(DocToolExtensionsPath)\ConfigPublish.exe</ConfigPublishToolPath>
     <GithubConfigPath Condition=" '$(GithubConfigPath)' == '' ">GithubPublish.config</GithubConfigPath>
@@ -9,10 +8,15 @@
     <TempOutputDirectory>$(OutputPath)\doctemp</TempOutputDirectory>
   </PropertyGroup>
   <Target Name="Build">
+    <CallTarget Targets="Validation" />
+
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="ConfigGithub" />
-    <CallTarget Targets="BuildDoc" />
+    <CallTarget Targets="GenerateMetadata" />
     <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
+  </Target>
+  <Target Name="Validation">
+    <Error Condition="'$(DocToolExtensionsPath)' == ''" Text="DocToolExtensionsPath is not set! Please set DocToolExtensionsPath to the executive path of BuildMeta.exe to continue build!" ></Error>
   </Target>
   <Target Name ="Clean">
     <!-- TO BE IMPLEMENTED-->
@@ -23,27 +27,28 @@
   </Target>
   <Target Name ="GetFrameworkPaths" />
 
-  <Target Name="CleanupExistingDocmta">
+  <Target Name="CleanupExistingOutput">
     <ItemGroup>
-      <DocMta Include="$(OutputPath)\**\*.docmta" />
+      <OutputFiles Include="$(OutputPath)\**\*.*" />
     </ItemGroup>
     <!-- Cleanup existing docmta -->
-    <Delete Files="@(DocMta)" />
+    <Delete Files="@(OutputFiles)" />
   </Target>
 
-  <Target Name ="BuildDoc">
+  <Target Name ="GenerateMetadata">
     <Message Text ="%(DocMta.FullPath)" />
-    <CallTarget Targets="CleanupExistingDocmta" />
+    <CallTarget Targets="CleanupExistingOutput" />
     <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
-    <Exec Command="$(GenDocMetadataToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(TempOutputDirectory)&quot; /t:Metadata" />
-    <CallTarget Targets="MergeDoc" />
+    <Exec Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(OutputPath)&quot;" />
+    <CallTarget Targets="MergeMetadata" />
   </Target>
 
-  <Target Name="MergeDoc">
-    <ItemGroup>
-      <DocMta Include="$(OutputPath)\**\*.docmta" />
-    </ItemGroup>
-    <Exec Command="$(MergeDocToolPath) &quot;%(DocMta.FullPath)&quot; /outputDirectory:&quot;$(OutputPath)&quot; /templateDirectory:&quot;$(MergeDocTemplatePath)&quot; /delimitedMdFiles:@(Compile->'&quot;%(FullPath)&quot;', ','),@(Content->'&quot;%(FullPath)&quot;', ',')" />
+  <Target Name="MergeMetadata">
+    <CallTarget Targets="IndexMarkdown" />
+  </Target>
+  
+  <Target Name="IndexMarkdown">
+    
   </Target>
 
   <Target Name="PublishDoc">

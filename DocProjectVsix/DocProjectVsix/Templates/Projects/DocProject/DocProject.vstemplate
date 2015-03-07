@@ -14,6 +14,9 @@
         Targets\Microsoft.DocProject.targets
       </ProjectItem>
       <ProjectItem OpenInEditor="true">
+        Targets\Microsoft.DocProject.targets
+      </ProjectItem>
+      <ProjectItem>
         styles\default-ios.css
       </ProjectItem>
       <ProjectItem OpenInEditor="true">
