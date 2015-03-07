@@ -7,6 +7,58 @@ using System.Xml;
 
 namespace EntityModel.ViewModel
 {
+    public static class YamlViewModelExtension
+    {
+        public static bool IsPageLevel(this MemberType type)
+        {
+            return type == MemberType.Namespace || type == MemberType.Class || type == MemberType.Enum || type == MemberType.Delegate || type == MemberType.Interface || type == MemberType.Struct;
+        }
+
+        public static YamlItemViewModel Shrink(this YamlItemViewModel item)
+        {
+            YamlItemViewModel shrinkedItem = new YamlItemViewModel();
+            shrinkedItem.Name = item.Name;
+            shrinkedItem.Href = item.Href;
+            shrinkedItem.Summary = item.Summary;
+            shrinkedItem.Type = item.Type;
+            return shrinkedItem;
+        }
+
+        public static YamlItemViewModel ShrinkSelfAndChildren(this YamlItemViewModel item)
+        {
+            if (item.Items == null)
+            {
+                return item;
+            }
+
+            YamlItemViewModel shrinkedItem = item.Shrink();
+            shrinkedItem.Items = new List<YamlItemViewModel>();
+            foreach (var i in item.Items)
+            {
+                shrinkedItem.Items.Add(i.Shrink());
+            }
+
+            return shrinkedItem;
+        }
+
+        public static YamlItemViewModel ShrinkChildren(this YamlItemViewModel item)
+        {
+            if (item.Items == null)
+            {
+                return item;
+            }
+
+            YamlItemViewModel shrinkedItem = (YamlItemViewModel)item.Clone();
+            shrinkedItem.Items = new List<YamlItemViewModel>();
+            foreach(var i in item.Items)
+            {
+                shrinkedItem.Items.Add(i.Shrink());
+            }
+
+            return shrinkedItem;
+        }
+    }
+
     /// <summary>
     /// TODO: Rough idea, need refactor...
     /// </summary>
@@ -193,19 +245,18 @@ namespace EntityModel.ViewModel
                 Path = member.FilePath,
             };
 
-            memberItem.Syntax = new List<SyntaxDetail>();
+            memberItem.Syntax = new SyntaxDetail
+            {
+                Content = new Dictionary<SyntaxLanguage, string>()
+            };
 
             foreach(var syntaxDescription in member.SyntaxDescriptionGroup)
             {
-                SyntaxDetail syntax = new SyntaxDetail
-                {
-                    Language = syntaxDescription.Key,
-                    Content = syntaxDescription.Value.ToComment(),
-                    Parameters = syntaxDescription.Value.ToParams(apis),
-                    Return = syntaxDescription.Value.GetReturn(),
-                };
-                memberItem.Syntax.Add(syntax);
+                memberItem.Syntax.Content.Add(syntaxDescription.Key, syntaxDescription.Value.ToComment());
+                memberItem.Syntax.Parameters = syntaxDescription.Value.ToParams(apis);
+                memberItem.Syntax.Return = syntaxDescription.Value.GetReturn();
             }
+
             return memberItem;
         }
 

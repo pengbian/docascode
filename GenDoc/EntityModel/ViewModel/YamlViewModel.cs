@@ -29,22 +29,29 @@ namespace EntityModel.ViewModel
         public int StartLine { get; set; }
         public int EndLine { get; set; }
         public string Content { get; set; }
+        public bool IsExtern { get; set; }
     }
 
     public class SyntaxDetail
     {
-        public SyntaxLanguage Language { get; set; }
-        public string Content { get; set; }
+        public Dictionary<SyntaxLanguage, string> Content { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "parameters")]
         public List<YamlItemParameterViewModel> Parameters { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "return")]
         public YamlItemParameterViewModel Return { get; set; }
     }
 
     public class LinkDetail
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "href")]
         public string Href { get; set; }
         public int Height { get; set; }
+        public bool IsExtern { get; set; }
     }
 
     public class ItemType
@@ -53,23 +60,63 @@ namespace EntityModel.ViewModel
         public string Description { get; set; }
     }
 
-    public class YamlItemViewModel
+    public class YamlItemViewModel : ICloneable
     {
-        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
-        public string Href { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "yaml")]
         public string YamlPath { get; set; }
-        public List<LayoutItem> Layout { get; set; }
-        public MemberType Type { get; set; } 
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "href")]
+        public string Href { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
+        public Dictionary<SyntaxLanguage, string> DisplayNames { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "qualifiedName")]
+        public Dictionary<SyntaxLanguage, string> DisplayQualifiedNames { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "parent")]
+        public string ParentName { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "type")]
+        public MemberType Type { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "source")]
         public SourceDetail Source { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "documentation")]
         public SourceDetail Documentation { get; set; }
+
+        public List<LayoutItem> Layout { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "summary")]
         public string Summary { get; set; }
 
-        public List<SyntaxDetail> Syntax { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "remarks")]
+        public string Remarks { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "syntax")]
+        public SyntaxDetail Syntax { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "inheritence")]
         public List<LinkDetail> Inheritence { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "itemTypes")]
         public List<ItemType> ItemTypes { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "items")]
         public List<YamlItemViewModel> Items { get; set; }
+
+        public override string ToString()
+        {
+            return Type + ": " + Name;
+        }
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 
     public class YamlViewModel
@@ -88,8 +135,13 @@ namespace EntityModel.ViewModel
 
     public class YamlItemParameterViewModel
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "type")]
         public LinkDetail Type { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "description")]
         public string Description { get; set; }
     }
 }

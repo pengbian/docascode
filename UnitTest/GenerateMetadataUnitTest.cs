@@ -41,7 +41,7 @@ namespace UnitTest
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml");
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", BuildMetaHelper.MetadataType.Yaml);
             await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));

@@ -64,7 +64,7 @@ namespace DocAsCode.BuildMeta
                 }
                 outputListFile = Path.GetRandomFileName();
                 BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectListFile, outputListFile).Wait();
-                BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputListFile, outputFolder, indexFileName).Wait();
+                BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputListFile, outputFolder, indexFileName, BuildMetaHelper.MetadataType.Yaml).Wait();
                 BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, indexFileName, markdownListFile, markdownIndexFileName).Wait();
                 return 0;
             }
