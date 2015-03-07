@@ -1,16 +1,12 @@
 ﻿using System;
+using EnvDTE;
 using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.ComponentModel.Design;
-using Microsoft.Win32;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
-using MicrosoftIT.DocProject.Templates.Projects.DocProject;
-using Microsoft.VisualStudio.Project;
-using EnvDTE;
+using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio;
 
 namespace MicrosoftIT.DocProject
 {
@@ -30,12 +26,10 @@ namespace MicrosoftIT.DocProject
     // This attribute is used to register the information needed to show this package
     // in the Help/About dialog of Visual Studio.
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
-    [ProvideProjectFactory(typeof(DocProjectFactory),null,
-    "Doc Project Files (*.docproj);*.docproj", "docproj", "docproj",
-    ".\\NullPath", LanguageVsTemplate = "DocProject")]
-    [Guid(GuidList.guidDocProjectPkgString)]
-    [ProvideObject(typeof(GeneralPropertyPage))]
-    public sealed class DocProjectPackage : ProjectPackage
+    // This attribute is needed to let the shell know that this package exposes some menus.
+    [ProvideMenuResource("Menus.ctmenu", 1)]
+    [Guid(GuidList.guidDocContextMenuPackagePkgString)]
+    public sealed class DocContextMenuPackagePackage : Package
     {
         /// <summary>
         /// Default constructor of the package.
@@ -44,12 +38,10 @@ namespace MicrosoftIT.DocProject
         /// not sited yet inside Visual Studio environment. The place to do all the other 
         /// initialization is the Initialize method.
         /// </summary>
-        public DocProjectPackage()
+        public DocContextMenuPackagePackage()
         {
             Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
         }
-
-
 
         /////////////////////////////////////////////////////////////////////////////
         // Overridden Package Implementation
@@ -63,22 +55,35 @@ namespace MicrosoftIT.DocProject
         {
             Debug.WriteLine (string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));
             base.Initialize();
-            this.RegisterProjectFactory(new DocProjectFactory(this));
 
             // Add our command handlers for menu (commands must exist in the .vsct file)
             OleMenuCommandService mcs = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
-            if (null != mcs)
+            if ( null != mcs )
             {
+                // Create the command for the menu item.
+                CommandID menuCommandID = new CommandID(GuidList.guidDocContextMenuPackageCmdSet, (int)PkgCmdIDList.cmdidMyCommand);
+                MenuCommand menuItem = new MenuCommand(MenuItemCallback, menuCommandID );
+                mcs.AddCommand( menuItem );
+
                 // Create the 'publish' command for the menu item.
                 CommandID publishToGithubMenuCommandID = new CommandID(GuidList.guidDocContextMenuPackageCmdSet, (int)PkgCmdIDList.PublishToGithubCommand);
                 MenuCommand publishToGithubMenuItem = new MenuCommand(PublishToGithubMenuItemCallback, publishToGithubMenuCommandID);
                 mcs.AddCommand(publishToGithubMenuItem);
             }
         }
+        #endregion
 
-        public override string ProductUserContext
+        /// <summary>
+        /// This function is the callback used to execute a command when the a menu item is clicked.
+        /// See the Initialize method to see how the menu item is associated to this function using
+        /// the OleMenuCommandService service and the MenuCommand class.
+        /// </summary>
+        private void MenuItemCallback(object sender, EventArgs e)
         {
-            get { return ""; }
+            DTE dte = (DTE)GetService(typeof(DTE));
+            Project activeProject = null;
+            Array selectedProjects = (Array)dte.ActiveSolutionProjects;
+            
         }
 
         /// <summary>
@@ -105,7 +110,5 @@ namespace MicrosoftIT.DocProject
                 }
             }
         }
-        #endregion
-
     }
 }

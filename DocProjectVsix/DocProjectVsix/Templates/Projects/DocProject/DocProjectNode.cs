@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.Project;
 using System.Drawing;
 using System.Windows.Forms;
+using Microsoft.VisualStudio.OLE.Interop;
 
 namespace MicrosoftIT.DocProject
 {
@@ -51,7 +52,6 @@ namespace MicrosoftIT.DocProject
             this.FileTemplateProcessor.Reset();
         }
 
-        
         protected override Guid[] GetConfigurationIndependentPropertyPages()
         {
             Guid[] result = new Guid[1];

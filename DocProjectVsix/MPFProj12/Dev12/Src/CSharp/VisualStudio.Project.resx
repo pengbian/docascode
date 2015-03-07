@@ -538,4 +538,7 @@ Are you sure you want to change the Target Framework for this project?</value>
   <data name="ReloadPromptOnTargetFxChangedCaption" xml:space="preserve">
     <value>Target Framework Change</value>
   </data>
+  <data name="Documentation" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
 </root>
