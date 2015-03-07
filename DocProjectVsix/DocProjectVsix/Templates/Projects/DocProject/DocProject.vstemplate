@@ -1,0 +1,33 @@
+﻿<VSTemplate Version="2.0.0" Type="Project"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>DocumentationProject</Name>
+    <Description>
+      A project for creating a Documentation Project application
+    </Description>
+    <Icon>DocProject.ico</Icon>
+    <ProjectType>DocProject</ProjectType>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="DocProject.docproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">
+        Targets\Microsoft.DocProject.targets
+      </ProjectItem>
+      <ProjectItem OpenInEditor="true">
+        styles\default-ios.css
+      </ProjectItem>
+      <ProjectItem OpenInEditor="true">
+        styles\default-ios.js
+      </ProjectItem>
+      <ProjectItem OpenInEditor="true">
+        styles\jquery-2.1.0.min.js
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">
+        template\class-ios.html
+      </ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">
+        template\namespace-ios.html
+      </ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

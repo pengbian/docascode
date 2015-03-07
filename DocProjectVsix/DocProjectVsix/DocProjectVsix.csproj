@@ -116,32 +116,11 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Guids.cs" />
-    <Compile Include="Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Templates\Projects\DocProjectPackage.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates\Projects\DocProject\DocProjectFactory.cs" />
-    <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
-    <Content Include="..\..\GenDoc\MergeDoc\Templates\css\default.css">
-      <Link>Templates\Projects\DocProject\css\default.css</Link>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="..\..\GenDoc\MergeDoc\Templates\script\default.js">
-      <Link>Templates\Projects\DocProject\script\default.js</Link>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="..\..\GenDoc\MergeDoc\Templates\script\jquery-2.1.0.min.js">
-      <Link>Templates\Projects\DocProject\script\jquery-2.1.0.min.js</Link>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Key.snk" />
+    <None Include="packages.config" />
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
     <EmbeddedResource Include="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -151,31 +130,53 @@
       <MergeWithCTO>true</MergeWithCTO>
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Templates\Projects\DocProject\BlankDocProject.ico">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <None Include="packages.config" />
-    <None Include="source.extension.vsixmanifest">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Templates\Projects\DocProject\DocProject.docproj">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Templates\Projects\DocProject\BlankDocProject.docproj">
-      <IncludeInVSIX>true</IncludeInVSIX>
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Key.snk" />
-  </ItemGroup>
-  <ItemGroup>
+    <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
     <Content Include="Resources\Package.ico" />
-    <Content Include="Templates\Projects\DocProject\DocProject.ico">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <Compile Include="Templates\Projects\DocProject\DocProjectFactory.cs" />
+    <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
+    <Compile Include="Guids.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Templates\Projects\DocProjectPackage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <VSCTCompile Include="Templates\Projects\DocProject\DocProject.vsct">
+      <SubType>Designer</SubType>
+    </VSCTCompile>
+    <ZipProject  Include="Templates\Projects\DocProject\template\class-ios.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\namespace-ios.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\styles\default-ios.css">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\styles\default-ios.js">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\DocProject.vstemplate" >
+      <RootPath>Templates\Projects\DocProject</RootPath>
+
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\Targets\Microsoft.DocProject.targets">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\DocProject.docproj">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\styles\jquery-2.1.0.min.js">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+
+    </ZipProject>
   </ItemGroup>
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>

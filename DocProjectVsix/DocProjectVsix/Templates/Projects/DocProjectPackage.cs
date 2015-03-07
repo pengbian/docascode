@@ -29,9 +29,9 @@ namespace MicrosoftIT.DocProject
     // This attribute is used to register the information needed to show this package
     // in the Help/About dialog of Visual Studio.
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
-    [ProvideProjectFactory(typeof(DocProjectFactory),"Documentation Project",
+    [ProvideProjectFactory(typeof(DocProjectFactory),null,
     "Doc Project Files (*.docproj);*.docproj", "docproj", "docproj",
-    @"Templates\Projects\DocProject", LanguageVsTemplate = "DocProject")]
+    ".\\NullPath", LanguageVsTemplate = "DocProject")]
     [Guid(GuidList.guidDocProjectPkgString)]
     public sealed class DocProjectPackage : ProjectPackage
     {

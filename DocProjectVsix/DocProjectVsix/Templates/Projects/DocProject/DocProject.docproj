@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <OutputType>Html</OutputType>
-    <DocToolExtensionsPath Condition=" '$(DocToolExtensionsPath)' == '' "></DocToolExtensionsPath>
+    <DocToolExtensionsPath>Targets</DocToolExtensionsPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -17,12 +17,15 @@
     <OutputPath>bin\PublishDoc</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="css"/>
-    <Folder Include="script"/>
-    <Content Include="script\default.js">
-    </Content>
-    <Content Include="script\jquery-2.1.0.min.js">
-    </Content>
+    <Folder Include="styles"/>
+    <Folder Include="template"/>
+    <Folder Include="Targets"/>
+    <None Include="Targets/Microsoft.DocProject.targets" />
+    <Content Include="styles/default-ios.js" />
+    <Content Include="styles/default-ios.css" />
+    <Content Include="styles/jquery-2.1.0.min.js" />
+    <Content Include="template/class-ios.html" />
+    <Content Include="template/namespace-ios.html" />
   </ItemGroup>
-  <Import Project="$(DocToolExtensionsPath)\Targets\Microsoft.DocProject.targets" />
+  <Import Project="$(DocToolExtensionsPath)\Microsoft.DocProject.targets" />
 </Project>
