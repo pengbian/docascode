@@ -1,12 +1,65 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.XPath;
 
 namespace EntityModel.ViewModel
 {
+    public static class TripleSlashCommentParser
+    {
+        public static string GetSummary(string xml, bool trim)
+        {
+            return GetSingleNode(xml, "/member/summary", trim, (e) => null);
+        }
+
+        public static string GetReturns(string xml, bool trim)
+        {
+            return GetSingleNode(xml, "/member/returns", trim, (e) => null);
+        }
+
+        public static string GetParam(string xml, string param, bool trim)
+        {
+            Debug.Assert(!string.IsNullOrEmpty(param));
+            if (string.IsNullOrEmpty(param))
+            {
+                return null;
+            }
+
+            return GetSingleNode(xml, "/member/param[@name='" + param + "']", trim, (e) => null);
+        }
+
+        public static string GetSingleNode(string xml, string selector, bool trim, Func<Exception, string> errorHandler)
+        {
+            try
+            {
+                using (StringReader reader = new StringReader(xml))
+                {
+                    XPathDocument doc = new XPathDocument(reader);
+                    var nav = doc.CreateNavigator();
+                    var output = nav.SelectSingleNode(selector).Value;
+                    if (trim) output = output.Trim();
+                    return output;
+                }
+            }
+            catch (Exception e)
+            {
+                if (errorHandler != null)
+                {
+                    return errorHandler(e);
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+    }
+
     public static class YamlViewModelExtension
     {
         public static bool IsPageLevel(this MemberType type)
@@ -131,7 +184,7 @@ namespace EntityModel.ViewModel
                         yamlReturn.Description = returnPara.ToComment();
                         yamlReturn.Name = returnPara.Name;
                         yamlReturn.Type =
-                            new LinkDetail
+                            new SourceDetail
                             {
                                 Name = returnPara.Type.ToId(),
                             };
@@ -160,7 +213,7 @@ namespace EntityModel.ViewModel
                             YamlItemParameterViewModel yamlParameter = new YamlItemParameterViewModel();
                             yamlParameter.Description = description.ToComment();
                             yamlParameter.Type =
-                            new LinkDetail
+                            new SourceDetail
                             {
                                 Name = desc.Type.ToId(),
                             };
@@ -178,7 +231,7 @@ namespace EntityModel.ViewModel
                             YamlItemParameterViewModel yamlParameter = new YamlItemParameterViewModel();
                             yamlParameter.Description = description.ToComment();
                             yamlParameter.Type =
-                            new LinkDetail
+                            new SourceDetail
                             {
                                 Name = desc.Type.ToId(),
                             };
@@ -195,7 +248,7 @@ namespace EntityModel.ViewModel
                             YamlItemParameterViewModel yamlParameter = new YamlItemParameterViewModel();
                             yamlParameter.Description = description.ToComment();
                             yamlParameter.Type =
-                            new LinkDetail
+                            new SourceDetail
                             {
                                 Name = desc.Type.ToId(),
                             };
@@ -215,9 +268,11 @@ namespace EntityModel.ViewModel
                 foreach (var param in itemParams)
                 {
                     IndexYamlItemViewModel item;
-                    if (apis.TryGetValue(param.Type.Name, out item)){
+                    if (apis.TryGetValue(param.Type.Name, out item))
+                    {
                         param.Type.Href = apis[param.Type.Name].Href;
-                    }else
+                    }
+                    else
                     {
                         // TODO: make it accurate
                         param.Type.Href = string.Format("https://msdn.microsoft.com/en-us/library/{0}(v=vs.110).aspx", param.Type.Name);

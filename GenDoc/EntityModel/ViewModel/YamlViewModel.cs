@@ -24,12 +24,35 @@ namespace EntityModel.ViewModel
 
     public class SourceDetail
     {
-        public string RemoteUrl { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// The url path for current source, should be resolved at some late stage
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "href")]
+        public string Href { get; set; }
+
+        /// <summary>
+        /// The local path for current source, should be resolved to be relative path at some late stage
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "path")]
         public string Path { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "startLine")]
         public int StartLine { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "endLine")]
         public int EndLine { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "content")]
         public string Content { get; set; }
-        public bool IsExtern { get; set; }
+
+        /// <summary>
+        /// The external path for current source if it is not locally available
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "isExternal")]
+        public bool IsExternalPath { get; set; }
     }
 
     public class SyntaxDetail
@@ -43,17 +66,6 @@ namespace EntityModel.ViewModel
         public YamlItemParameterViewModel Return { get; set; }
     }
 
-    public class LinkDetail
-    {
-        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
-        public string Name { get; set; }
-
-        [YamlDotNet.Serialization.YamlMember(Alias = "href")]
-        public string Href { get; set; }
-        public int Height { get; set; }
-        public bool IsExtern { get; set; }
-    }
-
     public class ItemType
     {
         public string Name { get; set; }
@@ -62,6 +74,9 @@ namespace EntityModel.ViewModel
 
     public class YamlItemViewModel : ICloneable
     {
+        [YamlDotNet.Serialization.YamlIgnore]
+        public string RawComment { get; set; }
+
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
 
@@ -101,7 +116,7 @@ namespace EntityModel.ViewModel
         public SyntaxDetail Syntax { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "inheritence")]
-        public List<LinkDetail> Inheritence { get; set; }
+        public List<SourceDetail> Inheritence { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "itemTypes")]
         public List<ItemType> ItemTypes { get; set; }
@@ -139,7 +154,7 @@ namespace EntityModel.ViewModel
         public string Name { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "type")]
-        public LinkDetail Type { get; set; }
+        public SourceDetail Type { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "description")]
         public string Description { get; set; }

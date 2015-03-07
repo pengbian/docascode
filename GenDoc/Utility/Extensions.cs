@@ -10,6 +10,9 @@ using EntityModel;
 using Newtonsoft.Json.Converters;
 using System.Collections;
 using YamlDotNet.Serialization;
+using System.Xml;
+using System.Xml.XPath;
+using System.Diagnostics;
 
 /// <summary>
 /// The utility class for docascode project
@@ -219,7 +222,7 @@ namespace DocAsCode.Utility
     {
         private static JsonSerializerSettings settings = new JsonSerializerSettings()
         {
-            Formatting = Formatting.Indented,
+            Formatting = Newtonsoft.Json.Formatting.Indented,
             DefaultValueHandling = DefaultValueHandling.Ignore,
         };
         private static JsonSerializer _serializer;
@@ -229,7 +232,7 @@ namespace DocAsCode.Utility
         {
             _serializer = new JsonSerializer();
             _serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
-            _serializer.Formatting = Formatting.Indented;
+            _serializer.Formatting = Newtonsoft.Json.Formatting.Indented;
             _serializer.Converters.Add(new CustomizedJsonConverters.IdentityMappingConverter<NamespaceMetadata>());
             _serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
             _serializer.Converters.Add(new CustomizedJsonConverters.BaseMetadataInheritClassJsonConverter());

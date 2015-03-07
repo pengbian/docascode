@@ -134,6 +134,7 @@
     <None Include="Assets\TestClass1\TestClass2\Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Compile Include="CommonUtiiltyUnitTest.cs" />
     <Compile Include="MarkdownIndexBuilderUnitTest.cs" />
     <Compile Include="GenerateMetadataUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

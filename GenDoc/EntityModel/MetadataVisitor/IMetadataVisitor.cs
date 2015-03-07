@@ -28,6 +28,13 @@ namespace EntityModel
         {
 
         }
+
+        private void FeedComments(YamlItemViewModel item)
+        {
+            if (string.IsNullOrEmpty(item.RawComment)) return;
+            item.Summary = TripleSlashCommentParser.GetSummary(item.RawComment, true);
+        }
+
         private string GetId(ISymbol symbol)
         {
             if (symbol == null)
@@ -43,7 +50,8 @@ namespace EntityModel
 
             return str.ToString().Substring(2);
         }
-        private static LinkDetail GetLinkDetail(ISymbol symbol)
+
+        private static SourceDetail GetLinkDetail(ISymbol symbol)
         {
             if (symbol == null)
             {
@@ -62,29 +70,28 @@ namespace EntityModel
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
-                return new LinkDetail { IsExtern = true, Name = id, Href = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
+                return new SourceDetail { IsExternalPath = true, Name = id, Href = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
             }
 
             var syntaxNode = syntaxRef.GetSyntax();
             Debug.Assert(syntaxNode != null);
             if (syntaxNode != null)
             {
-                return new LinkDetail
+                return new SourceDetail
                 {
                     Name = symbol.Name,
-                    IsExtern = false,
+                    IsExternalPath = false,
                     Href = syntaxNode.SyntaxTree.FilePath,
                 };
             }
 
             return null;
         }
-        private YamlItemParameterViewModel GetParameterDescription(ISymbol symbol)
+        private YamlItemParameterViewModel GetParameterDescription(ISymbol symbol, YamlItemViewModel item, bool isReturn)
         {
-            LinkDetail id = null;
-
+            SourceDetail id = null;
+            string raw = item.RawComment;
             // TODO: GetDocumentationCommentXml for parameters seems not accurate
-            string comment = symbol.GetDocumentationCommentXml();
             string name = symbol.Name;
             var paraSymbol = symbol as IParameterSymbol;
             if (paraSymbol != null)
@@ -111,6 +118,9 @@ namespace EntityModel
                 // name = DescriptionConstants.ReturnName;
                 id = GetLinkDetail(propertySymbol.Type);
             }
+
+            string comment = isReturn ? TripleSlashCommentParser.GetReturns(raw, true) :
+                TripleSlashCommentParser.GetParam(raw, name, true);
 
             return new YamlItemParameterViewModel() { Name = name, Type = id, Description = comment };
         }
@@ -140,7 +150,7 @@ namespace EntityModel
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
-                return new SourceDetail { IsExtern = true, Path = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
+                return new SourceDetail { IsExternalPath = true, Path = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
             }
 
             var syntaxNode = syntaxRef.GetSyntax();
@@ -165,11 +175,11 @@ namespace EntityModel
                 Name = GetId(symbol),
                 DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.MetadataName } },
                 DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.MetadataName} },
-                Summary = symbol.GetDocumentationCommentXml(),
+                RawComment = symbol.GetDocumentationCommentXml(),
             };
 
             item.Source = GetSourceDetail(symbol);
-
+            FeedComments(item);
             return item;
         }
 
@@ -178,7 +188,7 @@ namespace EntityModel
             var item = DefaultVisit(symbol);
             if (item == null) return null;
             item.Type = MemberType.Assembly;
-
+            
             parent = item;
             currentAssembly = item;
             foreach (var ns in symbol.GlobalNamespace.GetNamespaceMembers())
@@ -240,10 +250,10 @@ namespace EntityModel
             var type = symbol.BaseType;
             if (type != null)
             {
-                item.Inheritence = new List<LinkDetail>();
+                item.Inheritence = new List<SourceDetail>();
                 while (type != null)
                 {
-                    LinkDetail link = GetLinkDetail(type);
+                    SourceDetail link = GetLinkDetail(type);
 
                     item.Inheritence.Add(link);
                     type = type.BaseType;
@@ -422,10 +432,10 @@ namespace EntityModel
 
                 foreach (var p in symbol.Parameters)
                 {
-                    item.Syntax.Parameters.Add(GetParameterDescription(p));
+                    item.Syntax.Parameters.Add(GetParameterDescription(p, item, false));
                 }
 
-                item.Syntax.Return = GetParameterDescription(symbol.ReturnType);
+                item.Syntax.Return = GetParameterDescription(symbol.ReturnType, item, true);
 
                 var syntaxStr = syntax.WithBody(null)
                         .NormalizeWhitespace()
@@ -458,7 +468,7 @@ namespace EntityModel
 
                 foreach (var p in symbol.Parameters)
                 {
-                    item.Syntax.Parameters.Add(GetParameterDescription(p));
+                    item.Syntax.Parameters.Add(GetParameterDescription(p, item, false));
                 }
 
                 string syntaxStr = constructorSyntax.WithBody(null)
@@ -655,7 +665,7 @@ namespace EntityModel
                     item.Syntax.Content = new Dictionary<SyntaxLanguage, string>();
                 }
 
-                item.Syntax.Parameters.Add(GetParameterDescription(symbol));
+                item.Syntax.Parameters.Add(GetParameterDescription(symbol, item, false));
 
                 var syntaxStr = varSyntax
                         .WithAttributeLists(new SyntaxList<AttributeListSyntax>())
