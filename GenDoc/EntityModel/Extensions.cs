@@ -139,20 +139,29 @@ namespace DocAsCode.Utility
             }
         }
 
+        public const string ListFileExtension = ".list";
+
         public static List<string> GetFileListFromFile(string filePath)
         {
             if (string.IsNullOrWhiteSpace(filePath))
             {
                 return null;
             }
-
             List<string> fileList = new List<string>();
-            using (StreamReader reader = new StreamReader(filePath))
+
+            if (Path.GetExtension(filePath) == ListFileExtension)
             {
-                while (!reader.EndOfStream)
+                using (StreamReader reader = new StreamReader(filePath))
                 {
-                    fileList.Add(reader.ReadLine());
+                    while (!reader.EndOfStream)
+                    {
+                        fileList.Add(reader.ReadLine());
+                    }
                 }
+            }
+            else
+            {
+                fileList = filePath.ToArray(StringSplitOptions.RemoveEmptyEntries, ',').ToList();
             }
 
             return fileList;

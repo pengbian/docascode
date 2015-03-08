@@ -24,7 +24,6 @@ namespace DocAsCode.BuildMeta
 {
     public static class BuildMetaHelper
     {
-        private const string ListFileExtension = ".list";
         /// <summary>
         /// Could be absolute path
         /// </summary>
@@ -35,14 +34,7 @@ namespace DocAsCode.BuildMeta
         public static async Task<ParseResult> GenerateMetadataFromProjectListAsync(string projectListFile, string outputListFilePath)
         {
             List<string> projectList;
-            if (Path.GetExtension(projectListFile) == ListFileExtension)
-            {
-                projectList = FileExtensions.GetFileListFromFile(projectListFile);
-            }
-            else
-            {
-                projectList = projectListFile.ToArray(StringSplitOptions.RemoveEmptyEntries, ',').ToList();
-            }
+            projectList = FileExtensions.GetFileListFromFile(projectListFile);
 
             if (projectList == null || projectList.Count == 0)
             {

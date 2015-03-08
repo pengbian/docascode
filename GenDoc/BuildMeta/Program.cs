@@ -51,7 +51,7 @@ namespace DocAsCode.BuildMeta
             {
                 var options = new Option[]
                     {
-                    new Option(null, p => projectListFile = p, helpName: "projectListFile", required: true, helpText: "Required. Specify [1. the file path with extension .list | 2. the file list seperated by comma(,)] that contains all the project/solution paths whose metadata is to be generated."),
+                    new Option(null, p => projectListFile = p, helpName: "projectListFile", required: false, helpText: "Required. Specify [1. the file path with extension .list | 2. the file list seperated by comma(,)] that contains all the project/solution paths whose metadata is to be generated."),
                     new Option("m", s => markdownListFile = s, defaultValue: null, helpName: "markdownListFile", helpText: "Specify the file path that contains all the additional markdown files. (default: null)."),
                     new Option("o", s => outputFolder = s, defaultValue: DefaultOutputFolderName, helpName: "outputFolder", helpText: "Specify the output folder that contains all the generated metadata files. (default: " + DefaultOutputFolderName + ")."),
                     new Option("toc", s => tocFileName = s, defaultValue: DefaultTocFileName, helpName: "tocFileName", helpText: "Specify the file name containing all the namespace yaml file paths. (default: " + DefaultTocFileName + ")."),
@@ -65,7 +65,14 @@ namespace DocAsCode.BuildMeta
                 {
                     return 1;
                 }
-                outputListFile = Path.GetRandomFileName();
+
+                if (projectListFile == null || projectListFile.Length == 0)
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "No source project files are referenced. No documentation will be generated.");
+                    return 2;
+                }
+
+                outputListFile = Path.GetRandomFileName() + ".list";
                 BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectListFile, outputListFile).Wait();
                 BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputListFile, outputFolder, indexFileName, BuildMetaHelper.MetadataType.Yaml).Wait();
                 BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, indexFileName, markdownListFile, markdownIndexFileName, mdFolderName).Wait();
