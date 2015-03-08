@@ -12,40 +12,32 @@ namespace EntityModel.ViewModel
 {
     public static class TripleSlashCommentParser
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="xml"></param>
+        /// <param name="trim"></param>
+        /// <returns></returns>
         public static string GetSummary(string xml, bool trim)
         {
             // Resolve <see cref> to @ syntax
-            try
-            {
-                {
-                    XmlDocument doc = new XmlDocument();
-                    doc.LoadXml(xml);
-                    var nav = doc.CreateNavigator();
-                    var iter = nav.Select("/member/summary/see[@cref]");
-                    foreach(XPathNavigator i in iter)
-                    {
-                        var node = i.SelectSingleNode("@cref");
-                        if (node != null)
-                        {
-                            var value = node.Value;
-                            i.InsertAfter("@" + value);
-                            i.DeleteSelf();
-                        }
-                    }
+            // Also support <seealso cref>
+            string selector = "/member/summary";
+            xml = ResolveSeeCref(xml, selector);
+            xml = ResolveSeeAlsoCref(xml, selector);
 
-                    xml = doc.InnerXml;
-                }
-            }
-            catch
-            {
-            }
-
-            return GetSingleNode(xml, "/member/summary", trim, (e) => null);
+            return GetSingleNode(xml, selector, trim, (e) => null);
         }
 
         public static string GetReturns(string xml, bool trim)
         {
-            return GetSingleNode(xml, "/member/returns", trim, (e) => null);
+            // Resolve <see cref> to @ syntax
+            // Also support <seealso cref>
+            string selector = "/member/returns";
+            xml = ResolveSeeCref(xml, selector);
+            xml = ResolveSeeAlsoCref(xml, selector);
+
+            return GetSingleNode(xml, selector, trim, (e) => null);
         }
 
         public static string GetParam(string xml, string param, bool trim)
@@ -56,7 +48,82 @@ namespace EntityModel.ViewModel
                 return null;
             }
 
-            return GetSingleNode(xml, "/member/param[@name='" + param + "']", trim, (e) => null);
+            // Resolve <see cref> to @ syntax
+            // Also support <seealso cref>
+            string selector = "/member/param[@name='" + param + "']";
+            xml = ResolveSeeCref(xml, selector);
+            xml = ResolveSeeAlsoCref(xml, selector);
+
+            return GetSingleNode(xml, selector, trim, (e) => null);
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <param name="xml"></param>
+        /// <param name="nodeSelector"></param>
+        /// <returns></returns>
+        public static string ResolveSeeAlsoCref(string xml, string nodeSelector)
+        {
+            // Resolve <see cref> to @ syntax
+            return ResolveCrefLink(xml, nodeSelector + "/seealso");
+        }
+
+        public static string ResolveSeeCref(string xml, string nodeSelector)
+        {
+            // Resolve <see cref> to @ syntax
+            return ResolveCrefLink(xml, nodeSelector + "/see");
+        }
+
+        public static string ResolveCrefLink(string xml, string nodeSelector)
+        {
+            try
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(xml);
+                var nav = doc.CreateNavigator();
+                var iter = nav.Select(nodeSelector + "[@cref]");
+                List<XPathNavigator> sees = new List<XPathNavigator>();
+                foreach (XPathNavigator i in iter)
+                {
+                    var node = i.SelectSingleNode("@cref");
+                    if (node != null)
+                    {
+                        var currentNode = i.Clone();
+                        var value = node.Value;
+
+                        // Current: Always append a space, remove when resolve
+
+                        // TODO: need more discussion on @ syntax
+                        // what if <see cref="book">s intentionally want no space in between
+                        // Append a space to the link 
+                        //i.MoveToNext();
+                        //if (i.NodeType == XPathNodeType.Text)
+                        //{
+                        //    if (!string.IsNullOrWhiteSpace(i.Value.Substring(0, 1)))
+                        //    {
+                        //        i.ReplaceSelf(" " + i.Value);
+                        //    }
+                        //}
+
+                        currentNode.InsertAfter("@" + value + " ");
+
+                        sees.Add(currentNode);
+                    }
+                }
+
+                // on successful deleteself, i would point to its parent
+                foreach (XPathNavigator i in sees)
+                {
+                    i.DeleteSelf();
+                }
+
+                xml = doc.InnerXml;
+            }
+            catch
+            {
+            }
+
+            return xml;
         }
 
         public static string GetSingleNode(string xml, string selector, bool trim, Func<Exception, string> errorHandler)

@@ -52,14 +52,19 @@ namespace UnitTest
         [DeploymentItem("Assets", "Assets")]
         public async Task TestGenereateMetadataAsync_Project()
         {
-            string slnPath = @"Assets\TestClass1\TestClass1\TestClass1.csproj";
+            string[] slnPath = new string[] { @"Assets\TestClass1\TestClass2\TestClass2.csproj" };
             string fileList = "filelist.list";
-            File.WriteAllText(fileList, slnPath);
-            string outputList = "output.list";
+            File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
+            string outputList = Path.GetRandomFileName();
             string outputDirectory = "output";
+            string mdList = "md.list";
+            File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
+            Assert.Fail();
         }
     }
 }

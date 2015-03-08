@@ -21,6 +21,7 @@ namespace TestClass1
 
         /// <summary>
         /// This is a *test* with return and should fail compilation
+        /// This is a multiline test
         /// </summary>
         /// <returns></returns>
         public Tuple<string, int> Test2()

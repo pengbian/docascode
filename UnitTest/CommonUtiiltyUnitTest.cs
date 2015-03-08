@@ -21,25 +21,24 @@ namespace UnitTest
       <member name='T:TestClass1.Partial1'>
 
           <summary>
- A compilation end action can use a <see cref='CompilationEndAnalysisContext'/>to report <see cref='Diagnostic'/>s about a <see cref='CodeAnalysis.Compilation'/>
-          Parital classes <see cref='T:System.AccessViolationException'/>can not cross assemblies, ```Classes in assemblies are by definition complete.```
+          Parital classes <see cref='T:System.AccessViolationException'/><see cref='T:System.AccessViolationException'/>can not cross assemblies, ```Classes in assemblies are by definition complete.```
 
           </summary>
-          <returns>Task</returns>
+          <returns>Task<see cref='T:System.AccessViolationException'/> returns</returns>
 
-              <param name='input'>This is the input</param>
+              <param name='input'>This is <see cref='T:System.AccessViolationException'/>the input</param>
 
               <param name = 'output' > This is the output </param >
      
            </member>";
             var summary = TripleSlashCommentParser.GetSummary(input, true);
-            Assert.AreEqual("Parital classes @T:System.AccessViolationException can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
+            Assert.AreEqual("Parital classes @T:System.AccessViolationException @T:System.AccessViolationException can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
 
             var returns = TripleSlashCommentParser.GetReturns(input, true);
-            Assert.AreEqual("Task", returns);
+            Assert.AreEqual("Task@T:System.AccessViolationException  returns", returns);
 
             var paramInput = TripleSlashCommentParser.GetParam(input, "input", true);
-            Assert.AreEqual("This is the input", paramInput);
+            Assert.AreEqual("This is @T:System.AccessViolationException the input", paramInput);
 
             var invalidParam = TripleSlashCommentParser.GetParam(input, "invalid", true);
             Assert.IsNull(invalidParam);
