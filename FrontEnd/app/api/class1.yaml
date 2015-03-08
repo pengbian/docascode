@@ -1,0 +1,77 @@
+name: class1
+type: class
+source: 
+  remoteUrl: http://www.github.com/roslyn/class.cs
+  path: class1.cs
+  startLine: 10
+  endLine: 90
+documentation:
+  remoteUrl: http://to_be_added # do not contain the markdown file
+  path: to_be_added
+  startLine: 1
+  endLine: 10
+summary: triple slash comments
+syntax:
+  - language: csharp
+    content: public class class1
+inheritence:
+  - name: class1.base
+    href: api/class1.base
+  - name: class1.base.base
+    href: api/class1.base.base
+itemtypes:
+  - name: method
+    description: Methods
+  - name: constructor
+    description: Constructors
+items:
+  - name: method1
+    href: api/class1
+    type: method
+    source: 
+      remoteUrl: http://to_be_added
+      path: to_be_added
+      line: 10
+    remarks:
+      remoteUrl: http://to_be_added # do not contain the markdown file
+      path: to_be_added
+      line: 1
+      content: remark_add_or_not
+    summary: triple slash comments
+    syntax:
+      - language: csharp
+        content: public void method1(int input)
+        parameters:
+          - name: input
+            type: 
+              name: System.int
+              href: http://msdn
+            description: description for input
+        return:
+          name: return
+          type: 
+            name: System.int
+            href: http://msdn
+          description: description for input
+  - name: ctor1
+    href: api/ctor1
+    type: constructor
+    source: 
+      remoteUrl: http://to_be_added
+      path: to_be_added
+      line: 10
+    remarks:
+      remoteUrl: http://to_be_added # do not contain the markdown file
+      path: to_be_added
+      line: 1
+      content: remark_add_or_not
+    summary: triple slash comments
+    syntax:
+      - language: csharp
+        content: public class1(int input)
+        parameters:
+          - name: input
+            type: 
+              name: System.int
+              href: http://msdn
+            description: description for input

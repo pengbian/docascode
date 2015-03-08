@@ -1,0 +1,43 @@
+<div class="component-breakdown">
+        <!--article-content-->
+        <article class="article-content">
+            <div id="article-header">
+                <h1 class="article-name">
+                    Namespace {{model.name}}
+                </h1>
+                <div class="improve-this-doc btn btn-primary">
+                    <a href="{{model.remarksourceurl}}">Improve this Doc</a>
+                </div>
+                <div class="view-source btn">
+                    <a href="{{model.sourceurl}}">View Source</a>
+                </div>
+                <section class="article-header-content">
+                    <div class="xml-section">
+                        {{model.description}}
+                    </div>
+                    <div class="md-section">
+                        {{model.remarks}}
+                    </div>
+                </section>
+            </div>
+            <section id="article-body">
+                <div class="section" ng-repeat="itemtype in model.itemtypes" >
+                    <h3 class="section-name" ng-if="model.items">{{itemtype.description}}</h3>
+                      <table>
+                          <tr ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
+                              <td>
+                                  <a href="#{{item.href}}">
+                                      {{item.name}}
+                                  </a>
+                              </td>
+                              <td>
+                                  <div class="xml-section">
+                                    {{item.description}}
+                                  </div>
+                              </td>
+                          </tr>
+                    </table>
+                </div>
+            </section>
+        </article>
+</div>
