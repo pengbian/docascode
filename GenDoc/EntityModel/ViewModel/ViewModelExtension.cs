@@ -285,37 +285,35 @@ namespace EntityModel.ViewModel
             shrinkedItem.YamlPath = item.YamlPath;
             return shrinkedItem;
         }
-        public static YamlItemViewModel ShrinkSelfToGrandChildren(this YamlItemViewModel item)
+        public static YamlItemViewModel ShrinkToSimpleToc(this YamlItemViewModel item)
         {
+
+            YamlItemViewModel shrinkedItem = new YamlItemViewModel();
+            shrinkedItem.Name = item.Name;
+            shrinkedItem.Href = item.Href;
+            shrinkedItem.Type = item.Type;
+            shrinkedItem.YamlPath = item.YamlPath;
+            shrinkedItem.Items = null;
+
             if (item.Items == null)
             {
-                return item;
+                return shrinkedItem;
             }
 
-            YamlItemViewModel shrinkedItem = item.Shrink();
-            shrinkedItem.Items = new List<YamlItemViewModel>();
-            foreach (var i in item.Items)
+            if (item.Type == MemberType.Toc || item.Type == MemberType.Namespace)
             {
-                if (i.IsInvalid) continue;
-                shrinkedItem.Items.Add(i.ShrinkSelfAndChildren());
-            }
+                foreach (var i in item.Items)
+                {
+                    if (shrinkedItem.Items == null)
+                    {
+                        shrinkedItem.Items = new List<YamlItemViewModel>();
+                    }
 
-            return shrinkedItem;
-        }
+                    if (i.IsInvalid) continue;
+                    var shrinkedI = i.ShrinkToSimpleToc();
+                    shrinkedItem.Items.Add(shrinkedI);
+                }
 
-        public static YamlItemViewModel ShrinkSelfAndChildren(this YamlItemViewModel item)
-        {
-            if (item.Items == null)
-            {
-                return item;
-            }
-
-            YamlItemViewModel shrinkedItem = item.Shrink();
-            shrinkedItem.Items = new List<YamlItemViewModel>();
-            foreach (var i in item.Items)
-            {
-                if (i.IsInvalid) continue;
-                shrinkedItem.Items.Add(i.Shrink());
             }
 
             return shrinkedItem;

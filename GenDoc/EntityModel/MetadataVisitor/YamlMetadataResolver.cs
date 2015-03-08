@@ -86,7 +86,7 @@ namespace EntityModel
         {
             public ParseResult Run(YamlViewModel yaml)
             {
-                yaml.TocYamlViewModel = yaml.TocYamlViewModel.ShrinkSelfToGrandChildren();
+                yaml.TocYamlViewModel = yaml.TocYamlViewModel.ShrinkToSimpleToc();
 
                 return new ParseResult(ResultLevel.Success);
             }
