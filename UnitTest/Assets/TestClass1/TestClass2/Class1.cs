@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TestClass1
 {
     /// <summary>
-    /// This is a *Class1* in **TestClass1**
+    /// This is a *Class1* @TestClass1.Class1 in <see cref="Test1"/> **TestClass1**
     /// </summary>
     public class Class1
     {
@@ -21,11 +21,12 @@ namespace TestClass1
 
         /// <summary>
         /// This is a *test* with return and should fail compilation
+        /// This is a multiline test
         /// </summary>
         /// <returns></returns>
         public Tuple<string, int> Test2()
         {
-
+            return null;
         }
 
         /// <summary>

@@ -34,6 +34,7 @@ namespace DocAsCode.BuildMeta
             const string DefaultTocFileName = "toc.yaml";
             const string DefaultIndexFileName = "index.yaml";
             const string DefaultMarkdownFileName = "md.yaml";
+            const string DefaultMdFolderName = "md";
             const string DefaultApiFolderName = "api";
             const string DefaultOutputFolderName = "output";
             string projectListFile = null;
@@ -44,28 +45,37 @@ namespace DocAsCode.BuildMeta
             string tocFileName = null;
             string indexFileName = null;
             string apiFolderName = null;
+            string mdFolderName = null;
 
             try
             {
                 var options = new Option[]
                     {
-                    new Option(null, p => projectListFile = p, helpName: "projectListFile", required: true, helpText: "Required. Specify [1. the file path with extension .list | 2. the file list seperated by comma(,)] that contains all the project/solution paths whose metadata is to be generated."),
+                    new Option(null, p => projectListFile = p, helpName: "projectListFile", required: false, helpText: "Required. Specify [1. the file path with extension .list | 2. the file list seperated by comma(,)] that contains all the project/solution paths whose metadata is to be generated."),
                     new Option("m", s => markdownListFile = s, defaultValue: null, helpName: "markdownListFile", helpText: "Specify the file path that contains all the additional markdown files. (default: null)."),
                     new Option("o", s => outputFolder = s, defaultValue: DefaultOutputFolderName, helpName: "outputFolder", helpText: "Specify the output folder that contains all the generated metadata files. (default: " + DefaultOutputFolderName + ")."),
                     new Option("toc", s => tocFileName = s, defaultValue: DefaultTocFileName, helpName: "tocFileName", helpText: "Specify the file name containing all the namespace yaml file paths. (default: " + DefaultTocFileName + ")."),
                     new Option("index", s => indexFileName = s, defaultValue: DefaultIndexFileName, helpName: "indexFileName", helpText: "Specify the file name containing all the available yaml files. (default: " + DefaultIndexFileName + ")."),
                     new Option("md", s => markdownIndexFileName = s, defaultValue: DefaultMarkdownFileName, helpName: "markdownIndexFileName", helpText: "Specify the file name containing all the markdown index. (default: " + DefaultMarkdownFileName + ")."),
                     new Option("folder", s => apiFolderName = s, defaultValue: DefaultApiFolderName, helpName: "apiFolderName", helpText: "Specify the subfolder name containing all the member's yaml file. (default: " + DefaultApiFolderName + ")."),
+                    new Option("mdFolder", s => mdFolderName = s, defaultValue: DefaultMdFolderName, helpName: "mdFolderName", helpText: "Specify the subfolder name containing all the markdown files copied. (default: " + DefaultMdFolderName+ ")."),
                     };
 
                 if (!ConsoleParameterParser.ParseParameters(options, args))
                 {
                     return 1;
                 }
-                outputListFile = Path.GetRandomFileName();
+
+                if (projectListFile == null || projectListFile.Length == 0)
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "No source project files are referenced. No documentation will be generated.");
+                    return 2;
+                }
+
+                outputListFile = Path.GetRandomFileName() + ".list";
                 BuildMetaHelper.GenerateMetadataFromProjectListAsync(projectListFile, outputListFile).Wait();
-                BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputListFile, outputFolder, indexFileName).Wait();
-                BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, indexFileName, markdownListFile, markdownIndexFileName).Wait();
+                BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputListFile, outputFolder, indexFileName, BuildMetaHelper.MetadataType.Yaml).Wait();
+                BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputFolder, indexFileName, markdownListFile, markdownIndexFileName, mdFolderName).Wait();
                 return 0;
             }
             catch (Exception e)

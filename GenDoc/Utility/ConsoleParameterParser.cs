@@ -56,7 +56,7 @@ namespace DocAsCode.Utility
                 o.Setter(o.DefaultValue);
             }
 
-            Regex paramRegex = new Regex(@"^/(\w+):(.+)$");
+            Regex paramRegex = new Regex(@"^/(\w+):(.*)$");
             var optionDict = options.ToDictionary(o => o.Name ?? string.Empty, o => o);
             try
             {

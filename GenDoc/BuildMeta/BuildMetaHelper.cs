@@ -24,7 +24,6 @@ namespace DocAsCode.BuildMeta
 {
     public static class BuildMetaHelper
     {
-        private const string ListFileExtension = ".list";
         /// <summary>
         /// Could be absolute path
         /// </summary>
@@ -35,14 +34,7 @@ namespace DocAsCode.BuildMeta
         public static async Task<ParseResult> GenerateMetadataFromProjectListAsync(string projectListFile, string outputListFilePath)
         {
             List<string> projectList;
-            if (Path.GetExtension(projectListFile) == ListFileExtension)
-            {
-                projectList = FileExtensions.GetFileListFromFile(projectListFile);
-            }
-            else
-            {
-                projectList = projectListFile.ToArray(StringSplitOptions.RemoveEmptyEntries, ',').ToList();
-            }
+            projectList = FileExtensions.GetFileListFromFile(projectListFile);
 
             if (projectList == null || projectList.Count == 0)
             {
@@ -67,7 +59,13 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        public static async Task<ParseResult> MergeMetadataFromMetadataListAsync(string metadataListFile, string outputFolder, string indexFileName)
+        public enum MetadataType
+        {
+            Yaml,
+            Json
+        }
+
+        public static async Task<ParseResult> MergeMetadataFromMetadataListAsync(string metadataListFile, string outputFolder, string indexFileName, MetadataType metadataType)
         {
             if (string.IsNullOrWhiteSpace(outputFolder))
             {
@@ -80,7 +78,7 @@ namespace DocAsCode.BuildMeta
                 return new ParseResult(ResultLevel.Error, "No metadata file listed in {0}, Exiting", metadataListFile);
             }
 
-            string indexFilePath = await MergeMetadataFromMetadataListCoreAsync(metadataList, outputFolder, indexFileName);
+            string indexFilePath = metadataType == MetadataType.Json ? await MergeMetadataFromMetadataListCoreAsync(metadataList, outputFolder, indexFileName) : await MergeYamlMetadataFromMetadataListCoreAsync(metadataList, outputFolder, indexFileName);
             if (!string.IsNullOrEmpty(indexFilePath))
             {
                 return new ParseResult(ResultLevel.Success);
@@ -91,7 +89,7 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName)
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName, string mdFolderName)
         {
             if (string.IsNullOrWhiteSpace(workingDirectory))
             {
@@ -105,7 +103,7 @@ namespace DocAsCode.BuildMeta
                     return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", markdownListFile);
                 }
 
-                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList);
+                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList, mdFolderName);
                 if (!string.IsNullOrEmpty(indexFilePath))
                 {
                     return new ParseResult(ResultLevel.Success);
@@ -180,8 +178,8 @@ namespace DocAsCode.BuildMeta
                     }
 
                     string projectFilePath;
-                    var projectMetadata = await GenerateMetadataAsync(project);
-                    var result = TryExportMetadataFile(projectMetadata, outputFolder, UriKind.Absolute, out projectFilePath);
+                    var projectMetadata = await GenerateYamlMetadataAsync(project);
+                    var result = TryExportYamlMetadataFile(projectMetadata, outputFolder, UriKind.Absolute, out projectFilePath);
                     if (result.ResultLevel == ResultLevel.Success)
                     {
                         outputFilePathList.Add(projectFilePath);
@@ -193,6 +191,63 @@ namespace DocAsCode.BuildMeta
 
             return outputFilePathList;
         }
+
+        private static async Task<string> MergeYamlMetadataFromMetadataListCoreAsync(List<string> metadataFiles, string outputFolder, string indexFileName)
+        {
+            if (metadataFiles == null || metadataFiles.Count == 0)
+            {
+                return null;
+            }
+
+            List<string> outputFilePathList = new List<string>();
+            if (Directory.Exists(outputFolder))
+            {
+                ParseResult.WriteToConsole(ResultLevel.Warn, "{0} directory already exists.", outputFolder);
+            }
+            else
+            {
+                Directory.CreateDirectory(outputFolder);
+            }
+
+            List<YamlItemViewModel> projectMetadataList = new List<YamlItemViewModel>();
+            foreach (var metadataFile in metadataFiles)
+            {
+                string projectFilePath;
+                YamlItemViewModel projectMetadata;
+                var result = TryParseYamlMetadataFile(metadataFile, out projectMetadata);
+                if (result.ResultLevel == ResultLevel.Success)
+                {
+                    projectMetadataList.Add(projectMetadata);
+                }
+                else
+                {
+                    result.WriteToConsole();
+                }
+            }
+
+            var allMemebers = MergeYamlProjectMetadata(projectMetadataList);
+
+            if (allMemebers == null || allMemebers.Count == 0)
+            {
+                ParseResult.WriteToConsole(ResultLevel.Error, "No metadata is generated for {0}.", metadataFiles.ToDelimitedString());
+            }
+            else
+            {
+                string indexFilePath;
+                ParseResult result = ResolveAndExportYamlMetadata(allMemebers, outputFolder, indexFileName, out indexFilePath);
+                if (result.ResultLevel == ResultLevel.Success)
+                {
+                    return indexFilePath;
+                }
+                else
+                {
+                    result.WriteToConsole();
+                }
+            }
+
+            return null;
+        }
+
 
         private static async Task<string> MergeMetadataFromMetadataListCoreAsync(List<string> metadataFiles, string outputFolder, string indexFileName)
         {
@@ -314,9 +369,99 @@ namespace DocAsCode.BuildMeta
 
             return document;
         }
+        private static Dictionary<string, YamlItemViewModel> MergeYamlProjectMetadata(List<YamlItemViewModel> projectMetadataList)
+        {
+            if (projectMetadataList == null || projectMetadataList.Count == 0)
+            {
+                return null;
+            }
+
+            Dictionary<string, YamlItemViewModel> namespaceMapping = new Dictionary<string, YamlItemViewModel>();
+            Dictionary<string, YamlItemViewModel> allMembers = new Dictionary<string, YamlItemViewModel>();
+
+            foreach (var project in projectMetadataList)
+            {
+                if (project.Items != null)
+                {
+                    foreach (var ns in project.Items)
+                    {
+                        if (ns.Type == MemberType.Namespace)
+                        {
+                            YamlItemViewModel nsOther;
+                            if (namespaceMapping.TryGetValue(ns.Name, out nsOther))
+                            {
+                                if (ns.Items != null)
+                                {
+                                    if (nsOther.Items == null)
+                                    {
+                                        nsOther.Items = new List<YamlItemViewModel>();
+                                    }
+
+                                    nsOther.Items.AddRange(ns.Items);
+                                }
+                            }
+                            else
+                            {
+                                namespaceMapping.Add(ns.Name, ns);
+                            }
+                        }
+
+                        allMembers[ns.Name] = ns;
+
+                        if (ns.Items != null)
+                        {
+                            ns.Items.ForEach(s =>
+                            {
+                                YamlItemViewModel existingMetadata;
+                                if (allMembers.TryGetValue(s.Name, out existingMetadata))
+                                {
+                                    ParseResult.WriteToConsole(ResultLevel.Error, "Duplicate member {0} is found from {1} and {2}, use the one in {1} and ignore the one from {2}", s.Name, existingMetadata.Source.Path, s.Source.Path);
+                                }
+                                else
+                                {
+                                    allMembers.Add(s.Name, s);
+                                }
+
+                                if (s.Items != null)
+                                {
+                                    s.Items.ForEach(s1 =>
+                                    {
+                                        YamlItemViewModel existingMetadata1;
+                                        if (allMembers.TryGetValue(s1.Name, out existingMetadata1))
+                                        {
+                                            ParseResult.WriteToConsole(ResultLevel.Error, "Duplicate member {0} is found from {1} and {2}, use the one in {1} and ignore the one from {2}", s1.Name, existingMetadata1.Source.Path, s1.Source.Path);
+                                        }
+                                        else
+                                        {
+                                            allMembers.Add(s1.Name, s1);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    }
+                }
+            }
+
+            return allMembers;
+        }
 
         private class SymbolMetadataTable : ConcurrentDictionary<ISymbol, IMetadata>
         {
+        }
+
+        private static async Task<YamlItemViewModel> GenerateYamlMetadataAsync(Project project)
+        {
+            if (project == null)
+            {
+                return null;
+            }
+
+            var compilation = await project.GetCompilationAsync();
+            object visitorContext = new object();
+
+            YamlItemViewModel item = compilation.Assembly.Accept(new YamlModelGeneratorVisitor(visitorContext));
+            return item;
         }
 
         private static async Task<ProjectMetadata> GenerateMetadataAsync(Project project)
@@ -344,6 +489,10 @@ namespace DocAsCode.BuildMeta
             };
 
             var compilation = await project.GetCompilationAsync();
+            object visitorContext = new object();
+
+            YamlItemViewModel item = compilation.Assembly.Accept(new YamlModelGeneratorVisitor(visitorContext));
+
             var namespaceMembers = compilation.Assembly.GlobalNamespace.GetNamespaceMembers();
             var namespaceQueue = new Queue<INamespaceSymbol>();
 
@@ -429,33 +578,21 @@ namespace DocAsCode.BuildMeta
             return true;
         }
 
-        class TreeIterator
+
+        private static ParseResult TryParseYamlMetadataFile(string metadataFileName, out YamlItemViewModel projectMetadata)
         {
-            public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task<bool>> action)
+            projectMetadata = null;
+            try
             {
-                if (current == null || action == null)
+                using (StreamReader reader = new StreamReader(metadataFileName))
                 {
-                    return;
+                    projectMetadata = YamlUtility.Deserializer.Deserialize<YamlItemViewModel>(reader);
+                    return new ParseResult(ResultLevel.Success);
                 }
-
-                if (!await action(current, parent))
-                {
-                    return;
-                }
-
-                if (childrenGetter == null)
-                {
-                    return;
-                }
-
-                var children = childrenGetter(current);
-                if (children != null)
-                {
-                    foreach(var child in children)
-                    {
-                        await PreorderAsync(child, current, childrenGetter, action);
-                    }
-                }
+            }
+            catch (Exception e)
+            {
+                return new ParseResult(ResultLevel.Error, e.Message);
             }
         }
 
@@ -468,6 +605,24 @@ namespace DocAsCode.BuildMeta
                 {
                     projectMetadata = JsonUtility.Deserialize<ProjectMetadata>(reader);
                     return new ParseResult(ResultLevel.Success);
+                }
+            }
+            catch (Exception e)
+            {
+                return new ParseResult(ResultLevel.Error, e.Message);
+            }
+        }
+
+        private static ParseResult TryExportYamlMetadataFile(YamlItemViewModel doc, string folder, UriKind uriKind, out string filePath)
+        {
+            filePath = Path.Combine(folder, doc.Name).FormatPath(uriKind, folder);
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    YamlUtility.Serializer.Serialize(writer, doc);
+                    return new ParseResult(ResultLevel.Success, "Successfully generated metadata {0} for {1}", filePath, doc.Name);
                 }
             }
             catch (Exception e)
@@ -492,6 +647,40 @@ namespace DocAsCode.BuildMeta
             {
                 return new ParseResult(ResultLevel.Error, e.Message);
             }
+        }
+
+        private static ParseResult ResolveAndExportYamlMetadata(Dictionary<string, YamlItemViewModel> allMembers, string folder, string indexFileName, out string indexFilePath)
+        {
+            indexFilePath = null;
+
+            var viewModel = YamlMetadataResolver.ResolveMetadata(allMembers);
+            // 1. generate toc.yaml
+            string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.YamlPath);
+            using (StreamWriter sw = new StreamWriter(tocFilePath))
+            {
+                YamlUtility.Serializer.Serialize(sw, viewModel.TocYamlViewModel);
+            }
+
+            // 2. generate api.yaml
+            indexFilePath = Path.Combine(folder, indexFileName);
+            using (StreamWriter sw = new StreamWriter(indexFilePath))
+            {
+                YamlUtility.Serializer.Serialize(sw, viewModel.IndexYamlViewModel);
+            }
+
+            // 3. generate each item's yaml
+            foreach (var item in viewModel.MemberYamlViewModelList)
+            {
+                string itemFilepath = Path.Combine(folder, item.YamlPath);
+                Directory.CreateDirectory(Path.GetDirectoryName(itemFilepath));
+                using (StreamWriter sw = new StreamWriter(itemFilepath))
+                {
+                    YamlUtility.Serializer.Serialize(sw, item);
+                    ParseResult.WriteToConsole(ResultLevel.Success, "Metadata file for {0} is saved to {1}", item.Name, itemFilepath);
+                }
+            }
+
+            return new ParseResult(ResultLevel.Success);
         }
 
         private static ParseResult TryExportMetadataFile(DocumentationMetadata doc, string folder, string indexFileName, out string indexFilePath)
@@ -535,8 +724,9 @@ namespace DocAsCode.BuildMeta
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles)
+        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles, string mdFolderName)
         {
+            
             Dictionary<string, IndexYamlItemViewModel> indexViewModel;
 
             // Read index
@@ -549,7 +739,7 @@ namespace DocAsCode.BuildMeta
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
-                var mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel);
+                var mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName);
                 if (mdresult.Any())
                 {
                     string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);

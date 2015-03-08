@@ -10,6 +10,9 @@ using EntityModel;
 using Newtonsoft.Json.Converters;
 using System.Collections;
 using YamlDotNet.Serialization;
+using System.Xml;
+using System.Xml.XPath;
+using System.Diagnostics;
 
 /// <summary>
 /// The utility class for docascode project
@@ -136,20 +139,29 @@ namespace DocAsCode.Utility
             }
         }
 
+        public const string ListFileExtension = ".list";
+
         public static List<string> GetFileListFromFile(string filePath)
         {
             if (string.IsNullOrWhiteSpace(filePath))
             {
                 return null;
             }
-
             List<string> fileList = new List<string>();
-            using (StreamReader reader = new StreamReader(filePath))
+
+            if (Path.GetExtension(filePath) == ListFileExtension)
             {
-                while (!reader.EndOfStream)
+                using (StreamReader reader = new StreamReader(filePath))
                 {
-                    fileList.Add(reader.ReadLine());
+                    while (!reader.EndOfStream)
+                    {
+                        fileList.Add(reader.ReadLine());
+                    }
                 }
+            }
+            else
+            {
+                fileList = filePath.ToArray(StringSplitOptions.RemoveEmptyEntries, ',').ToList();
             }
 
             return fileList;
@@ -169,8 +181,8 @@ namespace DocAsCode.Utility
             if (string.IsNullOrEmpty(basePath)) throw new ArgumentNullException("fromPath");
             if (string.IsNullOrEmpty(absolutePath)) throw new ArgumentNullException("toPath");
 
-            Uri fromUri = new Uri(basePath);
-            Uri toUri = new Uri(absolutePath);
+            Uri fromUri = new Uri(Path.GetFullPath(basePath));
+            Uri toUri = new Uri(Path.GetFullPath(absolutePath));
 
             if (fromUri.Scheme != toUri.Scheme) { return absolutePath; } // path can't be made relative.
 
@@ -197,7 +209,7 @@ namespace DocAsCode.Utility
             }
             if (kind == UriKind.Relative)
             {
-                if (basePath == null)
+                if (string.IsNullOrEmpty(basePath))
                 {
                     return path;
                 }
@@ -219,7 +231,7 @@ namespace DocAsCode.Utility
     {
         private static JsonSerializerSettings settings = new JsonSerializerSettings()
         {
-            Formatting = Formatting.Indented,
+            Formatting = Newtonsoft.Json.Formatting.Indented,
             DefaultValueHandling = DefaultValueHandling.Ignore,
         };
         private static JsonSerializer _serializer;
@@ -229,7 +241,7 @@ namespace DocAsCode.Utility
         {
             _serializer = new JsonSerializer();
             _serializer.DefaultValueHandling = DefaultValueHandling.Ignore;
-            _serializer.Formatting = Formatting.Indented;
+            _serializer.Formatting = Newtonsoft.Json.Formatting.Indented;
             _serializer.Converters.Add(new CustomizedJsonConverters.IdentityMappingConverter<NamespaceMetadata>());
             _serializer.Converters.Add(new CustomizedJsonConverters.IdentityJsonConverter());
             _serializer.Converters.Add(new CustomizedJsonConverters.BaseMetadataInheritClassJsonConverter());

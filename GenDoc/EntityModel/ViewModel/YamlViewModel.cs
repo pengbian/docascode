@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Utility;
 
 namespace EntityModel.ViewModel
 {
@@ -24,27 +25,52 @@ namespace EntityModel.ViewModel
 
     public class SourceDetail
     {
-        public string RemoteUrl { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "remote")]
+        public GitDetail Remote { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "base")]
+        public string BasePath { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// The url path for current source, should be resolved at some late stage
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "href")]
+        public string Href { get; set; }
+
+        /// <summary>
+        /// The local path for current source, should be resolved to be relative path at some late stage
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "path")]
         public string Path { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "startLine")]
         public int StartLine { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "endLine")]
         public int EndLine { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "content")]
         public string Content { get; set; }
+
+        /// <summary>
+        /// The external path for current source if it is not locally available
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias = "isExternal")]
+        public bool IsExternalPath { get; set; }
     }
 
     public class SyntaxDetail
     {
-        public SyntaxLanguage Language { get; set; }
-        public string Content { get; set; }
+        public Dictionary<SyntaxLanguage, string> Content { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "parameters")]
         public List<YamlItemParameterViewModel> Parameters { get; set; }
-        public YamlItemParameterViewModel Return { get; set; }
-    }
 
-    public class LinkDetail
-    {
-        public string Name { get; set; }
-        public string Href { get; set; }
-        public int Height { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "return")]
+        public YamlItemParameterViewModel Return { get; set; }
     }
 
     public class ItemType
@@ -53,23 +79,69 @@ namespace EntityModel.ViewModel
         public string Description { get; set; }
     }
 
-    public class YamlItemViewModel
+    public class YamlItemViewModel : ICloneable
     {
-        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
+        [YamlDotNet.Serialization.YamlIgnore]
+        public bool IsInvalid { get; set; }
+
+        [YamlDotNet.Serialization.YamlIgnore]
+        public string RawComment { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
-        public string Href { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "yaml")]
         public string YamlPath { get; set; }
-        public List<LayoutItem> Layout { get; set; }
-        public MemberType Type { get; set; } 
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "href")]
+        public string Href { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
+        public Dictionary<SyntaxLanguage, string> DisplayNames { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "qualifiedName")]
+        public Dictionary<SyntaxLanguage, string> DisplayQualifiedNames { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "parent")]
+        public string ParentName { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "type")]
+        public MemberType Type { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "source")]
         public SourceDetail Source { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "documentation")]
         public SourceDetail Documentation { get; set; }
+
+        public List<LayoutItem> Layout { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "summary")]
         public string Summary { get; set; }
 
-        public List<SyntaxDetail> Syntax { get; set; }
-        public List<LinkDetail> Inheritence { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "remarks")]
+        public string Remarks { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "syntax")]
+        public SyntaxDetail Syntax { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "inheritence")]
+        public List<SourceDetail> Inheritence { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "itemTypes")]
         public List<ItemType> ItemTypes { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "items")]
         public List<YamlItemViewModel> Items { get; set; }
+
+        public override string ToString()
+        {
+            return Type + ": " + Name;
+        }
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 
     public class YamlViewModel
@@ -88,8 +160,13 @@ namespace EntityModel.ViewModel
 
     public class YamlItemParameterViewModel
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
-        public LinkDetail Type { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "type")]
+        public SourceDetail Type { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "description")]
         public string Description { get; set; }
     }
 }
