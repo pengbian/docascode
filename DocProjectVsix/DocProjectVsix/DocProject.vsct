@@ -20,12 +20,9 @@
   <!--This header contains the command ids for the menus provided by the shell. -->
   <Extern href="vsshlids.h"/>
 
-
-
-
   <!--The Commands section is where we the commands, menus and menu groups are defined.
       This section uses a Guid to identify the package that provides the command defined inside it. -->
-  <Commands package="guidDocContextMenuPackagePkg">
+  <Commands package="guidDocProjectPkg">
     <!-- Inside this section we have different sub-sections: one for the menus, another  
     for the menu groups, one for the buttons (the actual commands), one for the combos 
     and the last one for the bitmaps used. Each element is identified by a command id that  
@@ -35,7 +32,7 @@
     with command ids defined by other packages. -->
 
     <Menus>
-      <Menu guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenu" priority="0x0200" type="Menu">
+      <Menu guid="guidDocProjectCmdSet" id="PublishSubMenu" priority="0x0200" type="Menu">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_BUILD"/>
         <Strings>
           <ButtonText>Publish to</ButtonText>
@@ -49,8 +46,8 @@
          group as the part of a menu contained between two lines. The parent of a group 
          must be a menu. -->
     <Groups>
-      <Group guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenuGroup" priority="0x0210">
-        <Parent guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenu"/>
+      <Group guid="guidDocProjectCmdSet" id="PublishSubMenuGroup" priority="0x0600">
+        <Parent guid="guidDocProjectCmdSet" id="PublishSubMenu"/>
       </Group>
     </Groups>
 
@@ -66,16 +63,13 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidDocContextMenuPackageCmdSet" id="PublishToGithubCommand" priority="0x0211" type="Button">
-        <Parent guid="guidDocContextMenuPackageCmdSet" id="PublishSubMenuGroup" />
+      <Button guid="guidDocProjectCmdSet" id="PublishToGithubCommand" priority="0x0100" type="Button">
+        <Parent guid="guidDocProjectCmdSet" id="PublishSubMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Github</ButtonText>
         </Strings>
       </Button>
-
-
-
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -85,7 +79,7 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used 
             inside a button definition. An important aspect of this declaration is that the element id 
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Images.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows"/>
+      <Bitmap guid="guidImages" href="Resources\Images.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows"/>
 
     </Bitmaps>
 
@@ -93,10 +87,10 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidDocContextMenuPackagePkg" value="{197d8579-59cd-4d80-bf9e-8e01e270775c}" />
+    <GuidSymbol name="guidDocProjectPkg" value="{197d8579-59cd-4d80-bf9e-8e01e270775c}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidDocContextMenuPackageCmdSet" value="{0be74276-7d6f-4c26-9029-402bc9b533e1}">
+    <GuidSymbol name="guidDocProjectCmdSet" value="{0be74276-7d6f-4c26-9029-402bc9b533e1}">
       <!--'Publish' submenu-->
       <IDSymbol name="PublishSubMenu" value="0x0200"/>
 

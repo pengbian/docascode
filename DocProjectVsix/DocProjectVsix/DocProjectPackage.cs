@@ -69,7 +69,7 @@ namespace MicrosoftIT.DocProject
             if (null != mcs)
             {
                 // Create the 'publish' command for the menu item.
-                CommandID publishToGithubMenuCommandID = new CommandID(GuidList.guidDocContextMenuPackageCmdSet, (int)PkgCmdIDList.PublishToGithubCommand);
+                CommandID publishToGithubMenuCommandID = new CommandID(GuidList.guidDocProjectCmdSet, (int)PkgCmdIDList.PublishToGithubCommand);
                 MenuCommand publishToGithubMenuItem = new MenuCommand(PublishToGithubMenuItemCallback, publishToGithubMenuCommandID);
                 mcs.AddCommand(publishToGithubMenuItem);
             }

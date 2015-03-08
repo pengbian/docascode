@@ -131,15 +131,15 @@
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
-    <Resource Include="Templates\Projects\DocProject\Images.png">
+    <Resource Include="Resources\Images.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Content Include="Resources\Package.ico" />
     <Compile Include="GeneralPropertyPage.cs" />
     <Compile Include="PkgCmdID.cs" />
     <Compile Include="PublishToGithubOperation.cs" />
-    <Compile Include="Templates\Projects\DocProject\DocProjectFactory.cs" />
-    <Compile Include="Templates\Projects\DocProject\DocProjectNode.cs" />
+    <Compile Include="DocProjectFactory.cs" />
+    <Compile Include="DocProjectNode.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -147,10 +147,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Templates\Projects\DocProjectPackage.cs" />
+    <Compile Include="DocProjectPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <VSCTCompile Include="Templates\Projects\DocProject\DocProject.vsct">
-      <SubType>Designer</SubType>
+    <VSCTCompile Include="DocProject.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
     <ZipProject Include="Templates\Projects\DocProject\template\class-ios.html">
       <RootPath>Templates\Projects\DocProject</RootPath>
@@ -179,6 +179,9 @@
     <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
+    <VSIXSourceItem Include="$(OutputPath)\ProjectTemplates\DocProject.zip">
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+    </VSIXSourceItem>
   </ItemGroup>
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>
