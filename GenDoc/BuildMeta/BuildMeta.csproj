@@ -122,7 +122,6 @@
     <Compile Include="BuildMarkdownIndexHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YamlMetadataResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />

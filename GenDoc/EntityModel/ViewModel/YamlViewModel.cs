@@ -75,6 +75,9 @@ namespace EntityModel.ViewModel
     public class YamlItemViewModel : ICloneable
     {
         [YamlDotNet.Serialization.YamlIgnore]
+        public bool IsInvalid { get; set; }
+
+        [YamlDotNet.Serialization.YamlIgnore]
         public string RawComment { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]

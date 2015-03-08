@@ -603,35 +603,6 @@ namespace DocAsCode.BuildMeta
             return true;
         }
 
-        class TreeIterator
-        {
-            public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task<bool>> action)
-            {
-                if (current == null || action == null)
-                {
-                    return;
-                }
-
-                if (!await action(current, parent))
-                {
-                    return;
-                }
-
-                if (childrenGetter == null)
-                {
-                    return;
-                }
-
-                var children = childrenGetter(current);
-                if (children != null)
-                {
-                    foreach(var child in children)
-                    {
-                        await PreorderAsync(child, current, childrenGetter, action);
-                    }
-                }
-            }
-        }
 
         private static ParseResult TryParseYamlMetadataFile(string metadataFileName, out YamlItemViewModel projectMetadata)
         {

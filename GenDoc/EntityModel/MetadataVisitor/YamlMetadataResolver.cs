@@ -1,0 +1,364 @@
+﻿using EntityModel;
+using EntityModel.ViewModel;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EntityModel
+{
+    public static class YamlMetadataResolver
+    {
+        // Order matters
+        static List<IResolverPipeline> pipelines = new List<IResolverPipeline>()
+        {
+            new LayoutCheckAndCleanup(),
+            new ResolveRelativePath(),
+            new BuildIndex(),
+            new ResolveLink(),
+
+            new BuildMembers(),
+            new BuildToc(),
+        };
+
+        // Folder structure
+        // toc.yaml # toc containing all the namespaces
+        // api.yaml # id-yaml mapping
+        // api/{id}.yaml # items
+        public const string YamlExtension = ".yaml";
+        public const string TocYamlFileName = "toc" + YamlExtension;
+        public const string ApiFolder = "api";
+
+        /// <summary>
+        /// TODO: input Namespace list instead
+        /// </summary>
+        /// <param name="allMembers"></param>
+        /// <returns></returns>
+        public static YamlViewModel ResolveMetadata(Dictionary<string, YamlItemViewModel> allMembers)
+        {
+            YamlViewModel viewModel = new YamlViewModel();
+            viewModel.IndexYamlViewModel = new Dictionary<string, IndexYamlItemViewModel>();
+            viewModel.TocYamlViewModel = new YamlItemViewModel()
+            {
+                Type = MemberType.Toc,
+                Items = allMembers.Where(s => s.Value.Type == MemberType.Namespace).Select(s => s.Value).ToList(),
+                YamlPath = TocYamlFileName,
+            };
+            viewModel.MemberYamlViewModelList = new List<YamlItemViewModel>();
+
+            var result = ExecutePipeline(viewModel);
+
+            result.WriteToConsole();
+            return viewModel;
+        }
+
+        public static ParseResult ExecutePipeline(YamlViewModel yaml)
+        {
+            ParseResult result = new ParseResult(ResultLevel.Success);
+            foreach(var pipeline in pipelines)
+            {
+                result = pipeline.Run(yaml);
+                if (result.ResultLevel == ResultLevel.Error)
+                {
+                    return result;
+                }
+
+                if (!string.IsNullOrEmpty(result.Message))
+                {
+                    result.WriteToConsole();
+                }
+            }
+
+            return result;
+        }
+
+        public interface IResolverPipeline
+        {
+            ParseResult Run(YamlViewModel yaml);
+        }
+
+        public class BuildToc : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                yaml.TocYamlViewModel = yaml.TocYamlViewModel.ShrinkSelfToGrandChildren();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+        }
+
+        public class BuildMembers : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+                    (s) =>
+                    {
+                        if (s.IsInvalid || (s.Type != MemberType.Namespace && s.Type != MemberType.Toc)) return null;
+                        else return s.Items;
+                    }, (member, parent) =>
+                    {
+                        if (member.Type != MemberType.Toc)
+                        {
+                            yaml.MemberYamlViewModelList.Add(member.ShrinkChildren());
+                        }
+
+                        return Task.FromResult(true);
+                    }
+                    ).Wait();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+        }
+
+        public class BuildIndex : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+                    (s) =>
+                    {
+                        if (s.IsInvalid) return null;
+                        else return s.Items;
+                    }, (member, parent) =>
+                    {
+                        if (member.Type != MemberType.Toc)
+                        {
+                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.YamlPath, Href = member.Href });
+                        }
+
+                        return Task.FromResult(true);
+                    }
+                    ).Wait();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+        }
+
+        public class LayoutCheckAndCleanup : IResolverPipeline
+        {
+            /// <summary>
+            /// The yaml layout should be 
+            /// namespace -- class level -- method level
+            /// </summary>
+            /// <param name="allMembers"></param>
+            /// <returns></returns>
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                ParseResult overall = new ParseResult(ResultLevel.Success);
+                StringBuilder message = new StringBuilder();
+                foreach (var member in yaml.TocYamlViewModel.Items)
+                {
+                    CheckNamespaces(member);
+                }
+
+                if (message.Length > 0)
+                {
+                    overall.ResultLevel = ResultLevel.Warn;
+                    overall.Message = message.ToString();
+                }
+
+                return overall;
+            }
+
+            private ParseResult CheckNamespaces(YamlItemViewModel member)
+            {
+                ParseResult overall = new ParseResult(ResultLevel.Success);
+                StringBuilder message = new StringBuilder();
+
+                // Skip if it is already invalid
+                if (member.Items == null || member.IsInvalid)
+                {
+                    return overall;
+                }
+
+                foreach (var i in member.Items)
+                {
+                    Debug.Assert(i.Type.IsPageLevel());
+                    if (!i.Type.IsPageLevel())
+                    {
+                        ParseResult.WriteToConsole(ResultLevel.Error, "Invalid item inside yaml metadata: {0} is not allowed inside {1}. Will be ignored.", i.Type.ToString(), member.Type.ToString());
+                        message.AppendFormat("{0} is not allowed inside {1}.", i.Type.ToString(), member.Type.ToString());
+                        i.IsInvalid = true;
+                    }
+                    else
+                    {
+                        ParseResult result = CheckNamespaceMembers(i);
+                        if (!string.IsNullOrEmpty(result.Message))
+                        {
+                            message.AppendLine(result.Message);
+                        }
+                    }
+                }
+
+                if (message.Length > 0)
+                {
+                    overall.ResultLevel = ResultLevel.Warn;
+                    overall.Message = message.ToString();
+                }
+
+                return overall;
+            }
+
+            /// <summary>
+            /// e.g. Classes
+            /// </summary>
+            /// <param name="item"></param>
+            /// <returns></returns>
+            private ParseResult CheckNamespaceMembers(YamlItemViewModel member)
+            {
+                ParseResult overall = new ParseResult(ResultLevel.Success);
+                StringBuilder message = new StringBuilder();
+
+                // Skip if it is already invalid
+                if (member.Items == null || member.IsInvalid)
+                {
+                    return overall;
+                }
+
+
+                foreach (var i in member.Items)
+                {
+                    Debug.Assert(!i.Type.IsPageLevel());
+                    if (i.Type.IsPageLevel())
+                    {
+                        ParseResult.WriteToConsole(ResultLevel.Error, "Invalid item inside yaml metadata: {0} is not allowed inside {1}. Will be ignored.", i.Type.ToString(), member.Type.ToString());
+                        message.AppendFormat("{0} is not allowed inside {1}.", i.Type.ToString(), member.Type.ToString());
+                        i.IsInvalid = true;
+                    }
+                    else
+                    {
+                        ParseResult result = CheckNamespaceMembersMembers(i);
+                        if (!string.IsNullOrEmpty(result.Message))
+                        {
+                            message.AppendLine(result.Message);
+                        }
+                    }
+                }
+
+                if (message.Length > 0)
+                {
+                    overall.ResultLevel = ResultLevel.Warn;
+                    overall.Message = message.ToString();
+                }
+
+                return overall;
+            }
+
+
+            /// <summary>
+            /// e.g. Methods
+            /// </summary>
+            /// <param name="item"></param>
+            /// <returns></returns>
+            private ParseResult CheckNamespaceMembersMembers(YamlItemViewModel member)
+            {
+                ParseResult overall = new ParseResult(ResultLevel.Success);
+                StringBuilder message = new StringBuilder();
+                if (member.IsInvalid)
+                {
+                    return overall;
+                }
+
+                // does method has members?
+                Debug.Assert(member.Items == null);
+                if (member.Items != null)
+                {
+                    foreach (var i in member.Items)
+                    {
+                        i.IsInvalid = true;
+                    }
+
+                    ParseResult.WriteToConsole(ResultLevel.Error, "Invalid item inside yaml metadata: {0} should not contain items. Will be ignored.", member.Type.ToString());
+                    message.AppendFormat("{0} should not contain items.", member.Type.ToString());
+                }
+
+                if (message.Length > 0)
+                {
+                    overall.ResultLevel = ResultLevel.Warn;
+                    overall.Message = message.ToString();
+                }
+
+                return overall;
+            }
+        }
+        public class ResolveLink : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                var index = yaml.IndexYamlViewModel;
+
+                TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+                    (s) =>
+                    {
+                        if (s.IsInvalid) return null;
+                        else return s.Items;
+                    }, (member, parent) =>
+                    {
+                        // get all the possible places where link is possible
+                        member.Remarks = ResolveText(index, member.Remarks);
+                        member.Summary = ResolveText(index, member.Summary);
+                        if (member.Syntax != null && member.Syntax.Parameters != null)
+                            member.Syntax.Parameters.ForEach(s =>
+                            {
+                                s.Description = ResolveText(index, s.Description);
+                            });
+                        if (member.Syntax != null && member.Syntax.Return != null)
+                            member.Syntax.Return.Description = ResolveText(index, member.Syntax.Return.Description);
+                        return Task.FromResult(true);
+                    }
+                    ).Wait();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+
+            private static string ResolveText(Dictionary<string, IndexYamlItemViewModel> dict, string input)
+            {
+                return LinkParser.ResolveText(dict, input, s =>
+                 string.Format("[{0}]({1})", s.Name, s.Href)
+                );
+            }
+        }
+
+        public class ResolveRelativePath : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+                    (s) =>
+                    {
+                        if (s.IsInvalid) return null;
+                        else return s.Items;
+                    }, (current, parent) =>
+                    {
+                        if (current.Type != MemberType.Toc)
+                        {
+                            if (current.Type.IsPageLevel())
+                            {
+                                current.YamlPath = Path.Combine(ApiFolder, current.Name + YamlExtension);
+                                current.Href = Path.Combine(ApiFolder, current.Name);
+                            }
+                            else
+                            {
+                                current.YamlPath = parent.YamlPath;
+                                current.Href = parent.Href;
+                            }
+                        }
+
+                        return Task.FromResult(true);
+                    }
+                    ).Wait();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+        }
+
+        public class ResolveGitPath
+        {
+
+        }
+    }
+}

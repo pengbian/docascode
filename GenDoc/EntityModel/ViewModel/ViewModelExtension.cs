@@ -4,12 +4,121 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.XPath;
 
 namespace EntityModel.ViewModel
 {
+    public static class TreeIterator
+    {
+        public static async Task PreorderAsync<T>(T current, T parent, Func<T, IEnumerable<T>> childrenGetter, Func<T, T, Task<bool>> action)
+        {
+            if (current == null || action == null)
+            {
+                return;
+            }
+
+            if (!await action(current, parent))
+            {
+                return;
+            }
+
+            if (childrenGetter == null)
+            {
+                return;
+            }
+
+            var children = childrenGetter(current);
+            if (children != null)
+            {
+                foreach (var child in children)
+                {
+                    await PreorderAsync(child, current, childrenGetter, action);
+                }
+            }
+        }
+    }
+
+    public static class LinkParser
+    {
+        const string idSelector = @"(?![0-9])[\w_])+[\w\(\)\.\{\}\[\]\|\*\^~#@!`,_<>:]*";
+        public static Regex CommentIdRegex = new Regex(@"^(?<type>N|T|M|P|F|E):(?<id>(" + idSelector + ")$", RegexOptions.Compiled);
+
+        // link from cref is in @T:System.Object- format
+        public static Regex LinkFromCrefRegex = new Regex(@"@(?<content>((?<type>N|T|M|P|F|E):" + idSelector + @")\-", RegexOptions.Compiled);
+
+        // self written link should be ended with a whitespace
+        public static Regex LinkFromSelfWrittenRegex = new Regex(@"@(?<content>(" + idSelector + @")\s", RegexOptions.Compiled);
+
+        public static string ResolveText<T>(Dictionary<string, T> dict, string input, Func<T, string> linkGenerator)
+        {
+            if (dict == null) return input;
+            return LinkParser.Resolve(input, s =>
+            {
+                T item;
+                if (dict.TryGetValue(s, out item))
+                {
+                    if (linkGenerator != null)
+                    {
+                        return linkGenerator(item);
+                    }
+                    else
+                    {
+                        Debug.Assert(linkGenerator == null);
+                        return item.ToString();
+                    }
+                }
+                else
+                {
+                    return null;
+                }
+            });
+        }
+
+        public static string Resolve(string input, Func<string, string> replaceHandler)
+        {
+            if (string.IsNullOrEmpty(input)) return null;
+        
+            // 1. Self written @System.Object is also supported
+            // 2. Generated from triple slash comments: @T:System.Object_, _ stands for a whitespace
+            input = LinkFromCrefRegex.Replace(input, new MatchEvaluator(s => LinkResolver(s, replaceHandler)));
+
+            if (string.IsNullOrEmpty(input)) return null;
+            input = LinkFromSelfWrittenRegex.Replace(input, new MatchEvaluator(s => LinkResolver(s, replaceHandler)));
+            return input;
+        }
+
+        private static string LinkResolver(Match match, Func<string, string> replaceHandler)
+        {
+            string filePath;
+            string id = match.Groups["content"].Value;
+            // For a valid commentid, remove the first 2 characters
+            if (CommentIdRegex.IsMatch(id))
+            {
+                id = id.Substring(2);
+
+                string replacement = replaceHandler(id);
+                if (!string.IsNullOrEmpty(replacement))
+                {
+                    return replacement;
+                }
+            }
+            else
+            {
+                string replacement = replaceHandler(id);
+                if (!string.IsNullOrEmpty(replacement))
+                {
+                    // For manally written link, append a whitespace
+                    return replacement + " ";
+                }
+            }
+
+            return match.Value;
+        }
+    }
+
     public static class TripleSlashCommentParser
     {
         /// <summary>
@@ -91,7 +200,7 @@ namespace EntityModel.ViewModel
                         var currentNode = i.Clone();
                         var value = node.Value;
 
-                        // Current: Always append a space, remove when resolve
+                        // Current: Always append a -, remove when resolve
 
                         // TODO: need more discussion on @ syntax
                         // what if <see cref="book">s intentionally want no space in between
@@ -105,7 +214,7 @@ namespace EntityModel.ViewModel
                         //    }
                         //}
 
-                        currentNode.InsertAfter("@" + value + " ");
+                        currentNode.InsertAfter("@" + value + "-");
 
                         sees.Add(currentNode);
                     }
@@ -167,6 +276,24 @@ namespace EntityModel.ViewModel
             shrinkedItem.Href = item.Href;
             shrinkedItem.Summary = item.Summary;
             shrinkedItem.Type = item.Type;
+            shrinkedItem.YamlPath = item.YamlPath;
+            return shrinkedItem;
+        }
+        public static YamlItemViewModel ShrinkSelfToGrandChildren(this YamlItemViewModel item)
+        {
+            if (item.Items == null)
+            {
+                return item;
+            }
+
+            YamlItemViewModel shrinkedItem = item.Shrink();
+            shrinkedItem.Items = new List<YamlItemViewModel>();
+            foreach (var i in item.Items)
+            {
+                if (i.IsInvalid) continue;
+                shrinkedItem.Items.Add(i.ShrinkSelfAndChildren());
+            }
+
             return shrinkedItem;
         }
 
@@ -181,6 +308,7 @@ namespace EntityModel.ViewModel
             shrinkedItem.Items = new List<YamlItemViewModel>();
             foreach (var i in item.Items)
             {
+                if (i.IsInvalid) continue;
                 shrinkedItem.Items.Add(i.Shrink());
             }
 
@@ -193,12 +321,20 @@ namespace EntityModel.ViewModel
             {
                 return item;
             }
-
             YamlItemViewModel shrinkedItem = (YamlItemViewModel)item.Clone();
             shrinkedItem.Items = new List<YamlItemViewModel>();
             foreach(var i in item.Items)
             {
-                shrinkedItem.Items.Add(i.Shrink());
+                if (i.IsInvalid) continue;
+
+                if (item.Type == MemberType.Namespace)
+                {
+                    shrinkedItem.Items.Add(i.Shrink());
+                }
+                else
+                {
+                    shrinkedItem.Items.Add(i);
+                }
             }
 
             return shrinkedItem;

@@ -1,5 +1,6 @@
 ﻿using DocAsCode.EntityModel;
 using DocAsCode.Utility;
+using EntityModel;
 using EntityModel.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -78,45 +79,6 @@ namespace DocAsCode.BuildMeta
                 YamlUtility.Serializer.Serialize(writer, this);
                 return writer.ToString();
             }
-        }
-    }
-
-    public enum ResultLevel
-    {
-        Success,
-        Info,
-        Warn,
-        Error
-    }
-
-    public class ParseResult
-    {
-        public ResultLevel ResultLevel { get; set; }
-        public string Message { get; set; }
-        public ParseResult(ResultLevel resultLevel, string message, params string[] arg)
-        {
-            this.ResultLevel = resultLevel;
-            this.Message = string.Format(message, arg);
-        }
-
-        public ParseResult(ResultLevel resultLevel)
-        {
-            this.ResultLevel = resultLevel;
-        }
-
-        public void WriteToConsole()
-        {
-            Console.Error.WriteLine(this.ToString());
-        }
-
-        public static void WriteToConsole(ResultLevel resultLevel, string message, params string[] arg)
-        {
-            Console.Error.WriteLine(resultLevel + ": " + message, arg);
-        }
-
-        public override string ToString()
-        {
-            return ResultLevel + ": " + Message;
         }
     }
     public class BuildMarkdownIndexHelper

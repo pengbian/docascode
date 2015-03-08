@@ -5,6 +5,7 @@ using System.IO;
 using System.Threading.Tasks;
 using DocAsCode.Utility;
 using EntityModel.ViewModel;
+using System.Collections.Generic;
 
 namespace UnitTest
 {
@@ -12,7 +13,7 @@ namespace UnitTest
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
     [TestClass]
-    public class TripleSlashParserUnitTest
+    public class UtilityUnitTest
     {
         [TestMethod]
         public async Task TestTripleSlashParser()
@@ -32,16 +33,31 @@ namespace UnitTest
      
            </member>";
             var summary = TripleSlashCommentParser.GetSummary(input, true);
-            Assert.AreEqual("Parital classes @T:System.AccessViolationException @T:System.AccessViolationException can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
+            Assert.AreEqual("Parital classes @T:System.AccessViolationException-@T:System.AccessViolationException-can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
 
             var returns = TripleSlashCommentParser.GetReturns(input, true);
-            Assert.AreEqual("Task@T:System.AccessViolationException  returns", returns);
+            Assert.AreEqual("Task@T:System.AccessViolationException- returns", returns);
 
             var paramInput = TripleSlashCommentParser.GetParam(input, "input", true);
-            Assert.AreEqual("This is @T:System.AccessViolationException the input", paramInput);
+            Assert.AreEqual("This is @T:System.AccessViolationException-the input", paramInput);
 
             var invalidParam = TripleSlashCommentParser.GetParam(input, "invalid", true);
             Assert.IsNull(invalidParam);
+        }
+
+        [TestMethod]
+        public void TestLinkParser()
+        {
+            Dictionary<string, string> index = new Dictionary<string, string>
+            {
+                {"link", "href" },
+            };
+            string input = "a@T:link-@invalid";
+            string output = LinkParser.ResolveText(index, input, s => s);
+            Assert.AreEqual("ahref@invalid", output);
+            input = "a@link @T:link-";
+            output = LinkParser.ResolveText(index, input, s => "[link](" + s + ")");
+            Assert.AreEqual("a[link](href) [link](href)", output);
         }
     }
 }
