@@ -8,24 +8,38 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using Utility;
 
 namespace DocAsCode.BuildMeta
 {
     public class MarkdownIndex
     {
-        public string Id { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias ="apiId")]
+        public string ApiName { get; set; }
 
-        public string FilePath { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias ="path")]
+        public string Path { get; set; }
 
-        public string YamlPath { get; set; }
+        /// <summary>
+        /// Similar to yaml, href is the location of md in the generated website, currently it is copied to md folder
+        /// </summary>
+        [YamlDotNet.Serialization.YamlMember(Alias ="href")]
+        public string Href { get; set; }
 
+        [YamlDotNet.Serialization.YamlIgnore]
         public int Startline { get; set; }
 
+        [YamlDotNet.Serialization.YamlIgnore]
         public string MarkdownContent { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias ="startLine")]
         public int ContentStartIndex { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias ="endLine")]
         public int ContentEndIndex { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias ="remote")]
+        public GitDetail Remote { get; set; }
 
         /// <summary>
         /// To override yaml settings
@@ -50,7 +64,7 @@ namespace DocAsCode.BuildMeta
                 return false;
             }
 
-            if (string.IsNullOrEmpty(this.Id) && string.IsNullOrEmpty(other.Id) == null)
+            if (string.IsNullOrEmpty(this.ApiName) && string.IsNullOrEmpty(other.ApiName) == null)
             {
                 return true;
             }
@@ -59,17 +73,17 @@ namespace DocAsCode.BuildMeta
                 return false;
             }
 
-            return this.Id.Equals(other.Id);
+            return this.ApiName.Equals(other.ApiName);
         }
 
         public override int GetHashCode()
         {
-            if (this.Id == null)
+            if (this.ApiName == null)
             {
                 return string.Empty.GetHashCode();
             }
 
-            return this.Id.GetHashCode();
+            return this.ApiName.GetHashCode();
         }
 
         public override string ToString()
@@ -83,13 +97,38 @@ namespace DocAsCode.BuildMeta
     }
     public class BuildMarkdownIndexHelper
     {
-        public static IEnumerable<MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList)
+        public static IEnumerable<MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName)
         {
             Dictionary<string, MarkdownIndex> table = new Dictionary<string, MarkdownIndex>();
-            foreach(var file in markdownFilePathList)
+
+            foreach(var file in markdownFilePathList.Distinct())
             {
                 List<MarkdownIndex> indics;
                 IndexYamlItemViewModel item;
+                string apiFolder = Path.Combine(workingDirectory, mdFolderName);
+                if (Directory.Exists(apiFolder))
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Warn, "Folder {0} already exists!", apiFolder);
+                }
+                else
+                {
+                    Directory.CreateDirectory(apiFolder);
+                }
+
+                string destFileName = Path.Combine(apiFolder, file.ToValidFilePath());
+                try
+                {
+                    string input = File.ReadAllText(file);
+                    var resolved = LinkParser.ResolveText(apiList, input, s =>
+                  string.Format("[{0}]({1})", s.Name, s.Href));
+                    File.WriteAllText(destFileName, resolved);
+                }
+                catch (Exception e)
+                {
+                    ParseResult.WriteToConsole(ResultLevel.Error, "Unable to copy markdown file {0} to output directory {1}: {2}", file, apiFolder, e.Message);
+                    continue;
+                }
+
                 var result = TryParseCustomizedMarkdown(file, s =>
                 {
                     if (apiList.TryGetValue(s.Name, out item))
@@ -110,13 +149,14 @@ namespace DocAsCode.BuildMeta
                 foreach (var key in indics)
                 {
                     MarkdownIndex saved;
-                    if (table.TryGetValue(key.Id, out saved))
+                    if (table.TryGetValue(key.ApiName, out saved))
                     {
-                        ParseResult.WriteToConsole(ResultLevel.Error, "Already contains {0} in file {1}, current one {2} will be ignored.", key.Id, saved.FilePath, key.FilePath);
+                        ParseResult.WriteToConsole(ResultLevel.Error, "Already contains {0} in file {1}, current one {2} will be ignored.", key.ApiName, saved.Path, key.Path);
                     }
                     else
                     {
-                        table.Add(key.Id, key);
+                        key.Href = destFileName.FormatPath(UriKind.Relative, workingDirectory);
+                        table.Add(key.ApiName, key);
                     }
                 }
             }
@@ -132,6 +172,7 @@ namespace DocAsCode.BuildMeta
         /// <returns></returns>
         public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
         {
+            var gitDetail = GitUtility.GetGitDetail(markdownFilePath);
             string markdownFile = File.ReadAllText(markdownFilePath);
             int length = markdownFile.Length;
             var yamlRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<content>.*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
@@ -197,7 +238,7 @@ namespace DocAsCode.BuildMeta
                     }
                 }
 
-                lastSection = new MarkdownIndex { Id = viewModel.Name, ContentStartIndex = startIndex, ContentEndIndex = length - 1, YamlPath = viewModel.YamlPath, FilePath = markdownFilePath }; // endIndex should be set from next match if there is next match
+                lastSection = new MarkdownIndex { ApiName = viewModel.Name, ContentStartIndex = startIndex, ContentEndIndex = length - 1, Remote = gitDetail, Path = markdownFilePath }; // endIndex should be set from next match if there is next match
                 if (lastSection.ContentEndIndex > lastSection.ContentStartIndex)
                 {
                     lastSection.MarkdownContent = markdownFile.Substring(lastSection.ContentStartIndex);

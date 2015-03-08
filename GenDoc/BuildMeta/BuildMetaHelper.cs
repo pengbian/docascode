@@ -97,7 +97,7 @@ namespace DocAsCode.BuildMeta
             }
         }
 
-        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName)
+        public static Task<ParseResult> GenerateIndexForMarkdownListAsync(string workingDirectory, string metadataFileName, string markdownListFile, string outputFileName, string mdFolderName)
         {
             if (string.IsNullOrWhiteSpace(workingDirectory))
             {
@@ -111,7 +111,7 @@ namespace DocAsCode.BuildMeta
                     return new ParseResult(ResultLevel.Error, "No markdown file listed in {0}, Exiting", markdownListFile);
                 }
 
-                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList);
+                string indexFilePath = TryGenerateMarkdownIndexFileCore(workingDirectory, outputFileName, metadataFileName, markdownList, mdFolderName);
                 if (!string.IsNullOrEmpty(indexFilePath))
                 {
                     return new ParseResult(ResultLevel.Success);
@@ -465,23 +465,6 @@ namespace DocAsCode.BuildMeta
                 return null;
             }
 
-            IdentityMapping<NamespaceMetadata> namespaceMapping = new IdentityMapping<NamespaceMetadata>();
-
-            // Stores the generated IMetadata with the relationship to ISymbol
-            SymbolMetadataTable symbolMetadataTable = new SymbolMetadataTable();
-
-            ProjectMetadata projectMetadata = new ProjectMetadata
-            {
-                ProjectName = project.Name,
-                Namespaces = namespaceMapping,
-            };
-
-            // Project.Name is unique per solution
-            MetadataExtractContext context = new MetadataExtractContext
-            {
-                ProjectName = project.Name
-            };
-
             var compilation = await project.GetCompilationAsync();
             object visitorContext = new object();
 
@@ -679,7 +662,6 @@ namespace DocAsCode.BuildMeta
             indexFilePath = null;
 
             var viewModel = YamlMetadataResolver.ResolveMetadata(allMembers);
-
             // 1. generate toc.yaml
             string tocFilePath = Path.Combine(folder, viewModel.TocYamlViewModel.YamlPath);
             using (StreamWriter sw = new StreamWriter(tocFilePath))
@@ -750,8 +732,9 @@ namespace DocAsCode.BuildMeta
             return new ParseResult(ResultLevel.Success);
         }
 
-        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles)
+        private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles, string mdFolderName)
         {
+            
             Dictionary<string, IndexYamlItemViewModel> indexViewModel;
 
             // Read index
@@ -764,7 +747,7 @@ namespace DocAsCode.BuildMeta
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
-                var mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel);
+                var mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName);
                 if (mdresult.Any())
                 {
                     string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);

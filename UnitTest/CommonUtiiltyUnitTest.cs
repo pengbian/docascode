@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DocAsCode.Utility;
 using EntityModel.ViewModel;
 using System.Collections.Generic;
+using Utility;
 
 namespace UnitTest
 {
@@ -58,6 +59,13 @@ namespace UnitTest
             input = "a@link @T:link-";
             output = LinkParser.ResolveText(index, input, s => "[link](" + s + ")");
             Assert.AreEqual("a[link](href) [link](href)", output);
+        }
+
+        [TestMethod]
+        public void TestGitUtility()
+        {
+            var output = GitUtility.GetGitDetail(Environment.CurrentDirectory);
+            Assert.AreEqual("https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode", output.RemoteRepositoryUrl);
         }
     }
 }

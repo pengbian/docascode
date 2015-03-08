@@ -172,8 +172,8 @@ namespace DocAsCode.Utility
             if (string.IsNullOrEmpty(basePath)) throw new ArgumentNullException("fromPath");
             if (string.IsNullOrEmpty(absolutePath)) throw new ArgumentNullException("toPath");
 
-            Uri fromUri = new Uri(basePath);
-            Uri toUri = new Uri(absolutePath);
+            Uri fromUri = new Uri(Path.GetFullPath(basePath));
+            Uri toUri = new Uri(Path.GetFullPath(absolutePath));
 
             if (fromUri.Scheme != toUri.Scheme) { return absolutePath; } // path can't be made relative.
 
@@ -200,7 +200,7 @@ namespace DocAsCode.Utility
             }
             if (kind == UriKind.Relative)
             {
-                if (basePath == null)
+                if (string.IsNullOrEmpty(basePath))
                 {
                     return path;
                 }

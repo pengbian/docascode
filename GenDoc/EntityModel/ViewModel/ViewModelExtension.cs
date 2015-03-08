@@ -243,7 +243,13 @@ namespace EntityModel.ViewModel
                 {
                     XPathDocument doc = new XPathDocument(reader);
                     var nav = doc.CreateNavigator();
-                    var output = nav.SelectSingleNode(selector).Value;
+                    var node = nav.SelectSingleNode(selector);
+                    if (node == null)
+                    {
+                        throw new ArgumentException(selector + " is not found");
+                    }
+
+                    var output = node.Value;
                     if (trim) output = output.Trim();
                     return output;
                 }

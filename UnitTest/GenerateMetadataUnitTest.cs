@@ -11,6 +11,7 @@ namespace UnitTest
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
     [TestClass]
+    [DeploymentItem("NativeBinaries", "NativeBinaries")]
     [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.dll")]
     [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.dll")]
     public class GenerateMetadataUnitTest
@@ -42,7 +43,7 @@ namespace UnitTest
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             Assert.Fail();
@@ -61,7 +62,7 @@ namespace UnitTest
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
             await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", BuildMetaHelper.MetadataType.Yaml);
-            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml");
+            await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
             Assert.Fail();

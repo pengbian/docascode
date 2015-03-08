@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DocAsCode.Utility;
 
 namespace EntityModel
 {
@@ -19,6 +20,7 @@ namespace EntityModel
             new ResolveRelativePath(),
             new BuildIndex(),
             new ResolveLink(),
+            new ResolveGitPath(),
 
             new BuildMembers(),
             new BuildToc(),
@@ -285,6 +287,40 @@ namespace EntityModel
                 return overall;
             }
         }
+
+        public class ResolveRelativePath : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+                    (s) =>
+                    {
+                        if (s.IsInvalid) return null;
+                        else return s.Items;
+                    }, (current, parent) =>
+                    {
+                        if (current.Type != MemberType.Toc)
+                        {
+                            if (current.Type.IsPageLevel())
+                            {
+                                current.YamlPath = Path.Combine(ApiFolder, current.Name + YamlExtension);
+                                current.Href = Path.Combine(ApiFolder, current.Name);
+                            }
+                            else
+                            {
+                                current.YamlPath = parent.YamlPath;
+                                current.Href = parent.Href;
+                            }
+                        }
+
+                        return Task.FromResult(true);
+                    }
+                    ).Wait();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+        }
+
         public class ResolveLink : IResolverPipeline
         {
             public ParseResult Run(YamlViewModel yaml)
@@ -323,7 +359,7 @@ namespace EntityModel
             }
         }
 
-        public class ResolveRelativePath : IResolverPipeline
+        public class ResolveGitPath : IResolverPipeline
         {
             public ParseResult Run(YamlViewModel yaml)
             {
@@ -332,19 +368,15 @@ namespace EntityModel
                     {
                         if (s.IsInvalid) return null;
                         else return s.Items;
-                    }, (current, parent) =>
+                    }, (member, parent) =>
                     {
-                        if (current.Type != MemberType.Toc)
+                        Debug.Assert(member.Type == MemberType.Toc || member.Source != null);
+                        if (member.Source != null)
                         {
-                            if (current.Type.IsPageLevel())
+                            Debug.Assert(member.Source.Remote != null);
+                            if (member.Source.Remote != null)
                             {
-                                current.YamlPath = Path.Combine(ApiFolder, current.Name + YamlExtension);
-                                current.Href = Path.Combine(ApiFolder, current.Name);
-                            }
-                            else
-                            {
-                                current.YamlPath = parent.YamlPath;
-                                current.Href = parent.Href;
+                                member.Source.Path = member.Source.Path.FormatPath(UriKind.Relative, member.Source.Remote.LocalWorkingDirectory);
                             }
                         }
 
@@ -354,11 +386,6 @@ namespace EntityModel
 
                 return new ParseResult(ResultLevel.Success);
             }
-        }
-
-        public class ResolveGitPath
-        {
-
         }
     }
 }

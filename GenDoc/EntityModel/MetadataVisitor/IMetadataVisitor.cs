@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utility;
 
 namespace EntityModel
 {
@@ -157,11 +158,14 @@ namespace EntityModel
             Debug.Assert(syntaxNode != null);
             if (syntaxNode != null)
             {
-                return new SourceDetail
+                var source = new SourceDetail
                 {
                     StartLine = syntaxNode.SyntaxTree.GetLineSpan(syntaxNode.Span).StartLinePosition.Line,
                     Path = syntaxNode.SyntaxTree.FilePath,
                 };
+
+                source.Remote = GitUtility.GetGitDetail(source.Path);
+                return source;
             }
 
             return null;
@@ -386,6 +390,14 @@ namespace EntityModel
             var item = DefaultVisit(symbol);
             if (item == null) return null;
 
+            // e.g. default .ctor
+            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
+            // Debug.Assert(syntaxRef != null); Could be default constructor
+            if (syntaxRef == null)
+            {
+                return null;
+            }
+
             Debug.Assert(parent != null && currentNamespace != null);
             if (parent != null)
             {
@@ -397,12 +409,6 @@ namespace EntityModel
                 parent.Items.Add(item);
             }
 
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            // Debug.Assert(syntaxRef != null); Could be default constructor
-            if (syntaxRef == null)
-            {
-                return null;
-            }
             var syntaxNode = syntaxRef.GetSyntax();
             Debug.Assert(syntaxNode != null);
             if (syntaxNode == null)
@@ -488,6 +494,13 @@ namespace EntityModel
             if (item == null) return null;
             item.Type = MemberType.Field;
 
+            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
+            Debug.Assert(syntaxRef != null);
+            if (syntaxRef == null)
+            {
+                return null;
+            }
+
             Debug.Assert(parent != null && currentNamespace != null);
             if (parent != null)
             {
@@ -497,13 +510,6 @@ namespace EntityModel
                 }
 
                 parent.Items.Add(item);
-            }
-
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            Debug.Assert(syntaxRef != null);
-            if (syntaxRef == null)
-            {
-                return null;
             }
             var syntaxNode = syntaxRef.GetSyntax();
             Debug.Assert(syntaxNode != null);
@@ -568,6 +574,12 @@ namespace EntityModel
             if (item == null) return null;
             item.Type = MemberType.Event;
 
+            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
+            Debug.Assert(syntaxRef != null);
+            if (syntaxRef == null)
+            {
+                return null;
+            }
             Debug.Assert(parent != null && currentNamespace != null);
             if (parent != null)
             {
@@ -579,12 +591,6 @@ namespace EntityModel
                 parent.Items.Add(item);
             }
 
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            Debug.Assert(syntaxRef != null);
-            if (syntaxRef == null)
-            {
-                return null;
-            }
             var syntaxNode = syntaxRef.GetSyntax();
             Debug.Assert(syntaxNode != null);
             if (syntaxNode == null)
@@ -625,6 +631,12 @@ namespace EntityModel
             if (item == null) return null;
             item.Type = MemberType.Property;
 
+            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
+            Debug.Assert(syntaxRef != null);
+            if (syntaxRef == null)
+            {
+                return null;
+            }
             Debug.Assert(parent != null && currentNamespace != null);
             if (parent != null)
             {
@@ -636,12 +648,6 @@ namespace EntityModel
                 parent.Items.Add(item);
             }
 
-            var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
-            Debug.Assert(syntaxRef != null);
-            if (syntaxRef == null)
-            {
-                return null;
-            }
             var syntaxNode = syntaxRef.GetSyntax();
             Debug.Assert(syntaxNode != null);
             if (syntaxNode == null)

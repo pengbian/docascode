@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Utility;
 
 namespace EntityModel.ViewModel
 {
@@ -24,6 +25,12 @@ namespace EntityModel.ViewModel
 
     public class SourceDetail
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "remote")]
+        public GitDetail Remote { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "base")]
+        public string BasePath { get; set; }
+
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
 
