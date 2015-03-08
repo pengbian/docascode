@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<!--
+   This is <%= grunt.config('pkg').name %> v<%= grunt.config('pkg').version %>
+-->
+<head>
+    <title>Doc-as-code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="fragment" content="!">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta charset="UTF-8">
+
+<%
+    var task = grunt.config('currentTask').name;
+    if (task === 'default'){
+        task = 'debug'
+    }
+    grunt.log.writeln('Building single index.html of type: ' + task);
+
+    var ownJsFileFull = grunt.config('concat').dev.dest;
+    var ownJsFileMin = grunt.config('uglify').dist.dest;
+
+    var minifiedJsFiles = grunt.config('internalJsFiles');
+    var minifiedCssFiles = grunt.config('internalCssFiles');
+
+    function print_script_ref(ref) {
+        print('<script type="text/javascript" src="../' + ref + '"></script>\n');
+    }
+    function print_style_ref(ref) {
+        print('<link rel="stylesheet" href="../' + ref + '" type="text/css"></link>\n');
+    }
+    function print_script_inline(name, content) {
+        if (task === 'debug')
+            print('<!-- START ' + name + ' -->\n');
+        print('<script type="text/javascript">');
+        print(content);
+        print('</script>\n');
+        if (task === 'debug')
+            print('<!-- END ' + name + ' -->\n');
+    }
+    function print_style_inline(name, content) {
+        if (task === 'debug')
+            print('<!-- START ' + name + ' -->\n');
+        print('<style id="style:' + name + '">');
+        print(content);
+        print('</style>');
+        if (task === 'debug')
+            print('<!-- END ' + name + ' -->\n');
+    }
+
+    if (task === 'release') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = cssFiles.length; i < len; i++) {
+            var fileContent = grunt.file.read(cssFiles[i]);
+            print_style_inline(cssFiles[i], fileContent);
+        }
+        for(var i = 0, len = jsFiles.length; i < len; i++) {
+            var fileContent = grunt.file.read(jsFiles[i]);
+            print_script_inline(jsFiles[i], fileContent);
+        }
+    } else if (task === 'debug') {
+        // INLINE SCRIPTS AND CSS
+        for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
+            var fileContent = grunt.file.read(unminifiedCssFiles[i]);
+            print_style_ref(unminifiedCssFiles[i], fileContent);
+        }
+        for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
+            var fileContent = grunt.file.read(unminifiedJsFiles[i]);
+            print_script_ref(unminifiedJsFiles[i], fileContent);
+        }
+    }
+
+
+    // OUR OWN CODE
+    var fileContent = '';
+    if (task === 'debug') {
+        fileContent = grunt.file.read(ownJsFileFull);
+        print_script_ref(ownJsFileFull, fileContent);
+    } else if (task === 'release') {
+        fileContent = grunt.file.read(ownJsFileMin);
+        print_script_inline(ownJsFileMin, fileContent);
+    } 
+%>
+</head>
+<body>
+
+  <div id="wrapper">
+    <header scroll-y-offset-element class="header header-fixed">
+      <section class="navbar navbar-inverse docs-navbar-primary" ng-controller="DocsSearchCtrl">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 header-branding">
+              <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                <li><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="#api"><i class="icon-book icon-white active"></i> API Reference</a></li>
+                <li class="divider-vertical"></li>
+              </ul>
+            </div>
+            <form ng-class="{focus:focus}" class="navbar-search col-md-3 docs-search" ng-submit="submit()">
+              <span class="glyphicon glyphicon-search search-icon"></span>
+              <input type="text"
+                     name="as_q"
+                     class="search-query"
+                     placeholder="Click or press / to search"
+                     ng-focus="focus=true"
+                     ng-blur="focus=false"
+                     ng-change="search(q)"
+                     ng-model="q"
+                     docs-search-input
+                     autocomplete="off" />
+            </form>
+          </div>
+        </div>
+        <div class="search-results-container" ng-show="hasResults">
+          <div class="container">
+            <div class="search-results-frame">
+              <div ng-repeat="(key, value) in results" class="search-results-group" ng-class="colClassName + ' col-group-' + key">
+                <h4 class="search-results-group-heading">{{ key }}</h4>
+                <div class="search-results">
+                  <div ng-repeat="item in value" class="search-result">
+                    - <a ng-click="hideResults()" ng-href="#{{ item.path }}">{{ item.name }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="" ng-click="hideResults()" class="search-close">
+              <span class="glyphicon glyphicon-remove search-close-icon"></span> Close
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="sup-header">
+        <div class="container main-grid main-header-grid">
+          <div class="grid-left">
+            <div ng-controller="DocsVersionsCtrl" class="picker version-picker">
+              <select ng-options="v as ('v' + v.version + (v.isSnapshot ? ' (snapshot)' : '')) group by getGroupName(v) for v in docs_versions"
+                      ng-model="docs_version"
+                      ng-change="jumpToDocsVersion(docs_version)"
+                      class="docs-version-jump">
+              </select>
+            </div>
+          </div>
+          <div class="grid-right">
+            <ul class="nav-breadcrumb">
+              <li ng-repeat="crumb in breadcrumb" class="nav-breadcrumb-entry naked-list">
+                <span class="divider"> /</span>
+                <a ng-href="#{{crumb.url}}">{{crumb.name}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section role="main" class="container main-body">
+      <div class="main-grid main-body-grid">
+        <div class="grid-left">
+          <a class="btn toc-toggle visible-xs" ng-click="toc=!toc">Show / Hide Table of Contents</a>
+          <div class="side-navigation" ng-show="toc==true">
+            <ul class="nav-list naked-list">
+              <li ng-repeat="navGroup in currentArea.items track by navGroup.name" class="nav-index-group">
+                <a href="#{{ navGroup.href }}" ng-class="navClass(navGroup)" class="nav-index-group-heading">{{ navGroup.name }}</a>
+                <ul class="aside-nav">
+                  <li ng-repeat="navItem in navGroup.items" ng-class="navClass(navItem)" class="nav-index-listing">
+                    <a ng-if="navItem.extra.href" ng-class="navClass(navItem.extra)" href="#{{navItem.extra.href}}">
+                      {{navItem.extra.text}}<i ng-if="navItem.extra.icon" class="icon-{{navItem.extra.icon}}"></i>
+                    </a>
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.name}}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a href="" ng-click="toc=false" class="toc-close visible-xs">
+              <span class="glyphicon glyphicon-remove toc-close-icon"></span> Close
+            </a>
+          </div>
+        </div>
+        <div class="grid-right">
+          <div id="loading" ng-show="loading">Loading...</div>
+          <div ng-hide="loading" ng-repeat="model in [partialModel]" ng-include="partialPath" autoscroll></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a back-to-top>Back to top</a></p>
+
+        <p>
+          Super-powered by Microsoft Visual Studio China  ©2014-2015
+          Code licensed under the MIT License
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
