@@ -1,0 +1,627 @@
+id: Microsoft.CodeAnalysis.Text.TextSpan
+yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+href: api\Microsoft.CodeAnalysis.Text.TextSpan
+name:
+  CSharp: TextSpan
+qualifiedName:
+  CSharp: TextSpan
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+    local: D:\Repo\RoslynGit\
+    sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+  path: src\Compilers\Core\Portable\Text\TextSpan.cs
+  startLine: 11
+summary: >-
+  Immutable abstract representation of a span of text.  For example, in an error diagnostic that reports a
+
+      location, it could come from a parsed string, text from a tool editor buffer, etc.
+syntax:
+  content:
+    CSharp: public struct TextSpan
+inheritance:
+- id: T:System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: T:System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Text.TextSpan.#ctor(System.Int32,System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 20
+  summary: >-
+    Creates a TextSpan instance beginning with the position Start and having the Length
+
+        specified with .
+  syntax:
+    content:
+      CSharp: public TextSpan(int start, int length)
+    parameters:
+    - id: start
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: length
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Start
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Start
+  qualifiedName:
+    CSharp: Start
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 39
+  summary: Start point of the Span.
+  syntax:
+    content:
+      CSharp: public int Start
+    parameters:
+    - id: Start
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.TextSpan.get_Start
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: get_Start
+  qualifiedName:
+    CSharp: get_Start
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 41
+- id: Microsoft.CodeAnalysis.Text.TextSpan.End
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: End
+  qualifiedName:
+    CSharp: End
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 50
+  summary: End of the span.
+  syntax:
+    content:
+      CSharp: public int End
+    parameters:
+    - id: End
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.TextSpan.get_End
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: get_End
+  qualifiedName:
+    CSharp: get_End
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 52
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Length
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Length
+  qualifiedName:
+    CSharp: Length
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 61
+  summary: Length of the span.
+  syntax:
+    content:
+      CSharp: public int Length
+    parameters:
+    - id: Length
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.TextSpan.get_Length
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: get_Length
+  qualifiedName:
+    CSharp: get_Length
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 63
+- id: Microsoft.CodeAnalysis.Text.TextSpan.IsEmpty
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: IsEmpty
+  qualifiedName:
+    CSharp: IsEmpty
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 72
+  summary: Determines whether or not the span is empty.
+  syntax:
+    content:
+      CSharp: public bool IsEmpty
+    parameters:
+    - id: IsEmpty
+      type:
+        id: T:System.Boolean
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.TextSpan.get_IsEmpty
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: get_IsEmpty
+  qualifiedName:
+    CSharp: get_IsEmpty
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 74
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Contains(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Contains
+  qualifiedName:
+    CSharp: Contains
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 90
+  summary: Determines whether the position lies within the span.
+  syntax:
+    content:
+      CSharp: public bool Contains(int position)
+    parameters:
+    - id: position
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+      description: The position to check.
+    return:
+      id: Boolean
+      description: "true if the position is greater than or equal to Start and strictly less \r\n    than End, otherwise false."
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Contains(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Contains
+  qualifiedName:
+    CSharp: Contains
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 104
+  summary: Determines whether  falls completely within this span.
+  syntax:
+    content:
+      CSharp: public bool Contains(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+      description: The span to check.
+    return:
+      id: Boolean
+      description: true if the specified span falls completely within this span, otherwise false.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.OverlapsWith(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: OverlapsWith
+  qualifiedName:
+    CSharp: OverlapsWith
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 120
+  summary: "Determines whether  overlaps this span. Two spans are considered to overlap \r\n    if they have positions in common and neither is empty. Empty spans do not overlap with any \r\n    other span."
+  syntax:
+    content:
+      CSharp: public bool OverlapsWith(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+      description: The span to check.
+    return:
+      id: Boolean
+      description: true if the spans overlap, otherwise false.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Overlap(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Overlap
+  qualifiedName:
+    CSharp: Overlap
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 137
+  summary: Returns the overlap with the given span, or null if there is no overlap.
+  syntax:
+    content:
+      CSharp: public TextSpan? Overlap(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+      description: The span to check.
+    return:
+      id: Nullable
+      description: The overlap of the spans, or null if the overlap is empty.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.IntersectsWith(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: IntersectsWith
+  qualifiedName:
+    CSharp: IntersectsWith
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 158
+  summary: "Determines whether  intersects this span. Two spans are considered to \r\n    intersect if they have positions in common or the end of one span \r\n    coincides with the start of the other span."
+  syntax:
+    content:
+      CSharp: public bool IntersectsWith(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+      description: The span to check.
+    return:
+      id: Boolean
+      description: true if the spans intersect, otherwise false.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.IntersectsWith(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: IntersectsWith
+  qualifiedName:
+    CSharp: IntersectsWith
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 174
+  summary: "Determines whether  intersects this span. \r\n    A position is considered to intersect if it is between the start and\r\n    end positions (inclusive) of this span."
+  syntax:
+    content:
+      CSharp: public bool IntersectsWith(int position)
+    parameters:
+    - id: position
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+      description: The position to check.
+    return:
+      id: Boolean
+      description: true if the position intersects, otherwise false.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Intersection(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Intersection
+  qualifiedName:
+    CSharp: Intersection
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 188
+  summary: Returns the intersection with the given span, or null if there is no intersection.
+  syntax:
+    content:
+      CSharp: public TextSpan? Intersection(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+      description: The span to check.
+    return:
+      id: Nullable
+      description: The intersection of the spans, or null if the intersection is empty.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.FromBounds(System.Int32,System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: FromBounds
+  qualifiedName:
+    CSharp: FromBounds
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 202
+  summary: Creates a new [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) from  and  positions as opposed to a position and length.
+  syntax:
+    content:
+      CSharp: public static TextSpan FromBounds(int start, int end)
+    parameters:
+    - id: start
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: end
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: TextSpan
+- id: Microsoft.CodeAnalysis.Text.TextSpan.op_Equality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: op_Equality
+  qualifiedName:
+    CSharp: op_Equality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 220
+  summary: Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) are the same.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.op_Inequality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: op_Inequality
+  qualifiedName:
+    CSharp: op_Inequality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 228
+  summary: Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) are different.
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Equals(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 236
+  summary: Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+  syntax:
+    content:
+      CSharp: public bool Equals(TextSpan other)
+    parameters:
+    - id: other
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.Text.TextSpan.Equals(System.Object)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 244
+  summary: Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+  syntax:
+    content:
+      CSharp: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type:
+        id: T:System.Object
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.Text.TextSpan.GetHashCode
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: GetHashCode
+  qualifiedName:
+    CSharp: GetHashCode
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 252
+  summary: Produces a hash code for [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan).
+  syntax:
+    content:
+      CSharp: public override int GetHashCode()
+    parameters: []
+    return:
+      id: Int32
+- id: Microsoft.CodeAnalysis.Text.TextSpan.ToString
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: ToString
+  qualifiedName:
+    CSharp: ToString
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 260
+  summary: Provides a string representation for [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan).
+  syntax:
+    content:
+      CSharp: public override string ToString()
+    parameters: []
+    return:
+      id: String
+- id: Microsoft.CodeAnalysis.Text.TextSpan.CompareTo(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  name:
+    CSharp: CompareTo
+  qualifiedName:
+    CSharp: CompareTo
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    startLine: 268
+  summary: Compares current instance of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) with another.
+  syntax:
+    content:
+      CSharp: public int CompareTo(TextSpan other)
+    parameters:
+    - id: other
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+    return:
+      id: Int32

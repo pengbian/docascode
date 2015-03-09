@@ -1,5 +1,5 @@
 TestClass1.Partial1:
-  id: Microsoft.CodeAnalysis.Compilation
+  id: TestClass1.Partial1
   path: Assets/Markdown/About.md
   href: md\Assets_Markdown_About.md
   startLine: 35

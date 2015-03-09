@@ -1,0 +1,302 @@
+id: Microsoft.CodeAnalysis.Text.TextChange
+yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+href: api\Microsoft.CodeAnalysis.Text.TextChange
+name:
+  CSharp: TextChange
+qualifiedName:
+  CSharp: TextChange
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+    local: D:\Repo\RoslynGit\
+    sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+  path: src\Compilers\Core\Portable\Text\TextChange.cs
+  startLine: 12
+summary: Describes a single change when a particular span is replaced with a new text.
+syntax:
+  content:
+    CSharp: public struct TextChange
+inheritance:
+- id: T:System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: T:System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Text.TextChange.Span
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: Span
+  qualifiedName:
+    CSharp: Span
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 17
+  summary: The original span of the changed text.
+  syntax:
+    content:
+      CSharp: public TextSpan Span
+    parameters:
+    - id: Span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+- id: Microsoft.CodeAnalysis.Text.TextChange.get_Span
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: get_Span
+  qualifiedName:
+    CSharp: get_Span
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 17
+- id: Microsoft.CodeAnalysis.Text.TextChange.NewText
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: NewText
+  qualifiedName:
+    CSharp: NewText
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 22
+  summary: The new text.
+  syntax:
+    content:
+      CSharp: public string NewText
+    parameters:
+    - id: NewText
+      type:
+        id: T:System.String
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.TextChange.get_NewText
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: get_NewText
+  qualifiedName:
+    CSharp: get_NewText
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 22
+- id: Microsoft.CodeAnalysis.Text.TextChange.#ctor(Microsoft.CodeAnalysis.Text.TextSpan,System.String)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 29
+  summary: Initializes a new instance of [Microsoft.CodeAnalysis.Text.TextChange](api\Microsoft.CodeAnalysis.Text.TextChange)
+  syntax:
+    content:
+      CSharp: 'public TextChange(TextSpan span, string newText): this ()'
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+      description: The original span of the changed text.
+    - id: newText
+      type:
+        id: T:System.String
+        href: System.Runtime
+        isExternal: true
+      description: The new text.
+- id: Microsoft.CodeAnalysis.Text.TextChange.ToString
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: ToString
+  qualifiedName:
+    CSharp: ToString
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 44
+  summary: Provides a string representation for [Microsoft.CodeAnalysis.Text.TextChange](api\Microsoft.CodeAnalysis.Text.TextChange).
+  syntax:
+    content:
+      CSharp: public override string ToString()
+    parameters: []
+    return:
+      id: String
+- id: Microsoft.CodeAnalysis.Text.TextChange.Equals(System.Object)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 49
+  syntax:
+    content:
+      CSharp: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type:
+        id: T:System.Object
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.Text.TextChange.Equals(Microsoft.CodeAnalysis.Text.TextChange)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: Equals
+  qualifiedName:
+    CSharp: Equals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 54
+  syntax:
+    content:
+      CSharp: public bool Equals(TextChange other)
+    parameters:
+    - id: other
+      type:
+        id: TextChange
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextChange.cs
+    return:
+      id: Boolean
+- id: Microsoft.CodeAnalysis.Text.TextChange.GetHashCode
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: GetHashCode
+  qualifiedName:
+    CSharp: GetHashCode
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 61
+  syntax:
+    content:
+      CSharp: public override int GetHashCode()
+    parameters: []
+    return:
+      id: Int32
+- id: Microsoft.CodeAnalysis.Text.TextChange.op_Equality(Microsoft.CodeAnalysis.Text.TextChange,Microsoft.CodeAnalysis.Text.TextChange)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: op_Equality
+  qualifiedName:
+    CSharp: op_Equality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 66
+- id: Microsoft.CodeAnalysis.Text.TextChange.op_Inequality(Microsoft.CodeAnalysis.Text.TextChange,Microsoft.CodeAnalysis.Text.TextChange)
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: op_Inequality
+  qualifiedName:
+    CSharp: op_Inequality
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 71
+- id: Microsoft.CodeAnalysis.Text.TextChange.op_Implicit(Microsoft.CodeAnalysis.Text.TextChange)~Microsoft.CodeAnalysis.Text.TextChangeRange
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: op_Implicit
+  qualifiedName:
+    CSharp: op_Implicit
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 80
+  summary: Converts a [Microsoft.CodeAnalysis.Text.TextChange](api\Microsoft.CodeAnalysis.Text.TextChange) to a [Microsoft.CodeAnalysis.Text.TextChangeRange](api\Microsoft.CodeAnalysis.Text.TextChangeRange).
+- id: Microsoft.CodeAnalysis.Text.TextChange.NoChanges
+  yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
+  href: api\Microsoft.CodeAnalysis.Text.TextChange
+  name:
+    CSharp: NoChanges
+  qualifiedName:
+    CSharp: NoChanges
+  type: Field
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\TextChange.cs
+    startLine: 88
+  summary: An empty set of changes.

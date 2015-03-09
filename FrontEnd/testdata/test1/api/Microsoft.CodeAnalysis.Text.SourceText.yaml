@@ -1,0 +1,780 @@
+id: Microsoft.CodeAnalysis.Text.SourceText
+yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+href: api\Microsoft.CodeAnalysis.Text.SourceText
+name:
+  CSharp: SourceText
+qualifiedName:
+  CSharp: SourceText
+type: Class
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+    local: D:\Repo\RoslynGit\
+    sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+  path: src\Compilers\Core\Portable\Text\SourceText.cs
+  startLine: 18
+summary: An abstraction of source text.
+syntax:
+  content:
+    CSharp: public abstract class SourceText
+inheritance:
+- id: T:System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Text.SourceText.From(System.String,System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: From
+  qualifiedName:
+    CSharp: From
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 67
+  summary: Constructs a [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) from text in a string.
+  syntax:
+    content:
+      CSharp: public static SourceText From(string text, Encoding encoding = null, SourceHashAlgorithm checksumAlgorithm = SourceHashAlgorithm.Sha1)
+    parameters:
+    - id: text
+      type:
+        id: T:System.String
+        href: System.Runtime
+        isExternal: true
+      description: Text.
+    - id: encoding
+      type:
+        id: T:System.Text.Encoding
+        href: System.Text.Encoding
+        isExternal: true
+      description: >-
+        Encoding of the file that the  was read from or is going to be saved to.
+
+            null if the encoding is unspecified.
+
+            If the encoding is not specified the resulting [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) isn't debuggable.
+
+            If an encoding-less [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) is written to a file a @P:System.Text.Encoding.UTF8- shall be used as a default.
+    - id: checksumAlgorithm
+      type:
+        id: SourceHashAlgorithm
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceHashAlgorithm.cs
+      description: Hash algorithm to use to calculate checksum of the text that's saved to PDB.
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.From(System.IO.Stream,System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: From
+  qualifiedName:
+    CSharp: From
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 95
+  summary: Constructs a [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) from stream content.
+  syntax:
+    content:
+      CSharp: public static SourceText From(Stream stream, Encoding encoding = null, SourceHashAlgorithm checksumAlgorithm = SourceHashAlgorithm.Sha1)
+    parameters:
+    - id: stream
+      type:
+        id: T:System.IO.Stream
+        href: System.IO
+        isExternal: true
+      description: Stream.
+    - id: encoding
+      type:
+        id: T:System.Text.Encoding
+        href: System.Text.Encoding
+        isExternal: true
+      description: >-
+        Data encoding to use if the stream doesn't start with Byte Order Mark specifying the encoding.
+
+            @P:System.Text.Encoding.UTF8- if not specified.
+    - id: checksumAlgorithm
+      type:
+        id: SourceHashAlgorithm
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceHashAlgorithm.cs
+      description: Hash algorithm to use to calculate checksum of the text that's saved to PDB.
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.ChecksumAlgorithm
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: ChecksumAlgorithm
+  qualifiedName:
+    CSharp: ChecksumAlgorithm
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 127
+  summary: Hash algorithm to use to calculate checksum of the text that's saved to PDB.
+  syntax:
+    content:
+      CSharp: public SourceHashAlgorithm ChecksumAlgorithm
+    parameters:
+    - id: ChecksumAlgorithm
+      type:
+        id: SourceHashAlgorithm
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceHashAlgorithm.cs
+- id: Microsoft.CodeAnalysis.Text.SourceText.get_ChecksumAlgorithm
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: get_ChecksumAlgorithm
+  qualifiedName:
+    CSharp: get_ChecksumAlgorithm
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 129
+- id: Microsoft.CodeAnalysis.Text.SourceText.Encoding
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Encoding
+  qualifiedName:
+    CSharp: Encoding
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 140
+  summary: >-
+    Encoding of the file that the text was read from or is going to be saved to.
+
+        null if the encoding is unspecified.
+  syntax:
+    content:
+      CSharp: public abstract Encoding Encoding
+    parameters:
+    - id: Encoding
+      type:
+        id: T:System.Text.Encoding
+        href: System.Text.Encoding
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.SourceText.get_Encoding
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: get_Encoding
+  qualifiedName:
+    CSharp: get_Encoding
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 140
+- id: Microsoft.CodeAnalysis.Text.SourceText.Length
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Length
+  qualifiedName:
+    CSharp: Length
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 145
+  summary: The length of the text in characters.
+  syntax:
+    content:
+      CSharp: public abstract int Length
+    parameters:
+    - id: Length
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Text.SourceText.get_Length
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: get_Length
+  qualifiedName:
+    CSharp: get_Length
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 145
+- id: Microsoft.CodeAnalysis.Text.SourceText.Item(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Item
+  qualifiedName:
+    CSharp: Item
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 154
+  summary: Returns a character at given position.
+- id: Microsoft.CodeAnalysis.Text.SourceText.get_Item(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: get_Item
+  qualifiedName:
+    CSharp: get_Item
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 154
+- id: Microsoft.CodeAnalysis.Text.SourceText.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: CopyTo
+  qualifiedName:
+    CSharp: CopyTo
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 159
+  summary: Copy a range of characters from this SourceText to a destination array.
+  syntax:
+    content:
+      CSharp: public abstract void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int count);
+    parameters:
+    - id: sourceIndex
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: destination
+      type:
+        id: T:System.Array
+        isExternal: true
+    - id: destinationIndex
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: count
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.Text.SourceText.Container
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Container
+  qualifiedName:
+    CSharp: Container
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 164
+  summary: The container of this [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText).
+  syntax:
+    content:
+      CSharp: public virtual SourceTextContainer Container
+    parameters:
+    - id: Container
+      type:
+        id: SourceTextContainer
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceTextContainer.cs
+- id: Microsoft.CodeAnalysis.Text.SourceText.get_Container
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: get_Container
+  qualifiedName:
+    CSharp: get_Container
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 166
+- id: Microsoft.CodeAnalysis.Text.SourceText.GetSubText(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: GetSubText
+  qualifiedName:
+    CSharp: GetSubText
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 188
+  summary: Gets a [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) that contains the characters in the specified span of this text.
+  syntax:
+    content:
+      CSharp: public virtual SourceText GetSubText(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.GetSubText(System.Int32)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: GetSubText
+  qualifiedName:
+    CSharp: GetSubText
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 210
+  summary: Returns a [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) that has the contents of this text including and after the start position.
+  syntax:
+    content:
+      CSharp: public SourceText GetSubText(int start)
+    parameters:
+    - id: start
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.Write(System.IO.TextWriter,System.Threading.CancellationToken)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Write
+  qualifiedName:
+    CSharp: Write
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 230
+  summary: Write this [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) to a text writer.
+  syntax:
+    content:
+      CSharp: public void Write(TextWriter textWriter, CancellationToken cancellationToken = default (CancellationToken))
+    parameters:
+    - id: textWriter
+      type:
+        id: T:System.IO.TextWriter
+        href: System.IO
+        isExternal: true
+    - id: cancellationToken
+      type:
+        id: T:System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.Text.SourceText.Write(System.IO.TextWriter,Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Write
+  qualifiedName:
+    CSharp: Write
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 238
+  summary: Write a span of text to a text writer.
+  syntax:
+    content:
+      CSharp: public virtual void Write(TextWriter writer, TextSpan span, CancellationToken cancellationToken = default (CancellationToken))
+    parameters:
+    - id: writer
+      type:
+        id: T:System.IO.TextWriter
+        href: System.IO
+        isExternal: true
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+    - id: cancellationToken
+      type:
+        id: T:System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+    return:
+      id: Void
+- id: Microsoft.CodeAnalysis.Text.SourceText.ToString
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: ToString
+  qualifiedName:
+    CSharp: ToString
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 304
+  summary: Provides a string representation of the SourceText.
+  syntax:
+    content:
+      CSharp: public override string ToString()
+    parameters: []
+    return:
+      id: String
+- id: Microsoft.CodeAnalysis.Text.SourceText.ToString(Microsoft.CodeAnalysis.Text.TextSpan)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: ToString
+  qualifiedName:
+    CSharp: ToString
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 313
+  summary: Gets a string containing the characters in specified span.
+  syntax:
+    content:
+      CSharp: public virtual string ToString(TextSpan span)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+    return:
+      id: String
+- id: Microsoft.CodeAnalysis.Text.SourceText.WithChanges(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange})
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: WithChanges
+  qualifiedName:
+    CSharp: WithChanges
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 341
+  summary: Constructs a new SourceText from this text with the specified changes.
+  syntax:
+    content:
+      CSharp: public virtual SourceText WithChanges(IEnumerable<TextChange> changes)
+    parameters:
+    - id: changes
+      type:
+        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange}
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.WithChanges(Microsoft.CodeAnalysis.Text.TextChange[])
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: WithChanges
+  qualifiedName:
+    CSharp: WithChanges
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 395
+  summary: Constructs a new SourceText from this text with the specified changes.
+  syntax:
+    content:
+      CSharp: public SourceText WithChanges(params TextChange[] changes)
+    parameters:
+    - id: changes
+      type:
+        id: T:System.Array
+        isExternal: true
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.Replace(Microsoft.CodeAnalysis.Text.TextSpan,System.String)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Replace
+  qualifiedName:
+    CSharp: Replace
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 403
+  summary: Returns a new SourceText with the specified span of characters replaced by the new text.
+  syntax:
+    content:
+      CSharp: public SourceText Replace(TextSpan span, string newText)
+    parameters:
+    - id: span
+      type:
+        id: TextSpan
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+    - id: newText
+      type:
+        id: T:System.String
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.Replace(System.Int32,System.Int32,System.String)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Replace
+  qualifiedName:
+    CSharp: Replace
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 411
+  summary: Returns a new SourceText with the specified range of characters replaced by the new text.
+  syntax:
+    content:
+      CSharp: public SourceText Replace(int start, int length, string newText)
+    parameters:
+    - id: start
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: length
+      type:
+        id: T:System.Int32
+        href: System.Runtime
+        isExternal: true
+    - id: newText
+      type:
+        id: T:System.String
+        href: System.Runtime
+        isExternal: true
+    return:
+      id: SourceText
+- id: Microsoft.CodeAnalysis.Text.SourceText.GetChangeRanges(Microsoft.CodeAnalysis.Text.SourceText)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: GetChangeRanges
+  qualifiedName:
+    CSharp: GetChangeRanges
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 421
+  summary: >-
+    Gets the set of [Microsoft.CodeAnalysis.Text.TextChangeRange](api\Microsoft.CodeAnalysis.Text.TextChangeRange) that describe how the text changed
+
+        between this text an older version. This may be multiple detailed changes
+
+        or a single change encompassing the entire text.
+  syntax:
+    content:
+      CSharp: public virtual IReadOnlyList<TextChangeRange> GetChangeRanges(SourceText oldText)
+    parameters:
+    - id: oldText
+      type:
+        id: SourceText
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+    return:
+      id: IReadOnlyList
+- id: Microsoft.CodeAnalysis.Text.SourceText.GetTextChanges(Microsoft.CodeAnalysis.Text.SourceText)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: GetTextChanges
+  qualifiedName:
+    CSharp: GetTextChanges
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 443
+  summary: "Gets the set of [Microsoft.CodeAnalysis.Text.TextChange](api\\Microsoft.CodeAnalysis.Text.TextChange) that describe how the text changed\r\n    between this text and an older version. This may be multiple detailed changes \r\n    or a single change encompassing the entire text."
+  syntax:
+    content:
+      CSharp: public virtual IReadOnlyList<TextChange> GetTextChanges(SourceText oldText)
+    parameters:
+    - id: oldText
+      type:
+        id: SourceText
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+    return:
+      id: IReadOnlyList
+- id: Microsoft.CodeAnalysis.Text.SourceText.Lines
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: Lines
+  qualifiedName:
+    CSharp: Lines
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 481
+  summary: The collection of individual text lines.
+  syntax:
+    content:
+      CSharp: public virtual TextLineCollection Lines
+    parameters:
+    - id: Lines
+      type:
+        id: TextLineCollection
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextLineCollection.cs
+- id: Microsoft.CodeAnalysis.Text.SourceText.get_Lines
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: get_Lines
+  qualifiedName:
+    CSharp: get_Lines
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 483
+- id: Microsoft.CodeAnalysis.Text.SourceText.ContentEquals(Microsoft.CodeAnalysis.Text.SourceText)
+  yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
+  href: api\Microsoft.CodeAnalysis.Text.SourceText
+  name:
+    CSharp: ContentEquals
+  qualifiedName:
+    CSharp: ContentEquals
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\Text\SourceText.cs
+    startLine: 632
+  summary: Compares the content with content of another [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText).
+  syntax:
+    content:
+      CSharp: public bool ContentEquals(SourceText other)
+    parameters:
+    - id: other
+      type:
+        id: SourceText
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+    return:
+      id: Boolean

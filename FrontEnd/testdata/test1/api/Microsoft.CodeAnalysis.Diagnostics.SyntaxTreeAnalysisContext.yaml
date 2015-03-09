@@ -1,0 +1,218 @@
+id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+name:
+  CSharp: SyntaxTreeAnalysisContext
+qualifiedName:
+  CSharp: SyntaxTreeAnalysisContext
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+    local: D:\Repo\RoslynGit\
+    sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+  path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+  startLine: 566
+summary: >-
+  Context for a syntax tree action.
+
+      A syntax tree action can use a [Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext](api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext) to report [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)s about a [Microsoft.CodeAnalysis.SyntaxTree](api\Microsoft.CodeAnalysis.SyntaxTree) for a code document.
+syntax:
+  content:
+    CSharp: public struct SyntaxTreeAnalysisContext
+inheritance:
+- id: T:System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: T:System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Tree
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: Tree
+  qualifiedName:
+    CSharp: Tree
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 576
+  summary: '[Microsoft.CodeAnalysis.SyntaxTree](api\Microsoft.CodeAnalysis.SyntaxTree) that is the subject of the analysis.'
+  syntax:
+    content:
+      CSharp: public SyntaxTree Tree
+    parameters:
+    - id: Tree
+      type:
+        id: SyntaxTree
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Tree
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: get_Tree
+  qualifiedName:
+    CSharp: get_Tree
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 576
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Options
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: Options
+  qualifiedName:
+    CSharp: Options
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 581
+  summary: Options specified for the analysis.
+  syntax:
+    content:
+      CSharp: public AnalyzerOptions Options
+    parameters:
+    - id: Options
+      type:
+        id: AnalyzerOptions
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Options
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: get_Options
+  qualifiedName:
+    CSharp: get_Options
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 581
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.CancellationToken
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: CancellationToken
+  qualifiedName:
+    CSharp: CancellationToken
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 586
+  summary: Token to check for requested cancellation of the analysis.
+  syntax:
+    content:
+      CSharp: public CancellationToken CancellationToken
+    parameters:
+    - id: CancellationToken
+      type:
+        id: T:System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_CancellationToken
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: get_CancellationToken
+  qualifiedName:
+    CSharp: get_CancellationToken
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 586
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 588
+  syntax:
+    content:
+      CSharp: public SyntaxTreeAnalysisContext(SyntaxTree tree, AnalyzerOptions options, Action<Diagnostic> reportDiagnostic, CancellationToken cancellationToken)
+    parameters:
+    - id: tree
+      type:
+        id: SyntaxTree
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    - id: options
+      type:
+        id: AnalyzerOptions
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+    - id: reportDiagnostic
+      type:
+        id: T:System.Action{Microsoft.CodeAnalysis.Diagnostic}
+        href: System.Runtime
+        isExternal: true
+    - id: cancellationToken
+      type:
+        id: T:System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  name:
+    CSharp: ReportDiagnostic
+  qualifiedName:
+    CSharp: ReportDiagnostic
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 600
+  summary: Report a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) about a [Microsoft.CodeAnalysis.SyntaxTree](api\Microsoft.CodeAnalysis.SyntaxTree).
+  syntax:
+    content:
+      CSharp: public void ReportDiagnostic(Diagnostic diagnostic)
+    parameters:
+    - id: diagnostic
+      type:
+        id: Diagnostic
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
+      description: '[Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) to be reported.'
+    return:
+      id: Void

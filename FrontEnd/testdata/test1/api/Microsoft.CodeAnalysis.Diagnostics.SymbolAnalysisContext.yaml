@@ -1,0 +1,262 @@
+id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+name:
+  CSharp: SymbolAnalysisContext
+qualifiedName:
+  CSharp: SymbolAnalysisContext
+type: Struct
+source:
+  remote:
+    branch: master
+    repo: https://github.com/dotnet/roslyn.git
+    local: D:\Repo\RoslynGit\
+    sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+  path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+  startLine: 365
+summary: >-
+  Context for a symbol action.
+
+      A symbol action can use a [Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext](api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext) to report [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)s about an [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol).
+syntax:
+  content:
+    CSharp: public struct SymbolAnalysisContext
+inheritance:
+- id: T:System.ValueType
+  href: System.Runtime
+  isExternal: true
+- id: T:System.Object
+  href: System.Runtime
+  isExternal: true
+items:
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: Symbol
+  qualifiedName:
+    CSharp: Symbol
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 376
+  summary: '[Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol) that is the subject of the analysis.'
+  syntax:
+    content:
+      CSharp: public ISymbol Symbol
+    parameters:
+    - id: Symbol
+      type:
+        id: ISymbol
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Symbol
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: get_Symbol
+  qualifiedName:
+    CSharp: get_Symbol
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 376
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Compilation
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: Compilation
+  qualifiedName:
+    CSharp: Compilation
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 381
+  summary: '[Microsoft.CodeAnalysis.Compilation](api\Microsoft.CodeAnalysis.Compilation) containing the [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol).'
+  syntax:
+    content:
+      CSharp: public Compilation Compilation
+    parameters:
+    - id: Compilation
+      type:
+        id: Compilation
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Compilation
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: get_Compilation
+  qualifiedName:
+    CSharp: get_Compilation
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 381
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Options
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: Options
+  qualifiedName:
+    CSharp: Options
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 386
+  summary: Options specified for the analysis.
+  syntax:
+    content:
+      CSharp: public AnalyzerOptions Options
+    parameters:
+    - id: Options
+      type:
+        id: AnalyzerOptions
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Options
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: get_Options
+  qualifiedName:
+    CSharp: get_Options
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 386
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.CancellationToken
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: CancellationToken
+  qualifiedName:
+    CSharp: CancellationToken
+  type: Property
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 391
+  summary: Token to check for requested cancellation of the analysis.
+  syntax:
+    content:
+      CSharp: public CancellationToken CancellationToken
+    parameters:
+    - id: CancellationToken
+      type:
+        id: T:System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: get_CancellationToken
+  qualifiedName:
+    CSharp: get_CancellationToken
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 391
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: .ctor
+  qualifiedName:
+    CSharp: .ctor
+  type: Constructor
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 393
+  syntax:
+    content:
+      CSharp: public SymbolAnalysisContext(ISymbol symbol, Compilation compilation, AnalyzerOptions options, Action<Diagnostic> reportDiagnostic, CancellationToken cancellationToken)
+    parameters:
+    - id: symbol
+      type:
+        id: ISymbol
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    - id: compilation
+      type:
+        id: Compilation
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+    - id: options
+      type:
+        id: AnalyzerOptions
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+    - id: reportDiagnostic
+      type:
+        id: T:System.Action{Microsoft.CodeAnalysis.Diagnostic}
+        href: System.Runtime
+        isExternal: true
+    - id: cancellationToken
+      type:
+        id: T:System.Threading.CancellationToken
+        href: System.Threading.Tasks
+        isExternal: true
+- id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  name:
+    CSharp: ReportDiagnostic
+  qualifiedName:
+    CSharp: ReportDiagnostic
+  type: Method
+  source:
+    remote:
+      branch: master
+      repo: https://github.com/dotnet/roslyn.git
+      local: D:\Repo\RoslynGit\
+      sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
+    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    startLine: 406
+  summary: Report a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) about an [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol).
+  syntax:
+    content:
+      CSharp: public void ReportDiagnostic(Diagnostic diagnostic)
+    parameters:
+    - id: diagnostic
+      type:
+        id: Diagnostic
+        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
+      description: '[Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) to be reported.'
+    return:
+      id: Void
