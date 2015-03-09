@@ -14,7 +14,7 @@ namespace DocAsCode.BuildMeta
 {
     public class MarkdownIndex
     {
-        [YamlDotNet.Serialization.YamlMember(Alias ="apiId")]
+        [YamlDotNet.Serialization.YamlMember(Alias ="id")]
         public string ApiName { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias ="path")]
@@ -97,7 +97,7 @@ namespace DocAsCode.BuildMeta
     }
     public class BuildMarkdownIndexHelper
     {
-        public static IEnumerable<MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName)
+        public static Dictionary<string, MarkdownIndex> MergeMarkdownResults(List<string> markdownFilePathList, Dictionary<string, IndexYamlItemViewModel> apiList, string workingDirectory, string mdFolderName)
         {
             Dictionary<string, MarkdownIndex> table = new Dictionary<string, MarkdownIndex>();
 
@@ -161,7 +161,7 @@ namespace DocAsCode.BuildMeta
                 }
             }
 
-            return table.Select(s => s.Value);
+            return table;
         }
 
         /// <summary>

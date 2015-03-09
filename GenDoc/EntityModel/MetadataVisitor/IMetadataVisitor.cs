@@ -254,12 +254,12 @@ namespace EntityModel
             var type = symbol.BaseType;
             if (type != null)
             {
-                item.Inheritence = new List<SourceDetail>();
+                item.Inheritance = new List<SourceDetail>();
                 while (type != null)
                 {
                     SourceDetail link = GetLinkDetail(type);
 
-                    item.Inheritence.Add(link);
+                    item.Inheritance.Add(link);
                     type = type.BaseType;
                 }
             }

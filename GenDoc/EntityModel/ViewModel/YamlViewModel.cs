@@ -64,6 +64,7 @@ namespace EntityModel.ViewModel
 
     public class SyntaxDetail
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "content")]
         public Dictionary<SyntaxLanguage, string> Content { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "parameters")]
@@ -75,7 +76,9 @@ namespace EntityModel.ViewModel
 
     public class ItemType
     {
+        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
         public string Name { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "description")]
         public string Description { get; set; }
     }
 
@@ -125,8 +128,8 @@ namespace EntityModel.ViewModel
         [YamlDotNet.Serialization.YamlMember(Alias = "syntax")]
         public SyntaxDetail Syntax { get; set; }
 
-        [YamlDotNet.Serialization.YamlMember(Alias = "inheritence")]
-        public List<SourceDetail> Inheritence { get; set; }
+        [YamlDotNet.Serialization.YamlMember(Alias = "inheritance")]
+        public List<SourceDetail> Inheritance { get; set; }
 
         [YamlDotNet.Serialization.YamlMember(Alias = "itemTypes")]
         public List<ItemType> ItemTypes { get; set; }

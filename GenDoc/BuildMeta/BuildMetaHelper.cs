@@ -726,7 +726,6 @@ namespace DocAsCode.BuildMeta
 
         private static string TryGenerateMarkdownIndexFileCore(string workingDirectory, string markdownIndexFileName, string indexFileName, List<string> mdFiles, string mdFolderName)
         {
-            
             Dictionary<string, IndexYamlItemViewModel> indexViewModel;
 
             // Read index
@@ -739,7 +738,7 @@ namespace DocAsCode.BuildMeta
             // Generate markdown index
             if (mdFiles != null && mdFiles.Count > 0)
             {
-                var mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName);
+                Dictionary<string, MarkdownIndex> mdresult = BuildMarkdownIndexHelper.MergeMarkdownResults(mdFiles, indexViewModel, workingDirectory, mdFolderName);
                 if (mdresult.Any())
                 {
                     string markdownIndexFilePath = Path.Combine(workingDirectory, markdownIndexFileName);

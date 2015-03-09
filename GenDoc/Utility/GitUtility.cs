@@ -41,6 +41,11 @@ namespace Utility
                 if (remote == null) return detail;
                 detail.RemoteRepositoryUrl = remote.Url;
                 detail.RemoteBranch = repo.Head.UpstreamBranchCanonicalName;
+                var hrefHeadIndex = detail.RemoteBranch.IndexOf("refs/heads/");
+                if (hrefHeadIndex > -1)
+                {
+                    detail.RemoteBranch = detail.RemoteBranch.Substring(hrefHeadIndex + 11);
+                }
                 detail.LatestSha1 = repo.Commits.FirstOrDefault().Sha;
             }
             catch (Exception e)
