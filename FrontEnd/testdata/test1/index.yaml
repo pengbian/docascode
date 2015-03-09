@@ -1,0 +1,72 @@
+TestClass1:
+  Name: TestClass1
+  YamlPath: api\TestClass1.yaml
+  Href: api\TestClass1
+TestClass1.Class1:
+  Name: TestClass1.Class1
+  YamlPath: api\TestClass1.Class1.yaml
+  Href: api\TestClass1.Class1
+TestClass1.Class1.Test1:
+  Name: TestClass1.Class1.Test1
+  YamlPath: api\TestClass1.Class1.yaml
+  Href: api\TestClass1.Class1
+TestClass1.Class1.Test2:
+  Name: TestClass1.Class1.Test2
+  YamlPath: api\TestClass1.Class1.yaml
+  Href: api\TestClass1.Class1
+TestClass1.Class1.Test3:
+  Name: TestClass1.Class1.Test3
+  YamlPath: api\TestClass1.Class1.yaml
+  Href: api\TestClass1.Class1
+TestClass1.Class1.Test4``1:
+  Name: TestClass1.Class1.Test4``1
+  YamlPath: api\TestClass1.Class1.yaml
+  Href: api\TestClass1.Class1
+TestClass1.Base:
+  Name: TestClass1.Base
+  YamlPath: api\TestClass1.Base.yaml
+  Href: api\TestClass1.Base
+TestClass1.Base.BaseClassForTestClass1:
+  Name: TestClass1.Base.BaseClassForTestClass1
+  YamlPath: api\TestClass1.Base.BaseClassForTestClass1.yaml
+  Href: api\TestClass1.Base.BaseClassForTestClass1
+TestClass1.Base.BaseClassForTestClass1.Property1:
+  Name: TestClass1.Base.BaseClassForTestClass1.Property1
+  YamlPath: api\TestClass1.Base.BaseClassForTestClass1.yaml
+  Href: api\TestClass1.Base.BaseClassForTestClass1
+TestClass1.Base.BaseClassForTestClass1.get_Property1:
+  Name: TestClass1.Base.BaseClassForTestClass1.get_Property1
+  YamlPath: api\TestClass1.Base.BaseClassForTestClass1.yaml
+  Href: api\TestClass1.Base.BaseClassForTestClass1
+TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String):
+  Name: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
+  YamlPath: api\TestClass1.Base.BaseClassForTestClass1.yaml
+  Href: api\TestClass1.Base.BaseClassForTestClass1
+TestClass1.Partial1:
+  Name: TestClass1.Partial1
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.Partial1.Property1:
+  Name: TestClass1.Partial1.Property1
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.Partial1.get_Property1:
+  Name: TestClass1.Partial1.get_Property1
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.Partial1.set_Property1(System.String):
+  Name: TestClass1.Partial1.set_Property1(System.String)
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.TestClass1:
+  Name: TestClass1.TestClass1
+  YamlPath: api\TestClass1.TestClass1.yaml
+  Href: api\TestClass1.TestClass1
+TestClass1.TestClass1.TestClassInnerNamesapce:
+  Name: TestClass1.TestClass1.TestClassInnerNamesapce
+  YamlPath: api\TestClass1.TestClass1.TestClassInnerNamesapce.yaml
+  Href: api\TestClass1.TestClass1.TestClassInnerNamesapce
+TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace:
+  Name: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
+  YamlPath: api\TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace.yaml
+  Href: api\TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace

@@ -1,0 +1,271 @@
+/*/*For article*/
+/*article.article-content{
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(233,233,233,1);
+    border-top: 0;
+    box-shadow: 0 0 1px rgba(0,0,0,.07);
+    display: block;
+    margin-left: 246px;
+    min-height: calc(100% - 173px);
+    min-height: -moz-calc(100% - 173px);
+    min-height: -webkit-calc(100% - 173px);
+    min-height: -o-calc(100% - 173px);
+    position: absolute;
+    overflow: auto;
+    padding-bottom: 100px;
+    top: 70px;
+    -webkit-overflow-scrolling: touch;
+    width: 734px;
+}
+article h1.article-name{
+    color: rgba(0,0,0,1);
+    display: block;
+    font-family: Helvetica;
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding: 15px 25px;
+    width: 63%;
+    margin-top: 21px;
+}
+
+article h3.article-name{
+    color: rgba(128,128,128,1);
+    display: block;
+    font-family: Helvetica;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding: 15px 0px;
+    width: 63%;
+    margin-top: 21px;
+}
+
+a.article-name{
+    font-family: Helvetica;
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding: 3px 0px;
+}
+
+article section{    
+    padding: 1px 25px 0;
+    -webkit-transition: -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
+    -o-transition: -o-transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.section-member-content{
+    font-size: 14px;
+    padding: 5px 0px;
+}
+*/
+a{
+    color: #6F0101;
+}
+.btn{
+    color: #6F0101;
+}
+#article-header .article-header-content{
+    font-size: 14px;
+    padding: 25px 0 25px 0;
+}
+
+#article-header #metadata_table hr {
+    margin: 0 0 3px;
+    border: 0;
+    height: 2px;
+    background: rgba(233,233,233,1);
+    position: relative;
+    top: -1px;
+    width: 50%; 
+}
+
+#article-header .para {
+    color: rgba(65,65,65,1);
+    font-size: 1.2em;
+    line-height: 145%;
+}
+
+#article-header div.inheritance-table-line  {
+    margin-left:12px;
+    list-style-type: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    font-size: 13px;
+}
+
+#article-header div.inheritance-table-last-line {
+    margin-left:12px;
+}
+
+#article-header #metadata_table a {
+    line-height: 1.5;
+}
+
+article div.section-member-header{
+    background: #fff;
+    left: -15px;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+}
+/*
+article .btn a{
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    height: auto;
+    background-image: linear-gradient(#ffffff, #f2f2f2);
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    float: right!important;
+    line-height: 1.42857143;
+    padding: 0 5px 0 5px;
+    color: rgba(0,136,204,1);
+    font-size: 14px;
+}
+*/
+article li.section-member div.btn{
+    display:none;
+}
+
+article h3.section-name{
+    display: block;
+    font-family: Helvetica;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding: 15px 0px;
+    width: 63%;
+    margin-top: 21px;
+}
+article h3.section-member-name{ 
+    display: block;
+    font-family: Helvetica;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: inline-block;
+}
+article li.section-member{
+    background: #fff;
+    left: -25px;
+    list-style-type: none;
+    padding: 0px 25px 13px;
+    position: relative;
+    width: 100%;
+    -webkit-transition: -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
+    -o-transition: -o-transform .3s ease;
+    transition: transform .3s ease;    
+}
+article li.section-member a.section-member-detail{
+    color: #6F0101;
+    text-decoration: none;
+	font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    left: -20px;
+}
+article li.section-member a.section-member-detail::before{
+    content: '+ ';
+    padding: 0px 0px 0px 10px;
+}
+
+article li.section-member table a {
+    font-size: 12px;
+}
+article div.height-container {
+    display:none;
+    left: -25px;
+    padding: 0 25px;
+    position: relative;
+    width: 100%;
+}
+article div.height-container section {
+    background: rgba(249,249,249,1);
+    border-bottom: 1px solid rgba(233,233,233,1);
+    left: -25px;
+    margin: 0;
+    padding: 13px 25px 13px;
+    position: relative;
+    width: 100%;
+}
+
+article div.height-container section div{
+     margin-top: 21px;
+}
+
+article div.pointy-thing-container {
+    background: #fff;
+    border-bottom: 1px solid rgba(233,233,233,1);
+    left: -25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 13px;
+    position: relative;
+    width: 100%;
+}
+article div.pointy-thing {
+    background: rgba(249,249,249,1);
+    border-left: 1px solid rgba(233,233,233,1);
+    border-top: 1px solid rgba(233,233,233,1);
+    height: 12px;
+    left: 21px;
+    top: -28px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    width: 12px;
+}
+
+article div.height-container{
+    font-size: 14px;
+}
+article table{
+    border: 2px solid rgba(233,233,233,1);
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: hide;
+    margin: 20px 0 36px;
+    text-align: left;
+    width: 684px;
+    overflow:hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+article td {
+    border: 1px solid rgba(233,233,233,1);
+    padding: 5px 25px 5px 10px;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 260px;
+}
+article table code{
+    white-space: pre-wrap; /* css-3 */ 
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ 
+    white-space: -pre-wrap; /* Opera 4-6 */ 
+    white-space: -o-pre-wrap; /* Opera 7 */ 
+    word-wrap: break-word; /* Internet Explorer 5.5+ */ 
+    white-space : normal ; /* Internet Explorer 5.5+ */ 
+}
+/*For the xml and md section, the css should be customed*/
+.xml-section ,code{
+    /*<pre>,<code>?*/
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;                
+}
+.md-section{
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+}
+.id-section{
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+}
+.methodsyntax-section{
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+}*/*/

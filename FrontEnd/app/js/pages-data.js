@@ -1,28 +1,21 @@
 // Meta data used by the AngularJS docs app
 angular.module('pagesData', [])
   .value('NG_PAGES', {
-  "api": {
-    "name": "API Reference",
-    "area": "api",
-    "type": "toc",
-    "path": "api"
-  },
-  "api/namespace1": {
-    "name": "Namespace 1",
-    "type": "namespace",
-    "area": "api",
-    "path": "api/namespace1"
-  },
-  "api/namespace2": {
-    "name": "Namespace 2",
-    "area": "api",
-    "type": "namespace",
-    "path": "api/namespace2"
-  },
-  "api/class1": {
-    "name": "Class 1",
-    "area": "api",
-    "type": "class",
-    "path": "api/class1"
-  },
+});
+// Order matters
+  angular.module('itemTypes', [])
+  .value('NG_ITEMTYPES', {
+  "class":[
+    { "name": "Property", "description": "Property" },
+    { "name": "Method" , "description": "Method"},
+    { "name": "Constructor" , "description": "Constructor"},
+    { "name": "Field" , "description": "Field"},
+  ],
+  "namespace":[
+    { "name": "Class", "description": "Class" },
+    { "name": "Enum" , "description": "Enum"},
+    { "name": "Delegate" , "description": "Delegate"},
+    { "name": "Struct" , "description": "Struct"},
+    { "name": "Interface", "description": "Interface" },
+  ]
 });

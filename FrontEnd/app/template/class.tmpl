@@ -3,31 +3,36 @@
         <article class="article-content">
             <div id="article-header">
                 <h1 class="article-name">
-                    {{model.type}} {{model.name}}
+                    {{model.type}} {{model.name.CSharp}}
                 </h1>
                 <div class="improve-this-doc btn btn-primary">
-                    <a href="{{model.remarksourceurl}}">Improve this Doc</a>
+                    <a ng-href={{ImproveThisDoc()}}>Improve this Doc</a>
                 </div>
                 <div class="view-source btn">
-                    <a href="{{model.sourceurl}}">View Source</a>
+                    <a ng-href={{ViewSource()}}> View Source</a>
                 </div>
                 <section class="article-header-content">
-                    <div class="xml-section">
-                        {{model.description}}
+                    <div class="xml-section" >
+                      <markdown ng-model="model.summary">
+                      </markdown>
                     </div>
                     <div class="md-section">
-                        {{model.remarks}}
+                      <markdown ng-model="model.mdContent">
+                      </markdown>
                     </div>
                 </section>
                 <section id="metadata_table">
-                    <div class="inheritance-table" ng-if="model.inheritence">
+                    <div class="inheritance-table" ng-if="model.inheritance">
                         <p class="para">Inheritance</p>
                         <hr>
-                            <div class="inheritance-table-line" ng-repeat="inhe in model.inheritence">
-                                <div class="inheritance-table-last-line">
-                                    <p>{{inhe.name}}</p>
+                            <div class="inheritance-table-line">
+                                <div ng-repeat="inhe in model.inheritance">
+                                    <a ng-href={{inhe.href}}>{{inhe.id}}</a>
                                 </div>
-                             </div>
+                                <div class="inheritance-table-last-line">
+                                    <p>{{model.id}}</p>
+                                </div>
+                            </div>
                     </div>
                 </section>
             </div>
@@ -38,22 +43,20 @@
                         <li class="section-member">
                             <div class="section-member-header">
                                 <h3 class="section-member-name">
-                                    {{item.name}}
+                                    {{item.name.CSharp}}
                                 </h3>
                                 <div class="view-source btn">
-                                    <a href="{{item.sourceurl}}">View Source</a>
+                                    <a ng-href="{{item.sourceurl}}">View Source</a>
                                 </div>
                                   <div class="improve-this-doc btn btn-primary">
-                                      <a href="{{item.remarksourceurl}}">Improve this Doc</a>
+                                      <a ng-href="{{item.remarksourceurl}}">Improve this Doc</a>
                                   </div>
-                                <div class="xml-section">
-                                    {{item.description}}
-                                </div>
                                 <div class="md-section">
-                                    {{item.remarks}}
+                                      <markdown ng-model="item.summary">
+                                      </markdown>
                                 </div>
                             </div>
-                            <a class="section-member-detail">
+                            <a class="section-member-detail" ng-click="GetDetail($event)">
                                 details
                             </a>
                             <div class="height-container">
@@ -61,21 +64,26 @@
                                 <section>
                                     <div class="pointy-thing"></div>
                                     <div class="section-member-content">
-                                        <div class="methodsyntax-section" ng-if="item.syntax" ng-repeat="syntax in item.syntax">
+
+                                        <div class="md-section">
+                                          <markdown ng-model="item.mdContent">
+                                          </markdown>
+                                        </div>
+                                        <div class="methodsyntax-section" ng-if="item.syntax">
                                             <div class="declaration">
-                                                <h4>Declaration {{syntax.type}}</h4>
-                                                  {{syntax.content}}
+                                                <h4>Declaration </h4>
+                                                  {{item.syntax.content.CSharp}}
                                             </div>
-                                            <div class="parameters" ng-if="syntax.parameters" >
+                                            <div class="parameters" ng-if="item.syntax.parameters" >
                                                 <h4>Parameters</h4>
                                                 <table class="graybox" border="0" cellspacing="0" cellpadding="5">
                                                     <tbody>
-                                                        <tr ng-repeat="par in syntax.parameters">
+                                                        <tr ng-repeat="par in item.syntax.parameters">
                                                             <td scope="row">
-                                                                <a href="{{par.type.href}}">{{par.type.name}}</a>
+                                                                <a ng-href="{{par.type.href}}">{{par.type.id}}</a>
                                                             </td>
                                                             <td scope="row">
-                                                                <em class="term">{{par.name}}</em>
+                                                                <em class="term">{{par.id}}</em>
                                                             </td>
                                                             <td>
                                                                 <div class="definition">
@@ -88,21 +96,18 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="Returns" ng-if="syntax.return">
+                                            <div class="Returns" ng-if="item.syntax.return">
                                                 <h4>Returns</h4>
                                                 <table class="graybox" border="0" cellspacing="0" cellpadding="5">
                                                     <tbody>
                                                         <tr>
                                                             <td scope="row">
-                                                                <a href="{{syntax.return.type.href}}">{{par.type.name}}</a>
-                                                            </td>
-                                                            <td scope="row">
-                                                                <em class="term">{{syntax.return.name}}</em>
+                                                                <a ng-href="{{item.syntax.return.type.href}}">{{item.syntax.return.id}}</a>
                                                             </td>
                                                             <td>
                                                                 <div class="definition">
                                                                     <p class="para">
-                                                                        {{syntax.return.description}}
+                                                                        {{item.syntax.return.description}}
                                                                     </p>
                                                                 </div>
                                                             </td>

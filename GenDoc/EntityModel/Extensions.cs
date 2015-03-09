@@ -181,6 +181,12 @@ namespace DocAsCode.Utility
             if (string.IsNullOrEmpty(basePath)) throw new ArgumentNullException("fromPath");
             if (string.IsNullOrEmpty(absolutePath)) throw new ArgumentNullException("toPath");
 
+            // Append / to the directory
+            if (basePath[basePath.Length - 1] != '/')
+            {
+                basePath = basePath + "/";
+            }
+
             Uri fromUri = new Uri(Path.GetFullPath(basePath));
             Uri toUri = new Uri(Path.GetFullPath(absolutePath));
 

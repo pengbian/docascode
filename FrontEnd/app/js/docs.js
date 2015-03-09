@@ -6,6 +6,7 @@ angular.module('docsApp', [
   'DocsController',
   'versionsData',
   'pagesData',
+  'itemTypes',
   'directives',
   'errors',
   'examples',
@@ -95,9 +96,9 @@ angular.module('DocsController', [])
 
 .controller('DocsController', [
           '$scope', '$http', '$q','$rootScope', '$location', '$window', '$cookies', 'openPlunkr',
-              'NG_PAGES', 'NG_VERSION',
+              'NG_PAGES', 'NG_VERSION', 'NG_ITEMTYPES',
   function($scope, $http, $q, $rootScope, $location, $window, $cookies, openPlunkr,
-              NG_PAGES, NG_VERSION) {
+              NG_PAGES, NG_VERSION, NG_ITEMTYPES) {
   $scope.openPlunkr = openPlunkr;
 
   $scope.docsVersion = NG_VERSION.isSnapshot ? 'snapshot' : NG_VERSION.version;
@@ -109,6 +110,26 @@ angular.module('DocsController', [])
       'nav-index-section': navItem.type === 'section'
     };
   };
+
+  $scope.GetDetail = function(e){
+    console.log(e.target);
+    var display = e.target.nextElementSibling.style.display;
+    e.target.nextElementSibling.style.display = (display == 'block')? 'none':'block';
+  };
+
+   $scope.ViewSource = function(){
+    var repo = this.model.source.remote.repo;
+    if (repo.substr(-4) == '.git') {
+      repo = repo.substr(0, repo.length-4);
+    }
+    var url = repo + '/blob'+'/'+this.model.source.remote.branch+'/'+this.model.source.path+'/#L'+this.model.source.startLine;
+    url = url.replace('\\','/');
+    return  url;
+  };
+
+   $scope.ImproveThisDoc = function(){
+
+    };
 
   $scope.$on('$includeContentLoaded', function() {
     var pagePath = $scope.currentPage ? $scope.currentPage.path : $location.path();
@@ -182,15 +203,17 @@ angular.module('DocsController', [])
                 }
 
               if ($scope.partialModel.type.toLowerCase() == 'namespace'){
-                $scope.partialPath = 'template' + '/namespace.html';
+                $scope.partialModel.itemtypes = NG_ITEMTYPES.namespace;
+                $scope.partialPath = 'template' + '/namespace.tmpl';
               }
               else {
+                $scope.partialModel.itemtypes = NG_ITEMTYPES.class;
                 $scope.partialPath = 'template' + '/class.tmpl';
               }
             });
 
 
-            var pathParts = currentPage.path.split('/');
+            var pathParts = currentPage.split('/');
             var breadcrumb = $scope.breadcrumb = [];
             var breadcrumbPath = '';
             angular.forEach(pathParts, function(part) {

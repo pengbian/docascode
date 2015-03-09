@@ -41,7 +41,8 @@ module.exports = function(grunt) {
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/css/prettify-theme.css',
         'app/css/docs.css',
-        'app/css/animations.css'
+        'app/css/animations.css',
+        'app/css/default.css',
     ],
     jsFiles: [
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
@@ -64,7 +65,8 @@ module.exports = function(grunt) {
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/css/prettify-theme.css',
         'app/css/docs.css',
-        'app/css/animations.css'
+        'app/css/animations.css',
+        'app/css/default.css',
     ],
     unminifiedJsFiles: [
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
@@ -145,30 +147,44 @@ module.exports = function(grunt) {
         debug: {
             template: 'app/index.tmpl',
             dest: 'dist/docascode-debug.html'
-        },
-        default: {
-            template: 'app/index.tmpl',
-            dest: 'dist/docascode.html'
         }
     },
     copy: {
+        /*main: {
+          files: [
+            // includes files within path
+            {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
+
+            // includes files within path and its sub-directories
+            {expand: true, src: ['path/**'], dest: 'dest/'},
+
+            // makes all src relative to cwd
+            {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
+
+            // flattens results to a single level
+            {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
+          ],
+        },*/
+        debug: {
+          files: [
+            {expand: false,flatten: true, src: ['app/web.config'], dest: 'debug/web.config'},
+            {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'debug/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: 'debug/template/', filter: 'isFile'},
+          ]
+        },
+        test: {
+          files: [
+            {expand: false,flatten: true, src: ['app/web.config'], dest: 'test/web.config'},
+            {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: 'test/template/', filter: 'isFile'},
+            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test' },
+          ]
+        },
         release: {
-            expand: false,
-            flatten: true,
-            src: [ 'dist/docascode.html' ],
-            dest: 'release/docascode-<%= grunt.config("pkg").version %>/docascode.html'
-        },
-        release_debug: {
-            expand: false,
-            flatten: true,
-            src: [ 'dist/docascode-debug.html' ],
-            dest: 'release/docascode-<%= grunt.config("pkg").version %>/docascode-debug.html'
-        },
-        release_templates: {
-            expand: true,
-            flatten: true,
-            src: [ 'release_templates/*' ],
-            dest: 'release/docascode-<%= grunt.config("pkg").version %>/'
+          files: [
+            {expand: false,flatten: true, src: ['dist/docascode.html'], dest: 'release/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: 'release/template/', filter: 'isFile'},
+          ]
         }
      }
   });
@@ -202,7 +218,8 @@ module.exports = function(grunt) {
         grunt.file.write('tmp/templates.html', templateString);
     });
 
-    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug' ]);
-    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index' ]);
+    grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:debug']);
+    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test']);
+    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy']);
     grunt.registerTask('default', ['uglify']);
 };
