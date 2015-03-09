@@ -18,7 +18,7 @@ syntax:
   content:
     CSharp: public static class ModelExtensions
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -54,7 +54,7 @@ items:
       description: The syntax node to get semantic information for.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -95,7 +95,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -159,7 +159,7 @@ items:
       description: The syntax node to get semantic information for.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -203,7 +203,7 @@ items:
       description: Name to get alias info for.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -242,7 +242,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -305,7 +305,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -376,7 +376,7 @@ items:
             UsingDirectiveSyntax
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: The cancellation token.
@@ -415,7 +415,7 @@ items:
       description: The syntax node to get semantic information for.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: The cancellation token.

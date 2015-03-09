@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public class AssemblyIdentityComparer
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -61,7 +61,7 @@ items:
     parameters:
     - id: SimpleNameComparer
       type:
-        id: T:System.StringComparer
+        id: System.StringComparer
         href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_SimpleNameComparer
@@ -101,7 +101,7 @@ items:
     parameters:
     - id: CultureComparer
       type:
-        id: T:System.StringComparer
+        id: System.StringComparer
         href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_CultureComparer
@@ -142,7 +142,7 @@ items:
     parameters:
     - id: referenceDisplayName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Partial or full assembly display name.

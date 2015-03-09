@@ -22,10 +22,10 @@ syntax:
   content:
     CSharp: public struct FileLinePositionSpan
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -52,7 +52,7 @@ items:
     parameters:
     - id: Path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_Path
@@ -93,7 +93,7 @@ items:
     parameters:
     - id: HasMappedPath
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_HasMappedPath
@@ -254,7 +254,7 @@ items:
     parameters:
     - id: path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The file identifier - typically a relative or absolute path.
@@ -291,7 +291,7 @@ items:
     parameters:
     - id: path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The file identifier - typically a relative or absolute path.
@@ -323,7 +323,7 @@ items:
     parameters:
     - id: IsValid
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_IsValid
@@ -391,7 +391,7 @@ items:
     parameters:
     - id: other
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

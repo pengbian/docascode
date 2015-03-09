@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class MetadataReferenceResolver
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +45,7 @@ items:
     parameters:
     - id: other
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -94,12 +94,12 @@ items:
     parameters:
     - id: reference
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: baseFilePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: properties

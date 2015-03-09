@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class SourceText
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,13 +46,13 @@ items:
     parameters:
     - id: text
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Text.
     - id: encoding
       type:
-        id: T:System.Text.Encoding
+        id: System.Text.Encoding
         href: System.Text.Encoding
         isExternal: true
       description: >-
@@ -93,13 +93,13 @@ items:
     parameters:
     - id: stream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream.
     - id: encoding
       type:
-        id: T:System.Text.Encoding
+        id: System.Text.Encoding
         href: System.Text.Encoding
         isExternal: true
       description: >-
@@ -179,7 +179,7 @@ items:
     parameters:
     - id: Encoding
       type:
-        id: T:System.Text.Encoding
+        id: System.Text.Encoding
         href: System.Text.Encoding
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.SourceText.get_Encoding
@@ -220,7 +220,7 @@ items:
     parameters:
     - id: Length
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.SourceText.get_Length
@@ -293,21 +293,21 @@ items:
     parameters:
     - id: sourceIndex
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: destination
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     - id: destinationIndex
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: count
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -402,7 +402,7 @@ items:
     parameters:
     - id: start
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -430,12 +430,12 @@ items:
     parameters:
     - id: textWriter
       type:
-        id: T:System.IO.TextWriter
+        id: System.IO.TextWriter
         href: System.IO
         isExternal: true
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -463,7 +463,7 @@ items:
     parameters:
     - id: writer
       type:
-        id: T:System.IO.TextWriter
+        id: System.IO.TextWriter
         href: System.IO
         isExternal: true
     - id: span
@@ -472,7 +472,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -550,7 +550,7 @@ items:
     parameters:
     - id: changes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange}
         href: System.Runtime
         isExternal: true
     return:
@@ -578,7 +578,7 @@ items:
     parameters:
     - id: changes
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: SourceText
@@ -609,7 +609,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
     - id: newText
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -637,17 +637,17 @@ items:
     parameters:
     - id: start
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: length
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: newText
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:

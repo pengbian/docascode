@@ -22,10 +22,10 @@ syntax:
   content:
     CSharp: public struct TextSpan
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -55,12 +55,12 @@ items:
     parameters:
     - id: start
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: length
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Start
@@ -86,7 +86,7 @@ items:
     parameters:
     - id: Start
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Start
@@ -127,7 +127,7 @@ items:
     parameters:
     - id: End
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_End
@@ -168,7 +168,7 @@ items:
     parameters:
     - id: Length
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Length
@@ -209,7 +209,7 @@ items:
     parameters:
     - id: IsEmpty
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_IsEmpty
@@ -250,7 +250,7 @@ items:
     parameters:
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The position to check.
@@ -396,7 +396,7 @@ items:
     parameters:
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The position to check.
@@ -455,12 +455,12 @@ items:
     parameters:
     - id: start
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: end
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -547,7 +547,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

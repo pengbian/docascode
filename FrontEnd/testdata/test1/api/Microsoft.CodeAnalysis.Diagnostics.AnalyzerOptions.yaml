@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public class AnalyzerOptions
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: AdditionalFiles
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles
@@ -87,7 +87,7 @@ items:
     parameters:
     - id: additionalFiles
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
         href: System.Collections.Immutable
         isExternal: true
       description: A set of additional non-code text files that can be used by analyzers.
@@ -114,7 +114,7 @@ items:
     parameters:
     - id: additionalFiles
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
         href: System.Collections.Immutable
         isExternal: true
     return:

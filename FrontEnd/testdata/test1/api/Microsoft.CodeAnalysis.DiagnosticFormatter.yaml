@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public class DiagnosticFormatter
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,7 +51,7 @@ items:
       description: The diagnostic.
     - id: formatter
       type:
-        id: T:System.IFormatProvider
+        id: System.IFormatProvider
         href: System.Runtime
         isExternal: true
       description: The formatter; or null to use the default formatter.

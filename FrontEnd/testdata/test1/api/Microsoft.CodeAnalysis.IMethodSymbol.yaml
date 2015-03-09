@@ -93,7 +93,7 @@ items:
     parameters:
     - id: Arity
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_Arity
@@ -134,7 +134,7 @@ items:
     parameters:
     - id: IsGenericMethod
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsGenericMethod
@@ -175,7 +175,7 @@ items:
     parameters:
     - id: IsExtensionMethod
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsExtensionMethod
@@ -216,7 +216,7 @@ items:
     parameters:
     - id: IsAsync
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsAsync
@@ -257,7 +257,7 @@ items:
     parameters:
     - id: IsVararg
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsVararg
@@ -298,7 +298,7 @@ items:
     parameters:
     - id: IsCheckedBuiltin
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsCheckedBuiltin
@@ -344,7 +344,7 @@ items:
     parameters:
     - id: HidesBaseMethodsByName
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_HidesBaseMethodsByName
@@ -385,7 +385,7 @@ items:
     parameters:
     - id: ReturnsVoid
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnsVoid
@@ -466,7 +466,7 @@ items:
     parameters:
     - id: TypeArguments
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeArguments
@@ -510,7 +510,7 @@ items:
     parameters:
     - id: TypeParameters
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeParameters
@@ -554,7 +554,7 @@ items:
     parameters:
     - id: Parameters
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_Parameters
@@ -872,7 +872,7 @@ items:
     parameters:
     - id: ExplicitInterfaceImplementations
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ExplicitInterfaceImplementations
@@ -913,7 +913,7 @@ items:
     parameters:
     - id: ReturnTypeCustomModifiers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnTypeCustomModifiers
@@ -1017,7 +1017,7 @@ items:
     parameters:
     - id: typeArguments
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: >-
         The immediate type arguments to be replaced for type

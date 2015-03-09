@@ -11,14 +11,14 @@ source:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode2\
-    sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-  path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+    sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
+  path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
   startLine: 19
 syntax:
   content:
     CSharp: public partial class Partial1
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: mscorlib
   isExternal: true
 items:
@@ -35,8 +35,8 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-    path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
+    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 25
   summary: This is the property from *partial* class
   syntax:
@@ -45,7 +45,7 @@ items:
     parameters:
     - id: Property1
       type:
-        id: T:System.String
+        id: System.String
         href: mscorlib
         isExternal: true
 - id: TestClass1.Partial1.get_Property1
@@ -60,8 +60,8 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-    path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
+    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 25
 - id: TestClass1.Partial1.set_Property1(System.String)
   yaml: api\TestClass1.Partial1.yaml
@@ -75,6 +75,6 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
-    path: TestResults\Deploy_lianwei 2015-03-09 20_45_14\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
+    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 25

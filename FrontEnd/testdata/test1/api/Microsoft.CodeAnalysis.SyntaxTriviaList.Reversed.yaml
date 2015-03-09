@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct Reversed
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -116,7 +116,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

@@ -68,6 +68,11 @@ namespace EntityModel
                 }
             }
 
+            if (!string.IsNullOrEmpty(id) && id.Length > 2)
+            {
+                id = id.Substring(2);
+            }
+
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
@@ -262,6 +267,8 @@ namespace EntityModel
                     item.Inheritance.Add(link);
                     type = type.BaseType;
                 }
+
+                item.Inheritance.Reverse();
             }
             string syntaxStr = string.Empty;
             int openBracketIndex = -1;

@@ -136,8 +136,6 @@
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
-    <None Include="Templates\Projects\DocProject\template\class.tmpl" />
-    <None Include="Templates\Projects\DocProject\template\namespace.tmpl" />
     <Resource Include="Resources\Images.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -173,9 +171,6 @@
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\index.html">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\template\index.html">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\template\class.tmpl">

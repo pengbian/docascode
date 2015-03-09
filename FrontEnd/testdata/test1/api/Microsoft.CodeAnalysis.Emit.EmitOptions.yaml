@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public sealed class EmitOptions
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: EmitMetadataOnly
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly
@@ -87,7 +87,7 @@ items:
     parameters:
     - id: TolerateErrors
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors
@@ -131,7 +131,7 @@ items:
     parameters:
     - id: IncludePrivateMembers
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers
@@ -212,7 +212,7 @@ items:
     parameters:
     - id: FileAlignment
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment
@@ -253,7 +253,7 @@ items:
     parameters:
     - id: HighEntropyVirtualAddressSpace
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace
@@ -294,7 +294,7 @@ items:
     parameters:
     - id: BaseAddress
       type:
-        id: T:System.UInt64
+        id: System.UInt64
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress
@@ -375,7 +375,7 @@ items:
     parameters:
     - id: OutputNameOverride
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride
@@ -416,7 +416,7 @@ items:
     parameters:
     - id: PdbFilePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath
@@ -457,7 +457,7 @@ items:
     parameters:
     - id: RuntimeMetadataVersion
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion
@@ -497,7 +497,7 @@ items:
     parameters:
     - id: metadataOnly
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: debugInformationFormat
@@ -506,27 +506,27 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\DebugInformationFormat.cs
     - id: pdbFilePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: outputNameOverride
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: fileAlignment
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     - id: baseAddress
       type:
-        id: T:System.UInt64
+        id: System.UInt64
         href: System.Runtime
         isExternal: true
     - id: highEntropyVirtualAddressSpace
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: subsystemVersion
@@ -535,17 +535,17 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     - id: runtimeMetadataVersion
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: tolerateErrors
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includePrivateMembers
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object)
@@ -570,7 +570,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -675,7 +675,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -702,7 +702,7 @@ items:
     parameters:
     - id: path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -729,7 +729,7 @@ items:
     parameters:
     - id: outputName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -783,7 +783,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: 'Can be one of the following values: 0, 512, 1024, 2048, 4096, 8192'
@@ -811,7 +811,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.UInt64
+        id: System.UInt64
         href: System.Runtime
         isExternal: true
     return:
@@ -838,7 +838,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -891,7 +891,7 @@ items:
     parameters:
     - id: version
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -918,7 +918,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -945,7 +945,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     return:

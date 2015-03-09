@@ -18,10 +18,10 @@ syntax:
   content:
     CSharp: public struct SymbolInfo
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -104,7 +104,7 @@ items:
     parameters:
     - id: CandidateSymbols
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateSymbols
@@ -189,7 +189,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

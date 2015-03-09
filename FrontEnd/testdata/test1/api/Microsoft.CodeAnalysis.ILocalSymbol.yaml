@@ -85,7 +85,7 @@ items:
     parameters:
     - id: IsConst
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_IsConst
@@ -129,7 +129,7 @@ items:
     parameters:
     - id: HasConstantValue
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_HasConstantValue
@@ -170,7 +170,7 @@ items:
     parameters:
     - id: ConstantValue
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_ConstantValue
@@ -210,7 +210,7 @@ items:
     parameters:
     - id: IsFunctionValue
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_IsFunctionValue

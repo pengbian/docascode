@@ -42,7 +42,7 @@ items:
     parameters:
     - id: IsIndexer
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsIndexer
@@ -83,7 +83,7 @@ items:
     parameters:
     - id: IsReadOnly
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsReadOnly
@@ -124,7 +124,7 @@ items:
     parameters:
     - id: IsWriteOnly
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWriteOnly
@@ -168,7 +168,7 @@ items:
     parameters:
     - id: IsWithEvents
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWithEvents
@@ -254,7 +254,7 @@ items:
     parameters:
     - id: Parameters
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_Parameters
@@ -455,7 +455,7 @@ items:
     parameters:
     - id: ExplicitInterfaceImplementations
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IPropertySymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IPropertySymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_ExplicitInterfaceImplementations
@@ -496,7 +496,7 @@ items:
     parameters:
     - id: TypeCustomModifiers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_TypeCustomModifiers

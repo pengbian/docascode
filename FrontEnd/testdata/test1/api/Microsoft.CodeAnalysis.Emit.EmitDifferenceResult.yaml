@@ -18,11 +18,11 @@ syntax:
   content:
     CSharp: public sealed class EmitDifferenceResult
 inheritance:
-- id: EmitResult
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\EmitResult.cs
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
+- id: EmitResult
+  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\EmitResult.cs
 items:
 - id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml

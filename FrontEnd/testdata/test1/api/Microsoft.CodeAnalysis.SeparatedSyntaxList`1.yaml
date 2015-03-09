@@ -21,10 +21,10 @@ syntax:
 
           where TNode : SyntaxNode
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -50,7 +50,7 @@ items:
     parameters:
     - id: Count
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Count
@@ -90,7 +90,7 @@ items:
     parameters:
     - id: SeparatorCount
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_SeparatorCount
@@ -162,7 +162,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index.
@@ -484,7 +484,7 @@ items:
     parameters:
     - id: predicate
       type:
-        id: T:System.Func{`0,System.Boolean}
+        id: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:
@@ -537,7 +537,7 @@ items:
     parameters:
     - id: predicate
       type:
-        id: T:System.Func{`0,System.Boolean}
+        id: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:
@@ -664,7 +664,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -742,7 +742,7 @@ items:
     parameters:
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{`0}
+        id: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to add.
@@ -771,7 +771,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
@@ -805,13 +805,13 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{`0}
+        id: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to insert.
@@ -840,7 +840,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -935,7 +935,7 @@ items:
       description: The element to replace.
     - id: newNodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{`0}
+        id: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The new nodes.

@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class XmlReferenceResolver
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +45,7 @@ items:
     parameters:
     - id: other
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -95,13 +95,13 @@ items:
     parameters:
     - id: path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The reference path to resolve. May be absolute or relative path.
     - id: baseFilePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Path of the source file that contains the  (may also be relative), or null if not available.
@@ -131,7 +131,7 @@ items:
     parameters:
     - id: resolvedPath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Path returned by [Microsoft.CodeAnalysis.XmlReferenceResolver.ResolveReference(System.String,System.String)](api\Microsoft.CodeAnalysis.XmlReferenceResolver).

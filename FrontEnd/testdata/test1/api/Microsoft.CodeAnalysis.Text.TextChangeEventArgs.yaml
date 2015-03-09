@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public class TextChangeEventArgs
 inheritance:
-- id: T:System.EventArgs
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.EventArgs
   href: System.Runtime
   isExternal: true
 items:
@@ -59,7 +59,7 @@ items:
       description: The text after the change.
     - id: changes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
         href: System.Runtime
         isExternal: true
       description: A non-empty set of ranges for the change.
@@ -96,7 +96,7 @@ items:
       description: The text after the change.
     - id: changes
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: A non-empty set of ranges for the change.
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.OldText
@@ -202,7 +202,7 @@ items:
     parameters:
     - id: Changes
       type:
-        id: T:System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextChangeRange}
+        id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextChangeRange}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_Changes

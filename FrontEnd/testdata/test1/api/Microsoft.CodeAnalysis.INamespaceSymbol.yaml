@@ -65,7 +65,7 @@ items:
     parameters:
     - id: name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -116,7 +116,7 @@ items:
     parameters:
     - id: IsGlobalNamespace
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_IsGlobalNamespace
@@ -251,7 +251,7 @@ items:
     parameters:
     - id: ConstituentNamespaces
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_ConstituentNamespaces

@@ -28,7 +28,7 @@ syntax:
   content:
     CSharp: public abstract class DataFlowAnalysis
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -60,7 +60,7 @@ items:
     parameters:
     - id: VariablesDeclared
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_VariablesDeclared
@@ -104,7 +104,7 @@ items:
     parameters:
     - id: DataFlowsIn
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_DataFlowsIn
@@ -148,7 +148,7 @@ items:
     parameters:
     - id: DataFlowsOut
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_DataFlowsOut
@@ -192,7 +192,7 @@ items:
     parameters:
     - id: AlwaysAssigned
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_AlwaysAssigned
@@ -233,7 +233,7 @@ items:
     parameters:
     - id: ReadInside
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_ReadInside
@@ -274,7 +274,7 @@ items:
     parameters:
     - id: WrittenInside
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_WrittenInside
@@ -315,7 +315,7 @@ items:
     parameters:
     - id: ReadOutside
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_ReadOutside
@@ -356,7 +356,7 @@ items:
     parameters:
     - id: WrittenOutside
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_WrittenOutside
@@ -400,7 +400,7 @@ items:
     parameters:
     - id: Captured
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_Captured
@@ -444,7 +444,7 @@ items:
     parameters:
     - id: UnsafeAddressTaken
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_UnsafeAddressTaken
@@ -490,7 +490,7 @@ items:
     parameters:
     - id: Succeeded
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_Succeeded

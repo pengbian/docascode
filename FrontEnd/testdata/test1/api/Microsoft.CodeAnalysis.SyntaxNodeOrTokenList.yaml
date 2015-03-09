@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct SyntaxNodeOrTokenList
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -49,7 +49,7 @@ items:
     parameters:
     - id: Count
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Count
@@ -423,7 +423,7 @@ items:
     parameters:
     - id: nodesOrTokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The nodes or tokens to add.
@@ -452,7 +452,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
@@ -486,13 +486,13 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodesAndTokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The nodes or tokens to insert.
@@ -521,7 +521,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -616,7 +616,7 @@ items:
       description: The element to replace.
     - id: newNodesAndTokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The new nodes and tokens.
@@ -732,7 +732,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
       description: The @T:System.Object- to compare with this instance.

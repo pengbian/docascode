@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public sealed partial class AssemblyIdentity
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,43 +46,43 @@ items:
     parameters:
     - id: name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The simple name of the assembly.
     - id: version
       type:
-        id: T:System.Version
+        id: System.Version
         href: System.Runtime
         isExternal: true
       description: The version of the assembly.
     - id: cultureName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The name of the culture to associate with the assembly.
     - id: publicKeyOrToken
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
       description: The public key or public key token of the assembly.
     - id: hasPublicKey
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Indicates whether  represents a public key.
     - id: isRetargetable
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Indicates whether the assembly is retargetable.
     - id: contentType
       type:
-        id: T:System.Reflection.AssemblyContentType
+        id: System.Reflection.AssemblyContentType
         href: System.Reflection
         isExternal: true
       description: Specifies the binding model for how this object will be treated in comparisons.
@@ -109,7 +109,7 @@ items:
     parameters:
     - id: Name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Name
@@ -150,7 +150,7 @@ items:
     parameters:
     - id: Version
       type:
-        id: T:System.Version
+        id: System.Version
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Version
@@ -191,7 +191,7 @@ items:
     parameters:
     - id: CultureName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_CultureName
@@ -232,7 +232,7 @@ items:
     parameters:
     - id: Flags
       type:
-        id: T:System.Reflection.AssemblyNameFlags
+        id: System.Reflection.AssemblyNameFlags
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Flags
@@ -276,7 +276,7 @@ items:
     parameters:
     - id: ContentType
       type:
-        id: T:System.Reflection.AssemblyContentType
+        id: System.Reflection.AssemblyContentType
         href: System.Reflection
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_ContentType
@@ -317,7 +317,7 @@ items:
     parameters:
     - id: HasPublicKey
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_HasPublicKey
@@ -358,7 +358,7 @@ items:
     parameters:
     - id: PublicKey
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_PublicKey
@@ -399,7 +399,7 @@ items:
     parameters:
     - id: PublicKeyToken
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_PublicKeyToken
@@ -440,7 +440,7 @@ items:
     parameters:
     - id: IsStrongName
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_IsStrongName
@@ -481,7 +481,7 @@ items:
     parameters:
     - id: IsRetargetable
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_IsRetargetable
@@ -582,7 +582,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
       description: The object to be compared with the current instance.
@@ -634,7 +634,7 @@ items:
     parameters:
     - id: assembly
       type:
-        id: T:System.Reflection.Assembly
+        id: System.Reflection.Assembly
         href: System.Reflection
         isExternal: true
       description: The runtime assembly.
@@ -664,7 +664,7 @@ items:
     parameters:
     - id: fullKey
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the full public key should be included in the name. Otherwise public key token is used.
@@ -716,7 +716,7 @@ items:
     parameters:
     - id: displayName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: identity
@@ -748,7 +748,7 @@ items:
     parameters:
     - id: displayName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Display name.

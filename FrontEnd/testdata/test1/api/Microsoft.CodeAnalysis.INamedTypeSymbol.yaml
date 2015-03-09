@@ -45,7 +45,7 @@ items:
     parameters:
     - id: Arity
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Arity
@@ -86,7 +86,7 @@ items:
     parameters:
     - id: IsGenericType
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsGenericType
@@ -136,7 +136,7 @@ items:
     parameters:
     - id: IsUnboundGenericType
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsUnboundGenericType
@@ -177,7 +177,7 @@ items:
     parameters:
     - id: IsScriptClass
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsScriptClass
@@ -221,7 +221,7 @@ items:
     parameters:
     - id: IsImplicitClass
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsImplicitClass
@@ -262,7 +262,7 @@ items:
     parameters:
     - id: MemberNames
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.String}
+        id: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MemberNames
@@ -306,7 +306,7 @@ items:
     parameters:
     - id: TypeParameters
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeParameters
@@ -347,7 +347,7 @@ items:
     parameters:
     - id: TypeArguments
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeArguments
@@ -570,7 +570,7 @@ items:
     parameters:
     - id: typeArguments
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: >-
         The immediate type arguments to be replaced for type
@@ -624,7 +624,7 @@ items:
     parameters:
     - id: InstanceConstructors
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_InstanceConstructors
@@ -665,7 +665,7 @@ items:
     parameters:
     - id: StaticConstructors
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_StaticConstructors
@@ -706,7 +706,7 @@ items:
     parameters:
     - id: Constructors
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Constructors
@@ -787,7 +787,7 @@ items:
     parameters:
     - id: MightContainExtensionMethods
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MightContainExtensionMethods

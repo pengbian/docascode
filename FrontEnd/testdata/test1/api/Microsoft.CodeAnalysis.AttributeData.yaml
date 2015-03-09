@@ -18,7 +18,7 @@ syntax:
   content:
     CSharp: public abstract class AttributeData
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -164,7 +164,7 @@ items:
     parameters:
     - id: ConstructorArguments
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_ConstructorArguments
@@ -205,7 +205,7 @@ items:
     parameters:
     - id: NamedArguments
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
+        id: System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_NamedArguments

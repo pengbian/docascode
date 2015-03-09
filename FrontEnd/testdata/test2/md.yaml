@@ -8,7 +8,7 @@ TestClass1.Partial1:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode2\
-    sha1: 55c96f2d584dfa009ae5542c064680bf63c9e542
+    sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
 TestClass1:
   id: TestClass1
   path: Assets/Markdown/About.md

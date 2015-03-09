@@ -20,10 +20,10 @@
         web.config
       </ProjectItem>
       <ProjectItem ReplaceParameters="true">
-        template\class.html
+        template\class.tmpl
       </ProjectItem>
       <ProjectItem ReplaceParameters="true">
-        template\namespace.html
+        template\namespace.tmpl
       </ProjectItem>
     </Project>
   </TemplateContent>

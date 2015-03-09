@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public class EmitResult
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -51,7 +51,7 @@ items:
     parameters:
     - id: Success
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.get_Success
@@ -95,7 +95,7 @@ items:
     parameters:
     - id: Diagnostics
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics

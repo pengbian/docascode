@@ -131,7 +131,7 @@ items:
     parameters:
     - id: Interfaces
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_Interfaces
@@ -189,7 +189,7 @@ items:
     parameters:
     - id: AllInterfaces
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_AllInterfaces
@@ -235,7 +235,7 @@ items:
     parameters:
     - id: IsReferenceType
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsReferenceType
@@ -281,7 +281,7 @@ items:
     parameters:
     - id: IsValueType
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsValueType
@@ -322,7 +322,7 @@ items:
     parameters:
     - id: IsAnonymousType
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsAnonymousType

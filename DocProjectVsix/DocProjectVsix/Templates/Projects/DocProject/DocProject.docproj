@@ -20,8 +20,8 @@
     <Folder Include="template"/>
     <Folder Include="Targets"/>
     <None Include="Targets/Microsoft.DocProject.targets" />
-    <Content Include="template/class.html" />
-    <Content Include="template/namespace.html" />
+    <Content Include="template/class.tmpl" />
+    <Content Include="template/namespace.tmpl" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>

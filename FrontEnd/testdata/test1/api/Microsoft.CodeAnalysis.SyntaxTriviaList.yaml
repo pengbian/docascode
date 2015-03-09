@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public partial struct SyntaxTriviaList
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -64,7 +64,7 @@ items:
     parameters:
     - id: Count
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Count
@@ -104,7 +104,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -415,7 +415,7 @@ items:
     parameters:
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to add.
@@ -444,7 +444,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index in the list to insert the trivia at.
@@ -478,13 +478,13 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index in the list to insert the trivia at.
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to insert.
@@ -513,7 +513,7 @@ items:
     parameters:
     - id: index
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index identifying the element to remove.
@@ -608,7 +608,7 @@ items:
       description: The trivia element to replace.
     - id: newTrivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to replace the element with.
@@ -692,7 +692,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

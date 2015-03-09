@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public static class SymbolDisplayExtensions
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: parts
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolDisplayPart}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolDisplayPart}
         href: System.Collections.Immutable
         isExternal: true
       description: The array of parts.

@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public sealed class DllImportData
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: ModuleName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ModuleName
@@ -87,7 +87,7 @@ items:
     parameters:
     - id: EntryPointName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_EntryPointName
@@ -128,7 +128,7 @@ items:
     parameters:
     - id: ExactSpelling
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ExactSpelling
@@ -169,7 +169,7 @@ items:
     parameters:
     - id: CharacterSet
       type:
-        id: T:System.Runtime.InteropServices.CharSet
+        id: System.Runtime.InteropServices.CharSet
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CharacterSet
@@ -210,7 +210,7 @@ items:
     parameters:
     - id: SetLastError
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_SetLastError
@@ -251,7 +251,7 @@ items:
     parameters:
     - id: CallingConvention
       type:
-        id: T:System.Runtime.InteropServices.CallingConvention
+        id: System.Runtime.InteropServices.CallingConvention
         href: System.Runtime.InteropServices
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CallingConvention
@@ -295,7 +295,7 @@ items:
     parameters:
     - id: BestFitMapping
       type:
-        id: T:System.Nullable{System.Boolean}
+        id: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_BestFitMapping
@@ -339,7 +339,7 @@ items:
     parameters:
     - id: ThrowOnUnmappableCharacter
       type:
-        id: T:System.Nullable{System.Boolean}
+        id: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ThrowOnUnmappableCharacter

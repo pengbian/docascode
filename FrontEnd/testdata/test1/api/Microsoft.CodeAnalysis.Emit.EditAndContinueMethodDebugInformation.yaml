@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct EditAndContinueMethodDebugInformation
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -48,12 +48,12 @@ items:
     parameters:
     - id: compressedSlotMap
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
     - id: compressedLambdaMap
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
     return:

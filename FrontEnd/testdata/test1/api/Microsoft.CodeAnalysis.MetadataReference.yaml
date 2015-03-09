@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class MetadataReference
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -85,7 +85,7 @@ items:
     parameters:
     - id: Display
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.MetadataReference.get_Display
@@ -126,7 +126,7 @@ items:
     parameters:
     - id: aliases
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.String}
+        id: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
       description: The new aliases for the reference.
@@ -155,7 +155,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](api\Microsoft.CodeAnalysis.MetadataReferenceProperties).
@@ -184,7 +184,7 @@ items:
     parameters:
     - id: aliases
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.String}
+        id: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
       description: The new aliases for the reference.
@@ -241,7 +241,7 @@ items:
     parameters:
     - id: peImage
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
       description: Assembly image.
@@ -257,7 +257,7 @@ items:
       description: Provides XML documentation for symbol found in the reference.
     - id: filePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Optional path that describes the location of the metadata. The file doesn't need to exist on disk. The path is opaque to the compiler.
@@ -286,7 +286,7 @@ items:
     parameters:
     - id: peImage
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.Byte}
+        id: System.Collections.Generic.IEnumerable{System.Byte}
         href: System.Runtime
         isExternal: true
       description: Assembly image.
@@ -302,7 +302,7 @@ items:
       description: Provides XML documentation for symbol found in the reference.
     - id: filePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Optional path that describes the location of the metadata. The file doesn't need to exist on disk. The path is opaque to the compiler.
@@ -331,7 +331,7 @@ items:
     parameters:
     - id: peStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Assembly image.
@@ -347,7 +347,7 @@ items:
       description: Provides XML documentation for symbol found in the reference.
     - id: filePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Optional path that describes the location of the metadata. The file doesn't need to exist on disk. The path is opaque to the compiler.
@@ -379,7 +379,7 @@ items:
     parameters:
     - id: path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Path to the assembly file.
@@ -418,7 +418,7 @@ items:
     parameters:
     - id: assembly
       type:
-        id: T:System.Reflection.Assembly
+        id: System.Reflection.Assembly
         href: System.Reflection
         isExternal: true
       description: Path to the module file.
@@ -447,7 +447,7 @@ items:
     parameters:
     - id: assembly
       type:
-        id: T:System.Reflection.Assembly
+        id: System.Reflection.Assembly
         href: System.Reflection
         isExternal: true
       description: Path to the module file.

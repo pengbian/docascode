@@ -85,7 +85,7 @@ items:
     parameters:
     - id: IsConst
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsConst
@@ -126,7 +126,7 @@ items:
     parameters:
     - id: IsReadOnly
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsReadOnly
@@ -167,7 +167,7 @@ items:
     parameters:
     - id: IsVolatile
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsVolatile
@@ -251,7 +251,7 @@ items:
     parameters:
     - id: HasConstantValue
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_HasConstantValue
@@ -292,7 +292,7 @@ items:
     parameters:
     - id: ConstantValue
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_ConstantValue
@@ -333,7 +333,7 @@ items:
     parameters:
     - id: CustomModifiers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_CustomModifiers

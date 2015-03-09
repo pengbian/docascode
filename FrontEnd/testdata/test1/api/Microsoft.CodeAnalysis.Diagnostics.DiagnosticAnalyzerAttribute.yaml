@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public sealed class DiagnosticAnalyzerAttribute
 inheritance:
-- id: T:System.Attribute
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.Attribute
   href: System.Runtime
   isExternal: true
 items:
@@ -49,7 +49,7 @@ items:
     parameters:
     - id: Languages
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
@@ -89,12 +89,12 @@ items:
     parameters:
     - id: firstLanguage
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: One language to which the analyzer applies.
     - id: additionalLanguages
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Additional languages to which the analyzer applies. See [Microsoft.CodeAnalysis.LanguageNames](api\Microsoft.CodeAnalysis.LanguageNames).

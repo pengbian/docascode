@@ -22,10 +22,10 @@ syntax:
   content:
     CSharp: public struct SemanticModelAnalysisContext
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -132,7 +132,7 @@ items:
     parameters:
     - id: CancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_CancellationToken
@@ -180,12 +180,12 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
     - id: reportDiagnostic
       type:
-        id: T:System.Action{Microsoft.CodeAnalysis.Diagnostic}
+        id: System.Action{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)

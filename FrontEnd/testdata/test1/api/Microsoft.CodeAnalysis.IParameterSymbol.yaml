@@ -82,7 +82,7 @@ items:
     parameters:
     - id: IsParams
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsParams
@@ -123,7 +123,7 @@ items:
     parameters:
     - id: IsOptional
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsOptional
@@ -164,7 +164,7 @@ items:
     parameters:
     - id: IsThis
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsThis
@@ -245,7 +245,7 @@ items:
     parameters:
     - id: CustomModifiers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_CustomModifiers
@@ -289,7 +289,7 @@ items:
     parameters:
     - id: Ordinal
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_Ordinal
@@ -335,7 +335,7 @@ items:
     parameters:
     - id: HasExplicitDefaultValue
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_HasExplicitDefaultValue
@@ -376,7 +376,7 @@ items:
     parameters:
     - id: ExplicitDefaultValue
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_ExplicitDefaultValue

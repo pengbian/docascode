@@ -19,11 +19,11 @@ syntax:
   content:
     CSharp: public sealed class AnalyzerImageReference
 inheritance:
-- id: AnalyzerReference
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
+- id: AnalyzerReference
+  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
@@ -47,17 +47,17 @@ items:
     parameters:
     - id: analyzers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
         href: System.Collections.Immutable
         isExternal: true
     - id: fullPath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: display
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages
@@ -104,7 +104,7 @@ items:
     parameters:
     - id: language
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -131,7 +131,7 @@ items:
     parameters:
     - id: FullPath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath
@@ -171,7 +171,7 @@ items:
     parameters:
     - id: Display
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display

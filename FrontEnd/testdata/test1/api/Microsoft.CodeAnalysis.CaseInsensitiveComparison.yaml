@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public static class CaseInsensitiveComparison
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: Comparer
       type:
-        id: T:System.StringComparer
+        id: System.StringComparer
         href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.CaseInsensitiveComparison.get_Comparer
@@ -87,13 +87,13 @@ items:
     parameters:
     - id: left
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: First identifier to compare
     - id: right
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Second identifier to compare
@@ -123,12 +123,12 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: possibleEnd
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -156,13 +156,13 @@ items:
     parameters:
     - id: left
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: First identifier to compare
     - id: right
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Second identifier to compare
@@ -192,7 +192,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: identifier to get the hash code for
@@ -222,7 +222,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -250,7 +250,7 @@ items:
     parameters:
     - id: builder
       type:
-        id: T:System.Text.StringBuilder
+        id: System.Text.StringBuilder
         href: System.Runtime
         isExternal: true
     return:

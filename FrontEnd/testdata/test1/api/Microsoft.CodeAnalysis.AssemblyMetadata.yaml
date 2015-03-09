@@ -19,11 +19,11 @@ syntax:
   content:
     CSharp: public sealed class AssemblyMetadata
 inheritance:
-- id: Metadata
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\Metadata.cs
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
+- id: Metadata
+  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\Metadata.cs
 items:
 - id: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
   yaml: api\Microsoft.CodeAnalysis.AssemblyMetadata.yaml
@@ -48,7 +48,7 @@ items:
     parameters:
     - id: peImage
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+        id: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
       description: Manifest module image.
@@ -77,7 +77,7 @@ items:
     parameters:
     - id: peImage
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.Byte}
+        id: System.Collections.Generic.IEnumerable{System.Byte}
         href: System.Runtime
         isExternal: true
       description: Manifest module image.
@@ -106,13 +106,13 @@ items:
     parameters:
     - id: peStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Manifest module PE image stream.
     - id: leaveOpen
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: False to close the stream upon disposal of the metadata.
@@ -141,13 +141,13 @@ items:
     parameters:
     - id: peStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Manifest module PE image stream.
     - id: options
       type:
-        id: T:System.Reflection.PortableExecutable.PEStreamOptions
+        id: System.Reflection.PortableExecutable.PEStreamOptions
         href: System.Reflection.Metadata
         isExternal: true
       description: False to close the stream upon disposal of the metadata.
@@ -176,7 +176,7 @@ items:
     parameters:
     - id: path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The full path to the assembly on disk.
@@ -233,7 +233,7 @@ items:
     parameters:
     - id: modules
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
         href: System.Collections.Immutable
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
@@ -262,7 +262,7 @@ items:
     parameters:
     - id: modules
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
         href: System.Runtime
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
@@ -291,7 +291,7 @@ items:
     parameters:
     - id: modules
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
     return:
@@ -410,25 +410,25 @@ items:
       description: Provider of XML documentation comments for the metadata symbols contained in the module.
     - id: aliases
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.String}
+        id: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
       description: Aliases that can be used to refer to the assembly from source code (see "extern alias" directive in C#).
     - id: embedInteropTypes
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True to embed interop types from the referenced assembly to the referencing compilation. Must be false for a module.
     - id: filePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Path describing the location of the metadata, or null if the metadata have no location.
     - id: display
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Display string used in error messages to identity the reference.

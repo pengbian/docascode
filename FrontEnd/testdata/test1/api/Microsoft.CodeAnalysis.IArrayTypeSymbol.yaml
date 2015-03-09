@@ -45,7 +45,7 @@ items:
     parameters:
     - id: Rank
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_Rank
@@ -129,7 +129,7 @@ items:
     parameters:
     - id: CustomModifiers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_CustomModifiers

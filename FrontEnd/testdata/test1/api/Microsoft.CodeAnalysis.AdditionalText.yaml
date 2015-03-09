@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class AdditionalText
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: Path
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AdditionalText.get_Path
@@ -87,7 +87,7 @@ items:
     parameters:
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class Location
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -86,7 +86,7 @@ items:
     parameters:
     - id: IsInSource
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInSource
@@ -127,7 +127,7 @@ items:
     parameters:
     - id: IsInMetadata
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInMetadata
@@ -341,7 +341,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -514,7 +514,7 @@ items:
     parameters:
     - id: filePath
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: textSpan

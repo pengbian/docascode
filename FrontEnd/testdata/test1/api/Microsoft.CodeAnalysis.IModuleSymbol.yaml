@@ -112,7 +112,7 @@ items:
     parameters:
     - id: ReferencedAssemblies
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblies
@@ -153,7 +153,7 @@ items:
     parameters:
     - id: ReferencedAssemblySymbols
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblySymbols

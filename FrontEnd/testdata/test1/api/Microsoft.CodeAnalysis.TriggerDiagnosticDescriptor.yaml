@@ -19,11 +19,11 @@ syntax:
   content:
     CSharp: public class TriggerDiagnosticDescriptor
 inheritance:
-- id: DiagnosticDescriptor
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
+- id: DiagnosticDescriptor
+  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
 items:
 - id: Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor.#ctor(System.String,System.String[])
   yaml: api\Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor.yaml
@@ -48,12 +48,12 @@ items:
     parameters:
     - id: id
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: customTags
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.

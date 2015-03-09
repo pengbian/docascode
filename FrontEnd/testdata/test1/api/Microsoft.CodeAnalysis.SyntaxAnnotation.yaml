@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public sealed class SyntaxAnnotation
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -62,7 +62,7 @@ items:
     parameters:
     - id: Kind
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Kind
@@ -102,7 +102,7 @@ items:
     parameters:
     - id: Data
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Data
@@ -162,7 +162,7 @@ items:
     parameters:
     - id: kind
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.#ctor(System.String,System.String)
@@ -187,12 +187,12 @@ items:
     parameters:
     - id: kind
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: data
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.Equals(Microsoft.CodeAnalysis.SyntaxAnnotation)
@@ -273,7 +273,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct TextChangeRange
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -89,7 +89,7 @@ items:
     parameters:
     - id: NewLength
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeRange.get_NewLength
@@ -134,7 +134,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
     - id: newLength
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeRange.Equals(Microsoft.CodeAnalysis.Text.TextChangeRange)
@@ -187,7 +187,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -290,7 +290,7 @@ items:
     parameters:
     - id: changes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
         href: System.Runtime
         isExternal: true
     return:

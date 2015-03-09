@@ -22,7 +22,7 @@ syntax:
   content:
     CSharp: public sealed class EmitBaseline
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -57,7 +57,7 @@ items:
       description: The metadata of the module before editing.
     - id: debugInformationProvider
       type:
-        id: T:System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation}
+        id: System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation}
         href: System.Runtime
         isExternal: true
       description: A function that for a method handle returns Edit and Continue debug information emitted by the compiler into the PDB.

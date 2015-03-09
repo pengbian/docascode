@@ -18,10 +18,10 @@ syntax:
   content:
     CSharp: public struct PreprocessingSymbolInfo
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -88,7 +88,7 @@ items:
     parameters:
     - id: IsDefined
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.get_IsDefined
@@ -154,7 +154,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

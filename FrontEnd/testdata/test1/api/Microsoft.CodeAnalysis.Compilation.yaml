@@ -30,7 +30,7 @@ syntax:
   content:
     CSharp: public abstract partial class Compilation
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -64,7 +64,7 @@ items:
     parameters:
     - id: IsCaseSensitive
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_IsCaseSensitive
@@ -105,7 +105,7 @@ items:
     parameters:
     - id: Language
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_Language
@@ -203,12 +203,12 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     - id: name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: arity
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -236,7 +236,7 @@ items:
     parameters:
     - id: AssemblyName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_AssemblyName
@@ -277,7 +277,7 @@ items:
     parameters:
     - id: assemblyName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The new assembly name.
@@ -376,7 +376,7 @@ items:
     parameters:
     - id: hasValue
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -484,7 +484,7 @@ items:
     parameters:
     - id: SyntaxTrees
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_SyntaxTrees
@@ -525,7 +525,7 @@ items:
     parameters:
     - id: trees
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: The new syntax trees.
     return:
@@ -554,7 +554,7 @@ items:
     parameters:
     - id: trees
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
         href: System.Runtime
         isExternal: true
       description: The new syntax trees.
@@ -587,7 +587,7 @@ items:
     parameters:
     - id: trees
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: The new syntax trees.
     return:
@@ -619,7 +619,7 @@ items:
     parameters:
     - id: trees
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
         href: System.Runtime
         isExternal: true
       description: The new syntax trees.
@@ -740,7 +740,7 @@ items:
     parameters:
     - id: ExternalReferences
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_ExternalReferences
@@ -781,7 +781,7 @@ items:
     parameters:
     - id: DirectiveReferences
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_DirectiveReferences
@@ -825,7 +825,7 @@ items:
     parameters:
     - id: References
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_References
@@ -866,13 +866,13 @@ items:
     parameters:
     - id: aliases
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{System.String}
+        id: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
       description: Optional aliases that can be used to refer to the compilation root namespace via extern alias directive.
     - id: embedInteropTypes
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -904,7 +904,7 @@ items:
     parameters:
     - id: newReferences
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
       description: The new references.
@@ -934,7 +934,7 @@ items:
     parameters:
     - id: newReferences
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: The new references.
     return:
@@ -963,7 +963,7 @@ items:
     parameters:
     - id: references
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: The new references.
     return:
@@ -992,7 +992,7 @@ items:
     parameters:
     - id: references
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
       description: The new references.
@@ -1022,7 +1022,7 @@ items:
     parameters:
     - id: references
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: The new references.
     return:
@@ -1051,7 +1051,7 @@ items:
     parameters:
     - id: references
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
       description: The new references.
@@ -1201,7 +1201,7 @@ items:
     parameters:
     - id: ReferencedAssemblyNames
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.AssemblyIdentity}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.AssemblyIdentity}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_ReferencedAssemblyNames
@@ -1395,7 +1395,7 @@ items:
     parameters:
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1586,7 +1586,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     - id: rank
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -1647,7 +1647,7 @@ items:
     parameters:
     - id: fullyQualifiedMetadataName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1676,7 +1676,7 @@ items:
     parameters:
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1704,7 +1704,7 @@ items:
     parameters:
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1732,7 +1732,7 @@ items:
     parameters:
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1765,7 +1765,7 @@ items:
     parameters:
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1793,22 +1793,22 @@ items:
     parameters:
     - id: versionResource
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: noManifest
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: manifestContents
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: iconInIcoFormat
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     return:
@@ -1836,31 +1836,31 @@ items:
     parameters:
     - id: peStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream to which the compilation will be written.
     - id: pdbStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream to which the compilation's debug info will be written.  Null to forego PDB generation.
     - id: xmlDocumentationStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream to which the compilation's XML documentation will be written.  Null to forego XML generation.
     - id: win32Resources
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
       description: "Stream from which the compilation's Win32 resources will be read (in RES format).  \r\n    Null to indicate that there are none. The RES format begins with a null resource entry."
     - id: manifestResources
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription}
         href: System.Runtime
         isExternal: true
       description: List of the compilation's managed resources.  Null to indicate that there are none.
@@ -1871,7 +1871,7 @@ items:
       description: Emit options.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: To cancel the emit process.
@@ -1913,32 +1913,32 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\EditAndContinue\EmitBaseline.cs
     - id: edits
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
         href: System.Runtime
         isExternal: true
     - id: metadataStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: ilStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: pdbStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: updatedMethods
       type:
-        id: T:System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
+        id: System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1979,37 +1979,37 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\EditAndContinue\EmitBaseline.cs
     - id: edits
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
         href: System.Runtime
         isExternal: true
     - id: isAddedSymbol
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.ISymbol,System.Boolean}
+        id: System.Func{Microsoft.CodeAnalysis.ISymbol,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: metadataStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: ilStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: pdbStream
       type:
-        id: T:System.IO.Stream
+        id: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: updatedMethods
       type:
-        id: T:System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
+        id: System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -2037,7 +2037,7 @@ items:
     parameters:
     - id: predicate
       type:
-        id: T:System.Func{System.String,System.Boolean}
+        id: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: filter
@@ -2046,7 +2046,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -2074,7 +2074,7 @@ items:
     parameters:
     - id: predicate
       type:
-        id: T:System.Func{System.String,System.Boolean}
+        id: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: filter
@@ -2083,7 +2083,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

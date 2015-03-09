@@ -18,7 +18,7 @@ syntax:
   content:
     CSharp: public static partial class SyntaxNodeExtensions
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,13 +50,13 @@ items:
       description: The root node of the tree of nodes.
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The nodes to be replaced.
     - id: computeReplacementNode
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -67,13 +67,13 @@ items:
             node potentially rewritten with replaced descendants.
     - id: tokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The tokens to be replaced.
     - id: computeReplacementToken
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -84,13 +84,13 @@ items:
             the same token potentially rewritten with replaced trivia.
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to be replaced.
     - id: computeReplacementTrivia
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -129,13 +129,13 @@ items:
       description: The root node of the tree of nodes.
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{``1}
+        id: System.Collections.Generic.IEnumerable{``1}
         href: System.Runtime
         isExternal: true
       description: The nodes to be replaced; descendants of the root node.
     - id: computeReplacementNode
       type:
-        id: T:System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -217,7 +217,7 @@ items:
       description: The node to be replaced; a descendant of the root node and an element of a list member.
     - id: newNodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: A sequence of nodes to use in the tree in place of the old node.
@@ -256,7 +256,7 @@ items:
       description: The node to insert before; a descendant of the root node an element of a list member.
     - id: newNodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: A sequence of nodes to insert into the tree immediately before the specified node.
@@ -295,7 +295,7 @@ items:
       description: The node to insert after; a descendant of the root node an element of a list member.
     - id: newNodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: A sequence of nodes to insert into the tree immediately after the specified node.
@@ -334,7 +334,7 @@ items:
       description: The token to be replaced; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: A sequence of tokens to use in the tree in place of the specified token.
@@ -373,7 +373,7 @@ items:
       description: The token to insert before; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: A sequence of tokens to insert into the tree immediately before the specified token.
@@ -412,7 +412,7 @@ items:
       description: The token to insert after; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: A sequence of tokens to insert into the tree immediately after the specified token.
@@ -451,7 +451,7 @@ items:
       description: The trivia to be replaced; a descendant of the root node.
     - id: newTrivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: A sequence of trivia to use in the tree in place of the specified trivia.
@@ -490,7 +490,7 @@ items:
       description: The trivia to insert before; a descendant of the root node.
     - id: newTrivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: A sequence of trivia to insert into the tree immediately before the specified trivia.
@@ -529,7 +529,7 @@ items:
       description: The trivia to insert after; a descendant of the root node.
     - id: newTrivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: A sequence of trivia to insert into the tree immediately after the specified trivia.
@@ -563,13 +563,13 @@ items:
       description: The root node of the tree of nodes.
     - id: tokens
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: The token to be replaced; descendants of the root node.
     - id: computeReplacementToken
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
+        id: System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -649,13 +649,13 @@ items:
       description: The root node of the tree of nodes.
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to be replaced; descendants of the root node.
     - id: computeReplacementTrivia
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -770,7 +770,7 @@ items:
       description: The root node from which to remove a descendant node from.
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: The nodes to remove.
@@ -812,7 +812,7 @@ items:
       description: The node to format.
     - id: indentation
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -821,7 +821,7 @@ items:
             single level of indentation.
     - id: elasticTrivia
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: If true the replaced trivia is elastic trivia.
@@ -943,7 +943,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1002,7 +1002,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
     - id: trivia
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: TSyntax
@@ -1064,7 +1064,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1123,7 +1123,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
     - id: trivia
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: TSyntax
@@ -1155,7 +1155,7 @@ items:
       description: The root of the subtree containing the nodes to be tracked.
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: One or more nodes that are descendants of the root node.
@@ -1189,7 +1189,7 @@ items:
       description: The root of the subtree containing the nodes to be tracked.
     - id: nodes
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: One or more nodes that are descendants of the root node.
     return:
@@ -1297,7 +1297,7 @@ items:
       description: The root of the subtree containing the current nodes corresponding to the original tracked nodes.
     - id: nodes
       type:
-        id: T:System.Collections.Generic.IEnumerable{``0}
+        id: System.Collections.Generic.IEnumerable{``0}
         href: System.Runtime
         isExternal: true
       description: One or more node instances originally tracked.

@@ -85,7 +85,7 @@ items:
     parameters:
     - id: Language
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Language
@@ -126,7 +126,7 @@ items:
     parameters:
     - id: Name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Name
@@ -182,7 +182,7 @@ items:
     parameters:
     - id: MetadataName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_MetadataName
@@ -438,7 +438,7 @@ items:
     parameters:
     - id: IsDefinition
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsDefinition
@@ -479,7 +479,7 @@ items:
     parameters:
     - id: IsStatic
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsStatic
@@ -520,7 +520,7 @@ items:
     parameters:
     - id: IsVirtual
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsVirtual
@@ -561,7 +561,7 @@ items:
     parameters:
     - id: IsOverride
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsOverride
@@ -602,7 +602,7 @@ items:
     parameters:
     - id: IsAbstract
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsAbstract
@@ -643,7 +643,7 @@ items:
     parameters:
     - id: IsSealed
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsSealed
@@ -684,7 +684,7 @@ items:
     parameters:
     - id: IsExtern
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsExtern
@@ -728,7 +728,7 @@ items:
     parameters:
     - id: IsImplicitlyDeclared
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsImplicitlyDeclared
@@ -769,7 +769,7 @@ items:
     parameters:
     - id: CanBeReferencedByName
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_CanBeReferencedByName
@@ -815,7 +815,7 @@ items:
     parameters:
     - id: Locations
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Locations
@@ -856,7 +856,7 @@ items:
     parameters:
     - id: DeclaringSyntaxReferences
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaringSyntaxReferences
@@ -1089,19 +1089,19 @@ items:
     parameters:
     - id: preferredCulture
       type:
-        id: T:System.Globalization.CultureInfo
+        id: System.Globalization.CultureInfo
         href: System.Globalization
         isExternal: true
       description: Preferred culture or null for the default.
     - id: expandIncludes
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Optionally, expand <include> elements.  No impact on non-source documentation comments.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: Token allowing cancellation of request.
@@ -1206,7 +1206,7 @@ items:
             the context).
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
@@ -1255,7 +1255,7 @@ items:
             the context).
     - id: position
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
@@ -1293,7 +1293,7 @@ items:
     parameters:
     - id: HasUnsupportedMetadata
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_HasUnsupportedMetadata

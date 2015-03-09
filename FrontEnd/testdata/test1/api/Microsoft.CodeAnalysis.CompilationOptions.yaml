@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public abstract class CompilationOptions
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -86,7 +86,7 @@ items:
     parameters:
     - id: ModuleName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ModuleName
@@ -127,7 +127,7 @@ items:
     parameters:
     - id: ScriptClassName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ScriptClassName
@@ -171,7 +171,7 @@ items:
     parameters:
     - id: MainTypeName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MainTypeName
@@ -212,7 +212,7 @@ items:
     parameters:
     - id: CryptoKeyFile
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyFile
@@ -253,7 +253,7 @@ items:
     parameters:
     - id: CryptoKeyContainer
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyContainer
@@ -297,7 +297,7 @@ items:
     parameters:
     - id: DelaySign
       type:
-        id: T:System.Nullable{System.Boolean}
+        id: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_DelaySign
@@ -338,7 +338,7 @@ items:
     parameters:
     - id: CheckOverflow
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CheckOverflow
@@ -502,7 +502,7 @@ items:
     parameters:
     - id: WarningLevel
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_WarningLevel
@@ -543,7 +543,7 @@ items:
     parameters:
     - id: ConcurrentBuild
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ConcurrentBuild
@@ -584,7 +584,7 @@ items:
     parameters:
     - id: SpecificDiagnosticOptions
       type:
-        id: T:System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
+        id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SpecificDiagnosticOptions
@@ -867,7 +867,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
+        id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         href: System.Collections.Immutable
         isExternal: true
     return:
@@ -895,7 +895,7 @@ items:
     parameters:
     - id: value
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
+        id: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
         href: System.Runtime
         isExternal: true
     return:
@@ -1134,7 +1134,7 @@ items:
     parameters:
     - id: Errors
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Errors
@@ -1174,7 +1174,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

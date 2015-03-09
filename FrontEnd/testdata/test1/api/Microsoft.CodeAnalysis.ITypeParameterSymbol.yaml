@@ -45,7 +45,7 @@ items:
     parameters:
     - id: Ordinal
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Ordinal
@@ -246,7 +246,7 @@ items:
     parameters:
     - id: HasReferenceTypeConstraint
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasReferenceTypeConstraint
@@ -287,7 +287,7 @@ items:
     parameters:
     - id: HasValueTypeConstraint
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasValueTypeConstraint
@@ -328,7 +328,7 @@ items:
     parameters:
     - id: HasConstructorConstraint
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasConstructorConstraint
@@ -369,7 +369,7 @@ items:
     parameters:
     - id: ConstraintTypes
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ConstraintTypes

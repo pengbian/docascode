@@ -18,10 +18,10 @@ syntax:
   content:
     CSharp: public partial struct ChildSyntaxList
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -48,7 +48,7 @@ items:
     parameters:
     - id: Count
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.get_Count
@@ -239,7 +239,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
       description: The object to be compared with the current instance.

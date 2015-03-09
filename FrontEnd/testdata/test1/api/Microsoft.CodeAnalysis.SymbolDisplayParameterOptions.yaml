@@ -19,13 +19,13 @@ syntax:
   content:
     CSharp: public enum SymbolDisplayParameterOptions
 inheritance:
-- id: T:System.Enum
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.ValueType
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.Enum
   href: System.Runtime
   isExternal: true
 items:

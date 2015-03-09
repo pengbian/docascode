@@ -19,11 +19,11 @@ syntax:
   content:
     CSharp: public sealed class LocalizableResourceString
 inheritance:
-- id: LocalizableString
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
+- id: LocalizableString
+  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
 items:
 - id: Microsoft.CodeAnalysis.LocalizableResourceString.#ctor(System.String,System.Resources.ResourceManager,System.Type)
   yaml: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
@@ -48,19 +48,19 @@ items:
     parameters:
     - id: nameOfLocalizableResource
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: nameof the resource that needs to be localized.
     - id: resourceManager
       type:
-        id: T:System.Resources.ResourceManager
+        id: System.Resources.ResourceManager
         href: System.Resources.ResourceManager
         isExternal: true
       description: '@T:System.Resources.ResourceManager- for the calling assembly.'
     - id: resourceSource
       type:
-        id: T:System.Type
+        id: System.Type
         href: System.Runtime
         isExternal: true
       description: Type handling assembly's resource management. Typically, this is the static class generated for the resources file from which resources are accessed.
@@ -87,25 +87,25 @@ items:
     parameters:
     - id: nameOfLocalizableResource
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: nameof the resource that needs to be localized.
     - id: resourceManager
       type:
-        id: T:System.Resources.ResourceManager
+        id: System.Resources.ResourceManager
         href: System.Resources.ResourceManager
         isExternal: true
       description: '@T:System.Resources.ResourceManager- for the calling assembly.'
     - id: resourceSource
       type:
-        id: T:System.Type
+        id: System.Type
         href: System.Runtime
         isExternal: true
       description: Type handling assembly's resource management. Typically, this is the static class generated for the resources file from which resources are accessed.
     - id: formatArguments
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Optional arguments for formatting the localizable resource string.
 - id: Microsoft.CodeAnalysis.LocalizableResourceString.ToString(System.IFormatProvider)
@@ -130,7 +130,7 @@ items:
     parameters:
     - id: formatProvider
       type:
-        id: T:System.IFormatProvider
+        id: System.IFormatProvider
         href: System.Runtime
         isExternal: true
     return:

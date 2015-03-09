@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct SyntaxToken
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -49,7 +49,7 @@ items:
     parameters:
     - id: RawKind
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_RawKind
@@ -90,7 +90,7 @@ items:
     parameters:
     - id: Language
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Language
@@ -211,7 +211,7 @@ items:
     parameters:
     - id: SpanStart
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_SpanStart
@@ -297,7 +297,7 @@ items:
     parameters:
     - id: IsMissing
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_IsMissing
@@ -341,7 +341,7 @@ items:
     parameters:
     - id: Value
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Value
@@ -385,7 +385,7 @@ items:
     parameters:
     - id: ValueText
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ValueText
@@ -425,7 +425,7 @@ items:
     parameters:
     - id: Text
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Text
@@ -514,7 +514,7 @@ items:
     parameters:
     - id: writer
       type:
-        id: T:System.IO.TextWriter
+        id: System.IO.TextWriter
         href: System.IO
         isExternal: true
     return:
@@ -542,7 +542,7 @@ items:
     parameters:
     - id: HasLeadingTrivia
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasLeadingTrivia
@@ -583,7 +583,7 @@ items:
     parameters:
     - id: HasTrailingTrivia
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasTrailingTrivia
@@ -624,7 +624,7 @@ items:
     parameters:
     - id: ContainsDiagnostics
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDiagnostics
@@ -665,7 +665,7 @@ items:
     parameters:
     - id: ContainsDirectives
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDirectives
@@ -729,7 +729,7 @@ items:
     parameters:
     - id: HasStructuredTrivia
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasStructuredTrivia
@@ -770,7 +770,7 @@ items:
     parameters:
     - id: ContainsAnnotations
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsAnnotations
@@ -811,7 +811,7 @@ items:
     parameters:
     - id: annotationKind
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -839,7 +839,7 @@ items:
     parameters:
     - id: annotationKinds
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: Boolean
@@ -893,7 +893,7 @@ items:
     parameters:
     - id: annotationKind
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -921,7 +921,7 @@ items:
     parameters:
     - id: annotationKinds
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: IEnumerable
@@ -948,7 +948,7 @@ items:
     parameters:
     - id: annotationKinds
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.String}
+        id: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     return:
@@ -979,7 +979,7 @@ items:
     parameters:
     - id: annotations
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1009,7 +1009,7 @@ items:
     parameters:
     - id: annotations
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         href: System.Runtime
         isExternal: true
     return:
@@ -1037,7 +1037,7 @@ items:
     parameters:
     - id: annotations
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1064,7 +1064,7 @@ items:
     parameters:
     - id: annotations
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         href: System.Runtime
         isExternal: true
     return:
@@ -1092,7 +1092,7 @@ items:
     parameters:
     - id: annotationKind
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1284,7 +1284,7 @@ items:
     parameters:
     - id: trivia
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1311,7 +1311,7 @@ items:
     parameters:
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1366,7 +1366,7 @@ items:
     parameters:
     - id: trivia
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
     return:
       id: SyntaxToken
@@ -1393,7 +1393,7 @@ items:
     parameters:
     - id: trivia
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
     return:
@@ -1509,7 +1509,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -1560,22 +1560,22 @@ items:
     parameters:
     - id: includeZeroWidth
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1604,22 +1604,22 @@ items:
     parameters:
     - id: includeZeroWidth
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
     return:

@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct TypedConstant
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -129,7 +129,7 @@ items:
     parameters:
     - id: IsNull
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_IsNull
@@ -170,7 +170,7 @@ items:
     parameters:
     - id: Value
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Value
@@ -211,7 +211,7 @@ items:
     parameters:
     - id: Values
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Values
@@ -251,7 +251,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

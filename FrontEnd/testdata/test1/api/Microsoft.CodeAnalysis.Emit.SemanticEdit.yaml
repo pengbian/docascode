@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct SemanticEdit
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -158,13 +158,13 @@ items:
       description: The symbol from the later compilation, or null if the edit represents a deletion.
     - id: syntaxMap
       type:
-        id: T:System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Runtime
         isExternal: true
       description: "A map from syntax node in the later compilation to syntax node in the previous compilation, \r\n    or null if  is false and the map is not needed or \r\n    the source of the current method is the same as the source of the previous method."
     - id: preserveLocalVariables
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the edit is an update of an active method and local values should be preserved; false otherwise.
@@ -212,7 +212,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

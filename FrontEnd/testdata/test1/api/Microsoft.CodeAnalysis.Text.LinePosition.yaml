@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct LinePosition
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -66,13 +66,13 @@ items:
     parameters:
     - id: line
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The line of the line position. The first line in a file is defined as line 0 (zero based line numbering).
     - id: character
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: The character position in the line.
@@ -99,7 +99,7 @@ items:
     parameters:
     - id: Line
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.LinePosition.get_Line
@@ -140,7 +140,7 @@ items:
     parameters:
     - id: Character
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.LinePosition.get_Character
@@ -241,7 +241,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
       description: The object to compare.

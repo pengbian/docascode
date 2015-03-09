@@ -42,7 +42,7 @@ items:
     parameters:
     - id: IsInteractive
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_IsInteractive
@@ -166,7 +166,7 @@ items:
     parameters:
     - id: Modules
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Modules
@@ -207,7 +207,7 @@ items:
     parameters:
     - id: TypeNames
       type:
-        id: T:System.Collections.Generic.ICollection{System.String}
+        id: System.Collections.Generic.ICollection{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_TypeNames
@@ -248,7 +248,7 @@ items:
     parameters:
     - id: NamespaceNames
       type:
-        id: T:System.Collections.Generic.ICollection{System.String}
+        id: System.Collections.Generic.ICollection{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_NamespaceNames
@@ -316,7 +316,7 @@ items:
     parameters:
     - id: fullyQualifiedMetadataName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: Type name.
@@ -349,7 +349,7 @@ items:
     parameters:
     - id: MightContainExtensionMethods
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_MightContainExtensionMethods
@@ -395,7 +395,7 @@ items:
     parameters:
     - id: fullyQualifiedMetadataName
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:

@@ -82,7 +82,7 @@ items:
     parameters:
     - id: IsWindowsRuntimeEvent
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IEventSymbol.get_IsWindowsRuntimeEvent
@@ -323,7 +323,7 @@ items:
     parameters:
     - id: ExplicitInterfaceImplementations
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IEventSymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IEventSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IEventSymbol.get_ExplicitInterfaceImplementations

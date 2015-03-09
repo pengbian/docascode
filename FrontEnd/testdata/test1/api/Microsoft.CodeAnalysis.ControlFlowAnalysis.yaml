@@ -22,7 +22,7 @@ syntax:
   content:
     CSharp: public abstract class ControlFlowAnalysis
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -52,7 +52,7 @@ items:
     parameters:
     - id: EntryPoints
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EntryPoints
@@ -96,7 +96,7 @@ items:
     parameters:
     - id: ExitPoints
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ExitPoints
@@ -140,7 +140,7 @@ items:
     parameters:
     - id: EndPointIsReachable
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EndPointIsReachable
@@ -180,7 +180,7 @@ items:
     parameters:
     - id: StartPointIsReachable
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_StartPointIsReachable
@@ -221,7 +221,7 @@ items:
     parameters:
     - id: ReturnStatements
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ReturnStatements
@@ -265,7 +265,7 @@ items:
     parameters:
     - id: Succeeded
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_Succeeded

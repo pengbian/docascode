@@ -69,7 +69,7 @@ items:
     parameters:
     - id: name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -128,7 +128,7 @@ items:
     parameters:
     - id: name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -162,12 +162,12 @@ items:
     parameters:
     - id: name
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
     - id: arity
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -201,7 +201,7 @@ items:
     parameters:
     - id: IsNamespace
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsNamespace
@@ -242,7 +242,7 @@ items:
     parameters:
     - id: IsType
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsType

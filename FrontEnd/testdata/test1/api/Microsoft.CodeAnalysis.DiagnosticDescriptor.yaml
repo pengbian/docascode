@@ -19,7 +19,7 @@ syntax:
   content:
     CSharp: public class DiagnosticDescriptor
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -46,7 +46,7 @@ items:
     parameters:
     - id: Id
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Id
@@ -167,7 +167,7 @@ items:
     parameters:
     - id: HelpLinkUri
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_HelpLinkUri
@@ -248,7 +248,7 @@ items:
     parameters:
     - id: Category
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Category
@@ -329,7 +329,7 @@ items:
     parameters:
     - id: IsEnabledByDefault
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_IsEnabledByDefault
@@ -370,7 +370,7 @@ items:
     parameters:
     - id: CustomTags
       type:
-        id: T:System.Collections.Generic.IEnumerable{System.String}
+        id: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_CustomTags
@@ -416,19 +416,19 @@ items:
     parameters:
     - id: id
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: title
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: 'A short title describing the diagnostic. For example, for CA1001: "Types that own disposable fields should be disposable".'
     - id: messageFormat
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -437,7 +437,7 @@ items:
             For example, for CA1001: "Implement IDisposable on '{0}' because it creates members of the following IDisposable types: '{1}'."
     - id: category
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: 'The category of the diagnostic (like Design, Naming etc.). For example, for CA1001: "Microsoft.Design".'
@@ -448,25 +448,25 @@ items:
       description: Default severity of the diagnostic.
     - id: isEnabledByDefault
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default.
     - id: description
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: An optional longer description of the diagnostic.
     - id: helpLinkUri
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides a more detailed description regarding the diagnostic.
     - id: customTags
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])
@@ -492,7 +492,7 @@ items:
     parameters:
     - id: id
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
@@ -511,7 +511,7 @@ items:
             For example, for CA1001: "Implement IDisposable on '{0}' because it creates members of the following IDisposable types: '{1}'."
     - id: category
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: 'The category of the diagnostic (like Design, Naming etc.). For example, for CA1001: "Microsoft.Design".'
@@ -522,7 +522,7 @@ items:
       description: Default severity of the diagnostic.
     - id: isEnabledByDefault
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default.
@@ -533,13 +533,13 @@ items:
       description: An optional longer localizable description of the diagnostic.
     - id: helpLinkUri
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides a more detailed description regarding the diagnostic.
     - id: customTags
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Equals(Microsoft.CodeAnalysis.DiagnosticDescriptor)
@@ -590,7 +590,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

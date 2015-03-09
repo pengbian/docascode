@@ -29,7 +29,7 @@ syntax:
 
           where TLanguageKindEnum : struct
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -216,7 +216,7 @@ items:
     parameters:
     - id: CancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
@@ -260,7 +260,7 @@ items:
     parameters:
     - id: action
       type:
-        id: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
+        id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
         href: System.Runtime
         isExternal: true
       description: Action to be executed at the end of semantic analysis of a code block.
@@ -294,13 +294,13 @@ items:
     parameters:
     - id: action
       type:
-        id: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+        id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
-        id: T:System.Array
+        id: System.Array
         isExternal: true
       description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:
@@ -333,13 +333,13 @@ items:
     parameters:
     - id: action
       type:
-        id: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+        id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{`0}
+        id: System.Collections.Immutable.ImmutableArray{`0}
         href: System.Collections.Immutable
         isExternal: true
       description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.

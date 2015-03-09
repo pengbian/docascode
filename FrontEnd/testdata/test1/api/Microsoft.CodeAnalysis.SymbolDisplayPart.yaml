@@ -22,10 +22,10 @@ syntax:
   content:
     CSharp: public struct SymbolDisplayPart
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -145,7 +145,7 @@ items:
       description: An optional associated symbol.
     - id: text
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: The fixed string value of the part.

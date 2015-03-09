@@ -56,7 +56,7 @@ items:
     parameters:
     - id: CandidateSymbols
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IErrorTypeSymbol.get_CandidateSymbols

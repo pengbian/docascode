@@ -19,10 +19,10 @@ syntax:
   content:
     CSharp: public struct SubsystemVersion
 inheritance:
-- id: T:System.ValueType
+- id: System.Object
   href: System.Runtime
   isExternal: true
-- id: T:System.Object
+- id: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -185,7 +185,7 @@ items:
     parameters:
     - id: str
       type:
-        id: T:System.String
+        id: System.String
         href: System.Runtime
         isExternal: true
       description: String to parse
@@ -220,13 +220,13 @@ items:
     parameters:
     - id: major
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: major subsystem version
     - id: minor
       type:
-        id: T:System.Int32
+        id: System.Int32
         href: System.Runtime
         isExternal: true
       description: minor subsystem version
@@ -256,7 +256,7 @@ items:
     parameters:
     - id: IsValid
       type:
-        id: T:System.Boolean
+        id: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SubsystemVersion.get_IsValid
@@ -296,7 +296,7 @@ items:
     parameters:
     - id: obj
       type:
-        id: T:System.Object
+        id: System.Object
         href: System.Runtime
         isExternal: true
     return:

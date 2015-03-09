@@ -18,7 +18,7 @@ syntax:
   content:
     CSharp: public class CompilationWithAnalyzers
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -89,7 +89,7 @@ items:
       description: The original compilation.
     - id: analyzers
       type:
-        id: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
+        id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
         href: System.Collections.Immutable
         isExternal: true
       description: The set of analyzers to include in future analyses.
@@ -100,7 +100,7 @@ items:
       description: Options that are passed to analyzers.
     - id: cancellationToken
       type:
-        id: T:System.Threading.CancellationToken
+        id: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A cancellation token that can be used to abort analysis.
@@ -182,7 +182,7 @@ items:
     parameters:
     - id: diagnostics
       type:
-        id: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic}
+        id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Runtime
         isExternal: true
     - id: compilation
@@ -225,7 +225,7 @@ items:
         href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     - id: continueOnAnalyzerException
       type:
-        id: T:System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean}
+        id: System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:

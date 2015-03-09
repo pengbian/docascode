@@ -22,7 +22,7 @@ syntax:
   content:
     CSharp: public abstract class LocalizableString
 inheritance:
-- id: T:System.Object
+- id: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -49,7 +49,7 @@ items:
     parameters:
     - id: formatProvider
       type:
-        id: T:System.IFormatProvider
+        id: System.IFormatProvider
         href: System.Runtime
         isExternal: true
     return:
