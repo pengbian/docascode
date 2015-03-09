@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         'app/bower_components/angular-animate/angular-animate.min.js',
         'app/bower_components/marked/lib/marked.js',
         'app/bower_components/lunr.js/lunr.min.js',
-        'app/bower_components/google-code-prettify/bin/prettify.min.js',
+        'app/bower_components/google-code-prettify/src/prettify.js',
         'app/bower_components/google-code-prettify/src/lang-css.js',
         'app/js/angular-bootstrap/bootstrap.min.js',
         'app/js/angular-bootstrap/dropdown-toggle.min.js'

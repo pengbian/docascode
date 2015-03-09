@@ -82,7 +82,7 @@
         }
         for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
             var fileContent = grunt.file.read(unminifiedJsFiles[i]);
-            print_script_inline(unminifiedJsFiles[i], fileContent);
+            print_script_ref(unminifiedJsFiles[i], fileContent);
         }
     }
 

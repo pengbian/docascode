@@ -99,7 +99,7 @@ angular.module('DocsController', [])
 
     // TOC
     if (path.substr(0, 3) == 'api'){
-      loadFromYaml('api', function(result){$scope.currentArea = result});
+      loadFromYaml('toc', function(result){$scope.currentArea = result});
     }
 
     // If current page exists in NG_PAGES

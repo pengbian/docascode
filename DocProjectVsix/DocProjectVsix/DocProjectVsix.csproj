@@ -157,18 +157,6 @@
     <VSCTCompile Include="DocProject.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
-    <ZipProject Include="Templates\Projects\DocProject\template\class-ios.html">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\template\namespace-ios.html">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\styles\default-ios.css">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\styles\default-ios.js">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\DocProject.vstemplate">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
@@ -179,10 +167,19 @@
     <ZipProject Include="Templates\Projects\DocProject\DocProject.docproj">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\styles\jquery-2.1.0.min.js">
+    <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
+    <ZipProject Include="Templates\Projects\DocProject\template\class.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\namespace.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\index.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\web.config">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <VSIXSourceItem Include="$(OutputPath)\ProjectTemplates\DocProject.zip">
@@ -210,7 +207,7 @@
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
-  <Target Name="AfterBuild">
+  <Target Name="AfterBuild"
   </Target>
   -->
 </Project>

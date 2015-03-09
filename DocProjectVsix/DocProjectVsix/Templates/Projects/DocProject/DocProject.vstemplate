@@ -10,26 +10,20 @@
   </TemplateData>
   <TemplateContent>
     <Project File="DocProject.docproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">
-        Targets\Microsoft.DocProject.targets
-      </ProjectItem>
-      <ProjectItem OpenInEditor="true">
+      <ProjectItem>
         Targets\Microsoft.DocProject.targets
       </ProjectItem>
       <ProjectItem>
-        styles\default-ios.css
+        index.html
       </ProjectItem>
-      <ProjectItem OpenInEditor="true">
-        styles\default-ios.js
+      <ProjectItem>
+        web.config
       </ProjectItem>
-      <ProjectItem OpenInEditor="true">
-        styles\jquery-2.1.0.min.js
+      <ProjectItem ReplaceParameters="true">
+        template\class.html
       </ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">
-        template\class-ios.html
-      </ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">
-        template\namespace-ios.html
+      <ProjectItem ReplaceParameters="true">
+        template\namespace.html
       </ProjectItem>
     </Project>
   </TemplateContent>

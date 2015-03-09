@@ -37,7 +37,7 @@ namespace UnitTest
             string[] slnPath = new string[] { "Assets/TestClass1/TestClass1.sln", @"Assets\TestClass1\TestClass1\TestClass1.csproj" };
             string fileList = "filelist.list";
             File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
-            string outputList = Path.GetRandomFileName();
+            string outputList = Path.GetRandomFileName() + ".list";
             string outputDirectory = "output";
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
@@ -56,7 +56,7 @@ namespace UnitTest
             string[] slnPath = new string[] { @"Assets\TestClass1\TestClass2\TestClass2.csproj" };
             string fileList = "filelist.list";
             File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
-            string outputList = Path.GetRandomFileName();
+            string outputList = Path.GetRandomFileName() + ".list";
             string outputDirectory = "output";
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");

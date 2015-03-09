@@ -17,15 +17,13 @@
     <OutputPath>bin\PublishDoc</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="styles"/>
     <Folder Include="template"/>
     <Folder Include="Targets"/>
     <None Include="Targets/Microsoft.DocProject.targets" />
-    <Content Include="styles/default-ios.js" />
-    <Content Include="styles/default-ios.css" />
-    <Content Include="styles/jquery-2.1.0.min.js" />
-    <Content Include="template/class-ios.html" />
-    <Content Include="template/namespace-ios.html" />
+    <Content Include="template/class.html" />
+    <Content Include="template/namespace.html" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
   </ItemGroup>
   <Import Project="Targets\Microsoft.DocProject.targets" />
 </Project>

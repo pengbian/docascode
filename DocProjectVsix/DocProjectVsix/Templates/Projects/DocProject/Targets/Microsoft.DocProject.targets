@@ -12,6 +12,10 @@
 
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="ConfigGithub" />
     <CallTarget Targets="GenerateMetadata" />
+    <CallTarget Targets="MergeMetadata" />
+    <CallTarget Targets="IndexMarkdown" />
+    <CallTarget Targets="CopyWebsiteFiles" />
+
     <CallTarget Condition=" '$(Configuration)' != 'PublishDoc' " Targets="PreviewWebsite" />
     <CallTarget Condition=" '$(Configuration)' == 'PublishDoc' " Targets="PublishDoc" />
   </Target>
@@ -27,12 +31,35 @@
   </Target>
   <Target Name ="GetFrameworkPaths" />
 
+  <Target Name="CopyWebsiteFiles">
+    <ItemGroup>
+      <!--<WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.html'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.html'" />
+      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.html'" />
+      
+      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.js'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.js'" />
+      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.js'" />
+      
+      <WebsiteFiles  Include="@(None)" Condition="'%(Extension)' == '.css'" />
+      <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.css'" />
+      <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.css'" />-->
+      <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.html" />
+    </ItemGroup>
+    <!--<Copy SourceFiles="@(WebsiteFiles)"  DestinationFolder="$(OutputPath)" />-->
+    <Copy
+        SourceFiles="@(WebsiteFiles)"
+        DestinationFiles="@(WebsiteFiles->'$(OutputPath)\%(RecursiveDir)%(Filename)%(Extension)')"
+        />
+  </Target>
+
   <Target Name="CleanupExistingOutput">
     <ItemGroup>
       <OutputFiles Include="$(OutputPath)\**\*.*" />
     </ItemGroup>
     <!-- Cleanup existing docmta -->
-    <Delete Files="@(OutputFiles)" />
+    <Delete Files="@(OutputFiles)"  ContinueOnError="true" />
+    <RemoveDir Directories="$(OutputPath)" ContinueOnError="true" />
   </Target>
 
   <Target Name ="GenerateMetadata">
@@ -54,7 +81,6 @@
 
     <Warning Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '2'"/>
     <Error Text = "$(OutputConsoleValue)" Condition="$(ExecExitCode) == '1'"/>
-    <CallTarget Targets="MergeMetadata" />
   </Target>
 
   <Target Name="MergeMetadata">
