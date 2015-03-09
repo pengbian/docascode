@@ -1,0 +1,516 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"isre",
+				"isReservedKeyword"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ind",
+				"Indent JSON"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ja",
+				"Set Syntax: Java"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"json",
+				"Indent JSON"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"markdown preview",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Repo/docascode2/FrontEnd"
+	],
+	"file_history":
+	[
+		"/D/Repo/AzureDocasCode/index.html",
+		"/D/aj/build/docs/js/angular-bootstrap/bootstrap.min.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/angular-ui/test/lib/bootstrap/bootstrap-modal.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/bootstrap/dist/js/bootstrap.js",
+		"/D/aj/bower.json",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/bootstrap/Gruntfile.js",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject31/DocumentationProject31/Targets/Microsoft.DocProject.targets",
+		"/D/Repo/AzureDocasCode/api/namespace2.yaml",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-07 21_53_39/Out/mlyoyjnq.ajs/TestClass2",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-07 21_53_39/Out/mlyoyjnq.ajs/TestClass1",
+		"/D/Repo/docascode/UnitTest/Assets/TestClass1/TestClass1/bin/Debug/TestClass1.XML",
+		"/D/Repo/docascode/packages/LibGit2Sharp.0.21.0.176/build/net40/LibGit2Sharp.props",
+		"/D/Repo/docascode2/FrontEnd/test/unit/controllersSpec.js",
+		"/D/Repo/docascode/GenDoc/MergeDoc/MergeDoc.csproj",
+		"/D/Repo/docascode2/GenDoc/MergeDoc/Targets/Microsoft.DocProject.targets",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/bootstrap/bower.json",
+		"/D/Repo/mdwiki/bower.json",
+		"/D/Repo/docascode2/FrontEnd/bower_.json",
+		"/D/Repo/docascode2/FrontEnd/bower.json",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/jquery/bower.json",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/jquery/.bower.json",
+		"/D/Repo/mdwiki/Gruntfile.js",
+		"/D/Repo/AzureDocasCode/api/class1.yaml",
+		"/C/Users/lianwei/AppData/Local/Temp/aoaqzf5b.g33/Temp/DocumentationProject1.docproj",
+		"/C/Program Files (x86)/MSBuild/Microsoft/VisualStudio/v14.0/VSSDK/Microsoft.VsSDK.targets",
+		"/D/Documents/Desktop/Visual Studio 2013 SDK Samples/Menu and commands - VS 2013/C#/DynamicTextCommand.cs",
+		"/D/Documents/Desktop/Visual Studio 2013 SDK Samples/Single File Generator - VS 2013/C#/XmlClassGenerator.cs",
+		"/D/Repo/docascode2/FrontEnd/app/js/modules.js",
+		"/D/Repo/AzureDocasCode/css/prettify-theme.css",
+		"/D/Repo/docascode2/FrontEnd/app/.bowerrc",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject35/DocumentationProject35/Targets/Microsoft.DocProject.targets",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject1/DocumentationProject1/Targets/Microsoft.DocProject.targets",
+		"/D/Repo/docascode2/FrontEnd/.bowerrc",
+		"/D/Repo/docascode2/FrontEnd/.jshintrc",
+		"/D/Repo/docascode2/FrontEnd/.travis.yml",
+		"/D/Repo/docascode2/FrontEnd/package.json",
+		"/D/Repo/mdwiki/index.html",
+		"/D/Repo/AzureDocasCode/js/angular-bootstrap/bootstrap.js",
+		"/D/Repo/AzureDocasCode/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/baseForOwn.js",
+		"/D/Repo/AzureDocasCode/components/google-code-prettify-1.0.1/bower.json",
+		"/D/Repo/docascode2/FrontEnd/LICENSE",
+		"/D/Repo/AzureDocasCode/api.yaml",
+		"/D/Repo/AzureDocasCode/node_modules/.bin/js-yaml",
+		"/D/Repo/AzureDocasCode/api/namespace1.yaml",
+		"/D/Repo/AzureDocasCode/api/namespace.html",
+		"/D/Repo/AzureDocasCode/mdtoc/SDSearchLib/N_SDSearchLib.Analyzers/N_SDSearchLib.Analyzers.md",
+		"/D/Repo/docascode/DocProjectVsix/DocProjectVsix/bin/Debug/DocProject.vsix",
+		"/D/Repo/AzureDocascode/index.html",
+		"/D/Repo/AzureDocasCode/js/docs.js",
+		"/D/Repo/AzureDocasCode/api/class.html",
+		"/D/Repo/AzureDocasCode/js/search-data.json",
+		"/D/Repo/AzureDocasCode/js/versions-data.js",
+		"/D/Repo/AzureDocasCode/js/nav-data.js",
+		"/D/Repo/AzureDocasCode/js/search-worker.js",
+		"/D/Repo/AzureDocasCode/js/pages-data.js",
+		"/D/Repo/AzureDocasCode/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/charsLeftIndex.js",
+		"/D/Repo/AzureDocasCode/css/docs.css",
+		"/D/Repo/docascode/FrontEnd/index.html",
+		"/D/Repo/docascode/FrontEnd/js/docs.js",
+		"/D/dac_aj/en/js/docs.js",
+		"/D/dac_aj/en/api/class.html",
+		"/D/dac_aj/en/js/pages-data.js",
+		"/D/dac_aj/en/api.yaml",
+		"/D/dac_aj/en/index.html",
+		"/D/Repo/docascode/FrontEnd/LICENSE",
+		"/D/Repo/docascode/FrontEnd/config.json",
+		"/D/dac_aj/web.config",
+		"/D/Repo/docascode/FrontEnd/web.config",
+		"/D/dac_aj/en/js/main.js",
+		"/D/dac_aj/index.html",
+		"/D/dac_aj/en/index.md",
+		"/D/dac_aj/en/index_mdwiki.html",
+		"/D/dac_aj/en/js/init.js",
+		"/D/dac_aj/en/js/nav-data.js",
+		"/D/dac_aj/en/api/namespace1.yaml",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/charsLeftIndex.js",
+		"/D/dac_aj/angular-cookies.js",
+		"/D/aj/build/docs/partials/api.html",
+		"/D/dac_aj/en/js/versions-data.js",
+		"/D/angular-phonecat/app/js/app.js",
+		"/D/angular-phonecat/app/js/controllers.js",
+		"/D/angular-phonecat/app/index.html",
+		"/D/dac_aj/en/config.json",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/collection/contains.js",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/lib/action_container.js",
+		"/D/dac_aj/en/components/open-sans-fontface-1.0.4/fonts/Regular/OpenSans-Regular.svg",
+		"/D/angular-phonecat/app/partials/phone-list.html",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/sprintf-js/gruntfile.js",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/array/pullAt.js",
+		"/D/dac_aj/en/css/prettify.css",
+		"/C/Users/lianwei/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/lianwei/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/dac_aj/all.sublime-project",
+		"/D/dac_aj/angular.js",
+		"/D/dac_aj/en/css/main.css",
+		"/D/dac_aj/en/md.yaml",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/lang/isNative.js",
+		"/D/dac_aj/en/navigation.md",
+		"/D/dac_aj/angular-touch.js",
+		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/toObject.js",
+		"/D/dac_aj/en/todo.css",
+		"/D/dac_aj/en/js/docs.min.js",
+		"/D/dac_aj/en/css/docs.css",
+		"/D/aj/build/errors.json",
+		"/D/mdtest/en/index.html",
+		"/D/aj/package.json",
+		"/D/angular-phonecat/bower.json",
+		"/D/aj/docs/config/processors/keywords.js",
+		"/D/Repo/mdwiki/index.tmpl",
+		"/D/Repo/mdwiki/dist/index.html",
+		"/D/mdtest/index.html",
+		"/D/Repo/mdwiki-seed/index.html",
+		"/D/Repo/mdwiki/dist/mdwiki-debug.html",
+		"/D/Repo/mdwiki/tmp/MDwiki.js",
+		"/D/Repo/mdwiki_stable/Gruntfile.js",
+		"/D/Repo/mdwiki_stable/dist/MDwiki.js",
+		"/D/Repo/mdwiki_stable/js/main.js",
+		"/D/Documents/Desktop/test.json",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 20_53_06/Out/output/mta/TestClass1.json",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 22_23_28/Out/output/mta/TestClass1.yaml",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 22_39_30/Out/output/mta/TestClass1.yaml",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 22_41_42/Out/output/mta/TestClass1.yaml",
+		"/D/Repo/docascode/Drop/debug/TestClass1/mta/TestClass1.yaml",
+		"/D/Repo/docascode/Drop/debug/CodeAnalysis/mta/CodeAnalysis.yaml",
+		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 20_53_06/Out/output/mta/TestClass1.yaml",
+		"/D/Repo/mdwiki_stable/dist/navigation.md",
+		"/D/Repo/mdwiki_stable/index.tmpl",
+		"/D/Repo/mdwiki_stable/dist/mdwiki-debug.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\Repo\\docascode2\\frontend",
+			"D:\\Documents\\Desktop\\Visual Studio 2013 SDK Samples",
+			"D:\\Repo\\AzureDocascode",
+			"D:\\dac_aj",
+			"D:\\Repo\\mdwiki_stable",
+			"C:\\Users\\lianwei\\Repo\\vicancy.github.io",
+			"C:\\Users\\lianwei\\Repo\\docascode"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bootstrap",
+			"ngMock",
+			"type",
+			"ngRoute",
+			"LibGit2Sharp",
+			"\"",
+			"zipping",
+			"zip",
+			"zipping",
+			"ProvideObject",
+			"zipping",
+			"CalculateZipItems",
+			"zipping",
+			"Failed",
+			"Fail",
+			"NG_VERSION",
+			"navigation",
+			"glyphicons-halflings-regular.woff",
+			"yamltoc",
+			"\n          <div class=\"grid-left\">\n            <div ng-controller=\"DocsVersionsCtrl\" class=\"picker version-picker\">\n              <select ng-options=\"v as ('v' + v.version + (v.isSnapshot ? ' (snapshot)' : '')) group by getGroupName(v) for v in docs_versions\"\n                      ng-model=\"docs_version\"\n                      ng-change=\"jumpToDocsVersion(docs_version)\"\n                      class=\"docs-version-jump\">\n              </select>\n            </div>\n          </div>",
+			"transformMarkdown",
+			"ng-href=",
+			"partialPath",
+			"routeProvider",
+			"ngRoute",
+			"partialPath",
+			"NG_VERSIONS",
+			"jumpToDocsVersion",
+			"space",
+			"currentArea",
+			"nav",
+			"docs",
+			"devserver",
+			"connect:devserver",
+			".min",
+			"notcsel",
+			"docs",
+			"jshint",
+			"buildall",
+			"toc",
+			"isReservedKeyword",
+			"registerFetchMarkdown",
+			"registerFetchM",
+			"loadContent",
+			"extractHashData",
+			"stage",
+			"marked(",
+			"marked",
+			"navMD",
+			"ConfigDfd",
+			"addInpageAnchors",
+			"ownJsFiles",
+			"ownJsFileFull",
+			"index",
+			"createIndex",
+			"<base href=\"C:\\Users\\lianwei\\Repo\\roslyn\\Src\\DocProject1\\bin\\Debug/\">",
+			"space",
+			"N:",
+			"cluster.name"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "all.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"class",
+				"api\\class1.yaml"
+			],
+			[
+				"name",
+				"api\\namespace2.yaml"
+			],
+			[
+				"class1.",
+				"api\\class1.yaml"
+			],
+			[
+				"doc",
+				"js\\docs.js"
+			],
+			[
+				"yaml",
+				"api.yaml"
+			],
+			[
+				"web",
+				"web.config"
+			],
+			[
+				"index",
+				"en\\index.html"
+			],
+			[
+				"class.",
+				"en\\api\\class1.yaml"
+			],
+			[
+				"vers",
+				"en\\js\\versions-data.js"
+			],
+			[
+				"page",
+				"en\\js\\pages-data.js"
+			],
+			[
+				"api.",
+				"en\\api.yaml"
+			],
+			[
+				"ini",
+				"en\\js\\init.js"
+			],
+			[
+				"page-d",
+				"en\\js\\pages-data.js"
+			],
+			[
+				"versi",
+				"en\\js\\versions-data.js"
+			],
+			[
+				"api.y",
+				"en\\api.yaml"
+			],
+			[
+				"main.js",
+				"en\\js\\main.js"
+			],
+			[
+				"index_",
+				"en\\index_mdwiki.html"
+			],
+			[
+				"nav",
+				"en\\js\\nav-data.js"
+			],
+			[
+				"docs.js",
+				"en\\js\\docs.js"
+			],
+			[
+				"docs.min",
+				"en\\js\\docs.min.js"
+			],
+			[
+				"runfun",
+				"Build\\Deployment\\RunFunctionalTest.ps1"
+			],
+			[
+				".docmta",
+				"GenDoc\\MergeDoc\\TestData\\GenDocMetadata.docmta"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
