@@ -183,7 +183,7 @@
                     <a ng-if="navItem.extra.href" ng-class="navClass(navItem.extra)" href="#{{navItem.extra.href}}">
                       {{navItem.extra.text}}<i ng-if="navItem.extra.icon" class="icon-{{navItem.extra.icon}}"></i>
                     </a>
-                    <a tabindex="2" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.id}}</a>
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.id.replace(navGroup.id + '.', '')}}</a>
                   </li>
                 </ul>
               </li>
