@@ -220,6 +220,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:debug']);
     grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test']);
-    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy']);
+    grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:release']);
     grunt.registerTask('default', ['uglify']);
 };

@@ -204,10 +204,22 @@ angular.module('DocsController', [])
 
               if ($scope.partialModel.type.toLowerCase() == 'namespace'){
                 $scope.partialModel.itemtypes = NG_ITEMTYPES.namespace;
+                for(var i in $scope.partialModel.items){
+                  var itemtype = $scope.partialModel.itemtypes[$scope.partialModel.items[i].type];
+                  if (itemtype){
+                    itemtype.show = true;
+                  }
+                }
                 $scope.partialPath = 'template' + '/namespace.tmpl';
               }
               else {
                 $scope.partialModel.itemtypes = NG_ITEMTYPES.class;
+                for(var i in $scope.partialModel.items){
+                  var itemtype = $scope.partialModel.itemtypes[$scope.partialModel.items[i].type];
+                  if (itemtype){
+                    itemtype.show = true;
+                  }
+                }
                 $scope.partialPath = 'template' + '/class.tmpl';
               }
             });

@@ -38,7 +38,7 @@
             </div>
             <section id="article-body">
                 <div class="section" ng-repeat="itemtype in model.itemtypes">
-                    <h3 class="section-name" ng-if="model.items">{{itemtype.description}}</h3>
+                    <h3 class="section-name" ng-if="itemtype.show">{{itemtype.description}}</h3>
                     <ul class="section-members"  ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
                         <li class="section-member">
                             <div class="section-member-header">
