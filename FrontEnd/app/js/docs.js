@@ -56,9 +56,9 @@ angular.module('directives', [])
 angular.module('DocsController', [])
 
 .controller('DocsController', [
-          '$scope', '$http', '$rootScope', '$location', '$window', '$cookies', 'openPlunkr',
+          '$scope', '$http', '$q','$rootScope', '$location', '$window', '$cookies', 'openPlunkr',
               'NG_PAGES', 'NG_VERSION',
-  function($scope, $http, $rootScope, $location, $window, $cookies, openPlunkr,
+  function($scope, $http, $q, $rootScope, $location, $window, $cookies, openPlunkr,
               NG_PAGES, NG_VERSION) {
   $scope.openPlunkr = openPlunkr;
 
@@ -76,58 +76,101 @@ angular.module('DocsController', [])
     var pagePath = $scope.currentPage ? $scope.currentPage.path : $location.path();
   });
 
-  $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
+  function asyncFetchIndex(path, success, fail) {
+    var deferred = $q.defer();
 
-    path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
-
-    currentPage = $scope.currentPage = NG_PAGES[path];
-
-    var loadFromYaml = function(path, paramToSet){
-        var req = {
+    setTimeout(function() {
+      //deferred.notify();
+      var req = {
              method: 'GET',
-             url: path + '.yaml',
+             url: path,
              headers: {
                'Content-Type': 'text/plain'
              }
             }
         $http.get(req.url, req)
-            .then(
+            .success( 
               function(result){ 
-                paramToSet(jsyaml.load(result.data));
-              });
-    }
+                if (success) success(result);
+                deferred.resolve();
 
-    // TOC
-    if (path.substr(0, 3) == 'api'){
-      loadFromYaml('toc', function(result){$scope.currentArea = result});
-    }
+              }).error(
+                function(result){
+                  if (fail) fail(result);
+                  deferred.reject();
+                }
+              );
+    }, 1000);
 
-    // If current page exists in NG_PAGES
-    if ( currentPage ) {
-      if (currentPage.type == 'namespace'){
-        $scope.partialPath = currentPage.area + '/namespace.html';
-        loadFromYaml(path, function(result){$scope.partialModel = result});
-      }
-      else if (currentPage.type == 'class'){
-        $scope.partialPath = currentPage.area + '/class.html';
-        loadFromYaml(path, function(result){$scope.partialModel = result});
-      }
+    return deferred.promise;
+  }
 
-
-      var pathParts = currentPage.path.split('/');
-      var breadcrumb = $scope.breadcrumb = [];
-      var breadcrumbPath = '';
-      angular.forEach(pathParts, function(part) {
-        breadcrumbPath += part;
-        breadcrumb.push({ name: (NG_PAGES[breadcrumbPath]&&NG_PAGES[breadcrumbPath].name) || part, url: breadcrumbPath });
-        breadcrumbPath += '/';
-      });
-    } else {
-      $scope.currentArea = 'api';
-      $scope.breadcrumb = [];
-      $scope.partialPath = 'Error404.html';
-    }
+  var getIndex = asyncFetchIndex('index.yaml', function(result){
+    NG_PAGES = jsyaml.load(result);
   });
+
+  var getToc = asyncFetchIndex('toc.yaml', function(result){
+    $scope.currentArea = jsyaml.load(result);
+  });
+
+  var getMdIndex = asyncFetchIndex('md.yaml', function(result){
+    $scope.mdIndex = jsyaml.load(result);
+  });
+
+  getIndex.then(function(result){
+    getToc.then(function(result){
+      getMdIndex.then(function(result){
+        $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
+
+          path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
+
+          currentPage = $scope.currentPage = path;//NG_PAGES[path];
+
+          // TODO: check if it is inside NG_PAGES
+          // If current page exists in NG_PAGES
+          if ( currentPage ) {
+
+            var promise = asyncFetchIndex(path + ".yaml", function(result){
+                $scope.partialModel = jsyaml.load(result);
+                var mdPath = $scope.mdIndex[$scope.partialModel.id];
+                if (mdPath){
+                  if (mdPath.href){
+                    var getMdIndex = asyncFetchIndex(mdPath.href, 
+                      function(result){
+                        var md = result.substring(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                        $scope.partialModel.mdContent = md;
+                      });
+                  }
+                }
+
+              if ($scope.partialModel.type.toLowerCase() == 'namespace'){
+                $scope.partialPath = 'template' + '/namespace.html';
+              }
+              else {
+                $scope.partialPath = 'template' + '/class.tmpl';
+              }
+            });
+
+
+            var pathParts = currentPage.path.split('/');
+            var breadcrumb = $scope.breadcrumb = [];
+            var breadcrumbPath = '';
+            angular.forEach(pathParts, function(part) {
+              breadcrumbPath += part;
+              breadcrumb.push({ name: (NG_PAGES[breadcrumbPath]&&NG_PAGES[breadcrumbPath].name) || part, url: breadcrumbPath });
+              breadcrumbPath += '/';
+            });
+          } else {
+            $scope.currentArea = 'api';
+            $scope.breadcrumb = [];
+            $scope.partialPath = 'Error404.html';
+          }
+        });
+      });
+    });
+
+  });
+
 
   /**********************************
    Initialize
