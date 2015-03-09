@@ -67,6 +67,7 @@ module.exports = function(grunt) {
         'app/css/docs.css',
         'app/css/animations.css',
         'app/css/default.css',
+        'app/css/open-sans.css'
     ],
     unminifiedJsFiles: [
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
@@ -172,12 +173,20 @@ module.exports = function(grunt) {
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'debug/template/', filter: 'isFile'},
           ]
         },
-        test: {
+        test_roslyn: {
           files: [
-            {expand: false,flatten: true, src: ['app/web.config'], dest: 'test/web.config'},
-            {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test/index.html'},
-            {expand: true,flatten: true, src: ['app/template/*'], dest: 'test/template/', filter: 'isFile'},
-            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test' },
+            {expand: false,flatten: true, src: ['app/web.config'], dest: 'test1/web.config'},
+            {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test1/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: 'test1/template/', filter: 'isFile'},
+            {expand: true, src: ['**'], cwd: 'testdata/test1/', dest: 'test1' },
+          ]
+        },
+        test_simple: {
+          files: [
+            {expand: false,flatten: true, src: ['app/web.config'], dest: 'test2/web.config'},
+            {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: 'test2/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: 'test2/template/', filter: 'isFile'},
+            {expand: true, src: ['**'], cwd: 'testdata/test2/', dest: 'test2' },
           ]
         },
         release: {
@@ -219,7 +228,7 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:debug']);
-    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test']);
+    grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test_roslyn', 'copy:test_simple']);
     grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:release']);
     grunt.registerTask('default', ['uglify']);
 };

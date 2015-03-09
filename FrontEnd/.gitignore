@@ -1,6 +1,6 @@
 logs/*
 **/dist/*
-test/*
+test*
 debug/*
 !.gitkeep
 node_modules/

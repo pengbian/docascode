@@ -1,15 +1,17 @@
-Step1. 
+Step1.
+install python 2.** as grunt requires it.
 
+Step2. 
 npm install
 
-Step2.
+Step3.
 
 bower install
 
 Step3.
 
-bower test
+node_modules/.bin/grunt.cmd test
 
 Step4.
 
-host test into IIS? run index.html
+host FrontEnd folder as a website into IIS? run test/index.html
