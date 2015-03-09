@@ -196,7 +196,7 @@ angular.module('DocsController', [])
                   if (mdPath.href){
                     var getMdIndex = asyncFetchIndex(mdPath.href, 
                       function(result){
-                        var md = result.substring(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                        var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
                         $scope.partialModel.mdContent = md;
                       });
                   }
