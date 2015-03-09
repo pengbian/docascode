@@ -2,6 +2,7 @@ logs/*
 **/dist/*
 test*
 debug/*
+release/*
 !.gitkeep
 node_modules/
 tmp

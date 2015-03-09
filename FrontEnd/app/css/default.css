@@ -98,8 +98,13 @@ a{
     font-size: 13px;
 }
 
-#article-header div.inheritance-table-last-line {
-    margin-left:12px;
+#article-header div.inheritance-table-line span {
+    margin-left:5px;
+}
+
+#article-header div.inheritance-table-last-line span{
+    /*margin-left:12px;*/
+    margin-left:5px;
 }
 
 #article-header #metadata_table a {

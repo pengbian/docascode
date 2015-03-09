@@ -191,6 +191,7 @@ module.exports = function(grunt) {
         },
         release: {
           files: [
+            {expand: false,flatten: true, src: ['app/web.config'], dest: 'release/web.config'},
             {expand: false,flatten: true, src: ['dist/docascode.html'], dest: 'release/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'release/template/', filter: 'isFile'},
           ]

@@ -136,6 +136,8 @@
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\DocProjectNode.bmp" />
+    <None Include="Templates\Projects\DocProject\template\class.tmpl" />
+    <None Include="Templates\Projects\DocProject\template\namespace.tmpl" />
     <Resource Include="Resources\Images.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -170,13 +172,16 @@
     <ZipProject Include="Templates\Projects\DocProject\DocProject.ico">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\template\class.html">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
-    <ZipProject Include="Templates\Projects\DocProject\template\namespace.html">
-      <RootPath>Templates\Projects\DocProject</RootPath>
-    </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\index.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\index.html">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\class.tmpl">
+      <RootPath>Templates\Projects\DocProject</RootPath>
+    </ZipProject>
+    <ZipProject Include="Templates\Projects\DocProject\template\namespace.tmpl">
       <RootPath>Templates\Projects\DocProject</RootPath>
     </ZipProject>
     <ZipProject Include="Templates\Projects\DocProject\web.config">

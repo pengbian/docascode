@@ -111,6 +111,10 @@ angular.module('DocsController', [])
     };
   };
 
+  $scope.getNumber = function(num) {
+      return new Array(num + 1);   
+  }
+
   $scope.GetDetail = function(e){
     console.log(e.target);
     var display = e.target.nextElementSibling.style.display;
@@ -196,7 +200,7 @@ angular.module('DocsController', [])
                   if (mdPath.href){
                     var getMdIndex = asyncFetchIndex(mdPath.href, 
                       function(result){
-                        var md = result.substring(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                        var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
                         $scope.partialModel.mdContent = md;
                       });
                   }

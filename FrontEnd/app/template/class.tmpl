@@ -25,10 +25,12 @@
                         <hr>
                             <div class="inheritance-table-line">
                                 <div ng-repeat="inhe in model.inheritance">
+    <span wi ng-repeat="i in getNumber($index + 1) track by $index"></span>|--
                                     <a ng-href={{inhe.href}}>{{inhe.id}}</a>
                                 </div>
                                 <div class="inheritance-table-last-line">
-                                    <p>{{model.id}}</p>
+    <span ng-repeat="i in getNumber(model.inheritance.length + 1) track by $index"></span>|--
+                                    <a>{{model.id}}</a>
                                 </div>
                             </div>
                     </div>
@@ -37,7 +39,7 @@
             <section id="article-body">
                 <div class="section" ng-repeat="itemtype in model.itemtypes">
                     <h3 class="section-name" ng-if="itemtype.show">{{itemtype.description}}</h3>
-                    <ul class="section-members"  ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
+                    <ulu class="section-members"  ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
                         <li class="section-member">
                             <div class="section-member-header">
                                 <h3 class="section-member-name">
