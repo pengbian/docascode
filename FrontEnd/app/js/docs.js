@@ -16,7 +16,45 @@ angular.module('docsApp', [
 ]);
 
 angular.module('directives', [])
+.directive('markdown', function() {
+    var md = function () {
+        marked.setOptions({
+            gfm:true,
+            pedantic:false,
+            sanitize:true,
+            // callback for code highlighter
+            highlight:function (code, lang) {
+                if (lang != undefined)
+                    return window.prettyPrintOne(code, lang).value;
 
+                return window.prettyPrintOne(code).value;
+            }
+        });
+
+        var toHtml = function (markdown) {
+            if (markdown == undefined)
+                return '';
+
+            return marked(markdown);
+        };
+        
+        // hljs.tabReplace = '    ';
+
+        return {
+            toHtml:toHtml
+        };
+    }();                                              
+    return {
+        restrict: 'E',
+        link: function(scope, element, attrs) {
+            scope.$watch(attrs.ngModel, function(value, oldValue) {
+                var markdown = value;
+                var html = md.toHtml(markdown);
+                element.html(html);
+            });
+        }
+    };
+})
 /**
  * backToTop Directive
  * @param  {Function} $anchorScroll
