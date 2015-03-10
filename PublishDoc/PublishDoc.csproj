@@ -93,10 +93,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GenDoc\MergeDoc\MergeDoc.csproj">
-      <Project>{1aa25be4-1d92-45b0-a11c-cee96e3125d3}</Project>
-      <Name>MergeDoc</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GenDoc\Utility\Utility.csproj">
       <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
       <Name>Utility</Name>
