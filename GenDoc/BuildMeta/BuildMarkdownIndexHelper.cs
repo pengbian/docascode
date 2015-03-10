@@ -121,7 +121,7 @@ namespace DocAsCode.BuildMeta
                 {
                     string input = File.ReadAllText(file);
                     resolvedContent = LinkParser.ResolveText(apiList, input, s =>
-                  string.Format("[{0}]({1})", s.Name, s.Href));
+                  string.Format("[{0}](#/{1})", s.Name, s.Href));
                     File.WriteAllText(destFileName, resolvedContent);
                 }
                 catch (Exception e)
