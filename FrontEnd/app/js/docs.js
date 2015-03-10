@@ -259,7 +259,7 @@ angular.module('DocsController', [])
 
             var promise = asyncFetchIndex(path + ".yaml", function(result){
                 $scope.partialModel = jsyaml.load(result);
-
+                $scope.title = $scope.partialModel.id;
               if ($scope.partialModel.type.toLowerCase() == 'namespace'){
                 $scope.partialModel.itemtypes = NG_ITEMTYPES.namespace;
                 for(var i in $scope.partialModel.items){
