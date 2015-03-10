@@ -373,7 +373,7 @@ namespace EntityModel
                         Debug.Assert(member.Type == MemberType.Toc || member.Source != null);
                         if (member.Source != null)
                         {
-                            Debug.Assert(member.Source.Remote != null);
+                            // Debug.Assert(member.Source.Remote != null);
                             if (member.Source.Remote != null)
                             {
                                 member.Source.Path = member.Source.Path.FormatPath(UriKind.Relative, member.Source.Remote.LocalWorkingDirectory);

@@ -25,7 +25,8 @@
           sync = true;
     })();  
     </script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/cs.min.js"></script>
 <<%
     var task = grunt.config('currentTask').name;
     if (task === 'default'){
@@ -85,7 +86,6 @@
             print_script_inline(unminifiedJsFiles[i], fileContent);
         }
     }
-
 
     // OUR OWN CODE
     var fileContent = '';
@@ -190,7 +190,7 @@
                       {{navItem.extra.text}}<i ng-if="navItem.extra.icon" class="icon-{{navItem.extra.icon}}"></i>
                     </a>
                     <a tabindex="2" ng-if="navItem.name && navItem.name.CSharp" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.name.CSharp}}</a>
-                    <a tabindex="2"ng-if="!navItem.name && !navItem.name.CSharp" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.id.replace(navGroup.id + '.', '')}}
+                    <a tabindex="2" ng-if="!navItem.name && !navItem.name.CSharp" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.id.replace(navGroup.id + '.', '')}}
                   </li>
                 </ul>
               </li>

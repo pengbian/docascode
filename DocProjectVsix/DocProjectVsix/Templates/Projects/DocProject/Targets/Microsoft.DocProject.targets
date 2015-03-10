@@ -76,7 +76,7 @@
     <Message Text="$(BuildDocToolPath)" />
     <!-- GenDocMetadata solutionPath [/o:outputDirectory] [/p:delimitedProjectFiles] [/t:outputType] -->
 
-    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;') /o:&quot;$(OutputPath)&quot; /md:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')" >
+    <Exec IgnoreExitCode="true" ConsoleToMSBuild="true" Command="$(BuildDocToolPath) @(ProjectReference->'&quot;%(FullPath)&quot;', ',') /o:&quot;$(OutputPath)&quot; /md:@(MarkdownFiles->'&quot;%(FullPath)&quot;', ',')" >
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputConsoleValue" />
       <Output TaskParameter="ExitCode" PropertyName="ExecExitCode" />
     </Exec>

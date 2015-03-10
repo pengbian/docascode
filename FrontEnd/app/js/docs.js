@@ -66,12 +66,12 @@ angular.module('directives', [])
             pedantic:false,
             sanitize:true,
             // callback for code highlighter
-            highlight:function (code, lang) {
-                if (lang != undefined)
-                    return window.prettyPrintOne(code, lang).value;
+            // highlight:function (code, lang) {
+            //     if (lang != undefined)
+            //         return window.prettyPrintOne(code, lang).value;
 
-                return window.prettyPrintOne(code).value;
-            }
+            //     return window.prettyPrintOne(code).value;
+            // }
         });
 
         var toHtml = function (markdown) {
