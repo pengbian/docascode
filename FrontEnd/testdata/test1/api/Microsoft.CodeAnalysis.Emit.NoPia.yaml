@@ -23,4 +23,8 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
   type: Struct
-  summary: "Describes a symbol edit between two compilations. \r\n    For example, an addition of a method, an update of a method, removal of a type, etc."
+  summary: >+
+    Describes a symbol edit between two compilations.
+
+    For example, an addition of a method, an update of a method, removal of a type, etc.
+

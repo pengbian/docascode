@@ -19,6 +19,7 @@ syntax:
     CSharp: public class CompilationWithAnalyzers
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -44,8 +45,9 @@ items:
     parameters:
     - id: Compilation
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.get_Compilation
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
@@ -77,30 +79,36 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\CompilationWithAnalyzers.cs
     startLine: 28
-  summary: Creates a new compilation by attaching diagnostic analyzers to an existing compilation.
+  summary: >+
+    Creates a new compilation by attaching diagnostic analyzers to an existing compilation.
+
   syntax:
     content:
       CSharp: public CompilationWithAnalyzers(Compilation compilation, ImmutableArray<DiagnosticAnalyzer> analyzers, AnalyzerOptions options, CancellationToken cancellationToken)
     parameters:
     - id: compilation
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
       description: The original compilation.
     - id: analyzers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
         href: System.Collections.Immutable
         isExternal: true
       description: The set of analyzers to include in future analyses.
     - id: options
       type:
-        id: AnalyzerOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        name: AnalyzerOptions
+        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
       description: Options that are passed to analyzers.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A cancellation token that can be used to abort analysis.
@@ -120,7 +128,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\CompilationWithAnalyzers.cs
     startLine: 37
-  summary: Returns diagnostics produced by diagnostic analyzers.
+  summary: >+
+    Returns diagnostics produced by diagnostic analyzers.
+
   syntax:
     content:
       CSharp: public async Task<ImmutableArray<Diagnostic>> GetAnalyzerDiagnosticsAsync()
@@ -143,7 +153,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\CompilationWithAnalyzers.cs
     startLine: 49
-  summary: Returns diagnostics produced by compilation and by diagnostic analyzers.
+  summary: >+
+    Returns diagnostics produced by compilation and by diagnostic analyzers.
+
   syntax:
     content:
       CSharp: public async Task<ImmutableArray<Diagnostic>> GetAllDiagnosticsAsync()
@@ -166,16 +178,17 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\CompilationWithAnalyzers.cs
     startLine: 65
-  summary: >-
-    Given a set of compiler or [Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer](api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer) generated , returns the effective diagnostics after applying the below filters:
+  summary: >+
+    Given a set of compiler or [Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer](#/api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer) generated , returns the effective diagnostics after applying the below filters:
 
-        1) [Microsoft.CodeAnalysis.CompilationOptions.SpecificDiagnosticOptions](api\Microsoft.CodeAnalysis.CompilationOptions) specified for the given .
+    1) [Microsoft.CodeAnalysis.CompilationOptions.SpecificDiagnosticOptions](#/api\Microsoft.CodeAnalysis.CompilationOptions) specified for the given .
 
-        2) [Microsoft.CodeAnalysis.CompilationOptions.GeneralDiagnosticOption](api\Microsoft.CodeAnalysis.CompilationOptions) specified for the given .
+    2) [Microsoft.CodeAnalysis.CompilationOptions.GeneralDiagnosticOption](#/api\Microsoft.CodeAnalysis.CompilationOptions) specified for the given .
 
-        3) Diagnostic suppression through applied @T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute-.
+    3) Diagnostic suppression through applied [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute](#).
 
-        4) Pragma directives for the given .
+    4) Pragma directives for the given .
+
   syntax:
     content:
       CSharp: public static IEnumerable<Diagnostic> GetEffectiveDiagnostics(IEnumerable<Diagnostic> diagnostics, Compilation compilation)
@@ -183,12 +196,14 @@ items:
     - id: diagnostics
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Runtime
         isExternal: true
     - id: compilation
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.IsDiagnosticAnalyzerSuppressed(Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,Microsoft.CodeAnalysis.CompilationOptions,System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean})
@@ -207,25 +222,29 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\CompilationWithAnalyzers.cs
     startLine: 95
-  summary: >-
+  summary: >+
     Returns true if all the diagnostics that can be produced by this analyzer are suppressed through options.
 
-         says whether the caller would like the exception thrown by the analyzers to be handled or not. If true - Handles ; False - Not handled.
+    says whether the caller would like the exception thrown by the analyzers to be handled or not. If true - Handles ; False - Not handled.
+
   syntax:
     content:
       CSharp: public static bool IsDiagnosticAnalyzerSuppressed(DiagnosticAnalyzer analyzer, CompilationOptions options, Func<Exception, DiagnosticAnalyzer, bool> continueOnAnalyzerException)
     parameters:
     - id: analyzer
       type:
-        id: DiagnosticAnalyzer
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+        name: DiagnosticAnalyzer
+        href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
     - id: options
       type:
-        id: CompilationOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
     - id: continueOnAnalyzerException
       type:
         id: System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean}
+        name: System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:

@@ -14,15 +14,39 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
   startLine: 25
-summary: "Represents subsystem version, see /subsystemversion command line \r\n    option for details and valid values.\r\n    \r\n    The following table lists common subsystem versions of Windows.\r\n    \r\n    Windows version             Subsystem version\r\n      - Windows 2000                5.00\r\n      - Windows XP                  5.01\r\n      - Windows Vista               6.00\r\n      - Windows 7                   6.01\r\n      - Windows 8 Release Preview   6.02"
+summary: >+
+  Represents subsystem version, see /subsystemversion command line
+
+  option for details and valid values.
+
+
+
+  The following table lists common subsystem versions of Windows.
+
+
+
+  Windows version             Subsystem version
+
+  - Windows 2000                5.00
+
+  - Windows XP                  5.01
+
+  - Windows Vista               6.00
+
+  - Windows 7                   6.01
+
+  - Windows 8 Release Preview   6.02
+
 syntax:
   content:
     CSharp: public struct SubsystemVersion
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +66,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 30
-  summary: Major subsystem version
+  summary: >+
+    Major subsystem version
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Minor
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -59,7 +85,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 35
-  summary: Minor subsystem version
+  summary: >+
+    Minor subsystem version
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.None
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -76,7 +104,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 40
-  summary: Subsystem version not specified
+  summary: >+
+    Subsystem version not specified
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Windows2000
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -93,7 +123,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 45
-  summary: 'Subsystem version: Windows 2000'
+  summary: >+
+    Subsystem version: Windows 2000
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.WindowsXP
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -110,7 +142,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 50
-  summary: 'Subsystem version: Windows XP'
+  summary: >+
+    Subsystem version: Windows XP
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.WindowsVista
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -127,7 +161,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 55
-  summary: 'Subsystem version: Windows Vista'
+  summary: >+
+    Subsystem version: Windows Vista
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Windows7
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -144,7 +180,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 60
-  summary: 'Subsystem version: Windows 7'
+  summary: >+
+    Subsystem version: Windows 7
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Windows8
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -161,7 +199,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 65
-  summary: 'Subsystem version: Windows 8'
+  summary: >+
+    Subsystem version: Windows 8
+
 - id: Microsoft.CodeAnalysis.SubsystemVersion.TryParse(System.String,Microsoft.CodeAnalysis.SubsystemVersion@)
   yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
   href: api\Microsoft.CodeAnalysis.SubsystemVersion
@@ -178,7 +218,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 79
-  summary: Try parse subsystem version in "x.y" format. Note, no spaces are allowed in string representation.
+  summary: >+
+    Try parse subsystem version in "x.y" format. Note, no spaces are allowed in string representation.
+
   syntax:
     content:
       CSharp: public static bool TryParse(string str, out SubsystemVersion version)
@@ -186,13 +228,15 @@ items:
     - id: str
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: String to parse
     - id: version
       type:
-        id: SubsystemVersion
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
       description: the value if successfully parsed or None otherwise
     return:
       id: Boolean
@@ -213,7 +257,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 140
-  summary: Create a new instance of subsystem version with specified major and minor values.
+  summary: >+
+    Create a new instance of subsystem version with specified major and minor values.
+
   syntax:
     content:
       CSharp: public static SubsystemVersion Create(int major, int minor)
@@ -221,12 +267,14 @@ items:
     - id: major
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: major subsystem version
     - id: minor
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: minor subsystem version
@@ -249,7 +297,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
     startLine: 175
-  summary: True if the subsystem version has a valid value
+  summary: >+
+    True if the subsystem version has a valid value
+
   syntax:
     content:
       CSharp: public bool IsValid
@@ -257,6 +307,7 @@ items:
     - id: IsValid
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SubsystemVersion.get_IsValid
@@ -297,6 +348,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -345,8 +397,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SubsystemVersion
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SubsystemVersion.ToString

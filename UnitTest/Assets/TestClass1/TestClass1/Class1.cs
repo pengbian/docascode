@@ -19,7 +19,7 @@ namespace TestClass1
     }
 
     /// <summary>
-    /// This is a *Class1* in **TestClass1**
+    /// This is a *Class1* in **TestClass1** @TestClass1.Partial1
     /// </summary>
     public class Class1 : BaseClassForTestClass1
     {
@@ -65,9 +65,11 @@ namespace TestClass1
         /// </summary>
         public delegate void ADelegate();
 
+
         /// <summary>
         /// This is a *test* with no return
         /// </summary>
+        /// <param name="k">K please refer to@TestClass1.Partial1</param>
         public void Test1(int k)
         {
             Partial1 partial1 = new Partial1();
@@ -78,7 +80,7 @@ namespace TestClass1
         /// This is a *test* with return and <see cref="System.AccessViolationException"/> should fail compilation
         /// </summary>
         /// <returns></returns>
-        public Tuple<string, int> Test1_3()
+        public Tuple<string, int> Test1_3(BaseClassForTestClass1 baseInput)
         {
             return null;
         }

@@ -14,16 +14,20 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
   startLine: 17
-summary: Represents an immutable snapshot of module CLI metadata.
+summary: >+
+  Represents an immutable snapshot of module CLI metadata.
+
 syntax:
   content:
     CSharp: public sealed partial class ModuleMetadata
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: Metadata
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\Metadata.cs
+- id: Microsoft.CodeAnalysis.Metadata
+  name: Metadata
+  href: api\Microsoft.CodeAnalysis.Metadata
 items:
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromMetadata(System.IntPtr,System.Int32)
   yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
@@ -41,10 +45,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 50
-  summary: >-
+  summary: >+
     Create metadata module from a raw memory pointer to metadata directory of a PE image or .cormeta section of an object file.
 
-        Only manifest modules are currently supported.
+    Only manifest modules are currently supported.
+
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromMetadata(IntPtr metadata, int size)
@@ -52,12 +57,14 @@ items:
     - id: metadata
       type:
         id: System.IntPtr
+        name: System.IntPtr
         href: System.Runtime
         isExternal: true
       description: Pointer to the start of metadata block.
     - id: size
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The size of the metadata block.
@@ -79,7 +86,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 79
-  summary: Create metadata module from a raw memory pointer to a PE image or an object file.
+  summary: >+
+    Create metadata module from a raw memory pointer to a PE image or an object file.
+
   syntax:
     content:
       CSharp: public static unsafe ModuleMetadata CreateFromImage(IntPtr peImage, int size)
@@ -87,12 +96,14 @@ items:
     - id: peImage
       type:
         id: System.IntPtr
+        name: System.IntPtr
         href: System.Runtime
         isExternal: true
       description: Pointer to the DOS header ("MZ") of a portable executable image.
     - id: size
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The size of the image pointed to by .
@@ -114,7 +125,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 99
-  summary: Create metadata module from a sequence of bytes.
+  summary: >+
+    Create metadata module from a sequence of bytes.
+
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromImage(IEnumerable<byte> peImage)
@@ -122,6 +135,7 @@ items:
     - id: peImage
       type:
         id: System.Collections.Generic.IEnumerable{System.Byte}
+        name: System.Collections.Generic.IEnumerable{System.Byte}
         href: System.Runtime
         isExternal: true
       description: The portable executable image beginning with the DOS header ("MZ").
@@ -143,7 +157,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 114
-  summary: Create metadata module from a byte array.
+  summary: >+
+    Create metadata module from a byte array.
+
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromImage(ImmutableArray<byte> peImage)
@@ -151,6 +167,7 @@ items:
     - id: peImage
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
+        name: System.Collections.Immutable.ImmutableArray{System.Byte}
         href: System.Collections.Immutable
         isExternal: true
       description: Portable executable image beginning with the DOS header ("MZ").
@@ -172,7 +189,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 134
-  summary: Create metadata module from a stream.
+  summary: >+
+    Create metadata module from a stream.
+
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromStream(Stream peStream, bool leaveOpen = false)
@@ -180,12 +199,14 @@ items:
     - id: peStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream containing portable executable image. Position zero should contain the first byte of the DOS header ("MZ").
     - id: leaveOpen
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -210,7 +231,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 157
-  summary: Create metadata module from a stream.
+  summary: >+
+    Create metadata module from a stream.
+
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromStream(Stream peStream, PEStreamOptions options)
@@ -218,18 +241,20 @@ items:
     - id: peStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream containing portable executable image. Position zero should contain the first byte of the DOS header ("MZ").
     - id: options
       type:
         id: System.Reflection.PortableExecutable.PEStreamOptions
+        name: System.Reflection.PortableExecutable.PEStreamOptions
         href: System.Reflection.Metadata
         isExternal: true
       description: >-
         Options specifying how sections of the PE image are read from the stream.
 
-            Unless @F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen- is specified, the responsibility for disposal of the stream is transferred upon entry of the constructor
+            Unless [System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen](#) is specified, the responsibility for disposal of the stream is transferred upon entry of the constructor
 
             unless the arguments given are invalid.
     return:
@@ -250,7 +275,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 186
-  summary: Creates metadata module from a file containing a portable executable image.
+  summary: >+
+    Creates metadata module from a file containing a portable executable image.
+
   syntax:
     content:
       CSharp: public static ModuleMetadata CreateFromFile(string path)
@@ -258,6 +285,7 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: File path.
@@ -279,7 +307,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 214
-  summary: Frees memory and handles allocated for the module.
+  summary: >+
+    Frees memory and handles allocated for the module.
+
   syntax:
     content:
       CSharp: public override void Dispose()
@@ -302,7 +332,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 247
-  summary: Name of the module.
+  summary: >+
+    Name of the module.
+
   syntax:
     content:
       CSharp: public string Name
@@ -310,6 +342,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ModuleMetadata.get_Name
@@ -343,7 +376,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 257
-  summary: Version of the module content.
+  summary: >+
+    Version of the module content.
+
   syntax:
     content:
       CSharp: public Guid GetModuleVersionId()
@@ -366,15 +401,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 265
-  summary: Returns the [Microsoft.CodeAnalysis.MetadataImageKind](api\Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
+  summary: >+
+    Returns the [Microsoft.CodeAnalysis.MetadataImageKind](#/api\Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
+
   syntax:
     content:
       CSharp: public override MetadataImageKind Kind
     parameters:
     - id: Kind
       type:
-        id: MetadataImageKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\MetadataImageKind.cs
+        id: Microsoft.CodeAnalysis.MetadataImageKind
+        name: MetadataImageKind
+        href: api\Microsoft.CodeAnalysis.MetadataImageKind
 - id: Microsoft.CodeAnalysis.ModuleMetadata.get_Kind
   yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
   href: api\Microsoft.CodeAnalysis.ModuleMetadata
@@ -406,7 +444,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 275
-  summary: Returns the file names of linked managed modules.
+  summary: >+
+    Returns the file names of linked managed modules.
+
   syntax:
     content:
       CSharp: public ImmutableArray<string> GetModuleNames()
@@ -429,25 +469,30 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
     startLine: 297
-  summary: Creates a reference to the module metadata.
+  summary: >+
+    Creates a reference to the module metadata.
+
   syntax:
     content:
       CSharp: public PortableExecutableReference GetReference(DocumentationProvider documentation = null, string filePath = null, string display = null)
     parameters:
     - id: documentation
       type:
-        id: DocumentationProvider
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DocumentationComments\DocumentationProvider.cs
+        id: Microsoft.CodeAnalysis.DocumentationProvider
+        name: DocumentationProvider
+        href: api\Microsoft.CodeAnalysis.DocumentationProvider
       description: Provider of XML documentation comments for the metadata symbols contained in the module.
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Path describing the location of the metadata, or null if the metadata have no location.
     - id: display
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Display string used in error messages to identity the reference.

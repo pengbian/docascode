@@ -19,6 +19,7 @@ syntax:
     CSharp: public abstract class CustomModifier
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -38,7 +39,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
     startLine: 13
-  summary: "If true, a language may use the modified storage location without \r\n    being aware of the meaning of the modification, modopt vs. modreq."
+  summary: >+
+    If true, a language may use the modified storage location without
+
+    being aware of the meaning of the modification, modopt vs. modreq.
+
   syntax:
     content:
       CSharp: public abstract bool IsOptional
@@ -46,6 +51,7 @@ items:
     - id: IsOptional
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CustomModifier.get_IsOptional
@@ -79,15 +85,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\CustomModifer.cs
     startLine: 18
-  summary: A type used as a tag that indicates which type of modification applies.
+  summary: >+
+    A type used as a tag that indicates which type of modification applies.
+
   syntax:
     content:
       CSharp: public abstract INamedTypeSymbol Modifier
     parameters:
     - id: Modifier
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.CustomModifier.get_Modifier
   yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml
   href: api\Microsoft.CodeAnalysis.CustomModifier

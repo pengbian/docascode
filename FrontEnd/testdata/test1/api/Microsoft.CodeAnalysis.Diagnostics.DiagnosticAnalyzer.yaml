@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
   startLine: 9
-summary: The base type for diagnostic analyzers.
+summary: >+
+  The base type for diagnostic analyzers.
+
 syntax:
   content:
     CSharp: public abstract class DiagnosticAnalyzer
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,7 +42,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
     startLine: 14
-  summary: Returns a set of descriptors for the diagnostics that this analyzer is capable of producing.
+  summary: >+
+    Returns a set of descriptors for the diagnostics that this analyzer is capable of producing.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics
@@ -47,6 +52,7 @@ items:
     - id: SupportedDiagnostics
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.DiagnosticDescriptor}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.DiagnosticDescriptor}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics
@@ -80,14 +86,17 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
     startLine: 20
-  summary: Called once at session start to register actions in the analysis context.
+  summary: >+
+    Called once at session start to register actions in the analysis context.
+
   syntax:
     content:
       CSharp: public abstract void Initialize(AnalysisContext context);
     parameters:
     - id: context
       type:
-        id: AnalysisContext
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+        name: AnalysisContext
+        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
     return:
       id: Void

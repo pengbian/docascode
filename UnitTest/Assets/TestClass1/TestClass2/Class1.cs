@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestClass1
+namespace TestClass2
 {
     /// <summary>
     /// This is a *Class1* @TestClass1.Class1 in <see cref="Test1"/> **TestClass1**

@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Diagnostic\Location.cs
   startLine: 11
-summary: A program location in source code.
+summary: >+
+  A program location in source code.
+
 syntax:
   content:
     CSharp: public abstract class Location
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,15 +42,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 21
-  summary: Location kind (None/SourceFile/MetadataFile).
+  summary: >+
+    Location kind (None/SourceFile/MetadataFile).
+
   syntax:
     content:
       CSharp: public abstract LocationKind Kind
     parameters:
     - id: Kind
       type:
-        id: LocationKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\LocationKind.cs
+        id: Microsoft.CodeAnalysis.LocationKind
+        name: LocationKind
+        href: api\Microsoft.CodeAnalysis.LocationKind
 - id: Microsoft.CodeAnalysis.Location.get_Kind
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -79,7 +85,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 26
-  summary: Returns true if the location represents a specific location in a source code file.
+  summary: >+
+    Returns true if the location represents a specific location in a source code file.
+
   syntax:
     content:
       CSharp: public bool IsInSource
@@ -87,6 +95,7 @@ items:
     - id: IsInSource
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInSource
@@ -120,7 +129,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 31
-  summary: Returns true if the location is in metadata.
+  summary: >+
+    Returns true if the location is in metadata.
+
   syntax:
     content:
       CSharp: public bool IsInMetadata
@@ -128,6 +139,7 @@ items:
     - id: IsInMetadata
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInMetadata
@@ -161,15 +173,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 36
-  summary: The syntax tree this location is located in or null if not in a syntax tree.
+  summary: >+
+    The syntax tree this location is located in or null if not in a syntax tree.
+
   syntax:
     content:
       CSharp: public virtual SyntaxTree SourceTree
     parameters:
     - id: SourceTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.Location.get_SourceTree
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -201,15 +216,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 45
-  summary: Returns the metadata module the location is associated with or null if the module is not available.
+  summary: >+
+    Returns the metadata module the location is associated with or null if the module is not available.
+
   syntax:
     content:
       CSharp: public virtual IModuleSymbol MetadataModule
     parameters:
     - id: MetadataModule
       type:
-        id: IModuleSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
+        id: Microsoft.CodeAnalysis.IModuleSymbol
+        name: IModuleSymbol
+        href: api\Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.Location.get_MetadataModule
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -241,15 +259,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 53
-  summary: The location within the syntax tree that this location is associated with.
+  summary: >+
+    The location within the syntax tree that this location is associated with.
+
   syntax:
     content:
       CSharp: public virtual TextSpan SourceSpan
     parameters:
     - id: SourceSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.Location.get_SourceSpan
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -281,14 +302,16 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 65
-  summary: Gets the location in terms of path, line and column.
+  summary: >+
+    Gets the location in terms of path, line and column.
+
   syntax:
     content:
       CSharp: public virtual FileLinePositionSpan GetLineSpan()
     parameters: []
     return:
       id: FileLinePositionSpan
-      description: "[Microsoft.CodeAnalysis.FileLinePositionSpan](api\\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    Returns an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](api\\Microsoft.CodeAnalysis.FileLinePositionSpan)) if the information is not available.\r\n    \r\n    The values are not affected by line mapping directives (#line in C# or #ExternalSource in VB)."
+      description: "[Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    Returns an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan)) if the information is not available.\r\n    \r\n    The values are not affected by line mapping directives (#line in C# or #ExternalSource in VB)."
 - id: Microsoft.CodeAnalysis.Location.GetMappedLineSpan
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -305,10 +328,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 78
-  summary: >-
+  summary: >+
     Gets the location in terms of path, line and column after applying source line mapping directives
 
-        (#line in C# or #ExternalSource in VB).
+    (#line in C# or #ExternalSource in VB).
+
   syntax:
     content:
       CSharp: public virtual FileLinePositionSpan GetMappedLineSpan()
@@ -316,9 +340,9 @@ items:
     return:
       id: FileLinePositionSpan
       description: >-
-        [Microsoft.CodeAnalysis.FileLinePositionSpan](api\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains file, line and column information,
+        [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains file, line and column information,
 
-            or an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](api\Microsoft.CodeAnalysis.FileLinePositionSpan)) if not available.
+            or an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan)) if not available.
 - id: Microsoft.CodeAnalysis.Location.Equals(System.Object)
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -342,6 +366,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -436,15 +461,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 145
-  summary: A location of kind LocationKind.None.
+  summary: >+
+    A location of kind LocationKind.None.
+
   syntax:
     content:
       CSharp: public static Location None
     parameters:
     - id: None
       type:
-        id: Location
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\Location.cs
+        id: Microsoft.CodeAnalysis.Location
+        name: Location
+        href: api\Microsoft.CodeAnalysis.Location
 - id: Microsoft.CodeAnalysis.Location.get_None
   yaml: api\Microsoft.CodeAnalysis.Location.yaml
   href: api\Microsoft.CodeAnalysis.Location
@@ -476,19 +504,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 150
-  summary: Creates an instance of a [Microsoft.CodeAnalysis.Location](api\Microsoft.CodeAnalysis.Location) for a span in a [Microsoft.CodeAnalysis.SyntaxTree](api\Microsoft.CodeAnalysis.SyntaxTree).
+  summary: >+
+    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api\Microsoft.CodeAnalysis.Location) for a span in a [Microsoft.CodeAnalysis.SyntaxTree](#/api\Microsoft.CodeAnalysis.SyntaxTree).
+
   syntax:
     content:
       CSharp: public static Location Create(SyntaxTree syntaxTree, TextSpan textSpan)
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
     - id: textSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Location
 - id: Microsoft.CodeAnalysis.Location.Create(System.String,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
@@ -507,7 +539,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\Location.cs
     startLine: 163
-  summary: Creates an instance of a [Microsoft.CodeAnalysis.Location](api\Microsoft.CodeAnalysis.Location) for a span in a file.
+  summary: >+
+    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api\Microsoft.CodeAnalysis.Location) for a span in a file.
+
   syntax:
     content:
       CSharp: public static Location Create(string filePath, TextSpan textSpan, LinePositionSpan lineSpan)
@@ -515,15 +549,18 @@ items:
     - id: filePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: textSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     - id: lineSpan
       type:
-        id: LinePositionSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePositionSpan.cs
+        id: Microsoft.CodeAnalysis.Text.LinePositionSpan
+        name: LinePositionSpan
+        href: api\Microsoft.CodeAnalysis.Text.LinePositionSpan
     return:
       id: Location

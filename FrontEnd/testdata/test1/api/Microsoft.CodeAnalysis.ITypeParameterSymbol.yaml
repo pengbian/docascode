@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
   startLine: 9
-summary: Represents a type parameter in a generic type or generic method.
+summary: >+
+  Represents a type parameter in a generic type or generic method.
+
 syntax:
   content:
     CSharp: public interface ITypeParameterSymbol
@@ -35,10 +37,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 15
-  summary: >-
+  summary: >+
     The ordinal position of the type parameter in the parameter list which declares
 
-        it. The first type parameter has ordinal zero.
+    it. The first type parameter has ordinal zero.
+
   syntax:
     content:
       CSharp: int Ordinal
@@ -46,6 +49,7 @@ items:
     - id: Ordinal
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Ordinal
@@ -79,15 +83,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 21
-  summary: "The variance annotation, if any, of the type parameter declaration. Type parameters may be \r\n    declared as covariant (out), contravariant (in), or neither."
+  summary: >+
+    The variance annotation, if any, of the type parameter declaration. Type parameters may be
+
+    declared as covariant (out), contravariant (in), or neither.
+
   syntax:
     content:
       CSharp: VarianceKind Variance
     parameters:
     - id: Variance
       type:
-        id: VarianceKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\VarianceKind.cs
+        id: Microsoft.CodeAnalysis.VarianceKind
+        name: VarianceKind
+        href: api\Microsoft.CodeAnalysis.VarianceKind
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Variance
   yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
@@ -119,15 +128,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 26
-  summary: The type parameter kind of this type parameter.
+  summary: >+
+    The type parameter kind of this type parameter.
+
   syntax:
     content:
       CSharp: TypeParameterKind TypeParameterKind
     parameters:
     - id: TypeParameterKind
       type:
-        id: TypeParameterKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\TypeParameterKind.cs
+        id: Microsoft.CodeAnalysis.TypeParameterKind
+        name: TypeParameterKind
+        href: api\Microsoft.CodeAnalysis.TypeParameterKind
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_TypeParameterKind
   yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
@@ -159,15 +171,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 31
-  summary: The method that declares the type parameter, or null.
+  summary: >+
+    The method that declares the type parameter, or null.
+
   syntax:
     content:
       CSharp: IMethodSymbol DeclaringMethod
     parameters:
     - id: DeclaringMethod
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_DeclaringMethod
   yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
@@ -199,15 +214,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 36
-  summary: The type that declares the type parameter, or null.
+  summary: >+
+    The type that declares the type parameter, or null.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol DeclaringType
     parameters:
     - id: DeclaringType
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_DeclaringType
   yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
@@ -239,7 +257,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 41
-  summary: True if the reference type constraint (class) was specified for the type parameter.
+  summary: >+
+    True if the reference type constraint (class) was specified for the type parameter.
+
   syntax:
     content:
       CSharp: bool HasReferenceTypeConstraint
@@ -247,6 +267,7 @@ items:
     - id: HasReferenceTypeConstraint
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasReferenceTypeConstraint
@@ -280,7 +301,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 46
-  summary: True if the value type constraint (struct)was specified for the type parameter.
+  summary: >+
+    True if the value type constraint (struct)was specified for the type parameter.
+
   syntax:
     content:
       CSharp: bool HasValueTypeConstraint
@@ -288,6 +311,7 @@ items:
     - id: HasValueTypeConstraint
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasValueTypeConstraint
@@ -321,7 +345,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 51
-  summary: True if the parameterless constructor constraint (new()) was specified for the type parameter.
+  summary: >+
+    True if the parameterless constructor constraint (new()) was specified for the type parameter.
+
   syntax:
     content:
       CSharp: bool HasConstructorConstraint
@@ -329,6 +355,7 @@ items:
     - id: HasConstructorConstraint
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasConstructorConstraint
@@ -362,7 +389,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 56
-  summary: The types that were directly specified as constraints on the type parameter.
+  summary: >+
+    The types that were directly specified as constraints on the type parameter.
+
   syntax:
     content:
       CSharp: ImmutableArray<ITypeSymbol> ConstraintTypes
@@ -370,6 +399,7 @@ items:
     - id: ConstraintTypes
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ConstraintTypes
@@ -403,20 +433,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 63
-  summary: >-
+  summary: >+
     Get the original definition of this type symbol. If this symbol is derived from another
 
-        symbol by (say) type substitution, this gets the original symbol, as it was defined in
+    symbol by (say) type substitution, this gets the original symbol, as it was defined in
 
-        source or metadata.
+    source or metadata.
+
   syntax:
     content:
       CSharp: new ITypeParameterSymbol OriginalDefinition
     parameters:
     - id: OriginalDefinition
       type:
-        id: ITypeParameterSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeParameterSymbol
+        name: ITypeParameterSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
@@ -448,18 +480,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
     startLine: 69
-  summary: >-
+  summary: >+
     If this is a type parameter of a reduced extension method, gets the type parameter definition that
 
-        this type parameter was reduced from. Otherwise, returns Nothing.
+    this type parameter was reduced from. Otherwise, returns Nothing.
+
   syntax:
     content:
       CSharp: ITypeParameterSymbol ReducedFrom
     parameters:
     - id: ReducedFrom
       type:
-        id: ITypeParameterSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeParameterSymbol
+        name: ITypeParameterSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ReducedFrom
   yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol

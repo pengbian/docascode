@@ -14,12 +14,17 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
   startLine: 11
-summary: "Compares assembly identities. \r\n    Derived types may implement platform specific unification and portability policies."
+summary: >+
+  Compares assembly identities.
+
+  Derived types may implement platform specific unification and portability policies.
+
 syntax:
   content:
     CSharp: public class AssemblyIdentityComparer
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -62,6 +67,7 @@ items:
     - id: SimpleNameComparer
       type:
         id: System.StringComparer
+        name: System.StringComparer
         href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_SimpleNameComparer
@@ -102,6 +108,7 @@ items:
     - id: CultureComparer
       type:
         id: System.StringComparer
+        name: System.StringComparer
         href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_CultureComparer
@@ -135,7 +142,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
     startLine: 57
-  summary: Compares assembly reference name (possibly partial) with definition identity.
+  summary: >+
+    Compares assembly reference name (possibly partial) with definition identity.
+
   syntax:
     content:
       CSharp: public bool ReferenceMatchesDefinition(string referenceDisplayName, AssemblyIdentity definition)
@@ -143,13 +152,15 @@ items:
     - id: referenceDisplayName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Partial or full assembly display name.
     - id: definition
       type:
-        id: AssemblyIdentity
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: Full assembly display name.
     return:
       id: Boolean
@@ -170,20 +181,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
     startLine: 69
-  summary: Compares assembly reference identity with definition identity.
+  summary: >+
+    Compares assembly reference identity with definition identity.
+
   syntax:
     content:
       CSharp: public bool ReferenceMatchesDefinition(AssemblyIdentity reference, AssemblyIdentity definition)
     parameters:
     - id: reference
       type:
-        id: AssemblyIdentity
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: Reference assembly identity.
     - id: definition
       type:
-        id: AssemblyIdentity
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: Full assembly display name.
     return:
       id: Boolean
@@ -204,20 +219,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
     startLine: 80
-  summary: Compares reference assembly identity with definition identity and returns their relationship.
+  summary: >+
+    Compares reference assembly identity with definition identity and returns their relationship.
+
   syntax:
     content:
       CSharp: public ComparisonResult Compare(AssemblyIdentity reference, AssemblyIdentity definition)
     parameters:
     - id: reference
       type:
-        id: AssemblyIdentity
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: Reference identity.
     - id: definition
       type:
-        id: AssemblyIdentity
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
       description: Definition identity.
     return:
       id: ComparisonResult

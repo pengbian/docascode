@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
   startLine: 15
-summary: Represents a read-only list of [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia).
+summary: >+
+  Represents a read-only list of [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia).
+
 syntax:
   content:
     CSharp: public partial struct SyntaxTriviaList
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -65,6 +69,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Count
@@ -105,6 +110,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -125,7 +131,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 85
-  summary: Gets the trivia at the specified index.
+  summary: >+
+    Gets the trivia at the specified index.
+
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Item(System.Int32)
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
@@ -157,15 +165,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 111
-  summary: The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan FullSpan
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
@@ -197,15 +208,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 129
-  summary: The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
@@ -237,7 +251,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 150
-  summary: Returns the first trivia in the list.
+  summary: >+
+    Returns the first trivia in the list.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia First()
@@ -261,7 +277,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 165
-  summary: Returns the last trivia in the list.
+  summary: >+
+    Returns the last trivia in the list.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia Last()
@@ -285,7 +303,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 179
-  summary: Does this list have any items.
+  summary: >+
+    Does this list have any items.
+
   syntax:
     content:
       CSharp: public bool Any()
@@ -308,14 +328,16 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 188
-  summary: Returns a list which contains all elements of [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) in reversed order.
+  summary: >+
+    Returns a list which contains all elements of [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) in reversed order.
+
   syntax:
     content:
       CSharp: public Reversed Reverse()
     parameters: []
     return:
       id: Reversed
-      description: '[Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed](api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed) which contains all elements of [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) in reversed order'
+      description: '[Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed) which contains all elements of [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) in reversed order'
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.GetEnumerator
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
@@ -360,8 +382,9 @@ items:
     parameters:
     - id: triviaInList
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Add(Microsoft.CodeAnalysis.SyntaxTrivia)
@@ -380,15 +403,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 229
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia added to the end.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia added to the end.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList Add(SyntaxTrivia trivia)
     parameters:
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to add.
     return:
       id: SyntaxTriviaList
@@ -408,7 +434,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 238
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia added to the end.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia added to the end.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList AddRange(IEnumerable<SyntaxTrivia> trivia)
@@ -416,6 +444,7 @@ items:
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to add.
@@ -437,7 +466,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 248
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia inserted at the index.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia inserted at the index.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList Insert(int index, SyntaxTrivia trivia)
@@ -445,13 +476,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index in the list to insert the trivia at.
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to insert.
     return:
       id: SyntaxTriviaList
@@ -471,7 +504,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 263
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia inserted at the index.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified trivia inserted at the index.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList InsertRange(int index, IEnumerable<SyntaxTrivia> trivia)
@@ -479,12 +514,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index in the list to insert the trivia at.
     - id: trivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to insert.
@@ -506,7 +543,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 293
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the element at the specified index removed.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the element at the specified index removed.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList RemoveAt(int index)
@@ -514,6 +553,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index identifying the element to remove.
@@ -535,15 +575,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 309
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element removed.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element removed.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList Remove(SyntaxTrivia triviaInList)
     parameters:
     - id: triviaInList
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia element to remove.
     return:
       id: SyntaxTriviaList
@@ -563,20 +606,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 327
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element replaced with new trivia.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element replaced with new trivia.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList Replace(SyntaxTrivia triviaInList, SyntaxTrivia newTrivia)
     parameters:
     - id: triviaInList
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia element to replace.
     - id: newTrivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to replace the element with.
     return:
       id: SyntaxTriviaList
@@ -596,19 +643,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
     startLine: 342
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element replaced with new trivia.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxTriviaList](#/api\Microsoft.CodeAnalysis.SyntaxTriviaList) with the specified element replaced with new trivia.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList ReplaceRange(SyntaxTrivia triviaInList, IEnumerable<SyntaxTrivia> newTrivia)
     parameters:
     - id: triviaInList
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia element to replace.
     - id: newTrivia
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         href: System.Runtime
         isExternal: true
       description: The trivia to replace the element with.
@@ -636,8 +687,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxTriviaList
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.cs
+        id: Microsoft.CodeAnalysis.SyntaxTriviaList
+        name: SyntaxTriviaList
+        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.op_Equality(Microsoft.CodeAnalysis.SyntaxTriviaList,Microsoft.CodeAnalysis.SyntaxTriviaList)
@@ -693,6 +745,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -785,7 +838,8 @@ items:
     parameters:
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
     return:
       id: SyntaxTriviaList

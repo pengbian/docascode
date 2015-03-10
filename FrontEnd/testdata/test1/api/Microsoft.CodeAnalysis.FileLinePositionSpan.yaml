@@ -14,18 +14,21 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
   startLine: 12
-summary: >-
+summary: >+
   Represents a span of text in a source code file in terms of file name, line number, and offset within line.
 
-      However, the file is actually whatever was passed in when asked to parse; there may not really be a file.
+  However, the file is actually whatever was passed in when asked to parse; there may not really be a file.
+
 syntax:
   content:
     CSharp: public struct FileLinePositionSpan
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +48,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 24
-  summary: Path, or null if the span represents an invalid value.
+  summary: >+
+    Path, or null if the span represents an invalid value.
+
   syntax:
     content:
       CSharp: public string Path
@@ -53,6 +58,7 @@ items:
     - id: Path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_Path
@@ -86,7 +92,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 32
-  summary: True if the [Microsoft.CodeAnalysis.FileLinePositionSpan.Path](api\Microsoft.CodeAnalysis.FileLinePositionSpan) is a mapped path.
+  summary: >+
+    True if the [Microsoft.CodeAnalysis.FileLinePositionSpan.Path](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) is a mapped path.
+
   syntax:
     content:
       CSharp: public bool HasMappedPath
@@ -94,6 +102,7 @@ items:
     - id: HasMappedPath
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_HasMappedPath
@@ -127,15 +136,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 38
-  summary: Gets the [Microsoft.CodeAnalysis.Text.LinePosition](api\Microsoft.CodeAnalysis.Text.LinePosition) of the start of the span.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.Text.LinePosition](#/api\Microsoft.CodeAnalysis.Text.LinePosition) of the start of the span.
+
   syntax:
     content:
       CSharp: public LinePosition StartLinePosition
     parameters:
     - id: StartLinePosition
       type:
-        id: LinePosition
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePosition.cs
+        id: Microsoft.CodeAnalysis.Text.LinePosition
+        name: LinePosition
+        href: api\Microsoft.CodeAnalysis.Text.LinePosition
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_StartLinePosition
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
   href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
@@ -167,15 +179,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 44
-  summary: Gets the [Microsoft.CodeAnalysis.Text.LinePosition](api\Microsoft.CodeAnalysis.Text.LinePosition) of the end of the span.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.Text.LinePosition](#/api\Microsoft.CodeAnalysis.Text.LinePosition) of the end of the span.
+
   syntax:
     content:
       CSharp: public LinePosition EndLinePosition
     parameters:
     - id: EndLinePosition
       type:
-        id: LinePosition
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePosition.cs
+        id: Microsoft.CodeAnalysis.Text.LinePosition
+        name: LinePosition
+        href: api\Microsoft.CodeAnalysis.Text.LinePosition
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_EndLinePosition
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
   href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
@@ -207,15 +222,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 49
-  summary: Gets the span.
+  summary: >+
+    Gets the span.
+
   syntax:
     content:
       CSharp: public LinePositionSpan Span
     parameters:
     - id: Span
       type:
-        id: LinePositionSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePositionSpan.cs
+        id: Microsoft.CodeAnalysis.Text.LinePositionSpan
+        name: LinePositionSpan
+        href: api\Microsoft.CodeAnalysis.Text.LinePositionSpan
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_Span
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
   href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
@@ -247,7 +265,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 64
-  summary: Initializes the [Microsoft.CodeAnalysis.FileLinePositionSpan](api\Microsoft.CodeAnalysis.FileLinePositionSpan) instance.
+  summary: >+
+    Initializes the [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) instance.
+
   syntax:
     content:
       CSharp: 'public FileLinePositionSpan(string path, LinePosition start, LinePosition end): this (path, new LinePositionSpan(start, end))'
@@ -255,18 +275,21 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The file identifier - typically a relative or absolute path.
     - id: start
       type:
-        id: LinePosition
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePosition.cs
+        id: Microsoft.CodeAnalysis.Text.LinePosition
+        name: LinePosition
+        href: api\Microsoft.CodeAnalysis.Text.LinePosition
       description: The start line position.
     - id: end
       type:
-        id: LinePosition
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePosition.cs
+        id: Microsoft.CodeAnalysis.Text.LinePosition
+        name: LinePosition
+        href: api\Microsoft.CodeAnalysis.Text.LinePosition
       description: The end line position.
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.#ctor(System.String,Microsoft.CodeAnalysis.Text.LinePositionSpan)
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
@@ -284,7 +307,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 75
-  summary: Initializes the [Microsoft.CodeAnalysis.FileLinePositionSpan](api\Microsoft.CodeAnalysis.FileLinePositionSpan) instance.
+  summary: >+
+    Initializes the [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) instance.
+
   syntax:
     content:
       CSharp: public FileLinePositionSpan(string path, LinePositionSpan span)
@@ -292,13 +317,15 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The file identifier - typically a relative or absolute path.
     - id: span
       type:
-        id: LinePositionSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\LinePositionSpan.cs
+        id: Microsoft.CodeAnalysis.Text.LinePositionSpan
+        name: LinePositionSpan
+        href: api\Microsoft.CodeAnalysis.Text.LinePositionSpan
       description: The span.
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
@@ -316,7 +343,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 97
-  summary: Returns true if the span represents a valid location.
+  summary: >+
+    Returns true if the span represents a valid location.
+
   syntax:
     content:
       CSharp: public bool IsValid
@@ -324,6 +353,7 @@ items:
     - id: IsValid
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_IsValid
@@ -357,15 +387,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 112
-  summary: Determines if two FileLinePositionSpan objects are equal.
+  summary: >+
+    Determines if two FileLinePositionSpan objects are equal.
+
   syntax:
     content:
       CSharp: public bool Equals(FileLinePositionSpan other)
     parameters:
     - id: other
       type:
-        id: FileLinePositionSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
+        id: Microsoft.CodeAnalysis.FileLinePositionSpan
+        name: FileLinePositionSpan
+        href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.Equals(System.Object)
@@ -384,7 +417,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 122
-  summary: Determines if two FileLinePositionSpan objects are equal.
+  summary: >+
+    Determines if two FileLinePositionSpan objects are equal.
+
   syntax:
     content:
       CSharp: public override bool Equals(object other)
@@ -392,6 +427,7 @@ items:
     - id: other
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -412,7 +448,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 134
-  summary: Serves as a hash function for FileLinePositionSpan.
+  summary: >+
+    Serves as a hash function for FileLinePositionSpan.
+
   syntax:
     content:
       CSharp: public override int GetHashCode()
@@ -436,7 +474,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\FileLinePositionSpan.cs
     startLine: 144
-  summary: Returns a @T:System.String- that represents FileLinePositionSpan.
+  summary: >+
+    Returns a [System.String](#) that represents FileLinePositionSpan.
+
   syntax:
     content:
       CSharp: public override string ToString()

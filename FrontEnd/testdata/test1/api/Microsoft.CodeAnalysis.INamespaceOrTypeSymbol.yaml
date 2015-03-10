@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
   startLine: 11
-summary: Represents either a namespace or a type.
+summary: >+
+  Represents either a namespace or a type.
+
 syntax:
   content:
     CSharp: public interface INamespaceOrTypeSymbol
@@ -35,7 +37,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 18
-  summary: Get all the members of this symbol.
+  summary: >+
+    Get all the members of this symbol.
+
   syntax:
     content:
       CSharp: ImmutableArray<ISymbol> GetMembers();
@@ -62,7 +66,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 25
-  summary: Get all the members of this symbol that have a particular name.
+  summary: >+
+    Get all the members of this symbol that have a particular name.
+
   syntax:
     content:
       CSharp: ImmutableArray<ISymbol> GetMembers(string name);
@@ -70,6 +76,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -94,7 +101,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 32
-  summary: Get all the members of this symbol that are types.
+  summary: >+
+    Get all the members of this symbol that are types.
+
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> GetTypeMembers();
@@ -121,7 +130,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 40
-  summary: Get all the members of this symbol that are types that have a particular name, of any arity.
+  summary: >+
+    Get all the members of this symbol that are types that have a particular name, of any arity.
+
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> GetTypeMembers(string name);
@@ -129,6 +140,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -155,7 +167,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 48
-  summary: Get all the members of this symbol that are types that have a particular name and arity
+  summary: >+
+    Get all the members of this symbol that are types that have a particular name and arity
+
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> GetTypeMembers(string name, int arity);
@@ -163,11 +177,13 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: arity
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -194,7 +210,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 53
-  summary: Returns true if this symbol is a namespace. If it is not a namespace, it must be a type.
+  summary: >+
+    Returns true if this symbol is a namespace. If it is not a namespace, it must be a type.
+
   syntax:
     content:
       CSharp: bool IsNamespace
@@ -202,6 +220,7 @@ items:
     - id: IsNamespace
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsNamespace
@@ -235,7 +254,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
     startLine: 58
-  summary: Returns true if this symbols is a type. If it is not a type, it must be a namespace.
+  summary: >+
+    Returns true if this symbols is a type. If it is not a type, it must be a namespace.
+
   syntax:
     content:
       CSharp: bool IsType
@@ -243,6 +264,7 @@ items:
     - id: IsType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsType

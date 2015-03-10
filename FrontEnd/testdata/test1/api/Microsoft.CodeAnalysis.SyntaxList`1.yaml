@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
   startLine: 15
-summary: A list of [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode).
+summary: >+
+  A list of [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+
 syntax:
   content:
     CSharp: >-
@@ -23,9 +25,11 @@ syntax:
           where TNode : SyntaxNode
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +49,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 36
-  summary: The number of nodes in the list.
+  summary: >+
+    The number of nodes in the list.
+
   syntax:
     content:
       CSharp: public int Count
@@ -53,6 +59,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_Count
@@ -86,7 +93,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 49
-  summary: Gets the node at the specified index.
+  summary: >+
+    Gets the node at the specified index.
+
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_Item(System.Int32)
   yaml: api\Microsoft.CodeAnalysis.SyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxList`1
@@ -118,15 +127,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 85
-  summary: The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan FullSpan
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxList`1
@@ -158,15 +170,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 103
-  summary: The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxList`1
@@ -198,7 +213,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 126
-  summary: "Returns the string representation of the nodes in this list, not including \r\n    the first node's leading trivia and the last node's trailing trivia."
+  summary: >+
+    Returns the string representation of the nodes in this list, not including
+
+    the first node's leading trivia and the last node's trailing trivia.
+
   syntax:
     content:
       CSharp: public override string ToString()
@@ -222,7 +241,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 139
-  summary: "Returns the full string representation of the nodes in this list including \r\n    the first node's leading trivia and the last node's trailing trivia."
+  summary: >+
+    Returns the full string representation of the nodes in this list including
+
+    the first node's leading trivia and the last node's trailing trivia.
+
   syntax:
     content:
       CSharp: public string ToFullString()
@@ -246,7 +269,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 148
-  summary: Creates a new list with the specified node added at the end.
+  summary: >+
+    Creates a new list with the specified node added at the end.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> Add(TNode node)
@@ -254,7 +279,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The node to add.
     return:
       id: SyntaxList
@@ -274,7 +300,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 157
-  summary: Creates a new list with the specified nodes added at the end.
+  summary: >+
+    Creates a new list with the specified nodes added at the end.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> AddRange(IEnumerable<TNode> nodes)
@@ -282,6 +310,7 @@ items:
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to add.
@@ -303,7 +332,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 167
-  summary: Creates a new list with the specified node inserted at the index.
+  summary: >+
+    Creates a new list with the specified node inserted at the index.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> Insert(int index, TNode node)
@@ -311,13 +342,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The node to insert.
     return:
       id: SyntaxList
@@ -337,7 +370,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 182
-  summary: Creates a new list with the specified nodes inserted at the index.
+  summary: >+
+    Creates a new list with the specified nodes inserted at the index.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> InsertRange(int index, IEnumerable<TNode> nodes)
@@ -345,12 +380,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to insert.
@@ -372,7 +409,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 211
-  summary: Creates a new list with the element at specified index removed.
+  summary: >+
+    Creates a new list with the element at specified index removed.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> RemoveAt(int index)
@@ -380,6 +419,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -401,7 +441,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 225
-  summary: Creates a new list with the element removed.
+  summary: >+
+    Creates a new list with the element removed.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> Remove(TNode node)
@@ -409,7 +451,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The element to remove.
     return:
       id: SyntaxList
@@ -429,7 +472,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 235
-  summary: Creates a new list with the specified element replaced with the new node.
+  summary: >+
+    Creates a new list with the specified element replaced with the new node.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> Replace(TNode nodeInList, TNode newNode)
@@ -437,12 +482,14 @@ items:
     - id: nodeInList
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The element to replace.
     - id: newNode
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The new node.
     return:
       id: SyntaxList
@@ -462,7 +509,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 245
-  summary: Creates a new list with the specified element replaced with new nodes.
+  summary: >+
+    Creates a new list with the specified element replaced with new nodes.
+
   syntax:
     content:
       CSharp: public SyntaxList<TNode> ReplaceRange(TNode nodeInList, IEnumerable<TNode> newNodes)
@@ -470,11 +519,13 @@ items:
     - id: nodeInList
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
       description: The element to replace.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The new nodes.
@@ -496,7 +547,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 297
-  summary: The first node in the list.
+  summary: >+
+    The first node in the list.
+
   syntax:
     content:
       CSharp: public TNode First()
@@ -519,7 +572,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 305
-  summary: The first node in the list or default if the list is empty.
+  summary: >+
+    The first node in the list or default if the list is empty.
+
   syntax:
     content:
       CSharp: public TNode FirstOrDefault()
@@ -542,7 +597,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 320
-  summary: The last node in the list.
+  summary: >+
+    The last node in the list.
+
   syntax:
     content:
       CSharp: public TNode Last()
@@ -565,7 +622,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 328
-  summary: The last node in the list or default if the list is empty.
+  summary: >+
+    The last node in the list or default if the list is empty.
+
   syntax:
     content:
       CSharp: public TNode LastOrDefault()
@@ -588,7 +647,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 343
-  summary: True if the list has at least one node.
+  summary: >+
+    True if the list has at least one node.
+
   syntax:
     content:
       CSharp: public bool Any()
@@ -611,7 +672,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 358
-  summary: Get's the enumerator for this list.
+  summary: >+
+    Get's the enumerator for this list.
+
   syntax:
     content:
       CSharp: public Enumerator GetEnumerator()
@@ -670,8 +733,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxList
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        id: Microsoft.CodeAnalysis.SyntaxList`1
+        name: SyntaxList
+        href: api\Microsoft.CodeAnalysis.SyntaxList`1
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxList`1.Equals(System.Object)
@@ -697,6 +761,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -769,7 +834,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
     startLine: 421
-  summary: The index of the node in this list, or -1 if the node is not in the list.
+  summary: >+
+    The index of the node in this list, or -1 if the node is not in the list.
+
   syntax:
     content:
       CSharp: public int IndexOf(TNode node)
@@ -777,7 +844,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxList`1.IndexOf(System.Func{`0,System.Boolean})
@@ -803,6 +871,7 @@ items:
     - id: predicate
       type:
         id: System.Func{`0,System.Boolean}
+        name: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:
@@ -830,7 +899,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxList`1.cs
+        name: TNode
+        href: TNode
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxList`1.LastIndexOf(System.Func{`0,System.Boolean})
@@ -856,6 +926,7 @@ items:
     - id: predicate
       type:
         id: System.Func{`0,System.Boolean}
+        name: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:

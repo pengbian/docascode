@@ -14,18 +14,23 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
   startLine: 32
-summary: A set of possible outcomes of [Microsoft.CodeAnalysis.AssemblyIdentity](api\Microsoft.CodeAnalysis.AssemblyIdentity) comparison.
+summary: >+
+  A set of possible outcomes of [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) comparison.
+
 syntax:
   content:
     CSharp: public enum ComparisonResult
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 - id: System.Enum
+  name: System.Enum
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +50,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
     startLine: 37
-  summary: Reference doesn't match definition.
+  summary: >+
+    Reference doesn't match definition.
+
   syntax:
     content:
       CSharp: NotEquivalent = 0
@@ -65,10 +72,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
     startLine: 43
-  summary: >-
+  summary: >+
     Strongly named reference matches strongly named definition (strong identity is identity with public key or token),
 
-        Or weak reference matches weak definition.
+    Or weak reference matches weak definition.
+
   syntax:
     content:
       CSharp: Equivalent = 1
@@ -88,7 +96,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
     startLine: 48
-  summary: Reference matches definition except for version (reference version is lower or higher than definition version).
+  summary: >+
+    Reference matches definition except for version (reference version is lower or higher than definition version).
+
   syntax:
     content:
       CSharp: EquivalentIgnoringVersion = 2

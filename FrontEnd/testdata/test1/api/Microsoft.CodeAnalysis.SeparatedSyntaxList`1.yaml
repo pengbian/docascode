@@ -22,9 +22,11 @@ syntax:
           where TNode : SyntaxNode
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -51,6 +53,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Count
@@ -91,6 +94,7 @@ items:
     - id: SeparatorCount
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_SeparatorCount
@@ -155,7 +159,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 111
-  summary: Gets the separator at the given index in this list.
+  summary: >+
+    Gets the separator at the given index in this list.
+
   syntax:
     content:
       CSharp: public SyntaxToken GetSeparator(int index)
@@ -163,6 +169,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index.
@@ -184,7 +191,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 132
-  summary: Returns the sequence of just the separator tokens.
+  summary: >+
+    Returns the sequence of just the separator tokens.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> GetSeparators()
@@ -207,15 +216,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 140
-  summary: The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan FullSpan
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
@@ -247,15 +259,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 148
-  summary: The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Span
   yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
   href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
@@ -287,7 +302,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 161
-  summary: "Returns the string representation of the nodes in this list including separators but not including \r\n    the first node's leading trivia and the last node or token's trailing trivia."
+  summary: >+
+    Returns the string representation of the nodes in this list including separators but not including
+
+    the first node's leading trivia and the last node or token's trailing trivia.
+
   syntax:
     content:
       CSharp: public override string ToString()
@@ -311,7 +330,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 174
-  summary: "Returns the full string representation of the nodes in this list including separators, \r\n    the first node's leading trivia, and the last node or token's trailing trivia."
+  summary: >+
+    Returns the full string representation of the nodes in this list including separators,
+
+    the first node's leading trivia, and the last node or token's trailing trivia.
+
   syntax:
     content:
       CSharp: public string ToFullString()
@@ -433,7 +456,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.IndexOf(`0)
@@ -459,7 +483,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.IndexOf(System.Func{`0,System.Boolean})
@@ -485,6 +510,7 @@ items:
     - id: predicate
       type:
         id: System.Func{`0,System.Boolean}
+        name: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:
@@ -512,7 +538,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastIndexOf(System.Func{`0,System.Boolean})
@@ -538,6 +565,7 @@ items:
     - id: predicate
       type:
         id: System.Func{`0,System.Boolean}
+        name: System.Func{`0,System.Boolean}
         href: System.Runtime
         isExternal: true
     return:
@@ -638,8 +666,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SeparatedSyntaxList
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+        name: SeparatedSyntaxList
+        href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Equals(System.Object)
@@ -665,6 +694,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -707,7 +737,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 322
-  summary: Creates a new list with the specified node added to the end.
+  summary: >+
+    Creates a new list with the specified node added to the end.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Add(TNode node)
@@ -715,7 +747,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
       description: The node to add.
     return:
       id: SeparatedSyntaxList
@@ -735,7 +768,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 331
-  summary: Creates a new list with the specified nodes added to the end.
+  summary: >+
+    Creates a new list with the specified nodes added to the end.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> AddRange(IEnumerable<TNode> nodes)
@@ -743,6 +778,7 @@ items:
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to add.
@@ -764,7 +800,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 341
-  summary: Creates a new list with the specified node inserted at the index.
+  summary: >+
+    Creates a new list with the specified node inserted at the index.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Insert(int index, TNode node)
@@ -772,13 +810,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
       description: The node to insert.
     return:
       id: SeparatedSyntaxList
@@ -798,7 +838,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 356
-  summary: Creates a new list with the specified nodes inserted at the index.
+  summary: >+
+    Creates a new list with the specified nodes inserted at the index.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> InsertRange(int index, IEnumerable<TNode> nodes)
@@ -806,12 +848,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The nodes to insert.
@@ -833,7 +877,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 426
-  summary: Creates a new list with the element at the specified index removed.
+  summary: >+
+    Creates a new list with the element at the specified index removed.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> RemoveAt(int index)
@@ -841,6 +887,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -862,7 +909,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 440
-  summary: Creates a new list with specified element removed.
+  summary: >+
+    Creates a new list with specified element removed.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Remove(TNode node)
@@ -870,7 +919,8 @@ items:
     - id: node
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
       description: The element to remove.
     return:
       id: SeparatedSyntaxList
@@ -890,7 +940,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 472
-  summary: Creates a new list with the specified element replaced by the new node.
+  summary: >+
+    Creates a new list with the specified element replaced by the new node.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> Replace(TNode nodeInList, TNode newNode)
@@ -898,12 +950,14 @@ items:
     - id: nodeInList
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
       description: The element to replace.
     - id: newNode
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
       description: The new node.
     return:
       id: SeparatedSyntaxList
@@ -923,7 +977,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 495
-  summary: Creates a new list with the specified element replaced by the new nodes.
+  summary: >+
+    Creates a new list with the specified element replaced by the new nodes.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> ReplaceRange(TNode nodeInList, IEnumerable<TNode> newNodes)
@@ -931,11 +987,13 @@ items:
     - id: nodeInList
       type:
         id: TNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+        name: TNode
+        href: TNode
       description: The element to replace.
     - id: newNodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
+        name: System.Collections.Generic.IEnumerable{`0}
         href: System.Runtime
         isExternal: true
       description: The new nodes.
@@ -957,20 +1015,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
     startLine: 534
-  summary: Creates a new list with the specified separator token replaced with the new separator.
+  summary: >+
+    Creates a new list with the specified separator token replaced with the new separator.
+
   syntax:
     content:
       CSharp: public SeparatedSyntaxList<TNode> ReplaceSeparator(SyntaxToken separatorToken, SyntaxToken newSeparator)
     parameters:
     - id: separatorToken
       type:
-        id: SyntaxToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The separator token to be replaced.
     - id: newSeparator
       type:
-        id: SyntaxToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
       description: The new separator token.
     return:
       id: SeparatedSyntaxList

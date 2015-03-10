@@ -14,18 +14,23 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
   startLine: 9
-summary: Specifies miscellaneous options about the format of symbol descriptions.
+summary: >+
+  Specifies miscellaneous options about the format of symbol descriptions.
+
 syntax:
   content:
     CSharp: public enum SymbolDisplayMiscellaneousOptions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 - id: System.Enum
+  name: System.Enum
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +50,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 15
-  summary: Specifies that no miscellaneous options should be applied.
+  summary: >+
+    Specifies that no miscellaneous options should be applied.
+
   syntax:
     content:
       CSharp: None = 0
@@ -65,7 +72,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 22
-  summary: "Uses keywords for predefined types. \r\n    For example, \"int\" instead of \"System.Int32\" in C#\r\n    or \"Integer\" instead of \"System.Integer\" in Visual Basic."
+  summary: >+
+    Uses keywords for predefined types.
+
+    For example, "int" instead of "System.Int32" in C#
+
+    or "Integer" instead of "System.Integer" in Visual Basic.
+
   syntax:
     content:
       CSharp: UseSpecialTypes = 1 << 0
@@ -85,12 +98,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 29
-  summary: >-
+  summary: >+
     Escapes identifiers that are also keywords.
 
-        For example, "@true" instead of "true" in C# or
+    For example, "[true](#) " instead of "true" in C# or
 
-        "[True]" instead of "True" in Visual Basic.
+    "[True]" instead of "True" in Visual Basic.
+
   syntax:
     content:
       CSharp: EscapeKeywordIdentifiers = 1 << 1
@@ -110,12 +124,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 36
-  summary: >-
+  summary: >+
     Displays asterisks between commas in multi-dimensional arrays.
 
-        For example, "int[][*,*]" instead of "int[][,]" in C# or
+    For example, "int[][*,*]" instead of "int[][,]" in C# or
 
-        "Integer()(*,*)" instead of "Integer()(*,*) in Visual Basic.
+    "Integer()(*,*)" instead of "Integer()(*,*) in Visual Basic.
+
   syntax:
     content:
       CSharp: UseAsterisksInMultiDimensionalArrays = 1 << 2
@@ -135,7 +150,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 41
-  summary: Displays "?" for erroneous types that lack names (perhaps due to faulty metadata).
+  summary: >+
+    Displays "?" for erroneous types that lack names (perhaps due to faulty metadata).
+
   syntax:
     content:
       CSharp: UseErrorTypeSymbolName = 1 << 3
@@ -155,7 +172,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 50
-  summary: Displays attributes names without the "Attribute" suffix, if possible.
+  summary: >+
+    Displays attributes names without the "Attribute" suffix, if possible.
+
   syntax:
     content:
       CSharp: RemoveAttributeSuffix = 1 << 4
@@ -175,10 +194,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayMiscellaneousOptions.cs
     startLine: 56
-  summary: >-
-    Displays @T:System.Nullable`1- as a normal generic type, rather than with
+  summary: >+
+    Displays [System.Nullable`1](#) as a normal generic type, rather than with
 
-        the special question mark syntax.
+    the special question mark syntax.
+
   syntax:
     content:
       CSharp: ExpandNullable = 1 << 5

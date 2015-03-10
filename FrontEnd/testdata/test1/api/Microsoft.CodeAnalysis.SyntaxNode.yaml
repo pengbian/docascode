@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
   startLine: 20
-summary: Represents a non-terminal node in the syntax tree. This is the language agnostic equivalent of @T:Microsoft.CodeAnalysis.CSharp.SyntaxNode- and @T:Microsoft.CodeAnalysis.VisualBasic.SyntaxNode-.
+summary: >+
+  Represents a non-terminal node in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxNode](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxNode](#).
+
 syntax:
   content:
     CSharp: public abstract partial class SyntaxNode
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,7 +42,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 58
-  summary: An integer representing the language specific kind of this node.
+  summary: >+
+    An integer representing the language specific kind of this node.
+
   syntax:
     content:
       CSharp: public int RawKind
@@ -47,6 +52,7 @@ items:
     - id: RawKind
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_RawKind
@@ -80,7 +86,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 68
-  summary: The language name that this node is syntax of.
+  summary: >+
+    The language name that this node is syntax of.
+
   syntax:
     content:
       CSharp: public abstract string Language
@@ -88,6 +96,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Language
@@ -121,18 +130,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 89
-  summary: >-
+  summary: >+
     Returns SyntaxTree that owns the node or null if node does not belong to a
 
-        SyntaxTree
+    SyntaxTree
+
   syntax:
     content:
       CSharp: public SyntaxTree SyntaxTree
     parameters:
     - id: SyntaxTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_SyntaxTree
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNode
@@ -164,15 +175,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 108
-  summary: The absolute span of this node in characters, including its leading and trailing trivia.
+  summary: >+
+    The absolute span of this node in characters, including its leading and trailing trivia.
+
   syntax:
     content:
       CSharp: public TextSpan FullSpan
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNode
@@ -204,15 +218,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 127
-  summary: The absolute span of this node in characters, not including its leading and trailing trivia.
+  summary: >+
+    The absolute span of this node in characters, not including its leading and trailing trivia.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNode
@@ -244,7 +261,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 154
-  summary: Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](api\Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxNode.Span](api\Microsoft.CodeAnalysis.SyntaxNode).
+  summary: >+
+    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api\Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxNode.Span](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+
   syntax:
     content:
       CSharp: public int SpanStart
@@ -252,6 +271,7 @@ items:
     - id: SpanStart
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_SpanStart
@@ -285,7 +305,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 349
-  summary: Returns the string representation of this node, not including its leading and trailing trivia.
+  summary: >+
+    Returns the string representation of this node, not including its leading and trailing trivia.
+
   syntax:
     content:
       CSharp: public abstract override string ToString();
@@ -309,7 +331,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 356
-  summary: Returns full string representation of this node including its leading and trailing trivia.
+  summary: >+
+    Returns full string representation of this node including its leading and trailing trivia.
+
   syntax:
     content:
       CSharp: public abstract string ToFullString();
@@ -333,7 +357,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 361
-  summary: Writes the full text of this node to the specified @T:System.IO.TextWriter-.
+  summary: >+
+    Writes the full text of this node to the specified [System.IO.TextWriter](#).
+
   syntax:
     content:
       CSharp: public abstract void WriteTo(TextWriter writer);
@@ -341,6 +367,7 @@ items:
     - id: writer
       type:
         id: System.IO.TextWriter
+        name: System.IO.TextWriter
         href: System.IO
         isExternal: true
     return:
@@ -361,7 +388,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 376
-  summary: Gets the full text of this node as an new [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) instance.
+  summary: >+
+    Gets the full text of this node as an new [Microsoft.CodeAnalysis.Text.SourceText](#/api\Microsoft.CodeAnalysis.Text.SourceText) instance.
+
   syntax:
     content:
       CSharp: public SourceText GetText(Encoding encoding = null, SourceHashAlgorithm checksumAlgorithm = SourceHashAlgorithm.Sha1)
@@ -369,6 +398,7 @@ items:
     - id: encoding
       type:
         id: System.Text.Encoding
+        name: System.Text.Encoding
         href: System.Text.Encoding
         isExternal: true
       description: >-
@@ -376,13 +406,14 @@ items:
 
             null if the encoding is unspecified.
 
-            If the encoding is not specified the [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) isn't debuggable.
+            If the encoding is not specified the [Microsoft.CodeAnalysis.Text.SourceText](#/api\Microsoft.CodeAnalysis.Text.SourceText) isn't debuggable.
 
-            If an encoding-less [Microsoft.CodeAnalysis.Text.SourceText](api\Microsoft.CodeAnalysis.Text.SourceText) is written to a file a @P:System.Text.Encoding.UTF8- shall be used as a default.
+            If an encoding-less [Microsoft.CodeAnalysis.Text.SourceText](#/api\Microsoft.CodeAnalysis.Text.SourceText) is written to a file a [System.Text.Encoding.UTF8](#) shall be used as a default.
     - id: checksumAlgorithm
       type:
-        id: SourceHashAlgorithm
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceHashAlgorithm.cs
+        id: Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
+        name: SourceHashAlgorithm
+        href: api\Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
       description: Hash algorithm to use to calculate checksum of the text that's saved to PDB.
     return:
       id: SourceText
@@ -402,15 +433,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 386
-  summary: Determine whether this node is structurally equivalent to another.
+  summary: >+
+    Determine whether this node is structurally equivalent to another.
+
   syntax:
     content:
       CSharp: public bool IsEquivalentTo(SyntaxNode other)
     parameters:
     - id: other
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsMissing
@@ -429,14 +463,15 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 397
-  summary: >-
+  summary: >+
     Determines whether the node represents a language construct that was actually parsed
 
-        from the source code. Missing nodes are generated by the parser in error scenarios to
+    from the source code. Missing nodes are generated by the parser in error scenarios to
 
-        represent constructs that should have been present in the source code in order to
+    represent constructs that should have been present in the source code in order to
 
-        compile successfully but were actually missing.
+    compile successfully but were actually missing.
+
   syntax:
     content:
       CSharp: public bool IsMissing
@@ -444,6 +479,7 @@ items:
     - id: IsMissing
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_IsMissing
@@ -477,7 +513,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 408
-  summary: Determines whether this node is a descendant of a structured trivia.
+  summary: >+
+    Determines whether this node is a descendant of a structured trivia.
+
   syntax:
     content:
       CSharp: public bool IsPartOfStructuredTrivia()
@@ -500,7 +538,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 422
-  summary: Determines whether this node represents a structured trivia.
+  summary: >+
+    Determines whether this node represents a structured trivia.
+
   syntax:
     content:
       CSharp: public bool IsStructuredTrivia
@@ -508,6 +548,7 @@ items:
     - id: IsStructuredTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_IsStructuredTrivia
@@ -541,7 +582,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 433
-  summary: Determines whether a descendant trivia of this node is structured.
+  summary: >+
+    Determines whether a descendant trivia of this node is structured.
+
   syntax:
     content:
       CSharp: public bool HasStructuredTrivia
@@ -549,6 +592,7 @@ items:
     - id: HasStructuredTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasStructuredTrivia
@@ -582,7 +626,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 444
-  summary: Determines whether this node has any descendant skipped text.
+  summary: >+
+    Determines whether this node has any descendant skipped text.
+
   syntax:
     content:
       CSharp: public bool ContainsSkippedText
@@ -590,6 +636,7 @@ items:
     - id: ContainsSkippedText
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsSkippedText
@@ -623,7 +670,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 455
-  summary: Determines whether this node has any descendant preprocessor directives.
+  summary: >+
+    Determines whether this node has any descendant preprocessor directives.
+
   syntax:
     content:
       CSharp: public bool ContainsDirectives
@@ -631,6 +680,7 @@ items:
     - id: ContainsDirectives
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDirectives
@@ -664,7 +714,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 466
-  summary: Determines whether this node or any of its descendant nodes, tokens or trivia have any diagnostics on them.
+  summary: >+
+    Determines whether this node or any of its descendant nodes, tokens or trivia have any diagnostics on them.
+
   syntax:
     content:
       CSharp: public bool ContainsDiagnostics
@@ -672,6 +724,7 @@ items:
     - id: ContainsDiagnostics
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDiagnostics
@@ -705,15 +758,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 477
-  summary: Determines if the specified node is a descendant of this node.
+  summary: >+
+    Determines if the specified node is a descendant of this node.
+
   syntax:
     content:
       CSharp: public bool Contains(SyntaxNode node)
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasLeadingTrivia
@@ -732,7 +788,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 511
-  summary: Determines whether this node has any leading trivia.
+  summary: >+
+    Determines whether this node has any leading trivia.
+
   syntax:
     content:
       CSharp: public bool HasLeadingTrivia
@@ -740,6 +798,7 @@ items:
     - id: HasLeadingTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasLeadingTrivia
@@ -773,7 +832,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 522
-  summary: Determines whether this node has any trailing trivia.
+  summary: >+
+    Determines whether this node has any trailing trivia.
+
   syntax:
     content:
       CSharp: public bool HasTrailingTrivia
@@ -781,6 +842,7 @@ items:
     - id: HasTrailingTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasTrailingTrivia
@@ -836,12 +898,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 598
-  summary: >-
+  summary: >+
     Gets a list of all the diagnostics in the sub tree that has this node as its root.
 
-        This method does not filter diagnostics based on #pragmas and compiler options
+    This method does not filter diagnostics based on #pragmas and compiler options
 
-        like nowarn, warnaserror etc.
+    like nowarn, warnaserror etc.
+
   syntax:
     content:
       CSharp: public IEnumerable<Diagnostic> GetDiagnostics()
@@ -864,12 +927,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 608
-  summary: >-
+  summary: >+
     Gets an SyntaxReference for this syntax node. CommonSyntaxReferences can be used to
 
-        regain access to a syntax node without keeping the entire tree and source text in
+    regain access to a syntax node without keeping the entire tree and source text in
 
-        memory.
+    memory.
+
   syntax:
     content:
       CSharp: public SyntaxReference GetReference()
@@ -892,15 +956,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 628
-  summary: The node that contains this node in its [Microsoft.CodeAnalysis.SyntaxNode.ChildNodes](api\Microsoft.CodeAnalysis.SyntaxNode) collection.
+  summary: >+
+    The node that contains this node in its [Microsoft.CodeAnalysis.SyntaxNode.ChildNodes](#/api\Microsoft.CodeAnalysis.SyntaxNode) collection.
+
   syntax:
     content:
       CSharp: public SyntaxNode Parent
     parameters:
     - id: Parent
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Parent
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNode
@@ -938,8 +1005,9 @@ items:
     parameters:
     - id: ParentTrivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ParentTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNode
@@ -971,7 +1039,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 655
-  summary: The list of child nodes and tokens of this node, where each element is a SyntaxNodeOrToken instance.
+  summary: >+
+    The list of child nodes and tokens of this node, where each element is a SyntaxNodeOrToken instance.
+
   syntax:
     content:
       CSharp: public ChildSyntaxList ChildNodesAndTokens()
@@ -1001,6 +1071,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -1021,7 +1092,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 671
-  summary: Gets a list of the child nodes in prefix document order.
+  summary: >+
+    Gets a list of the child nodes in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> ChildNodes()
@@ -1044,7 +1117,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 685
-  summary: Gets a list of ancestor nodes
+  summary: >+
+    Gets a list of ancestor nodes
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> Ancestors(bool ascendOutOfTrivia = true)
@@ -1052,6 +1127,7 @@ items:
     - id: ascendOutOfTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1072,7 +1148,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 695
-  summary: Gets a list of ancestor nodes (including this node)
+  summary: >+
+    Gets a list of ancestor nodes (including this node)
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> AncestorsAndSelf(bool ascendOutOfTrivia = true)
@@ -1080,6 +1158,7 @@ items:
     - id: ascendOutOfTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1100,7 +1179,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 721
-  summary: Gets the first node of type TNode that matches the predicate.
+  summary: >+
+    Gets the first node of type TNode that matches the predicate.
+
   syntax:
     content:
       CSharp: 'public TNode FirstAncestorOrSelf<TNode>(Func<TNode, bool> predicate = null, bool ascendOutOfTrivia = true)where TNode : SyntaxNode'
@@ -1108,11 +1189,13 @@ items:
     - id: predicate
       type:
         id: System.Func{``0,System.Boolean}
+        name: System.Func{``0,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: ascendOutOfTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1133,7 +1216,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 741
-  summary: Gets a list of descendant nodes in prefix document order.
+  summary: >+
+    Gets a list of descendant nodes in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> DescendantNodes(Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
@@ -1141,12 +1226,14 @@ items:
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1168,25 +1255,30 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 752
-  summary: Gets a list of descendant nodes in prefix document order.
+  summary: >+
+    Gets a list of descendant nodes in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> DescendantNodes(TextSpan span, Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1208,7 +1300,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 762
-  summary: Gets a list of descendant nodes (including this node) in prefix document order.
+  summary: >+
+    Gets a list of descendant nodes (including this node) in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> DescendantNodesAndSelf(Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
@@ -1216,12 +1310,14 @@ items:
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1243,25 +1339,30 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 773
-  summary: Gets a list of descendant nodes (including this node) in prefix document order.
+  summary: >+
+    Gets a list of descendant nodes (including this node) in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> DescendantNodesAndSelf(TextSpan span, Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1283,7 +1384,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 783
-  summary: Gets a list of descendant nodes and tokens in prefix document order.
+  summary: >+
+    Gets a list of descendant nodes and tokens in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> DescendantNodesAndTokens(Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
@@ -1291,12 +1394,14 @@ items:
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1318,25 +1423,30 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 794
-  summary: Gets a list of the descendant nodes and tokens in prefix document order.
+  summary: >+
+    Gets a list of the descendant nodes and tokens in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> DescendantNodesAndTokens(TextSpan span, Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1358,7 +1468,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 804
-  summary: Gets a list of descendant nodes and tokens (including this node) in prefix document order.
+  summary: >+
+    Gets a list of descendant nodes and tokens (including this node) in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> DescendantNodesAndTokensAndSelf(Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
@@ -1366,12 +1478,14 @@ items:
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1393,25 +1507,30 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 815
-  summary: Gets a list of the descendant nodes and tokens (including this node) in prefix document order.
+  summary: >+
+    Gets a list of the descendant nodes and tokens (including this node) in prefix document order.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> DescendantNodesAndTokensAndSelf(TextSpan span, Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
@@ -1433,30 +1552,34 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 830
-  summary: >-
-    Finds the node with the smallest [Microsoft.CodeAnalysis.SyntaxNode.FullSpan](api\Microsoft.CodeAnalysis.SyntaxNode) that contains .
+  summary: >+
+    Finds the node with the smallest [Microsoft.CodeAnalysis.SyntaxNode.FullSpan](#/api\Microsoft.CodeAnalysis.SyntaxNode) that contains .
 
-         is used to determine the behavior in case of a tie (i.e. a node having the same span as its parent).
+    is used to determine the behavior in case of a tie (i.e. a node having the same span as its parent).
 
-        If  is true, then it returns lowest descending node encompassing the given .
+    If  is true, then it returns lowest descending node encompassing the given .
 
-        Otherwise, it returns the outermost node encompassing the given .
+    Otherwise, it returns the outermost node encompassing the given .
+
   syntax:
     content:
       CSharp: public SyntaxNode FindNode(TextSpan span, bool findInsideTrivia = false, bool getInnermostNodeForTie = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     - id: findInsideTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: getInnermostNodeForTie
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1477,7 +1600,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 871
-  summary: Finds a descendant token of this node whose span includes the supplied position.
+  summary: >+
+    Finds a descendant token of this node whose span includes the supplied position.
+
   syntax:
     content:
       CSharp: public SyntaxToken FindToken(int position, bool findInsideTrivia = false)
@@ -1485,12 +1610,14 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The character position of the token relative to the beginning of the file.
     - id: findInsideTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -1515,7 +1642,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 880
-  summary: Gets the first token of the tree rooted by this node. Skips zero-width tokens.
+  summary: >+
+    Gets the first token of the tree rooted by this node. Skips zero-width tokens.
+
   syntax:
     content:
       CSharp: public SyntaxToken GetFirstToken(bool includeZeroWidth = false, bool includeSkipped = false, bool includeDirectives = false, bool includeDocumentationComments = false)
@@ -1523,21 +1652,25 @@ items:
     - id: includeZeroWidth
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1559,7 +1692,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 889
-  summary: Gets the last token of the tree rooted by this node. Skips zero-width tokens.
+  summary: >+
+    Gets the last token of the tree rooted by this node. Skips zero-width tokens.
+
   syntax:
     content:
       CSharp: public SyntaxToken GetLastToken(bool includeZeroWidth = false, bool includeSkipped = false, bool includeDirectives = false, bool includeDocumentationComments = false)
@@ -1567,21 +1702,25 @@ items:
     - id: includeZeroWidth
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1603,7 +1742,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 897
-  summary: Gets a list of the direct child tokens of this node.
+  summary: >+
+    Gets a list of the direct child tokens of this node.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> ChildTokens()
@@ -1626,7 +1767,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 911
-  summary: Gets a list of all the tokens in the span of this node.
+  summary: >+
+    Gets a list of all the tokens in the span of this node.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> DescendantTokens(Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
@@ -1634,11 +1777,13 @@ items:
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1659,23 +1804,28 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 919
-  summary: Gets a list of all the tokens in the full span of this node.
+  summary: >+
+    Gets a list of all the tokens in the full span of this node.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> DescendantTokens(TextSpan span, Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1696,10 +1846,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 931
-  summary: >-
+  summary: >+
     The list of trivia that appears before this node in the source code and are attached to a token that is a
 
-        descendant of this node.
+    descendant of this node.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList GetLeadingTrivia()
@@ -1722,10 +1873,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 940
-  summary: >-
+  summary: >+
     The list of trivia that appears after this node in the source code and are attached to a token that is a
 
-        descendant of this node.
+    descendant of this node.
+
   syntax:
     content:
       CSharp: public SyntaxTriviaList GetTrailingTrivia()
@@ -1748,7 +1900,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 953
-  summary: Finds a descendant trivia of this node whose span includes the supplied position.
+  summary: >+
+    Finds a descendant trivia of this node whose span includes the supplied position.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia FindTrivia(int position, bool findInsideTrivia = false)
@@ -1756,12 +1910,14 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The character position of the trivia relative to the beginning of the file.
     - id: findInsideTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -1786,7 +1942,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 961
-  summary: Get a list of all the trivia associated with the descendant nodes and tokens.
+  summary: >+
+    Get a list of all the trivia associated with the descendant nodes and tokens.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTrivia> DescendantTrivia(Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
@@ -1794,11 +1952,13 @@ items:
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1819,23 +1979,28 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 969
-  summary: Get a list of all the trivia associated with the descendant nodes and tokens.
+  summary: >+
+    Get a list of all the trivia associated with the descendant nodes and tokens.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTrivia> DescendantTrivia(TextSpan span, Func<SyntaxNode, bool> descendIntoChildren = null, bool descendIntoTrivia = false)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -1856,7 +2021,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 981
-  summary: Determines whether this node or any sub node, token or trivia has annotations.
+  summary: >+
+    Determines whether this node or any sub node, token or trivia has annotations.
+
   syntax:
     content:
       CSharp: public bool ContainsAnnotations
@@ -1864,6 +2031,7 @@ items:
     - id: ContainsAnnotations
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsAnnotations
@@ -1897,7 +2065,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 989
-  summary: Determines whether this node has any annotations with the specific annotation kind.
+  summary: >+
+    Determines whether this node has any annotations with the specific annotation kind.
+
   syntax:
     content:
       CSharp: public bool HasAnnotations(string annotationKind)
@@ -1905,6 +2075,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1925,7 +2096,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 997
-  summary: Determines whether this node has any annotations with any of the specific annotation kinds.
+  summary: >+
+    Determines whether this node has any annotations with any of the specific annotation kinds.
+
   syntax:
     content:
       CSharp: public bool HasAnnotations(IEnumerable<string> annotationKinds)
@@ -1933,6 +2106,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     return:
@@ -1953,15 +2127,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1005
-  summary: Determines whether this node has the specific annotation.
+  summary: >+
+    Determines whether this node has the specific annotation.
+
   syntax:
     content:
       CSharp: public bool HasAnnotation(SyntaxAnnotation annotation)
     parameters:
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotations(System.String)
@@ -1980,7 +2157,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1013
-  summary: Gets all the annotations with the specified annotation kind.
+  summary: >+
+    Gets all the annotations with the specified annotation kind.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(string annotationKind)
@@ -1988,6 +2167,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2008,7 +2188,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1021
-  summary: Gets all the annotations with the specified annotation kinds.
+  summary: >+
+    Gets all the annotations with the specified annotation kinds.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(IEnumerable<string> annotationKinds)
@@ -2016,6 +2198,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
     return:
@@ -2036,7 +2219,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1034
-  summary: Gets all nodes and tokens with an annotation of the specified annotation kind.
+  summary: >+
+    Gets all nodes and tokens with an annotation of the specified annotation kind.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> GetAnnotatedNodesAndTokens(string annotationKind)
@@ -2044,6 +2229,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2064,7 +2250,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1043
-  summary: Gets all nodes and tokens with an annotation of the specified annotation kinds.
+  summary: >+
+    Gets all nodes and tokens with an annotation of the specified annotation kinds.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> GetAnnotatedNodesAndTokens(params string[] annotationKinds)
@@ -2072,6 +2260,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: IEnumerable
@@ -2091,15 +2280,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1052
-  summary: Gets all nodes and tokens with the specified annotation.
+  summary: >+
+    Gets all nodes and tokens with the specified annotation.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNodeOrToken> GetAnnotatedNodesAndTokens(SyntaxAnnotation annotation)
     parameters:
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodes(Microsoft.CodeAnalysis.SyntaxAnnotation)
@@ -2118,15 +2310,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1061
-  summary: Gets all nodes with the specified annotation.
+  summary: >+
+    Gets all nodes with the specified annotation.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> GetAnnotatedNodes(SyntaxAnnotation syntaxAnnotation)
     parameters:
     - id: syntaxAnnotation
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodes(System.String)
@@ -2145,7 +2340,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1071
-  summary: Gets all nodes with the specified annotation kind.
+  summary: >+
+    Gets all nodes with the specified annotation kind.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxNode> GetAnnotatedNodes(string annotationKind)
@@ -2153,6 +2350,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2173,15 +2371,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1079
-  summary: Gets all tokens with the specified annotation.
+  summary: >+
+    Gets all tokens with the specified annotation.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> GetAnnotatedTokens(SyntaxAnnotation syntaxAnnotation)
     parameters:
     - id: syntaxAnnotation
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTokens(System.String)
@@ -2200,7 +2401,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1087
-  summary: Gets all tokens with the specified annotation kind.
+  summary: >+
+    Gets all tokens with the specified annotation kind.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxToken> GetAnnotatedTokens(string annotationKind)
@@ -2208,6 +2411,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2228,7 +2432,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1095
-  summary: Gets all trivia with an annotation of the specified annotation kind.
+  summary: >+
+    Gets all trivia with an annotation of the specified annotation kind.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTrivia> GetAnnotatedTrivia(string annotationKind)
@@ -2236,6 +2442,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -2256,7 +2463,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1104
-  summary: Gets all trivia with an annotation of the specified annotation kinds.
+  summary: >+
+    Gets all trivia with an annotation of the specified annotation kinds.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTrivia> GetAnnotatedTrivia(params string[] annotationKinds)
@@ -2264,6 +2473,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: IEnumerable
@@ -2283,15 +2493,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1113
-  summary: Gets all trivia with the specified annotation.
+  summary: >+
+    Gets all trivia with the specified annotation.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTrivia> GetAnnotatedTrivia(SyntaxAnnotation annotation)
     parameters:
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.CopyAnnotationsTo``1(``0)
@@ -2310,7 +2523,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1141
-  summary: Copies all SyntaxAnnotations, if any, from this SyntaxNode instance and attaches them to a new instance based on .
+  summary: >+
+    Copies all SyntaxAnnotations, if any, from this SyntaxNode instance and attaches them to a new instance based on .
+
   syntax:
     content:
       CSharp: 'public T CopyAnnotationsTo<T>(T node)where T : SyntaxNode'
@@ -2318,7 +2533,8 @@ items:
     - id: node
       type:
         id: T
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        name: T
+        href: T
     return:
       id: T
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
@@ -2337,19 +2553,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
     startLine: 1167
-  summary: Determines if two nodes are the same, disregarding trivia differences.
+  summary: >+
+    Determines if two nodes are the same, disregarding trivia differences.
+
   syntax:
     content:
       CSharp: public bool IsEquivalentTo(SyntaxNode node, bool topLevel = false)
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The node to compare against.
     - id: topLevel
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -2385,11 +2605,13 @@ items:
     - id: stream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

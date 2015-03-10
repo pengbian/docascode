@@ -14,23 +14,25 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Compilation\Compilation.cs
   startLine: 32
-summary: >-
+summary: >+
   The compilation object is an immutable representation of a single invocation of the
 
-      compiler. Although immutable, a compilation is also on-demand, and will realize and cache
+  compiler. Although immutable, a compilation is also on-demand, and will realize and cache
 
-      data as necessary. A compilation can produce a new compilation from existing compilation
+  data as necessary. A compilation can produce a new compilation from existing compilation
 
-      with the application of small deltas. In many cases, it is more efficient than creating a
+  with the application of small deltas. In many cases, it is more efficient than creating a
 
-      new compilation from scratch, as the new compilation can reuse information from the old
+  new compilation from scratch, as the new compilation can reuse information from the old
 
-      compilation.
+  compilation.
+
 syntax:
   content:
     CSharp: public abstract partial class Compilation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -50,14 +52,15 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 43
-  summary: >-
+  summary: >+
     Returns true if this is a case sensitive compilation, false otherwise.  Case sensitivity
 
-        affects compilation features such as name lookup as well as choosing what names to emit
+    affects compilation features such as name lookup as well as choosing what names to emit
 
-        when there are multiple different choices (for example between a virtual method and an
+    when there are multiple different choices (for example between a virtual method and an
 
-        override).
+    override).
+
   syntax:
     content:
       CSharp: public abstract bool IsCaseSensitive
@@ -65,6 +68,7 @@ items:
     - id: IsCaseSensitive
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_IsCaseSensitive
@@ -98,7 +102,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 88
-  summary: Gets the source language ("C#" or "Visual Basic").
+  summary: >+
+    Gets the source language ("C#" or "Visual Basic").
+
   syntax:
     content:
       CSharp: public abstract string Language
@@ -106,6 +112,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_Language
@@ -139,7 +146,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 146
-  summary: Creates a new compilation equivalent to this one with different symbol instances.
+  summary: >+
+    Creates a new compilation equivalent to this one with different symbol instances.
+
   syntax:
     content:
       CSharp: public Compilation Clone()
@@ -162,15 +171,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 161
-  summary: Gets a new [Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel) for the specified syntax tree.
+  summary: >+
+    Gets a new [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) for the specified syntax tree.
+
   syntax:
     content:
       CSharp: public SemanticModel GetSemanticModel(SyntaxTree syntaxTree)
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
     return:
       id: SemanticModel
 - id: Microsoft.CodeAnalysis.Compilation.CreateErrorTypeSymbol(Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Int32)
@@ -189,26 +201,30 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 172
-  summary: >-
+  summary: >+
     Returns a new INamedTypeSymbol representing an error type with the given name and arity
 
-        in the given optional container.
+    in the given optional container.
+
   syntax:
     content:
       CSharp: public abstract INamedTypeSymbol CreateErrorTypeSymbol(INamespaceOrTypeSymbol container, string name, int arity);
     parameters:
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: arity
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -229,7 +245,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 189
-  summary: Simple assembly name, or null if not specified.
+  summary: >+
+    Simple assembly name, or null if not specified.
+
   syntax:
     content:
       CSharp: public string AssemblyName
@@ -237,6 +255,7 @@ items:
     - id: AssemblyName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_AssemblyName
@@ -270,7 +289,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 219
-  summary: Creates a compilation with the specified assembly name.
+  summary: >+
+    Creates a compilation with the specified assembly name.
+
   syntax:
     content:
       CSharp: public Compilation WithAssemblyName(string assemblyName)
@@ -278,6 +299,7 @@ items:
     - id: assemblyName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The new assembly name.
@@ -300,15 +322,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 233
-  summary: Gets the options the compilation was created with.
+  summary: >+
+    Gets the options the compilation was created with.
+
   syntax:
     content:
       CSharp: public CompilationOptions Options
     parameters:
     - id: Options
       type:
-        id: CompilationOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
 - id: Microsoft.CodeAnalysis.Compilation.get_Options
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -340,15 +365,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 242
-  summary: Creates a new compilation with the specified compilation options.
+  summary: >+
+    Creates a new compilation with the specified compilation options.
+
   syntax:
     content:
       CSharp: public Compilation WithOptions(CompilationOptions options)
     parameters:
     - id: options
       type:
-        id: CompilationOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+        id: Microsoft.CodeAnalysis.CompilationOptions
+        name: CompilationOptions
+        href: api\Microsoft.CodeAnalysis.CompilationOptions
       description: The new options.
     return:
       id: Compilation
@@ -369,7 +397,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 344
-  summary: Returns the type of the submission return value.
+  summary: >+
+    Returns the type of the submission return value.
+
   syntax:
     content:
       CSharp: public ITypeSymbol GetSubmissionResultType(out bool hasValue)
@@ -377,6 +407,7 @@ items:
     - id: hasValue
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -385,7 +416,7 @@ items:
             ends with an expression statement.
     return:
       id: ITypeSymbol
-      description: "Null if the type of the last expression is unknown, \r\n    @T:System.Void- if the type of the last expression statement is\r\n    void or if the submission is not an expression statement, or\r\n    otherwise the type of the last expression."
+      description: "Null if the type of the last expression is unknown, \r\n    [System.Void](#) if the type of the last expression statement is\r\n    void or if the submission is not an expression statement, or\r\n    otherwise the type of the last expression."
 - id: Microsoft.CodeAnalysis.Compilation.PreviousSubmission
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -402,20 +433,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 356
-  summary: >-
+  summary: >+
     The previous submission compilation, or null if either this
 
-        compilation doesn't represent a submission or the submission is the
+    compilation doesn't represent a submission or the submission is the
 
-        first submission in a submission chain.
+    first submission in a submission chain.
+
   syntax:
     content:
       CSharp: public Compilation PreviousSubmission
     parameters:
     - id: PreviousSubmission
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.Compilation.get_PreviousSubmission
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -447,18 +480,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 364
-  summary: >-
+  summary: >+
     Returns a new compilation with the given compilation set as the
 
-        previous submission.
+    previous submission.
+
   syntax:
     content:
       CSharp: public Compilation WithPreviousSubmission(Compilation newPreviousSubmission)
     parameters:
     - id: newPreviousSubmission
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
     return:
       id: Compilation
 - id: Microsoft.CodeAnalysis.Compilation.SyntaxTrees
@@ -477,7 +512,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 378
-  summary: Gets the syntax trees (parsed from source code) that this compilation was created with.
+  summary: >+
+    Gets the syntax trees (parsed from source code) that this compilation was created with.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxTree> SyntaxTrees
@@ -485,6 +522,7 @@ items:
     - id: SyntaxTrees
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_SyntaxTrees
@@ -518,7 +556,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 386
-  summary: Creates a new compilation with additional syntax trees.
+  summary: >+
+    Creates a new compilation with additional syntax trees.
+
   syntax:
     content:
       CSharp: public Compilation AddSyntaxTrees(params SyntaxTree[] trees)
@@ -526,6 +566,7 @@ items:
     - id: trees
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: The new syntax trees.
     return:
@@ -547,7 +588,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 396
-  summary: Creates a new compilation with additional syntax trees.
+  summary: >+
+    Creates a new compilation with additional syntax trees.
+
   syntax:
     content:
       CSharp: public Compilation AddSyntaxTrees(IEnumerable<SyntaxTree> trees)
@@ -555,6 +598,7 @@ items:
     - id: trees
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
         href: System.Runtime
         isExternal: true
       description: The new syntax trees.
@@ -577,10 +621,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 409
-  summary: >-
+  summary: >+
     Creates a new compilation without the specified syntax trees. Preserves metadata info for use with trees
 
-        added later.
+    added later.
+
   syntax:
     content:
       CSharp: public Compilation RemoveSyntaxTrees(params SyntaxTree[] trees)
@@ -588,6 +633,7 @@ items:
     - id: trees
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: The new syntax trees.
     return:
@@ -609,10 +655,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 420
-  summary: >-
+  summary: >+
     Creates a new compilation without the specified syntax trees. Preserves metadata info for use with trees
 
-        added later.
+    added later.
+
   syntax:
     content:
       CSharp: public Compilation RemoveSyntaxTrees(IEnumerable<SyntaxTree> trees)
@@ -620,6 +667,7 @@ items:
     - id: trees
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree}
         href: System.Runtime
         isExternal: true
       description: The new syntax trees.
@@ -642,10 +690,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 431
-  summary: >-
+  summary: >+
     Creates a new compilation without any syntax trees. Preserves metadata info for use with
 
-        trees added later.
+    trees added later.
+
   syntax:
     content:
       CSharp: public Compilation RemoveAllSyntaxTrees()
@@ -668,23 +717,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 445
-  summary: >-
+  summary: >+
     Creates a new compilation with an old syntax tree replaced with a new syntax tree.
 
-        Reuses metadata from old compilation object.
+    Reuses metadata from old compilation object.
+
   syntax:
     content:
       CSharp: public Compilation ReplaceSyntaxTree(SyntaxTree oldTree, SyntaxTree newTree)
     parameters:
     - id: oldTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
       description: The old tree.
     - id: newTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
       description: The new tree.
     return:
       id: Compilation
@@ -705,15 +757,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 456
-  summary: Returns true if this compilation contains the specified tree. False otherwise.
+  summary: >+
+    Returns true if this compilation contains the specified tree. False otherwise.
+
   syntax:
     content:
       CSharp: public bool ContainsSyntaxTree(SyntaxTree syntaxTree)
     parameters:
     - id: syntaxTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
       description: A syntax tree.
     return:
       id: Boolean
@@ -733,7 +788,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 505
-  summary: Metadata references passed to the compilation constructor.
+  summary: >+
+    Metadata references passed to the compilation constructor.
+
   syntax:
     content:
       CSharp: public ImmutableArray<MetadataReference> ExternalReferences
@@ -741,6 +798,7 @@ items:
     - id: ExternalReferences
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_ExternalReferences
@@ -774,7 +832,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 510
-  summary: 'Unique metadata references specified via #r directive in the source code of this compilation.'
+  summary: >+
+    Unique metadata references specified via #r directive in the source code of this compilation.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<MetadataReference> DirectiveReferences
@@ -782,6 +842,7 @@ items:
     - id: DirectiveReferences
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_DirectiveReferences
@@ -815,10 +876,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 526
-  summary: >-
+  summary: >+
     All metadata references -- references passed to the compilation
 
-        constructor as well as references specified via #r directives.
+    constructor as well as references specified via #r directives.
+
   syntax:
     content:
       CSharp: public IEnumerable<MetadataReference> References
@@ -826,6 +888,7 @@ items:
     - id: References
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_References
@@ -859,7 +922,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 552
-  summary: Creates a metadata reference for this compilation.
+  summary: >+
+    Creates a metadata reference for this compilation.
+
   syntax:
     content:
       CSharp: public abstract CompilationReference ToMetadataReference(ImmutableArray<string> aliases = default (ImmutableArray<string>), bool embedInteropTypes = false);
@@ -867,12 +932,14 @@ items:
     - id: aliases
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
+        name: System.Collections.Immutable.ImmutableArray{System.String}
         href: System.Collections.Immutable
         isExternal: true
       description: Optional aliases that can be used to refer to the compilation root namespace via extern alias directive.
     - id: embedInteropTypes
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: >-
@@ -897,7 +964,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 561
-  summary: Creates a new compilation with the specified references.
+  summary: >+
+    Creates a new compilation with the specified references.
+
   syntax:
     content:
       CSharp: public Compilation WithReferences(IEnumerable<MetadataReference> newReferences)
@@ -905,6 +974,7 @@ items:
     - id: newReferences
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
       description: The new references.
@@ -927,7 +997,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 571
-  summary: Creates a new compilation with the specified references.
+  summary: >+
+    Creates a new compilation with the specified references.
+
   syntax:
     content:
       CSharp: public Compilation WithReferences(params MetadataReference[] newReferences)
@@ -935,6 +1007,7 @@ items:
     - id: newReferences
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: The new references.
     return:
@@ -956,7 +1029,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 586
-  summary: Creates a new compilation with additional metadata references.
+  summary: >+
+    Creates a new compilation with additional metadata references.
+
   syntax:
     content:
       CSharp: public Compilation AddReferences(params MetadataReference[] references)
@@ -964,6 +1039,7 @@ items:
     - id: references
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: The new references.
     return:
@@ -985,7 +1061,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 596
-  summary: Creates a new compilation with additional metadata references.
+  summary: >+
+    Creates a new compilation with additional metadata references.
+
   syntax:
     content:
       CSharp: public Compilation AddReferences(IEnumerable<MetadataReference> references)
@@ -993,6 +1071,7 @@ items:
     - id: references
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
       description: The new references.
@@ -1015,7 +1094,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 616
-  summary: Creates a new compilation without the specified metadata references.
+  summary: >+
+    Creates a new compilation without the specified metadata references.
+
   syntax:
     content:
       CSharp: public Compilation RemoveReferences(params MetadataReference[] references)
@@ -1023,6 +1104,7 @@ items:
     - id: references
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: The new references.
     return:
@@ -1044,7 +1126,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 626
-  summary: Creates a new compilation without the specified metadata references.
+  summary: >+
+    Creates a new compilation without the specified metadata references.
+
   syntax:
     content:
       CSharp: public Compilation RemoveReferences(IEnumerable<MetadataReference> references)
@@ -1052,6 +1136,7 @@ items:
     - id: references
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference}
         href: System.Runtime
         isExternal: true
       description: The new references.
@@ -1074,7 +1159,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 657
-  summary: Creates a new compilation without any metadata references.
+  summary: >+
+    Creates a new compilation without any metadata references.
+
   syntax:
     content:
       CSharp: public Compilation RemoveAllReferences()
@@ -1097,23 +1184,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 669
-  summary: >-
+  summary: >+
     Creates a new compilation with an old metadata reference replaced with a new metadata
 
-        reference.
+    reference.
+
   syntax:
     content:
       CSharp: public Compilation ReplaceReference(MetadataReference oldReference, MetadataReference newReference)
     parameters:
     - id: oldReference
       type:
-        id: MetadataReference
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
       description: The old reference.
     - id: newReference
       type:
-        id: MetadataReference
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
       description: The new reference.
     return:
       id: Compilation
@@ -1134,18 +1224,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 692
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](api\Microsoft.CodeAnalysis.IAssemblySymbol) or [Microsoft.CodeAnalysis.IModuleSymbol](api\Microsoft.CodeAnalysis.IModuleSymbol) for a metadata reference used to create this
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](#/api\Microsoft.CodeAnalysis.IAssemblySymbol) or [Microsoft.CodeAnalysis.IModuleSymbol](#/api\Microsoft.CodeAnalysis.IModuleSymbol) for a metadata reference used to create this
 
-        compilation.
+    compilation.
+
   syntax:
     content:
       CSharp: public ISymbol GetAssemblyOrModuleSymbol(MetadataReference reference)
     parameters:
     - id: reference
       type:
-        id: MetadataReference
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\MetadataReference.cs
+        id: Microsoft.CodeAnalysis.MetadataReference
+        name: MetadataReference
+        href: api\Microsoft.CodeAnalysis.MetadataReference
       description: The target reference.
     return:
       id: ISymbol
@@ -1166,15 +1258,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 703
-  summary: Gets the [Microsoft.CodeAnalysis.MetadataReference](api\Microsoft.CodeAnalysis.MetadataReference) that corresponds to the assembly symbol.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.MetadataReference](#/api\Microsoft.CodeAnalysis.MetadataReference) that corresponds to the assembly symbol.
+
   syntax:
     content:
       CSharp: public MetadataReference GetMetadataReference(IAssemblySymbol assemblySymbol)
     parameters:
     - id: assemblySymbol
       type:
-        id: IAssemblySymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+        id: Microsoft.CodeAnalysis.IAssemblySymbol
+        name: IAssemblySymbol
+        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
       description: The target symbol.
     return:
       id: MetadataReference
@@ -1194,7 +1289,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 717
-  summary: Assembly identities of all assemblies directly referenced by this compilation.
+  summary: >+
+    Assembly identities of all assemblies directly referenced by this compilation.
+
   syntax:
     content:
       CSharp: public abstract IEnumerable<AssemblyIdentity> ReferencedAssemblyNames
@@ -1202,6 +1299,7 @@ items:
     - id: ReferencedAssemblyNames
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.AssemblyIdentity}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.AssemblyIdentity}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Compilation.get_ReferencedAssemblyNames
@@ -1235,15 +1333,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 726
-  summary: The [Microsoft.CodeAnalysis.IAssemblySymbol](api\Microsoft.CodeAnalysis.IAssemblySymbol) that represents the assembly being created.
+  summary: >+
+    The [Microsoft.CodeAnalysis.IAssemblySymbol](#/api\Microsoft.CodeAnalysis.IAssemblySymbol) that represents the assembly being created.
+
   syntax:
     content:
       CSharp: public IAssemblySymbol Assembly
     parameters:
     - id: Assembly
       type:
-        id: IAssemblySymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+        id: Microsoft.CodeAnalysis.IAssemblySymbol
+        name: IAssemblySymbol
+        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
 - id: Microsoft.CodeAnalysis.Compilation.get_Assembly
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -1275,18 +1376,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 733
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](api\Microsoft.CodeAnalysis.IModuleSymbol) for the module being created by compiling all of
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](#/api\Microsoft.CodeAnalysis.IModuleSymbol) for the module being created by compiling all of
 
-        the source code.
+    the source code.
+
   syntax:
     content:
       CSharp: public IModuleSymbol SourceModule
     parameters:
     - id: SourceModule
       type:
-        id: IModuleSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
+        id: Microsoft.CodeAnalysis.IModuleSymbol
+        name: IModuleSymbol
+        href: api\Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.Compilation.get_SourceModule
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -1318,15 +1421,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 740
-  summary: "The root namespace that contains all namespaces and types defined in source code or in \r\n    referenced metadata, merged into a single namespace hierarchy."
+  summary: >+
+    The root namespace that contains all namespaces and types defined in source code or in
+
+    referenced metadata, merged into a single namespace hierarchy.
+
   syntax:
     content:
       CSharp: public INamespaceSymbol GlobalNamespace
     parameters:
     - id: GlobalNamespace
       type:
-        id: INamespaceSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.Compilation.get_GlobalNamespace
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -1358,15 +1466,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 746
-  summary: Gets the corresponding compilation namespace for the specified module or assembly namespace.
+  summary: >+
+    Gets the corresponding compilation namespace for the specified module or assembly namespace.
+
   syntax:
     content:
       CSharp: public INamespaceSymbol GetCompilationNamespace(INamespaceSymbol namespaceSymbol)
     parameters:
     - id: namespaceSymbol
       type:
-        id: INamespaceSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
     return:
       id: INamespaceSymbol
 - id: Microsoft.CodeAnalysis.Compilation.GetEntryPoint(System.Threading.CancellationToken)
@@ -1385,10 +1496,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 759
-  summary: >-
+  summary: >+
     Returns the Main method that will serves as the entry point of the assembly, if it is
 
-        executable (and not a script).
+    executable (and not a script).
+
   syntax:
     content:
       CSharp: public IMethodSymbol GetEntryPoint(CancellationToken cancellationToken)
@@ -1396,6 +1508,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1416,18 +1529,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 770
-  summary: >-
+  summary: >+
     Get the symbol for the predefined type from the Cor Library referenced by this
 
-        compilation.
+    compilation.
+
   syntax:
     content:
       CSharp: public INamedTypeSymbol GetSpecialType(SpecialType specialType)
     parameters:
     - id: specialType
       type:
-        id: SpecialType
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\SpecialType.cs
+        id: Microsoft.CodeAnalysis.SpecialType
+        name: SpecialType
+        href: api\Microsoft.CodeAnalysis.SpecialType
     return:
       id: INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.Compilation.ObjectType
@@ -1446,18 +1561,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 793
-  summary: >-
+  summary: >+
     The INamedTypeSymbol for the .NET System.Object type, which could have a TypeKind of
 
-        Error if there was no COR Library in this Compilation.
+    Error if there was no COR Library in this Compilation.
+
   syntax:
     content:
       CSharp: public INamedTypeSymbol ObjectType
     parameters:
     - id: ObjectType
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.Compilation.get_ObjectType
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -1489,15 +1606,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 799
-  summary: The TypeSymbol for the type 'dynamic' in this Compilation.
+  summary: >+
+    The TypeSymbol for the type 'dynamic' in this Compilation.
+
   syntax:
     content:
       CSharp: public ITypeSymbol DynamicType
     parameters:
     - id: DynamicType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.Compilation.get_DynamicType
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -1529,18 +1649,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 806
-  summary: >-
+  summary: >+
     A symbol representing the implicit Script class. This is null if the class is not
 
-        defined in the compilation.
+    defined in the compilation.
+
   syntax:
     content:
       CSharp: public INamedTypeSymbol ScriptClass
     parameters:
     - id: ScriptClass
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.Compilation.get_ScriptClass
   yaml: api\Microsoft.CodeAnalysis.Compilation.yaml
   href: api\Microsoft.CodeAnalysis.Compilation
@@ -1572,21 +1694,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 813
-  summary: >-
+  summary: >+
     Returns a new ArrayTypeSymbol representing an array type tied to the base types of the
 
-        COR Library in this Compilation.
+    COR Library in this Compilation.
+
   syntax:
     content:
       CSharp: public IArrayTypeSymbol CreateArrayTypeSymbol(ITypeSymbol elementType, int rank = 1)
     parameters:
     - id: elementType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     - id: rank
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -1607,18 +1732,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 824
-  summary: >-
+  summary: >+
     Returns a new PointerTypeSymbol representing a pointer type tied to a type in this
 
-        Compilation.
+    Compilation.
+
   syntax:
     content:
       CSharp: public IPointerTypeSymbol CreatePointerTypeSymbol(ITypeSymbol pointedAtType)
     parameters:
     - id: pointedAtType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: IPointerTypeSymbol
 - id: Microsoft.CodeAnalysis.Compilation.GetTypeByMetadataName(System.String)
@@ -1637,10 +1764,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 839
-  summary: >-
+  summary: >+
     Gets the type within the compilation's assembly and all referenced assemblies (other than
 
-        those that can only be referenced via an extern alias) using its canonical CLR metadata name.
+    those that can only be referenced via an extern alias) using its canonical CLR metadata name.
+
   syntax:
     content:
       CSharp: public INamedTypeSymbol GetTypeByMetadataName(string fullyQualifiedMetadataName)
@@ -1648,6 +1776,7 @@ items:
     - id: fullyQualifiedMetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -1669,7 +1798,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 855
-  summary: Gets the diagnostics produced during the parsing stage.
+  summary: >+
+    Gets the diagnostics produced during the parsing stage.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetParseDiagnostics(CancellationToken cancellationToken = default (CancellationToken));
@@ -1677,6 +1808,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1697,7 +1829,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 860
-  summary: Gets the diagnostics produced during symbol declaration.
+  summary: >+
+    Gets the diagnostics produced during symbol declaration.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetDeclarationDiagnostics(CancellationToken cancellationToken = default (CancellationToken));
@@ -1705,6 +1839,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1725,7 +1860,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 865
-  summary: Gets the diagnostics produced during the analysis of method bodies and field initializers.
+  summary: >+
+    Gets the diagnostics produced during the analysis of method bodies and field initializers.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetMethodBodyDiagnostics(CancellationToken cancellationToken = default (CancellationToken));
@@ -1733,6 +1870,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1753,12 +1891,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 872
-  summary: >-
+  summary: >+
     Gets all the diagnostics for the compilation, including syntax, declaration, and
 
-        binding. Does not include any diagnostics that might be produced during emit, see
+    binding. Does not include any diagnostics that might be produced during emit, see
 
-        [Microsoft.CodeAnalysis.Emit.EmitResult](api\Microsoft.CodeAnalysis.Emit.EmitResult).
+    [Microsoft.CodeAnalysis.Emit.EmitResult](#/api\Microsoft.CodeAnalysis.Emit.EmitResult).
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetDiagnostics(CancellationToken cancellationToken = default (CancellationToken));
@@ -1766,6 +1905,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1786,7 +1926,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 895
-  summary: Create a stream filled with default win32 resources.
+  summary: >+
+    Create a stream filled with default win32 resources.
+
   syntax:
     content:
       CSharp: public Stream CreateDefaultWin32Resources(bool versionResource, bool noManifest, Stream manifestContents, Stream iconInIcoFormat)
@@ -1794,21 +1936,25 @@ items:
     - id: versionResource
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: noManifest
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: manifestContents
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: iconInIcoFormat
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     return:
@@ -1829,7 +1975,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 1320
-  summary: Emit the IL for the compiled source code into the specified stream.
+  summary: >+
+    Emit the IL for the compiled source code into the specified stream.
+
   syntax:
     content:
       CSharp: public EmitResult Emit(Stream peStream, Stream pdbStream = null, Stream xmlDocumentationStream = null, Stream win32Resources = null, IEnumerable<ResourceDescription> manifestResources = null, EmitOptions options = null, CancellationToken cancellationToken = default (CancellationToken))
@@ -1837,41 +1985,48 @@ items:
     - id: peStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream to which the compilation will be written.
     - id: pdbStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream to which the compilation's debug info will be written.  Null to forego PDB generation.
     - id: xmlDocumentationStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: Stream to which the compilation's XML documentation will be written.  Null to forego XML generation.
     - id: win32Resources
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
       description: "Stream from which the compilation's Win32 resources will be read (in RES format).  \r\n    Null to indicate that there are none. The RES format begins with a null resource entry."
     - id: manifestResources
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription}
         href: System.Runtime
         isExternal: true
       description: List of the compilation's managed resources.  Null to indicate that there are none.
     - id: options
       type:
-        id: EmitOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\EmitOptions.cs
+        id: Microsoft.CodeAnalysis.Emit.EmitOptions
+        name: EmitOptions
+        href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
       description: Emit options.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: To cancel the emit process.
@@ -1893,52 +2048,60 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 1362
-  summary: >-
+  summary: >+
     Emit the differences between the compilation and the previous generation
 
-        for Edit and Continue. The differences are expressed as added and changed
+    for Edit and Continue. The differences are expressed as added and changed
 
-        symbols, and are emitted as metadata, IL, and PDB deltas. A representation
+    symbols, and are emitted as metadata, IL, and PDB deltas. A representation
 
-        of the current compilation is returned as an EmitBaseline for use in a
+    of the current compilation is returned as an EmitBaseline for use in a
 
-        subsequent Edit and Continue.
+    subsequent Edit and Continue.
+
   syntax:
     content:
       CSharp: public EmitDifferenceResult EmitDifference(EmitBaseline baseline, IEnumerable<SemanticEdit> edits, Stream metadataStream, Stream ilStream, Stream pdbStream, ICollection<MethodDefinitionHandle> updatedMethods, CancellationToken cancellationToken = default (CancellationToken))
     parameters:
     - id: baseline
       type:
-        id: EmitBaseline
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\EditAndContinue\EmitBaseline.cs
+        id: Microsoft.CodeAnalysis.Emit.EmitBaseline
+        name: EmitBaseline
+        href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
     - id: edits
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
         href: System.Runtime
         isExternal: true
     - id: metadataStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: ilStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: pdbStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: updatedMethods
       type:
         id: System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
+        name: System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -1959,57 +2122,66 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 1381
-  summary: >-
+  summary: >+
     Emit the differences between the compilation and the previous generation
 
-        for Edit and Continue. The differences are expressed as added and changed
+    for Edit and Continue. The differences are expressed as added and changed
 
-        symbols, and are emitted as metadata, IL, and PDB deltas. A representation
+    symbols, and are emitted as metadata, IL, and PDB deltas. A representation
 
-        of the current compilation is returned as an EmitBaseline for use in a
+    of the current compilation is returned as an EmitBaseline for use in a
 
-        subsequent Edit and Continue.
+    subsequent Edit and Continue.
+
   syntax:
     content:
       CSharp: public EmitDifferenceResult EmitDifference(EmitBaseline baseline, IEnumerable<SemanticEdit> edits, Func<ISymbol, bool> isAddedSymbol, Stream metadataStream, Stream ilStream, Stream pdbStream, ICollection<MethodDefinitionHandle> updatedMethods, CancellationToken cancellationToken = default (CancellationToken))
     parameters:
     - id: baseline
       type:
-        id: EmitBaseline
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\EditAndContinue\EmitBaseline.cs
+        id: Microsoft.CodeAnalysis.Emit.EmitBaseline
+        name: EmitBaseline
+        href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
     - id: edits
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit}
         href: System.Runtime
         isExternal: true
     - id: isAddedSymbol
       type:
         id: System.Func{Microsoft.CodeAnalysis.ISymbol,System.Boolean}
+        name: System.Func{Microsoft.CodeAnalysis.ISymbol,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: metadataStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: ilStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: pdbStream
       type:
         id: System.IO.Stream
+        name: System.IO.Stream
         href: System.IO
         isExternal: true
     - id: updatedMethods
       type:
         id: System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
+        name: System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -2030,7 +2202,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 1839
-  summary: Return true if there is a source declaration symbol name that meets given predicate.
+  summary: >+
+    Return true if there is a source declaration symbol name that meets given predicate.
+
   syntax:
     content:
       CSharp: public abstract bool ContainsSymbolsWithName(Func<string, bool> predicate, SymbolFilter filter = SymbolFilter.TypeAndMember, CancellationToken cancellationToken = default (CancellationToken));
@@ -2038,15 +2212,18 @@ items:
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
+        name: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: api\Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -2067,7 +2244,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\Compilation.cs
     startLine: 1844
-  summary: Return source declaration symbols whose name meets given predicate.
+  summary: >+
+    Return source declaration symbols whose name meets given predicate.
+
   syntax:
     content:
       CSharp: public abstract IEnumerable<ISymbol> GetSymbolsWithName(Func<string, bool> predicate, SymbolFilter filter = SymbolFilter.TypeAndMember, CancellationToken cancellationToken = default (CancellationToken));
@@ -2075,15 +2254,18 @@ items:
     - id: predicate
       type:
         id: System.Func{System.String,System.Boolean}
+        name: System.Func{System.String,System.Boolean}
         href: System.Runtime
         isExternal: true
     - id: filter
       type:
-        id: SymbolFilter
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SymbolFilter.cs
+        id: Microsoft.CodeAnalysis.SymbolFilter
+        name: SymbolFilter
+        href: api\Microsoft.CodeAnalysis.SymbolFilter
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:

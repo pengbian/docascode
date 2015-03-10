@@ -14,14 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
   startLine: 429
-summary: >-
+summary: >+
   Context for a code block start action.
 
-      A code block start action can use a [Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1](api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1) to register actions to be executed
+  A code block start action can use a [Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1](#/api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1) to register actions to be executed
 
-      at any of:
+  at any of:
 
-      completion of semantic analysis of a method body or an expression appearing outside a method body, orcompletion of semantic analysis of a syntax node.
+  completion of semantic analysis of a method body or an expression appearing outside a method body, orcompletion of semantic analysis of a syntax node.
+
 syntax:
   content:
     CSharp: >-
@@ -30,6 +31,7 @@ syntax:
           where TLanguageKindEnum : struct
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -49,15 +51,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 440
-  summary: Method body or expression subjext to analysis.
+  summary: >+
+    Method body or expression subjext to analysis.
+
   syntax:
     content:
       CSharp: public SyntaxNode CodeBlock
     parameters:
     - id: CodeBlock
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
@@ -89,15 +94,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 445
-  summary: '[Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol) for which the code block provides a definition or value.'
+  summary: >+
+    [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for which the code block provides a definition or value.
+
   syntax:
     content:
       CSharp: public ISymbol OwningSymbol
     parameters:
     - id: OwningSymbol
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
@@ -129,15 +137,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 450
-  summary: '[Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel) that can provide semantic information about the [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)s in the code block.'
+  summary: >+
+    [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) that can provide semantic information about the [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)s in the code block.
+
   syntax:
     content:
       CSharp: public SemanticModel SemanticModel
     parameters:
     - id: SemanticModel
       type:
-        id: SemanticModel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
@@ -169,15 +180,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 455
-  summary: Options specified for the analysis.
+  summary: >+
+    Options specified for the analysis.
+
   syntax:
     content:
       CSharp: public AnalyzerOptions Options
     parameters:
     - id: Options
       type:
-        id: AnalyzerOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        name: AnalyzerOptions
+        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
@@ -209,7 +223,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 460
-  summary: Token to check for requested cancellation of the analysis.
+  summary: >+
+    Token to check for requested cancellation of the analysis.
+
   syntax:
     content:
       CSharp: public CancellationToken CancellationToken
@@ -217,6 +233,7 @@ items:
     - id: CancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
@@ -250,10 +267,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 476
-  summary: >-
+  summary: >+
     Register an action to be executed at the end of semantic analysis of a method body or an expression appearing outside a method body.
 
-        A code block end action reports [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)s about code blocks.
+    A code block end action reports [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about code blocks.
+
   syntax:
     content:
       CSharp: public abstract void RegisterCodeBlockEndAction(Action<CodeBlockEndAnalysisContext> action);
@@ -261,6 +279,7 @@ items:
     - id: action
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
+        name: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
         href: System.Runtime
         isExternal: true
       description: Action to be executed at the end of semantic analysis of a code block.
@@ -282,12 +301,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 485
-  summary: >-
-    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
+  summary: >+
+    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
 
-        A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
+    A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
 
-        state information to be used by other syntax node actions or code block end actions.
+    state information to be used by other syntax node actions or code block end actions.
+
   syntax:
     content:
       CSharp: public void RegisterSyntaxNodeAction(Action<SyntaxNodeAnalysisContext> action, params TLanguageKindEnum[] syntaxKinds)
@@ -295,14 +315,16 @@ items:
     - id: action
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+        name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         href: System.Runtime
         isExternal: true
-      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode).
+      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
-      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
+      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
@@ -321,12 +343,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 497
-  summary: >-
-    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
+  summary: >+
+    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
 
-        A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
+    A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
 
-        state information to be used by other syntax node actions or code block end actions.
+    state information to be used by other syntax node actions or code block end actions.
+
   syntax:
     content:
       CSharp: public abstract void RegisterSyntaxNodeAction(Action<SyntaxNodeAnalysisContext> action, ImmutableArray<TLanguageKindEnum> syntaxKinds);
@@ -334,14 +357,16 @@ items:
     - id: action
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+        name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         href: System.Runtime
         isExternal: true
-      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode).
+      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
         id: System.Collections.Immutable.ImmutableArray{`0}
+        name: System.Collections.Immutable.ImmutableArray{`0}
         href: System.Collections.Immutable
         isExternal: true
-      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
+      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:
       id: Void

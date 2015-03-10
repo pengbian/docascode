@@ -14,12 +14,21 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
   startLine: 14
-summary: "A SynatxAnnotation is used to annotate syntax elements with additional information. \r\n    \r\n    Since syntax elements are immutable, annotating them requires creating new instances of them\r\n    with the annotations attached."
+summary: >+
+  A SynatxAnnotation is used to annotate syntax elements with additional information.
+
+
+
+  Since syntax elements are immutable, annotating them requires creating new instances of them
+
+  with the annotations attached.
+
 syntax:
   content:
     CSharp: public sealed class SyntaxAnnotation
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,7 +48,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
     startLine: 20
-  summary: A predefined syntax annotation that indicates whether the syntax element has elastic trivia.
+  summary: >+
+    A predefined syntax annotation that indicates whether the syntax element has elastic trivia.
+
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.Kind
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
@@ -63,6 +74,7 @@ items:
     - id: Kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Kind
@@ -103,6 +115,7 @@ items:
     - id: Data
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Data
@@ -163,6 +176,7 @@ items:
     - id: kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.#ctor(System.String,System.String)
@@ -188,11 +202,13 @@ items:
     - id: kind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: data
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.Equals(Microsoft.CodeAnalysis.SyntaxAnnotation)
@@ -217,8 +233,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.op_Equality(Microsoft.CodeAnalysis.SyntaxAnnotation,Microsoft.CodeAnalysis.SyntaxAnnotation)
@@ -274,6 +291,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

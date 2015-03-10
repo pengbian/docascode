@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\ResourceDescription.cs
   startLine: 14
-summary: Representation of a resource whose contents are to be embedded in the output assembly.
+summary: >+
+  Representation of a resource whose contents are to be embedded in the output assembly.
+
 syntax:
   content:
     CSharp: public sealed class ResourceDescription
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,7 +42,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\ResourceDescription.cs
     startLine: 33
-  summary: Creates a representation of a resource whose contents are to be embedded in the output assembly.
+  summary: >+
+    Creates a representation of a resource whose contents are to be embedded in the output assembly.
+
   syntax:
     content:
       CSharp: 'public ResourceDescription(string resourceName, Func<Stream> dataProvider, bool isPublic): this (resourceName, null, dataProvider, isPublic, isEmbedded: true, checkArgs: true)'
@@ -47,12 +52,14 @@ items:
     - id: resourceName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Resource name.
     - id: dataProvider
       type:
         id: System.Func{System.IO.Stream}
+        name: System.Func{System.IO.Stream}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -62,6 +69,7 @@ items:
     - id: isPublic
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the resource is public.
@@ -81,7 +89,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\ResourceDescription.cs
     startLine: 50
-  summary: Creates a representation of a resource whose file name will be recorded in the assembly.
+  summary: >+
+    Creates a representation of a resource whose file name will be recorded in the assembly.
+
   syntax:
     content:
       CSharp: 'public ResourceDescription(string resourceName, string fileName, Func<Stream> dataProvider, bool isPublic): this (resourceName, fileName, dataProvider, isPublic, isEmbedded: false, checkArgs: true)'
@@ -89,18 +99,21 @@ items:
     - id: resourceName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Resource name.
     - id: fileName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: File name with an extension to be stored in metadata.
     - id: dataProvider
       type:
         id: System.Func{System.IO.Stream}
+        name: System.Func{System.IO.Stream}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -110,6 +123,7 @@ items:
     - id: isPublic
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: True if the resource is public.

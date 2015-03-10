@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
   startLine: 10
-summary: Represents a module within an assembly. Every assembly contains one or more modules.
+summary: >+
+  Represents a module within an assembly. Every assembly contains one or more modules.
+
 syntax:
   content:
     CSharp: public interface IModuleSymbol
@@ -35,18 +37,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
     startLine: 16
-  summary: >-
+  summary: >+
     Returns a NamespaceSymbol representing the global (root) namespace, with
 
-        module extent, that can be used to browse all of the symbols defined in this module.
+    module extent, that can be used to browse all of the symbols defined in this module.
+
   syntax:
     content:
       CSharp: INamespaceSymbol GlobalNamespace
     parameters:
     - id: GlobalNamespace
       type:
-        id: INamespaceSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_GlobalNamespace
   yaml: api\Microsoft.CodeAnalysis.IModuleSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IModuleSymbol
@@ -78,15 +82,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
     startLine: 21
-  summary: Given a namespace symbol, returns the corresponding module specific namespace symbol
+  summary: >+
+    Given a namespace symbol, returns the corresponding module specific namespace symbol
+
   syntax:
     content:
       CSharp: INamespaceSymbol GetModuleNamespace(INamespaceSymbol namespaceSymbol);
     parameters:
     - id: namespaceSymbol
       type:
-        id: INamespaceSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
     return:
       id: INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IModuleSymbol.ReferencedAssemblies
@@ -105,7 +112,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
     startLine: 28
-  summary: "Returns an array of assembly identities for assemblies referenced by this module.\r\n    Items at the same position from ReferencedAssemblies and from ReferencedAssemblySymbols \r\n    correspond to each other."
+  summary: >+
+    Returns an array of assembly identities for assemblies referenced by this module.
+
+    Items at the same position from ReferencedAssemblies and from ReferencedAssemblySymbols
+
+    correspond to each other.
+
   syntax:
     content:
       CSharp: ImmutableArray<AssemblyIdentity> ReferencedAssemblies
@@ -113,6 +126,7 @@ items:
     - id: ReferencedAssemblies
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblies
@@ -146,7 +160,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
     startLine: 35
-  summary: "Returns an array of AssemblySymbol objects corresponding to assemblies referenced \r\n    by this module. Items at the same position from ReferencedAssemblies and \r\n    from ReferencedAssemblySymbols correspond to each other."
+  summary: >+
+    Returns an array of AssemblySymbol objects corresponding to assemblies referenced
+
+    by this module. Items at the same position from ReferencedAssemblies and
+
+    from ReferencedAssemblySymbols correspond to each other.
+
   syntax:
     content:
       CSharp: ImmutableArray<IAssemblySymbol> ReferencedAssemblySymbols
@@ -154,6 +174,7 @@ items:
     - id: ReferencedAssemblySymbols
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblySymbols

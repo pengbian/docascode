@@ -19,12 +19,15 @@ syntax:
     CSharp: public enum SemanticEditKind
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 - id: System.Enum
+  name: System.Enum
   href: System.Runtime
   isExternal: true
 items:
@@ -44,7 +47,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\SemanticEdit.cs
     startLine: 12
-  summary: No change.
+  summary: >+
+    No change.
+
   syntax:
     content:
       CSharp: None = 0
@@ -64,7 +69,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\SemanticEdit.cs
     startLine: 17
-  summary: Node value was updated.
+  summary: >+
+    Node value was updated.
+
   syntax:
     content:
       CSharp: Update = 1
@@ -84,7 +91,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\SemanticEdit.cs
     startLine: 22
-  summary: Node was inserted.
+  summary: >+
+    Node was inserted.
+
   syntax:
     content:
       CSharp: Insert = 2
@@ -104,7 +113,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\SemanticEdit.cs
     startLine: 27
-  summary: Node was deleted.
+  summary: >+
+    Node was deleted.
+
   syntax:
     content:
       CSharp: Delete = 3

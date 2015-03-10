@@ -14,18 +14,21 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Text\TextSpan.cs
   startLine: 11
-summary: >-
+summary: >+
   Immutable abstract representation of a span of text.  For example, in an error diagnostic that reports a
 
-      location, it could come from a parsed string, text from a tool editor buffer, etc.
+  location, it could come from a parsed string, text from a tool editor buffer, etc.
+
 syntax:
   content:
     CSharp: public struct TextSpan
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -45,10 +48,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 20
-  summary: >-
+  summary: >+
     Creates a TextSpan instance beginning with the position Start and having the Length
 
-        specified with .
+    specified with .
+
   syntax:
     content:
       CSharp: public TextSpan(int start, int length)
@@ -56,11 +60,13 @@ items:
     - id: start
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: length
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Start
@@ -79,7 +85,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 39
-  summary: Start point of the Span.
+  summary: >+
+    Start point of the Span.
+
   syntax:
     content:
       CSharp: public int Start
@@ -87,6 +95,7 @@ items:
     - id: Start
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Start
@@ -120,7 +129,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 50
-  summary: End of the span.
+  summary: >+
+    End of the span.
+
   syntax:
     content:
       CSharp: public int End
@@ -128,6 +139,7 @@ items:
     - id: End
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_End
@@ -161,7 +173,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 61
-  summary: Length of the span.
+  summary: >+
+    Length of the span.
+
   syntax:
     content:
       CSharp: public int Length
@@ -169,6 +183,7 @@ items:
     - id: Length
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Length
@@ -202,7 +217,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 72
-  summary: Determines whether or not the span is empty.
+  summary: >+
+    Determines whether or not the span is empty.
+
   syntax:
     content:
       CSharp: public bool IsEmpty
@@ -210,6 +227,7 @@ items:
     - id: IsEmpty
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_IsEmpty
@@ -243,7 +261,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 90
-  summary: Determines whether the position lies within the span.
+  summary: >+
+    Determines whether the position lies within the span.
+
   syntax:
     content:
       CSharp: public bool Contains(int position)
@@ -251,6 +271,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The position to check.
@@ -273,15 +294,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 104
-  summary: Determines whether  falls completely within this span.
+  summary: >+
+    Determines whether  falls completely within this span.
+
   syntax:
     content:
       CSharp: public bool Contains(TextSpan span)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Boolean
@@ -302,15 +326,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 120
-  summary: "Determines whether  overlaps this span. Two spans are considered to overlap \r\n    if they have positions in common and neither is empty. Empty spans do not overlap with any \r\n    other span."
+  summary: >+
+    Determines whether  overlaps this span. Two spans are considered to overlap
+
+    if they have positions in common and neither is empty. Empty spans do not overlap with any
+
+    other span.
+
   syntax:
     content:
       CSharp: public bool OverlapsWith(TextSpan span)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Boolean
@@ -331,15 +362,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 137
-  summary: Returns the overlap with the given span, or null if there is no overlap.
+  summary: >+
+    Returns the overlap with the given span, or null if there is no overlap.
+
   syntax:
     content:
       CSharp: public TextSpan? Overlap(TextSpan span)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Nullable
@@ -360,15 +394,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 158
-  summary: "Determines whether  intersects this span. Two spans are considered to \r\n    intersect if they have positions in common or the end of one span \r\n    coincides with the start of the other span."
+  summary: >+
+    Determines whether  intersects this span. Two spans are considered to
+
+    intersect if they have positions in common or the end of one span
+
+    coincides with the start of the other span.
+
   syntax:
     content:
       CSharp: public bool IntersectsWith(TextSpan span)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Boolean
@@ -389,7 +430,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 174
-  summary: "Determines whether  intersects this span. \r\n    A position is considered to intersect if it is between the start and\r\n    end positions (inclusive) of this span."
+  summary: >+
+    Determines whether  intersects this span.
+
+    A position is considered to intersect if it is between the start and
+
+    end positions (inclusive) of this span.
+
   syntax:
     content:
       CSharp: public bool IntersectsWith(int position)
@@ -397,6 +444,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The position to check.
@@ -419,15 +467,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 188
-  summary: Returns the intersection with the given span, or null if there is no intersection.
+  summary: >+
+    Returns the intersection with the given span, or null if there is no intersection.
+
   syntax:
     content:
       CSharp: public TextSpan? Intersection(TextSpan span)
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Nullable
@@ -448,7 +499,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 202
-  summary: Creates a new [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) from  and  positions as opposed to a position and length.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) from  and  positions as opposed to a position and length.
+
   syntax:
     content:
       CSharp: public static TextSpan FromBounds(int start, int end)
@@ -456,11 +509,13 @@ items:
     - id: start
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: end
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     return:
@@ -480,7 +535,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 220
-  summary: Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) are the same.
+  summary: >+
+    Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) are the same.
+
 - id: Microsoft.CodeAnalysis.Text.TextSpan.op_Inequality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextSpan
@@ -496,7 +553,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 228
-  summary: Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) are different.
+  summary: >+
+    Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) are different.
+
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Equals(Microsoft.CodeAnalysis.Text.TextSpan)
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextSpan
@@ -513,15 +572,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 236
-  summary: Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+  summary: >+
+    Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+
   syntax:
     content:
       CSharp: public bool Equals(TextSpan other)
     parameters:
     - id: other
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Equals(System.Object)
@@ -540,7 +602,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 244
-  summary: Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+  summary: >+
+    Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+
   syntax:
     content:
       CSharp: public override bool Equals(object obj)
@@ -548,6 +612,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -568,7 +633,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 252
-  summary: Produces a hash code for [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan).
+  summary: >+
+    Produces a hash code for [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan).
+
   syntax:
     content:
       CSharp: public override int GetHashCode()
@@ -591,7 +658,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 260
-  summary: Provides a string representation for [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan).
+  summary: >+
+    Provides a string representation for [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan).
+
   syntax:
     content:
       CSharp: public override string ToString()
@@ -614,14 +683,17 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextSpan.cs
     startLine: 268
-  summary: Compares current instance of [Microsoft.CodeAnalysis.Text.TextSpan](api\Microsoft.CodeAnalysis.Text.TextSpan) with another.
+  summary: >+
+    Compares current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) with another.
+
   syntax:
     content:
       CSharp: public int CompareTo(TextSpan other)
     parameters:
     - id: other
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Int32

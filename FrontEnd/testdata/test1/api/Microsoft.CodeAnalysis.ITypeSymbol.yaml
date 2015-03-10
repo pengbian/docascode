@@ -34,15 +34,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 11
-  summary: An enumerated value that identifies whether this type is an array, pointer, enum, and so on.
+  summary: >+
+    An enumerated value that identifies whether this type is an array, pointer, enum, and so on.
+
   syntax:
     content:
       CSharp: TypeKind TypeKind
     parameters:
     - id: TypeKind
       type:
-        id: TypeKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\TypeKind.cs
+        id: Microsoft.CodeAnalysis.TypeKind
+        name: TypeKind
+        href: api\Microsoft.CodeAnalysis.TypeKind
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_TypeKind
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -74,20 +77,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 18
-  summary: >-
+  summary: >+
     The declared base type of this type, or null. The object type, interface types,
 
-        and pointer types do not have a base type. The base type of a type parameter
+    and pointer types do not have a base type. The base type of a type parameter
 
-        is its effective base class.
+    is its effective base class.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol BaseType
     parameters:
     - id: BaseType
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_BaseType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -119,12 +124,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 25
-  summary: >-
+  summary: >+
     Gets the set of interfaces that this type directly implements. This set does not include
 
-        interfaces that are base interfaces of directly implemented interfaces. This does
+    interfaces that are base interfaces of directly implemented interfaces. This does
 
-        include the interfaces declared as constraints on type parameters.
+    include the interfaces declared as constraints on type parameters.
+
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> Interfaces
@@ -132,6 +138,7 @@ items:
     - id: Interfaces
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_Interfaces
@@ -165,24 +172,25 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 38
-  summary: >-
+  summary: >+
     The list of all interfaces of which this type is a declared subtype, excluding this type
 
-        itself. This includes all declared base interfaces, all declared base interfaces of base
+    itself. This includes all declared base interfaces, all declared base interfaces of base
 
-        types, and all declared base interfaces of those results (recursively). This also is the effective
+    types, and all declared base interfaces of those results (recursively). This also is the effective
 
-        interface set of a type parameter. Each result
+    interface set of a type parameter. Each result
 
-        appears exactly once in the list. This list is topologically sorted by the inheritance
+    appears exactly once in the list. This list is topologically sorted by the inheritance
 
-        relationship: if interface type A extends interface type B, then A precedes B in the
+    relationship: if interface type A extends interface type B, then A precedes B in the
 
-        list. This is not quite the same as "all interfaces of which this type is a proper
+    list. This is not quite the same as "all interfaces of which this type is a proper
 
-        subtype" because it does not take into account variance: AllInterfaces for
+    subtype" because it does not take into account variance: AllInterfaces for
 
-        IEnumerable<string> will not include IEnumerable<object>;
+    IEnumerable<string> will not include IEnumerable<object>;
+
   syntax:
     content:
       CSharp: ImmutableArray<INamedTypeSymbol> AllInterfaces
@@ -190,6 +198,7 @@ items:
     - id: AllInterfaces
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_AllInterfaces
@@ -223,12 +232,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 45
-  summary: >-
+  summary: >+
     True if this type is known to be a reference type. It is never the case that
 
-        [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
+    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
-        parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+
   syntax:
     content:
       CSharp: bool IsReferenceType
@@ -236,6 +246,7 @@ items:
     - id: IsReferenceType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsReferenceType
@@ -269,12 +280,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 52
-  summary: >-
+  summary: >+
     True if this type is known to be a value type. It is never the case that
 
-        [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
+    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
-        parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+
   syntax:
     content:
       CSharp: bool IsValueType
@@ -282,6 +294,7 @@ items:
     - id: IsValueType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsValueType
@@ -315,7 +328,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 57
-  summary: Is this a symbol for an anonymous type (including anonymous VB delegate).
+  summary: >+
+    Is this a symbol for an anonymous type (including anonymous VB delegate).
+
   syntax:
     content:
       CSharp: bool IsAnonymousType
@@ -323,6 +338,7 @@ items:
     - id: IsAnonymousType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsAnonymousType
@@ -356,20 +372,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 64
-  summary: >-
+  summary: >+
     The original definition of this symbol. If this symbol is constructed from another
 
-        symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](api\Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
+    symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](#/api\Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
 
-        source or metadata.
+    source or metadata.
+
   syntax:
     content:
       CSharp: new ITypeSymbol OriginalDefinition
     parameters:
     - id: OriginalDefinition
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -401,15 +419,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 70
-  summary: "An enumerated value that identifies certain 'special' types such as @T:System.Object-. \r\n    Returns [Microsoft.CodeAnalysis.SpecialType.None](api\\Microsoft.CodeAnalysis.SpecialType) if the type is not special."
+  summary: >+
+    An enumerated value that identifies certain 'special' types such as [System.Object](#).
+
+    Returns [Microsoft.CodeAnalysis.SpecialType.None](#/api\Microsoft.CodeAnalysis.SpecialType) if the type is not special.
+
   syntax:
     content:
       CSharp: SpecialType SpecialType
     parameters:
     - id: SpecialType
       type:
-        id: SpecialType
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\SpecialType.cs
+        id: Microsoft.CodeAnalysis.SpecialType
+        name: SpecialType
+        href: api\Microsoft.CodeAnalysis.SpecialType
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_SpecialType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.ITypeSymbol
@@ -441,15 +464,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
     startLine: 82
-  summary: "Returns the corresponding symbol in this type or a base type that implements \r\n    interfaceMember (either implicitly or explicitly), or null if no such symbol exists\r\n    (which might be either because this type doesn't implement the container of\r\n    interfaceMember, or this type doesn't supply a member that successfully implements\r\n    interfaceMember)."
+  summary: >+
+    Returns the corresponding symbol in this type or a base type that implements
+
+    interfaceMember (either implicitly or explicitly), or null if no such symbol exists
+
+    (which might be either because this type doesn't implement the container of
+
+    interfaceMember, or this type doesn't supply a member that successfully implements
+
+    interfaceMember).
+
   syntax:
     content:
       CSharp: ISymbol FindImplementationForInterfaceMember(ISymbol interfaceMember);
     parameters:
     - id: interfaceMember
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: Must be a non-null interface property, method, or event.
     return:
       id: ISymbol

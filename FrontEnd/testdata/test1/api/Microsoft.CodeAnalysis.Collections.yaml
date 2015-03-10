@@ -19,4 +19,6 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SymbolFilter.yaml
   href: api\Microsoft.CodeAnalysis.SymbolFilter
   type: Enum
-  summary: Indicate what kinds of declaration symbols will be included
+  summary: >+
+    Indicate what kinds of declaration symbols will be included
+

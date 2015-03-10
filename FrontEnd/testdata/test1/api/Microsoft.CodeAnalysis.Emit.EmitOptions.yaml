@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
   startLine: 10
-summary: Represents compilation emit options.
+summary: >+
+  Represents compilation emit options.
+
 syntax:
   content:
     CSharp: public sealed class EmitOptions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,7 +42,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 17
-  summary: True to emit an assembly excluding executable code such as method bodies.
+  summary: >+
+    True to emit an assembly excluding executable code such as method bodies.
+
   syntax:
     content:
       CSharp: public bool EmitMetadataOnly
@@ -47,6 +52,7 @@ items:
     - id: EmitMetadataOnly
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly
@@ -80,7 +86,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 22
-  summary: Tolerate errors, producing a PE stream and a success result even in the presence of (some) errors.
+  summary: >+
+    Tolerate errors, producing a PE stream and a success result even in the presence of (some) errors.
+
   syntax:
     content:
       CSharp: public bool TolerateErrors
@@ -88,6 +96,7 @@ items:
     - id: TolerateErrors
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors
@@ -121,10 +130,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 31
-  summary: >-
+  summary: >+
     Unless set (private) members that don't affect the language semantics of the resulting assembly will be excluded
 
-        when emitting with [Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly](api\Microsoft.CodeAnalysis.Emit.EmitOptions) on.
+    when emitting with [Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly](#/api\Microsoft.CodeAnalysis.Emit.EmitOptions) on.
+
   syntax:
     content:
       CSharp: public bool IncludePrivateMembers
@@ -132,6 +142,7 @@ items:
     - id: IncludePrivateMembers
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers
@@ -165,15 +176,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 36
-  summary: Subsystem version
+  summary: >+
+    Subsystem version
+
   syntax:
     content:
       CSharp: public SubsystemVersion SubsystemVersion
     parameters:
     - id: SubsystemVersion
       type:
-        id: SubsystemVersion
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_SubsystemVersion
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
@@ -205,7 +219,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 45
-  summary: Specifies the size of sections in the output file.
+  summary: >+
+    Specifies the size of sections in the output file.
+
   syntax:
     content:
       CSharp: public int FileAlignment
@@ -213,6 +229,7 @@ items:
     - id: FileAlignment
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment
@@ -246,7 +263,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 50
-  summary: True to enable high entropy virtual address space for the output binary.
+  summary: >+
+    True to enable high entropy virtual address space for the output binary.
+
   syntax:
     content:
       CSharp: public bool HighEntropyVirtualAddressSpace
@@ -254,6 +273,7 @@ items:
     - id: HighEntropyVirtualAddressSpace
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace
@@ -287,7 +307,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 55
-  summary: Specifies the preferred base address at which to load the output DLL.
+  summary: >+
+    Specifies the preferred base address at which to load the output DLL.
+
   syntax:
     content:
       CSharp: public ulong BaseAddress
@@ -295,6 +317,7 @@ items:
     - id: BaseAddress
       type:
         id: System.UInt64
+        name: System.UInt64
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress
@@ -328,15 +351,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 60
-  summary: Debug information format.
+  summary: >+
+    Debug information format.
+
   syntax:
     content:
       CSharp: public DebugInformationFormat DebugInformationFormat
     parameters:
     - id: DebugInformationFormat
       type:
-        id: DebugInformationFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\DebugInformationFormat.cs
+        id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+        name: DebugInformationFormat
+        href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_DebugInformationFormat
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
@@ -368,7 +394,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 73
-  summary: Assembly name override - file name and extension. If not specified the the compilation name is used.
+  summary: >+
+    Assembly name override - file name and extension. If not specified the the compilation name is used.
+
   syntax:
     content:
       CSharp: public string OutputNameOverride
@@ -376,6 +404,7 @@ items:
     - id: OutputNameOverride
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride
@@ -409,7 +438,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 81
-  summary: The name of the PDB file to be embedded in the PE image, or null to use the default.
+  summary: >+
+    The name of the PDB file to be embedded in the PE image, or null to use the default.
+
   syntax:
     content:
       CSharp: public string PdbFilePath
@@ -417,6 +448,7 @@ items:
     - id: PdbFilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath
@@ -450,7 +482,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 86
-  summary: Runtime metadata version.
+  summary: >+
+    Runtime metadata version.
+
   syntax:
     content:
       CSharp: public string RuntimeMetadataVersion
@@ -458,6 +492,7 @@ items:
     - id: RuntimeMetadataVersion
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion
@@ -498,54 +533,65 @@ items:
     - id: metadataOnly
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: debugInformationFormat
       type:
-        id: DebugInformationFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\DebugInformationFormat.cs
+        id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+        name: DebugInformationFormat
+        href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
     - id: pdbFilePath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: outputNameOverride
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: fileAlignment
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: baseAddress
       type:
         id: System.UInt64
+        name: System.UInt64
         href: System.Runtime
         isExternal: true
     - id: highEntropyVirtualAddressSpace
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: subsystemVersion
       type:
-        id: SubsystemVersion
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
     - id: runtimeMetadataVersion
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     - id: tolerateErrors
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     - id: includePrivateMembers
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object)
@@ -571,6 +617,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -597,8 +644,9 @@ items:
     parameters:
     - id: other
       type:
-        id: EmitOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\EmitOptions.cs
+        id: Microsoft.CodeAnalysis.Emit.EmitOptions
+        name: EmitOptions
+        href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.GetHashCode
@@ -676,6 +724,7 @@ items:
     - id: value
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -703,6 +752,7 @@ items:
     - id: path
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -730,6 +780,7 @@ items:
     - id: outputName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -756,8 +807,9 @@ items:
     parameters:
     - id: format
       type:
-        id: DebugInformationFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Emit\DebugInformationFormat.cs
+        id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+        name: DebugInformationFormat
+        href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithFileAlignment(System.Int32)
@@ -776,7 +828,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
     startLine: 267
-  summary: Sets the byte alignment for portable executable file sections.
+  summary: >+
+    Sets the byte alignment for portable executable file sections.
+
   syntax:
     content:
       CSharp: public EmitOptions WithFileAlignment(int value)
@@ -784,6 +838,7 @@ items:
     - id: value
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: 'Can be one of the following values: 0, 512, 1024, 2048, 4096, 8192'
@@ -812,6 +867,7 @@ items:
     - id: value
       type:
         id: System.UInt64
+        name: System.UInt64
         href: System.Runtime
         isExternal: true
     return:
@@ -839,6 +895,7 @@ items:
     - id: value
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -865,8 +922,9 @@ items:
     parameters:
     - id: subsystemVersion
       type:
-        id: SubsystemVersion
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+        id: Microsoft.CodeAnalysis.SubsystemVersion
+        name: SubsystemVersion
+        href: api\Microsoft.CodeAnalysis.SubsystemVersion
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithRuntimeMetadataVersion(System.String)
@@ -892,6 +950,7 @@ items:
     - id: version
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -919,6 +978,7 @@ items:
     - id: value
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:
@@ -946,6 +1006,7 @@ items:
     - id: value
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
     return:

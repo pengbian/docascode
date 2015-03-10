@@ -14,16 +14,20 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Diagnostic\LocalizableResourceString.cs
   startLine: 14
-summary: A localizable resource string that may possibly be formatted differently depending on culture.
+summary: >+
+  A localizable resource string that may possibly be formatted differently depending on culture.
+
 syntax:
   content:
     CSharp: public sealed class LocalizableResourceString
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: LocalizableString
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\LocalizableString.cs
+- id: Microsoft.CodeAnalysis.LocalizableString
+  name: LocalizableString
+  href: api\Microsoft.CodeAnalysis.LocalizableString
 items:
 - id: Microsoft.CodeAnalysis.LocalizableResourceString.#ctor(System.String,System.Resources.ResourceManager,System.Type)
   yaml: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
@@ -41,7 +45,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\LocalizableResourceString.cs
     startLine: 27
-  summary: Creates a localizable resource string with no formatting arguments.
+  summary: >+
+    Creates a localizable resource string with no formatting arguments.
+
   syntax:
     content:
       CSharp: 'public LocalizableResourceString(string nameOfLocalizableResource, ResourceManager resourceManager, Type resourceSource): this (nameOfLocalizableResource, resourceManager, resourceSource, SpecializedCollections.EmptyArray<string>())'
@@ -49,18 +55,21 @@ items:
     - id: nameOfLocalizableResource
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: nameof the resource that needs to be localized.
     - id: resourceManager
       type:
         id: System.Resources.ResourceManager
+        name: System.Resources.ResourceManager
         href: System.Resources.ResourceManager
         isExternal: true
-      description: '@T:System.Resources.ResourceManager- for the calling assembly.'
+      description: '[System.Resources.ResourceManager](#) for the calling assembly.'
     - id: resourceSource
       type:
         id: System.Type
+        name: System.Type
         href: System.Runtime
         isExternal: true
       description: Type handling assembly's resource management. Typically, this is the static class generated for the resources file from which resources are accessed.
@@ -80,7 +89,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\LocalizableResourceString.cs
     startLine: 39
-  summary: Creates a localizable resource string that may possibly be formatted differently depending on culture.
+  summary: >+
+    Creates a localizable resource string that may possibly be formatted differently depending on culture.
+
   syntax:
     content:
       CSharp: public LocalizableResourceString(string nameOfLocalizableResource, ResourceManager resourceManager, Type resourceSource, params string[] formatArguments)
@@ -88,24 +99,28 @@ items:
     - id: nameOfLocalizableResource
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: nameof the resource that needs to be localized.
     - id: resourceManager
       type:
         id: System.Resources.ResourceManager
+        name: System.Resources.ResourceManager
         href: System.Resources.ResourceManager
         isExternal: true
-      description: '@T:System.Resources.ResourceManager- for the calling assembly.'
+      description: '[System.Resources.ResourceManager](#) for the calling assembly.'
     - id: resourceSource
       type:
         id: System.Type
+        name: System.Type
         href: System.Runtime
         isExternal: true
       description: Type handling assembly's resource management. Typically, this is the static class generated for the resources file from which resources are accessed.
     - id: formatArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: Optional arguments for formatting the localizable resource string.
 - id: Microsoft.CodeAnalysis.LocalizableResourceString.ToString(System.IFormatProvider)
@@ -131,6 +146,7 @@ items:
     - id: formatProvider
       type:
         id: System.IFormatProvider
+        name: System.IFormatProvider
         href: System.Runtime
         isExternal: true
     return:

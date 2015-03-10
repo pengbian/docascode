@@ -14,15 +14,17 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
   startLine: 31
-summary: >-
+summary: >+
   Allows asking semantic questions about a tree of syntax nodes in a Compilation. Typically,
 
-      an instance is obtained by a call to GetBinding on a Compilation or Compilation.
+  an instance is obtained by a call to GetBinding on a Compilation or Compilation.
+
 syntax:
   content:
     CSharp: public abstract class SemanticModel
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +44,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 36
-  summary: Gets the source language ("C#" or "Visual Basic").
+  summary: >+
+    Gets the source language ("C#" or "Visual Basic").
+
   syntax:
     content:
       CSharp: public abstract string Language
@@ -50,6 +54,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_Language
@@ -83,15 +88,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 41
-  summary: The compilation this model was obtained from.
+  summary: >+
+    The compilation this model was obtained from.
+
   syntax:
     content:
       CSharp: public Compilation Compilation
     parameters:
     - id: Compilation
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.SemanticModel.get_Compilation
   yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
   href: api\Microsoft.CodeAnalysis.SemanticModel
@@ -123,15 +131,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 54
-  summary: The syntax tree this model was obtained from.
+  summary: >+
+    The syntax tree this model was obtained from.
+
   syntax:
     content:
       CSharp: public SyntaxTree SyntaxTree
     parameters:
     - id: SyntaxTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SemanticModel.get_SyntaxTree
   yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
   href: api\Microsoft.CodeAnalysis.SemanticModel
@@ -163,7 +174,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 212
-  summary: Returns true if this is a speculative semantic model created with any of the TryGetSpeculativeSemanticModel methods.
+  summary: >+
+    Returns true if this is a speculative semantic model created with any of the TryGetSpeculativeSemanticModel methods.
+
   syntax:
     content:
       CSharp: public abstract bool IsSpeculativeSemanticModel
@@ -171,6 +184,7 @@ items:
     - id: IsSpeculativeSemanticModel
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_IsSpeculativeSemanticModel
@@ -204,10 +218,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 221
-  summary: >-
+  summary: >+
     If this is a speculative semantic model, returns the original position at which the speculative model was created.
 
-        Otherwise, returns 0.
+    Otherwise, returns 0.
+
   syntax:
     content:
       CSharp: public abstract int OriginalPositionForSpeculation
@@ -215,6 +230,7 @@ items:
     - id: OriginalPositionForSpeculation
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_OriginalPositionForSpeculation
@@ -248,18 +264,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 230
-  summary: >-
+  summary: >+
     If this is a speculative semantic model, then returns its parent semantic model.
 
-        Otherwise, returns null.
+    Otherwise, returns null.
+
   syntax:
     content:
       CSharp: public SemanticModel ParentModel
     parameters:
     - id: ParentModel
       type:
-        id: SemanticModel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.SemanticModel.get_ParentModel
   yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
   href: api\Microsoft.CodeAnalysis.SemanticModel
@@ -291,10 +309,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 291
-  summary: >-
+  summary: >+
     Get all of the syntax errors within the syntax tree associated with this
 
-        object. Does not get errors involving declarations or compiling method bodies or initializers.
+    object. Does not get errors involving declarations or compiling method bodies or initializers.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetSyntaxDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -302,6 +321,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -311,6 +331,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -335,10 +356,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 305
-  summary: >-
+  summary: >+
     Get all of the declaration errors within the syntax tree associated with this
 
-        object. Does not get errors involving incorrect syntax, compiling method bodies or initializers.
+    object. Does not get errors involving incorrect syntax, compiling method bodies or initializers.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetDeclarationDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -346,6 +368,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -355,6 +378,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -379,10 +403,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 319
-  summary: >-
+  summary: >+
     Get all of the method body and initializer errors within the syntax tree associated with this
 
-        object. Does not get errors involving incorrect syntax or declarations.
+    object. Does not get errors involving incorrect syntax or declarations.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetMethodBodyDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -390,6 +415,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -399,6 +425,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -423,12 +450,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 336
-  summary: >-
+  summary: >+
     Get all the errors within the syntax tree associated with this object. Includes errors
 
-        involving compiling method bodies or initializers, in addition to the errors returned by
+    involving compiling method bodies or initializers, in addition to the errors returned by
 
-        GetDeclarationDiagnostics.
+    GetDeclarationDiagnostics.
+
   syntax:
     content:
       CSharp: public abstract ImmutableArray<Diagnostic> GetDiagnostics(TextSpan? span = null, CancellationToken cancellationToken = default (CancellationToken));
@@ -436,6 +464,7 @@ items:
     - id: span
       type:
         id: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+        name: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
         href: System.Runtime
         isExternal: true
       description: >-
@@ -445,6 +474,7 @@ items:
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: >-
@@ -469,10 +499,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 413
-  summary: >-
+  summary: >+
     Gets the available named symbols in the context of the specified location and optional container. Only
 
-        symbols that are accessible and visible from the given location are returned.
+    symbols that are accessible and visible from the given location are returned.
+
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupSymbols(int position, INamespaceOrTypeSymbol container = null, string name = null, bool includeReducedExtensionMethods = false)
@@ -480,6 +511,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -488,8 +520,9 @@ items:
             accessibility.
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -497,6 +530,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -506,6 +540,7 @@ items:
     - id: includeReducedExtensionMethods
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Consider (reduced) extension methods.
@@ -528,7 +563,53 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 466
-  summary: "Gets the available base type members in the context of the specified location.  Akin to\r\n    calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](api\\Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of\r\n    the type in which  occurs.  However, the accessibility rules\r\n    are different: protected members of the base type will be visible.\r\n    \r\n    Consider the following example:\r\n    \r\n      public class Base\r\n      {\r\n          protected void M() { }\r\n      }\r\n      \r\n      public class Derived : Base\r\n      {\r\n          void Test(Base b)\r\n          {\r\n              b.M(); // Error - cannot access protected member.\r\n              base.M();\r\n          }\r\n      }\r\n    \r\n    Protected members of an instance of another type are only accessible if the instance is known\r\n    to be \"this\" instance (as indicated by the \"base\" keyword)."
+  summary: >+
+    Gets the available base type members in the context of the specified location.  Akin to
+
+    calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](#/api\Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of
+
+    the type in which  occurs.  However, the accessibility rules
+
+    are different: protected members of the base type will be visible.
+
+
+
+    Consider the following example:
+
+
+
+    public class Base
+
+    {
+
+    protected void M() { }
+
+    }
+
+
+
+    public class Derived : Base
+
+    {
+
+    void Test(Base b)
+
+    {
+
+    b.M(); // Error - cannot access protected member.
+
+    base.M();
+
+    }
+
+    }
+
+
+
+    Protected members of an instance of another type are only accessible if the instance is known
+
+    to be "this" instance (as indicated by the "base" keyword).
+
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupBaseMembers(int position, string name = null)
@@ -536,6 +617,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -545,6 +627,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -570,7 +653,15 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 500
-  summary: "Gets the available named static member symbols in the context of the specified location and optional container.\r\n    Only members that are accessible and visible from the given location are returned.\r\n    \r\n    Non-reduced extension methods are considered, since they are static methods."
+  summary: >+
+    Gets the available named static member symbols in the context of the specified location and optional container.
+
+    Only members that are accessible and visible from the given location are returned.
+
+
+
+    Non-reduced extension methods are considered, since they are static methods.
+
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupStaticMembers(int position, INamespaceOrTypeSymbol container = null, string name = null)
@@ -578,6 +669,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -586,8 +678,9 @@ items:
             accessibility.
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -595,6 +688,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -620,10 +714,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 534
-  summary: >-
+  summary: >+
     Gets the available named namespace and type symbols in the context of the specified location and optional container.
 
-        Only members that are accessible and visible from the given location are returned.
+    Only members that are accessible and visible from the given location are returned.
+
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupNamespacesAndTypes(int position, INamespaceOrTypeSymbol container = null, string name = null)
@@ -631,6 +726,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -639,8 +735,9 @@ items:
             accessibility.
     - id: container
       type:
-        id: INamespaceOrTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        name: INamespaceOrTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -648,6 +745,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -673,10 +771,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 564
-  summary: >-
+  summary: >+
     Gets the available named label symbols in the context of the specified location and optional container.
 
-        Only members that are accessible and visible from the given location are returned.
+    Only members that are accessible and visible from the given location are returned.
+
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> LookupLabels(int position, string name = null)
@@ -684,6 +783,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -693,6 +793,7 @@ items:
     - id: name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: >-
@@ -718,23 +819,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 695
-  summary: >-
+  summary: >+
     If the node provided has a constant value an Optional value will be returned with
 
-        HasValue set to true and with Value set to the constant.  If the node does not have an
+    HasValue set to true and with Value set to the constant.  If the node does not have an
 
-        constant value, an Optional will be returned with HasValue set to false.
+    constant value, an Optional will be returned with HasValue set to false.
+
   syntax:
     content:
       CSharp: public Optional<object> GetConstantValue(SyntaxNode node, CancellationToken cancellationToken = default (CancellationToken))
     parameters:
     - id: node
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -755,10 +859,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 728
-  summary: >-
+  summary: >+
     Given a position in the SyntaxTree for this SemanticModel returns the innermost Symbol
 
-        that the position is considered inside of.
+    that the position is considered inside of.
+
   syntax:
     content:
       CSharp: public ISymbol GetEnclosingSymbol(int position, CancellationToken cancellationToken = default (CancellationToken))
@@ -766,11 +871,13 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
     return:
@@ -791,7 +898,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 754
-  summary: Determines if the symbol is accessible from the specified location.
+  summary: >+
+    Determines if the symbol is accessible from the specified location.
+
   syntax:
     content:
       CSharp: public bool IsAccessible(int position, ISymbol symbol)
@@ -799,6 +908,7 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: >-
@@ -809,8 +919,9 @@ items:
             node in this SemanticModel.
     - id: symbol
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
       description: The symbol that we are checking to see if it accessible.
     return:
       id: Boolean
@@ -831,10 +942,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 783
-  summary: >-
+  summary: >+
     Field-like events can be used as fields in types that can access private
 
-        members of the declaring type of the event.
+    members of the declaring type of the event.
+
   syntax:
     content:
       CSharp: public bool IsEventUsableAsField(int position, IEventSymbol eventSymbol)
@@ -842,12 +954,14 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
     - id: eventSymbol
       type:
-        id: IEventSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IEventSymbol.cs
+        id: Microsoft.CodeAnalysis.IEventSymbol
+        name: IEventSymbol
+        href: api\Microsoft.CodeAnalysis.IEventSymbol
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SemanticModel.GetPreprocessingSymbolInfo(Microsoft.CodeAnalysis.SyntaxNode)
@@ -866,18 +980,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
     startLine: 802
-  summary: >-
-    If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
+  summary: >+
+    If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](#/api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
 
-        to it.
+    to it.
+
   syntax:
     content:
       CSharp: public PreprocessingSymbolInfo GetPreprocessingSymbolInfo(SyntaxNode nameSyntax)
     parameters:
     - id: nameSyntax
       type:
-        id: SyntaxNode
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+        id: Microsoft.CodeAnalysis.SyntaxNode
+        name: SyntaxNode
+        href: api\Microsoft.CodeAnalysis.SyntaxNode
       description: The nameSyntax node to get semantic information for.
     return:
       id: PreprocessingSymbolInfo

@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
   startLine: 10
-summary: Represents an array.
+summary: >+
+  Represents an array.
+
 syntax:
   content:
     CSharp: public interface IArrayTypeSymbol
@@ -35,10 +37,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
     startLine: 16
-  summary: >-
+  summary: >+
     Gets the number of dimensions of this array. A regular single-dimensional array
 
-        has rank 1, a two-dimensional array has rank 2, etc.
+    has rank 1, a two-dimensional array has rank 2, etc.
+
   syntax:
     content:
       CSharp: int Rank
@@ -46,6 +49,7 @@ items:
     - id: Rank
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_Rank
@@ -79,15 +83,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
     startLine: 21
-  summary: Gets the type of the elements stored in the array.
+  summary: >+
+    Gets the type of the elements stored in the array.
+
   syntax:
     content:
       CSharp: ITypeSymbol ElementType
     parameters:
     - id: ElementType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_ElementType
   yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
@@ -119,10 +126,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
     startLine: 27
-  summary: >-
+  summary: >+
     Gets the list of custom modifiers associated with the array.
 
-        Returns an empty list if there are no custom modifiers.
+    Returns an empty list if there are no custom modifiers.
+
   syntax:
     content:
       CSharp: ImmutableArray<CustomModifier> CustomModifiers
@@ -130,6 +138,7 @@ items:
     - id: CustomModifiers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_CustomModifiers
@@ -169,7 +178,8 @@ items:
     parameters:
     - id: other
       type:
-        id: IArrayTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.IArrayTypeSymbol
+        name: IArrayTypeSymbol
+        href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
     return:
       id: Boolean

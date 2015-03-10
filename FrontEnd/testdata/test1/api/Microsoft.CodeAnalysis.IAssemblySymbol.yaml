@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
   startLine: 10
-summary: Represents a .NET assembly, consisting of one or more modules.
+summary: >+
+  Represents a .NET assembly, consisting of one or more modules.
+
 syntax:
   content:
     CSharp: public interface IAssemblySymbol
@@ -35,7 +37,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 15
-  summary: True if the assembly contains interactive code.
+  summary: >+
+    True if the assembly contains interactive code.
+
   syntax:
     content:
       CSharp: bool IsInteractive
@@ -43,6 +47,7 @@ items:
     - id: IsInteractive
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_IsInteractive
@@ -76,15 +81,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 20
-  summary: Gets the name of this assembly.
+  summary: >+
+    Gets the name of this assembly.
+
   syntax:
     content:
       CSharp: AssemblyIdentity Identity
     parameters:
     - id: Identity
       type:
-        id: AssemblyIdentity
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentity
+        name: AssemblyIdentity
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Identity
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IAssemblySymbol
@@ -116,15 +124,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 27
-  summary: "Gets the merged root namespace that contains all namespaces and types defined in the modules\r\n    of this assembly. If there is just one module in this assembly, this property just returns the \r\n    GlobalNamespace of that module."
+  summary: >+
+    Gets the merged root namespace that contains all namespaces and types defined in the modules
+
+    of this assembly. If there is just one module in this assembly, this property just returns the
+
+    GlobalNamespace of that module.
+
   syntax:
     content:
       CSharp: INamespaceSymbol GlobalNamespace
     parameters:
     - id: GlobalNamespace
       type:
-        id: INamespaceSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_GlobalNamespace
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
   href: api\Microsoft.CodeAnalysis.IAssemblySymbol
@@ -156,10 +171,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 33
-  summary: >-
+  summary: >+
     Gets the modules in this assembly. (There must be at least one.) The first one is the main module
 
-        that holds the assembly manifest.
+    that holds the assembly manifest.
+
   syntax:
     content:
       CSharp: IEnumerable<IModuleSymbol> Modules
@@ -167,6 +183,7 @@ items:
     - id: Modules
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Modules
@@ -200,7 +217,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 38
-  summary: Gets the set of type identifiers from this assembly.
+  summary: >+
+    Gets the set of type identifiers from this assembly.
+
   syntax:
     content:
       CSharp: ICollection<string> TypeNames
@@ -208,6 +227,7 @@ items:
     - id: TypeNames
       type:
         id: System.Collections.Generic.ICollection{System.String}
+        name: System.Collections.Generic.ICollection{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_TypeNames
@@ -241,7 +261,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 43
-  summary: Gets the set of namespace names from this assembly.
+  summary: >+
+    Gets the set of namespace names from this assembly.
+
   syntax:
     content:
       CSharp: ICollection<string> NamespaceNames
@@ -249,6 +271,7 @@ items:
     - id: NamespaceNames
       type:
         id: System.Collections.Generic.ICollection{System.String}
+        name: System.Collections.Generic.ICollection{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_NamespaceNames
@@ -282,15 +305,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 48
-  summary: "Gets a value indicating whether this assembly gives \r\n     access to internal symbols"
+  summary: >+
+    Gets a value indicating whether this assembly gives
+
+    access to internal symbols
+
   syntax:
     content:
       CSharp: bool GivesAccessTo(IAssemblySymbol toAssembly);
     parameters:
     - id: toAssembly
       type:
-        id: IAssemblySymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+        id: Microsoft.CodeAnalysis.IAssemblySymbol
+        name: IAssemblySymbol
+        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.GetTypeByMetadataName(System.String)
@@ -309,7 +337,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 55
-  summary: Lookup a type within the assembly using the canonical CLR metadata name of the type.
+  summary: >+
+    Lookup a type within the assembly using the canonical CLR metadata name of the type.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol GetTypeByMetadataName(string fullyQualifiedMetadataName);
@@ -317,6 +347,7 @@ items:
     - id: fullyQualifiedMetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: Type name.
@@ -339,10 +370,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 61
-  summary: >-
+  summary: >+
     Determines if the assembly might contain extension methods.
 
-        If false, the assembly does not contain extension methods.
+    If false, the assembly does not contain extension methods.
+
   syntax:
     content:
       CSharp: bool MightContainExtensionMethods
@@ -350,6 +382,7 @@ items:
     - id: MightContainExtensionMethods
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_MightContainExtensionMethods
@@ -383,12 +416,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
     startLine: 68
-  summary: >-
+  summary: >+
     Returns the type symbol for a forwarded type based its canonical CLR metadata name.
 
-        The name should refer to a non-nested type. If type with this name is not forwarded,
+    The name should refer to a non-nested type. If type with this name is not forwarded,
 
-        null is returned.
+    null is returned.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol ResolveForwardedType(string fullyQualifiedMetadataName);
@@ -396,6 +430,7 @@ items:
     - id: fullyQualifiedMetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:

@@ -19,6 +19,7 @@ syntax:
     CSharp: public static class DiagnosticAnalyzerExtensions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -38,30 +39,36 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzerExtensions.cs
     startLine: 16
-  summary: Returns a new compilation with attached diagnostic analyzers.
+  summary: >+
+    Returns a new compilation with attached diagnostic analyzers.
+
   syntax:
     content:
       CSharp: public static CompilationWithAnalyzers WithAnalyzers(this Compilation compilation, ImmutableArray<DiagnosticAnalyzer> analyzers, AnalyzerOptions options = null, CancellationToken cancellationToken = default (CancellationToken))
     parameters:
     - id: compilation
       type:
-        id: Compilation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Compilation.cs
+        id: Microsoft.CodeAnalysis.Compilation
+        name: Compilation
+        href: api\Microsoft.CodeAnalysis.Compilation
       description: Compilation to which analyzers are to be added.
     - id: analyzers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
         href: System.Collections.Immutable
         isExternal: true
       description: The set of analyzers to include in future analyses.
     - id: options
       type:
-        id: AnalyzerOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        name: AnalyzerOptions
+        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
       description: Options that are passed to analyzers.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: A cancellation token that can be used to abort analysis.

@@ -14,18 +14,23 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
   startLine: 9
-summary: Enumeration for possible kinds of method symbols.
+summary: >+
+  Enumeration for possible kinds of method symbols.
+
 syntax:
   content:
     CSharp: public enum MethodKind
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 - id: System.Enum
+  name: System.Enum
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +50,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 14
-  summary: An anonymous method or lambda expression
+  summary: >+
+    An anonymous method or lambda expression
+
   syntax:
     content:
       CSharp: AnonymousFunction = 0
@@ -84,7 +91,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 20
-  summary: Method is a constructor.
+  summary: >+
+    Method is a constructor.
+
   syntax:
     content:
       CSharp: Constructor = 1
@@ -104,7 +113,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 25
-  summary: Method is a conversion.
+  summary: >+
+    Method is a conversion.
+
   syntax:
     content:
       CSharp: Conversion = 2
@@ -124,7 +135,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 30
-  summary: Method is a delegate invoke.
+  summary: >+
+    Method is a delegate invoke.
+
   syntax:
     content:
       CSharp: DelegateInvoke = 3
@@ -144,7 +157,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 35
-  summary: Method is a destructor.
+  summary: >+
+    Method is a destructor.
+
   syntax:
     content:
       CSharp: Destructor = 4
@@ -164,7 +179,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 40
-  summary: Method is an event add.
+  summary: >+
+    Method is an event add.
+
   syntax:
     content:
       CSharp: EventAdd = 5
@@ -184,7 +201,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 45
-  summary: Method is an event raise.
+  summary: >+
+    Method is an event raise.
+
   syntax:
     content:
       CSharp: EventRaise = 6
@@ -204,7 +223,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 50
-  summary: Method is an event remove.
+  summary: >+
+    Method is an event remove.
+
   syntax:
     content:
       CSharp: EventRemove = 7
@@ -224,7 +245,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 55
-  summary: Method is an explicit interface implementation.
+  summary: >+
+    Method is an explicit interface implementation.
+
   syntax:
     content:
       CSharp: ExplicitInterfaceImplementation = 8
@@ -244,7 +267,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 60
-  summary: Method is an operator.
+  summary: >+
+    Method is an operator.
+
   syntax:
     content:
       CSharp: UserDefinedOperator = 9
@@ -264,7 +289,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 65
-  summary: Method is an ordinary method.
+  summary: >+
+    Method is an ordinary method.
+
   syntax:
     content:
       CSharp: Ordinary = 10
@@ -284,7 +311,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 70
-  summary: Method is a property get.
+  summary: >+
+    Method is a property get.
+
   syntax:
     content:
       CSharp: PropertyGet = 11
@@ -304,7 +333,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 75
-  summary: Method is a property set.
+  summary: >+
+    Method is a property set.
+
   syntax:
     content:
       CSharp: PropertySet = 12
@@ -324,7 +355,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 80
-  summary: An extension method with the "this" parameter removed.
+  summary: >+
+    An extension method with the "this" parameter removed.
+
   syntax:
     content:
       CSharp: ReducedExtension = 13
@@ -344,7 +377,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 85
-  summary: Method is a static constructor.
+  summary: >+
+    Method is a static constructor.
+
   syntax:
     content:
       CSharp: StaticConstructor = 14
@@ -383,7 +418,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 91
-  summary: A built-in operator.
+  summary: >+
+    A built-in operator.
+
   syntax:
     content:
       CSharp: BuiltinOperator = 15
@@ -403,7 +440,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
     startLine: 96
-  summary: Declare Sub or Function.
+  summary: >+
+    Declare Sub or Function.
+
   syntax:
     content:
       CSharp: DeclareMethod = 16

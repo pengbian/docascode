@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Diagnostic\DiagnosticFormatter.cs
   startLine: 12
-summary: Formats [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) messages.
+summary: >+
+  Formats [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) messages.
+
 syntax:
   content:
     CSharp: public class DiagnosticFormatter
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,19 +42,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\DiagnosticFormatter.cs
     startLine: 20
-  summary: Formats the [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) message using the optional @T:System.IFormatProvider-.
+  summary: >+
+    Formats the [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) message using the optional [System.IFormatProvider](#).
+
   syntax:
     content:
       CSharp: public virtual string Format(Diagnostic diagnostic, IFormatProvider formatter = null)
     parameters:
     - id: diagnostic
       type:
-        id: Diagnostic
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
+        id: Microsoft.CodeAnalysis.Diagnostic
+        name: Diagnostic
+        href: api\Microsoft.CodeAnalysis.Diagnostic
       description: The diagnostic.
     - id: formatter
       type:
         id: System.IFormatProvider
+        name: System.IFormatProvider
         href: System.Runtime
         isExternal: true
       description: The formatter; or null to use the default formatter.

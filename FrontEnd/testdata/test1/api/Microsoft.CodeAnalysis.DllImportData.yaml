@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
   startLine: 12
-summary: Information that describes how a method from the underlying Platform is to be invoked.
+summary: >+
+  Information that describes how a method from the underlying Platform is to be invoked.
+
 syntax:
   content:
     CSharp: public sealed class DllImportData
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,7 +42,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 28
-  summary: Module name. Null if value specified in the attribute is not valid.
+  summary: >+
+    Module name. Null if value specified in the attribute is not valid.
+
   syntax:
     content:
       CSharp: public string ModuleName
@@ -47,6 +52,7 @@ items:
     - id: ModuleName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ModuleName
@@ -80,7 +86,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 36
-  summary: Name of the native entry point or null if not specified (the effective name is the same as the name of the target method).
+  summary: >+
+    Name of the native entry point or null if not specified (the effective name is the same as the name of the target method).
+
   syntax:
     content:
       CSharp: public string EntryPointName
@@ -88,6 +96,7 @@ items:
     - id: EntryPointName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_EntryPointName
@@ -121,7 +130,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 50
-  summary: "Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](api\\Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime \r\n    to search an unmanaged DLL for entry-point names other than the one specified."
+  summary: >+
+    Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](#/api\Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime
+
+    to search an unmanaged DLL for entry-point names other than the one specified.
+
   syntax:
     content:
       CSharp: public bool ExactSpelling
@@ -129,6 +142,7 @@ items:
     - id: ExactSpelling
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ExactSpelling
@@ -162,7 +176,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 61
-  summary: Indicates how to marshal string parameters and controls name mangling.
+  summary: >+
+    Indicates how to marshal string parameters and controls name mangling.
+
   syntax:
     content:
       CSharp: public CharSet CharacterSet
@@ -170,6 +186,7 @@ items:
     - id: CharacterSet
       type:
         id: System.Runtime.InteropServices.CharSet
+        name: System.Runtime.InteropServices.CharSet
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CharacterSet
@@ -203,7 +220,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 87
-  summary: Indicates whether the callee calls the SetLastError Win32 API function before returning from the attributed method.
+  summary: >+
+    Indicates whether the callee calls the SetLastError Win32 API function before returning from the attributed method.
+
   syntax:
     content:
       CSharp: public bool SetLastError
@@ -211,6 +230,7 @@ items:
     - id: SetLastError
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_SetLastError
@@ -244,7 +264,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 98
-  summary: Indicates the calling convention of an entry point.
+  summary: >+
+    Indicates the calling convention of an entry point.
+
   syntax:
     content:
       CSharp: public CallingConvention CallingConvention
@@ -252,6 +274,7 @@ items:
     - id: CallingConvention
       type:
         id: System.Runtime.InteropServices.CallingConvention
+        name: System.Runtime.InteropServices.CallingConvention
         href: System.Runtime.InteropServices
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CallingConvention
@@ -285,10 +308,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 127
-  summary: >-
+  summary: >+
     Enables or disables best-fit mapping behavior when converting Unicode characters to ANSI characters.
 
-        Null if not specified (the setting for the containing type or assembly should be used, @T:System.Runtime.InteropServices.BestFitMappingAttribute-).
+    Null if not specified (the setting for the containing type or assembly should be used, [System.Runtime.InteropServices.BestFitMappingAttribute](#)).
+
   syntax:
     content:
       CSharp: public bool ? BestFitMapping
@@ -296,6 +320,7 @@ items:
     - id: BestFitMapping
       type:
         id: System.Nullable{System.Boolean}
+        name: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_BestFitMapping
@@ -329,10 +354,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
     startLine: 149
-  summary: >-
+  summary: >+
     Enables or disables the throwing of an exception on an unmappable Unicode character that is converted to an ANSI "?" character.
 
-        Null if not specified.
+    Null if not specified.
+
   syntax:
     content:
       CSharp: public bool ? ThrowOnUnmappableCharacter
@@ -340,6 +366,7 @@ items:
     - id: ThrowOnUnmappableCharacter
       type:
         id: System.Nullable{System.Boolean}
+        name: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ThrowOnUnmappableCharacter

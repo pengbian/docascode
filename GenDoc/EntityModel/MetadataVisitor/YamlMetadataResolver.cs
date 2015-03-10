@@ -21,7 +21,7 @@ namespace EntityModel
             new BuildIndex(),
             new ResolveLink(),
             new ResolveGitPath(),
-
+            new ResolvePath(),
             new BuildMembers(),
             new BuildToc(),
         };
@@ -129,7 +129,14 @@ namespace EntityModel
                     {
                         if (member.Type != MemberType.Toc)
                         {
-                            yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.YamlPath, Href = member.Href });
+                            IndexYamlItemViewModel item;
+                            if (yaml.IndexYamlViewModel.TryGetValue(member.Name, out item))
+                            {
+                                ParseResult.WriteToConsole(ResultLevel.Error, "{0} already exists in {1}, the duplicate one {2} will be ignored", member.Name, item.YamlPath, member.YamlPath);
+                            }else
+                            {
+                                yaml.IndexYamlViewModel.Add(member.Name, new IndexYamlItemViewModel { Name = member.Name, YamlPath = member.YamlPath, Href = member.Href });
+                            }
                         }
 
                         return Task.FromResult(true);
@@ -321,6 +328,67 @@ namespace EntityModel
             }
         }
 
+        public class ResolvePath : IResolverPipeline
+        {
+            public ParseResult Run(YamlViewModel yaml)
+            {
+                TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
+                    (s) =>
+                    {
+                        if (s.IsInvalid) return null;
+                        else return s.Items;
+                    }, (current, parent) =>
+                    {
+                        if (current.Inheritance != null && current.Inheritance.Count > 0)
+                        {
+                            current.Inheritance.ForEach(s =>
+                            {
+                                if (!s.IsExternalPath)
+                                {
+                                    s.Href = ResolveInternalLink(yaml.IndexYamlViewModel, s.Name);
+                                }
+                            });
+                        }
+                        
+                        if (current.Syntax != null && current.Syntax.Parameters != null)
+                        {
+                            current.Syntax.Parameters.ForEach(s =>
+                            {
+                                Debug.Assert(s.Type != null);
+                                if (s.Type != null && !s.Type.IsExternalPath)
+                                {
+                                    s.Type.Href = ResolveInternalLink(yaml.IndexYamlViewModel, s.Type.Name);
+                                }
+                            });
+                        }
+
+                        if (current.Syntax != null && current.Syntax.Return != null && current.Syntax.Return.Type != null)
+                        {
+                            current.Syntax.Return.Type.Href = ResolveInternalLink(yaml.IndexYamlViewModel, current.Syntax.Return.Type.Name);
+                        }
+
+                        return Task.FromResult(true);
+                    }
+                    ).Wait();
+
+                return new ParseResult(ResultLevel.Success);
+            }
+
+            private static string ResolveInternalLink(Dictionary<string, IndexYamlItemViewModel> index, string name)
+            {
+                Debug.Assert(!string.IsNullOrEmpty(name));
+                if (string.IsNullOrEmpty(name)) return name;
+
+                IndexYamlItemViewModel item;
+                if (index.TryGetValue(name, out item))
+                {
+                    return item.Href;
+                }
+
+                return name;
+            }
+        }
+
         public class ResolveLink : IResolverPipeline
         {
             public ParseResult Run(YamlViewModel yaml)
@@ -344,6 +412,10 @@ namespace EntityModel
                             });
                         if (member.Syntax != null && member.Syntax.Return != null)
                             member.Syntax.Return.Description = ResolveText(index, member.Syntax.Return.Description);
+
+                        // resolve parameter's Type
+                        
+
                         return Task.FromResult(true);
                     }
                     ).Wait();
@@ -354,7 +426,7 @@ namespace EntityModel
             private static string ResolveText(Dictionary<string, IndexYamlItemViewModel> dict, string input)
             {
                 return LinkParser.ResolveText(dict, input, s =>
-                 string.Format("[{0}]({1})", s.Name, s.Href)
+                 string.Format("[{0}](#/{1})", s.Name, s.Href), s=> string.Format("[{0}](#)", s)
                 );
             }
         }

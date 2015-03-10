@@ -14,10 +14,11 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
   startLine: 11
-summary: >-
+summary: >+
   Represents a method or method-like symbol (including constructor,
 
-      destructor, operator, or property/event accessor).
+  destructor, operator, or property/event accessor).
+
 syntax:
   content:
     CSharp: public interface IMethodSymbol
@@ -38,20 +39,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 18
-  summary: >-
+  summary: >+
     Gets what kind of method this is. There are several different kinds of things in the
 
-        C# language that are represented as methods. This property allow distinguishing those things
+    C# language that are represented as methods. This property allow distinguishing those things
 
-        without having to decode the name of the method.
+    without having to decode the name of the method.
+
   syntax:
     content:
       CSharp: MethodKind MethodKind
     parameters:
     - id: MethodKind
       type:
-        id: MethodKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\MethodKind.cs
+        id: Microsoft.CodeAnalysis.MethodKind
+        name: MethodKind
+        href: api\Microsoft.CodeAnalysis.MethodKind
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_MethodKind
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -83,10 +86,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 24
-  summary: >-
+  summary: >+
     Returns the arity of this method, or the number of type parameters it takes.
 
-        A non-generic method has zero arity.
+    A non-generic method has zero arity.
+
   syntax:
     content:
       CSharp: int Arity
@@ -94,6 +98,7 @@ items:
     - id: Arity
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_Arity
@@ -127,7 +132,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 29
-  summary: Returns whether this method is generic; i.e., does it have any type parameters?
+  summary: >+
+    Returns whether this method is generic; i.e., does it have any type parameters?
+
   syntax:
     content:
       CSharp: bool IsGenericMethod
@@ -135,6 +142,7 @@ items:
     - id: IsGenericMethod
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsGenericMethod
@@ -168,7 +176,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 34
-  summary: Returns true if this method is an extension method.
+  summary: >+
+    Returns true if this method is an extension method.
+
   syntax:
     content:
       CSharp: bool IsExtensionMethod
@@ -176,6 +186,7 @@ items:
     - id: IsExtensionMethod
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsExtensionMethod
@@ -209,7 +220,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 39
-  summary: Returns true if this method is an async method
+  summary: >+
+    Returns true if this method is an async method
+
   syntax:
     content:
       CSharp: bool IsAsync
@@ -217,6 +230,7 @@ items:
     - id: IsAsync
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsAsync
@@ -250,7 +264,7 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 49
-  summary: "Returns whether this method is using CLI VARARG calling convention. This is used for\r\n     C-style variable argument lists. This is used extremely rarely in C# code and is\r\n     represented using the undocumented “__arglist” keyword.\r\n    \r\n     Note that methods with “params” on the last parameter are indicated with the “IsParams”\r\n     property on ParameterSymbol, and are not represented with this property."
+  summary: "Returns whether this method is using CLI VARARG calling convention. This is used for\r\nC-style variable argument lists. This is used extremely rarely in C# code and is\r\nrepresented using the undocumented “__arglist” keyword.\r\n\r\nNote that methods with “params” on the last parameter are indicated with the “IsParams”\r\nproperty on ParameterSymbol, and are not represented with this property.\r\n"
   syntax:
     content:
       CSharp: bool IsVararg
@@ -258,6 +272,7 @@ items:
     - id: IsVararg
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsVararg
@@ -291,7 +306,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 54
-  summary: Returns whether this built-in operator checks for integer overflow.
+  summary: >+
+    Returns whether this built-in operator checks for integer overflow.
+
   syntax:
     content:
       CSharp: bool IsCheckedBuiltin
@@ -299,6 +316,7 @@ items:
     - id: IsCheckedBuiltin
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsCheckedBuiltin
@@ -332,12 +350,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 61
-  summary: >-
+  summary: >+
     Returns true if this method hides base methods by name. This cannot be specified directly
 
-        in the C# language, but can be true for methods defined in other languages imported from
+    in the C# language, but can be true for methods defined in other languages imported from
 
-        metadata. The equivalent of the "hidebyname" flag in metadata.
+    metadata. The equivalent of the "hidebyname" flag in metadata.
+
   syntax:
     content:
       CSharp: bool HidesBaseMethodsByName
@@ -345,6 +364,7 @@ items:
     - id: HidesBaseMethodsByName
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_HidesBaseMethodsByName
@@ -378,7 +398,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 66
-  summary: Returns true if this method has no return type; i.e., returns "void".
+  summary: >+
+    Returns true if this method has no return type; i.e., returns "void".
+
   syntax:
     content:
       CSharp: bool ReturnsVoid
@@ -386,6 +408,7 @@ items:
     - id: ReturnsVoid
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnsVoid
@@ -419,15 +442,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 71
-  summary: Gets the return type of the method.
+  summary: >+
+    Gets the return type of the method.
+
   syntax:
     content:
       CSharp: ITypeSymbol ReturnType
     parameters:
     - id: ReturnType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnType
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -459,7 +485,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 78
-  summary: "Returns the type arguments that have been substituted for the type parameters. \r\n    If nothing has been substituted for a given type parameter,\r\n    then the type parameter itself is consider the type argument."
+  summary: >+
+    Returns the type arguments that have been substituted for the type parameters.
+
+    If nothing has been substituted for a given type parameter,
+
+    then the type parameter itself is consider the type argument.
+
   syntax:
     content:
       CSharp: ImmutableArray<ITypeSymbol> TypeArguments
@@ -467,6 +499,7 @@ items:
     - id: TypeArguments
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeArguments
@@ -500,10 +533,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 84
-  summary: >-
+  summary: >+
     Get the type parameters on this method. If the method has not generic,
 
-        returns an empty list.
+    returns an empty list.
+
   syntax:
     content:
       CSharp: ImmutableArray<ITypeParameterSymbol> TypeParameters
@@ -511,6 +545,7 @@ items:
     - id: TypeParameters
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeParameters
@@ -544,10 +579,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 90
-  summary: >-
+  summary: >+
     Gets the parameters of this method. If this method has no parameters, returns
 
-        an empty list.
+    an empty list.
+
   syntax:
     content:
       CSharp: ImmutableArray<IParameterSymbol> Parameters
@@ -555,6 +591,7 @@ items:
     - id: Parameters
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_Parameters
@@ -588,22 +625,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 98
-  summary: >-
+  summary: >+
     Returns the method symbol that this method was constructed from. The resulting
 
-        method symbol
+    method symbol
 
-        has the same containing type (if any), but has type arguments that are the same
+    has the same containing type (if any), but has type arguments that are the same
 
-        as the type parameters (although its containing type might not).
+    as the type parameters (although its containing type might not).
+
   syntax:
     content:
       CSharp: IMethodSymbol ConstructedFrom
     parameters:
     - id: ConstructedFrom
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ConstructedFrom
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -635,20 +674,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 105
-  summary: >-
+  summary: >+
     Get the original definition of this symbol. If this symbol is derived from another
 
-        symbol by (say) type substitution, this gets the original symbol, as it was defined in
+    symbol by (say) type substitution, this gets the original symbol, as it was defined in
 
-        source or metadata.
+    source or metadata.
+
   syntax:
     content:
       CSharp: new IMethodSymbol OriginalDefinition
     parameters:
     - id: OriginalDefinition
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -680,18 +721,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 111
-  summary: >-
+  summary: >+
     If this method overrides another method (because it both had the override modifier
 
-        and there correctly was a method to override), returns the overridden method.
+    and there correctly was a method to override), returns the overridden method.
+
   syntax:
     content:
       CSharp: IMethodSymbol OverriddenMethod
     parameters:
     - id: OverriddenMethod
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_OverriddenMethod
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -723,15 +766,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 116
-  summary: If this method can be applied to an object, returns the type of object it is applied to.
+  summary: >+
+    If this method can be applied to an object, returns the type of object it is applied to.
+
   syntax:
     content:
       CSharp: ITypeSymbol ReceiverType
     parameters:
     - id: ReceiverType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReceiverType
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -763,18 +809,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 122
-  summary: >-
+  summary: >+
     If this method is a reduced extension method, returns the definition of extension
 
-        method from which this was reduced. Otherwise, returns null.
+    method from which this was reduced. Otherwise, returns null.
+
   syntax:
     content:
       CSharp: IMethodSymbol ReducedFrom
     parameters:
     - id: ReducedFrom
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReducedFrom
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -806,16 +854,19 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 132
-  summary: If this method is a reduced extension method, returns a type inferred during reduction process for the type parameter.
+  summary: >+
+    If this method is a reduced extension method, returns a type inferred during reduction process for the type parameter.
+
   syntax:
     content:
       CSharp: ITypeSymbol GetTypeInferredDuringReduction(ITypeParameterSymbol reducedFromTypeParameter);
     parameters:
     - id: reducedFromTypeParameter
       type:
-        id: ITypeParameterSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
-      description: Type parameter of the corresponding [Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom](api\Microsoft.CodeAnalysis.IMethodSymbol) method.
+        id: Microsoft.CodeAnalysis.ITypeParameterSymbol
+        name: ITypeParameterSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+      description: Type parameter of the corresponding [Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom](#/api\Microsoft.CodeAnalysis.IMethodSymbol) method.
     return:
       id: ITypeSymbol
       description: Inferred type or Nothing if nothing was inferred.
@@ -835,18 +886,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 138
-  summary: >-
+  summary: >+
     If this is an extension method that can be applied to a receiver of the given type,
 
-        returns a reduced extension method symbol thus formed. Otherwise, returns null.
+    returns a reduced extension method symbol thus formed. Otherwise, returns null.
+
   syntax:
     content:
       CSharp: IMethodSymbol ReduceExtensionMethod(ITypeSymbol receiverType);
     parameters:
     - id: receiverType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
     return:
       id: IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
@@ -865,7 +918,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 147
-  summary: Returns interface methods explicitly implemented by this method.
+  summary: >+
+    Returns interface methods explicitly implemented by this method.
+
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> ExplicitInterfaceImplementations
@@ -873,6 +928,7 @@ items:
     - id: ExplicitInterfaceImplementations
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ExplicitInterfaceImplementations
@@ -906,7 +962,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 152
-  summary: Returns the list of custom modifiers, if any, associated with the returned value.
+  summary: >+
+    Returns the list of custom modifiers, if any, associated with the returned value.
+
   syntax:
     content:
       CSharp: ImmutableArray<CustomModifier> ReturnTypeCustomModifiers
@@ -914,6 +972,7 @@ items:
     - id: ReturnTypeCustomModifiers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnTypeCustomModifiers
@@ -947,7 +1006,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 157
-  summary: Returns the list of custom attributes, if any, associated with the returned value.
+  summary: >+
+    Returns the list of custom attributes, if any, associated with the returned value.
+
   syntax:
     content:
       CSharp: ImmutableArray<AttributeData> GetReturnTypeAttributes();
@@ -970,15 +1031,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 170
-  summary: Returns a symbol (e.g. property, event, etc.) associated with the method.
+  summary: >+
+    Returns a symbol (e.g. property, event, etc.) associated with the method.
+
   syntax:
     content:
       CSharp: ISymbol AssociatedSymbol
     parameters:
     - id: AssociatedSymbol
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_AssociatedSymbol
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -1010,7 +1074,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 177
-  summary: Returns a constructed method given its type arguments.
+  summary: >+
+    Returns a constructed method given its type arguments.
+
   syntax:
     content:
       CSharp: IMethodSymbol Construct(params ITypeSymbol[] typeArguments);
@@ -1018,6 +1084,7 @@ items:
     - id: typeArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: >-
         The immediate type arguments to be replaced for type
@@ -1041,18 +1108,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 183
-  summary: >-
+  summary: >+
     If this is a partial method implementation part, returns the corresponding
 
-        definition part.  Otherwise null.
+    definition part.  Otherwise null.
+
   syntax:
     content:
       CSharp: IMethodSymbol PartialDefinitionPart
     parameters:
     - id: PartialDefinitionPart
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_PartialDefinitionPart
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -1084,20 +1153,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 190
-  summary: >-
+  summary: >+
     If this is a partial method declaration without a body, and the method is
 
-        implemented with a body, returns that implementing definition.  Otherwise
+    implemented with a body, returns that implementing definition.  Otherwise
 
-        null.
+    null.
+
   syntax:
     content:
       CSharp: IMethodSymbol PartialImplementationPart
     parameters:
     - id: PartialImplementationPart
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_PartialImplementationPart
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol
@@ -1129,7 +1200,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 195
-  summary: Platform invoke information, or null if the method isn't a P/Invoke.
+  summary: >+
+    Platform invoke information, or null if the method isn't a P/Invoke.
+
   syntax:
     content:
       CSharp: DllImportData GetDllImportData();
@@ -1152,15 +1225,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
     startLine: 204
-  summary: "If this method is a Lambda method (MethodKind = MethodKind.LambdaMethod) and \r\n    there is an anonymous delegate associated with it, returns this delegate.\r\n    \r\n    Returns null if the symbol is not a lambda or if it does not have an\r\n    anonymous delegate associated with it."
+  summary: >+
+    If this method is a Lambda method (MethodKind = MethodKind.LambdaMethod) and
+
+    there is an anonymous delegate associated with it, returns this delegate.
+
+
+
+    Returns null if the symbol is not a lambda or if it does not have an
+
+    anonymous delegate associated with it.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol AssociatedAnonymousDelegate
     parameters:
     - id: AssociatedAnonymousDelegate
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_AssociatedAnonymousDelegate
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IMethodSymbol

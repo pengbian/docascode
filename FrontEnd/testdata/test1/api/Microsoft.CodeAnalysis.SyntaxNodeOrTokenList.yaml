@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
   startLine: 16
-summary: A list of [Microsoft.CodeAnalysis.SyntaxNodeOrToken](api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) structures.
+summary: >+
+  A list of [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) structures.
+
 syntax:
   content:
     CSharp: public struct SyntaxNodeOrTokenList
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +46,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 71
-  summary: Gets the count of nodes in this list
+  summary: >+
+    Gets the count of nodes in this list
+
   syntax:
     content:
       CSharp: public int Count
@@ -50,6 +56,7 @@ items:
     - id: Count
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Count
@@ -83,7 +90,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 81
-  summary: Gets the [Microsoft.CodeAnalysis.SyntaxNodeOrToken](api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) at the specified index.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) at the specified index.
+
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Item(System.Int32)
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -115,15 +124,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 118
-  summary: The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan FullSpan
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -155,15 +167,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 136
-  summary: The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+  summary: >+
+    The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -195,7 +210,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 159
-  summary: "Returns the string representation of the nodes and tokens in this list, not including the first node or token's leading trivia \r\n    and the last node or token's trailing trivia."
+  summary: >+
+    Returns the string representation of the nodes and tokens in this list, not including the first node or token's leading trivia
+
+    and the last node or token's trailing trivia.
+
   syntax:
     content:
       CSharp: public override string ToString()
@@ -219,7 +238,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 172
-  summary: "Returns the full string representation of the nodes and tokens in this list including the first node or token's leading trivia \r\n    and the last node or token's trailing trivia."
+  summary: >+
+    Returns the full string representation of the nodes and tokens in this list including the first node or token's leading trivia
+
+    and the last node or token's trailing trivia.
+
   syntax:
     content:
       CSharp: public string ToFullString()
@@ -243,7 +266,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 180
-  summary: Gets the first SyntaxNodeOrToken structure from this list.
+  summary: >+
+    Gets the first SyntaxNodeOrToken structure from this list.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrToken First()
@@ -266,7 +291,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 188
-  summary: Gets the first SyntaxNodeOrToken structure from this list if present, else default(SyntaxNodeOrToken).
+  summary: >+
+    Gets the first SyntaxNodeOrToken structure from this list if present, else default(SyntaxNodeOrToken).
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrToken FirstOrDefault()
@@ -289,7 +316,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 203
-  summary: Gets the last SyntaxNodeOrToken structure from this list.
+  summary: >+
+    Gets the last SyntaxNodeOrToken structure from this list.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrToken Last()
@@ -312,7 +341,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 211
-  summary: Gets the last SyntaxNodeOrToken structure from this list if present, else default(SyntaxNodeOrToken).
+  summary: >+
+    Gets the last SyntaxNodeOrToken structure from this list if present, else default(SyntaxNodeOrToken).
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrToken LastOrDefault()
@@ -335,15 +366,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 228
-  summary: Returns the index from the list for the given [Microsoft.CodeAnalysis.SyntaxNodeOrToken](api\Microsoft.CodeAnalysis.SyntaxNodeOrToken).
+  summary: >+
+    Returns the index from the list for the given [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken).
+
   syntax:
     content:
       CSharp: public int IndexOf(SyntaxNodeOrToken nodeOrToken)
     parameters:
     - id: nodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to search for in the list.
     return:
       id: Int32
@@ -364,7 +398,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 248
-  summary: Indicates whether there is any element in the list.
+  summary: >+
+    Indicates whether there is any element in the list.
+
   syntax:
     content:
       CSharp: public bool Any()
@@ -388,15 +424,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 272
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token added to the end.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token added to the end.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList Add(SyntaxNodeOrToken nodeOrToken)
     parameters:
     - id: nodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to add.
     return:
       id: SyntaxNodeOrTokenList
@@ -416,7 +455,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 281
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens added to the end.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens added to the end.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList AddRange(IEnumerable<SyntaxNodeOrToken> nodesOrTokens)
@@ -424,6 +465,7 @@ items:
     - id: nodesOrTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The nodes or tokens to add.
@@ -445,7 +487,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 291
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token inserted at the index.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token inserted at the index.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList Insert(int index, SyntaxNodeOrToken nodeOrToken)
@@ -453,13 +497,15 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to insert.
     return:
       id: SyntaxNodeOrTokenList
@@ -479,7 +525,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 306
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens inserted at the index.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens inserted at the index.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList InsertRange(int index, IEnumerable<SyntaxNodeOrToken> nodesAndTokens)
@@ -487,12 +535,14 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodesAndTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The nodes or tokens to insert.
@@ -514,7 +564,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 348
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the element at the specified index removed.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the element at the specified index removed.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList RemoveAt(int index)
@@ -522,6 +574,7 @@ items:
     - id: index
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
@@ -543,15 +596,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 365
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element removed.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element removed.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList Remove(SyntaxNodeOrToken nodeOrTokenInList)
     parameters:
     - id: nodeOrTokenInList
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to remove.
     return:
       id: SyntaxNodeOrTokenList
@@ -571,20 +627,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 383
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new node or token.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new node or token.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList Replace(SyntaxNodeOrToken nodeOrTokenInList, SyntaxNodeOrToken newNodeOrToken)
     parameters:
     - id: nodeOrTokenInList
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to replace.
     - id: newNodeOrToken
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The new node or token.
     return:
       id: SyntaxNodeOrTokenList
@@ -604,19 +664,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 398
-  summary: Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new nodes and tokens.
+  summary: >+
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new nodes and tokens.
+
   syntax:
     content:
       CSharp: public SyntaxNodeOrTokenList ReplaceRange(SyntaxNodeOrToken nodeOrTokenInList, IEnumerable<SyntaxNodeOrToken> newNodesAndTokens)
     parameters:
     - id: nodeOrTokenInList
       type:
-        id: SyntaxNodeOrToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        name: SyntaxNodeOrToken
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to replace.
     - id: newNodesAndTokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken}
         href: System.Runtime
         isExternal: true
       description: The new nodes and tokens.
@@ -638,7 +702,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 423
-  summary: Gets the enumerator.
+  summary: >+
+    Gets the enumerator.
+
   syntax:
     content:
       CSharp: public Enumerator GetEnumerator()
@@ -660,7 +726,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 458
-  summary: Implements the operator ==.
+  summary: >+
+    Implements the operator ==.
+
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.op_Inequality(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList,Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -676,7 +744,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 471
-  summary: Implements the operator !=.
+  summary: >+
+    Implements the operator !=.
+
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Equals(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -693,15 +763,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 484
-  summary: Indicates whether the current object is equal to another object of the same type.
+  summary: >+
+    Indicates whether the current object is equal to another object of the same type.
+
   syntax:
     content:
       CSharp: public bool Equals(SyntaxNodeOrTokenList other)
     parameters:
     - id: other
       type:
-        id: SyntaxNodeOrTokenList
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+        id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+        name: SyntaxNodeOrTokenList
+        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
       description: An object to compare with this object.
     return:
       id: Boolean
@@ -725,7 +798,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 496
-  summary: Determines whether the specified @T:System.Object- is equal to this instance.
+  summary: >+
+    Determines whether the specified [System.Object](#) is equal to this instance.
+
   syntax:
     content:
       CSharp: public override bool Equals(object obj)
@@ -733,12 +808,13 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
-      description: The @T:System.Object- to compare with this instance.
+      description: The [System.Object](#) to compare with this instance.
     return:
       id: Boolean
-      description: true if the specified @T:System.Object- is equal to this instance; otherwise, false.
+      description: true if the specified [System.Object](#) is equal to this instance; otherwise, false.
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.GetHashCode
   yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
@@ -755,7 +831,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
     startLine: 507
-  summary: Returns a hash code for this instance.
+  summary: >+
+    Returns a hash code for this instance.
+
   syntax:
     content:
       CSharp: public override int GetHashCode()

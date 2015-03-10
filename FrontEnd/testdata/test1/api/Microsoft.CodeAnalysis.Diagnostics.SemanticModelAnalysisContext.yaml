@@ -14,18 +14,21 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
   startLine: 317
-summary: >-
+summary: >+
   Context for a semantic model action.
 
-      A semantic model action operates on the [Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel) of a code document, and can use a [Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext](api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext) to report [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic)s about the model.
+  A semantic model action operates on the [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) of a code document, and can use a [Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext](#/api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext) to report [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about the model.
+
 syntax:
   content:
     CSharp: public struct SemanticModelAnalysisContext
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -45,15 +48,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 327
-  summary: '[Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel) that is the subject of the analysis.'
+  summary: >+
+    [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) that is the subject of the analysis.
+
   syntax:
     content:
       CSharp: public SemanticModel SemanticModel
     parameters:
     - id: SemanticModel
       type:
-        id: SemanticModel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_SemanticModel
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
@@ -85,15 +91,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 332
-  summary: Options specified for the analysis.
+  summary: >+
+    Options specified for the analysis.
+
   syntax:
     content:
       CSharp: public AnalyzerOptions Options
     parameters:
     - id: Options
       type:
-        id: AnalyzerOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        name: AnalyzerOptions
+        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_Options
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
@@ -125,7 +134,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 337
-  summary: Token to check for requested cancellation of the analysis.
+  summary: >+
+    Token to check for requested cancellation of the analysis.
+
   syntax:
     content:
       CSharp: public CancellationToken CancellationToken
@@ -133,6 +144,7 @@ items:
     - id: CancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_CancellationToken
@@ -172,20 +184,24 @@ items:
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
     - id: options
       type:
-        id: AnalyzerOptions
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerOptions.cs
+        id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        name: AnalyzerOptions
+        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
     - id: reportDiagnostic
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostic}
+        name: System.Action{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
@@ -204,15 +220,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
     startLine: 351
-  summary: Report a [Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) about a [Microsoft.CodeAnalysis.SemanticModel](api\Microsoft.CodeAnalysis.SemanticModel).
+  summary: >+
+    Report a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) about a [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel).
+
   syntax:
     content:
       CSharp: public void ReportDiagnostic(Diagnostic diagnostic)
     parameters:
     - id: diagnostic
       type:
-        id: Diagnostic
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\Diagnostic.cs
-      description: '[Microsoft.CodeAnalysis.Diagnostic](api\Microsoft.CodeAnalysis.Diagnostic) to be reported.'
+        id: Microsoft.CodeAnalysis.Diagnostic
+        name: Diagnostic
+        href: api\Microsoft.CodeAnalysis.Diagnostic
+      description: '[Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) to be reported.'
     return:
       id: Void

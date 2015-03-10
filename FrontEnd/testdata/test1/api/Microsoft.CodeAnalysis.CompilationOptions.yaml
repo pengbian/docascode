@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
   startLine: 13
-summary: Represents compilation options common to C# and VB.
+summary: >+
+  Represents compilation options common to C# and VB.
+
 syntax:
   content:
     CSharp: public abstract class CompilationOptions
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,15 +42,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 18
-  summary: The kind of assembly generated when emitted.
+  summary: >+
+    The kind of assembly generated when emitted.
+
   syntax:
     content:
       CSharp: public OutputKind OutputKind
     parameters:
     - id: OutputKind
       type:
-        id: OutputKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\OutputKind.cs
+        id: Microsoft.CodeAnalysis.OutputKind
+        name: OutputKind
+        href: api\Microsoft.CodeAnalysis.OutputKind
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_OutputKind
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -79,7 +85,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 30
-  summary: Name of the primary module, or null if a default name should be used.
+  summary: >+
+    Name of the primary module, or null if a default name should be used.
+
   syntax:
     content:
       CSharp: public string ModuleName
@@ -87,6 +95,7 @@ items:
     - id: ModuleName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ModuleName
@@ -120,7 +129,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 36
-  summary: "The full name of a global implicit class (script class). This class implicitly encapsulates top-level statements, \r\n    type declarations, and member declarations. Could be a namespace qualified name."
+  summary: >+
+    The full name of a global implicit class (script class). This class implicitly encapsulates top-level statements,
+
+    type declarations, and member declarations. Could be a namespace qualified name.
+
   syntax:
     content:
       CSharp: public string ScriptClassName
@@ -128,6 +141,7 @@ items:
     - id: ScriptClassName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ScriptClassName
@@ -161,10 +175,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 42
-  summary: >-
+  summary: >+
     The full name of a type that declares static Main method. Must be a valid non-generic namespace-qualified name.
 
-        Null if any static Main method is a candidate for an entry point.
+    Null if any static Main method is a candidate for an entry point.
+
   syntax:
     content:
       CSharp: public string MainTypeName
@@ -172,6 +187,7 @@ items:
     - id: MainTypeName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MainTypeName
@@ -205,7 +221,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 51
-  summary: The name of the file containing the key with which to sign the output.
+  summary: >+
+    The name of the file containing the key with which to sign the output.
+
   syntax:
     content:
       CSharp: public string CryptoKeyFile
@@ -213,6 +231,7 @@ items:
     - id: CryptoKeyFile
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyFile
@@ -246,7 +265,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 56
-  summary: The CSP container containing the key with which to sign the output.
+  summary: >+
+    The CSP container containing the key with which to sign the output.
+
   syntax:
     content:
       CSharp: public string CryptoKeyContainer
@@ -254,6 +275,7 @@ items:
     - id: CryptoKeyContainer
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyContainer
@@ -287,10 +309,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 62
-  summary: >-
+  summary: >+
     Turn off strong name signing when you have supplied a key either through
 
-        attributes or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer](api\Microsoft.CodeAnalysis.CompilationOptions) or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile](api\Microsoft.CodeAnalysis.CompilationOptions).
+    attributes or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer](#/api\Microsoft.CodeAnalysis.CompilationOptions) or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile](#/api\Microsoft.CodeAnalysis.CompilationOptions).
+
   syntax:
     content:
       CSharp: public bool ? DelaySign
@@ -298,6 +321,7 @@ items:
     - id: DelaySign
       type:
         id: System.Nullable{System.Boolean}
+        name: System.Nullable{System.Boolean}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_DelaySign
@@ -331,7 +355,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 67
-  summary: Whether bounds checking on integer arithmetic is enforced by default or not.
+  summary: >+
+    Whether bounds checking on integer arithmetic is enforced by default or not.
+
   syntax:
     content:
       CSharp: public bool CheckOverflow
@@ -339,6 +365,7 @@ items:
     - id: CheckOverflow
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CheckOverflow
@@ -372,15 +399,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 72
-  summary: Specifies which version of the common language runtime (CLR) can run the assembly.
+  summary: >+
+    Specifies which version of the common language runtime (CLR) can run the assembly.
+
   syntax:
     content:
       CSharp: public Platform Platform
     parameters:
     - id: Platform
       type:
-        id: Platform
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Platform.cs
+        id: Microsoft.CodeAnalysis.Platform
+        name: Platform
+        href: api\Microsoft.CodeAnalysis.Platform
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Platform
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -412,18 +442,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 78
-  summary: >-
+  summary: >+
     Specifies whether or not optimizations should be performed on the output IL.
 
-        This is independent of whether or not PDB information is generated.
+    This is independent of whether or not PDB information is generated.
+
   syntax:
     content:
       CSharp: public OptimizationLevel OptimizationLevel
     parameters:
     - id: OptimizationLevel
       type:
-        id: OptimizationLevel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\OptimizationLevel.cs
+        id: Microsoft.CodeAnalysis.OptimizationLevel
+        name: OptimizationLevel
+        href: api\Microsoft.CodeAnalysis.OptimizationLevel
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_OptimizationLevel
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -455,15 +487,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 83
-  summary: Global warning report option
+  summary: >+
+    Global warning report option
+
   syntax:
     content:
       CSharp: public ReportDiagnostic GeneralDiagnosticOption
     parameters:
     - id: GeneralDiagnosticOption
       type:
-        id: ReportDiagnostic
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
+        id: Microsoft.CodeAnalysis.ReportDiagnostic
+        name: ReportDiagnostic
+        href: api\Microsoft.CodeAnalysis.ReportDiagnostic
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_GeneralDiagnosticOption
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -495,7 +530,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 88
-  summary: Global warning level (from 0 to 4).
+  summary: >+
+    Global warning level (from 0 to 4).
+
   syntax:
     content:
       CSharp: public int WarningLevel
@@ -503,6 +540,7 @@ items:
     - id: WarningLevel
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_WarningLevel
@@ -536,7 +574,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 93
-  summary: Specifies whether building compilation may use multiple threads.
+  summary: >+
+    Specifies whether building compilation may use multiple threads.
+
   syntax:
     content:
       CSharp: public bool ConcurrentBuild
@@ -544,6 +584,7 @@ items:
     - id: ConcurrentBuild
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ConcurrentBuild
@@ -577,7 +618,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 114
-  summary: Warning report option for each warning.
+  summary: >+
+    Warning report option for each warning.
+
   syntax:
     content:
       CSharp: public ImmutableDictionary<string, ReportDiagnostic> SpecificDiagnosticOptions
@@ -585,6 +628,7 @@ items:
     - id: SpecificDiagnosticOptions
       type:
         id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
+        name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SpecificDiagnosticOptions
@@ -618,18 +662,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 120
-  summary: >-
+  summary: >+
     Resolves paths to metadata references specified in source via #r directives.
 
-        Null if the compilation can't contain references to metadata other than those explicitly passed to its factory (such as #r directives in sources).
+    Null if the compilation can't contain references to metadata other than those explicitly passed to its factory (such as #r directives in sources).
+
   syntax:
     content:
       CSharp: public MetadataReferenceResolver MetadataReferenceResolver
     parameters:
     - id: MetadataReferenceResolver
       type:
-        id: MetadataReferenceResolver
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.MetadataReferenceResolver
+        name: MetadataReferenceResolver
+        href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MetadataReferenceResolver
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -661,18 +707,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 126
-  summary: >-
+  summary: >+
     Gets the resolver for resolving XML document references for the compilation.
 
-        Null if the compilation is not allowed to contain XML file references, such as XML doc comment include tags and permission sets stored in an XML file.
+    Null if the compilation is not allowed to contain XML file references, such as XML doc comment include tags and permission sets stored in an XML file.
+
   syntax:
     content:
       CSharp: public XmlReferenceResolver XmlReferenceResolver
     parameters:
     - id: XmlReferenceResolver
       type:
-        id: XmlReferenceResolver
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\XmlReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.XmlReferenceResolver
+        name: XmlReferenceResolver
+        href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_XmlReferenceResolver
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -704,18 +752,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 132
-  summary: >-
+  summary: >+
     Gets the resolver for resolving source document references for the compilation.
 
-        Null if the compilation is not allowed to contain source file references, such as #line pragmas and #load directives.
+    Null if the compilation is not allowed to contain source file references, such as #line pragmas and #load directives.
+
   syntax:
     content:
       CSharp: public SourceReferenceResolver SourceReferenceResolver
     parameters:
     - id: SourceReferenceResolver
       type:
-        id: SourceReferenceResolver
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.SourceReferenceResolver
+        name: SourceReferenceResolver
+        href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SourceReferenceResolver
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -747,18 +797,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 138
-  summary: >-
+  summary: >+
     Provides strong name and signature the source assembly.
 
-        Null if assembly signing is not supported.
+    Null if assembly signing is not supported.
+
   syntax:
     content:
       CSharp: public StrongNameProvider StrongNameProvider
     parameters:
     - id: StrongNameProvider
       type:
-        id: StrongNameProvider
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\StrongNameProvider.cs
+        id: Microsoft.CodeAnalysis.StrongNameProvider
+        name: StrongNameProvider
+        href: api\Microsoft.CodeAnalysis.StrongNameProvider
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_StrongNameProvider
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -790,18 +842,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 144
-  summary: >-
+  summary: >+
     Used to compare assembly identities. May implement unification and portability policies specific to the target platform.
 
-        [Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default](api\Microsoft.CodeAnalysis.AssemblyIdentityComparer) if not specified.
+    [Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default](#/api\Microsoft.CodeAnalysis.AssemblyIdentityComparer) if not specified.
+
   syntax:
     content:
       CSharp: public AssemblyIdentityComparer AssemblyIdentityComparer
     parameters:
     - id: AssemblyIdentityComparer
       type:
-        id: AssemblyIdentityComparer
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentityComparer
+        name: AssemblyIdentityComparer
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_AssemblyIdentityComparer
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
   href: api\Microsoft.CodeAnalysis.CompilationOptions
@@ -833,15 +887,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 249
-  summary: Creates a new options instance with the specified general diagnostic option.
+  summary: >+
+    Creates a new options instance with the specified general diagnostic option.
+
   syntax:
     content:
       CSharp: public CompilationOptions WithGeneralDiagnosticOption(ReportDiagnostic value)
     parameters:
     - id: value
       type:
-        id: ReportDiagnostic
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
+        id: Microsoft.CodeAnalysis.ReportDiagnostic
+        name: ReportDiagnostic
+        href: api\Microsoft.CodeAnalysis.ReportDiagnostic
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSpecificDiagnosticOptions(System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic})
@@ -860,7 +917,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 257
-  summary: Creates a new options instance with the specified diagnostic-specific options.
+  summary: >+
+    Creates a new options instance with the specified diagnostic-specific options.
+
   syntax:
     content:
       CSharp: public CompilationOptions WithSpecificDiagnosticOptions(ImmutableDictionary<string, ReportDiagnostic> value)
@@ -868,6 +927,7 @@ items:
     - id: value
       type:
         id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
+        name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         href: System.Collections.Immutable
         isExternal: true
     return:
@@ -888,7 +948,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 265
-  summary: Creates a new options instance with the specified diagnostic-specific options.
+  summary: >+
+    Creates a new options instance with the specified diagnostic-specific options.
+
   syntax:
     content:
       CSharp: public CompilationOptions WithSpecificDiagnosticOptions(IEnumerable<KeyValuePair<string, ReportDiagnostic>> value)
@@ -896,6 +958,7 @@ items:
     - id: value
       type:
         id: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
+        name: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
         href: System.Runtime
         isExternal: true
     return:
@@ -916,15 +979,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 273
-  summary: Creates a new options instance with the specified output kind.
+  summary: >+
+    Creates a new options instance with the specified output kind.
+
   syntax:
     content:
       CSharp: public CompilationOptions WithOutputKind(OutputKind kind)
     parameters:
     - id: kind
       type:
-        id: OutputKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\OutputKind.cs
+        id: Microsoft.CodeAnalysis.OutputKind
+        name: OutputKind
+        href: api\Microsoft.CodeAnalysis.OutputKind
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithPlatform(Microsoft.CodeAnalysis.Platform)
@@ -943,15 +1009,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 281
-  summary: Creates a new options instance with the specified platform.
+  summary: >+
+    Creates a new options instance with the specified platform.
+
   syntax:
     content:
       CSharp: public CompilationOptions WithPlatform(Platform platform)
     parameters:
     - id: platform
       type:
-        id: Platform
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\Platform.cs
+        id: Microsoft.CodeAnalysis.Platform
+        name: Platform
+        href: api\Microsoft.CodeAnalysis.Platform
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithOptimizationLevel(Microsoft.CodeAnalysis.OptimizationLevel)
@@ -970,15 +1039,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 289
-  summary: Creates a new options instance with optimizations enabled or disabled.
+  summary: >+
+    Creates a new options instance with optimizations enabled or disabled.
+
   syntax:
     content:
       CSharp: public CompilationOptions WithOptimizationLevel(OptimizationLevel value)
     parameters:
     - id: value
       type:
-        id: OptimizationLevel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\OptimizationLevel.cs
+        id: Microsoft.CodeAnalysis.OptimizationLevel
+        name: OptimizationLevel
+        href: api\Microsoft.CodeAnalysis.OptimizationLevel
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithXmlReferenceResolver(Microsoft.CodeAnalysis.XmlReferenceResolver)
@@ -1003,8 +1075,9 @@ items:
     parameters:
     - id: resolver
       type:
-        id: XmlReferenceResolver
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\XmlReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.XmlReferenceResolver
+        name: XmlReferenceResolver
+        href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSourceReferenceResolver(Microsoft.CodeAnalysis.SourceReferenceResolver)
@@ -1029,8 +1102,9 @@ items:
     parameters:
     - id: resolver
       type:
-        id: SourceReferenceResolver
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.SourceReferenceResolver
+        name: SourceReferenceResolver
+        href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithMetadataReferenceResolver(Microsoft.CodeAnalysis.MetadataReferenceResolver)
@@ -1055,8 +1129,9 @@ items:
     parameters:
     - id: resolver
       type:
-        id: MetadataReferenceResolver
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\MetadataReferenceResolver.cs
+        id: Microsoft.CodeAnalysis.MetadataReferenceResolver
+        name: MetadataReferenceResolver
+        href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithAssemblyIdentityComparer(Microsoft.CodeAnalysis.AssemblyIdentityComparer)
@@ -1081,8 +1156,9 @@ items:
     parameters:
     - id: comparer
       type:
-        id: AssemblyIdentityComparer
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\MetadataReference\AssemblyIdentityComparer.cs
+        id: Microsoft.CodeAnalysis.AssemblyIdentityComparer
+        name: AssemblyIdentityComparer
+        href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithStrongNameProvider(Microsoft.CodeAnalysis.StrongNameProvider)
@@ -1107,8 +1183,9 @@ items:
     parameters:
     - id: provider
       type:
-        id: StrongNameProvider
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\StrongNameProvider.cs
+        id: Microsoft.CodeAnalysis.StrongNameProvider
+        name: StrongNameProvider
+        href: api\Microsoft.CodeAnalysis.StrongNameProvider
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.Errors
@@ -1127,7 +1204,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
     startLine: 345
-  summary: Errors collection related to an incompatible set of compilation options
+  summary: >+
+    Errors collection related to an incompatible set of compilation options
+
   syntax:
     content:
       CSharp: public ImmutableArray<Diagnostic> Errors
@@ -1135,6 +1214,7 @@ items:
     - id: Errors
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Errors
@@ -1175,6 +1255,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

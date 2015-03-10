@@ -19,4 +19,6 @@ items:
   yaml: api\Microsoft.CodeAnalysis.CaseInsensitiveComparison.yaml
   href: api\Microsoft.CodeAnalysis.CaseInsensitiveComparison
   type: Class
-  summary: Case-insensitive operations (mostly comparison) on unicode strings.
+  summary: >+
+    Case-insensitive operations (mostly comparison) on unicode strings.
+

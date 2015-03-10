@@ -68,15 +68,17 @@ namespace EntityModel
                 }
             }
 
+            string displayName = string.Empty;
             if (!string.IsNullOrEmpty(id) && id.Length > 2)
             {
+                displayName = id.Substring(2);
                 id = id.Substring(2);
             }
 
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
-                return new SourceDetail { IsExternalPath = true, Name = id, Href = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
+                return new SourceDetail { IsExternalPath = true, Name = id, DisplayName = displayName, Href = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
             }
 
             var syntaxNode = syntaxRef.GetSyntax();
@@ -85,7 +87,8 @@ namespace EntityModel
             {
                 return new SourceDetail
                 {
-                    Name = symbol.Name,
+                    Name = id,
+                    DisplayName = symbol.Name,
                     IsExternalPath = false,
                     Href = syntaxNode.SyntaxTree.FilePath,
                 };

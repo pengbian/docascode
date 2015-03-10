@@ -14,16 +14,20 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\DiagnosticAnalyzer\UnresolvedAnalyzerReference.cs
   startLine: 13
-summary: Represents an analyzer reference that can't be resolved.
+summary: >+
+  Represents an analyzer reference that can't be resolved.
+
 syntax:
   content:
     CSharp: public sealed class UnresolvedAnalyzerReference
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
-- id: AnalyzerReference
-  href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+- id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  name: AnalyzerReference
+  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.#ctor(System.String)
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
@@ -48,6 +52,7 @@ items:
     - id: unresolvedPath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display
@@ -73,6 +78,7 @@ items:
     - id: Display
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display
@@ -113,6 +119,7 @@ items:
     - id: FullPath
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath
@@ -153,6 +160,7 @@ items:
     - id: IsUnresolved
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved
@@ -215,6 +223,7 @@ items:
     - id: language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:

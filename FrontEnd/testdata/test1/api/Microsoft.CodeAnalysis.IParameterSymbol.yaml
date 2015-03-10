@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
   startLine: 11
-summary: Represents a parameter of a method or property.
+summary: >+
+  Represents a parameter of a method or property.
+
 syntax:
   content:
     CSharp: public interface IParameterSymbol
@@ -35,15 +37,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 16
-  summary: Whether the parameter passed by value or by reference.
+  summary: >+
+    Whether the parameter passed by value or by reference.
+
   syntax:
     content:
       CSharp: RefKind RefKind
     parameters:
     - id: RefKind
       type:
-        id: RefKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\RefKind.cs
+        id: Microsoft.CodeAnalysis.RefKind
+        name: RefKind
+        href: api\Microsoft.CodeAnalysis.RefKind
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_RefKind
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IParameterSymbol
@@ -75,7 +80,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 21
-  summary: Returns true if the parameter was declared as a parameter array.
+  summary: >+
+    Returns true if the parameter was declared as a parameter array.
+
   syntax:
     content:
       CSharp: bool IsParams
@@ -83,6 +90,7 @@ items:
     - id: IsParams
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsParams
@@ -116,7 +124,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 26
-  summary: Returns true if the parameter is optional.
+  summary: >+
+    Returns true if the parameter is optional.
+
   syntax:
     content:
       CSharp: bool IsOptional
@@ -124,6 +134,7 @@ items:
     - id: IsOptional
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsOptional
@@ -157,7 +168,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 31
-  summary: Returns true if the parameter is the hidden 'this' ('Me' in Visual Basic) parameter.
+  summary: >+
+    Returns true if the parameter is the hidden 'this' ('Me' in Visual Basic) parameter.
+
   syntax:
     content:
       CSharp: bool IsThis
@@ -165,6 +178,7 @@ items:
     - id: IsThis
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsThis
@@ -198,15 +212,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 36
-  summary: Gets the type of the parameter.
+  summary: >+
+    Gets the type of the parameter.
+
   syntax:
     content:
       CSharp: ITypeSymbol Type
     parameters:
     - id: Type
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_Type
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IParameterSymbol
@@ -238,7 +255,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 41
-  summary: The list of custom modifiers, if any, associated with the parameter.
+  summary: >+
+    The list of custom modifiers, if any, associated with the parameter.
+
   syntax:
     content:
       CSharp: ImmutableArray<CustomModifier> CustomModifiers
@@ -246,6 +265,7 @@ items:
     - id: CustomModifiers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_CustomModifiers
@@ -279,10 +299,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 47
-  summary: >-
+  summary: >+
     Gets the ordinal position of the parameter. The first parameter has ordinal zero.
 
-        The 'this' parameter ('Me' in Visual Basic) has ordinal -1.
+    The 'this' parameter ('Me' in Visual Basic) has ordinal -1.
+
   syntax:
     content:
       CSharp: int Ordinal
@@ -290,6 +311,7 @@ items:
     - id: Ordinal
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_Ordinal
@@ -323,12 +345,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 54
-  summary: >-
+  summary: >+
     Returns true if the parameter specifies a default value to be passed
 
-        when no value is provided as an argument to a call. The default value
+    when no value is provided as an argument to a call. The default value
 
-        can be obtained with the DefaultValue property.
+    can be obtained with the DefaultValue property.
+
   syntax:
     content:
       CSharp: bool HasExplicitDefaultValue
@@ -336,6 +359,7 @@ items:
     - id: HasExplicitDefaultValue
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_HasExplicitDefaultValue
@@ -369,7 +393,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 64
-  summary: Returns the default value of the parameter.
+  summary: >+
+    Returns the default value of the parameter.
+
   syntax:
     content:
       CSharp: object ExplicitDefaultValue
@@ -377,6 +403,7 @@ items:
     - id: ExplicitDefaultValue
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_ExplicitDefaultValue
@@ -410,20 +437,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
     startLine: 71
-  summary: >-
+  summary: >+
     Get the original definition of this symbol. If this symbol is derived from another
 
-        symbol by (say) type substitution, this gets the original symbol, as it was defined in
+    symbol by (say) type substitution, this gets the original symbol, as it was defined in
 
-        source or metadata.
+    source or metadata.
+
   syntax:
     content:
       CSharp: new IParameterSymbol OriginalDefinition
     parameters:
     - id: OriginalDefinition
       type:
-        id: IParameterSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IParameterSymbol.cs
+        id: Microsoft.CodeAnalysis.IParameterSymbol
+        name: IParameterSymbol
+        href: api\Microsoft.CodeAnalysis.IParameterSymbol
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IParameterSymbol

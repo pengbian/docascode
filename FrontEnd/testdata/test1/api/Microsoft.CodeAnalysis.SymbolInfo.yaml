@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct SymbolInfo
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -41,22 +43,24 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
     startLine: 22
-  summary: >-
+  summary: >+
     The symbol that was referred to by the syntax node, if any. Returns null if the given
 
-        expression did not bind successfully to a single symbol. If null is returned, it may
+    expression did not bind successfully to a single symbol. If null is returned, it may
 
-        still be that case that we have one or more "best guesses" as to what symbol was
+    still be that case that we have one or more "best guesses" as to what symbol was
 
-        intended. These best guesses are available via the CandidateSymbols property.
+    intended. These best guesses are available via the CandidateSymbols property.
+
   syntax:
     content:
       CSharp: public ISymbol Symbol
     parameters:
     - id: Symbol
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_Symbol
   yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
   href: api\Microsoft.CodeAnalysis.SymbolInfo
@@ -88,16 +92,17 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
     startLine: 31
-  summary: >-
+  summary: >+
     If the expression did not successfully resolve to a symbol, but there were one or more
 
-        symbols that may have been considered but discarded, this property returns those
+    symbols that may have been considered but discarded, this property returns those
 
-        symbols. The reason that the symbols did not successfully resolve to a symbol are
+    symbols. The reason that the symbols did not successfully resolve to a symbol are
 
-        available in the CandidateReason property. For example, if the symbol was inaccessible,
+    available in the CandidateReason property. For example, if the symbol was inaccessible,
 
-        ambiguous, or used in the wrong context.
+    ambiguous, or used in the wrong context.
+
   syntax:
     content:
       CSharp: public ImmutableArray<ISymbol> CandidateSymbols
@@ -105,6 +110,7 @@ items:
     - id: CandidateSymbols
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateSymbols
@@ -138,20 +144,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
     startLine: 56
-  summary: >-
+  summary: >+
     If the expression did not successfully resolve to a symbol, but there were one or more
 
-         symbols that may have been considered but discarded, this property describes why those
+    symbols that may have been considered but discarded, this property describes why those
 
-         symbol or symbols were not considered suitable.
+    symbol or symbols were not considered suitable.
+
   syntax:
     content:
       CSharp: public CandidateReason CandidateReason
     parameters:
     - id: CandidateReason
       type:
-        id: CandidateReason
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+        id: Microsoft.CodeAnalysis.CandidateReason
+        name: CandidateReason
+        href: api\Microsoft.CodeAnalysis.CandidateReason
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateReason
   yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
   href: api\Microsoft.CodeAnalysis.SymbolInfo
@@ -190,6 +198,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -216,8 +225,9 @@ items:
     parameters:
     - id: other
       type:
-        id: SymbolInfo
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+        id: Microsoft.CodeAnalysis.SymbolInfo
+        name: SymbolInfo
+        href: api\Microsoft.CodeAnalysis.SymbolInfo
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SymbolInfo.GetHashCode

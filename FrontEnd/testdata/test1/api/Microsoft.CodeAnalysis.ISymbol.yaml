@@ -14,10 +14,11 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
   startLine: 15
-summary: >-
+summary: >+
   Represents a symbol (namespace, class, method, parameter, etc.)
 
-      exposed by the compiler.
+  exposed by the compiler.
+
 syntax:
   content:
     CSharp: public interface ISymbol
@@ -38,15 +39,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 21
-  summary: Gets the [Microsoft.CodeAnalysis.SymbolKind](api\Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.SymbolKind](#/api\Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
+
   syntax:
     content:
       CSharp: SymbolKind Kind
     parameters:
     - id: Kind
       type:
-        id: SymbolKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+        id: Microsoft.CodeAnalysis.SymbolKind
+        name: SymbolKind
+        href: api\Microsoft.CodeAnalysis.SymbolKind
 - id: Microsoft.CodeAnalysis.ISymbol.get_Kind
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -78,7 +82,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 26
-  summary: Gets the source language ("C#" or "Visual Basic").
+  summary: >+
+    Gets the source language ("C#" or "Visual Basic").
+
   syntax:
     content:
       CSharp: string Language
@@ -86,6 +92,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Language
@@ -119,7 +126,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 31
-  summary: Gets the symbol name. Returns the empty string if unnamed.
+  summary: >+
+    Gets the symbol name. Returns the empty string if unnamed.
+
   syntax:
     content:
       CSharp: string Name
@@ -127,6 +136,7 @@ items:
     - id: Name
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Name
@@ -160,22 +170,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 43
-  summary: >-
+  summary: >+
     Gets the name of a symbol as it appears in metadata. Most of the time, this
 
-        is the same as the Name property, with the following exceptions:
+    is the same as the Name property, with the following exceptions:
 
-        1) The metadata name of generic types includes the "`1", "`2" etc. suffix that
+    1) The metadata name of generic types includes the "`1", "`2" etc. suffix that
 
-        indicates the number of type parameters (it does not include, however, names of
+    indicates the number of type parameters (it does not include, however, names of
 
-        containing types or namespaces).
+    containing types or namespaces).
 
-        2) The metadata name of explicit interface names have spaces removed, compared to
+    2) The metadata name of explicit interface names have spaces removed, compared to
 
-        the name property.
+    the name property.
 
-        3) The length of names is limited to not exceed metadata restrictions.
+    3) The length of names is limited to not exceed metadata restrictions.
+
   syntax:
     content:
       CSharp: string MetadataName
@@ -183,6 +194,7 @@ items:
     - id: MetadataName
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_MetadataName
@@ -216,15 +228,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 48
-  summary: Gets the [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
+
   syntax:
     content:
       CSharp: ISymbol ContainingSymbol
     parameters:
     - id: ContainingSymbol
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingSymbol
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -256,18 +271,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 54
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](api\Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](#/api\Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
 
-        symbol is shared across multiple assemblies.
+    symbol is shared across multiple assemblies.
+
   syntax:
     content:
       CSharp: IAssemblySymbol ContainingAssembly
     parameters:
     - id: ContainingAssembly
       type:
-        id: IAssemblySymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+        id: Microsoft.CodeAnalysis.IAssemblySymbol
+        name: IAssemblySymbol
+        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingAssembly
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -299,18 +316,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 60
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](api\Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](#/api\Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
 
-        symbol is shared across multiple modules.
+    symbol is shared across multiple modules.
+
   syntax:
     content:
       CSharp: IModuleSymbol ContainingModule
     parameters:
     - id: ContainingModule
       type:
-        id: IModuleSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IModuleSymbol.cs
+        id: Microsoft.CodeAnalysis.IModuleSymbol
+        name: IModuleSymbol
+        href: api\Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingModule
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -342,18 +361,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 66
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](api\Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](#/api\Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
 
-        symbol is not contained within a type.
+    symbol is not contained within a type.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol ContainingType
     parameters:
     - id: ContainingType
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingType
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -385,18 +406,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 72
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](api\Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](#/api\Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
 
-        symbol isn't contained in a namespace.
+    symbol isn't contained in a namespace.
+
   syntax:
     content:
       CSharp: INamespaceSymbol ContainingNamespace
     parameters:
     - id: ContainingNamespace
       type:
-        id: INamespaceSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+        id: Microsoft.CodeAnalysis.INamespaceSymbol
+        name: INamespaceSymbol
+        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingNamespace
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -428,10 +451,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 78
-  summary: >-
+  summary: >+
     Gets a value indicating whether the symbol is the original definition. Returns false
 
-        if the symbol is derived from another symbol, by type substitution for instance.
+    if the symbol is derived from another symbol, by type substitution for instance.
+
   syntax:
     content:
       CSharp: bool IsDefinition
@@ -439,6 +463,7 @@ items:
     - id: IsDefinition
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsDefinition
@@ -472,7 +497,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 83
-  summary: Gets a value indicating whether the symbol is static.
+  summary: >+
+    Gets a value indicating whether the symbol is static.
+
   syntax:
     content:
       CSharp: bool IsStatic
@@ -480,6 +507,7 @@ items:
     - id: IsStatic
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsStatic
@@ -513,7 +541,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 88
-  summary: Gets a value indicating whether the symbol is virtual.
+  summary: >+
+    Gets a value indicating whether the symbol is virtual.
+
   syntax:
     content:
       CSharp: bool IsVirtual
@@ -521,6 +551,7 @@ items:
     - id: IsVirtual
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsVirtual
@@ -554,7 +585,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 93
-  summary: Gets a value indicating whether the symbol is an override of a base class symbol.
+  summary: >+
+    Gets a value indicating whether the symbol is an override of a base class symbol.
+
   syntax:
     content:
       CSharp: bool IsOverride
@@ -562,6 +595,7 @@ items:
     - id: IsOverride
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsOverride
@@ -595,7 +629,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 98
-  summary: Gets a value indicating whether the symbol is abstract.
+  summary: >+
+    Gets a value indicating whether the symbol is abstract.
+
   syntax:
     content:
       CSharp: bool IsAbstract
@@ -603,6 +639,7 @@ items:
     - id: IsAbstract
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsAbstract
@@ -636,7 +673,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 103
-  summary: Gets a value indicating whether the symbol is sealed.
+  summary: >+
+    Gets a value indicating whether the symbol is sealed.
+
   syntax:
     content:
       CSharp: bool IsSealed
@@ -644,6 +683,7 @@ items:
     - id: IsSealed
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsSealed
@@ -677,7 +717,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 108
-  summary: Gets a value indicating whether the symbol is defined externally.
+  summary: >+
+    Gets a value indicating whether the symbol is defined externally.
+
   syntax:
     content:
       CSharp: bool IsExtern
@@ -685,6 +727,7 @@ items:
     - id: IsExtern
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsExtern
@@ -718,10 +761,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 128
-  summary: >-
+  summary: >+
     Returns true if this symbol was automatically created by the compiler, and does not have
 
-        an explicit corresponding source code declaration.
+    an explicit corresponding source code declaration.
+
   syntax:
     content:
       CSharp: bool IsImplicitlyDeclared
@@ -729,6 +773,7 @@ items:
     - id: IsImplicitlyDeclared
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsImplicitlyDeclared
@@ -762,7 +807,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 133
-  summary: Returns true if this symbol can be referenced by its name in code.
+  summary: >+
+    Returns true if this symbol can be referenced by its name in code.
+
   syntax:
     content:
       CSharp: bool CanBeReferencedByName
@@ -770,6 +817,7 @@ items:
     - id: CanBeReferencedByName
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_CanBeReferencedByName
@@ -803,12 +851,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 140
-  summary: >-
+  summary: >+
     Gets the locations where the symbol was originally defined, either in source or
 
-        metadata. Some symbols (for example, partial classes) may be defined in more than one
+    metadata. Some symbols (for example, partial classes) may be defined in more than one
 
-        location.
+    location.
+
   syntax:
     content:
       CSharp: ImmutableArray<Location> Locations
@@ -816,6 +865,7 @@ items:
     - id: Locations
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Locations
@@ -849,7 +899,25 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 157
-  summary: "Get the syntax node(s) where this symbol was declared in source. Some symbols (for example,\r\n    partial classes) may be defined in more than one location. This property should return\r\n    one or more syntax nodes only if the symbol was declared in source code and also was\r\n    not implicitly declared (see the IsImplicitlyDeclared property). \r\n    \r\n    Note that for namespace symbol, the declaring syntax might be declaring a nested namespace.\r\n    For example, the declaring syntax node for N1 in \"namespace N1.N2 {...}\" is the entire\r\n    NamespaceDeclarationSyntax for N1.N2. For the global namespace, the declaring syntax will\r\n    be the CompilationUnitSyntax."
+  summary: >+
+    Get the syntax node(s) where this symbol was declared in source. Some symbols (for example,
+
+    partial classes) may be defined in more than one location. This property should return
+
+    one or more syntax nodes only if the symbol was declared in source code and also was
+
+    not implicitly declared (see the IsImplicitlyDeclared property).
+
+
+
+    Note that for namespace symbol, the declaring syntax might be declaring a nested namespace.
+
+    For example, the declaring syntax node for N1 in "namespace N1.N2 {...}" is the entire
+
+    NamespaceDeclarationSyntax for N1.N2. For the global namespace, the declaring syntax will
+
+    be the CompilationUnitSyntax.
+
   syntax:
     content:
       CSharp: ImmutableArray<SyntaxReference> DeclaringSyntaxReferences
@@ -857,6 +925,7 @@ items:
     - id: DeclaringSyntaxReferences
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaringSyntaxReferences
@@ -890,10 +959,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 163
-  summary: >-
-    Gets the attributes for the symbol. Returns an empty @T:System.Collections.Generic.IEnumerable`1-
+  summary: >+
+    Gets the attributes for the symbol. Returns an empty [System.Collections.Generic.IEnumerable`1](#)
 
-        if there are no attributes.
+    if there are no attributes.
+
   syntax:
     content:
       CSharp: ImmutableArray<AttributeData> GetAttributes();
@@ -916,18 +986,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 169
-  summary: >-
-    Gets a [Microsoft.CodeAnalysis.Accessibility](api\Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
+  summary: >+
+    Gets a [Microsoft.CodeAnalysis.Accessibility](#/api\Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
 
-        Returns NotApplicable if no accessibility is declared.
+    Returns NotApplicable if no accessibility is declared.
+
   syntax:
     content:
       CSharp: Accessibility DeclaredAccessibility
     parameters:
     - id: DeclaredAccessibility
       type:
-        id: Accessibility
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\Accessibility.cs
+        id: Microsoft.CodeAnalysis.Accessibility
+        name: Accessibility
+        href: api\Microsoft.CodeAnalysis.Accessibility
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaredAccessibility
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -959,20 +1031,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 176
-  summary: >-
-    Gets the [Microsoft.CodeAnalysis.ISymbol](api\Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
+  summary: >+
+    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
 
-        If this symbol is derived from another symbol, by type substitution for instance,
+    If this symbol is derived from another symbol, by type substitution for instance,
 
-        this gets the original symbol, as it was defined in source or metadata.
+    this gets the original symbol, as it was defined in source or metadata.
+
   syntax:
     content:
       CSharp: ISymbol OriginalDefinition
     parameters:
     - id: OriginalDefinition
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
   href: api\Microsoft.CodeAnalysis.ISymbol
@@ -1010,8 +1084,9 @@ items:
     parameters:
     - id: visitor
       type:
-        id: SymbolVisitor
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\SymbolVisitor.cs
+        id: Microsoft.CodeAnalysis.SymbolVisitor
+        name: SymbolVisitor
+        href: api\Microsoft.CodeAnalysis.SymbolVisitor
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
@@ -1036,8 +1111,9 @@ items:
     parameters:
     - id: visitor
       type:
-        id: SymbolVisitor
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\SymbolVisitor`1.cs
+        id: Microsoft.CodeAnalysis.SymbolVisitor{``0}
+        name: SymbolVisitor
+        href: Microsoft.CodeAnalysis.SymbolVisitor{``0}
     return:
       id: TResult
 - id: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
@@ -1056,10 +1132,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 185
-  summary: >-
+  summary: >+
     Returns the Documentation Comment ID for the symbol, or null if the symbol doesn't
 
-        support documentation comments.
+    support documentation comments.
+
   syntax:
     content:
       CSharp: string GetDocumentationCommentId();
@@ -1082,7 +1159,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 194
-  summary: Gets the XML (as text) for the comment associated with the symbol.
+  summary: >+
+    Gets the XML (as text) for the comment associated with the symbol.
+
   syntax:
     content:
       CSharp: string GetDocumentationCommentXml(CultureInfo preferredCulture = null, bool expandIncludes = false, CancellationToken cancellationToken = default (CancellationToken));
@@ -1090,18 +1169,21 @@ items:
     - id: preferredCulture
       type:
         id: System.Globalization.CultureInfo
+        name: System.Globalization.CultureInfo
         href: System.Globalization
         isExternal: true
       description: Preferred culture or null for the default.
     - id: expandIncludes
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
       description: Optionally, expand <include> elements.  No impact on non-source documentation comments.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
+        name: System.Threading.CancellationToken
         href: System.Threading.Tasks
         isExternal: true
       description: Token allowing cancellation of request.
@@ -1124,15 +1206,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 201
-  summary: Converts the symbol to a string representation.
+  summary: >+
+    Converts the symbol to a string representation.
+
   syntax:
     content:
       CSharp: string ToDisplayString(SymbolDisplayFormat format = null);
     parameters:
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: Format or null for the default.
     return:
       id: String
@@ -1153,18 +1238,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 210
-  summary: >-
+  summary: >+
     Convert a symbol to an array of string parts, each of which has a kind. Useful for
 
-        colorizing the display string.
+    colorizing the display string.
+
   syntax:
     content:
       CSharp: ImmutableArray<SymbolDisplayPart> ToDisplayParts(SymbolDisplayFormat format = null);
     parameters:
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1188,18 +1275,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 222
-  summary: >-
+  summary: >+
     Convert a symbol to a string that can be displayed to the user. May be tailored to a
 
-        specific location in the source code.
+    specific location in the source code.
+
   syntax:
     content:
       CSharp: string ToMinimalDisplayString(SemanticModel semanticModel, int position, SymbolDisplayFormat format = null);
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
       description: >-
         Binding information (for determining names appropriate to
 
@@ -1207,13 +1296,15 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1237,18 +1328,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 237
-  summary: >-
+  summary: >+
     Convert a symbol to an array of string parts, each of which has a kind. May be tailored
 
-        to a specific location in the source code. Useful for colorizing the display string.
+    to a specific location in the source code. Useful for colorizing the display string.
+
   syntax:
     content:
       CSharp: ImmutableArray<SymbolDisplayPart> ToMinimalDisplayParts(SemanticModel semanticModel, int position, SymbolDisplayFormat format = null);
     parameters:
     - id: semanticModel
       type:
-        id: SemanticModel
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+        id: Microsoft.CodeAnalysis.SemanticModel
+        name: SemanticModel
+        href: api\Microsoft.CodeAnalysis.SemanticModel
       description: >-
         Binding information (for determining names appropriate to
 
@@ -1256,13 +1349,15 @@ items:
     - id: position
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
     - id: format
       type:
-        id: SymbolDisplayFormat
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\SymbolDisplay\SymbolDisplayFormat.cs
+        id: Microsoft.CodeAnalysis.SymbolDisplayFormat
+        name: SymbolDisplayFormat
+        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1286,7 +1381,41 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
     startLine: 261
-  summary: "Indicates that this symbol uses metadata that cannot be supported by the language.\r\n    \r\n    Examples include:\r\n       - Pointer types in VB\r\n       - ByRef return type\r\n       - Required custom modifiers\r\n       \r\n    This is distinguished from, for example, references to metadata symbols defined in assemblies that weren't referenced.\r\n    Symbols where this returns true can never be used successfully, and thus should never appear in any IDE feature.\r\n    \r\n    This is set for metadata symbols, as follows:\r\n    Type - if a type is unsupported (e.g., a pointer type, etc.)\r\n    Method - parameter or return type is unsupported\r\n    Field - type is unsupported\r\n    Event - type is unsupported\r\n    Property - type is unsupported\r\n    Parameter - type is unsupported"
+  summary: >+
+    Indicates that this symbol uses metadata that cannot be supported by the language.
+
+
+
+    Examples include:
+
+    - Pointer types in VB
+
+    - ByRef return type
+
+    - Required custom modifiers
+
+
+
+    This is distinguished from, for example, references to metadata symbols defined in assemblies that weren't referenced.
+
+    Symbols where this returns true can never be used successfully, and thus should never appear in any IDE feature.
+
+
+
+    This is set for metadata symbols, as follows:
+
+    Type - if a type is unsupported (e.g., a pointer type, etc.)
+
+    Method - parameter or return type is unsupported
+
+    Field - type is unsupported
+
+    Event - type is unsupported
+
+    Property - type is unsupported
+
+    Parameter - type is unsupported
+
   syntax:
     content:
       CSharp: bool HasUnsupportedMetadata
@@ -1294,6 +1423,7 @@ items:
     - id: HasUnsupportedMetadata
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_HasUnsupportedMetadata

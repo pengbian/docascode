@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
   startLine: 17
-summary: Represents a trivia in the syntax tree. This is the language agnostic equivalent of @T:Microsoft.CodeAnalysis.CSharp.SyntaxTrivia- and @T:Microsoft.CodeAnalysis.VisualBasic.SyntaxTrivia-.
+summary: >+
+  Represents a trivia in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxTrivia](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxTrivia](#).
+
 syntax:
   content:
     CSharp: public struct SyntaxTrivia
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +46,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 40
-  summary: An integer representing the language specific kind of this trivia.
+  summary: >+
+    An integer representing the language specific kind of this trivia.
+
   syntax:
     content:
       CSharp: public int RawKind
@@ -50,6 +56,7 @@ items:
     - id: RawKind
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_RawKind
@@ -83,7 +90,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 53
-  summary: The language name that this trivia is syntax of.
+  summary: >+
+    The language name that this trivia is syntax of.
+
   syntax:
     content:
       CSharp: public string Language
@@ -91,6 +100,7 @@ items:
     - id: Language
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_Language
@@ -124,15 +134,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 64
-  summary: The parent token that contains this token in its LeadingTrivia or TrailingTrivia collection.
+  summary: >+
+    The parent token that contains this token in its LeadingTrivia or TrailingTrivia collection.
+
   syntax:
     content:
       CSharp: public SyntaxToken Token
     parameters:
     - id: Token
       type:
-        id: SyntaxToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_Token
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTrivia
@@ -164,20 +177,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 108
-  summary: >-
+  summary: >+
     The absolute span of this trivia in characters. If this trivia is a structured trivia then the returned span
 
-        will not include spans of any leading or trailing trivia present on the child non-terminal node of this
+    will not include spans of any leading or trailing trivia present on the child non-terminal node of this
 
-        trivia.
+    trivia.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_Span
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTrivia
@@ -209,7 +224,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 124
-  summary: Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](api\Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxTrivia.Span](api\Microsoft.CodeAnalysis.SyntaxTrivia).
+  summary: >+
+    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api\Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxTrivia.Span](#/api\Microsoft.CodeAnalysis.SyntaxTrivia).
+
   syntax:
     content:
       CSharp: public int SpanStart
@@ -217,6 +234,7 @@ items:
     - id: SpanStart
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_SpanStart
@@ -250,18 +268,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 138
-  summary: >-
+  summary: >+
     The absolute span of this trivia in characters. If this trivia is a structured trivia then the returned span
 
-        will include spans of any leading or trailing trivia present on the child non-terminal node of this trivia.
+    will include spans of any leading or trailing trivia present on the child non-terminal node of this trivia.
+
   syntax:
     content:
       CSharp: public TextSpan FullSpan
     parameters:
     - id: FullSpan
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_FullSpan
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTrivia
@@ -293,12 +313,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 148
-  summary: >-
+  summary: >+
     Determines whether this trivia has any diagnostics on it. If this trivia is a structured trivia then the
 
-        returned value will indicate whether this trivia or any of its descendant nodes, tokens or trivia have any
+    returned value will indicate whether this trivia or any of its descendant nodes, tokens or trivia have any
 
-        diagnostics on them.
+    diagnostics on them.
+
   syntax:
     content:
       CSharp: public bool ContainsDiagnostics
@@ -306,6 +327,7 @@ items:
     - id: ContainsDiagnostics
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_ContainsDiagnostics
@@ -339,7 +361,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 156
-  summary: Determines whether this trivia is a structured trivia.
+  summary: >+
+    Determines whether this trivia is a structured trivia.
+
   syntax:
     content:
       CSharp: public bool HasStructure
@@ -347,6 +371,7 @@ items:
     - id: HasStructure
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_HasStructure
@@ -380,7 +405,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 164
-  summary: Determines whether this trivia is a descendant of a structured trivia.
+  summary: >+
+    Determines whether this trivia is a descendant of a structured trivia.
+
   syntax:
     content:
       CSharp: public bool IsPartOfStructuredTrivia()
@@ -403,7 +430,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 180
-  summary: Determines where this trivia has annotations of the specified annotation kind.
+  summary: >+
+    Determines where this trivia has annotations of the specified annotation kind.
+
   syntax:
     content:
       CSharp: public bool HasAnnotations(string annotationKind)
@@ -411,6 +440,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -431,7 +461,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 188
-  summary: Determines where this trivia has any annotations of the specified annotation kinds.
+  summary: >+
+    Determines where this trivia has any annotations of the specified annotation kinds.
+
   syntax:
     content:
       CSharp: public bool HasAnnotations(params string[] annotationKinds)
@@ -439,6 +471,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: Boolean
@@ -458,15 +491,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 196
-  summary: Determines whether this trivia has the specific annotation.
+  summary: >+
+    Determines whether this trivia has the specific annotation.
+
   syntax:
     content:
       CSharp: public bool HasAnnotation(SyntaxAnnotation annotation)
     parameters:
     - id: annotation
       type:
-        id: SyntaxAnnotation
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxAnnotation.cs
+        id: Microsoft.CodeAnalysis.SyntaxAnnotation
+        name: SyntaxAnnotation
+        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.GetAnnotations(System.String)
@@ -485,7 +521,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 204
-  summary: Get all the annotations of the specified annotation kind.
+  summary: >+
+    Get all the annotations of the specified annotation kind.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(string annotationKind)
@@ -493,6 +531,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -513,7 +552,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 214
-  summary: Get all the annotations of the specified annotation kinds.
+  summary: >+
+    Get all the annotations of the specified annotation kinds.
+
   syntax:
     content:
       CSharp: public IEnumerable<SyntaxAnnotation> GetAnnotations(params string[] annotationKinds)
@@ -521,6 +562,7 @@ items:
     - id: annotationKinds
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: IEnumerable
@@ -540,7 +582,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 224
-  summary: Determines whether this trivia represents a preprocessor directive.
+  summary: >+
+    Determines whether this trivia represents a preprocessor directive.
+
   syntax:
     content:
       CSharp: public bool IsDirective
@@ -548,6 +592,7 @@ items:
     - id: IsDirective
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_IsDirective
@@ -581,7 +626,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 234
-  summary: Returns the child non-terminal node representing the syntax tree structure under this structured trivia.
+  summary: >+
+    Returns the child non-terminal node representing the syntax tree structure under this structured trivia.
+
   syntax:
     content:
       CSharp: public SyntaxNode GetStructure()
@@ -608,10 +655,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 245
-  summary: >-
+  summary: >+
     Returns the string representation of this trivia. If this trivia is structured trivia then the returned string
 
-        will not include any leading or trailing trivia present on the StructuredTriviaSyntax node of this trivia.
+    will not include any leading or trailing trivia present on the StructuredTriviaSyntax node of this trivia.
+
   syntax:
     content:
       CSharp: public override string ToString()
@@ -635,10 +683,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 256
-  summary: >-
+  summary: >+
     Returns the full string representation of this trivia. If this trivia is structured trivia then the returned string will
 
-        include any leading or trailing trivia present on the StructuredTriviaSyntax node of this trivia.
+    include any leading or trailing trivia present on the StructuredTriviaSyntax node of this trivia.
+
   syntax:
     content:
       CSharp: public string ToFullString()
@@ -662,7 +711,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 264
-  summary: Writes the full text of this trivia to the specified TextWriter.
+  summary: >+
+    Writes the full text of this trivia to the specified TextWriter.
+
   syntax:
     content:
       CSharp: public void WriteTo(System.IO.TextWriter writer)
@@ -670,6 +721,7 @@ items:
     - id: writer
       type:
         id: System.IO.TextWriter
+        name: System.IO.TextWriter
         href: System.IO
         isExternal: true
     return:
@@ -689,7 +741,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 275
-  summary: Determines whether two [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia)s are equal.
+  summary: >+
+    Determines whether two [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia)s are equal.
+
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.op_Inequality(Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTrivia
@@ -705,7 +759,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 283
-  summary: Determines whether two [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia)s are unequal.
+  summary: >+
+    Determines whether two [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia)s are unequal.
+
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.Equals(Microsoft.CodeAnalysis.SyntaxTrivia)
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTrivia
@@ -722,18 +778,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 292
-  summary: >-
-    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia) is equal to this
+  summary: >+
+    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia) is equal to this
 
-        [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia).
+    [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia).
+
   syntax:
     content:
       CSharp: public bool Equals(SyntaxTrivia other)
     parameters:
     - id: other
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.Equals(System.Object)
@@ -752,10 +810,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 301
-  summary: >-
-    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia) is equal to this
+  summary: >+
+    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia) is equal to this
 
-        [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia).
+    [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia).
+
   syntax:
     content:
       CSharp: public override bool Equals(object obj)
@@ -763,6 +822,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -783,7 +843,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 309
-  summary: Serves as hash function for [Microsoft.CodeAnalysis.SyntaxTrivia](api\Microsoft.CodeAnalysis.SyntaxTrivia).
+  summary: >+
+    Serves as hash function for [Microsoft.CodeAnalysis.SyntaxTrivia](#/api\Microsoft.CodeAnalysis.SyntaxTrivia).
+
   syntax:
     content:
       CSharp: public override int GetHashCode()
@@ -806,7 +868,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 318
-  summary: Creates a new SyntaxTrivia with the specified annotations.
+  summary: >+
+    Creates a new SyntaxTrivia with the specified annotations.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia WithAdditionalAnnotations(params SyntaxAnnotation[] annotations)
@@ -814,6 +878,7 @@ items:
     - id: annotations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxTrivia
@@ -833,7 +898,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 326
-  summary: Creates a new SyntaxTrivia with the specified annotations.
+  summary: >+
+    Creates a new SyntaxTrivia with the specified annotations.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia WithAdditionalAnnotations(IEnumerable<SyntaxAnnotation> annotations)
@@ -841,6 +908,7 @@ items:
     - id: annotations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         href: System.Runtime
         isExternal: true
     return:
@@ -861,7 +929,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 347
-  summary: Creates a new SyntaxTrivia without the specified annotations.
+  summary: >+
+    Creates a new SyntaxTrivia without the specified annotations.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia WithoutAnnotations(params SyntaxAnnotation[] annotations)
@@ -869,6 +939,7 @@ items:
     - id: annotations
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
     return:
       id: SyntaxTrivia
@@ -888,7 +959,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 355
-  summary: Creates a new SyntaxTrivia without the specified annotations.
+  summary: >+
+    Creates a new SyntaxTrivia without the specified annotations.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia WithoutAnnotations(IEnumerable<SyntaxAnnotation> annotations)
@@ -896,6 +969,7 @@ items:
     - id: annotations
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         href: System.Runtime
         isExternal: true
     return:
@@ -916,7 +990,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 376
-  summary: Creates a new SyntaxTrivia without annotations of the specified kind.
+  summary: >+
+    Creates a new SyntaxTrivia without annotations of the specified kind.
+
   syntax:
     content:
       CSharp: public SyntaxTrivia WithoutAnnotations(string annotationKind)
@@ -924,6 +1000,7 @@ items:
     - id: annotationKind
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
     return:
@@ -944,15 +1021,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 396
-  summary: Copies all SyntaxAnnotations, if any, from this SyntaxTrivia instance and attaches them to a new instance based on .
+  summary: >+
+    Copies all SyntaxAnnotations, if any, from this SyntaxTrivia instance and attaches them to a new instance based on .
+
   syntax:
     content:
       CSharp: public SyntaxTrivia CopyAnnotationsTo(SyntaxTrivia trivia)
     parameters:
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
     return:
       id: SyntaxTrivia
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.SyntaxTree
@@ -971,15 +1051,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 424
-  summary: SyntaxTree which contains current SyntaxTrivia.
+  summary: >+
+    SyntaxTree which contains current SyntaxTrivia.
+
   syntax:
     content:
       CSharp: public SyntaxTree SyntaxTree
     parameters:
     - id: SyntaxTree
       type:
-        id: SyntaxTree
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+        id: Microsoft.CodeAnalysis.SyntaxTree
+        name: SyntaxTree
+        href: api\Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_SyntaxTree
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTrivia
@@ -1011,7 +1094,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 435
-  summary: Get the location of this trivia.
+  summary: >+
+    Get the location of this trivia.
+
   syntax:
     content:
       CSharp: public Location GetLocation()
@@ -1034,12 +1119,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 445
-  summary: >-
+  summary: >+
     Gets a list of all the diagnostics associated with this trivia.
 
-        This method does not filter diagnostics based on #pragmas and compiler options
+    This method does not filter diagnostics based on #pragmas and compiler options
 
-        like nowarn, warnaserror etc.
+    like nowarn, warnaserror etc.
+
   syntax:
     content:
       CSharp: public IEnumerable<Diagnostic> GetDiagnostics()
@@ -1062,14 +1148,17 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
     startLine: 453
-  summary: Determines if this trivia is equivalent to the specified trivia.
+  summary: >+
+    Determines if this trivia is equivalent to the specified trivia.
+
   syntax:
     content:
       CSharp: public bool IsEquivalentTo(SyntaxTrivia trivia)
     parameters:
     - id: trivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
     return:
       id: Boolean

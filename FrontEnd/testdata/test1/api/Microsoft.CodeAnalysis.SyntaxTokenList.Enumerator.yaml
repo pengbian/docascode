@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.Enumerator.cs
   startLine: 20
-summary: A structure for enumerating a [Microsoft.CodeAnalysis.SyntaxTokenList](api\Microsoft.CodeAnalysis.SyntaxTokenList)
+summary: >+
+  A structure for enumerating a [Microsoft.CodeAnalysis.SyntaxTokenList](#/api\Microsoft.CodeAnalysis.SyntaxTokenList)
+
 syntax:
   content:
     CSharp: public struct Enumerator
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +46,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.Enumerator.cs
     startLine: 74
-  summary: Advances the enumerator to the next token in the collection.
+  summary: >+
+    Advances the enumerator to the next token in the collection.
+
   syntax:
     content:
       CSharp: public bool MoveNext()
@@ -69,15 +75,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\SyntaxTokenList.Enumerator.cs
     startLine: 100
-  summary: Gets the current element in the collection.
+  summary: >+
+    Gets the current element in the collection.
+
   syntax:
     content:
       CSharp: public SyntaxToken Current
     parameters:
     - id: Current
       type:
-        id: SyntaxToken
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+        id: Microsoft.CodeAnalysis.SyntaxToken
+        name: SyntaxToken
+        href: api\Microsoft.CodeAnalysis.SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Enumerator.get_Current
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Enumerator
@@ -116,6 +125,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Text\TextChange.cs
   startLine: 12
-summary: Describes a single change when a particular span is replaced with a new text.
+summary: >+
+  Describes a single change when a particular span is replaced with a new text.
+
 syntax:
   content:
     CSharp: public struct TextChange
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -42,15 +46,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChange.cs
     startLine: 17
-  summary: The original span of the changed text.
+  summary: >+
+    The original span of the changed text.
+
   syntax:
     content:
       CSharp: public TextSpan Span
     parameters:
     - id: Span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.Text.TextChange.get_Span
   yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChange
@@ -82,7 +89,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChange.cs
     startLine: 22
-  summary: The new text.
+  summary: >+
+    The new text.
+
   syntax:
     content:
       CSharp: public string NewText
@@ -90,6 +99,7 @@ items:
     - id: NewText
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChange.get_NewText
@@ -123,19 +133,23 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChange.cs
     startLine: 29
-  summary: Initializes a new instance of [Microsoft.CodeAnalysis.Text.TextChange](api\Microsoft.CodeAnalysis.Text.TextChange)
+  summary: >+
+    Initializes a new instance of [Microsoft.CodeAnalysis.Text.TextChange](#/api\Microsoft.CodeAnalysis.Text.TextChange)
+
   syntax:
     content:
       CSharp: 'public TextChange(TextSpan span, string newText): this ()'
     parameters:
     - id: span
       type:
-        id: TextSpan
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextSpan.cs
+        id: Microsoft.CodeAnalysis.Text.TextSpan
+        name: TextSpan
+        href: api\Microsoft.CodeAnalysis.Text.TextSpan
       description: The original span of the changed text.
     - id: newText
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: The new text.
@@ -155,7 +169,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChange.cs
     startLine: 44
-  summary: Provides a string representation for [Microsoft.CodeAnalysis.Text.TextChange](api\Microsoft.CodeAnalysis.Text.TextChange).
+  summary: >+
+    Provides a string representation for [Microsoft.CodeAnalysis.Text.TextChange](#/api\Microsoft.CodeAnalysis.Text.TextChange).
+
   syntax:
     content:
       CSharp: public override string ToString()
@@ -185,6 +201,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -211,8 +228,9 @@ items:
     parameters:
     - id: other
       type:
-        id: TextChange
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextChange.cs
+        id: Microsoft.CodeAnalysis.Text.TextChange
+        name: TextChange
+        href: api\Microsoft.CodeAnalysis.Text.TextChange
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Text.TextChange.GetHashCode
@@ -282,7 +300,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChange.cs
     startLine: 80
-  summary: Converts a [Microsoft.CodeAnalysis.Text.TextChange](api\Microsoft.CodeAnalysis.Text.TextChange) to a [Microsoft.CodeAnalysis.Text.TextChangeRange](api\Microsoft.CodeAnalysis.Text.TextChangeRange).
+  summary: >+
+    Converts a [Microsoft.CodeAnalysis.Text.TextChange](#/api\Microsoft.CodeAnalysis.Text.TextChange) to a [Microsoft.CodeAnalysis.Text.TextChangeRange](#/api\Microsoft.CodeAnalysis.Text.TextChangeRange).
+
 - id: Microsoft.CodeAnalysis.Text.TextChange.NoChanges
   yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChange
@@ -299,4 +319,6 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChange.cs
     startLine: 88
-  summary: An empty set of changes.
+  summary: >+
+    An empty set of changes.
+

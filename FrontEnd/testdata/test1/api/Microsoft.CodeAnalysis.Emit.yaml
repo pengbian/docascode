@@ -23,25 +23,32 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
   type: Class
-  summary: Represents compilation emit options.
+  summary: >+
+    Represents compilation emit options.
+
 - id: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
   yaml: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
   type: Struct
-  summary: Debugging information associated with the specified method that is emitted by the compiler to support Edit and Continue.
+  summary: >+
+    Debugging information associated with the specified method that is emitted by the compiler to support Edit and Continue.
+
 - id: Microsoft.CodeAnalysis.Emit.EmitResult
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitResult
   type: Class
-  summary: The result of the Compilation.Emit method.
+  summary: >+
+    The result of the Compilation.Emit method.
+
 - id: Microsoft.CodeAnalysis.Emit.EmitBaseline
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
   type: Class
-  summary: >-
+  summary: >+
     Represents a module from a previous compilation. Used in Edit and Continue
 
-        to emit the differences in a subsequent compilation.
+    to emit the differences in a subsequent compilation.
+
 - id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
   href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult

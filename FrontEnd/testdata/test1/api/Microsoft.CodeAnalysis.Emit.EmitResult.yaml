@@ -14,12 +14,15 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Compilation\EmitResult.cs
   startLine: 10
-summary: The result of the Compilation.Emit method.
+summary: >+
+  The result of the Compilation.Emit method.
+
 syntax:
   content:
     CSharp: public class EmitResult
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 items:
@@ -39,12 +42,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\EmitResult.cs
     startLine: 21
-  summary: >-
+  summary: >+
     True if the compilation successfully produced an executable.
 
-        If false then the diagnostics should include at least one error diagnostic
+    If false then the diagnostics should include at least one error diagnostic
 
-        indicating the cause of the failure.
+    indicating the cause of the failure.
+
   syntax:
     content:
       CSharp: public bool Success
@@ -52,6 +56,7 @@ items:
     - id: Success
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.get_Success
@@ -85,10 +90,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Compilation\EmitResult.cs
     startLine: 30
-  summary: >-
+  summary: >+
     A list of all the diagnostics associated with compilations. This include parse errors, declaration errors,
 
-        compilation errors, and emitting errors.
+    compilation errors, and emitting errors.
+
   syntax:
     content:
       CSharp: public ImmutableArray<Diagnostic> Diagnostics
@@ -96,6 +102,7 @@ items:
     - id: Diagnostics
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics

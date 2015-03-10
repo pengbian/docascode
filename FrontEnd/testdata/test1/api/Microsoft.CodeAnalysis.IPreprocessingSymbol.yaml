@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IPreprocessingSymbol.cs
   startLine: 7
-summary: Represents a preprocessing conditional compilation symbol.
+summary: >+
+  Represents a preprocessing conditional compilation symbol.
+
 syntax:
   content:
     CSharp: public interface IPreprocessingSymbol

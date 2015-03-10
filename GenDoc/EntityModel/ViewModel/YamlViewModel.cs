@@ -34,6 +34,9 @@ namespace EntityModel.ViewModel
         [YamlDotNet.Serialization.YamlMember(Alias = "id")]
         public string Name { get; set; }
 
+        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
+        public string DisplayName { get; set; }
+
         /// <summary>
         /// The url path for current source, should be resolved at some late stage
         /// </summary>

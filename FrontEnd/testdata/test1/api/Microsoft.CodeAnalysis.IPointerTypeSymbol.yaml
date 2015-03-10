@@ -14,10 +14,11 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\IPointerTypeSymbol.cs
   startLine: 11
-summary: >-
+summary: >+
   Represents a pointer type such as "int *". Pointer types
 
-      are used only in unsafe code.
+  are used only in unsafe code.
+
 syntax:
   content:
     CSharp: public interface IPointerTypeSymbol
@@ -38,15 +39,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IPointerTypeSymbol.cs
     startLine: 16
-  summary: Gets the type of the storage location that an instance of the pointer type points to.
+  summary: >+
+    Gets the type of the storage location that an instance of the pointer type points to.
+
   syntax:
     content:
       CSharp: ITypeSymbol PointedAtType
     parameters:
     - id: PointedAtType
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IPointerTypeSymbol.get_PointedAtType
   yaml: api\Microsoft.CodeAnalysis.IPointerTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.IPointerTypeSymbol
@@ -78,14 +82,15 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\IPointerTypeSymbol.cs
     startLine: 24
-  summary: >-
+  summary: >+
     The list of custom modifiers, if any, associated with the pointer type.
 
-        (Some managed languages may represent special information about the pointer type
+    (Some managed languages may represent special information about the pointer type
 
-        as a custom modifier on either the pointer type or the element type, or
+    as a custom modifier on either the pointer type or the element type, or
 
-        both.)
+    both.)
+
   syntax:
     content:
       CSharp: ImmutableArray<CustomModifier> CustomModifiers
@@ -93,6 +98,7 @@ items:
     - id: CustomModifiers
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPointerTypeSymbol.get_CustomModifiers

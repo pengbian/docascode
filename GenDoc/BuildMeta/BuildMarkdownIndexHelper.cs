@@ -116,12 +116,13 @@ namespace DocAsCode.BuildMeta
                 }
 
                 string destFileName = Path.Combine(apiFolder, file.ToValidFilePath());
+                string resolvedContent = string.Empty;
                 try
                 {
                     string input = File.ReadAllText(file);
-                    var resolved = LinkParser.ResolveText(apiList, input, s =>
+                    resolvedContent = LinkParser.ResolveText(apiList, input, s =>
                   string.Format("[{0}]({1})", s.Name, s.Href));
-                    File.WriteAllText(destFileName, resolved);
+                    File.WriteAllText(destFileName, resolvedContent);
                 }
                 catch (Exception e)
                 {
@@ -129,7 +130,7 @@ namespace DocAsCode.BuildMeta
                     continue;
                 }
 
-                var result = TryParseCustomizedMarkdown(file, s =>
+                var result = TryParseCustomizedMarkdown(file, resolvedContent, s =>
                 {
                     if (apiList.TryGetValue(s.Name, out item))
                     {
@@ -170,10 +171,10 @@ namespace DocAsCode.BuildMeta
         /// <param name="markdownFilePath"></param>
         /// <param name="markdown"></param>
         /// <returns></returns>
-        public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
+        public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
         {
             var gitDetail = GitUtility.GetGitDetail(markdownFilePath);
-            string markdownFile = File.ReadAllText(markdownFilePath);
+            string markdownFile = resolvedContent;
             int length = markdownFile.Length;
             var yamlRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<content>.*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);
             MatchCollection matches = yamlRegex.Matches(markdownFile);

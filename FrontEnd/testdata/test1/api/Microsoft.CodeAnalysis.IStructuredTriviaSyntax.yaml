@@ -14,12 +14,13 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Syntax\IStructuredTriviaSyntax.cs
   startLine: 9
-summary: >-
+summary: >+
   Represents the root node of a structured trivia tree (for example, a preprocessor directive
 
-      or a documentation comment). From this root node you can traverse back up to the containing
+  or a documentation comment). From this root node you can traverse back up to the containing
 
-      trivia in the outer tree that contains it.
+  trivia in the outer tree that contains it.
+
 syntax:
   content:
     CSharp: public interface IStructuredTriviaSyntax
@@ -40,15 +41,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Syntax\IStructuredTriviaSyntax.cs
     startLine: 15
-  summary: Returns the parent trivia syntax for this structured trivia syntax.
+  summary: >+
+    Returns the parent trivia syntax for this structured trivia syntax.
+
   syntax:
     content:
       CSharp: SyntaxTrivia ParentTrivia
     parameters:
     - id: ParentTrivia
       type:
-        id: SyntaxTrivia
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Syntax\SyntaxTrivia.cs
+        id: Microsoft.CodeAnalysis.SyntaxTrivia
+        name: SyntaxTrivia
+        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
 - id: Microsoft.CodeAnalysis.IStructuredTriviaSyntax.get_ParentTrivia
   yaml: api\Microsoft.CodeAnalysis.IStructuredTriviaSyntax.yaml
   href: api\Microsoft.CodeAnalysis.IStructuredTriviaSyntax

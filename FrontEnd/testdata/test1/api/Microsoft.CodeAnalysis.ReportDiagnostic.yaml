@@ -14,18 +14,23 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
   startLine: 7
-summary: Describes how to report a warning diagnostic.
+summary: >+
+  Describes how to report a warning diagnostic.
+
 syntax:
   content:
     CSharp: public enum ReportDiagnostic
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 - id: System.Enum
+  name: System.Enum
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +50,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
     startLine: 12
-  summary: Report a diagnostic by default.
+  summary: >+
+    Report a diagnostic by default.
+
   syntax:
     content:
       CSharp: Default = 0
@@ -65,7 +72,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
     startLine: 17
-  summary: Report a diagnostic as an error.
+  summary: >+
+    Report a diagnostic as an error.
+
   syntax:
     content:
       CSharp: Error = 1
@@ -85,7 +94,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
     startLine: 22
-  summary: Report a diagnostic as a warning even though /warnaserror is specified.
+  summary: >+
+    Report a diagnostic as a warning even though /warnaserror is specified.
+
   syntax:
     content:
       CSharp: Warn = 2
@@ -105,7 +116,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
     startLine: 27
-  summary: Report a diagnostic as an info.
+  summary: >+
+    Report a diagnostic as an info.
+
   syntax:
     content:
       CSharp: Info = 3
@@ -125,7 +138,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
     startLine: 32
-  summary: Report a diagnostic as hidden.
+  summary: >+
+    Report a diagnostic as hidden.
+
   syntax:
     content:
       CSharp: Hidden = 4
@@ -145,7 +160,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Diagnostic\ReportDiagnostic.cs
     startLine: 37
-  summary: Suppress a diagnostic.
+  summary: >+
+    Suppress a diagnostic.
+
   syntax:
     content:
       CSharp: Suppress = 5

@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzerAttribute.cs
   startLine: 10
-summary: Place this attribute onto a type to cause it to be considered a diagnostic analyzer.
+summary: >+
+  Place this attribute onto a type to cause it to be considered a diagnostic analyzer.
+
 syntax:
   content:
     CSharp: public sealed class DiagnosticAnalyzerAttribute
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.Attribute
+  name: System.Attribute
   href: System.Runtime
   isExternal: true
 items:
@@ -42,7 +46,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzerAttribute.cs
     startLine: 16
-  summary: The source languages to which this analyzer applies.  See [Microsoft.CodeAnalysis.LanguageNames](api\Microsoft.CodeAnalysis.LanguageNames).
+  summary: >+
+    The source languages to which this analyzer applies.  See [Microsoft.CodeAnalysis.LanguageNames](#/api\Microsoft.CodeAnalysis.LanguageNames).
+
   syntax:
     content:
       CSharp: public string[] Languages
@@ -50,6 +56,7 @@ items:
     - id: Languages
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
@@ -82,7 +89,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzerAttribute.cs
     startLine: 23
-  summary: Attribute constructor used to specify automatic application of a diagnostic analyzer.
+  summary: >+
+    Attribute constructor used to specify automatic application of a diagnostic analyzer.
+
   syntax:
     content:
       CSharp: public DiagnosticAnalyzerAttribute(string firstLanguage, params string[] additionalLanguages)
@@ -90,11 +99,13 @@ items:
     - id: firstLanguage
       type:
         id: System.String
+        name: System.String
         href: System.Runtime
         isExternal: true
       description: One language to which the analyzer applies.
     - id: additionalLanguages
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
-      description: Additional languages to which the analyzer applies. See [Microsoft.CodeAnalysis.LanguageNames](api\Microsoft.CodeAnalysis.LanguageNames).
+      description: Additional languages to which the analyzer applies. See [Microsoft.CodeAnalysis.LanguageNames](#/api\Microsoft.CodeAnalysis.LanguageNames).

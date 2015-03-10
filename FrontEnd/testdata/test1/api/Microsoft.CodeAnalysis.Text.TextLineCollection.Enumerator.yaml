@@ -19,9 +19,11 @@ syntax:
     CSharp: public struct Enumerator
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -47,8 +49,9 @@ items:
     parameters:
     - id: Current
       type:
-        id: TextLine
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\TextLine.cs
+        id: Microsoft.CodeAnalysis.Text.TextLine
+        name: TextLine
+        href: api\Microsoft.CodeAnalysis.Text.TextLine
 - id: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator.get_Current
   yaml: api\Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
@@ -109,6 +112,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:

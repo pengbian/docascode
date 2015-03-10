@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"item",
+				"itemtypes"
+			],
+			[
+				"souceM",
+				"sourceMappingURL"
+			],
+			[
+				"writ",
+				"writeln"
+			],
+			[
+				"grunt",
+				"gruntTemplate"
+			],
+			[
+				"wr",
+				"writeln"
+			],
+			[
 				"isre",
 				"isReservedKeyword"
 			]
@@ -11,6 +31,102 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 11537,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/bower_components/highlight/src/highlight.js",
+			"settings":
+			{
+				"buffer_size": 20326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/highlight/src/languages/cs.js",
+			"settings":
+			{
+				"buffer_size": 1689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/bower_components/highlight/src/languages/cpp.js",
+			"settings":
+			{
+				"buffer_size": 1919,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/docs.js",
+			"settings":
+			{
+				"buffer_size": 18290,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/css/default.css",
+			"settings":
+			{
+				"buffer_size": 6407,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Repo/docascode2/DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/DocProject.vstemplate",
+			"settings":
+			{
+				"buffer_size": 893,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Repo/docascode2/DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/DocProject.docproj",
+			"settings":
+			{
+				"buffer_size": 1242,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/index.tmpl",
+			"settings":
+			{
+				"buffer_size": 10130,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/template/class.tmpl",
+			"settings":
+			{
+				"buffer_size": 8202,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/template/namespace.tmpl",
+			"settings":
+			{
+				"buffer_size": 1923,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test2/index.html",
+			"settings":
+			{
+				"buffer_size": 1146007,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -19,20 +135,24 @@
 		"selected_items":
 		[
 			[
-				"ind",
-				"Indent JSON"
-			],
-			[
 				"xml",
 				"Set Syntax: XML"
 			],
 			[
-				"yaml",
-				"Set Syntax: YAML"
+				"j",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"ind",
+				"Indent JSON"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
 			],
 			[
 				"javascr",
@@ -94,6 +214,7 @@
 		"height": 126.0,
 		"history":
 		[
+			"pwd",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -108,11 +229,89 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Repo/docascode2/FrontEnd"
+		"/D/Repo/docascode2/FrontEnd",
+		"/D/Repo/docascode2/FrontEnd/app",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components",
+		"/D/Repo/docascode2/FrontEnd/test1"
 	],
 	"file_history":
 	[
+		"/D/Repo/docascode2/FrontEnd/app/index.tmpl",
+		"/D/Repo/docascode2/FrontEnd/node_modules/.bin/tsd",
+		"/D/Repo/docascode2/FrontEnd/node_modules/tmp/lib/tmp.js",
+		"/D/Repo/docascode2/DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/WebForPackage.csproj",
+		"/D/Repo/docascode2/FrontEnd/node_modules/bower/node_modules/cardinal/test/cardinal-smoke.js",
+		"/D/Repo/docascode2/FrontEnd/app/template/class.tmpl",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/highlightjs/highlight.pack.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/ace/lib/ace/mode/_test/highlight_rules_test.js",
+		"/D/Repo/docascode2/FrontEnd/dist/api/Microsoft.CodeAnalysis.CaseInsensitiveComparison.yaml",
+		"/D/Repo/docascode2/FrontEnd/dist/api/Microsoft.CodeAnalysis.AttributeData.yaml",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/highlight/src/languages/cs.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/highlight/src/languages/1c.js",
+		"/D/Repo/docascode2/FrontEnd/app/js/docs.js",
+		"/D/Repo/docascode2/FrontEnd/app/css/default.css",
+		"/D/Repo/docascode2/FrontEnd/app/css/docs.css",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject17/DocumentationProject17/bin/Debug/index.html",
+		"/D/Repo/docascode2/FrontEnd/test1/toc.yaml",
+		"/D/Repo/docascode2/FrontEnd/test1/index.html",
+		"/D/Repo/docascode2/FrontEnd/test2/index.html",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject17/DocumentationProject17/bin/Debug/index.yaml",
+		"/D/Repo/docascode2/FrontEnd/node_modules/bower/node_modules/mout/object/deepEquals.js",
+		"/D/Repo/docascode2/FrontEnd/app/js/pages-data.js",
+		"/D/Repo/docascode2/FrontEnd/dist/api/Microsoft.CodeAnalysis.CodeGen.yaml",
+		"/D/Repo/docascode2/FrontEnd/debug/template/class.tmpl",
+		"/D/Repo/docascode2/FrontEnd/dist/template/class.tmpl",
+		"/D/Repo/docascode2/FrontEnd/node_modules/bower/lib/util/createLink.js",
+		"/D/Repo/docascode2/FrontEnd/.gitignore",
+		"/D/Repo/docascode2/FrontEnd/testdata/test1/md.yaml",
+		"/D/Repo/docascode2/FrontEnd/Readme.txt",
+		"/D/Repo/docascode2/FrontEnd/testdata/test1/md/Assets_Markdown_About.md",
+		"/D/angular-phonecat/app/js/directives.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/google-code-prettify/src/prettify.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/google-code-prettify/src/test.js",
+		"/D/Repo/docascode2/FrontEnd/tmp/docascode.js",
+		"/D/Repo/docascode2/FrontEnd/test/api/TestClass1.yaml",
+		"/D/Repo/docascode2/FrontEnd/app/template/namespace.tmpl",
 		"/D/Repo/AzureDocasCode/index.html",
+		"/D/Repo/docascode2/FrontEnd/node_modules/grunt-contrib-less/node_modules/less/test/css/mixins-named-args.css",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/lunr.js/notes",
+		"/D/Repo/docascode2/FrontEnd/app/web.config",
+		"/D/Repo/docascode2/FrontEnd/dist/web.config",
+		"/D/Repo/docascode2/FrontEnd/test/index.html",
+		"/D/Repo/docascode2/FrontEnd/app/dist/docascode-debug.html",
+		"/D/Repo/docascode2/FrontEnd/tmp/docascode.min.js",
+		"/D/Repo/docascode2/FrontEnd/dist/docascode-debug.html",
+		"/D/Repo/docascode2/FrontEnd/dist/template/class.tmpl_",
+		"/D/Repo/docascode2/FrontEnd/app/api/namespace1.yaml",
+		"/D/Repo/docascode2/FrontEnd/app/index.html",
+		"/D/Repo/docascode2/FrontEnd/app/api/class.html",
+		"/D/Repo/docascode2/FrontEnd/dist/md/Assets_Markdown_About.md",
+		"/D/Repo/docascode2/FrontEnd/node_modules/grunt-contrib-concat/CHANGELOG",
+		"/D/Repo/docascode2/Drop/debug/output/api/Microsoft.CodeAnalysis.Compilation.yaml",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject11/DocumentationProject11/Targets/Microsoft.DocProject.targets",
+		"/C/Users/lianwei/AppData/Local/Temp/3jf04xlv.jvd/Temp/DocumentationProject14.docproj",
+		"/D/Repo/docascode2/FrontEnd/dist/index.yaml",
+		"/D/angular-phonecat/app/js/filters.js",
+		"/D/angular-phonecat/app/js/services.js",
+		"/D/Repo/docascode2/FrontEnd/dist/template/class.html",
+		"/D/angular-phonecat/app/js/app.js",
+		"/D/angular-phonecat/app/js/controllers.js",
+		"/C/Program Files (x86)/MSBuild/Microsoft/VisualStudio/v14.0/VSSDK/Microsoft.VsSDK.targets",
+		"/D/Documents/Documents/Visual Studio 2015/Projects/DocumentationProject11/DocumentationProject11/DocumentationProject11.docproj",
+		"/D/Repo/docascode2/FrontEnd/node_modules/fs/index.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/google-code-prettify/bin/prettify.min.js",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/google-code-prettify/bin/prettify.min.css",
+		"/D/Repo/docascode2/FrontEnd/app/bower_components/google-code-prettify/src/prettify.css",
+		"/D/Repo/docascode2/FrontEnd/app/css/prettify-theme.css",
+		"/D/Repo/docascode2/FrontEnd/tmp/templates.html",
+		"/D/Repo/docascode2/FrontEnd/node_modules/grunt-contrib-concat/tasks/concat.js",
+		"/D/Repo/docascode2/FrontEnd/package.json",
+		"/D/Repo/docascode2/FrontEnd/node_modules/grunt-contrib-concat/test/expected/default_options",
+		"/D/Repo/docascode2/FrontEnd/index.tmpl",
+		"/D/Repo/docascode2/FrontEnd/node_modules/bower/node_modules/mout/lang/isNull.js",
+		"/D/Repo/docascode2/FrontEnd/dist/documentation.min.js",
+		"/D/Repo/mdwiki/Gruntfile.js",
+		"/D/Repo/docascode2/FrontEnd/node_modules/grunt-http-server/node_modules/lodash/array/pullAt.js",
 		"/D/aj/build/docs/js/angular-bootstrap/bootstrap.min.js",
 		"/D/Repo/docascode2/FrontEnd/app/bower_components/angular-ui/test/lib/bootstrap/bootstrap-modal.js",
 		"/D/Repo/docascode2/FrontEnd/app/bower_components/bootstrap/dist/js/bootstrap.js",
@@ -133,10 +332,8 @@
 		"/D/Repo/docascode2/FrontEnd/bower.json",
 		"/D/Repo/docascode2/FrontEnd/app/bower_components/jquery/bower.json",
 		"/D/Repo/docascode2/FrontEnd/app/bower_components/jquery/.bower.json",
-		"/D/Repo/mdwiki/Gruntfile.js",
 		"/D/Repo/AzureDocasCode/api/class1.yaml",
 		"/C/Users/lianwei/AppData/Local/Temp/aoaqzf5b.g33/Temp/DocumentationProject1.docproj",
-		"/C/Program Files (x86)/MSBuild/Microsoft/VisualStudio/v14.0/VSSDK/Microsoft.VsSDK.targets",
 		"/D/Documents/Desktop/Visual Studio 2013 SDK Samples/Menu and commands - VS 2013/C#/DynamicTextCommand.cs",
 		"/D/Documents/Desktop/Visual Studio 2013 SDK Samples/Single File Generator - VS 2013/C#/XmlClassGenerator.cs",
 		"/D/Repo/docascode2/FrontEnd/app/js/modules.js",
@@ -147,7 +344,6 @@
 		"/D/Repo/docascode2/FrontEnd/.bowerrc",
 		"/D/Repo/docascode2/FrontEnd/.jshintrc",
 		"/D/Repo/docascode2/FrontEnd/.travis.yml",
-		"/D/Repo/docascode2/FrontEnd/package.json",
 		"/D/Repo/mdwiki/index.html",
 		"/D/Repo/AzureDocasCode/js/angular-bootstrap/bootstrap.js",
 		"/D/Repo/AzureDocasCode/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/baseForOwn.js",
@@ -167,79 +363,7 @@
 		"/D/Repo/AzureDocasCode/js/nav-data.js",
 		"/D/Repo/AzureDocasCode/js/search-worker.js",
 		"/D/Repo/AzureDocasCode/js/pages-data.js",
-		"/D/Repo/AzureDocasCode/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/charsLeftIndex.js",
-		"/D/Repo/AzureDocasCode/css/docs.css",
-		"/D/Repo/docascode/FrontEnd/index.html",
-		"/D/Repo/docascode/FrontEnd/js/docs.js",
-		"/D/dac_aj/en/js/docs.js",
-		"/D/dac_aj/en/api/class.html",
-		"/D/dac_aj/en/js/pages-data.js",
-		"/D/dac_aj/en/api.yaml",
-		"/D/dac_aj/en/index.html",
-		"/D/Repo/docascode/FrontEnd/LICENSE",
-		"/D/Repo/docascode/FrontEnd/config.json",
-		"/D/dac_aj/web.config",
-		"/D/Repo/docascode/FrontEnd/web.config",
-		"/D/dac_aj/en/js/main.js",
-		"/D/dac_aj/index.html",
-		"/D/dac_aj/en/index.md",
-		"/D/dac_aj/en/index_mdwiki.html",
-		"/D/dac_aj/en/js/init.js",
-		"/D/dac_aj/en/js/nav-data.js",
-		"/D/dac_aj/en/api/namespace1.yaml",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/charsLeftIndex.js",
-		"/D/dac_aj/angular-cookies.js",
-		"/D/aj/build/docs/partials/api.html",
-		"/D/dac_aj/en/js/versions-data.js",
-		"/D/angular-phonecat/app/js/app.js",
-		"/D/angular-phonecat/app/js/controllers.js",
-		"/D/angular-phonecat/app/index.html",
-		"/D/dac_aj/en/config.json",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/collection/contains.js",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/lib/action_container.js",
-		"/D/dac_aj/en/components/open-sans-fontface-1.0.4/fonts/Regular/OpenSans-Regular.svg",
-		"/D/angular-phonecat/app/partials/phone-list.html",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/sprintf-js/gruntfile.js",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/array/pullAt.js",
-		"/D/dac_aj/en/css/prettify.css",
-		"/C/Users/lianwei/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/lianwei/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/D/dac_aj/all.sublime-project",
-		"/D/dac_aj/angular.js",
-		"/D/dac_aj/en/css/main.css",
-		"/D/dac_aj/en/md.yaml",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/lang/isNative.js",
-		"/D/dac_aj/en/navigation.md",
-		"/D/dac_aj/angular-touch.js",
-		"/D/dac_aj/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/toObject.js",
-		"/D/dac_aj/en/todo.css",
-		"/D/dac_aj/en/js/docs.min.js",
-		"/D/dac_aj/en/css/docs.css",
-		"/D/aj/build/errors.json",
-		"/D/mdtest/en/index.html",
-		"/D/aj/package.json",
-		"/D/angular-phonecat/bower.json",
-		"/D/aj/docs/config/processors/keywords.js",
-		"/D/Repo/mdwiki/index.tmpl",
-		"/D/Repo/mdwiki/dist/index.html",
-		"/D/mdtest/index.html",
-		"/D/Repo/mdwiki-seed/index.html",
-		"/D/Repo/mdwiki/dist/mdwiki-debug.html",
-		"/D/Repo/mdwiki/tmp/MDwiki.js",
-		"/D/Repo/mdwiki_stable/Gruntfile.js",
-		"/D/Repo/mdwiki_stable/dist/MDwiki.js",
-		"/D/Repo/mdwiki_stable/js/main.js",
-		"/D/Documents/Desktop/test.json",
-		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 20_53_06/Out/output/mta/TestClass1.json",
-		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 22_23_28/Out/output/mta/TestClass1.yaml",
-		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 22_39_30/Out/output/mta/TestClass1.yaml",
-		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 22_41_42/Out/output/mta/TestClass1.yaml",
-		"/D/Repo/docascode/Drop/debug/TestClass1/mta/TestClass1.yaml",
-		"/D/Repo/docascode/Drop/debug/CodeAnalysis/mta/CodeAnalysis.yaml",
-		"/D/Repo/docascode/TestResults/Deploy_lianwei 2015-03-02 20_53_06/Out/output/mta/TestClass1.yaml",
-		"/D/Repo/mdwiki_stable/dist/navigation.md",
-		"/D/Repo/mdwiki_stable/index.tmpl",
-		"/D/Repo/mdwiki_stable/dist/mdwiki-debug.html"
+		"/D/Repo/AzureDocasCode/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/charsLeftIndex.js"
 	],
 	"find":
 	{
@@ -250,6 +374,8 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"D:\\Repo\\docascode2\\frontend;",
+			"D:\\Repo\\docascode2\\frontend;D:\\angular-phonecat",
 			"D:\\Repo\\docascode2\\frontend",
 			"D:\\Documents\\Desktop\\Visual Studio 2013 SDK Samples",
 			"D:\\Repo\\AzureDocascode",
@@ -264,6 +390,65 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mdContent",
+			"section-member-header",
+			"C_LINE_COMMENT_MODE",
+			"hljs",
+			"<<%",
+			"h4",
+			"DocsController",
+			"Open Sans",
+			"index",
+			"substr",
+			"api",
+			"NG_PAGES",
+			"prettyPrint",
+			"dell-venue.json",
+			"NG_PAGES",
+			"loadFromYaml",
+			"api.yaml",
+			"CalculateZipItems",
+			"namespace.html",
+			"zipproject",
+			"sourceMappingURL",
+			"unminifiedJsFiles.length",
+			"sourcemappingURL",
+			"sourceMappingURL",
+			"js.map",
+			".map",
+			"%>",
+			"<%",
+			"index",
+			"template",
+			"print",
+			"prettify",
+			"grunt",
+			"\\n",
+			"minifiedJsFiles",
+			"internalJsFiles",
+			"tutorials",
+			"search",
+			"ownJsFiles",
+			"indexFile",
+			"search-worker.js",
+			"importScripts",
+			"importScript",
+			"uglify",
+			"load-grunt-tasks",
+			"concat",
+			"min.",
+			"js",
+			"min.",
+			"uglify",
+			"index",
+			"createIndex",
+			"dest",
+			"Debug",
+			"concat",
+			"NG_VERSIONS",
+			"branch:\"master\"",
+			"branch:\"master\"}",
+			"karma-chrome-launcher",
 			"bootstrap",
 			"ngMock",
 			"type",
@@ -330,6 +515,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Consolas",
+			"$>",
+			"%>",
+			"<$",
 			"'",
 			""
 		],
@@ -342,6 +531,372 @@
 	"groups":
 	[
 		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8508,
+								8508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 127.0,
+						"translation.y": 3723.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/bower_components/highlight/src/highlight.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19511,
+								19530
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10966.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/bower_components/highlight/src/languages/cs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/bower_components/highlight/src/languages/cpp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1078,
+								1078
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/js/docs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7608,
+								7603
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/css/default.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3353,
+								3353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2642.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/Repo/docascode2/DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/DocProject.vstemplate",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/Repo/docascode2/DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/DocProject.docproj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								650,
+								650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/index.tmpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/template/class.tmpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2531,
+								2531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/template/namespace.tmpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1673,
+								1673
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "test2/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1146007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2945,
+								2945
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		},
+		{
 			"sheets":
 			[
 			]
@@ -349,11 +904,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 26.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -364,11 +919,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.735074626866,
 			1.0
 		],
 		"rows":
@@ -394,20 +956,108 @@
 		"selected_items":
 		[
 			[
-				"class",
-				"api\\class1.yaml"
+				"",
+				"app\\js\\docs.js"
+			],
+			[
+				"inde",
+				"app\\index.tmpl"
 			],
 			[
 				"name",
-				"api\\namespace2.yaml"
+				"app\\template\\namespace.tmpl"
+			],
+			[
+				"class.t",
+				"app\\template\\class.tmpl"
+			],
+			[
+				"cs.js",
+				"app\\bower_components\\highlight\\src\\languages\\cs.js"
+			],
+			[
+				"high",
+				"app\\bower_components\\highlight\\src\\highlight.js"
+			],
+			[
+				"docs.js",
+				"app\\js\\docs.js"
+			],
+			[
+				"highlight.pack.js",
+				"app\\bower_components\\highlightjs\\highlight.pack.js"
+			],
+			[
+				"defa",
+				"app\\css\\default.css"
+			],
+			[
+				"class.",
+				"app\\template\\class.tmpl"
+			],
+			[
+				"nam",
+				"app\\template\\namespace.tmpl"
+			],
+			[
+				"class",
+				"app\\template\\class.tmpl"
+			],
+			[
+				"docs.j",
+				"app\\js\\docs.js"
+			],
+			[
+				"class.tmp",
+				"dist\\template\\class.tmpl"
+			],
+			[
+				"doc",
+				"app\\js\\docs.js"
+			],
+			[
+				"index",
+				"app\\index.tmpl"
+			],
+			[
+				"docs",
+				"app\\js\\docs.js"
+			],
+			[
+				"ind",
+				"app\\index.html"
+			],
+			[
+				"doc.js",
+				"app\\js\\docs.js"
+			],
+			[
+				"prettify",
+				"app\\bower_components\\google-code-prettify\\src\\prettify.js"
+			],
+			[
+				"docascode.js",
+				"tmp\\docascode.js"
+			],
+			[
+				"packag",
+				"package.json"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"gruntfile.js",
+				"Gruntfile.js"
 			],
 			[
 				"class1.",
 				"api\\class1.yaml"
-			],
-			[
-				"doc",
-				"js\\docs.js"
 			],
 			[
 				"yaml",
@@ -416,14 +1066,6 @@
 			[
 				"web",
 				"web.config"
-			],
-			[
-				"index",
-				"en\\index.html"
-			],
-			[
-				"class.",
-				"en\\api\\class1.yaml"
 			],
 			[
 				"vers",
@@ -466,10 +1108,6 @@
 				"en\\js\\nav-data.js"
 			],
 			[
-				"docs.js",
-				"en\\js\\docs.js"
-			],
-			[
 				"docs.min",
 				"en\\js\\docs.min.js"
 			],
@@ -508,7 +1146,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 181.0,
+	"side_bar_width": 200.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

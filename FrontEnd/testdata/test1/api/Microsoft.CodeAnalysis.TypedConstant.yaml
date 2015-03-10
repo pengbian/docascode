@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
   startLine: 16
-summary: Represents a constant value used as an argument to a custom attribute.
+summary: >+
+  Represents a constant value used as an argument to a custom attribute.
+
 syntax:
   content:
     CSharp: public struct TypedConstant
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 items:
@@ -42,15 +46,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
     startLine: 38
-  summary: The kind of the constant.
+  summary: >+
+    The kind of the constant.
+
   syntax:
     content:
       CSharp: public TypedConstantKind Kind
     parameters:
     - id: Kind
       type:
-        id: TypedConstantKind
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\TypedConstantKind.cs
+        id: Microsoft.CodeAnalysis.TypedConstantKind
+        name: TypedConstantKind
+        href: api\Microsoft.CodeAnalysis.TypedConstantKind
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Kind
   yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
   href: api\Microsoft.CodeAnalysis.TypedConstant
@@ -82,15 +89,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
     startLine: 47
-  summary: "Returns the [Microsoft.CodeAnalysis.ITypeSymbol](api\\Microsoft.CodeAnalysis.ITypeSymbol) of the constant, \r\n    or null if the type can't be determined (error)."
+  summary: >+
+    Returns the [Microsoft.CodeAnalysis.ITypeSymbol](#/api\Microsoft.CodeAnalysis.ITypeSymbol) of the constant,
+
+    or null if the type can't be determined (error).
+
   syntax:
     content:
       CSharp: public ITypeSymbol Type
     parameters:
     - id: Type
       type:
-        id: ITypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+        id: Microsoft.CodeAnalysis.ITypeSymbol
+        name: ITypeSymbol
+        href: api\Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Type
   yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
   href: api\Microsoft.CodeAnalysis.TypedConstant
@@ -122,7 +134,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
     startLine: 55
-  summary: True if the constant represents a null reference.
+  summary: >+
+    True if the constant represents a null reference.
+
   syntax:
     content:
       CSharp: public bool IsNull
@@ -130,6 +144,7 @@ items:
     - id: IsNull
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_IsNull
@@ -163,7 +178,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
     startLine: 66
-  summary: The value for a non-array constant.
+  summary: >+
+    The value for a non-array constant.
+
   syntax:
     content:
       CSharp: public object Value
@@ -171,6 +188,7 @@ items:
     - id: Value
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Value
@@ -204,7 +222,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
     startLine: 82
-  summary: The value for an [Microsoft.CodeAnalysis.TypedConstant](api\Microsoft.CodeAnalysis.TypedConstant) array.
+  summary: >+
+    The value for an [Microsoft.CodeAnalysis.TypedConstant](#/api\Microsoft.CodeAnalysis.TypedConstant) array.
+
   syntax:
     content:
       CSharp: public ImmutableArray<TypedConstant> Values
@@ -212,6 +232,7 @@ items:
     - id: Values
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Values
@@ -252,6 +273,7 @@ items:
     - id: obj
       type:
         id: System.Object
+        name: System.Object
         href: System.Runtime
         isExternal: true
     return:
@@ -278,8 +300,9 @@ items:
     parameters:
     - id: other
       type:
-        id: TypedConstant
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+        id: Microsoft.CodeAnalysis.TypedConstant
+        name: TypedConstant
+        href: api\Microsoft.CodeAnalysis.TypedConstant
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TypedConstant.GetHashCode

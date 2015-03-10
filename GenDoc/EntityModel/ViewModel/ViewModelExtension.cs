@@ -50,9 +50,9 @@ namespace EntityModel.ViewModel
         public static Regex LinkFromCrefRegex = new Regex(@"@(?<content>((?<type>N|T|M|P|F|E):" + idSelector + @")\-", RegexOptions.Compiled);
 
         // self written link should be ended with a whitespace
-        public static Regex LinkFromSelfWrittenRegex = new Regex(@"@(?<content>(" + idSelector + @")\s", RegexOptions.Compiled);
+        public static Regex LinkFromSelfWrittenRegex = new Regex(@"@(?<content>(" + idSelector + @")", RegexOptions.Compiled);
 
-        public static string ResolveText<T>(Dictionary<string, T> dict, string input, Func<T, string> linkGenerator)
+        public static string ResolveText<T>(Dictionary<string, T> dict, string input, Func<T, string> linkGenerator, Func<string, string> failureHandler = null)
         {
             if (dict == null) return input;
             return LinkParser.Resolve(input, s =>
@@ -72,6 +72,11 @@ namespace EntityModel.ViewModel
                 }
                 else
                 {
+                    if (failureHandler != null)
+                    {
+                        return failureHandler(s);
+                    }
+
                     return null;
                 }
             });

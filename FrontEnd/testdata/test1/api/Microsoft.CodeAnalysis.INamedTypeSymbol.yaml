@@ -14,7 +14,9 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
   startLine: 10
-summary: Represents a type other than an array, a pointer, a type parameter.
+summary: >+
+  Represents a type other than an array, a pointer, a type parameter.
+
 syntax:
   content:
     CSharp: public interface INamedTypeSymbol
@@ -35,10 +37,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 16
-  summary: >-
+  summary: >+
     Returns the arity of this type, or the number of type parameters it takes.
 
-        A non-generic type has zero arity.
+    A non-generic type has zero arity.
+
   syntax:
     content:
       CSharp: int Arity
@@ -46,6 +49,7 @@ items:
     - id: Arity
       type:
         id: System.Int32
+        name: System.Int32
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Arity
@@ -79,7 +83,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 21
-  summary: True if this type or some containing type has type parameters.
+  summary: >+
+    True if this type or some containing type has type parameters.
+
   syntax:
     content:
       CSharp: bool IsGenericType
@@ -87,6 +93,7 @@ items:
     - id: IsGenericType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsGenericType
@@ -120,16 +127,17 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 30
-  summary: >-
+  summary: >+
     True if this is a reference to an unbound generic type. A generic type is
 
-        considered unbound if all of the type argument lists in its fully qualified
+    considered unbound if all of the type argument lists in its fully qualified
 
-        name are empty. Note that the type arguments of an unbound generic type will be
+    name are empty. Note that the type arguments of an unbound generic type will be
 
-        returned as error types because they do not really have type arguments.  An unbound
+    returned as error types because they do not really have type arguments.  An unbound
 
-        generic type yields null for its BaseType and an empty result for its Interfaces.
+    generic type yields null for its BaseType and an empty result for its Interfaces.
+
   syntax:
     content:
       CSharp: bool IsUnboundGenericType
@@ -137,6 +145,7 @@ items:
     - id: IsUnboundGenericType
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsUnboundGenericType
@@ -170,7 +179,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 36
-  summary: "Returns true if the type is a Script class. \r\n    It might be an interactive submission class or a Script class in a csx file."
+  summary: >+
+    Returns true if the type is a Script class.
+
+    It might be an interactive submission class or a Script class in a csx file.
+
   syntax:
     content:
       CSharp: bool IsScriptClass
@@ -178,6 +191,7 @@ items:
     - id: IsScriptClass
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsScriptClass
@@ -211,10 +225,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 42
-  summary: >-
+  summary: >+
     Returns true if the type is the implicit class that holds onto invalid global members (like methods or
 
-        statements in a non script file).
+    statements in a non script file).
+
   syntax:
     content:
       CSharp: bool IsImplicitClass
@@ -222,6 +237,7 @@ items:
     - id: IsImplicitClass
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsImplicitClass
@@ -255,7 +271,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 47
-  summary: Returns collection of names of members declared within this type.
+  summary: >+
+    Returns collection of names of members declared within this type.
+
   syntax:
     content:
       CSharp: IEnumerable<string> MemberNames
@@ -263,6 +281,7 @@ items:
     - id: MemberNames
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
+        name: System.Collections.Generic.IEnumerable{System.String}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MemberNames
@@ -296,10 +315,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 53
-  summary: >-
+  summary: >+
     Returns the type parameters that this type has. If this is a non-generic type,
 
-        returns an empty ImmutableArray.
+    returns an empty ImmutableArray.
+
   syntax:
     content:
       CSharp: ImmutableArray<ITypeParameterSymbol> TypeParameters
@@ -307,6 +327,7 @@ items:
     - id: TypeParameters
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeParameters
@@ -340,7 +361,13 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 60
-  summary: "Returns the type arguments that have been substituted for the type parameters. \r\n    If nothing has been substituted for a give type parameters,\r\n    then the type parameter itself is consider the type argument."
+  summary: >+
+    Returns the type arguments that have been substituted for the type parameters.
+
+    If nothing has been substituted for a give type parameters,
+
+    then the type parameter itself is consider the type argument.
+
   syntax:
     content:
       CSharp: ImmutableArray<ITypeSymbol> TypeArguments
@@ -348,6 +375,7 @@ items:
     - id: TypeArguments
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeArguments
@@ -381,20 +409,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 67
-  summary: >-
+  summary: >+
     Get the original definition of this type symbol. If this symbol is derived from another
 
-        symbol by (say) type substitution, this gets the original symbol, as it was defined in
+    symbol by (say) type substitution, this gets the original symbol, as it was defined in
 
-        source or metadata.
+    source or metadata.
+
   syntax:
     content:
       CSharp: new INamedTypeSymbol OriginalDefinition
     parameters:
     - id: OriginalDefinition
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_OriginalDefinition
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
@@ -426,24 +456,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 76
-  summary: >-
+  summary: >+
     For delegate types, gets the delegate's invoke method.  Returns null on
 
-        all other kinds of types.  Note that is is possible to have an ill-formed
+    all other kinds of types.  Note that is is possible to have an ill-formed
 
-        delegate type imported from metadata which does not have an Invoke method.
+    delegate type imported from metadata which does not have an Invoke method.
 
-        Such a type will be classified as a delegate but its DelegateInvokeMethod
+    Such a type will be classified as a delegate but its DelegateInvokeMethod
 
-        would be null.
+    would be null.
+
   syntax:
     content:
       CSharp: IMethodSymbol DelegateInvokeMethod
     parameters:
     - id: DelegateInvokeMethod
       type:
-        id: IMethodSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\IMethodSymbol.cs
+        id: Microsoft.CodeAnalysis.IMethodSymbol
+        name: IMethodSymbol
+        href: api\Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_DelegateInvokeMethod
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
@@ -475,18 +507,20 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 82
-  summary: >-
+  summary: >+
     For enum types, gets the underlying type. Returns null on all other
 
-        kinds of types.
+    kinds of types.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol EnumUnderlyingType
     parameters:
     - id: EnumUnderlyingType
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_EnumUnderlyingType
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
@@ -518,20 +552,22 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 89
-  summary: >-
+  summary: >+
     Returns the type symbol that this type was constructed from. This type symbol
 
-        has the same containing type (if any), but has type arguments that are the same
+    has the same containing type (if any), but has type arguments that are the same
 
-        as the type parameters (although its containing type might not).
+    as the type parameters (although its containing type might not).
+
   syntax:
     content:
       CSharp: INamedTypeSymbol ConstructedFrom
     parameters:
     - id: ConstructedFrom
       type:
-        id: INamedTypeSymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+        id: Microsoft.CodeAnalysis.INamedTypeSymbol
+        name: INamedTypeSymbol
+        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_ConstructedFrom
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
@@ -563,7 +599,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 96
-  summary: Returns a constructed type given its type arguments.
+  summary: >+
+    Returns a constructed type given its type arguments.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol Construct(params ITypeSymbol[] typeArguments);
@@ -571,6 +609,7 @@ items:
     - id: typeArguments
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: >-
         The immediate type arguments to be replaced for type
@@ -594,7 +633,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 101
-  summary: Returns an unbound generic type of this named type.
+  summary: >+
+    Returns an unbound generic type of this named type.
+
   syntax:
     content:
       CSharp: INamedTypeSymbol ConstructUnboundGenericType();
@@ -617,7 +658,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 106
-  summary: Get the instance constructors for this type.
+  summary: >+
+    Get the instance constructors for this type.
+
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> InstanceConstructors
@@ -625,6 +668,7 @@ items:
     - id: InstanceConstructors
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_InstanceConstructors
@@ -658,7 +702,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 111
-  summary: Get the static constructors for this type.
+  summary: >+
+    Get the static constructors for this type.
+
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> StaticConstructors
@@ -666,6 +712,7 @@ items:
     - id: StaticConstructors
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_StaticConstructors
@@ -699,7 +746,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 116
-  summary: Get the both instance and static constructors for this type.
+  summary: >+
+    Get the both instance and static constructors for this type.
+
   syntax:
     content:
       CSharp: ImmutableArray<IMethodSymbol> Constructors
@@ -707,6 +756,7 @@ items:
     - id: Constructors
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+        name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Constructors
@@ -740,15 +790,26 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 125
-  summary: "For implicitly declared delegate types returns the EventSymbol that caused this\r\n    delegate type to be generated.\r\n    For all other types returns null.\r\n    Note, the set of possible associated symbols might be expanded in the future to \r\n    reflect changes in the languages."
+  summary: >+
+    For implicitly declared delegate types returns the EventSymbol that caused this
+
+    delegate type to be generated.
+
+    For all other types returns null.
+
+    Note, the set of possible associated symbols might be expanded in the future to
+
+    reflect changes in the languages.
+
   syntax:
     content:
       CSharp: ISymbol AssociatedSymbol
     parameters:
     - id: AssociatedSymbol
       type:
-        id: ISymbol
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Symbols\ISymbol.cs
+        id: Microsoft.CodeAnalysis.ISymbol
+        name: ISymbol
+        href: api\Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_AssociatedSymbol
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
   href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
@@ -780,7 +841,11 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
     startLine: 131
-  summary: "Determines if the symbol might contain extension methods. \r\n    If false, the symbol does not contain extension methods."
+  summary: >+
+    Determines if the symbol might contain extension methods.
+
+    If false, the symbol does not contain extension methods.
+
   syntax:
     content:
       CSharp: bool MightContainExtensionMethods
@@ -788,6 +853,7 @@ items:
     - id: MightContainExtensionMethods
       type:
         id: System.Boolean
+        name: System.Boolean
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MightContainExtensionMethods

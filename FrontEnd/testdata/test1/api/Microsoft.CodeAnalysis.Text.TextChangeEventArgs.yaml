@@ -14,15 +14,19 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Text\TextChangeEventArgs.cs
   startLine: 13
-summary: Represents state for a TextChanged event.
+summary: >+
+  Represents state for a TextChanged event.
+
 syntax:
   content:
     CSharp: public class TextChangeEventArgs
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.EventArgs
+  name: System.EventArgs
   href: System.Runtime
   isExternal: true
 items:
@@ -42,24 +46,29 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChangeEventArgs.cs
     startLine: 21
-  summary: Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
+  summary: >+
+    Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](#/api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
+
   syntax:
     content:
       CSharp: public TextChangeEventArgs(SourceText oldText, SourceText newText, IEnumerable<TextChangeRange> changes)
     parameters:
     - id: oldText
       type:
-        id: SourceText
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: api\Microsoft.CodeAnalysis.Text.SourceText
       description: The text before the change.
     - id: newText
       type:
-        id: SourceText
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: api\Microsoft.CodeAnalysis.Text.SourceText
       description: The text after the change.
     - id: changes
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
+        name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
         href: System.Runtime
         isExternal: true
       description: A non-empty set of ranges for the change.
@@ -79,24 +88,29 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChangeEventArgs.cs
     startLine: 39
-  summary: Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
+  summary: >+
+    Initializes an instance of [Microsoft.CodeAnalysis.Text.TextChangeEventArgs](#/api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs).
+
   syntax:
     content:
       CSharp: 'public TextChangeEventArgs(SourceText oldText, SourceText newText, params TextChangeRange[] changes): this (oldText, newText, (IEnumerable<TextChangeRange>)changes)'
     parameters:
     - id: oldText
       type:
-        id: SourceText
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: api\Microsoft.CodeAnalysis.Text.SourceText
       description: The text before the change.
     - id: newText
       type:
-        id: SourceText
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: api\Microsoft.CodeAnalysis.Text.SourceText
       description: The text after the change.
     - id: changes
       type:
         id: System.Array
+        name: System.Array
         isExternal: true
       description: A non-empty set of ranges for the change.
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.OldText
@@ -115,15 +129,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChangeEventArgs.cs
     startLine: 47
-  summary: Gets the text before the change.
+  summary: >+
+    Gets the text before the change.
+
   syntax:
     content:
       CSharp: public SourceText OldText
     parameters:
     - id: OldText
       type:
-        id: SourceText
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: api\Microsoft.CodeAnalysis.Text.SourceText
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_OldText
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs
@@ -155,15 +172,18 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChangeEventArgs.cs
     startLine: 52
-  summary: Gets the text after the change.
+  summary: >+
+    Gets the text after the change.
+
   syntax:
     content:
       CSharp: public SourceText NewText
     parameters:
     - id: NewText
       type:
-        id: SourceText
-        href: D:\Repo\RoslynGit\src\Compilers\Core\Portable\Text\SourceText.cs
+        id: Microsoft.CodeAnalysis.Text.SourceText
+        name: SourceText
+        href: api\Microsoft.CodeAnalysis.Text.SourceText
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_NewText
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs
@@ -195,7 +215,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\Text\TextChangeEventArgs.cs
     startLine: 57
-  summary: Gets the set of ranges for the change.
+  summary: >+
+    Gets the set of ranges for the change.
+
   syntax:
     content:
       CSharp: public IReadOnlyList<TextChangeRange> Changes
@@ -203,6 +225,7 @@ items:
     - id: Changes
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextChangeRange}
+        name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextChangeRange}
         href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_Changes

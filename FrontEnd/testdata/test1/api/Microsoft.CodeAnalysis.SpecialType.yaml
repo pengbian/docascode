@@ -14,18 +14,23 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\SpecialType.cs
   startLine: 20
-summary: Specifies the Ids of special runtime types.
+summary: >+
+  Specifies the Ids of special runtime types.
+
 syntax:
   content:
     CSharp: public enum SpecialType
 inheritance:
 - id: System.Object
+  name: System.Object
   href: System.Runtime
   isExternal: true
 - id: System.ValueType
+  name: System.ValueType
   href: System.Runtime
   isExternal: true
 - id: System.Enum
+  name: System.Enum
   href: System.Runtime
   isExternal: true
 items:
@@ -45,7 +50,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 25
-  summary: Indicates a non-special type (default value).
+  summary: >+
+    Indicates a non-special type (default value).
+
   syntax:
     content:
       CSharp: None = 0
@@ -65,7 +72,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 30
-  summary: Indicates that the type is @T:System.Object-.
+  summary: >+
+    Indicates that the type is [System.Object](#).
+
   syntax:
     content:
       CSharp: System_Object = 1
@@ -85,7 +94,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 35
-  summary: Indicates that the type is @T:System.Enum-.
+  summary: >+
+    Indicates that the type is [System.Enum](#).
+
   syntax:
     content:
       CSharp: System_Enum = 2
@@ -105,7 +116,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 40
-  summary: Indicates that the type is @T:System.MulticastDelegate-.
+  summary: >+
+    Indicates that the type is [System.MulticastDelegate](#).
+
   syntax:
     content:
       CSharp: System_MulticastDelegate = 3
@@ -125,7 +138,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 45
-  summary: Indicates that the type is @T:System.Delegate-.
+  summary: >+
+    Indicates that the type is [System.Delegate](#).
+
   syntax:
     content:
       CSharp: System_Delegate = 4
@@ -145,7 +160,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 50
-  summary: Indicates that the type is @T:System.ValueType-.
+  summary: >+
+    Indicates that the type is [System.ValueType](#).
+
   syntax:
     content:
       CSharp: System_ValueType = 5
@@ -165,7 +182,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 55
-  summary: Indicates that the type is @T:System.Void-.
+  summary: >+
+    Indicates that the type is [System.Void](#).
+
   syntax:
     content:
       CSharp: System_Void = 6
@@ -185,7 +204,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 60
-  summary: Indicates that the type is @T:System.Boolean-.
+  summary: >+
+    Indicates that the type is [System.Boolean](#).
+
   syntax:
     content:
       CSharp: System_Boolean = 7
@@ -205,7 +226,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 65
-  summary: Indicates that the type is @T:System.Char-.
+  summary: >+
+    Indicates that the type is [System.Char](#).
+
   syntax:
     content:
       CSharp: System_Char = 8
@@ -225,7 +248,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 70
-  summary: Indicates that the type is @T:System.SByte-.
+  summary: >+
+    Indicates that the type is [System.SByte](#).
+
   syntax:
     content:
       CSharp: System_SByte = 9
@@ -245,7 +270,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 75
-  summary: Indicates that the type is @T:System.Byte-.
+  summary: >+
+    Indicates that the type is [System.Byte](#).
+
   syntax:
     content:
       CSharp: System_Byte = 10
@@ -265,7 +292,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 80
-  summary: Indicates that the type is @T:System.Int16-.
+  summary: >+
+    Indicates that the type is [System.Int16](#).
+
   syntax:
     content:
       CSharp: System_Int16 = 11
@@ -285,7 +314,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 85
-  summary: Indicates that the type is @T:System.UInt16-.
+  summary: >+
+    Indicates that the type is [System.UInt16](#).
+
   syntax:
     content:
       CSharp: System_UInt16 = 12
@@ -305,7 +336,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 90
-  summary: Indicates that the type is @T:System.Int32-.
+  summary: >+
+    Indicates that the type is [System.Int32](#).
+
   syntax:
     content:
       CSharp: System_Int32 = 13
@@ -325,7 +358,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 95
-  summary: Indicates that the type is @T:System.UInt32-.
+  summary: >+
+    Indicates that the type is [System.UInt32](#).
+
   syntax:
     content:
       CSharp: System_UInt32 = 14
@@ -345,7 +380,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 100
-  summary: Indicates that the type is @T:System.Int64-.
+  summary: >+
+    Indicates that the type is [System.Int64](#).
+
   syntax:
     content:
       CSharp: System_Int64 = 15
@@ -365,7 +402,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 105
-  summary: Indicates that the type is @T:System.UInt64-.
+  summary: >+
+    Indicates that the type is [System.UInt64](#).
+
   syntax:
     content:
       CSharp: System_UInt64 = 16
@@ -385,7 +424,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 110
-  summary: Indicates that the type is @T:System.Decimal-.
+  summary: >+
+    Indicates that the type is [System.Decimal](#).
+
   syntax:
     content:
       CSharp: System_Decimal = 17
@@ -405,7 +446,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 115
-  summary: Indicates that the type is @T:System.Single-.
+  summary: >+
+    Indicates that the type is [System.Single](#).
+
   syntax:
     content:
       CSharp: System_Single = 18
@@ -425,7 +468,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 120
-  summary: Indicates that the type is @T:System.Double-.
+  summary: >+
+    Indicates that the type is [System.Double](#).
+
   syntax:
     content:
       CSharp: System_Double = 19
@@ -445,7 +490,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 125
-  summary: Indicates that the type is @T:System.String-.
+  summary: >+
+    Indicates that the type is [System.String](#).
+
   syntax:
     content:
       CSharp: System_String = 20
@@ -465,7 +512,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 130
-  summary: Indicates that the type is @T:System.IntPtr-.
+  summary: >+
+    Indicates that the type is [System.IntPtr](#).
+
   syntax:
     content:
       CSharp: System_IntPtr = 21
@@ -485,7 +534,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 135
-  summary: Indicates that the type is @T:System.UIntPtr-.
+  summary: >+
+    Indicates that the type is [System.UIntPtr](#).
+
   syntax:
     content:
       CSharp: System_UIntPtr = 22
@@ -505,7 +556,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 140
-  summary: Indicates that the type is @T:System.Array-.
+  summary: >+
+    Indicates that the type is [System.Array](#).
+
   syntax:
     content:
       CSharp: System_Array = 23
@@ -525,7 +578,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 145
-  summary: Indicates that the type is @T:System.Collections.IEnumerable-.
+  summary: >+
+    Indicates that the type is [System.Collections.IEnumerable](#).
+
   syntax:
     content:
       CSharp: System_Collections_IEnumerable = 24
@@ -545,7 +600,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 150
-  summary: Indicates that the type is @T:System.Collections.Generic.IEnumerable`1-.
+  summary: >+
+    Indicates that the type is [System.Collections.Generic.IEnumerable`1](#).
+
   syntax:
     content:
       CSharp: System_Collections_Generic_IEnumerable_T = 25
@@ -565,7 +622,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 155
-  summary: Indicates that the type is @T:System.Collections.Generic.IList`1-.
+  summary: >+
+    Indicates that the type is [System.Collections.Generic.IList`1](#).
+
   syntax:
     content:
       CSharp: System_Collections_Generic_IList_T = 26
@@ -585,7 +644,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 160
-  summary: Indicates that the type is @T:System.Collections.Generic.ICollection`1-.
+  summary: >+
+    Indicates that the type is [System.Collections.Generic.ICollection`1](#).
+
   syntax:
     content:
       CSharp: System_Collections_Generic_ICollection_T = 27
@@ -605,7 +666,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 165
-  summary: Indicates that the type is @T:System.Collections.IEnumerator-.
+  summary: >+
+    Indicates that the type is [System.Collections.IEnumerator](#).
+
   syntax:
     content:
       CSharp: System_Collections_IEnumerator = 28
@@ -625,7 +688,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 170
-  summary: Indicates that the type is @T:System.Collections.Generic.IEnumerator`1-.
+  summary: >+
+    Indicates that the type is [System.Collections.Generic.IEnumerator`1](#).
+
   syntax:
     content:
       CSharp: System_Collections_Generic_IEnumerator_T = 29
@@ -645,7 +710,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 175
-  summary: Indicates that the type is @T:System.Collections.Generic.IReadOnlyList`1-.
+  summary: >+
+    Indicates that the type is [System.Collections.Generic.IReadOnlyList`1](#).
+
   syntax:
     content:
       CSharp: System_Collections_Generic_IReadOnlyList_T = 30
@@ -665,7 +732,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 180
-  summary: Indicates that the type is @T:System.Collections.Generic.IReadOnlyCollection`1-.
+  summary: >+
+    Indicates that the type is [System.Collections.Generic.IReadOnlyCollection`1](#).
+
   syntax:
     content:
       CSharp: System_Collections_Generic_IReadOnlyCollection_T = 31
@@ -685,7 +754,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 185
-  summary: Indicates that the type is @T:System.Nullable`1-.
+  summary: >+
+    Indicates that the type is [System.Nullable`1](#).
+
   syntax:
     content:
       CSharp: System_Nullable_T = 32
@@ -705,7 +776,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 190
-  summary: Indicates that the type is @T:System.DateTime-.
+  summary: >+
+    Indicates that the type is [System.DateTime](#).
+
   syntax:
     content:
       CSharp: System_DateTime = 33
@@ -725,7 +798,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 195
-  summary: Indicates that the type is @T:System.Runtime.CompilerServices.IsVolatile-.
+  summary: >+
+    Indicates that the type is [System.Runtime.CompilerServices.IsVolatile](#).
+
   syntax:
     content:
       CSharp: System_Runtime_CompilerServices_IsVolatile = 34
@@ -745,7 +820,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 200
-  summary: Indicates that the type is @T:System.IDisposable-.
+  summary: >+
+    Indicates that the type is [System.IDisposable](#).
+
   syntax:
     content:
       CSharp: System_IDisposable = 35
@@ -765,7 +842,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 207
-  summary: Indicates that the type is @T:System.TypedReference-.
+  summary: >+
+    Indicates that the type is [System.TypedReference](#).
+
   syntax:
     content:
       CSharp: System_TypedReference = 36
@@ -785,7 +864,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 214
-  summary: Indicates that the type is @T:System.ArgIterator-.
+  summary: >+
+    Indicates that the type is [System.ArgIterator](#).
+
   syntax:
     content:
       CSharp: System_ArgIterator = 37
@@ -805,7 +886,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 221
-  summary: Indicates that the type is @T:System.RuntimeArgumentHandle-.
+  summary: >+
+    Indicates that the type is [System.RuntimeArgumentHandle](#).
+
   syntax:
     content:
       CSharp: System_RuntimeArgumentHandle = 38
@@ -825,7 +908,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 226
-  summary: Indicates that the type is @T:System.RuntimeFieldHandle-.
+  summary: >+
+    Indicates that the type is [System.RuntimeFieldHandle](#).
+
   syntax:
     content:
       CSharp: System_RuntimeFieldHandle = 39
@@ -845,7 +930,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 231
-  summary: Indicates that the type is @T:System.RuntimeMethodHandle-.
+  summary: >+
+    Indicates that the type is [System.RuntimeMethodHandle](#).
+
   syntax:
     content:
       CSharp: System_RuntimeMethodHandle = 40
@@ -865,7 +952,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 236
-  summary: Indicates that the type is @T:System.RuntimeTypeHandle-.
+  summary: >+
+    Indicates that the type is [System.RuntimeTypeHandle](#).
+
   syntax:
     content:
       CSharp: System_RuntimeTypeHandle = 41
@@ -885,7 +974,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 241
-  summary: Indicates that the type is @T:System.IAsyncResult-.
+  summary: >+
+    Indicates that the type is [System.IAsyncResult](#).
+
   syntax:
     content:
       CSharp: System_IAsyncResult = 42
@@ -905,7 +996,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 246
-  summary: Indicates that the type is @T:System.AsyncCallback-.
+  summary: >+
+    Indicates that the type is [System.AsyncCallback](#).
+
   syntax:
     content:
       CSharp: System_AsyncCallback = 43
@@ -925,7 +1018,9 @@ items:
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
     path: src\Compilers\Core\Portable\SpecialType.cs
     startLine: 251
-  summary: Count of special types. This is not a count of enum members.
+  summary: >+
+    Count of special types. This is not a count of enum members.
+
   syntax:
     content:
       CSharp: Count = System_AsyncCallback
