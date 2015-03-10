@@ -63,6 +63,10 @@
       <Project>{619ec13d-8939-4f23-b7dc-7a98964bb9a4}</Project>
       <Name>Utility</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PublishDoc\PublishDoc.csproj">
+      <Project>{f6cbb448-7a7d-4140-be6b-ecb4d6e95868}</Project>
+      <Name>PublishDoc</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

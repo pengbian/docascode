@@ -209,7 +209,7 @@ article div.height-container section div{
 article div.pointy-thing-container {
     background: #fff;
     /*border-bottom: 1px solid rgba(233,233,233,1);*/
-    left: -25px;
+    /*left: -25px;*/
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 13px;
@@ -261,6 +261,11 @@ article table code{
     word-wrap: break-word; /* Internet Explorer 5.5+ */ 
     white-space : normal ; /* Internet Explorer 5.5+ */ 
 }
+
+.section-member-detail-before:hover {
+    text-decoration: none;
+}
+
 /*For the xml and md section, the css should be customed*/
 .xml-section ,code{
     /*<pre>,<code>?*/
