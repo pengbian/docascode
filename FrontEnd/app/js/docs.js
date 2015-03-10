@@ -1,7 +1,7 @@
 var player;
 
 function createPlayer() {
-  var player = csplay.play("player", "http://dotnetsandbox.azurewebsites.net");
+  var player = csplay.play("player", "http://dotnetsandbox.azurewebsites.net" /* hardcode for now */);
   player.editor.setTheme("ace/theme/ambiance");
   player.editor.setFontSize(16);
   $("#run").click(function () {
