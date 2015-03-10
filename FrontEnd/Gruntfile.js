@@ -41,7 +41,6 @@ module.exports = function(grunt) {
         'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/bower_components/highlightjs/styles/vs.css',
-        'app/bower_components/components-font-awesome/css/font-awesome.min.css',
         'app/css/prettify-theme.css',
         'app/css/docs.css',
         'app/css/csplay.css',
@@ -67,14 +66,12 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlight/src/highlight.js',
         // 'app/bower_components/highlight/src/languages/cs.js',
         'app/js/angular-bootstrap/bootstrap.min.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js',
-        'app/bower_components/ace/build/src/ace.js'
+        'app/js/angular-bootstrap/dropdown-toggle.min.js'
     ],
     unminifiedCssFiles: [
         'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
         'app/bower_components/highlightjs/styles/vs.css',
-        'app/bower_components/components-font-awesome/css/font-awesome.min.css',
         'app/css/prettify-theme.css',
         'app/css/docs.css',
         'app/css/csplay.css',
@@ -100,8 +97,7 @@ module.exports = function(grunt) {
         // 'app/bower_components/highlight/src/languages/cs.js',
         // 'app/bower_components/highlightjs/highlight.pack.js',
         'app/js/angular-bootstrap/bootstrap.min.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js',
-        'app/bower_components/ace/build/src/ace.js'
+        'app/js/angular-bootstrap/dropdown-toggle.min.js'
     ],
     /* make it use .jshintrc */
     jshint: {
