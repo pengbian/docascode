@@ -176,19 +176,27 @@ angular.module('DocsController', [])
     var display = e.target.nextElementSibling.style.display;
     e.target.nextElementSibling.style.display = (display == 'block')? 'none':'block';
   };
-  
-  $scope.ViewSource = function(startLine){
-    var repo = this.model.source.remote.repo;
-    if (repo.substr(-4) == '.git') {
-      repo = repo.substr(0, repo.length-4);
+
+  function getRemoteUrl(item, startLine){
+    if (item && item.remote && item.remote.repo){
+      var repo = item.remote.repo;
+      if (repo.substr(-4) == '.git') {
+        repo = repo.substr(0, repo.length-4);
+      }
+      var linenum = startLine? startLine-1:item.startLine;
+      var url = repo + '/blob'+'/'+ item.remote.branch+'/'+ item.path+'/#L'+linenum;url = url.replace('\\','/');
+      return url;
+    }else{
+      return "#";
     }
-    var linenum = startLine? startLine-1:this.model.source.startLine;
-    var url = repo + '/blob'+'/'+this.model.source.remote.branch+'/'+this.model.source.path+'/#L'+linenum;url = url.replace('\\','/');
-    return  url;
+  }
+
+  $scope.ViewSource = function(startLine){
+    return getRemoteUrl(this.model.source, startLine);
   };
 
    $scope.ImproveThisDoc = function(){
-
+      return $scope.partialModel.mdContent;
     };
 
   $scope.$on('$includeContentLoaded', function() {
@@ -294,6 +302,7 @@ angular.module('DocsController', [])
               var mdPath = $scope.mdIndex[$scope.partialModel.id];
               if (mdPath){
                 if (mdPath.href){
+                  $scope.partialModel.mdHref = getRemoteUrl(mdPath, mdPath.startLine);
                   var getMdIndex = asyncFetchIndex(mdPath.href, 
                     function(result){
                       var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);

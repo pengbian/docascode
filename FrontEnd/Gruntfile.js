@@ -213,6 +213,20 @@ module.exports = function(grunt) {
             {expand: false,flatten: true, src: ['dist/docascode.html'], dest: 'release/index.html'},
             {expand: true,flatten: true, src: ['app/template/*'], dest: 'release/template/', filter: 'isFile'},
           ]
+        },
+        vsix: {
+          files: [
+            {expand: false,flatten: true, src: ['app/web.config'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/web.config'},
+            {expand: false,flatten: true, src: ['dist/docascode.html'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/template/', filter: 'isFile'},
+          ]
+        },
+        vsix_debug: {
+          files: [
+            {expand: false,flatten: true, src: ['app/web.config'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/web.config'},
+            {expand: false,flatten: true, src: ['dist/docascode-debug.html'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/index.html'},
+            {expand: true,flatten: true, src: ['app/template/*'], dest: '../DocProjectVsix/DocProjectVsix/Templates/Projects/DocProject/template/', filter: 'isFile'},
+          ]
         }
      }
   });
@@ -249,5 +263,7 @@ module.exports = function(grunt) {
     grunt.registerTask('debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:debug']);
     grunt.registerTask('test', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:test_roslyn', 'copy:test_simple']);
     grunt.registerTask('release', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:release']);
+    grunt.registerTask('vsix', [ 'assembleTemplates', 'concat', 'uglify', 'index', 'copy:vsix']);
+    grunt.registerTask('vsix-debug', [ 'assembleTemplates', 'concat', 'uglify', 'index_debug', 'copy:vsix_debug']);
     grunt.registerTask('default', ['uglify']);
 };

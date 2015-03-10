@@ -5,8 +5,8 @@
                 <h1 class="article-name">
                     {{model.type}} {{model.name.CSharp}}
                 </h1>
-                <div class="improve-this-doc btn btn-primary">
-                    <a ng-href={{ImproveThisDoc()}}>Improve this Doc</a>
+                <div ng-if="model.mdHref" class="improve-this-doc btn btn-primary">
+                   <a ng-href="{{model.mdHref}}">Improve this Doc</a>
                 </div>
                 <div class="view-source btn">
                     <a ng-href={{ViewSource()}}> View Source</a>
@@ -49,7 +49,9 @@
                                     <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
                                 </div>
                                 <div class="improve-this-doc btn btn-primary" ng-show="showBtn">
-                                    <a ng-href="{{ImproveThisDoc()}}">Improve this Doc</a>
+                                    <div ng-if="model.mdHref" class="improve-this-doc btn btn-primary">
+                                       <a ng-href="{{model.mdHref}}">Improve this Doc</a>
+                                    </div>
                                   </div>
                                 <div class="md-section">
                                       <markdown ng-model="item.summary">

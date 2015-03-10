@@ -158,9 +158,9 @@ article h3.section-member-name{
 }
 article li.section-member{
     background: #fff;
-    left: -25px;
+    /*left: -25px;*/
     list-style-type: none;
-    padding: 0px 25px 13px;
+    padding: 0px 3px 13px;
     position: relative;
     width: 100%;
     -webkit-transition: -webkit-transform .3s ease;
