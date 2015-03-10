@@ -40,23 +40,25 @@
                 <div class="section" ng-repeat="itemtype in model.itemtypes">
                     <h3 class="section-name" ng-if="itemtype.show">{{itemtype.description}}</h3>
                     <ulu class="section-members"  ng-repeat="item in model.items" ng-if="item.type==itemtype.name">
-                        <li class="section-member">
-                            <div class="section-member-header">
+                        <li class="section-member" ng-mouseleave="showBtn = false" ng-mouseenter ="showBtn = true" ng-init="showBtn=false">
+                            <div class="section-member-header" >
                                 <h3 class="section-member-name">
                                     {{item.name.CSharp}}
                                 </h3>
-                                <div class="view-source btn">
-                                    <a ng-href="{{item.sourceurl}}">View Source</a>
+                                <div class="view-source btn" ng-show="showBtn">
+                                    <a ng-href="{{ViewSource(item.source.startLine)}}">View Source</a>
                                 </div>
-                                  <div class="improve-this-doc btn btn-primary">
-                                      <a ng-href="{{item.remarksourceurl}}">Improve this Doc</a>
+                                <div class="improve-this-doc btn btn-primary" ng-show="showBtn">
+                                    <a ng-href="{{ImproveThisDoc()}}">Improve this Doc</a>
                                   </div>
                                 <div class="md-section">
                                       <markdown ng-model="item.summary">
                                       </markdown>
                                 </div>
                             </div>
-                            <a class="section-member-detail" ng-click="GetDetail($event)">
+                            <a class="section-member-detail-before"  ng-init="showDetail=false"  ng-show="showDetail"> - </a>
+                            <a class="section-member-detail-before" ng-show="!showDetail"> + </a>
+                            <a class="section-member-detail" ng-click="showDetail=!showDetail; GetDetail($event)">
                                 details
                             </a>
                             <div class="height-container">

@@ -176,14 +176,14 @@ angular.module('DocsController', [])
     var display = e.target.nextElementSibling.style.display;
     e.target.nextElementSibling.style.display = (display == 'block')? 'none':'block';
   };
-
-   $scope.ViewSource = function(){
+  
+  $scope.ViewSource = function(startLine){
     var repo = this.model.source.remote.repo;
     if (repo.substr(-4) == '.git') {
       repo = repo.substr(0, repo.length-4);
     }
-    var url = repo + '/blob'+'/'+this.model.source.remote.branch+'/'+this.model.source.path+'/#L'+this.model.source.startLine;
-    url = url.replace('\\','/');
+    var linenum = startLine? startLine-1:this.model.source.startLine;
+    var url = repo + '/blob'+'/'+this.model.source.remote.branch+'/'+this.model.source.path+'/#L'+linenum;url = url.replace('\\','/');
     return  url;
   };
 
