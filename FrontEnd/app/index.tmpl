@@ -78,11 +78,11 @@
         // INLINE SCRIPTS AND CSS
         for(var i = 0, len = unminifiedCssFiles.length; i < len; i++) {
             var fileContent = grunt.file.read(unminifiedCssFiles[i]);
-            print_style_ref(unminifiedCssFiles[i], fileContent);
+            print_style_inline(unminifiedCssFiles[i], fileContent);
         }
         for(var i = 0, len = unminifiedJsFiles.length; i < len; i++) {
             var fileContent = grunt.file.read(unminifiedJsFiles[i]);
-            print_script_ref(unminifiedJsFiles[i], fileContent);
+            print_script_inline(unminifiedJsFiles[i], fileContent);
         }
     }
 
@@ -91,7 +91,7 @@
     var fileContent = '';
     if (task === 'debug') {
         fileContent = grunt.file.read(ownJsFileFull);
-        print_script_ref(ownJsFileFull, fileContent);
+        print_script_inline(ownJsFileFull, fileContent);
     } else if (task === 'release') {
         fileContent = grunt.file.read(ownJsFileMin);
         print_script_inline(ownJsFileMin, fileContent);
@@ -189,7 +189,8 @@
                     <a ng-if="navItem.extra.href" ng-class="navClass(navItem.extra)" href="#{{navItem.extra.href}}">
                       {{navItem.extra.text}}<i ng-if="navItem.extra.icon" class="icon-{{navItem.extra.icon}}"></i>
                     </a>
-                    <a tabindex="2" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.id.replace(navGroup.id + '.', '')}}</a>
+                    <a tabindex="2" ng-if="navItem.name && navItem.name.CSharp" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.name.CSharp}}</a>
+                    <a tabindex="2"ng-if="!navItem.name && !navItem.name.CSharp" ng-class="linkClass(navItem)" href="#{{navItem.href}}">{{navItem.id.replace(navGroup.id + '.', '')}}
                   </li>
                 </ul>
               </li>

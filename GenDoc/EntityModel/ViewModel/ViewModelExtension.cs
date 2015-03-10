@@ -135,7 +135,24 @@ namespace EntityModel.ViewModel
             xml = ResolveSeeCref(xml, selector);
             xml = ResolveSeeAlsoCref(xml, selector);
 
-            return GetSingleNode(xml, selector, trim, (e) => null);
+            // Trim each line as a temp workaround
+            var summary = GetSingleNode(xml, selector, trim, (e) => null);
+            if (!string.IsNullOrEmpty(summary))
+            {
+                StringBuilder builder = new StringBuilder();
+                using (StringReader reader = new StringReader(summary))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        builder.AppendLine(line.Trim());
+                    }
+                }
+
+                return builder.ToString();
+            }
+
+            return summary;
         }
 
         public static string GetReturns(string xml, bool trim)
@@ -293,6 +310,7 @@ namespace EntityModel.ViewModel
             shrinkedItem.Href = item.Href;
             shrinkedItem.Type = item.Type;
             shrinkedItem.YamlPath = item.YamlPath;
+            shrinkedItem.DisplayNames = item.DisplayNames;
             shrinkedItem.Items = null;
 
             if (item.Items == null)

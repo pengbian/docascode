@@ -11,10 +11,12 @@ source:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode2\
-    sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-  path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\TestClass2\Class1.cs
+    sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+  path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass2\Class1.cs
   startLine: 11
-summary: This is a *Class1* [TestClass1.Class1](api\TestClass1.Class1) in [TestClass1.Class1.Test1](api\TestClass1.Class1) **TestClass1**
+summary: >+
+  This is a *Class1* [TestClass1.Class1](api\TestClass1.Class1) in [TestClass1.Class1.Test1](api\TestClass1.Class1) **TestClass1**
+
 syntax:
   content:
     CSharp: public class Class1
@@ -36,10 +38,12 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\TestClass2\Class1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass2\Class1.cs
     startLine: 16
-  summary: This is a *test* with no return
+  summary: >+
+    This is a *test* with no return
+
   syntax:
     content:
       CSharp: public void Test1()
@@ -59,13 +63,14 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\TestClass2\Class1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass2\Class1.cs
     startLine: 26
-  summary: >-
+  summary: >+
     This is a *test* with return and should fail compilation
 
-        This is a multiline test
+    This is a multiline test
+
   syntax:
     content:
       CSharp: public Tuple<string, int> Test2()
@@ -85,10 +90,12 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\TestClass2\Class1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass2\Class1.cs
     startLine: 35
-  summary: This is an async *test*
+  summary: >+
+    This is an async *test*
+
   syntax:
     content:
       CSharp: public async Task<Tuple<string, int>> Test3()
@@ -109,10 +116,12 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\TestClass2\Class1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass2\Class1.cs
     startLine: 45
-  summary: This is a generic *test*
+  summary: >+
+    This is a generic *test*
+
   syntax:
     content:
       CSharp: public void Test4<T>()

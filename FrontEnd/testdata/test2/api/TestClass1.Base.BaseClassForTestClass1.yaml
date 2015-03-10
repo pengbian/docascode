@@ -11,8 +11,8 @@ source:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode2\
-    sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-  path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+    sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+  path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
   startLine: 8
 syntax:
   content:
@@ -35,10 +35,12 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13
-  summary: This is the property from *base* class
+  summary: >+
+    This is the property from *base* class
+
   syntax:
     content:
       CSharp: public string Property1
@@ -60,8 +62,8 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13
 - id: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
   yaml: api\TestClass1.Base.BaseClassForTestClass1.yaml
@@ -75,6 +77,6 @@ items:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode2\
-      sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-    path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13

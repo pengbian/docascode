@@ -11,6 +11,6 @@ source:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode2\
-    sha1: 2433f0a4bbb507773083a2b22bf93ee0390cb6d3
-  path: TestResults\Deploy_lianwei 2015-03-09 23_36_34\Out\Assets\TestClass1\TestClass1\Class1.cs
+    sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
+  path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass1\Class1.cs
   startLine: 105

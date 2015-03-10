@@ -236,10 +236,10 @@ angular.module('DocsController', [])
     $scope.mdIndex = jsyaml.load(result);
   });
 
+
   getIndex.then(function(result){
     getToc.then(function(result){
-      getMdIndex.then(function(result){
-        $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
+      $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
 
           path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
 
@@ -251,16 +251,6 @@ angular.module('DocsController', [])
 
             var promise = asyncFetchIndex(path + ".yaml", function(result){
                 $scope.partialModel = jsyaml.load(result);
-                var mdPath = $scope.mdIndex[$scope.partialModel.id];
-                if (mdPath){
-                  if (mdPath.href){
-                    var getMdIndex = asyncFetchIndex(mdPath.href, 
-                      function(result){
-                        var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
-                        $scope.partialModel.mdContent = md;
-                      });
-                  }
-                }
 
               if ($scope.partialModel.type.toLowerCase() == 'namespace'){
                 $scope.partialModel.itemtypes = NG_ITEMTYPES.namespace;
@@ -283,8 +273,6 @@ angular.module('DocsController', [])
                 $scope.partialPath = 'template' + '/class.tmpl';
               }
             });
-
-
             var pathParts = currentPage.split('/');
             var breadcrumb = $scope.breadcrumb = [];
             var breadcrumbPath = '';
@@ -299,11 +287,25 @@ angular.module('DocsController', [])
             $scope.partialPath = 'Error404.html';
           }
         });
+      getMdIndex.then(function(result){
+        
+      $scope.$watch(function modelWatch() {return $scope.partialModel; }, function modelWatchAction(path) {
+            if ($scope.mdIndex && $scope.partialModel){
+              var mdPath = $scope.mdIndex[$scope.partialModel.id];
+              if (mdPath){
+                if (mdPath.href){
+                  var getMdIndex = asyncFetchIndex(mdPath.href, 
+                    function(result){
+                      var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                      $scope.partialModel.mdContent = md;
+                    });
+                }
+              }
+            }
+        });
       });
     });
-
-  });
-
+});
 
   /**********************************
    Initialize

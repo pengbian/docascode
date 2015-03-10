@@ -45,6 +45,8 @@
       <WebsiteFiles  Include="@(Content)" Condition="'%(Extension)' == '.css'" />
       <WebsiteFiles  Include="@(Compile)" Condition="'%(Extension)' == '.css'" />-->
       <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.html" />
+      <WebsiteFiles Include="$(MSBuildProjectDirectory)/**/*.tmpl" />
+      <WebsiteFiles Include="$(MSBuildProjectDirectory)/web.config" />
     </ItemGroup>
     <!--<Copy SourceFiles="@(WebsiteFiles)"  DestinationFolder="$(OutputPath)" />-->
     <Copy
