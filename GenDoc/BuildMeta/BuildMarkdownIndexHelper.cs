@@ -247,6 +247,7 @@ namespace DocAsCode.BuildMeta
 
             if (lastSection != null)
             {
+                lastSection.Path = lastSection.Path.FormatPath(UriKind.Relative, lastSection.Remote.LocalWorkingDirectory);
                 sections.Add(lastSection);
             }
 
