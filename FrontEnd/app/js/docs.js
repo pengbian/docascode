@@ -1,3 +1,45 @@
+var player;
+
+function createPlayer() {
+  var player = csplay.play("player", "http://dotnetsandbox.azurewebsites.net");
+  player.editor.setTheme("ace/theme/ambiance");
+  player.editor.setFontSize(16);
+  $("#run").click(function () {
+    var that = $(this);
+    that.html('<i class="fa fa-refresh fa-fw fa-spin"></i>Run');
+    that.addClass("disabled");
+    player.run({
+      complete: function () {
+        that.text("Run");
+        that.removeClass("disabled");
+      }
+    });
+  });
+  $("#close").click(function () {
+    tryCode(false);
+  });
+  return player;
+}
+
+function tryCode(enable, code) {
+  if (enable) {
+    if (typeof player == "undefined") {
+      player = createPlayer();
+    }
+    player.editor.setValue(code, -1);
+    player.editor.clearSelection();
+    player.clearOutput();
+    angular.element("#console").css("margin-left", "50%");
+  }
+  else {
+    angular.element("#console").css("margin-left", "100%");
+  }
+  if (typeof player != "undefined") {
+    player.editor.setReadOnly(!enable);
+  }
+}
+
+
 angular.module('docsApp', [
   'ngRoute',
   'ngCookies',
@@ -38,13 +80,13 @@ angular.module('directives', [])
 
             return marked(markdown);
         };
-        
+
         // hljs.tabReplace = '    ';
 
         return {
             toHtml:toHtml
         };
-    }();                                              
+    }();
     return {
         restrict: 'E',
         link: function(scope, element, attrs) {
@@ -52,6 +94,20 @@ angular.module('directives', [])
                 var markdown = value;
                 var html = md.toHtml(markdown);
                 element.html(html);
+                angular.forEach(element.find("code"), function (block) {
+                    // use highlight.js to highlight code
+                    hljs.highlightBlock(block);
+                    // Add try button
+                    block = block.parentNode;
+                    var wrapper = document.createElement("div");
+                    wrapper.className = "codewrapper";
+                    wrapper.innerHTML = '<div class="trydiv"><span class="tryspan">Try this code</span></div>';
+                    wrapper.childNodes[0].childNodes[0].onclick = function () {
+                      tryCode(true, block.innerText);
+                    };
+                    block.parentNode.replaceChild(wrapper, block);
+                    wrapper.appendChild(block);
+                });
             });
         }
     };

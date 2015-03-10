@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         //'app/js/search-worker.js',
         'app/js/pages-data.js',
         'app/js/versions-data.js',
+        'app/js/csplay.js',
         'app/js/docs.js'
     ],
     // REMEMBER:
@@ -39,12 +40,17 @@ module.exports = function(grunt) {
     cssFiles: [
         'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
+        'app/bower_components/highlightjs/styles/vs.css',
+        'app/bower_components/components-font-awesome/css/font-awesome.min.css',
         'app/css/prettify-theme.css',
         'app/css/docs.css',
+        'app/css/csplay.css',
         'app/css/animations.css',
         'app/css/default.css',
+        'app/css/open-sans.css'
     ],
     jsFiles: [
+        'app/bower_components/jquery/dist/jquery.min.js',
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
         'app/bower_components/angular/angular.min.js',
         'app/bower_components/angular-resource/angular-resource.min.js',
@@ -57,19 +63,25 @@ module.exports = function(grunt) {
         'app/bower_components/lunr.js/lunr.min.js',
         'app/bower_components/google-code-prettify/bin/prettify.min.js',
         'app/bower_components/google-code-prettify/src/lang-css.js',
+        'app/bower_components/highlightjs/highlight.pack.js',
         'app/js/angular-bootstrap/bootstrap.min.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'
+        'app/js/angular-bootstrap/dropdown-toggle.min.js',
+        'app/bower_components/ace/build/src/ace.js'
     ],
     unminifiedCssFiles: [
-        'app/bower_components/bootstrap/dist/css/bootstrap.css',
+        'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
         'app/bower_components/google-code-prettify/styles/sons-of-obsidian.css',
+        'app/bower_components/highlightjs/styles/vs.css',
+        'app/bower_components/components-font-awesome/css/font-awesome.min.css',
         'app/css/prettify-theme.css',
         'app/css/docs.css',
+        'app/css/csplay.css',
         'app/css/animations.css',
         'app/css/default.css',
         'app/css/open-sans.css'
     ],
     unminifiedJsFiles: [
+        'app/bower_components/jquery/dist/jquery.min.js',
         'app/bower_components/js-yaml/dist/js-yaml.min.js',
         'app/bower_components/angular/angular.min.js',
         'app/bower_components/angular-resource/angular-resource.min.js',
@@ -82,8 +94,10 @@ module.exports = function(grunt) {
         'app/bower_components/lunr.js/lunr.min.js',
         'app/bower_components/google-code-prettify/src/prettify.js',
         'app/bower_components/google-code-prettify/src/lang-css.js',
+        'app/bower_components/highlightjs/highlight.pack.js',
         'app/js/angular-bootstrap/bootstrap.min.js',
-        'app/js/angular-bootstrap/dropdown-toggle.min.js'
+        'app/js/angular-bootstrap/dropdown-toggle.min.js',
+        'app/bower_components/ace/build/src/ace.js'
     ],
     /* make it use .jshintrc */
     jshint: {
