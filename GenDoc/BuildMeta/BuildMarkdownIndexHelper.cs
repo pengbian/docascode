@@ -120,8 +120,7 @@ namespace DocAsCode.BuildMeta
                 try
                 {
                     string input = File.ReadAllText(file);
-                    resolvedContent = LinkParser.ResolveText(apiList, input, s =>
-                  string.Format("[{0}](#/{1})", s.Name, s.Href));
+                    resolvedContent = LinkParser.ResolveToMarkdownLink(apiList, input);
                     File.WriteAllText(destFileName, resolvedContent);
                 }
                 catch (Exception e)

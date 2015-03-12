@@ -258,9 +258,9 @@ angular.module('DocsController', [])
                 $scope.partialModel = jsyaml.load(result);
                 $scope.title = $scope.partialModel.id;
               if ($scope.partialModel.type.toLowerCase() == 'namespace'){
-                $scope.partialModel.itemtypes = NG_ITEMTYPES.namespace;
+                $scope.itemtypes = NG_ITEMTYPES.namespace;
                 for(var i in $scope.partialModel.items){
-                  var itemtype = $scope.partialModel.itemtypes[$scope.partialModel.items[i].type];
+                  var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
                   if (itemtype){
                     itemtype.show = true;
                   }
@@ -268,9 +268,9 @@ angular.module('DocsController', [])
                 $scope.partialPath = 'template' + '/namespace.tmpl';
               }
               else {
-                $scope.partialModel.itemtypes = NG_ITEMTYPES.class;
+                $scope.itemtypes = NG_ITEMTYPES.class;
                 for(var i in $scope.partialModel.items){
-                  var itemtype = $scope.partialModel.itemtypes[$scope.partialModel.items[i].type];
+                  var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
                   if (itemtype){
                     itemtype.show = true;
                   }

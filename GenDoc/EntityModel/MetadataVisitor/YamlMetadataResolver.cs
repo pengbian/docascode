@@ -425,9 +425,7 @@ namespace EntityModel
 
             private static string ResolveText(Dictionary<string, IndexYamlItemViewModel> dict, string input)
             {
-                return LinkParser.ResolveText(dict, input, s =>
-                 string.Format("[{0}](#/{1})", s.Name, s.Href), s=> string.Format("[{0}](#)", s)
-                );
+                return LinkParser.ResolveToMarkdownLink(dict, input);
             }
         }
 

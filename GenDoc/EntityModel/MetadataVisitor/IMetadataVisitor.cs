@@ -78,7 +78,8 @@ namespace EntityModel
             var syntaxRef = symbol.DeclaringSyntaxReferences.FirstOrDefault();
             if (symbol.IsExtern || syntaxRef == null)
             {
-                return new SourceDetail { IsExternalPath = true, Name = id, DisplayName = displayName, Href = symbol.ContainingAssembly != null ? symbol.ContainingAssembly.Name : symbol.Name };
+                // TODO: get external URL
+                return new SourceDetail { IsExternalPath = true, Name = id, DisplayName = displayName, Href = null };
             }
 
             var syntaxNode = syntaxRef.GetSyntax();

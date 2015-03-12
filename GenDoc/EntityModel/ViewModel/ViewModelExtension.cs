@@ -52,6 +52,13 @@ namespace EntityModel.ViewModel
         // self written link should be ended with a whitespace
         public static Regex LinkFromSelfWrittenRegex = new Regex(@"@(?<content>(" + idSelector + @")", RegexOptions.Compiled);
 
+        public static string ResolveToMarkdownLink(Dictionary<string, IndexYamlItemViewModel> dict, string input)
+        {
+            return LinkParser.ResolveText(dict, input, s =>
+                 string.Format("[{0}](#/{1})", s.Name, s.Href), s => string.Format("[{0}](#)", s)
+                );
+        }
+
         public static string ResolveText<T>(Dictionary<string, T> dict, string input, Func<T, string> linkGenerator, Func<string, string> failureHandler = null)
         {
             if (dict == null) return input;
