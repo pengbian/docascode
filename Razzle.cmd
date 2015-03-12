@@ -1,6 +1,6 @@
 :SetDocToolExtensionsPath
 ECHO: SET DocToolExtensionsPath here
-SET DocToolExtensionsPath=D:\Repo\docascode\Drop\Debug
+SET DocToolExtensionsPath=%~dp0\Drop\Debug
 
 :StartSolution
 START ALL.SLN
