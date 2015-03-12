@@ -206,28 +206,26 @@ angular.module('DocsController', [])
   function asyncFetchIndex(path, success, fail) {
     var deferred = $q.defer();
 
-    setTimeout(function() {
-      //deferred.notify();
-      var req = {
-             method: 'GET',
-             url: path,
-             headers: {
-               'Content-Type': 'text/plain'
-             }
+    //deferred.notify();
+    var req = {
+            method: 'GET',
+            url: path,
+            headers: {
+            'Content-Type': 'text/plain'
             }
-        $http.get(req.url, req)
-            .success( 
-              function(result){ 
-                if (success) success(result);
-                deferred.resolve();
+        }
+    $http.get(req.url, req)
+        .success( 
+            function(result){ 
+            if (success) success(result);
+            deferred.resolve();
 
-              }).error(
-                function(result){
-                  if (fail) fail(result);
-                  deferred.reject();
-                }
-              );
-    }, 1000);
+            }).error(
+            function(result){
+                if (fail) fail(result);
+                deferred.reject();
+            }
+            );
 
     return deferred.promise;
   }
@@ -243,7 +241,6 @@ angular.module('DocsController', [])
   var getMdIndex = asyncFetchIndex('md.yaml', function(result){
     $scope.mdIndex = jsyaml.load(result);
   });
-
 
   getIndex.then(function(result){
     getToc.then(function(result){
