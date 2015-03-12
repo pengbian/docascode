@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.Count
@@ -57,7 +55,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTokenList.get_Count
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.yaml
@@ -439,7 +436,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
-        href: System.Runtime
         isExternal: true
       description: The tokens to add.
     return:
@@ -471,7 +467,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The index to insert the new token.
     - id: token
@@ -509,14 +504,12 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The index to insert the new tokens.
     - id: tokens
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
-        href: System.Runtime
         isExternal: true
       description: The tokens to insert.
     return:
@@ -548,7 +541,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The index of the token to remove.
     return:
@@ -654,7 +646,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken}
-        href: System.Runtime
         isExternal: true
       description: The new tokens.
     return:
@@ -774,7 +765,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

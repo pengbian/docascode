@@ -50,7 +50,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Arity
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -94,7 +93,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsGenericType
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -146,7 +144,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsUnboundGenericType
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -192,7 +189,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsScriptClass
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -238,7 +234,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsImplicitClass
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -282,7 +277,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MemberNames
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -328,7 +322,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeParameters
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -376,7 +369,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeArguments
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -669,7 +661,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_InstanceConstructors
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -713,7 +704,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_StaticConstructors
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -757,7 +747,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Constructors
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
@@ -854,7 +843,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MightContainExtensionMethods
   yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml

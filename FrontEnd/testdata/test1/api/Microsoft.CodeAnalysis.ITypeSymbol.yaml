@@ -139,7 +139,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_Interfaces
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
@@ -199,7 +198,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_AllInterfaces
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
@@ -247,7 +245,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsReferenceType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
@@ -295,7 +292,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsValueType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
@@ -339,7 +335,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsAnonymousType
   yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml

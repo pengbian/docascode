@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextLineCollection.Count
@@ -53,7 +52,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLineCollection.get_Count
   yaml: api\Microsoft.CodeAnalysis.Text.TextLineCollection.yaml
@@ -131,7 +129,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: Int32
@@ -162,7 +159,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: TextLine
@@ -193,7 +189,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: LinePosition

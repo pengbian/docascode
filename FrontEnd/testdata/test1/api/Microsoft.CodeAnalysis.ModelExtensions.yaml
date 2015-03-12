@@ -20,7 +20,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
@@ -61,7 +60,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
       description: >-
         A cancellation token that can be used to cancel the
@@ -105,7 +103,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: >-
         A character position used to identify a declaration scope and
@@ -176,7 +173,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
       description: >-
         A cancellation token that can be used to cancel the
@@ -224,7 +220,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
       description: >-
         A cancellation token that can be used to cancel the
@@ -266,7 +261,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: >-
         A character position used to identify a declaration scope and
@@ -334,7 +328,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: >-
         A character position used to identify a declaration scope and
@@ -412,7 +405,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
       description: The cancellation token.
     return:
@@ -456,7 +448,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
       description: The cancellation token.
     return:

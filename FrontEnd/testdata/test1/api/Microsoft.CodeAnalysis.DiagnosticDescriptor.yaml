@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Id
@@ -53,7 +52,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Id
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
@@ -183,7 +181,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_HelpLinkUri
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
@@ -270,7 +267,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Category
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
@@ -357,7 +353,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_IsEnabledByDefault
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
@@ -401,7 +396,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_CustomTags
   yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
@@ -449,21 +443,18 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: title
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: 'A short title describing the diagnostic. For example, for CA1001: "Types that own disposable fields should be disposable".'
     - id: messageFormat
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: >-
         A format message string, which can be passed as the first argument to [System.String.Format(System.String,System.Object[])](#) when creating the diagnostic message with this descriptor.
@@ -473,7 +464,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: 'The category of the diagnostic (like Design, Naming etc.). For example, for CA1001: "Microsoft.Design".'
     - id: defaultSeverity
@@ -486,21 +476,18 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default.
     - id: description
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: An optional longer description of the diagnostic.
     - id: helpLinkUri
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides a more detailed description regarding the diagnostic.
     - id: customTags
@@ -536,7 +523,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: title
@@ -558,7 +544,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: 'The category of the diagnostic (like Design, Naming etc.). For example, for CA1001: "Microsoft.Design".'
     - id: defaultSeverity
@@ -571,7 +556,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: True if the diagnostic is enabled by default.
     - id: description
@@ -584,7 +568,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: An optional hyperlink that provides a more detailed description regarding the diagnostic.
     - id: customTags
@@ -644,7 +627,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

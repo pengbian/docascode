@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SymbolDisplayExtensions.ToDisplayString(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolDisplayPart})
@@ -53,7 +52,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolDisplayPart}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolDisplayPart}
-        href: System.Collections.Immutable
         isExternal: true
       description: The array of parts.
     return:

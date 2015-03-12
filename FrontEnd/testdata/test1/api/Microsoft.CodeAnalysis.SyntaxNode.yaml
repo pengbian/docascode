@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxNode.RawKind
@@ -53,7 +52,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_RawKind
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -97,7 +95,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Language
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -272,7 +269,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_SpanStart
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -368,7 +364,6 @@ items:
       type:
         id: System.IO.TextWriter
         name: System.IO.TextWriter
-        href: System.IO
         isExternal: true
     return:
       id: Void
@@ -399,7 +394,6 @@ items:
       type:
         id: System.Text.Encoding
         name: System.Text.Encoding
-        href: System.Text.Encoding
         isExternal: true
       description: >-
         Encoding of the file that the text was read from or is going to be saved to.
@@ -480,7 +474,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_IsMissing
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -549,7 +542,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_IsStructuredTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -593,7 +585,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasStructuredTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -637,7 +628,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsSkippedText
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -681,7 +671,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDirectives
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -725,7 +714,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDiagnostics
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -799,7 +787,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasLeadingTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -843,7 +830,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasTrailingTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -1072,7 +1058,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxNodeOrToken
@@ -1128,7 +1113,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1159,7 +1143,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1190,13 +1173,11 @@ items:
       type:
         id: System.Func{``0,System.Boolean}
         name: System.Func{``0,System.Boolean}
-        href: System.Runtime
         isExternal: true
     - id: ascendOutOfTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: TNode
@@ -1227,14 +1208,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1272,14 +1251,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1311,14 +1288,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1356,14 +1331,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1395,14 +1368,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1440,14 +1411,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1479,14 +1448,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1524,14 +1491,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
       description: An optional function that determines if the search descends into the argument node's children.
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Determines if nodes that are part of structured trivia are included in the list.
     return:
@@ -1574,13 +1539,11 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: getInnermostNodeForTie
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxNode
@@ -1611,14 +1574,12 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The character position of the token relative to the beginning of the file.
     - id: findInsideTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: >-
         True to return tokens that are part of trivia. If false finds the token whose full span (including trivia)
@@ -1653,25 +1614,21 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1703,25 +1660,21 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1778,13 +1731,11 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1820,13 +1771,11 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1911,14 +1860,12 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The character position of the trivia relative to the beginning of the file.
     - id: findInsideTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: >-
         True to return tokens that are part of trivia. If false finds the token whose full span (including trivia)
@@ -1953,13 +1900,11 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1995,13 +1940,11 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
-        href: System.Runtime
         isExternal: true
     - id: descendIntoTrivia
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2032,7 +1975,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsAnnotations
   yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
@@ -2076,7 +2018,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -2107,7 +2048,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -2168,7 +2108,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2199,7 +2138,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2230,7 +2168,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2351,7 +2288,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2412,7 +2348,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2443,7 +2378,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -2570,7 +2504,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: >-
         If true then the nodes are equivalent if the contained nodes and
@@ -2606,13 +2539,11 @@ items:
       type:
         id: System.IO.Stream
         name: System.IO.Stream
-        href: System.IO
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
     return:
       id: Void

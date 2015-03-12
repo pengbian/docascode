@@ -22,8 +22,8 @@ angular.module('pagesData', [])
     "Class" : { "name": "Class", "description": "Classes", "show": false },
     "Enum" : { "name": "Enum" , "description": "Enums", "show": false },
     "Delegate" :{ "name": "Delegate" , "description": "Delegates", "show": false },
-    "Interface" : { "name": "Struct" , "description": "Structs", "show": false },
-    "Struct": { "name": "Interface", "description": "Interfaces" , "show": false },
+    "Interface" : { "name": "Interface", "description": "Interfaces" , "show": false },
+    "Struct": { "name": "Struct" , "description": "Structs", "show": false },
   },
   // [
 

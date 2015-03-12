@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CompilationOptions.OutputKind
@@ -96,7 +95,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ModuleName
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -142,7 +140,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ScriptClassName
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -188,7 +185,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MainTypeName
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -232,7 +228,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyFile
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -276,7 +271,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyContainer
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -322,7 +316,6 @@ items:
       type:
         id: System.Nullable{System.Boolean}
         name: System.Nullable{System.Boolean}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_DelaySign
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -366,7 +359,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CheckOverflow
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -541,7 +533,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_WarningLevel
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -585,7 +576,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ConcurrentBuild
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -629,7 +619,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SpecificDiagnosticOptions
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -928,7 +917,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
-        href: System.Collections.Immutable
         isExternal: true
     return:
       id: CompilationOptions
@@ -959,7 +947,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
         name: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}}
-        href: System.Runtime
         isExternal: true
     return:
       id: CompilationOptions
@@ -1215,7 +1202,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Errors
   yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
@@ -1256,7 +1242,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

@@ -25,11 +25,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CodeBlock
@@ -231,7 +229,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CancellationToken
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
@@ -292,13 +289,11 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostic}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostic}
-        href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml

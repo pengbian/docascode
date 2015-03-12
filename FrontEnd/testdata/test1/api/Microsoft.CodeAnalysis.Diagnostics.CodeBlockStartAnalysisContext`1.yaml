@@ -32,7 +32,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock
@@ -234,7 +233,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
@@ -280,7 +278,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at the end of semantic analysis of a code block.
     return:
@@ -316,7 +313,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
@@ -358,14 +354,12 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
         id: System.Collections.Immutable.ImmutableArray{`0}
         name: System.Collections.Immutable.ImmutableArray{`0}
-        href: System.Collections.Immutable
         isExternal: true
       description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:

@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SourceReferenceResolver.Equals(System.Object)
@@ -50,7 +49,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -103,14 +101,12 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The source path to normalize. May be absolute or relative.
     - id: baseFilePath
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Path of the source file that contains the  (may also be relative), or null if not available.
     return:
@@ -143,14 +139,12 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The path to resolve. May be absolute or relative.
     - id: baseFilePath
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Path of the source file that contains the  (may also be relative), or null if not available.
     return:
@@ -183,7 +177,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Path returned by [Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)](#/api\Microsoft.CodeAnalysis.SourceReferenceResolver).
     return:

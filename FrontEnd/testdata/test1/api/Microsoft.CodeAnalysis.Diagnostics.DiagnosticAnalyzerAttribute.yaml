@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.Attribute
   name: System.Attribute
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.Languages
@@ -100,7 +98,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: One language to which the analyzer applies.
     - id: additionalLanguages

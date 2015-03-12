@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name: AnalyzerReference
@@ -53,7 +52,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
@@ -79,7 +77,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
@@ -120,7 +117,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
@@ -161,7 +157,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
@@ -224,7 +219,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: ImmutableArray

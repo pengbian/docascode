@@ -10,16 +10,16 @@ source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:\Repo\docascode2\
-    sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
-  path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+    local: D:\Repo\docascode\
+    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
+  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
   startLine: 8
 syntax:
   content:
     CSharp: public class BaseClassForTestClass1
 inheritance:
 - id: System.Object
-  href: mscorlib
+  name: System.Object
   isExternal: true
 items:
 - id: TestClass1.Base.BaseClassForTestClass1.Property1
@@ -34,9 +34,9 @@ items:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      local: D:\Repo\docascode2\
-      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
-    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      local: D:\Repo\docascode\
+      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
+    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13
   summary: >+
     This is the property from *base* class
@@ -48,7 +48,7 @@ items:
     - id: Property1
       type:
         id: System.String
-        href: mscorlib
+        name: System.String
         isExternal: true
 - id: TestClass1.Base.BaseClassForTestClass1.get_Property1
   yaml: api\TestClass1.Base.BaseClassForTestClass1.yaml
@@ -61,9 +61,9 @@ items:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      local: D:\Repo\docascode2\
-      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
-    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      local: D:\Repo\docascode\
+      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
+    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13
 - id: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
   yaml: api\TestClass1.Base.BaseClassForTestClass1.yaml
@@ -76,7 +76,7 @@ items:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-      local: D:\Repo\docascode2\
-      sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
-    path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      local: D:\Repo\docascode\
+      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
+    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13

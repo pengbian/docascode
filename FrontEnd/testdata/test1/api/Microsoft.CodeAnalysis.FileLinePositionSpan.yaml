@@ -25,11 +25,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.Path
@@ -59,7 +57,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_Path
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
@@ -103,7 +100,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_HasMappedPath
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
@@ -276,7 +272,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The file identifier - typically a relative or absolute path.
     - id: start
@@ -318,7 +313,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The file identifier - typically a relative or absolute path.
     - id: span
@@ -354,7 +348,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.FileLinePositionSpan.get_IsValid
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
@@ -428,7 +421,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.SourceText.From(System.String,System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
@@ -53,14 +52,12 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Text.
     - id: encoding
       type:
         id: System.Text.Encoding
         name: System.Text.Encoding
-        href: System.Text.Encoding
         isExternal: true
       description: >-
         Encoding of the file that the  was read from or is going to be saved to.
@@ -105,14 +102,12 @@ items:
       type:
         id: System.IO.Stream
         name: System.IO.Stream
-        href: System.IO
         isExternal: true
       description: Stream.
     - id: encoding
       type:
         id: System.Text.Encoding
         name: System.Text.Encoding
-        href: System.Text.Encoding
         isExternal: true
       description: >-
         Data encoding to use if the stream doesn't start with Byte Order Mark specifying the encoding.
@@ -198,7 +193,6 @@ items:
       type:
         id: System.Text.Encoding
         name: System.Text.Encoding
-        href: System.Text.Encoding
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.SourceText.get_Encoding
   yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
@@ -242,7 +236,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.SourceText.get_Length
   yaml: api\Microsoft.CodeAnalysis.Text.SourceText.yaml
@@ -320,7 +313,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: destination
       type:
@@ -331,13 +323,11 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: count
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: Void
@@ -441,7 +431,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: SourceText
@@ -472,13 +461,11 @@ items:
       type:
         id: System.IO.TextWriter
         name: System.IO.TextWriter
-        href: System.IO
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
     return:
       id: Void
@@ -509,7 +496,6 @@ items:
       type:
         id: System.IO.TextWriter
         name: System.IO.TextWriter
-        href: System.IO
         isExternal: true
     - id: span
       type:
@@ -520,7 +506,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
     return:
       id: Void
@@ -606,7 +591,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange}
-        href: System.Runtime
         isExternal: true
     return:
       id: SourceText
@@ -672,7 +656,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: SourceText
@@ -703,19 +686,16 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: length
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: newText
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: SourceText

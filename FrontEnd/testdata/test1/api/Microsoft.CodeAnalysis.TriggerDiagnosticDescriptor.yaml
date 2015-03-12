@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor
   name: DiagnosticDescriptor
@@ -56,7 +55,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: A unique identifier for the diagnostic. For example, code analysis diagnostic ID "CA1001".
     - id: customTags

@@ -48,7 +48,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsIndexer
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
@@ -92,7 +91,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsReadOnly
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
@@ -136,7 +134,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWriteOnly
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
@@ -182,7 +179,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWithEvents
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
@@ -273,7 +269,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_Parameters
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
@@ -493,7 +488,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IPropertySymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IPropertySymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_ExplicitInterfaceImplementations
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml
@@ -537,7 +531,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPropertySymbol.get_TypeCustomModifiers
   yaml: api\Microsoft.CodeAnalysis.IPropertySymbol.yaml

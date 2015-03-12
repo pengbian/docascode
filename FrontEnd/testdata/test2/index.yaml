@@ -2,26 +2,86 @@ TestClass1:
   Name: TestClass1
   YamlPath: api\TestClass1.yaml
   Href: api\TestClass1
+TestClass1.Partial1:
+  Name: TestClass1.Partial1
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.Partial1.Property2:
+  Name: TestClass1.Partial1.Property2
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.Partial1.get_Property2:
+  Name: TestClass1.Partial1.get_Property2
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
+TestClass1.Partial1.set_Property2(System.String):
+  Name: TestClass1.Partial1.set_Property2(System.String)
+  YamlPath: api\TestClass1.Partial1.yaml
+  Href: api\TestClass1.Partial1
 TestClass1.Class1:
   Name: TestClass1.Class1
   YamlPath: api\TestClass1.Class1.yaml
   Href: api\TestClass1.Class1
-TestClass1.Class1.Test1:
-  Name: TestClass1.Class1.Test1
+TestClass1.Class1.Test1(System.Int32):
+  Name: TestClass1.Class1.Test1(System.Int32)
   YamlPath: api\TestClass1.Class1.yaml
   Href: api\TestClass1.Class1
-TestClass1.Class1.Test2:
-  Name: TestClass1.Class1.Test2
+TestClass1.Class1.Test1_3(TestClass1.Base.BaseClassForTestClass1):
+  Name: TestClass1.Class1.Test1_3(TestClass1.Base.BaseClassForTestClass1)
   YamlPath: api\TestClass1.Class1.yaml
   Href: api\TestClass1.Class1
 TestClass1.Class1.Test3:
   Name: TestClass1.Class1.Test3
   YamlPath: api\TestClass1.Class1.yaml
   Href: api\TestClass1.Class1
-TestClass1.Class1.Test4``1:
-  Name: TestClass1.Class1.Test4``1
+TestClass1.Class1.Test4``1(``0,``0@):
+  Name: TestClass1.Class1.Test4``1(``0,``0@)
   YamlPath: api\TestClass1.Class1.yaml
   Href: api\TestClass1.Class1
+TestClass1.Class1.Class1InnerClass:
+  Name: TestClass1.Class1.Class1InnerClass
+  YamlPath: api\TestClass1.Class1.Class1InnerClass.yaml
+  Href: api\TestClass1.Class1.Class1InnerClass
+TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass:
+  Name: TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
+  YamlPath: api\TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass.yaml
+  Href: api\TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
+TestClass1.Class1.Class1InnerClass.TestEnum:
+  Name: TestClass1.Class1.Class1InnerClass.TestEnum
+  YamlPath: api\TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+  Href: api\TestClass1.Class1.Class1InnerClass.TestEnum
+TestClass1.Class1.Class1InnerClass.TestEnum.A:
+  Name: TestClass1.Class1.Class1InnerClass.TestEnum.A
+  YamlPath: api\TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+  Href: api\TestClass1.Class1.Class1InnerClass.TestEnum
+TestClass1.Class1.Class1InnerClass.TestEnum.B:
+  Name: TestClass1.Class1.Class1InnerClass.TestEnum.B
+  YamlPath: api\TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+  Href: api\TestClass1.Class1.Class1InnerClass.TestEnum
+TestClass1.Class1.TestStruct:
+  Name: TestClass1.Class1.TestStruct
+  YamlPath: api\TestClass1.Class1.TestStruct.yaml
+  Href: api\TestClass1.Class1.TestStruct
+TestClass1.Class1.ADelegate:
+  Name: TestClass1.Class1.ADelegate
+  YamlPath: api\TestClass1.Class1.ADelegate.yaml
+  Href: api\TestClass1.Class1.ADelegate
+TestClass1.Class1.ADelegate.#ctor(System.Object,System.IntPtr):
+  Name: TestClass1.Class1.ADelegate.#ctor(System.Object,System.IntPtr)
+  YamlPath: api\TestClass1.Class1.ADelegate.yaml
+  Href: api\TestClass1.Class1.ADelegate
+TestClass1.Class1.ADelegate.Invoke:
+  Name: TestClass1.Class1.ADelegate.Invoke
+  YamlPath: api\TestClass1.Class1.ADelegate.yaml
+  Href: api\TestClass1.Class1.ADelegate
+TestClass1.Class1.ADelegate.BeginInvoke(System.AsyncCallback,System.Object):
+  Name: TestClass1.Class1.ADelegate.BeginInvoke(System.AsyncCallback,System.Object)
+  YamlPath: api\TestClass1.Class1.ADelegate.yaml
+  Href: api\TestClass1.Class1.ADelegate
+TestClass1.Class1.ADelegate.EndInvoke(System.IAsyncResult):
+  Name: TestClass1.Class1.ADelegate.EndInvoke(System.IAsyncResult)
+  YamlPath: api\TestClass1.Class1.ADelegate.yaml
+  Href: api\TestClass1.Class1.ADelegate
 TestClass1.Base:
   Name: TestClass1.Base
   YamlPath: api\TestClass1.Base.yaml
@@ -42,22 +102,6 @@ TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String):
   Name: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
   YamlPath: api\TestClass1.Base.BaseClassForTestClass1.yaml
   Href: api\TestClass1.Base.BaseClassForTestClass1
-TestClass1.Partial1:
-  Name: TestClass1.Partial1
-  YamlPath: api\TestClass1.Partial1.yaml
-  Href: api\TestClass1.Partial1
-TestClass1.Partial1.Property1:
-  Name: TestClass1.Partial1.Property1
-  YamlPath: api\TestClass1.Partial1.yaml
-  Href: api\TestClass1.Partial1
-TestClass1.Partial1.get_Property1:
-  Name: TestClass1.Partial1.get_Property1
-  YamlPath: api\TestClass1.Partial1.yaml
-  Href: api\TestClass1.Partial1
-TestClass1.Partial1.set_Property1(System.String):
-  Name: TestClass1.Partial1.set_Property1(System.String)
-  YamlPath: api\TestClass1.Partial1.yaml
-  Href: api\TestClass1.Partial1
 TestClass1.TestClass1:
   Name: TestClass1.TestClass1
   YamlPath: api\TestClass1.TestClass1.yaml
@@ -70,3 +114,27 @@ TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace:
   Name: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
   YamlPath: api\TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace.yaml
   Href: api\TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace
+TestClass2:
+  Name: TestClass2
+  YamlPath: api\TestClass2.yaml
+  Href: api\TestClass2
+TestClass2.Class1:
+  Name: TestClass2.Class1
+  YamlPath: api\TestClass2.Class1.yaml
+  Href: api\TestClass2.Class1
+TestClass2.Class1.Test1:
+  Name: TestClass2.Class1.Test1
+  YamlPath: api\TestClass2.Class1.yaml
+  Href: api\TestClass2.Class1
+TestClass2.Class1.Test2:
+  Name: TestClass2.Class1.Test2
+  YamlPath: api\TestClass2.Class1.yaml
+  Href: api\TestClass2.Class1
+TestClass2.Class1.Test3:
+  Name: TestClass2.Class1.Test3
+  YamlPath: api\TestClass2.Class1.yaml
+  Href: api\TestClass2.Class1
+TestClass2.Class1.Test4``1:
+  Name: TestClass2.Class1.Test4``1
+  YamlPath: api\TestClass2.Class1.yaml
+  Href: api\TestClass2.Class1

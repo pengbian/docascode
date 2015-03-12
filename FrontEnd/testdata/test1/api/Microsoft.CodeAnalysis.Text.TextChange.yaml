@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextChange.Span
@@ -100,7 +98,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChange.get_NewText
   yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
@@ -150,7 +147,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The new text.
 - id: Microsoft.CodeAnalysis.Text.TextChange.ToString
@@ -202,7 +198,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

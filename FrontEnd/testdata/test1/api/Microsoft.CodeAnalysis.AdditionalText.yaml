@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.AdditionalText.Path
@@ -53,7 +52,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.AdditionalText.get_Path
   yaml: api\Microsoft.CodeAnalysis.AdditionalText.yaml
@@ -97,7 +95,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
     return:
       id: SourceText

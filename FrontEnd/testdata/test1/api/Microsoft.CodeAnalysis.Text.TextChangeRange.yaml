@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextChangeRange.Span
@@ -100,7 +98,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeRange.get_NewLength
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeRange.yaml
@@ -149,7 +146,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeRange.Equals(Microsoft.CodeAnalysis.Text.TextChangeRange)
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeRange.yaml
@@ -208,7 +204,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -321,7 +316,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
-        href: System.Runtime
         isExternal: true
     return:
       id: TextChangeRange

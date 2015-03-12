@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CaseInsensitiveComparison.Comparer
@@ -53,7 +52,6 @@ items:
       type:
         id: System.StringComparer
         name: System.StringComparer
-        href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.CaseInsensitiveComparison.get_Comparer
   yaml: api\Microsoft.CodeAnalysis.CaseInsensitiveComparison.yaml
@@ -97,14 +95,12 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: First identifier to compare
     - id: right
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Second identifier to compare
     return:
@@ -137,13 +133,11 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: possibleEnd
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -174,14 +168,12 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: First identifier to compare
     - id: right
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Second identifier to compare
     return:
@@ -214,7 +206,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: identifier to get the hash code for
     return:
@@ -247,7 +238,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: String
@@ -278,7 +268,6 @@ items:
       type:
         id: System.Text.StringBuilder
         name: System.Text.StringBuilder
-        href: System.Runtime
         isExternal: true
     return:
       id: Void

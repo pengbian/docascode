@@ -93,7 +93,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_IsConst
   yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
@@ -139,7 +138,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_HasConstantValue
   yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
@@ -183,7 +181,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_ConstantValue
   yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
@@ -224,7 +221,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_IsFunctionValue
   yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml

@@ -25,11 +25,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol
@@ -188,7 +186,6 @@ items:
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
@@ -244,13 +241,11 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostic}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostic}
-        href: System.Runtime
         isExternal: true
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml

@@ -91,7 +91,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IEventSymbol.get_IsWindowsRuntimeEvent
   yaml: api\Microsoft.CodeAnalysis.IEventSymbol.yaml
@@ -354,7 +353,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IEventSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IEventSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IEventSymbol.get_ExplicitInterfaceImplementations
   yaml: api\Microsoft.CodeAnalysis.IEventSymbol.yaml

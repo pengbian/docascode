@@ -20,7 +20,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult
   name: EmitResult

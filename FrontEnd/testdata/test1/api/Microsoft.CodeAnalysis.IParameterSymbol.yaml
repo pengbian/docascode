@@ -91,7 +91,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsParams
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
@@ -135,7 +134,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsOptional
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
@@ -179,7 +177,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_IsThis
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
@@ -266,7 +263,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_CustomModifiers
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
@@ -312,7 +308,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_Ordinal
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
@@ -360,7 +355,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_HasExplicitDefaultValue
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml
@@ -404,7 +398,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IParameterSymbol.get_ExplicitDefaultValue
   yaml: api\Microsoft.CodeAnalysis.IParameterSymbol.yaml

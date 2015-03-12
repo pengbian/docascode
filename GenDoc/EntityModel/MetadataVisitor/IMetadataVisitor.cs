@@ -230,7 +230,7 @@ namespace EntityModel
             }
 
             var members = symbol.GetMembers().ToList();
-
+            var currentNamespaceSaved = currentNamespace;
             currentNamespace = item;
             var parentSaved = parent;
             parent = item;
@@ -239,6 +239,7 @@ namespace EntityModel
                 var nsItem = member.Accept(this);
             }
             parent = parentSaved;
+            currentNamespace = currentNamespaceSaved;
             return item;
         }
 

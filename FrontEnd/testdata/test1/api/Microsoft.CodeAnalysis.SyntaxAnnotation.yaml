@@ -29,7 +29,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.ElasticAnnotation
@@ -75,7 +74,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Kind
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
@@ -116,7 +114,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Data
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
@@ -177,7 +174,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.#ctor(System.String,System.String)
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
@@ -203,13 +199,11 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: data
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxAnnotation.Equals(Microsoft.CodeAnalysis.SyntaxAnnotation)
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
@@ -292,7 +286,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

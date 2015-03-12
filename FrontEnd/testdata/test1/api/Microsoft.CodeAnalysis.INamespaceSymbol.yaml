@@ -73,7 +73,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -131,7 +130,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_IsGlobalNamespace
   yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
@@ -273,7 +271,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_ConstituentNamespaces
   yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml

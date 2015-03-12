@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly
@@ -53,7 +52,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -97,7 +95,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -143,7 +140,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -230,7 +226,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -274,7 +269,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -318,7 +312,6 @@ items:
       type:
         id: System.UInt64
         name: System.UInt64
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -405,7 +398,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -449,7 +441,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -493,7 +484,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -534,7 +524,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: debugInformationFormat
       type:
@@ -545,31 +534,26 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: outputNameOverride
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: fileAlignment
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: baseAddress
       type:
         id: System.UInt64
         name: System.UInt64
-        href: System.Runtime
         isExternal: true
     - id: highEntropyVirtualAddressSpace
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: subsystemVersion
       type:
@@ -580,19 +564,16 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: tolerateErrors
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includePrivateMembers
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object)
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
@@ -618,7 +599,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -725,7 +705,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -753,7 +732,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -781,7 +759,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -839,7 +816,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: 'Can be one of the following values: 0, 512, 1024, 2048, 4096, 8192'
     return:
@@ -868,7 +844,6 @@ items:
       type:
         id: System.UInt64
         name: System.UInt64
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -896,7 +871,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -951,7 +925,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -979,7 +952,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions
@@ -1007,7 +979,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: EmitOptions

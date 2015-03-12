@@ -20,11 +20,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.Symbol
@@ -97,7 +95,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.get_IsDefined
   yaml: api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo.yaml
@@ -165,7 +162,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

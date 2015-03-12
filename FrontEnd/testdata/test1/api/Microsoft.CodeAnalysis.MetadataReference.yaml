@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.MetadataReference.Properties
@@ -93,7 +92,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.MetadataReference.get_Display
   yaml: api\Microsoft.CodeAnalysis.MetadataReference.yaml
@@ -137,7 +135,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
       description: The new aliases for the reference.
     return:
@@ -169,7 +166,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api\Microsoft.CodeAnalysis.MetadataReferenceProperties).
     return:
@@ -201,7 +197,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
         name: System.Collections.Immutable.ImmutableArray{System.String}
-        href: System.Collections.Immutable
         isExternal: true
       description: The new aliases for the reference.
     return:
@@ -264,7 +259,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
         name: System.Collections.Immutable.ImmutableArray{System.Byte}
-        href: System.Collections.Immutable
         isExternal: true
       description: Assembly image.
     - id: properties
@@ -283,7 +277,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Optional path that describes the location of the metadata. The file doesn't need to exist on disk. The path is opaque to the compiler.
     return:
@@ -315,7 +308,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.Byte}
         name: System.Collections.Generic.IEnumerable{System.Byte}
-        href: System.Runtime
         isExternal: true
       description: Assembly image.
     - id: properties
@@ -334,7 +326,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Optional path that describes the location of the metadata. The file doesn't need to exist on disk. The path is opaque to the compiler.
     return:
@@ -368,7 +359,6 @@ items:
       type:
         id: System.IO.Stream
         name: System.IO.Stream
-        href: System.IO
         isExternal: true
       description: Assembly image.
     - id: properties
@@ -387,7 +377,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Optional path that describes the location of the metadata. The file doesn't need to exist on disk. The path is opaque to the compiler.
     return:
@@ -421,7 +410,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Path to the assembly file.
     - id: properties
@@ -465,7 +453,6 @@ items:
       type:
         id: System.Reflection.Assembly
         name: System.Reflection.Assembly
-        href: System.Reflection
         isExternal: true
       description: Path to the module file.
     return:
@@ -497,7 +484,6 @@ items:
       type:
         id: System.Reflection.Assembly
         name: System.Reflection.Assembly
-        href: System.Reflection
         isExternal: true
       description: Path to the module file.
     - id: properties

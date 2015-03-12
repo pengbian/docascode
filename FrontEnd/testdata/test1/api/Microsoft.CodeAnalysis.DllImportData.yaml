@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DllImportData.ModuleName
@@ -53,7 +52,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ModuleName
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -97,7 +95,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_EntryPointName
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -143,7 +140,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ExactSpelling
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -187,7 +183,6 @@ items:
       type:
         id: System.Runtime.InteropServices.CharSet
         name: System.Runtime.InteropServices.CharSet
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CharacterSet
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -231,7 +226,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_SetLastError
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -275,7 +269,6 @@ items:
       type:
         id: System.Runtime.InteropServices.CallingConvention
         name: System.Runtime.InteropServices.CallingConvention
-        href: System.Runtime.InteropServices
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CallingConvention
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -321,7 +314,6 @@ items:
       type:
         id: System.Nullable{System.Boolean}
         name: System.Nullable{System.Boolean}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_BestFitMapping
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
@@ -367,7 +359,6 @@ items:
       type:
         id: System.Nullable{System.Boolean}
         name: System.Nullable{System.Boolean}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ThrowOnUnmappableCharacter
   yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml

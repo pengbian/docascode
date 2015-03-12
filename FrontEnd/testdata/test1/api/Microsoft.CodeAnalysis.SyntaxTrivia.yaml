@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.RawKind
@@ -57,7 +55,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_RawKind
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
@@ -101,7 +98,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_Language
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
@@ -235,7 +231,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_SpanStart
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
@@ -328,7 +323,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_ContainsDiagnostics
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
@@ -372,7 +366,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_HasStructure
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
@@ -441,7 +434,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -532,7 +524,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -593,7 +584,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTrivia.get_IsDirective
   yaml: api\Microsoft.CodeAnalysis.SyntaxTrivia.yaml
@@ -722,7 +712,6 @@ items:
       type:
         id: System.IO.TextWriter
         name: System.IO.TextWriter
-        href: System.IO
         isExternal: true
     return:
       id: Void
@@ -823,7 +812,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -909,7 +897,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxTrivia
@@ -970,7 +957,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxTrivia
@@ -1001,7 +987,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxTrivia

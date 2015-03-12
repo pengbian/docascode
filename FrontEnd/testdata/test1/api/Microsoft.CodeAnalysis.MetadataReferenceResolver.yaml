@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.MetadataReferenceResolver.Equals(System.Object)
@@ -50,7 +49,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -100,13 +98,11 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: baseFilePath
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: properties
       type:

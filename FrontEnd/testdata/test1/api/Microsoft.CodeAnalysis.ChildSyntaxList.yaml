@@ -20,11 +20,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Count
@@ -54,7 +52,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.get_Count
   yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
@@ -258,7 +255,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
       description: The object to be compared with the current instance.
     return:

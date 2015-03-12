@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.SupportedDiagnostics
@@ -53,7 +52,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.DiagnosticDescriptor}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.DiagnosticDescriptor}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml

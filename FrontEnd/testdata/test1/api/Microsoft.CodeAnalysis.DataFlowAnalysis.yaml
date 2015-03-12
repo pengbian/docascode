@@ -31,7 +31,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.VariablesDeclared
@@ -65,7 +64,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_VariablesDeclared
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -111,7 +109,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_DataFlowsIn
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -157,7 +154,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_DataFlowsOut
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -203,7 +199,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_AlwaysAssigned
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -247,7 +242,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_ReadInside
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -291,7 +285,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_WrittenInside
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -335,7 +328,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_ReadOutside
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -379,7 +371,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_WrittenOutside
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -425,7 +416,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_Captured
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -471,7 +461,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_UnsafeAddressTaken
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml
@@ -519,7 +508,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.DataFlowAnalysis.get_Succeeded
   yaml: api\Microsoft.CodeAnalysis.DataFlowAnalysis.yaml

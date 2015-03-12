@@ -25,11 +25,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextSpan.#ctor(System.Int32,System.Int32)
@@ -61,13 +59,11 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: length
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Start
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
@@ -96,7 +92,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Start
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
@@ -140,7 +135,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_End
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
@@ -184,7 +178,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Length
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
@@ -228,7 +221,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_IsEmpty
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
@@ -272,7 +264,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The position to check.
     return:
@@ -445,7 +436,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The position to check.
     return:
@@ -510,13 +500,11 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     - id: end
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
     return:
       id: TextSpan
@@ -613,7 +601,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

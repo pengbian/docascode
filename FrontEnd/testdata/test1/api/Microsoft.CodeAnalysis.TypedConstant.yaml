@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.TypedConstant.Kind
@@ -145,7 +143,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_IsNull
   yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
@@ -189,7 +186,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Value
   yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
@@ -233,7 +229,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Values
   yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
@@ -274,7 +269,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

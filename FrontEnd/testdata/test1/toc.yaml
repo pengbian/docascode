@@ -20,134 +20,12 @@ items:
     name:
       CSharp: CaseInsensitiveComparison
     type: Class
-- id: Microsoft.CodeAnalysis.CodeGen
-  yaml: api\Microsoft.CodeAnalysis.CodeGen.yaml
-  href: api\Microsoft.CodeAnalysis.CodeGen
-  name:
-    CSharp: CodeGen
-  type: Namespace
-- id: Microsoft.CodeAnalysis.Collections
-  yaml: api\Microsoft.CodeAnalysis.Collections.yaml
-  href: api\Microsoft.CodeAnalysis.Collections
-  name:
-    CSharp: Collections
-  type: Namespace
-  items:
   - id: Microsoft.CodeAnalysis.SymbolFilter
     yaml: api\Microsoft.CodeAnalysis.SymbolFilter.yaml
     href: api\Microsoft.CodeAnalysis.SymbolFilter
     name:
       CSharp: SymbolFilter
     type: Enum
-- id: Microsoft.CodeAnalysis.Diagnostics
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics
-  name:
-    CSharp: Diagnostics
-  type: Namespace
-  items:
-  - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-    name:
-      CSharp: AnalyzerImageReference
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-    name:
-      CSharp: AnalyzerOptions
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-    name:
-      CSharp: AnalyzerReference
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-    name:
-      CSharp: CompilationWithAnalyzers
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
-    name:
-      CSharp: DiagnosticAnalyzerExtensions
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-    name:
-      CSharp: UnresolvedAnalyzerReference
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-    name:
-      CSharp: AnalysisContext
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-    name:
-      CSharp: CompilationStartAnalysisContext
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-    name:
-      CSharp: CompilationEndAnalysisContext
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-    name:
-      CSharp: SemanticModelAnalysisContext
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-    name:
-      CSharp: SymbolAnalysisContext
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-    name:
-      CSharp: CodeBlockStartAnalysisContext`1
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-    name:
-      CSharp: CodeBlockEndAnalysisContext
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-    name:
-      CSharp: SyntaxTreeAnalysisContext
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-    name:
-      CSharp: SyntaxNodeAnalysisContext
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-    name:
-      CSharp: DiagnosticAnalyzer
-    type: Class
-  - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
-    yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
-    href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
-    name:
-      CSharp: DiagnosticAnalyzerAttribute
-    type: Class
   - id: Microsoft.CodeAnalysis.LocalizableResourceString
     yaml: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
     href: api\Microsoft.CodeAnalysis.LocalizableResourceString
@@ -160,75 +38,6 @@ items:
     name:
       CSharp: LocalizableString
     type: Class
-- id: Microsoft.CodeAnalysis.Emit
-  yaml: api\Microsoft.CodeAnalysis.Emit.yaml
-  href: api\Microsoft.CodeAnalysis.Emit
-  name:
-    CSharp: Emit
-  type: Namespace
-  items:
-  - id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
-    yaml: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
-    name:
-      CSharp: DebugInformationFormat
-    type: Enum
-  - id: Microsoft.CodeAnalysis.Emit.EmitOptions
-    yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-    name:
-      CSharp: EmitOptions
-    type: Class
-  - id: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
-    yaml: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
-    name:
-      CSharp: EditAndContinueMethodDebugInformation
-    type: Struct
-  - id: Microsoft.CodeAnalysis.Emit.EmitResult
-    yaml: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.EmitResult
-    name:
-      CSharp: EmitResult
-    type: Class
-  - id: Microsoft.CodeAnalysis.Emit.EmitBaseline
-    yaml: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
-    name:
-      CSharp: EmitBaseline
-    type: Class
-  - id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
-    yaml: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
-    name:
-      CSharp: EmitDifferenceResult
-    type: Class
-- id: Microsoft.CodeAnalysis.Emit.NoPia
-  yaml: api\Microsoft.CodeAnalysis.Emit.NoPia.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.NoPia
-  name:
-    CSharp: NoPia
-  type: Namespace
-  items:
-  - id: Microsoft.CodeAnalysis.Emit.SemanticEditKind
-    yaml: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
-    name:
-      CSharp: SemanticEditKind
-    type: Enum
-  - id: Microsoft.CodeAnalysis.Emit.SemanticEdit
-    yaml: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-    href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-    name:
-      CSharp: SemanticEdit
-    type: Struct
-- id: Microsoft.CodeAnalysis.InternalUtilities
-  yaml: api\Microsoft.CodeAnalysis.InternalUtilities.yaml
-  href: api\Microsoft.CodeAnalysis.InternalUtilities
-  name:
-    CSharp: InternalUtilities
-  type: Namespace
-  items:
   - id: Microsoft.CodeAnalysis.CandidateReason
     yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
     href: api\Microsoft.CodeAnalysis.CandidateReason
@@ -409,19 +218,6 @@ items:
     name:
       CSharp: DocumentationMode
     type: Enum
-- id: Microsoft.CodeAnalysis.Instrumentation
-  yaml: api\Microsoft.CodeAnalysis.Instrumentation.yaml
-  href: api\Microsoft.CodeAnalysis.Instrumentation
-  name:
-    CSharp: Instrumentation
-  type: Namespace
-- id: Microsoft.CodeAnalysis.RuntimeMembers
-  yaml: api\Microsoft.CodeAnalysis.RuntimeMembers.yaml
-  href: api\Microsoft.CodeAnalysis.RuntimeMembers
-  name:
-    CSharp: RuntimeMembers
-  type: Namespace
-  items:
   - id: Microsoft.CodeAnalysis.AssemblyIdentity
     yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
     href: api\Microsoft.CodeAnalysis.AssemblyIdentity
@@ -542,13 +338,6 @@ items:
     name:
       CSharp: StrongNameProvider
     type: Class
-- id: Microsoft.CodeAnalysis.SymbolDisplay
-  yaml: api\Microsoft.CodeAnalysis.SymbolDisplay.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolDisplay
-  name:
-    CSharp: SymbolDisplay
-  type: Namespace
-  items:
   - id: Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle
     yaml: api\Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.yaml
     href: api\Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle
@@ -645,13 +434,6 @@ items:
     name:
       CSharp: Accessibility
     type: Enum
-- id: Microsoft.CodeAnalysis.Symbols
-  yaml: api\Microsoft.CodeAnalysis.Symbols.yaml
-  href: api\Microsoft.CodeAnalysis.Symbols
-  name:
-    CSharp: Symbols
-  type: Namespace
-  items:
   - id: Microsoft.CodeAnalysis.AttributeData
     yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
     href: api\Microsoft.CodeAnalysis.AttributeData
@@ -886,13 +668,6 @@ items:
     name:
       CSharp: WellKnownMemberNames
     type: Class
-- id: Microsoft.CodeAnalysis.Syntax
-  yaml: api\Microsoft.CodeAnalysis.Syntax.yaml
-  href: api\Microsoft.CodeAnalysis.Syntax
-  name:
-    CSharp: Syntax
-  type: Namespace
-  items:
   - id: Microsoft.CodeAnalysis.AnnotationExtensions
     yaml: api\Microsoft.CodeAnalysis.AnnotationExtensions.yaml
     href: api\Microsoft.CodeAnalysis.AnnotationExtensions
@@ -1085,6 +860,224 @@ items:
     name:
       CSharp: SyntaxWalkerDepth
     type: Enum
+- id: Microsoft.CodeAnalysis.CodeGen
+  yaml: api\Microsoft.CodeAnalysis.CodeGen.yaml
+  href: api\Microsoft.CodeAnalysis.CodeGen
+  name:
+    CSharp: CodeGen
+  type: Namespace
+- id: Microsoft.CodeAnalysis.Collections
+  yaml: api\Microsoft.CodeAnalysis.Collections.yaml
+  href: api\Microsoft.CodeAnalysis.Collections
+  name:
+    CSharp: Collections
+  type: Namespace
+- id: Microsoft.CodeAnalysis.Diagnostics
+  yaml: api\Microsoft.CodeAnalysis.Diagnostics.yaml
+  href: api\Microsoft.CodeAnalysis.Diagnostics
+  name:
+    CSharp: Diagnostics
+  type: Namespace
+  items:
+  - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+    name:
+      CSharp: AnalyzerImageReference
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+    name:
+      CSharp: AnalyzerOptions
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+    name:
+      CSharp: AnalyzerReference
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+    name:
+      CSharp: CompilationWithAnalyzers
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
+    name:
+      CSharp: DiagnosticAnalyzerExtensions
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+    name:
+      CSharp: UnresolvedAnalyzerReference
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+    name:
+      CSharp: AnalysisContext
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+    name:
+      CSharp: CompilationStartAnalysisContext
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+    name:
+      CSharp: CompilationEndAnalysisContext
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+    name:
+      CSharp: SemanticModelAnalysisContext
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+    name:
+      CSharp: SymbolAnalysisContext
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+    name:
+      CSharp: CodeBlockStartAnalysisContext`1
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+    name:
+      CSharp: CodeBlockEndAnalysisContext
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+    name:
+      CSharp: SyntaxTreeAnalysisContext
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+    name:
+      CSharp: SyntaxNodeAnalysisContext
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+    name:
+      CSharp: DiagnosticAnalyzer
+    type: Class
+  - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+    yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
+    href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+    name:
+      CSharp: DiagnosticAnalyzerAttribute
+    type: Class
+- id: Microsoft.CodeAnalysis.Emit
+  yaml: api\Microsoft.CodeAnalysis.Emit.yaml
+  href: api\Microsoft.CodeAnalysis.Emit
+  name:
+    CSharp: Emit
+  type: Namespace
+  items:
+  - id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+    yaml: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+    name:
+      CSharp: DebugInformationFormat
+    type: Enum
+  - id: Microsoft.CodeAnalysis.Emit.EmitOptions
+    yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+    name:
+      CSharp: EmitOptions
+    type: Class
+  - id: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+    yaml: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+    name:
+      CSharp: EditAndContinueMethodDebugInformation
+    type: Struct
+  - id: Microsoft.CodeAnalysis.Emit.EmitResult
+    yaml: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.EmitResult
+    name:
+      CSharp: EmitResult
+    type: Class
+  - id: Microsoft.CodeAnalysis.Emit.EmitBaseline
+    yaml: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
+    name:
+      CSharp: EmitBaseline
+    type: Class
+  - id: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+    yaml: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+    name:
+      CSharp: EmitDifferenceResult
+    type: Class
+  - id: Microsoft.CodeAnalysis.Emit.SemanticEditKind
+    yaml: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
+    name:
+      CSharp: SemanticEditKind
+    type: Enum
+  - id: Microsoft.CodeAnalysis.Emit.SemanticEdit
+    yaml: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+    href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+    name:
+      CSharp: SemanticEdit
+    type: Struct
+- id: Microsoft.CodeAnalysis.Emit.NoPia
+  yaml: api\Microsoft.CodeAnalysis.Emit.NoPia.yaml
+  href: api\Microsoft.CodeAnalysis.Emit.NoPia
+  name:
+    CSharp: NoPia
+  type: Namespace
+- id: Microsoft.CodeAnalysis.InternalUtilities
+  yaml: api\Microsoft.CodeAnalysis.InternalUtilities.yaml
+  href: api\Microsoft.CodeAnalysis.InternalUtilities
+  name:
+    CSharp: InternalUtilities
+  type: Namespace
+- id: Microsoft.CodeAnalysis.Instrumentation
+  yaml: api\Microsoft.CodeAnalysis.Instrumentation.yaml
+  href: api\Microsoft.CodeAnalysis.Instrumentation
+  name:
+    CSharp: Instrumentation
+  type: Namespace
+- id: Microsoft.CodeAnalysis.RuntimeMembers
+  yaml: api\Microsoft.CodeAnalysis.RuntimeMembers.yaml
+  href: api\Microsoft.CodeAnalysis.RuntimeMembers
+  name:
+    CSharp: RuntimeMembers
+  type: Namespace
+- id: Microsoft.CodeAnalysis.SymbolDisplay
+  yaml: api\Microsoft.CodeAnalysis.SymbolDisplay.yaml
+  href: api\Microsoft.CodeAnalysis.SymbolDisplay
+  name:
+    CSharp: SymbolDisplay
+  type: Namespace
+- id: Microsoft.CodeAnalysis.Symbols
+  yaml: api\Microsoft.CodeAnalysis.Symbols.yaml
+  href: api\Microsoft.CodeAnalysis.Symbols
+  name:
+    CSharp: Symbols
+  type: Namespace
+- id: Microsoft.CodeAnalysis.Syntax
+  yaml: api\Microsoft.CodeAnalysis.Syntax.yaml
+  href: api\Microsoft.CodeAnalysis.Syntax
+  name:
+    CSharp: Syntax
+  type: Namespace
 - id: Microsoft.CodeAnalysis.Text
   yaml: api\Microsoft.CodeAnalysis.Text.yaml
   href: api\Microsoft.CodeAnalysis.Text

@@ -99,7 +99,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_Arity
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -143,7 +142,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsGenericMethod
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -187,7 +185,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsExtensionMethod
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -231,7 +228,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsAsync
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -273,7 +269,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsVararg
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -317,7 +312,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_IsCheckedBuiltin
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -365,7 +359,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_HidesBaseMethodsByName
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -409,7 +402,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnsVoid
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -500,7 +492,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeArguments
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -546,7 +537,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeParameters
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -592,7 +582,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_Parameters
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -929,7 +918,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ExplicitInterfaceImplementations
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml
@@ -973,7 +961,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnTypeCustomModifiers
   yaml: api\Microsoft.CodeAnalysis.IMethodSymbol.yaml

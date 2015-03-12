@@ -27,7 +27,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext})
@@ -61,7 +60,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at compilation start.
     return:
@@ -95,7 +93,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at compilation end.
     return:
@@ -131,7 +128,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed for a document's [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel).
     return:
@@ -165,7 +161,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed for an [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol).
     - id: symbolKinds
@@ -205,14 +200,12 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed for an [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol).
     - id: symbolKinds
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind}
-        href: System.Collections.Immutable
         isExternal: true
       description: Action will be executed only if an [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol)'s Kind matches one of the [Microsoft.CodeAnalysis.SymbolKind](#/api\Microsoft.CodeAnalysis.SymbolKind) values.
     return:
@@ -248,7 +241,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at the start of semantic analysis of a code block.
     return:
@@ -282,7 +274,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at the end of semantic analysis of a code block.
     return:
@@ -316,7 +307,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of parsing of a document.
     return:
@@ -352,7 +342,6 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
@@ -394,14 +383,12 @@ items:
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
-        href: System.Runtime
         isExternal: true
       description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
         id: System.Collections.Immutable.ImmutableArray{``0}
         name: System.Collections.Immutable.ImmutableArray{``0}
-        href: System.Collections.Immutable
         isExternal: true
       description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:

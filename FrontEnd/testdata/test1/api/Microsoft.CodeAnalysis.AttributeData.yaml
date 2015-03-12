@@ -20,7 +20,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.AttributeData.AttributeClass
@@ -176,7 +175,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_ConstructorArguments
   yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
@@ -220,7 +218,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
         name: System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_NamedArguments
   yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml

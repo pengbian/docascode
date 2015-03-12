@@ -20,7 +20,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.AnnotationExtensions.WithAdditionalAnnotations``1(``0,Microsoft.CodeAnalysis.SyntaxAnnotation[])
@@ -93,7 +92,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
-        href: System.Runtime
         isExternal: true
       description: Annotations to be added to the new node.
     return:
@@ -168,7 +166,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
-        href: System.Runtime
         isExternal: true
       description: Annotations to be removed from the new node.
     return:
@@ -206,7 +203,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The kind of annotation to remove.
     return:

@@ -20,7 +20,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CustomModifier.IsOptional
@@ -52,7 +51,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CustomModifier.get_IsOptional
   yaml: api\Microsoft.CodeAnalysis.CustomModifier.yaml

@@ -42,14 +42,6 @@ Microsoft.CodeAnalysis.CaseInsensitiveComparison.ToLower(System.Text.StringBuild
   Name: Microsoft.CodeAnalysis.CaseInsensitiveComparison.ToLower(System.Text.StringBuilder)
   YamlPath: api\Microsoft.CodeAnalysis.CaseInsensitiveComparison.yaml
   Href: api\Microsoft.CodeAnalysis.CaseInsensitiveComparison
-Microsoft.CodeAnalysis.CodeGen:
-  Name: Microsoft.CodeAnalysis.CodeGen
-  YamlPath: api\Microsoft.CodeAnalysis.CodeGen.yaml
-  Href: api\Microsoft.CodeAnalysis.CodeGen
-Microsoft.CodeAnalysis.Collections:
-  Name: Microsoft.CodeAnalysis.Collections
-  YamlPath: api\Microsoft.CodeAnalysis.Collections.yaml
-  Href: api\Microsoft.CodeAnalysis.Collections
 Microsoft.CodeAnalysis.SymbolFilter:
   Name: Microsoft.CodeAnalysis.SymbolFilter
   YamlPath: api\Microsoft.CodeAnalysis.SymbolFilter.yaml
@@ -78,622 +70,6 @@ Microsoft.CodeAnalysis.SymbolFilter.All:
   Name: Microsoft.CodeAnalysis.SymbolFilter.All
   YamlPath: api\Microsoft.CodeAnalysis.SymbolFilter.yaml
   Href: api\Microsoft.CodeAnalysis.SymbolFilter
-Microsoft.CodeAnalysis.Diagnostics:
-  Name: Microsoft.CodeAnalysis.Diagnostics
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-? Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzers(System.String):
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzers(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.FullPath:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.FullPath
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.Display:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.Display
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AdditionalFiles:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AdditionalFiles
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-? Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-? Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.WithAdditionalFiles(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.WithAdditionalFiles(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.Display:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.Display
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.IsUnresolved:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.IsUnresolved
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzersForAllLanguages:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzersForAllLanguages
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String):
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.get_Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.get_Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-? Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.#ctor(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.#ctor(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAnalyzerDiagnosticsAsync:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAnalyzerDiagnosticsAsync
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAllDiagnosticsAsync:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAllDiagnosticsAsync
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-? Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetEffectiveDiagnostics(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic},Microsoft.CodeAnalysis.Compilation)
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetEffectiveDiagnostics(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic},Microsoft.CodeAnalysis.Compilation)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-? Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.IsDiagnosticAnalyzerSuppressed(Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,Microsoft.CodeAnalysis.CompilationOptions,System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.IsDiagnosticAnalyzerSuppressed(Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,Microsoft.CodeAnalysis.CompilationOptions,System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
-? Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.WithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.WithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.#ctor(System.String):
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.#ctor(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.FullPath:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.FullPath
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.IsUnresolved:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.IsUnresolved
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzersForAllLanguages:
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzersForAllLanguages
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzers(System.String):
-  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzers(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
-Microsoft.CodeAnalysis.Diagnostics.AnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
-: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
-  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.#ctor(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.#ctor(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
-  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Symbol:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Symbol
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Compilation:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Compilation
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
-  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.OwningSymbol:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.OwningSymbol
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-? Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-? Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},`0[])
-: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},`0[])
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-? Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
-: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CodeBlock:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CodeBlock
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CodeBlock:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CodeBlock
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.OwningSymbol:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.OwningSymbol
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_OwningSymbol:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_OwningSymbol
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
-  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Tree:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Tree
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Tree:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Tree
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Node:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Node
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Node:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Node
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_SemanticModel:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_SemanticModel
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Options:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Options
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_CancellationToken:
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_CancellationToken
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-? Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-: Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
-  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.SupportedDiagnostics:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.SupportedDiagnostics
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext):
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.Languages:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.Languages
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages:
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
-Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.#ctor(System.String,System.String[]):
-  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.#ctor(System.String,System.String[])
-  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
-  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
 Microsoft.CodeAnalysis.LocalizableResourceString:
   Name: Microsoft.CodeAnalysis.LocalizableResourceString
   YamlPath: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
@@ -730,298 +106,6 @@ Microsoft.CodeAnalysis.LocalizableString.ToString:
   Name: Microsoft.CodeAnalysis.LocalizableString.ToString
   YamlPath: api\Microsoft.CodeAnalysis.LocalizableString.yaml
   Href: api\Microsoft.CodeAnalysis.LocalizableString
-Microsoft.CodeAnalysis.Emit:
-  Name: Microsoft.CodeAnalysis.Emit
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit
-Microsoft.CodeAnalysis.Emit.DebugInformationFormat:
-  Name: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
-Microsoft.CodeAnalysis.Emit.DebugInformationFormat.Pdb:
-  Name: Microsoft.CodeAnalysis.Emit.DebugInformationFormat.Pdb
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
-Microsoft.CodeAnalysis.Emit.EmitOptions:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.TolerateErrors:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.TolerateErrors
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.IncludePrivateMembers:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.IncludePrivateMembers
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.SubsystemVersion:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.SubsystemVersion
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_SubsystemVersion:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_SubsystemVersion
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.FileAlignment:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.FileAlignment
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.HighEntropyVirtualAddressSpace:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.HighEntropyVirtualAddressSpace
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.BaseAddress:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.BaseAddress
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.DebugInformationFormat:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.DebugInformationFormat
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_DebugInformationFormat:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_DebugInformationFormat
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.OutputNameOverride:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.OutputNameOverride
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.PdbFilePath:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.PdbFilePath
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.RuntimeMetadataVersion:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.RuntimeMetadataVersion
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-? Microsoft.CodeAnalysis.Emit.EmitOptions.#ctor(System.Boolean,Microsoft.CodeAnalysis.Emit.DebugInformationFormat,System.String,System.String,System.Int32,System.UInt64,System.Boolean,Microsoft.CodeAnalysis.SubsystemVersion,System.String,System.Boolean,System.Boolean)
-: Name: Microsoft.CodeAnalysis.Emit.EmitOptions.#ctor(System.Boolean,Microsoft.CodeAnalysis.Emit.DebugInformationFormat,System.String,System.String,System.Int32,System.UInt64,System.Boolean,Microsoft.CodeAnalysis.SubsystemVersion,System.String,System.Boolean,System.Boolean)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(Microsoft.CodeAnalysis.Emit.EmitOptions):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(Microsoft.CodeAnalysis.Emit.EmitOptions)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.GetHashCode:
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.GetHashCode
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-? Microsoft.CodeAnalysis.Emit.EmitOptions.op_Equality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
-: Name: Microsoft.CodeAnalysis.Emit.EmitOptions.op_Equality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-? Microsoft.CodeAnalysis.Emit.EmitOptions.op_Inequality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
-: Name: Microsoft.CodeAnalysis.Emit.EmitOptions.op_Inequality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithEmitMetadataOnly(System.Boolean):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithEmitMetadataOnly(System.Boolean)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithPdbFilePath(System.String):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithPdbFilePath(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithOutputNameOverride(System.String):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithOutputNameOverride(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithDebugInformationFormat(Microsoft.CodeAnalysis.Emit.DebugInformationFormat):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithDebugInformationFormat(Microsoft.CodeAnalysis.Emit.DebugInformationFormat)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithFileAlignment(System.Int32):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithFileAlignment(System.Int32)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithBaseAddress(System.UInt64):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithBaseAddress(System.UInt64)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithHighEntropyVirtualAddressSpace(System.Boolean):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithHighEntropyVirtualAddressSpace(System.Boolean)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithSubsystemVersion(Microsoft.CodeAnalysis.SubsystemVersion):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithSubsystemVersion(Microsoft.CodeAnalysis.SubsystemVersion)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithRuntimeMetadataVersion(System.String):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithRuntimeMetadataVersion(System.String)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithTolerateErrors(System.Boolean):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithTolerateErrors(System.Boolean)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EmitOptions.WithIncludePrivateMembers(System.Boolean):
-  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithIncludePrivateMembers(System.Boolean)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
-Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation:
-  Name: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
-? Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.Create(System.Collections.Immutable.ImmutableArray{System.Byte},System.Collections.Immutable.ImmutableArray{System.Byte})
-: Name: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.Create(System.Collections.Immutable.ImmutableArray{System.Byte},System.Collections.Immutable.ImmutableArray{System.Byte})
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
-Microsoft.CodeAnalysis.Emit.EmitResult:
-  Name: Microsoft.CodeAnalysis.Emit.EmitResult
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
-Microsoft.CodeAnalysis.Emit.EmitResult.Success:
-  Name: Microsoft.CodeAnalysis.Emit.EmitResult.Success
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
-Microsoft.CodeAnalysis.Emit.EmitResult.get_Success:
-  Name: Microsoft.CodeAnalysis.Emit.EmitResult.get_Success
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
-Microsoft.CodeAnalysis.Emit.EmitResult.Diagnostics:
-  Name: Microsoft.CodeAnalysis.Emit.EmitResult.Diagnostics
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
-Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics:
-  Name: Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
-Microsoft.CodeAnalysis.Emit.EmitBaseline:
-  Name: Microsoft.CodeAnalysis.Emit.EmitBaseline
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
-? Microsoft.CodeAnalysis.Emit.EmitBaseline.CreateInitialBaseline(Microsoft.CodeAnalysis.ModuleMetadata,System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation})
-: Name: Microsoft.CodeAnalysis.Emit.EmitBaseline.CreateInitialBaseline(Microsoft.CodeAnalysis.ModuleMetadata,System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation})
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
-Microsoft.CodeAnalysis.Emit.EmitBaseline.OriginalMetadata:
-  Name: Microsoft.CodeAnalysis.Emit.EmitBaseline.OriginalMetadata
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
-Microsoft.CodeAnalysis.Emit.EmitDifferenceResult:
-  Name: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
-Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline:
-  Name: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
-Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.get_Baseline:
-  Name: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.get_Baseline
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
-Microsoft.CodeAnalysis.Emit.NoPia:
-  Name: Microsoft.CodeAnalysis.Emit.NoPia
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.NoPia.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.NoPia
-Microsoft.CodeAnalysis.Emit.SemanticEditKind:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
-Microsoft.CodeAnalysis.Emit.SemanticEditKind.None:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.None
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
-Microsoft.CodeAnalysis.Emit.SemanticEditKind.Update:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Update
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
-Microsoft.CodeAnalysis.Emit.SemanticEditKind.Insert:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Insert
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
-Microsoft.CodeAnalysis.Emit.SemanticEditKind.Delete:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Delete
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
-Microsoft.CodeAnalysis.Emit.SemanticEdit:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.Kind:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.Kind
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.OldSymbol:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.OldSymbol
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.NewSymbol:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.NewSymbol
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.SyntaxMap:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.SyntaxMap
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-? Microsoft.CodeAnalysis.Emit.SemanticEdit.#ctor(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
-: Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.#ctor(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.GetHashCode:
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.GetHashCode
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(System.Object):
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(System.Object)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(Microsoft.CodeAnalysis.Emit.SemanticEdit):
-  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(Microsoft.CodeAnalysis.Emit.SemanticEdit)
-  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
-  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
-Microsoft.CodeAnalysis.InternalUtilities:
-  Name: Microsoft.CodeAnalysis.InternalUtilities
-  YamlPath: api\Microsoft.CodeAnalysis.InternalUtilities.yaml
-  Href: api\Microsoft.CodeAnalysis.InternalUtilities
 Microsoft.CodeAnalysis.CandidateReason:
   Name: Microsoft.CodeAnalysis.CandidateReason
   YamlPath: api\Microsoft.CodeAnalysis.CandidateReason.yaml
@@ -2786,14 +1870,6 @@ Microsoft.CodeAnalysis.DocumentationMode.Diagnose:
   Name: Microsoft.CodeAnalysis.DocumentationMode.Diagnose
   YamlPath: api\Microsoft.CodeAnalysis.DocumentationMode.yaml
   Href: api\Microsoft.CodeAnalysis.DocumentationMode
-Microsoft.CodeAnalysis.Instrumentation:
-  Name: Microsoft.CodeAnalysis.Instrumentation
-  YamlPath: api\Microsoft.CodeAnalysis.Instrumentation.yaml
-  Href: api\Microsoft.CodeAnalysis.Instrumentation
-Microsoft.CodeAnalysis.RuntimeMembers:
-  Name: Microsoft.CodeAnalysis.RuntimeMembers
-  YamlPath: api\Microsoft.CodeAnalysis.RuntimeMembers.yaml
-  Href: api\Microsoft.CodeAnalysis.RuntimeMembers
 Microsoft.CodeAnalysis.AssemblyIdentity:
   Name: Microsoft.CodeAnalysis.AssemblyIdentity
   YamlPath: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
@@ -3710,10 +2786,6 @@ Microsoft.CodeAnalysis.StrongNameProvider.GetHashCode:
   Name: Microsoft.CodeAnalysis.StrongNameProvider.GetHashCode
   YamlPath: api\Microsoft.CodeAnalysis.StrongNameProvider.yaml
   Href: api\Microsoft.CodeAnalysis.StrongNameProvider
-Microsoft.CodeAnalysis.SymbolDisplay:
-  Name: Microsoft.CodeAnalysis.SymbolDisplay
-  YamlPath: api\Microsoft.CodeAnalysis.SymbolDisplay.yaml
-  Href: api\Microsoft.CodeAnalysis.SymbolDisplay
 Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle:
   Name: Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle
   YamlPath: api\Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.yaml
@@ -4326,10 +3398,6 @@ Microsoft.CodeAnalysis.Accessibility.Public:
   Name: Microsoft.CodeAnalysis.Accessibility.Public
   YamlPath: api\Microsoft.CodeAnalysis.Accessibility.yaml
   Href: api\Microsoft.CodeAnalysis.Accessibility
-Microsoft.CodeAnalysis.Symbols:
-  Name: Microsoft.CodeAnalysis.Symbols
-  YamlPath: api\Microsoft.CodeAnalysis.Symbols.yaml
-  Href: api\Microsoft.CodeAnalysis.Symbols
 Microsoft.CodeAnalysis.AttributeData:
   Name: Microsoft.CodeAnalysis.AttributeData
   YamlPath: api\Microsoft.CodeAnalysis.AttributeData.yaml
@@ -6666,10 +5734,6 @@ Microsoft.CodeAnalysis.WellKnownMemberNames.OnCompleted:
   Name: Microsoft.CodeAnalysis.WellKnownMemberNames.OnCompleted
   YamlPath: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
   Href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
-Microsoft.CodeAnalysis.Syntax:
-  Name: Microsoft.CodeAnalysis.Syntax
-  YamlPath: api\Microsoft.CodeAnalysis.Syntax.yaml
-  Href: api\Microsoft.CodeAnalysis.Syntax
 Microsoft.CodeAnalysis.AnnotationExtensions:
   Name: Microsoft.CodeAnalysis.AnnotationExtensions
   YamlPath: api\Microsoft.CodeAnalysis.AnnotationExtensions.yaml
@@ -9262,6 +8326,942 @@ Microsoft.CodeAnalysis.SyntaxWalkerDepth.StructuredTrivia:
   Name: Microsoft.CodeAnalysis.SyntaxWalkerDepth.StructuredTrivia
   YamlPath: api\Microsoft.CodeAnalysis.SyntaxWalkerDepth.yaml
   Href: api\Microsoft.CodeAnalysis.SyntaxWalkerDepth
+Microsoft.CodeAnalysis.CodeGen:
+  Name: Microsoft.CodeAnalysis.CodeGen
+  YamlPath: api\Microsoft.CodeAnalysis.CodeGen.yaml
+  Href: api\Microsoft.CodeAnalysis.CodeGen
+Microsoft.CodeAnalysis.Collections:
+  Name: Microsoft.CodeAnalysis.Collections
+  YamlPath: api\Microsoft.CodeAnalysis.Collections.yaml
+  Href: api\Microsoft.CodeAnalysis.Collections
+Microsoft.CodeAnalysis.Diagnostics:
+  Name: Microsoft.CodeAnalysis.Diagnostics
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+? Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzers(System.String):
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzers(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.FullPath:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.FullPath
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.Display:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.Display
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AdditionalFiles:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AdditionalFiles
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+? Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.#ctor(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+? Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.WithAdditionalFiles(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.WithAdditionalFiles(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.Display:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.Display
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.IsUnresolved:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.IsUnresolved
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzersForAllLanguages:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzersForAllLanguages
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String):
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.get_Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.get_Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+? Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.#ctor(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.#ctor(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAnalyzerDiagnosticsAsync:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAnalyzerDiagnosticsAsync
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAllDiagnosticsAsync:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAllDiagnosticsAsync
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+? Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetEffectiveDiagnostics(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic},Microsoft.CodeAnalysis.Compilation)
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetEffectiveDiagnostics(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic},Microsoft.CodeAnalysis.Compilation)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+? Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.IsDiagnosticAnalyzerSuppressed(Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,Microsoft.CodeAnalysis.CompilationOptions,System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.IsDiagnosticAnalyzerSuppressed(Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,Microsoft.CodeAnalysis.CompilationOptions,System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
+? Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.WithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.WithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.#ctor(System.String):
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.#ctor(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.FullPath:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.FullPath
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.IsUnresolved:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.IsUnresolved
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzersForAllLanguages:
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzersForAllLanguages
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzers(System.String):
+  Name: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzers(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
+Microsoft.CodeAnalysis.Diagnostics.AnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+: Name: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
+  Name: Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.#ctor(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.#ctor(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
+  Name: Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Symbol:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Symbol
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Compilation:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Compilation
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
+  Name: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.OwningSymbol:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.OwningSymbol
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+? Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+? Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},`0[])
+: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},`0[])
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+? Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
+: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CodeBlock:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CodeBlock
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CodeBlock:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CodeBlock
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.OwningSymbol:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.OwningSymbol
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_OwningSymbol:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_OwningSymbol
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
+  Name: Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Tree:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Tree
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Tree:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Tree
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Node:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Node
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Node:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Node
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_SemanticModel:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_SemanticModel
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Options:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Options
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_CancellationToken:
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_CancellationToken
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+? Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+: Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic):
+  Name: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.SupportedDiagnostics:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.SupportedDiagnostics
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext):
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.Languages:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.Languages
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages:
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.#ctor(System.String,System.String[]):
+  Name: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.#ctor(System.String,System.String[])
+  YamlPath: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
+  Href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
+Microsoft.CodeAnalysis.Emit:
+  Name: Microsoft.CodeAnalysis.Emit
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit
+Microsoft.CodeAnalysis.Emit.DebugInformationFormat:
+  Name: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+Microsoft.CodeAnalysis.Emit.DebugInformationFormat.Pdb:
+  Name: Microsoft.CodeAnalysis.Emit.DebugInformationFormat.Pdb
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+Microsoft.CodeAnalysis.Emit.EmitOptions:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.TolerateErrors:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.TolerateErrors
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.IncludePrivateMembers:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.IncludePrivateMembers
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.SubsystemVersion:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.SubsystemVersion
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_SubsystemVersion:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_SubsystemVersion
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.FileAlignment:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.FileAlignment
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.HighEntropyVirtualAddressSpace:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.HighEntropyVirtualAddressSpace
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.BaseAddress:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.BaseAddress
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.DebugInformationFormat:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.DebugInformationFormat
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_DebugInformationFormat:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_DebugInformationFormat
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.OutputNameOverride:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.OutputNameOverride
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.PdbFilePath:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.PdbFilePath
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.RuntimeMetadataVersion:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.RuntimeMetadataVersion
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+? Microsoft.CodeAnalysis.Emit.EmitOptions.#ctor(System.Boolean,Microsoft.CodeAnalysis.Emit.DebugInformationFormat,System.String,System.String,System.Int32,System.UInt64,System.Boolean,Microsoft.CodeAnalysis.SubsystemVersion,System.String,System.Boolean,System.Boolean)
+: Name: Microsoft.CodeAnalysis.Emit.EmitOptions.#ctor(System.Boolean,Microsoft.CodeAnalysis.Emit.DebugInformationFormat,System.String,System.String,System.Int32,System.UInt64,System.Boolean,Microsoft.CodeAnalysis.SubsystemVersion,System.String,System.Boolean,System.Boolean)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(Microsoft.CodeAnalysis.Emit.EmitOptions):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(Microsoft.CodeAnalysis.Emit.EmitOptions)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.GetHashCode:
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.GetHashCode
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+? Microsoft.CodeAnalysis.Emit.EmitOptions.op_Equality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
+: Name: Microsoft.CodeAnalysis.Emit.EmitOptions.op_Equality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+? Microsoft.CodeAnalysis.Emit.EmitOptions.op_Inequality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
+: Name: Microsoft.CodeAnalysis.Emit.EmitOptions.op_Inequality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithEmitMetadataOnly(System.Boolean):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithEmitMetadataOnly(System.Boolean)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithPdbFilePath(System.String):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithPdbFilePath(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithOutputNameOverride(System.String):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithOutputNameOverride(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithDebugInformationFormat(Microsoft.CodeAnalysis.Emit.DebugInformationFormat):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithDebugInformationFormat(Microsoft.CodeAnalysis.Emit.DebugInformationFormat)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithFileAlignment(System.Int32):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithFileAlignment(System.Int32)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithBaseAddress(System.UInt64):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithBaseAddress(System.UInt64)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithHighEntropyVirtualAddressSpace(System.Boolean):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithHighEntropyVirtualAddressSpace(System.Boolean)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithSubsystemVersion(Microsoft.CodeAnalysis.SubsystemVersion):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithSubsystemVersion(Microsoft.CodeAnalysis.SubsystemVersion)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithRuntimeMetadataVersion(System.String):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithRuntimeMetadataVersion(System.String)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithTolerateErrors(System.Boolean):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithTolerateErrors(System.Boolean)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EmitOptions.WithIncludePrivateMembers(System.Boolean):
+  Name: Microsoft.CodeAnalysis.Emit.EmitOptions.WithIncludePrivateMembers(System.Boolean)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation:
+  Name: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+? Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.Create(System.Collections.Immutable.ImmutableArray{System.Byte},System.Collections.Immutable.ImmutableArray{System.Byte})
+: Name: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.Create(System.Collections.Immutable.ImmutableArray{System.Byte},System.Collections.Immutable.ImmutableArray{System.Byte})
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
+Microsoft.CodeAnalysis.Emit.EmitResult:
+  Name: Microsoft.CodeAnalysis.Emit.EmitResult
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
+Microsoft.CodeAnalysis.Emit.EmitResult.Success:
+  Name: Microsoft.CodeAnalysis.Emit.EmitResult.Success
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
+Microsoft.CodeAnalysis.Emit.EmitResult.get_Success:
+  Name: Microsoft.CodeAnalysis.Emit.EmitResult.get_Success
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
+Microsoft.CodeAnalysis.Emit.EmitResult.Diagnostics:
+  Name: Microsoft.CodeAnalysis.Emit.EmitResult.Diagnostics
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
+Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics:
+  Name: Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitResult
+Microsoft.CodeAnalysis.Emit.EmitBaseline:
+  Name: Microsoft.CodeAnalysis.Emit.EmitBaseline
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
+? Microsoft.CodeAnalysis.Emit.EmitBaseline.CreateInitialBaseline(Microsoft.CodeAnalysis.ModuleMetadata,System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation})
+: Name: Microsoft.CodeAnalysis.Emit.EmitBaseline.CreateInitialBaseline(Microsoft.CodeAnalysis.ModuleMetadata,System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation})
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
+Microsoft.CodeAnalysis.Emit.EmitBaseline.OriginalMetadata:
+  Name: Microsoft.CodeAnalysis.Emit.EmitBaseline.OriginalMetadata
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitBaseline.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
+Microsoft.CodeAnalysis.Emit.EmitDifferenceResult:
+  Name: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline:
+  Name: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.get_Baseline:
+  Name: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.get_Baseline
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
+Microsoft.CodeAnalysis.Emit.SemanticEditKind:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
+Microsoft.CodeAnalysis.Emit.SemanticEditKind.None:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.None
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
+Microsoft.CodeAnalysis.Emit.SemanticEditKind.Update:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Update
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
+Microsoft.CodeAnalysis.Emit.SemanticEditKind.Insert:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Insert
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
+Microsoft.CodeAnalysis.Emit.SemanticEditKind.Delete:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Delete
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
+Microsoft.CodeAnalysis.Emit.SemanticEdit:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.Kind:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.Kind
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.OldSymbol:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.OldSymbol
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.NewSymbol:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.NewSymbol
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.SyntaxMap:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.SyntaxMap
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+? Microsoft.CodeAnalysis.Emit.SemanticEdit.#ctor(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
+: Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.#ctor(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.GetHashCode:
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.GetHashCode
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(System.Object):
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(System.Object)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(Microsoft.CodeAnalysis.Emit.SemanticEdit):
+  Name: Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(Microsoft.CodeAnalysis.Emit.SemanticEdit)
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
+Microsoft.CodeAnalysis.Emit.NoPia:
+  Name: Microsoft.CodeAnalysis.Emit.NoPia
+  YamlPath: api\Microsoft.CodeAnalysis.Emit.NoPia.yaml
+  Href: api\Microsoft.CodeAnalysis.Emit.NoPia
+Microsoft.CodeAnalysis.InternalUtilities:
+  Name: Microsoft.CodeAnalysis.InternalUtilities
+  YamlPath: api\Microsoft.CodeAnalysis.InternalUtilities.yaml
+  Href: api\Microsoft.CodeAnalysis.InternalUtilities
+Microsoft.CodeAnalysis.Instrumentation:
+  Name: Microsoft.CodeAnalysis.Instrumentation
+  YamlPath: api\Microsoft.CodeAnalysis.Instrumentation.yaml
+  Href: api\Microsoft.CodeAnalysis.Instrumentation
+Microsoft.CodeAnalysis.RuntimeMembers:
+  Name: Microsoft.CodeAnalysis.RuntimeMembers
+  YamlPath: api\Microsoft.CodeAnalysis.RuntimeMembers.yaml
+  Href: api\Microsoft.CodeAnalysis.RuntimeMembers
+Microsoft.CodeAnalysis.SymbolDisplay:
+  Name: Microsoft.CodeAnalysis.SymbolDisplay
+  YamlPath: api\Microsoft.CodeAnalysis.SymbolDisplay.yaml
+  Href: api\Microsoft.CodeAnalysis.SymbolDisplay
+Microsoft.CodeAnalysis.Symbols:
+  Name: Microsoft.CodeAnalysis.Symbols
+  YamlPath: api\Microsoft.CodeAnalysis.Symbols.yaml
+  Href: api\Microsoft.CodeAnalysis.Symbols
+Microsoft.CodeAnalysis.Syntax:
+  Name: Microsoft.CodeAnalysis.Syntax
+  YamlPath: api\Microsoft.CodeAnalysis.Syntax.yaml
+  Href: api\Microsoft.CodeAnalysis.Syntax
 Microsoft.CodeAnalysis.Text:
   Name: Microsoft.CodeAnalysis.Text
   YamlPath: api\Microsoft.CodeAnalysis.Text.yaml

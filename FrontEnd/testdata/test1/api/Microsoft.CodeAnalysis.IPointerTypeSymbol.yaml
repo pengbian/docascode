@@ -99,7 +99,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IPointerTypeSymbol.get_CustomModifiers
   yaml: api\Microsoft.CodeAnalysis.IPointerTypeSymbol.yaml

@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.MetadataReference
   name: MetadataReference
@@ -96,7 +95,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
       description: The new aliases for the reference.
     return:
@@ -128,7 +126,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
         name: System.Collections.Immutable.ImmutableArray{System.String}
-        href: System.Collections.Immutable
         isExternal: true
       description: The new aliases for the reference.
     return:
@@ -160,7 +157,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api\Microsoft.CodeAnalysis.MetadataReferenceProperties).
     return:
@@ -220,7 +216,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationReference.get_Display
   yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml

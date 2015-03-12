@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.MetadataReference
   name: MetadataReference
@@ -53,7 +52,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.UnresolvedMetadataReference.get_Reference
   yaml: api\Microsoft.CodeAnalysis.UnresolvedMetadataReference.yaml
@@ -94,7 +92,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.UnresolvedMetadataReference.get_Display
   yaml: api\Microsoft.CodeAnalysis.UnresolvedMetadataReference.yaml

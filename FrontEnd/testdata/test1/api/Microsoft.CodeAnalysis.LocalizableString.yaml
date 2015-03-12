@@ -25,7 +25,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.LocalizableString.ToString(System.IFormatProvider)
@@ -55,7 +54,6 @@ items:
       type:
         id: System.IFormatProvider
         name: System.IFormatProvider
-        href: System.Runtime
         isExternal: true
     return:
       id: String

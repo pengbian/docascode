@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.EventArgs
   name: System.EventArgs
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.#ctor(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange})
@@ -69,7 +67,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange}
-        href: System.Runtime
         isExternal: true
       description: A non-empty set of ranges for the change.
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.#ctor(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextChangeRange[])
@@ -226,7 +223,6 @@ items:
       type:
         id: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextChangeRange}
         name: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextChangeRange}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_Changes
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs.yaml

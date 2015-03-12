@@ -60,7 +60,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IErrorTypeSymbol.get_CandidateSymbols
   yaml: api\Microsoft.CodeAnalysis.IErrorTypeSymbol.yaml

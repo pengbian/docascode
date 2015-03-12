@@ -101,7 +101,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsConst
   yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
@@ -145,7 +144,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsReadOnly
   yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
@@ -189,7 +187,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsVolatile
   yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
@@ -278,7 +275,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_HasConstantValue
   yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
@@ -322,7 +318,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_ConstantValue
   yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
@@ -366,7 +361,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_CustomModifiers
   yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml

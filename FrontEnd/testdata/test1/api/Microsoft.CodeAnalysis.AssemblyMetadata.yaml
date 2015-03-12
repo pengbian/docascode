@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.Metadata
   name: Metadata
@@ -56,7 +55,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{System.Byte}
         name: System.Collections.Immutable.ImmutableArray{System.Byte}
-        href: System.Collections.Immutable
         isExternal: true
       description: Manifest module image.
     return:
@@ -88,7 +86,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.Byte}
         name: System.Collections.Generic.IEnumerable{System.Byte}
-        href: System.Runtime
         isExternal: true
       description: Manifest module image.
     return:
@@ -120,14 +117,12 @@ items:
       type:
         id: System.IO.Stream
         name: System.IO.Stream
-        href: System.IO
         isExternal: true
       description: Manifest module PE image stream.
     - id: leaveOpen
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: False to close the stream upon disposal of the metadata.
     return:
@@ -159,14 +154,12 @@ items:
       type:
         id: System.IO.Stream
         name: System.IO.Stream
-        href: System.IO
         isExternal: true
       description: Manifest module PE image stream.
     - id: options
       type:
         id: System.Reflection.PortableExecutable.PEStreamOptions
         name: System.Reflection.PortableExecutable.PEStreamOptions
-        href: System.Reflection.Metadata
         isExternal: true
       description: False to close the stream upon disposal of the metadata.
     return:
@@ -198,7 +191,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: The full path to the assembly on disk.
     return:
@@ -261,7 +253,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
-        href: System.Collections.Immutable
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
     return:
@@ -293,7 +284,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
-        href: System.Runtime
         isExternal: true
       description: Modules comprising the assembly. The first module is the manifest module of the assembly.
     return:
@@ -455,28 +445,24 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{System.String}
         name: System.Collections.Immutable.ImmutableArray{System.String}
-        href: System.Collections.Immutable
         isExternal: true
       description: Aliases that can be used to refer to the assembly from source code (see "extern alias" directive in C#).
     - id: embedInteropTypes
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: True to embed interop types from the referenced assembly to the referencing compilation. Must be false for a module.
     - id: filePath
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Path describing the location of the metadata, or null if the metadata have no location.
     - id: display
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Display string used in error messages to identity the reference.
     return:

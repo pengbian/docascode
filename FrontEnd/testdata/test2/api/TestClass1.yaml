@@ -10,15 +10,55 @@ source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:\Repo\docascode2\
-    sha1: a858893631c2099a8e07a567ec33a5d7c0b607ca
-  path: TestResults\Deploy_lianwei 2015-03-10 11_44_05\Out\Assets\TestClass1\TestClass2\Class1.cs
-  startLine: 6
+    local: D:\Repo\docascode\
+    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
+  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+  startLine: 7
 items:
+- id: TestClass1.Partial1
+  yaml: api\TestClass1.Partial1.yaml
+  href: api\TestClass1.Partial1
+  type: Class
+  summary: >+
+    Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
+
 - id: TestClass1.Class1
   yaml: api\TestClass1.Class1.yaml
   href: api\TestClass1.Class1
   type: Class
+  summary: "This is a *Class1* in **TestClass1** [TestClass1.Partial1](#/api\\TestClass1.Partial1) \n\n"
+- id: TestClass1.Class1.Class1InnerClass
+  yaml: api\TestClass1.Class1.Class1InnerClass.yaml
+  href: api\TestClass1.Class1.Class1InnerClass
+  type: Class
   summary: >+
-    This is a *Class1* [TestClass1.Class1](api\TestClass1.Class1) in [TestClass1.Class1.Test1](api\TestClass1.Class1) **TestClass1**
+    This is a *Class1*'s inner class
+
+- id: TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
+  yaml: api\TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass.yaml
+  href: api\TestClass1.Class1.Class1InnerClass.Class1InnerClassesInnerClass
+  type: Class
+  summary: >+
+    This is a *Class1*'s inner class's inner class
+
+- id: TestClass1.Class1.Class1InnerClass.TestEnum
+  yaml: api\TestClass1.Class1.Class1InnerClass.TestEnum.yaml
+  href: api\TestClass1.Class1.Class1InnerClass.TestEnum
+  type: Enum
+  summary: >+
+    This is the TestEnum for inner class
+
+- id: TestClass1.Class1.TestStruct
+  yaml: api\TestClass1.Class1.TestStruct.yaml
+  href: api\TestClass1.Class1.TestStruct
+  type: Struct
+  summary: >+
+    This is a Struct
+
+- id: TestClass1.Class1.ADelegate
+  yaml: api\TestClass1.Class1.ADelegate.yaml
+  href: api\TestClass1.Class1.ADelegate
+  type: Delegate
+  summary: >+
+    This is a Delegate
 

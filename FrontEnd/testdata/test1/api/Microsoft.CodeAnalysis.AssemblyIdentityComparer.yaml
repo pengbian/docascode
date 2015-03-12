@@ -25,7 +25,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default
@@ -68,7 +67,6 @@ items:
       type:
         id: System.StringComparer
         name: System.StringComparer
-        href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_SimpleNameComparer
   yaml: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer.yaml
@@ -109,7 +107,6 @@ items:
       type:
         id: System.StringComparer
         name: System.StringComparer
-        href: System.Runtime.Extensions
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_CultureComparer
   yaml: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer.yaml
@@ -153,7 +150,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Partial or full assembly display name.
     - id: definition

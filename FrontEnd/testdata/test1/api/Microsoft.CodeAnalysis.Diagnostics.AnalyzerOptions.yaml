@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AdditionalFiles
@@ -53,7 +52,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
@@ -97,7 +95,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
-        href: System.Collections.Immutable
         isExternal: true
       description: A set of additional non-code text files that can be used by analyzers.
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.WithAdditionalFiles(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
@@ -127,7 +124,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
-        href: System.Collections.Immutable
         isExternal: true
     return:
       id: AnalyzerOptions

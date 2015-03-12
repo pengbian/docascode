@@ -154,19 +154,3 @@ items:
   summary: >+
     Place this attribute onto a type to cause it to be considered a diagnostic analyzer.
 
-- id: Microsoft.CodeAnalysis.LocalizableResourceString
-  yaml: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
-  href: api\Microsoft.CodeAnalysis.LocalizableResourceString
-  type: Class
-  summary: >+
-    A localizable resource string that may possibly be formatted differently depending on culture.
-
-- id: Microsoft.CodeAnalysis.LocalizableString
-  yaml: api\Microsoft.CodeAnalysis.LocalizableString.yaml
-  href: api\Microsoft.CodeAnalysis.LocalizableString
-  type: Class
-  summary: >+
-    A string that may possibly be formatted differently depending on culture.
-
-    NOTE: Types implementing [Microsoft.CodeAnalysis.LocalizableString](#/api\Microsoft.CodeAnalysis.LocalizableString) must be serializable.
-

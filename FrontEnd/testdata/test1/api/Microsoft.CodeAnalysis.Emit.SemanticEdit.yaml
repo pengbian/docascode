@@ -25,11 +25,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.Kind
@@ -182,14 +180,12 @@ items:
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
         name: System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode}
-        href: System.Runtime
         isExternal: true
       description: "A map from syntax node in the later compilation to syntax node in the previous compilation, \r\n    or null if  is false and the map is not needed or \r\n    the source of the current method is the same as the source of the previous method."
     - id: preserveLocalVariables
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: True if the edit is an update of an active method and local values should be preserved; false otherwise.
 - id: Microsoft.CodeAnalysis.Emit.SemanticEdit.GetHashCode
@@ -238,7 +234,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

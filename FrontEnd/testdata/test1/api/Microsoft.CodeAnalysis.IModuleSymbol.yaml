@@ -127,7 +127,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AssemblyIdentity}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblies
   yaml: api\Microsoft.CodeAnalysis.IModuleSymbol.yaml
@@ -175,7 +174,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IAssemblySymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblySymbols
   yaml: api\Microsoft.CodeAnalysis.IModuleSymbol.yaml

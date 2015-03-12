@@ -50,7 +50,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_Rank
   yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
@@ -139,7 +138,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_CustomModifiers
   yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml

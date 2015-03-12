@@ -48,7 +48,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_IsInteractive
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
@@ -184,7 +183,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Modules
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
@@ -228,7 +226,6 @@ items:
       type:
         id: System.Collections.Generic.ICollection{System.String}
         name: System.Collections.Generic.ICollection{System.String}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_TypeNames
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
@@ -272,7 +269,6 @@ items:
       type:
         id: System.Collections.Generic.ICollection{System.String}
         name: System.Collections.Generic.ICollection{System.String}
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_NamespaceNames
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
@@ -348,7 +344,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Type name.
     return:
@@ -383,7 +378,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_MightContainExtensionMethods
   yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
@@ -431,7 +425,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: INamedTypeSymbol

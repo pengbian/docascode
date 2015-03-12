@@ -14,11 +14,3 @@ source:
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
   path: src\Compilers\Core\Portable\Collections\ByteSequenceComparer.cs
   startLine: 9
-items:
-- id: Microsoft.CodeAnalysis.SymbolFilter
-  yaml: api\Microsoft.CodeAnalysis.SymbolFilter.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolFilter
-  type: Enum
-  summary: >+
-    Indicate what kinds of declaration symbols will be included
-

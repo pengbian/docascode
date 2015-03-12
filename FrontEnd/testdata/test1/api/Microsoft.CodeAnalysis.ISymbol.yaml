@@ -93,7 +93,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Language
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -137,7 +136,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Name
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -195,7 +193,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_MetadataName
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -464,7 +461,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsDefinition
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -508,7 +504,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsStatic
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -552,7 +547,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsVirtual
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -596,7 +590,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsOverride
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -640,7 +633,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsAbstract
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -684,7 +676,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsSealed
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -728,7 +719,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsExtern
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -774,7 +764,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsImplicitlyDeclared
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -818,7 +807,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_CanBeReferencedByName
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -866,7 +854,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Locations
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -926,7 +913,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaringSyntaxReferences
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
@@ -1170,21 +1156,18 @@ items:
       type:
         id: System.Globalization.CultureInfo
         name: System.Globalization.CultureInfo
-        href: System.Globalization
         isExternal: true
       description: Preferred culture or null for the default.
     - id: expandIncludes
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
       description: Optionally, expand <include> elements.  No impact on non-source documentation comments.
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
         name: System.Threading.CancellationToken
-        href: System.Threading.Tasks
         isExternal: true
       description: Token allowing cancellation of request.
     return:
@@ -1297,7 +1280,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
     - id: format
@@ -1350,7 +1332,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: A position in the source code (context).
     - id: format
@@ -1424,7 +1405,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_HasUnsupportedMetadata
   yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml

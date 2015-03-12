@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath
@@ -53,7 +52,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
@@ -97,7 +95,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
@@ -141,7 +138,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
@@ -216,7 +212,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
       description: Language name.
     return:

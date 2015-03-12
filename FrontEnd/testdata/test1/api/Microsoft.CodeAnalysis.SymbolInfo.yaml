@@ -20,11 +20,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SymbolInfo.Symbol
@@ -111,7 +109,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateSymbols
   yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
@@ -199,7 +196,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

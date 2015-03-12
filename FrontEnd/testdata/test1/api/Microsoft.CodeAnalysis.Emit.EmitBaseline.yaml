@@ -25,7 +25,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Emit.EmitBaseline.CreateInitialBaseline(Microsoft.CodeAnalysis.ModuleMetadata,System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation})
@@ -63,7 +62,6 @@ items:
       type:
         id: System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation}
         name: System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation}
-        href: System.Runtime
         isExternal: true
       description: A function that for a method handle returns Edit and Continue debug information emitted by the compiler into the PDB.
     return:

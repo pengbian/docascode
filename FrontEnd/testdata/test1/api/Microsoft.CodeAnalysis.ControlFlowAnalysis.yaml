@@ -25,7 +25,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.EntryPoints
@@ -57,7 +56,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EntryPoints
   yaml: api\Microsoft.CodeAnalysis.ControlFlowAnalysis.yaml
@@ -103,7 +101,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ExitPoints
   yaml: api\Microsoft.CodeAnalysis.ControlFlowAnalysis.yaml
@@ -149,7 +146,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EndPointIsReachable
   yaml: api\Microsoft.CodeAnalysis.ControlFlowAnalysis.yaml
@@ -190,7 +186,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_StartPointIsReachable
   yaml: api\Microsoft.CodeAnalysis.ControlFlowAnalysis.yaml
@@ -234,7 +229,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxNode}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ReturnStatements
   yaml: api\Microsoft.CodeAnalysis.ControlFlowAnalysis.yaml
@@ -280,7 +274,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_Succeeded
   yaml: api\Microsoft.CodeAnalysis.ControlFlowAnalysis.yaml

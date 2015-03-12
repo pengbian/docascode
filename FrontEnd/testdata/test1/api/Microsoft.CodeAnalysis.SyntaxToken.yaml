@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxToken.RawKind
@@ -57,7 +55,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_RawKind
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -101,7 +98,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Language
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -231,7 +227,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_SpanStart
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -322,7 +317,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_IsMissing
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -368,7 +362,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Value
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -414,7 +407,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ValueText
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -455,7 +447,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Text
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -551,7 +542,6 @@ items:
       type:
         id: System.IO.TextWriter
         name: System.IO.TextWriter
-        href: System.IO
         isExternal: true
     return:
       id: Void
@@ -582,7 +572,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasLeadingTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -626,7 +615,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasTrailingTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -670,7 +658,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDiagnostics
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -714,7 +701,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDirectives
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -783,7 +769,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasStructuredTrivia
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -827,7 +812,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsAnnotations
   yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
@@ -871,7 +855,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -962,7 +945,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1023,7 +1005,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{System.String}
         name: System.Collections.Generic.IEnumerable{System.String}
-        href: System.Runtime
         isExternal: true
     return:
       id: IEnumerable
@@ -1088,7 +1069,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1149,7 +1129,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation}
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1180,7 +1159,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1419,7 +1397,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1510,7 +1487,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia}
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1636,7 +1612,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -1692,25 +1667,21 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken
@@ -1742,25 +1713,21 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeSkipped
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDirectives
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     - id: includeDocumentationComments
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
     return:
       id: SyntaxToken

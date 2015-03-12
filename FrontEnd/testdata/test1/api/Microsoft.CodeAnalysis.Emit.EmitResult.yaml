@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.Success
@@ -57,7 +56,6 @@ items:
       type:
         id: System.Boolean
         name: System.Boolean
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.get_Success
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml
@@ -103,7 +101,6 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
-        href: System.Collections.Immutable
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics
   yaml: api\Microsoft.CodeAnalysis.Emit.EmitResult.yaml

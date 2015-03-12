@@ -23,11 +23,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextLine.FromSpan(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextSpan)
@@ -138,7 +136,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_LineNumber
   yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
@@ -182,7 +179,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_Start
   yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
@@ -226,7 +222,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_End
   yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
@@ -270,7 +265,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_EndIncludingLineBreak
   yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
@@ -476,7 +470,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean

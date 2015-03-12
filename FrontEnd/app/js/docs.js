@@ -183,7 +183,7 @@ angular.module('DocsController', [])
       if (repo.substr(-4) == '.git') {
         repo = repo.substr(0, repo.length-4);
       }
-      var linenum = startLine? startLine-1:item.startLine;
+      var linenum = startLine? startLine:item.startLine;
       var url = repo + '/blob'+'/'+ item.remote.branch+'/'+ item.path+'/#L'+linenum;url = url.replace('\\','/');
       return url;
     }else{
@@ -191,8 +191,8 @@ angular.module('DocsController', [])
     }
   }
 
-  $scope.ViewSource = function(startLine){
-    return getRemoteUrl(this.model.source, startLine);
+  $scope.ViewSource = function(){
+    return getRemoteUrl(this.model.source, this.model.source.startLine + 1);
   };
 
    $scope.ImproveThisDoc = function(){
@@ -299,7 +299,7 @@ angular.module('DocsController', [])
               var mdPath = $scope.mdIndex[$scope.partialModel.id];
               if (mdPath){
                 if (mdPath.href){
-                  $scope.partialModel.mdHref = getRemoteUrl(mdPath, mdPath.startLine);
+                  $scope.partialModel.mdHref = getRemoteUrl(mdPath);
                   var getMdIndex = asyncFetchIndex(mdPath.href, 
                     function(result){
                       var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);

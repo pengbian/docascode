@@ -26,11 +26,9 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: System.ValueType
   name: System.ValueType
-  href: System.Runtime
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxList`1.Count
@@ -60,7 +58,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxList`1.get_Count
   yaml: api\Microsoft.CodeAnalysis.SyntaxList`1.yaml
@@ -311,7 +308,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{`0}
         name: System.Collections.Generic.IEnumerable{`0}
-        href: System.Runtime
         isExternal: true
       description: The nodes to add.
     return:
@@ -343,7 +339,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: node
@@ -381,14 +376,12 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The index to insert at.
     - id: nodes
       type:
         id: System.Collections.Generic.IEnumerable{`0}
         name: System.Collections.Generic.IEnumerable{`0}
-        href: System.Runtime
         isExternal: true
       description: The nodes to insert.
     return:
@@ -420,7 +413,6 @@ items:
       type:
         id: System.Int32
         name: System.Int32
-        href: System.Runtime
         isExternal: true
       description: The index of the element to remove.
     return:
@@ -526,7 +518,6 @@ items:
       type:
         id: System.Collections.Generic.IEnumerable{`0}
         name: System.Collections.Generic.IEnumerable{`0}
-        href: System.Runtime
         isExternal: true
       description: The new nodes.
     return:
@@ -762,7 +753,6 @@ items:
       type:
         id: System.Object
         name: System.Object
-        href: System.Runtime
         isExternal: true
     return:
       id: Boolean
@@ -872,7 +862,6 @@ items:
       type:
         id: System.Func{`0,System.Boolean}
         name: System.Func{`0,System.Boolean}
-        href: System.Runtime
         isExternal: true
     return:
       id: Int32
@@ -927,7 +916,6 @@ items:
       type:
         id: System.Func{`0,System.Boolean}
         name: System.Func{`0,System.Boolean}
-        href: System.Runtime
         isExternal: true
     return:
       id: Int32

@@ -23,7 +23,6 @@ syntax:
 inheritance:
 - id: System.Object
   name: System.Object
-  href: System.Runtime
   isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name: AnalyzerReference
@@ -53,19 +52,16 @@ items:
       type:
         id: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer}
-        href: System.Collections.Immutable
         isExternal: true
     - id: fullPath
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     - id: display
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
@@ -113,7 +109,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
     return:
       id: ImmutableArray
@@ -141,7 +136,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
@@ -182,7 +176,6 @@ items:
       type:
         id: System.String
         name: System.String
-        href: System.Runtime
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
