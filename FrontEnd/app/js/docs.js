@@ -112,6 +112,19 @@ angular.module('directives', [])
         }
     };
 })
+.directive("declaration", function() {
+    return {
+        restrict: 'E',
+        link: function(scope, element, attrs) {
+            scope.$watch(attrs.ngModel, function(value, oldValue) {
+                element.html('<code class="lang-csharp"></code>');
+                var code = element.children("code");
+                code.text(value);
+                hljs.highlightBlock(code[0]);
+            });
+        }
+    };
+})
 /**
  * backToTop Directive
  * @param  {Function} $anchorScroll

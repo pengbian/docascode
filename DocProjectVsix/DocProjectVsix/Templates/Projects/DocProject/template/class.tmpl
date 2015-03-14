@@ -76,7 +76,8 @@
                                         <div class="methodsyntax-section" ng-if="item.syntax">
                                             <div class="declaration">
                                                 <h4>Declaration </h4>
-                                                  {{item.syntax.content.CSharp}}
+                                                <declaration ng-model="item.syntax.content.CSharp">
+                                                </declaration>
                                             </div>
                                             <div class="parameters" ng-if="item.syntax.parameters" >
                                                 <h4>Parameters</h4>
