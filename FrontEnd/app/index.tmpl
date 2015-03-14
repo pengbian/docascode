@@ -184,7 +184,7 @@
           <a class="btn toc-toggle visible-xs" ng-click="toc=!toc">Show / Hide Table of Contents</a>
           <div class="side-navigation" ng-show="toc==true">
             <ul class="nav-list naked-list">
-              <li ng-repeat="navGroup in currentArea.items track by navGroup.id" class="nav-index-group">
+              <li ng-repeat="navGroup in currentArea.items track by navGroup.id" ng-if="navGroup.items" class="nav-index-group">
                 <a href="#{{ navGroup.href }}" ng-class="navClass(navGroup)" class="nav-index-group-heading">{{ navGroup.id }}</a>
                 <ul class="aside-nav">
                   <li ng-repeat="navItem in navGroup.items" ng-class="navClass(navItem)" class="nav-index-listing">
