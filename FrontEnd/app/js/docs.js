@@ -282,6 +282,9 @@ angular.module('DocsController', [])
               }
               else {
                 $scope.itemtypes = NG_ITEMTYPES.class;
+                for(var i in $scope.itemtypes){
+                  $scope.itemtypes[i].show = false;
+                }
                 for(var i in $scope.partialModel.items){
                   var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
                   if (itemtype){
