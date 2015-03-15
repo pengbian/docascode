@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayExtensions
 name:
   CSharp: SymbolDisplayExtensions
 qualifiedName:
-  CSharp: SymbolDisplayExtensions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayExtensions
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: ToDisplayString
   qualifiedName:
-    CSharp: ToDisplayString
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayExtensions.ToDisplayString(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolDisplayPart})
   type: Method
   source:
     remote:

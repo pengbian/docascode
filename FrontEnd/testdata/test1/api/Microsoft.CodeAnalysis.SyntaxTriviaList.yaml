@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
 name:
   CSharp: SyntaxTriviaList
 qualifiedName:
-  CSharp: SyntaxTriviaList
+  CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Empty
   qualifiedName:
-    CSharp: Empty
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Empty
   type: Field
   source:
     remote:
@@ -50,7 +50,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Count
   type: Property
   source:
     remote:
@@ -75,7 +75,7 @@ items:
   name:
     CSharp: get_Count
   qualifiedName:
-    CSharp: get_Count
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Count
   source:
     remote:
       branch: master
@@ -90,7 +90,7 @@ items:
   name:
     CSharp: ElementAt
   qualifiedName:
-    CSharp: ElementAt
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.ElementAt(System.Int32)
   type: Method
   source:
     remote:
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -136,7 +136,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -151,7 +151,7 @@ items:
   name:
     CSharp: FullSpan
   qualifiedName:
-    CSharp: FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.FullSpan
   type: Property
   source:
     remote:
@@ -179,7 +179,7 @@ items:
   name:
     CSharp: get_FullSpan
   qualifiedName:
-    CSharp: get_FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.get_FullSpan
   source:
     remote:
       branch: master
@@ -194,7 +194,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Span
   type: Property
   source:
     remote:
@@ -222,7 +222,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.get_Span
   source:
     remote:
       branch: master
@@ -237,7 +237,7 @@ items:
   name:
     CSharp: First
   qualifiedName:
-    CSharp: First
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.First
   type: Method
   source:
     remote:
@@ -263,7 +263,7 @@ items:
   name:
     CSharp: Last
   qualifiedName:
-    CSharp: Last
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Last
   type: Method
   source:
     remote:
@@ -289,7 +289,7 @@ items:
   name:
     CSharp: Any
   qualifiedName:
-    CSharp: Any
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Any
   type: Method
   source:
     remote:
@@ -314,7 +314,7 @@ items:
   name:
     CSharp: Reverse
   qualifiedName:
-    CSharp: Reverse
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reverse
   type: Method
   source:
     remote:
@@ -340,7 +340,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.GetEnumerator
   type: Method
   source:
     remote:
@@ -362,7 +362,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.IndexOf(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -389,7 +389,7 @@ items:
   name:
     CSharp: Add
   qualifiedName:
-    CSharp: Add
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Add(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -420,7 +420,7 @@ items:
   name:
     CSharp: AddRange
   qualifiedName:
-    CSharp: AddRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.AddRange(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -451,7 +451,7 @@ items:
   name:
     CSharp: Insert
   qualifiedName:
-    CSharp: Insert
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Insert(System.Int32,Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -488,7 +488,7 @@ items:
   name:
     CSharp: InsertRange
   qualifiedName:
-    CSharp: InsertRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -525,7 +525,7 @@ items:
   name:
     CSharp: RemoveAt
   qualifiedName:
-    CSharp: RemoveAt
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.RemoveAt(System.Int32)
   type: Method
   source:
     remote:
@@ -556,7 +556,7 @@ items:
   name:
     CSharp: Remove
   qualifiedName:
-    CSharp: Remove
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Remove(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -587,7 +587,7 @@ items:
   name:
     CSharp: Replace
   qualifiedName:
-    CSharp: Replace
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Replace(Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -624,7 +624,7 @@ items:
   name:
     CSharp: ReplaceRange
   qualifiedName:
-    CSharp: ReplaceRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.ReplaceRange(Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -661,7 +661,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Equals(Microsoft.CodeAnalysis.SyntaxTriviaList)
   type: Method
   source:
     remote:
@@ -688,7 +688,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.op_Equality(Microsoft.CodeAnalysis.SyntaxTriviaList,Microsoft.CodeAnalysis.SyntaxTriviaList)
   source:
     remote:
       branch: master
@@ -703,7 +703,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.op_Inequality(Microsoft.CodeAnalysis.SyntaxTriviaList,Microsoft.CodeAnalysis.SyntaxTriviaList)
   source:
     remote:
       branch: master
@@ -718,7 +718,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -745,7 +745,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.GetHashCode
   type: Method
   source:
     remote:
@@ -767,7 +767,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.ToString
   type: Method
   source:
     remote:
@@ -789,7 +789,7 @@ items:
   name:
     CSharp: ToFullString
   qualifiedName:
-    CSharp: ToFullString
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.ToFullString
   type: Method
   source:
     remote:
@@ -811,7 +811,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Create(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\System.Security
 name:
   CSharp: Security
 qualifiedName:
-  CSharp: Security
+  CSharp: System.Security
 type: Namespace
 source:
   remote:

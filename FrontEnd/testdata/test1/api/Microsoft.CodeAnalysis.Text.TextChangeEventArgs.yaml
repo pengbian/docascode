@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs
 name:
   CSharp: TextChangeEventArgs
 qualifiedName:
-  CSharp: TextChangeEventArgs
+  CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs
 type: Class
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs
   name:
-    CSharp: .ctor
+    CSharp: TextChangeEventArgs(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange})
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.TextChangeEventArgs(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.SourceText,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChangeRange})
   type: Constructor
   source:
     remote:
@@ -73,9 +73,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChangeEventArgs
   name:
-    CSharp: .ctor
+    CSharp: TextChangeEventArgs(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextChangeRange[])
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.TextChangeEventArgs(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextChangeRange[])
   type: Constructor
   source:
     remote:
@@ -116,7 +116,7 @@ items:
   name:
     CSharp: OldText
   qualifiedName:
-    CSharp: OldText
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.OldText
   type: Property
   source:
     remote:
@@ -144,7 +144,7 @@ items:
   name:
     CSharp: get_OldText
   qualifiedName:
-    CSharp: get_OldText
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_OldText
   source:
     remote:
       branch: master
@@ -159,7 +159,7 @@ items:
   name:
     CSharp: NewText
   qualifiedName:
-    CSharp: NewText
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.NewText
   type: Property
   source:
     remote:
@@ -187,7 +187,7 @@ items:
   name:
     CSharp: get_NewText
   qualifiedName:
-    CSharp: get_NewText
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_NewText
   source:
     remote:
       branch: master
@@ -202,7 +202,7 @@ items:
   name:
     CSharp: Changes
   qualifiedName:
-    CSharp: Changes
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.Changes
   type: Property
   source:
     remote:
@@ -230,7 +230,7 @@ items:
   name:
     CSharp: get_Changes
   qualifiedName:
-    CSharp: get_Changes
+    CSharp: Microsoft.CodeAnalysis.Text.TextChangeEventArgs.get_Changes
   source:
     remote:
       branch: master

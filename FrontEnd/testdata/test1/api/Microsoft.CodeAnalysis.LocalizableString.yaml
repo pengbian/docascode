@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.LocalizableString
 name:
   CSharp: LocalizableString
 qualifiedName:
-  CSharp: LocalizableString
+  CSharp: Microsoft.CodeAnalysis.LocalizableString
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.LocalizableString.ToString(System.IFormatProvider)
   type: Method
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: op_Explicit
   qualifiedName:
-    CSharp: op_Explicit
+    CSharp: Microsoft.CodeAnalysis.LocalizableString.op_Explicit(Microsoft.CodeAnalysis.LocalizableString)~System.String
   source:
     remote:
       branch: master
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: op_Implicit
   qualifiedName:
-    CSharp: op_Implicit
+    CSharp: Microsoft.CodeAnalysis.LocalizableString.op_Implicit(System.String)~Microsoft.CodeAnalysis.LocalizableString
   source:
     remote:
       branch: master
@@ -93,7 +93,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.LocalizableString.ToString
   type: Method
   source:
     remote:

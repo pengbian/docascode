@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxWalkerDepth
 name:
   CSharp: SyntaxWalkerDepth
 qualifiedName:
-  CSharp: SyntaxWalkerDepth
+  CSharp: Microsoft.CodeAnalysis.SyntaxWalkerDepth
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Node
   qualifiedName:
-    CSharp: Node
+    CSharp: Microsoft.CodeAnalysis.SyntaxWalkerDepth.Node
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Token
   qualifiedName:
-    CSharp: Token
+    CSharp: Microsoft.CodeAnalysis.SyntaxWalkerDepth.Token
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Trivia
   qualifiedName:
-    CSharp: Trivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxWalkerDepth.Trivia
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: StructuredTrivia
   qualifiedName:
-    CSharp: StructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxWalkerDepth.StructuredTrivia
   type: Field
   source:
     remote:

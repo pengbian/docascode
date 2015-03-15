@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed
 name:
   CSharp: Reversed
 qualifiedName:
-  CSharp: Reversed
+  CSharp: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed
 type: Struct
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTokenList.Reversed
   name:
-    CSharp: .ctor
+    CSharp: Reversed(Microsoft.CodeAnalysis.SyntaxTokenList)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Reversed(Microsoft.CodeAnalysis.SyntaxTokenList)
   type: Constructor
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.GetEnumerator
   type: Method
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -108,7 +108,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.Equals(Microsoft.CodeAnalysis.SyntaxTokenList.Reversed)
   type: Method
   source:
     remote:
@@ -135,7 +135,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxTokenList.Reversed.GetHashCode
   type: Method
   source:
     remote:

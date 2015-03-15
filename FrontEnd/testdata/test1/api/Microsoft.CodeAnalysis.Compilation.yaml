@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Compilation
 name:
   CSharp: Compilation
 qualifiedName:
-  CSharp: Compilation
+  CSharp: Microsoft.CodeAnalysis.Compilation
 type: Class
 source:
   remote:
@@ -41,7 +41,7 @@ items:
   name:
     CSharp: IsCaseSensitive
   qualifiedName:
-    CSharp: IsCaseSensitive
+    CSharp: Microsoft.CodeAnalysis.Compilation.IsCaseSensitive
   type: Property
   source:
     remote:
@@ -75,7 +75,7 @@ items:
   name:
     CSharp: get_IsCaseSensitive
   qualifiedName:
-    CSharp: get_IsCaseSensitive
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_IsCaseSensitive
   source:
     remote:
       branch: master
@@ -90,7 +90,7 @@ items:
   name:
     CSharp: Language
   qualifiedName:
-    CSharp: Language
+    CSharp: Microsoft.CodeAnalysis.Compilation.Language
   type: Property
   source:
     remote:
@@ -118,7 +118,7 @@ items:
   name:
     CSharp: get_Language
   qualifiedName:
-    CSharp: get_Language
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_Language
   source:
     remote:
       branch: master
@@ -133,7 +133,7 @@ items:
   name:
     CSharp: Clone
   qualifiedName:
-    CSharp: Clone
+    CSharp: Microsoft.CodeAnalysis.Compilation.Clone
   type: Method
   source:
     remote:
@@ -158,7 +158,7 @@ items:
   name:
     CSharp: GetSemanticModel
   qualifiedName:
-    CSharp: GetSemanticModel
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetSemanticModel(Microsoft.CodeAnalysis.SyntaxTree)
   type: Method
   source:
     remote:
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: CreateErrorTypeSymbol
   qualifiedName:
-    CSharp: CreateErrorTypeSymbol
+    CSharp: Microsoft.CodeAnalysis.Compilation.CreateErrorTypeSymbol(Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Int32)
   type: Method
   source:
     remote:
@@ -230,7 +230,7 @@ items:
   name:
     CSharp: AssemblyName
   qualifiedName:
-    CSharp: AssemblyName
+    CSharp: Microsoft.CodeAnalysis.Compilation.AssemblyName
   type: Property
   source:
     remote:
@@ -258,7 +258,7 @@ items:
   name:
     CSharp: get_AssemblyName
   qualifiedName:
-    CSharp: get_AssemblyName
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_AssemblyName
   source:
     remote:
       branch: master
@@ -273,7 +273,7 @@ items:
   name:
     CSharp: WithAssemblyName
   qualifiedName:
-    CSharp: WithAssemblyName
+    CSharp: Microsoft.CodeAnalysis.Compilation.WithAssemblyName(System.String)
   type: Method
   source:
     remote:
@@ -305,7 +305,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.Compilation.Options
   type: Property
   source:
     remote:
@@ -333,7 +333,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_Options
   source:
     remote:
       branch: master
@@ -348,7 +348,7 @@ items:
   name:
     CSharp: WithOptions
   qualifiedName:
-    CSharp: WithOptions
+    CSharp: Microsoft.CodeAnalysis.Compilation.WithOptions(Microsoft.CodeAnalysis.CompilationOptions)
   type: Method
   source:
     remote:
@@ -380,7 +380,7 @@ items:
   name:
     CSharp: GetSubmissionResultType
   qualifiedName:
-    CSharp: GetSubmissionResultType
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetSubmissionResultType(System.Boolean@)
   type: Method
   source:
     remote:
@@ -415,7 +415,7 @@ items:
   name:
     CSharp: PreviousSubmission
   qualifiedName:
-    CSharp: PreviousSubmission
+    CSharp: Microsoft.CodeAnalysis.Compilation.PreviousSubmission
   type: Property
   source:
     remote:
@@ -447,7 +447,7 @@ items:
   name:
     CSharp: get_PreviousSubmission
   qualifiedName:
-    CSharp: get_PreviousSubmission
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_PreviousSubmission
   source:
     remote:
       branch: master
@@ -462,7 +462,7 @@ items:
   name:
     CSharp: WithPreviousSubmission
   qualifiedName:
-    CSharp: WithPreviousSubmission
+    CSharp: Microsoft.CodeAnalysis.Compilation.WithPreviousSubmission(Microsoft.CodeAnalysis.Compilation)
   type: Method
   source:
     remote:
@@ -494,7 +494,7 @@ items:
   name:
     CSharp: SyntaxTrees
   qualifiedName:
-    CSharp: SyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.SyntaxTrees
   type: Property
   source:
     remote:
@@ -522,7 +522,7 @@ items:
   name:
     CSharp: get_SyntaxTrees
   qualifiedName:
-    CSharp: get_SyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_SyntaxTrees
   source:
     remote:
       branch: master
@@ -537,7 +537,7 @@ items:
   name:
     CSharp: AddSyntaxTrees
   qualifiedName:
-    CSharp: AddSyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.AddSyntaxTrees(Microsoft.CodeAnalysis.SyntaxTree[])
   type: Method
   source:
     remote:
@@ -569,7 +569,7 @@ items:
   name:
     CSharp: AddSyntaxTrees
   qualifiedName:
-    CSharp: AddSyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.AddSyntaxTrees(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree})
   type: Method
   source:
     remote:
@@ -601,7 +601,7 @@ items:
   name:
     CSharp: RemoveSyntaxTrees
   qualifiedName:
-    CSharp: RemoveSyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.RemoveSyntaxTrees(Microsoft.CodeAnalysis.SyntaxTree[])
   type: Method
   source:
     remote:
@@ -635,7 +635,7 @@ items:
   name:
     CSharp: RemoveSyntaxTrees
   qualifiedName:
-    CSharp: RemoveSyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.RemoveSyntaxTrees(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTree})
   type: Method
   source:
     remote:
@@ -669,7 +669,7 @@ items:
   name:
     CSharp: RemoveAllSyntaxTrees
   qualifiedName:
-    CSharp: RemoveAllSyntaxTrees
+    CSharp: Microsoft.CodeAnalysis.Compilation.RemoveAllSyntaxTrees
   type: Method
   source:
     remote:
@@ -696,7 +696,7 @@ items:
   name:
     CSharp: ReplaceSyntaxTree
   qualifiedName:
-    CSharp: ReplaceSyntaxTree
+    CSharp: Microsoft.CodeAnalysis.Compilation.ReplaceSyntaxTree(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.SyntaxTree)
   type: Method
   source:
     remote:
@@ -736,7 +736,7 @@ items:
   name:
     CSharp: ContainsSyntaxTree
   qualifiedName:
-    CSharp: ContainsSyntaxTree
+    CSharp: Microsoft.CodeAnalysis.Compilation.ContainsSyntaxTree(Microsoft.CodeAnalysis.SyntaxTree)
   type: Method
   source:
     remote:
@@ -767,7 +767,7 @@ items:
   name:
     CSharp: ExternalReferences
   qualifiedName:
-    CSharp: ExternalReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.ExternalReferences
   type: Property
   source:
     remote:
@@ -795,7 +795,7 @@ items:
   name:
     CSharp: get_ExternalReferences
   qualifiedName:
-    CSharp: get_ExternalReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_ExternalReferences
   source:
     remote:
       branch: master
@@ -810,7 +810,7 @@ items:
   name:
     CSharp: DirectiveReferences
   qualifiedName:
-    CSharp: DirectiveReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.DirectiveReferences
   type: Property
   source:
     remote:
@@ -838,7 +838,7 @@ items:
   name:
     CSharp: get_DirectiveReferences
   qualifiedName:
-    CSharp: get_DirectiveReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_DirectiveReferences
   source:
     remote:
       branch: master
@@ -853,7 +853,7 @@ items:
   name:
     CSharp: References
   qualifiedName:
-    CSharp: References
+    CSharp: Microsoft.CodeAnalysis.Compilation.References
   type: Property
   source:
     remote:
@@ -883,7 +883,7 @@ items:
   name:
     CSharp: get_References
   qualifiedName:
-    CSharp: get_References
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_References
   source:
     remote:
       branch: master
@@ -898,7 +898,7 @@ items:
   name:
     CSharp: ToMetadataReference
   qualifiedName:
-    CSharp: ToMetadataReference
+    CSharp: Microsoft.CodeAnalysis.Compilation.ToMetadataReference(System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
   type: Method
   source:
     remote:
@@ -938,7 +938,7 @@ items:
   name:
     CSharp: WithReferences
   qualifiedName:
-    CSharp: WithReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.WithReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
   type: Method
   source:
     remote:
@@ -970,7 +970,7 @@ items:
   name:
     CSharp: WithReferences
   qualifiedName:
-    CSharp: WithReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.WithReferences(Microsoft.CodeAnalysis.MetadataReference[])
   type: Method
   source:
     remote:
@@ -1002,7 +1002,7 @@ items:
   name:
     CSharp: AddReferences
   qualifiedName:
-    CSharp: AddReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.AddReferences(Microsoft.CodeAnalysis.MetadataReference[])
   type: Method
   source:
     remote:
@@ -1034,7 +1034,7 @@ items:
   name:
     CSharp: AddReferences
   qualifiedName:
-    CSharp: AddReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.AddReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
   type: Method
   source:
     remote:
@@ -1066,7 +1066,7 @@ items:
   name:
     CSharp: RemoveReferences
   qualifiedName:
-    CSharp: RemoveReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.RemoveReferences(Microsoft.CodeAnalysis.MetadataReference[])
   type: Method
   source:
     remote:
@@ -1098,7 +1098,7 @@ items:
   name:
     CSharp: RemoveReferences
   qualifiedName:
-    CSharp: RemoveReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.RemoveReferences(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.MetadataReference})
   type: Method
   source:
     remote:
@@ -1130,7 +1130,7 @@ items:
   name:
     CSharp: RemoveAllReferences
   qualifiedName:
-    CSharp: RemoveAllReferences
+    CSharp: Microsoft.CodeAnalysis.Compilation.RemoveAllReferences
   type: Method
   source:
     remote:
@@ -1155,7 +1155,7 @@ items:
   name:
     CSharp: ReplaceReference
   qualifiedName:
-    CSharp: ReplaceReference
+    CSharp: Microsoft.CodeAnalysis.Compilation.ReplaceReference(Microsoft.CodeAnalysis.MetadataReference,Microsoft.CodeAnalysis.MetadataReference)
   type: Method
   source:
     remote:
@@ -1195,7 +1195,7 @@ items:
   name:
     CSharp: GetAssemblyOrModuleSymbol
   qualifiedName:
-    CSharp: GetAssemblyOrModuleSymbol
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetAssemblyOrModuleSymbol(Microsoft.CodeAnalysis.MetadataReference)
   type: Method
   source:
     remote:
@@ -1229,7 +1229,7 @@ items:
   name:
     CSharp: GetMetadataReference
   qualifiedName:
-    CSharp: GetMetadataReference
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetMetadataReference(Microsoft.CodeAnalysis.IAssemblySymbol)
   type: Method
   source:
     remote:
@@ -1260,7 +1260,7 @@ items:
   name:
     CSharp: ReferencedAssemblyNames
   qualifiedName:
-    CSharp: ReferencedAssemblyNames
+    CSharp: Microsoft.CodeAnalysis.Compilation.ReferencedAssemblyNames
   type: Property
   source:
     remote:
@@ -1288,7 +1288,7 @@ items:
   name:
     CSharp: get_ReferencedAssemblyNames
   qualifiedName:
-    CSharp: get_ReferencedAssemblyNames
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_ReferencedAssemblyNames
   source:
     remote:
       branch: master
@@ -1303,7 +1303,7 @@ items:
   name:
     CSharp: Assembly
   qualifiedName:
-    CSharp: Assembly
+    CSharp: Microsoft.CodeAnalysis.Compilation.Assembly
   type: Property
   source:
     remote:
@@ -1331,7 +1331,7 @@ items:
   name:
     CSharp: get_Assembly
   qualifiedName:
-    CSharp: get_Assembly
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_Assembly
   source:
     remote:
       branch: master
@@ -1346,7 +1346,7 @@ items:
   name:
     CSharp: SourceModule
   qualifiedName:
-    CSharp: SourceModule
+    CSharp: Microsoft.CodeAnalysis.Compilation.SourceModule
   type: Property
   source:
     remote:
@@ -1376,7 +1376,7 @@ items:
   name:
     CSharp: get_SourceModule
   qualifiedName:
-    CSharp: get_SourceModule
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_SourceModule
   source:
     remote:
       branch: master
@@ -1391,7 +1391,7 @@ items:
   name:
     CSharp: GlobalNamespace
   qualifiedName:
-    CSharp: GlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.Compilation.GlobalNamespace
   type: Property
   source:
     remote:
@@ -1421,7 +1421,7 @@ items:
   name:
     CSharp: get_GlobalNamespace
   qualifiedName:
-    CSharp: get_GlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_GlobalNamespace
   source:
     remote:
       branch: master
@@ -1436,7 +1436,7 @@ items:
   name:
     CSharp: GetCompilationNamespace
   qualifiedName:
-    CSharp: GetCompilationNamespace
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetCompilationNamespace(Microsoft.CodeAnalysis.INamespaceSymbol)
   type: Method
   source:
     remote:
@@ -1466,7 +1466,7 @@ items:
   name:
     CSharp: GetEntryPoint
   qualifiedName:
-    CSharp: GetEntryPoint
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetEntryPoint(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -1498,7 +1498,7 @@ items:
   name:
     CSharp: GetSpecialType
   qualifiedName:
-    CSharp: GetSpecialType
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetSpecialType(Microsoft.CodeAnalysis.SpecialType)
   type: Method
   source:
     remote:
@@ -1530,7 +1530,7 @@ items:
   name:
     CSharp: ObjectType
   qualifiedName:
-    CSharp: ObjectType
+    CSharp: Microsoft.CodeAnalysis.Compilation.ObjectType
   type: Property
   source:
     remote:
@@ -1560,7 +1560,7 @@ items:
   name:
     CSharp: get_ObjectType
   qualifiedName:
-    CSharp: get_ObjectType
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_ObjectType
   source:
     remote:
       branch: master
@@ -1575,7 +1575,7 @@ items:
   name:
     CSharp: DynamicType
   qualifiedName:
-    CSharp: DynamicType
+    CSharp: Microsoft.CodeAnalysis.Compilation.DynamicType
   type: Property
   source:
     remote:
@@ -1603,7 +1603,7 @@ items:
   name:
     CSharp: get_DynamicType
   qualifiedName:
-    CSharp: get_DynamicType
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_DynamicType
   source:
     remote:
       branch: master
@@ -1618,7 +1618,7 @@ items:
   name:
     CSharp: ScriptClass
   qualifiedName:
-    CSharp: ScriptClass
+    CSharp: Microsoft.CodeAnalysis.Compilation.ScriptClass
   type: Property
   source:
     remote:
@@ -1648,7 +1648,7 @@ items:
   name:
     CSharp: get_ScriptClass
   qualifiedName:
-    CSharp: get_ScriptClass
+    CSharp: Microsoft.CodeAnalysis.Compilation.get_ScriptClass
   source:
     remote:
       branch: master
@@ -1663,7 +1663,7 @@ items:
   name:
     CSharp: CreateArrayTypeSymbol
   qualifiedName:
-    CSharp: CreateArrayTypeSymbol
+    CSharp: Microsoft.CodeAnalysis.Compilation.CreateArrayTypeSymbol(Microsoft.CodeAnalysis.ITypeSymbol,System.Int32)
   type: Method
   source:
     remote:
@@ -1700,7 +1700,7 @@ items:
   name:
     CSharp: CreatePointerTypeSymbol
   qualifiedName:
-    CSharp: CreatePointerTypeSymbol
+    CSharp: Microsoft.CodeAnalysis.Compilation.CreatePointerTypeSymbol(Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
     remote:
@@ -1732,7 +1732,7 @@ items:
   name:
     CSharp: GetTypeByMetadataName
   qualifiedName:
-    CSharp: GetTypeByMetadataName
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetTypeByMetadataName(System.String)
   type: Method
   source:
     remote:
@@ -1765,7 +1765,7 @@ items:
   name:
     CSharp: GetParseDiagnostics
   qualifiedName:
-    CSharp: GetParseDiagnostics
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetParseDiagnostics(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -1795,7 +1795,7 @@ items:
   name:
     CSharp: GetDeclarationDiagnostics
   qualifiedName:
-    CSharp: GetDeclarationDiagnostics
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetDeclarationDiagnostics(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -1825,7 +1825,7 @@ items:
   name:
     CSharp: GetMethodBodyDiagnostics
   qualifiedName:
-    CSharp: GetMethodBodyDiagnostics
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetMethodBodyDiagnostics(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -1855,7 +1855,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetDiagnostics(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -1889,7 +1889,7 @@ items:
   name:
     CSharp: CreateDefaultWin32Resources
   qualifiedName:
-    CSharp: CreateDefaultWin32Resources
+    CSharp: Microsoft.CodeAnalysis.Compilation.CreateDefaultWin32Resources(System.Boolean,System.Boolean,System.IO.Stream,System.IO.Stream)
   type: Method
   source:
     remote:
@@ -1934,7 +1934,7 @@ items:
   name:
     CSharp: Emit
   qualifiedName:
-    CSharp: Emit
+    CSharp: Microsoft.CodeAnalysis.Compilation.Emit(System.IO.Stream,System.IO.Stream,System.IO.Stream,System.IO.Stream,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ResourceDescription},Microsoft.CodeAnalysis.Emit.EmitOptions,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -2001,7 +2001,7 @@ items:
   name:
     CSharp: EmitDifference
   qualifiedName:
-    CSharp: EmitDifference
+    CSharp: Microsoft.CodeAnalysis.Compilation.EmitDifference(Microsoft.CodeAnalysis.Emit.EmitBaseline,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit},System.IO.Stream,System.IO.Stream,System.IO.Stream,System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle},System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -2069,7 +2069,7 @@ items:
   name:
     CSharp: EmitDifference
   qualifiedName:
-    CSharp: EmitDifference
+    CSharp: Microsoft.CodeAnalysis.Compilation.EmitDifference(Microsoft.CodeAnalysis.Emit.EmitBaseline,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Emit.SemanticEdit},System.Func{Microsoft.CodeAnalysis.ISymbol,System.Boolean},System.IO.Stream,System.IO.Stream,System.IO.Stream,System.Collections.Generic.ICollection{System.Reflection.Metadata.MethodDefinitionHandle},System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -2142,7 +2142,7 @@ items:
   name:
     CSharp: ContainsSymbolsWithName
   qualifiedName:
-    CSharp: ContainsSymbolsWithName
+    CSharp: Microsoft.CodeAnalysis.Compilation.ContainsSymbolsWithName(System.Func{System.String,System.Boolean},Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -2182,7 +2182,7 @@ items:
   name:
     CSharp: GetSymbolsWithName
   qualifiedName:
-    CSharp: GetSymbolsWithName
+    CSharp: Microsoft.CodeAnalysis.Compilation.GetSymbolsWithName(System.Func{System.String,System.Boolean},Microsoft.CodeAnalysis.SymbolFilter,System.Threading.CancellationToken)
   type: Method
   source:
     remote:

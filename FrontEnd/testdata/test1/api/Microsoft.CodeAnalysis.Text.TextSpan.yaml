@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.TextSpan
 name:
   CSharp: TextSpan
 qualifiedName:
-  CSharp: TextSpan
+  CSharp: Microsoft.CodeAnalysis.Text.TextSpan
 type: Struct
 source:
   remote:
@@ -34,9 +34,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextSpan
   name:
-    CSharp: .ctor
+    CSharp: TextSpan(System.Int32,System.Int32)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.TextSpan(System.Int32,System.Int32)
   type: Constructor
   source:
     remote:
@@ -71,7 +71,7 @@ items:
   name:
     CSharp: Start
   qualifiedName:
-    CSharp: Start
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Start
   type: Property
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: get_Start
   qualifiedName:
-    CSharp: get_Start
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.get_Start
   source:
     remote:
       branch: master
@@ -114,7 +114,7 @@ items:
   name:
     CSharp: End
   qualifiedName:
-    CSharp: End
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.End
   type: Property
   source:
     remote:
@@ -142,7 +142,7 @@ items:
   name:
     CSharp: get_End
   qualifiedName:
-    CSharp: get_End
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.get_End
   source:
     remote:
       branch: master
@@ -157,7 +157,7 @@ items:
   name:
     CSharp: Length
   qualifiedName:
-    CSharp: Length
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Length
   type: Property
   source:
     remote:
@@ -185,7 +185,7 @@ items:
   name:
     CSharp: get_Length
   qualifiedName:
-    CSharp: get_Length
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.get_Length
   source:
     remote:
       branch: master
@@ -200,7 +200,7 @@ items:
   name:
     CSharp: IsEmpty
   qualifiedName:
-    CSharp: IsEmpty
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.IsEmpty
   type: Property
   source:
     remote:
@@ -228,7 +228,7 @@ items:
   name:
     CSharp: get_IsEmpty
   qualifiedName:
-    CSharp: get_IsEmpty
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.get_IsEmpty
   source:
     remote:
       branch: master
@@ -243,7 +243,7 @@ items:
   name:
     CSharp: Contains
   qualifiedName:
-    CSharp: Contains
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Contains(System.Int32)
   type: Method
   source:
     remote:
@@ -275,7 +275,7 @@ items:
   name:
     CSharp: Contains
   qualifiedName:
-    CSharp: Contains
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Contains(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -307,7 +307,7 @@ items:
   name:
     CSharp: OverlapsWith
   qualifiedName:
-    CSharp: OverlapsWith
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.OverlapsWith(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -343,7 +343,7 @@ items:
   name:
     CSharp: Overlap
   qualifiedName:
-    CSharp: Overlap
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Overlap(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -375,7 +375,7 @@ items:
   name:
     CSharp: IntersectsWith
   qualifiedName:
-    CSharp: IntersectsWith
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.IntersectsWith(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: IntersectsWith
   qualifiedName:
-    CSharp: IntersectsWith
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.IntersectsWith(System.Int32)
   type: Method
   source:
     remote:
@@ -447,7 +447,7 @@ items:
   name:
     CSharp: Intersection
   qualifiedName:
-    CSharp: Intersection
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Intersection(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -479,7 +479,7 @@ items:
   name:
     CSharp: FromBounds
   qualifiedName:
-    CSharp: FromBounds
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.FromBounds(System.Int32,System.Int32)
   type: Method
   source:
     remote:
@@ -514,7 +514,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.op_Equality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
   source:
     remote:
       branch: master
@@ -532,7 +532,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.op_Inequality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
   source:
     remote:
       branch: master
@@ -550,7 +550,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Equals(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -580,7 +580,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -610,7 +610,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.GetHashCode
   type: Method
   source:
     remote:
@@ -635,7 +635,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.ToString
   type: Method
   source:
     remote:
@@ -660,7 +660,7 @@ items:
   name:
     CSharp: CompareTo
   qualifiedName:
-    CSharp: CompareTo
+    CSharp: Microsoft.CodeAnalysis.Text.TextSpan.CompareTo(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:

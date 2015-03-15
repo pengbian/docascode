@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.LanguageNames
 name:
   CSharp: LanguageNames
 qualifiedName:
-  CSharp: LanguageNames
+  CSharp: Microsoft.CodeAnalysis.LanguageNames
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: CSharp
   qualifiedName:
-    CSharp: CSharp
+    CSharp: Microsoft.CodeAnalysis.LanguageNames.CSharp
   type: Field
   source:
     remote:
@@ -50,7 +50,7 @@ items:
   name:
     CSharp: VisualBasic
   qualifiedName:
-    CSharp: VisualBasic
+    CSharp: Microsoft.CodeAnalysis.LanguageNames.VisualBasic
   type: Field
   source:
     remote:

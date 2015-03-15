@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.LineVisibility
 name:
   CSharp: LineVisibility
 qualifiedName:
-  CSharp: LineVisibility
+  CSharp: Microsoft.CodeAnalysis.LineVisibility
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: BeforeFirstLineDirective
   qualifiedName:
-    CSharp: BeforeFirstLineDirective
+    CSharp: Microsoft.CodeAnalysis.LineVisibility.BeforeFirstLineDirective
   type: Field
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: Hidden
   qualifiedName:
-    CSharp: Hidden
+    CSharp: Microsoft.CodeAnalysis.LineVisibility.Hidden
   type: Field
   source:
     remote:
@@ -85,7 +85,7 @@ items:
   name:
     CSharp: Visible
   qualifiedName:
-    CSharp: Visible
+    CSharp: Microsoft.CodeAnalysis.LineVisibility.Visible
   type: Field
   source:
     remote:

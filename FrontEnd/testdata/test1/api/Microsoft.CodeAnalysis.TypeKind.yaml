@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.TypeKind
 name:
   CSharp: TypeKind
 qualifiedName:
-  CSharp: TypeKind
+  CSharp: Microsoft.CodeAnalysis.TypeKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Unknown
   qualifiedName:
-    CSharp: Unknown
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Unknown
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Array
   qualifiedName:
-    CSharp: Array
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Array
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Class
   qualifiedName:
-    CSharp: Class
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Class
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: Delegate
   qualifiedName:
-    CSharp: Delegate
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Delegate
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: Dynamic
   qualifiedName:
-    CSharp: Dynamic
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Dynamic
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: Enum
   qualifiedName:
-    CSharp: Enum
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Enum
   type: Field
   source:
     remote:
@@ -169,7 +169,7 @@ items:
   name:
     CSharp: Error
   qualifiedName:
-    CSharp: Error
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Error
   type: Field
   source:
     remote:
@@ -191,7 +191,7 @@ items:
   name:
     CSharp: Interface
   qualifiedName:
-    CSharp: Interface
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Interface
   type: Field
   source:
     remote:
@@ -213,7 +213,7 @@ items:
   name:
     CSharp: Module
   qualifiedName:
-    CSharp: Module
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Module
   type: Field
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: Pointer
   qualifiedName:
-    CSharp: Pointer
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Pointer
   type: Field
   source:
     remote:
@@ -257,7 +257,7 @@ items:
   name:
     CSharp: Struct
   qualifiedName:
-    CSharp: Struct
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Struct
   type: Field
   source:
     remote:
@@ -279,7 +279,7 @@ items:
   name:
     CSharp: Structure
   qualifiedName:
-    CSharp: Structure
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Structure
   type: Field
   source:
     remote:
@@ -301,7 +301,7 @@ items:
   name:
     CSharp: TypeParameter
   qualifiedName:
-    CSharp: TypeParameter
+    CSharp: Microsoft.CodeAnalysis.TypeKind.TypeParameter
   type: Field
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: Submission
   qualifiedName:
-    CSharp: Submission
+    CSharp: Microsoft.CodeAnalysis.TypeKind.Submission
   type: Field
   source:
     remote:

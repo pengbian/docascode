@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IModuleSymbol
 name:
   CSharp: IModuleSymbol
 qualifiedName:
-  CSharp: IModuleSymbol
+  CSharp: Microsoft.CodeAnalysis.IModuleSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: GlobalNamespace
   qualifiedName:
-    CSharp: GlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.GlobalNamespace
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_GlobalNamespace
   qualifiedName:
-    CSharp: get_GlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.get_GlobalNamespace
   source:
     remote:
       branch: master
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: GetModuleNamespace
   qualifiedName:
-    CSharp: GetModuleNamespace
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.GetModuleNamespace(Microsoft.CodeAnalysis.INamespaceSymbol)
   type: Method
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: ReferencedAssemblies
   qualifiedName:
-    CSharp: ReferencedAssemblies
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.ReferencedAssemblies
   type: Property
   source:
     remote:
@@ -134,7 +134,7 @@ items:
   name:
     CSharp: get_ReferencedAssemblies
   qualifiedName:
-    CSharp: get_ReferencedAssemblies
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblies
   source:
     remote:
       branch: master
@@ -149,7 +149,7 @@ items:
   name:
     CSharp: ReferencedAssemblySymbols
   qualifiedName:
-    CSharp: ReferencedAssemblySymbols
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.ReferencedAssemblySymbols
   type: Property
   source:
     remote:
@@ -181,7 +181,7 @@ items:
   name:
     CSharp: get_ReferencedAssemblySymbols
   qualifiedName:
-    CSharp: get_ReferencedAssemblySymbols
+    CSharp: Microsoft.CodeAnalysis.IModuleSymbol.get_ReferencedAssemblySymbols
   source:
     remote:
       branch: master

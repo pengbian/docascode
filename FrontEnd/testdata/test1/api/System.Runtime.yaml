@@ -4,7 +4,7 @@ href: api\System.Runtime
 name:
   CSharp: Runtime
 qualifiedName:
-  CSharp: Runtime
+  CSharp: System.Runtime
 type: Namespace
 source:
   remote:

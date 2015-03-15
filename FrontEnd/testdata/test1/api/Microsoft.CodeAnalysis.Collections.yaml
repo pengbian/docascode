@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Collections
 name:
   CSharp: Collections
 qualifiedName:
-  CSharp: Collections
+  CSharp: Microsoft.CodeAnalysis.Collections
 type: Namespace
 source:
   remote:

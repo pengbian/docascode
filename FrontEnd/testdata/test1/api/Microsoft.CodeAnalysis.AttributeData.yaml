@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.AttributeData
 name:
   CSharp: AttributeData
 qualifiedName:
-  CSharp: AttributeData
+  CSharp: Microsoft.CodeAnalysis.AttributeData
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: AttributeClass
   qualifiedName:
-    CSharp: AttributeClass
+    CSharp: Microsoft.CodeAnalysis.AttributeData.AttributeClass
   type: Property
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: get_AttributeClass
   qualifiedName:
-    CSharp: get_AttributeClass
+    CSharp: Microsoft.CodeAnalysis.AttributeData.get_AttributeClass
   source:
     remote:
       branch: master
@@ -71,7 +71,7 @@ items:
   name:
     CSharp: AttributeConstructor
   qualifiedName:
-    CSharp: AttributeConstructor
+    CSharp: Microsoft.CodeAnalysis.AttributeData.AttributeConstructor
   type: Property
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: get_AttributeConstructor
   qualifiedName:
-    CSharp: get_AttributeConstructor
+    CSharp: Microsoft.CodeAnalysis.AttributeData.get_AttributeConstructor
   source:
     remote:
       branch: master
@@ -114,7 +114,7 @@ items:
   name:
     CSharp: ApplicationSyntaxReference
   qualifiedName:
-    CSharp: ApplicationSyntaxReference
+    CSharp: Microsoft.CodeAnalysis.AttributeData.ApplicationSyntaxReference
   type: Property
   source:
     remote:
@@ -139,7 +139,7 @@ items:
   name:
     CSharp: get_ApplicationSyntaxReference
   qualifiedName:
-    CSharp: get_ApplicationSyntaxReference
+    CSharp: Microsoft.CodeAnalysis.AttributeData.get_ApplicationSyntaxReference
   source:
     remote:
       branch: master
@@ -154,7 +154,7 @@ items:
   name:
     CSharp: ConstructorArguments
   qualifiedName:
-    CSharp: ConstructorArguments
+    CSharp: Microsoft.CodeAnalysis.AttributeData.ConstructorArguments
   type: Property
   source:
     remote:
@@ -182,7 +182,7 @@ items:
   name:
     CSharp: get_ConstructorArguments
   qualifiedName:
-    CSharp: get_ConstructorArguments
+    CSharp: Microsoft.CodeAnalysis.AttributeData.get_ConstructorArguments
   source:
     remote:
       branch: master
@@ -197,7 +197,7 @@ items:
   name:
     CSharp: NamedArguments
   qualifiedName:
-    CSharp: NamedArguments
+    CSharp: Microsoft.CodeAnalysis.AttributeData.NamedArguments
   type: Property
   source:
     remote:
@@ -225,7 +225,7 @@ items:
   name:
     CSharp: get_NamedArguments
   qualifiedName:
-    CSharp: get_NamedArguments
+    CSharp: Microsoft.CodeAnalysis.AttributeData.get_NamedArguments
   source:
     remote:
       branch: master

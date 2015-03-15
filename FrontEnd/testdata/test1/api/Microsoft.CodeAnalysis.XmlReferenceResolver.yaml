@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
 name:
   CSharp: XmlReferenceResolver
 qualifiedName:
-  CSharp: XmlReferenceResolver
+  CSharp: Microsoft.CodeAnalysis.XmlReferenceResolver
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.XmlReferenceResolver.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -58,7 +58,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.XmlReferenceResolver.GetHashCode
   type: Method
   source:
     remote:
@@ -80,7 +80,7 @@ items:
   name:
     CSharp: ResolveReference
   qualifiedName:
-    CSharp: ResolveReference
+    CSharp: Microsoft.CodeAnalysis.XmlReferenceResolver.ResolveReference(System.String,System.String)
   type: Method
   source:
     remote:
@@ -118,7 +118,7 @@ items:
   name:
     CSharp: OpenRead
   qualifiedName:
-    CSharp: OpenRead
+    CSharp: Microsoft.CodeAnalysis.XmlReferenceResolver.OpenRead(System.String)
   type: Method
   source:
     remote:

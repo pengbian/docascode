@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle
 name:
   CSharp: SymbolDisplayGlobalNamespaceStyle
 qualifiedName:
-  CSharp: SymbolDisplayGlobalNamespaceStyle
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Omitted
   qualifiedName:
-    CSharp: Omitted
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle.Omitted
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: OmittedAsContaining
   qualifiedName:
-    CSharp: OmittedAsContaining
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle.OmittedAsContaining
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Included
   qualifiedName:
-    CSharp: Included
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle.Included
   type: Field
   source:
     remote:

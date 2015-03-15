@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolFilter
 name:
   CSharp: SymbolFilter
 qualifiedName:
-  CSharp: SymbolFilter
+  CSharp: Microsoft.CodeAnalysis.SymbolFilter
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolFilter.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Namespace
   qualifiedName:
-    CSharp: Namespace
+    CSharp: Microsoft.CodeAnalysis.SymbolFilter.Namespace
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.SymbolFilter.Type
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: Member
   qualifiedName:
-    CSharp: Member
+    CSharp: Microsoft.CodeAnalysis.SymbolFilter.Member
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: TypeAndMember
   qualifiedName:
-    CSharp: TypeAndMember
+    CSharp: Microsoft.CodeAnalysis.SymbolFilter.TypeAndMember
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: All
   qualifiedName:
-    CSharp: All
+    CSharp: Microsoft.CodeAnalysis.SymbolFilter.All
   type: Field
   source:
     remote:

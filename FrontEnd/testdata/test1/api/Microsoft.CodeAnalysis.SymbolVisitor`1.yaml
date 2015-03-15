@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolVisitor`1
 name:
   CSharp: SymbolVisitor`1
 qualifiedName:
-  CSharp: SymbolVisitor`1
+  CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: Visit
   qualifiedName:
-    CSharp: Visit
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.Visit(Microsoft.CodeAnalysis.ISymbol)
   type: Method
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: DefaultVisit
   qualifiedName:
-    CSharp: DefaultVisit
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.DefaultVisit(Microsoft.CodeAnalysis.ISymbol)
   type: Method
   source:
     remote:
@@ -82,7 +82,7 @@ items:
   name:
     CSharp: VisitAlias
   qualifiedName:
-    CSharp: VisitAlias
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol)
   type: Method
   source:
     remote:
@@ -109,7 +109,7 @@ items:
   name:
     CSharp: VisitArrayType
   qualifiedName:
-    CSharp: VisitArrayType
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol)
   type: Method
   source:
     remote:
@@ -136,7 +136,7 @@ items:
   name:
     CSharp: VisitAssembly
   qualifiedName:
-    CSharp: VisitAssembly
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol)
   type: Method
   source:
     remote:
@@ -163,7 +163,7 @@ items:
   name:
     CSharp: VisitDynamicType
   qualifiedName:
-    CSharp: VisitDynamicType
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol)
   type: Method
   source:
     remote:
@@ -190,7 +190,7 @@ items:
   name:
     CSharp: VisitEvent
   qualifiedName:
-    CSharp: VisitEvent
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitEvent(Microsoft.CodeAnalysis.IEventSymbol)
   type: Method
   source:
     remote:
@@ -217,7 +217,7 @@ items:
   name:
     CSharp: VisitField
   qualifiedName:
-    CSharp: VisitField
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitField(Microsoft.CodeAnalysis.IFieldSymbol)
   type: Method
   source:
     remote:
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: VisitLabel
   qualifiedName:
-    CSharp: VisitLabel
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol)
   type: Method
   source:
     remote:
@@ -271,7 +271,7 @@ items:
   name:
     CSharp: VisitLocal
   qualifiedName:
-    CSharp: VisitLocal
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol)
   type: Method
   source:
     remote:
@@ -298,7 +298,7 @@ items:
   name:
     CSharp: VisitMethod
   qualifiedName:
-    CSharp: VisitMethod
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol)
   type: Method
   source:
     remote:
@@ -325,7 +325,7 @@ items:
   name:
     CSharp: VisitModule
   qualifiedName:
-    CSharp: VisitModule
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitModule(Microsoft.CodeAnalysis.IModuleSymbol)
   type: Method
   source:
     remote:
@@ -352,7 +352,7 @@ items:
   name:
     CSharp: VisitNamedType
   qualifiedName:
-    CSharp: VisitNamedType
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol)
   type: Method
   source:
     remote:
@@ -379,7 +379,7 @@ items:
   name:
     CSharp: VisitNamespace
   qualifiedName:
-    CSharp: VisitNamespace
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol)
   type: Method
   source:
     remote:
@@ -406,7 +406,7 @@ items:
   name:
     CSharp: VisitParameter
   qualifiedName:
-    CSharp: VisitParameter
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol)
   type: Method
   source:
     remote:
@@ -433,7 +433,7 @@ items:
   name:
     CSharp: VisitPointerType
   qualifiedName:
-    CSharp: VisitPointerType
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol)
   type: Method
   source:
     remote:
@@ -460,7 +460,7 @@ items:
   name:
     CSharp: VisitProperty
   qualifiedName:
-    CSharp: VisitProperty
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol)
   type: Method
   source:
     remote:
@@ -487,7 +487,7 @@ items:
   name:
     CSharp: VisitRangeVariable
   qualifiedName:
-    CSharp: VisitRangeVariable
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol)
   type: Method
   source:
     remote:
@@ -514,7 +514,7 @@ items:
   name:
     CSharp: VisitTypeParameter
   qualifiedName:
-    CSharp: VisitTypeParameter
+    CSharp: Microsoft.CodeAnalysis.SymbolVisitor`1.VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol)
   type: Method
   source:
     remote:

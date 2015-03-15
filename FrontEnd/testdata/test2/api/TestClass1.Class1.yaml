@@ -4,15 +4,15 @@ href: api\TestClass1.Class1
 name:
   CSharp: Class1
 qualifiedName:
-  CSharp: Class1
+  CSharp: TestClass1.Class1
 type: Class
 source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode\
-    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
   startLine: 23
 summary: "This is a *Class1* in **TestClass1** [TestClass1.Partial1](#/api\\TestClass1.Partial1) \n\n"
 syntax:
@@ -32,15 +32,15 @@ items:
   name:
     CSharp: Test1
   qualifiedName:
-    CSharp: Test1
+    CSharp: TestClass1.Class1.Test1(System.Int32)
   type: Method
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 72
   summary: >+
     This is a *test* with no return
@@ -63,15 +63,15 @@ items:
   name:
     CSharp: Test1_3
   qualifiedName:
-    CSharp: Test1_3
+    CSharp: TestClass1.Class1.Test1_3(TestClass1.Base.BaseClassForTestClass1)
   type: Method
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 82
   summary: >+
     This is a *test* with return and [System.AccessViolationException](#) should fail compilation
@@ -93,15 +93,15 @@ items:
   name:
     CSharp: Test3
   qualifiedName:
-    CSharp: Test3
+    CSharp: TestClass1.Class1.Test3
   type: Method
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 91
   summary: >+
     This is an async *test*
@@ -119,15 +119,15 @@ items:
   name:
     CSharp: Test4
   qualifiedName:
-    CSharp: Test4
+    CSharp: TestClass1.Class1.Test4``1(``0,``0@)
   type: Method
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 101
   summary: >+
     This is a generic *test*

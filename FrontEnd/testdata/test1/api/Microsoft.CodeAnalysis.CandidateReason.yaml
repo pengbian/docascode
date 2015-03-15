@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.CandidateReason
 name:
   CSharp: CandidateReason
 qualifiedName:
-  CSharp: CandidateReason
+  CSharp: Microsoft.CodeAnalysis.CandidateReason
 type: Enum
 source:
   remote:
@@ -43,7 +43,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.None
   type: Field
   source:
     remote:
@@ -65,7 +65,7 @@ items:
   name:
     CSharp: NotATypeOrNamespace
   qualifiedName:
-    CSharp: NotATypeOrNamespace
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotATypeOrNamespace
   type: Field
   source:
     remote:
@@ -89,7 +89,7 @@ items:
   name:
     CSharp: NotAnEvent
   qualifiedName:
-    CSharp: NotAnEvent
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotAnEvent
   type: Field
   source:
     remote:
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: NotAWithEventsMember
   qualifiedName:
-    CSharp: NotAWithEventsMember
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotAWithEventsMember
   type: Field
   source:
     remote:
@@ -135,7 +135,7 @@ items:
   name:
     CSharp: NotAnAttributeType
   qualifiedName:
-    CSharp: NotAnAttributeType
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotAnAttributeType
   type: Field
   source:
     remote:
@@ -159,7 +159,7 @@ items:
   name:
     CSharp: WrongArity
   qualifiedName:
-    CSharp: WrongArity
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.WrongArity
   type: Field
   source:
     remote:
@@ -181,7 +181,7 @@ items:
   name:
     CSharp: NotCreatable
   qualifiedName:
-    CSharp: NotCreatable
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotCreatable
   type: Field
   source:
     remote:
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: NotReferencable
   qualifiedName:
-    CSharp: NotReferencable
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotReferencable
   type: Field
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: Inaccessible
   qualifiedName:
-    CSharp: Inaccessible
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.Inaccessible
   type: Field
   source:
     remote:
@@ -259,7 +259,7 @@ items:
   name:
     CSharp: NotAValue
   qualifiedName:
-    CSharp: NotAValue
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotAValue
   type: Field
   source:
     remote:
@@ -283,7 +283,7 @@ items:
   name:
     CSharp: NotAVariable
   qualifiedName:
-    CSharp: NotAVariable
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotAVariable
   type: Field
   source:
     remote:
@@ -309,7 +309,7 @@ items:
   name:
     CSharp: NotInvocable
   qualifiedName:
-    CSharp: NotInvocable
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.NotInvocable
   type: Field
   source:
     remote:
@@ -333,7 +333,7 @@ items:
   name:
     CSharp: StaticInstanceMismatch
   qualifiedName:
-    CSharp: StaticInstanceMismatch
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.StaticInstanceMismatch
   type: Field
   source:
     remote:
@@ -357,7 +357,7 @@ items:
   name:
     CSharp: OverloadResolutionFailure
   qualifiedName:
-    CSharp: OverloadResolutionFailure
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.OverloadResolutionFailure
   type: Field
   source:
     remote:
@@ -381,7 +381,7 @@ items:
   name:
     CSharp: LateBound
   qualifiedName:
-    CSharp: LateBound
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.LateBound
   type: Field
   source:
     remote:
@@ -407,7 +407,7 @@ items:
   name:
     CSharp: Ambiguous
   qualifiedName:
-    CSharp: Ambiguous
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.Ambiguous
   type: Field
   source:
     remote:
@@ -435,7 +435,7 @@ items:
   name:
     CSharp: MemberGroup
   qualifiedName:
-    CSharp: MemberGroup
+    CSharp: Microsoft.CodeAnalysis.CandidateReason.MemberGroup
   type: Field
   source:
     remote:

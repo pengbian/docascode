@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplay
 name:
   CSharp: SymbolDisplay
 qualifiedName:
-  CSharp: SymbolDisplay
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplay
 type: Namespace
 source:
   remote:

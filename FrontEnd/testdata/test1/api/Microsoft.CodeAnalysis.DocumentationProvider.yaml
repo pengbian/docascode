@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.DocumentationProvider
 name:
   CSharp: DocumentationProvider
 qualifiedName:
-  CSharp: DocumentationProvider
+  CSharp: Microsoft.CodeAnalysis.DocumentationProvider
 type: Class
 source:
   remote:
@@ -35,7 +35,7 @@ items:
   name:
     CSharp: Default
   qualifiedName:
-    CSharp: Default
+    CSharp: Microsoft.CodeAnalysis.DocumentationProvider.Default
   type: Field
   source:
     remote:
@@ -51,7 +51,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.DocumentationProvider.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -87,7 +87,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.DocumentationProvider.GetHashCode
   type: Method
   source:
     remote:

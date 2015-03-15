@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.InternalUtilities
 name:
   CSharp: InternalUtilities
 qualifiedName:
-  CSharp: InternalUtilities
+  CSharp: Microsoft.CodeAnalysis.InternalUtilities
 type: Namespace
 source:
   remote:

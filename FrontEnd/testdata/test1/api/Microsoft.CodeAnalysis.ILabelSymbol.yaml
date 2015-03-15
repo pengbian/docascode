@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ILabelSymbol
 name:
   CSharp: ILabelSymbol
 qualifiedName:
-  CSharp: ILabelSymbol
+  CSharp: Microsoft.CodeAnalysis.ILabelSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: ContainingMethod
   qualifiedName:
-    CSharp: ContainingMethod
+    CSharp: Microsoft.CodeAnalysis.ILabelSymbol.ContainingMethod
   type: Property
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: get_ContainingMethod
   qualifiedName:
-    CSharp: get_ContainingMethod
+    CSharp: Microsoft.CodeAnalysis.ILabelSymbol.get_ContainingMethod
   source:
     remote:
       branch: master

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.LocalizableResourceString
 name:
   CSharp: LocalizableResourceString
 qualifiedName:
-  CSharp: LocalizableResourceString
+  CSharp: Microsoft.CodeAnalysis.LocalizableResourceString
 type: Class
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
   href: api\Microsoft.CodeAnalysis.LocalizableResourceString
   name:
-    CSharp: .ctor
+    CSharp: LocalizableResourceString(System.String,System.Resources.ResourceManager,System.Type)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.LocalizableResourceString.LocalizableResourceString(System.String,System.Resources.ResourceManager,System.Type)
   type: Constructor
   source:
     remote:
@@ -73,9 +73,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.LocalizableResourceString.yaml
   href: api\Microsoft.CodeAnalysis.LocalizableResourceString
   name:
-    CSharp: .ctor
+    CSharp: LocalizableResourceString(System.String,System.Resources.ResourceManager,System.Type,System.String[])
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.LocalizableResourceString.LocalizableResourceString(System.String,System.Resources.ResourceManager,System.Type,System.String[])
   type: Constructor
   source:
     remote:
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.LocalizableResourceString.ToString(System.IFormatProvider)
   type: Method
   source:
     remote:

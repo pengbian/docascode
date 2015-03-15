@@ -4,7 +4,7 @@ href: api\Microsoft.Cci
 name:
   CSharp: Cci
 qualifiedName:
-  CSharp: Cci
+  CSharp: Microsoft.Cci
 type: Namespace
 source:
   remote:

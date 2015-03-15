@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.CompilationOptions
 name:
   CSharp: CompilationOptions
 qualifiedName:
-  CSharp: CompilationOptions
+  CSharp: Microsoft.CodeAnalysis.CompilationOptions
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: OutputKind
   qualifiedName:
-    CSharp: OutputKind
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.OutputKind
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_OutputKind
   qualifiedName:
-    CSharp: get_OutputKind
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_OutputKind
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: ModuleName
   qualifiedName:
-    CSharp: ModuleName
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.ModuleName
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_ModuleName
   qualifiedName:
-    CSharp: get_ModuleName
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_ModuleName
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: ScriptClassName
   qualifiedName:
-    CSharp: ScriptClassName
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.ScriptClassName
   type: Property
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: get_ScriptClassName
   qualifiedName:
-    CSharp: get_ScriptClassName
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_ScriptClassName
   source:
     remote:
       branch: master
@@ -162,7 +162,7 @@ items:
   name:
     CSharp: MainTypeName
   qualifiedName:
-    CSharp: MainTypeName
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.MainTypeName
   type: Property
   source:
     remote:
@@ -192,7 +192,7 @@ items:
   name:
     CSharp: get_MainTypeName
   qualifiedName:
-    CSharp: get_MainTypeName
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_MainTypeName
   source:
     remote:
       branch: master
@@ -207,7 +207,7 @@ items:
   name:
     CSharp: CryptoKeyFile
   qualifiedName:
-    CSharp: CryptoKeyFile
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile
   type: Property
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: get_CryptoKeyFile
   qualifiedName:
-    CSharp: get_CryptoKeyFile
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyFile
   source:
     remote:
       branch: master
@@ -250,7 +250,7 @@ items:
   name:
     CSharp: CryptoKeyContainer
   qualifiedName:
-    CSharp: CryptoKeyContainer
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer
   type: Property
   source:
     remote:
@@ -278,7 +278,7 @@ items:
   name:
     CSharp: get_CryptoKeyContainer
   qualifiedName:
-    CSharp: get_CryptoKeyContainer
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyContainer
   source:
     remote:
       branch: master
@@ -293,7 +293,7 @@ items:
   name:
     CSharp: DelaySign
   qualifiedName:
-    CSharp: DelaySign
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.DelaySign
   type: Property
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: get_DelaySign
   qualifiedName:
-    CSharp: get_DelaySign
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_DelaySign
   source:
     remote:
       branch: master
@@ -338,7 +338,7 @@ items:
   name:
     CSharp: CheckOverflow
   qualifiedName:
-    CSharp: CheckOverflow
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.CheckOverflow
   type: Property
   source:
     remote:
@@ -366,7 +366,7 @@ items:
   name:
     CSharp: get_CheckOverflow
   qualifiedName:
-    CSharp: get_CheckOverflow
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_CheckOverflow
   source:
     remote:
       branch: master
@@ -381,7 +381,7 @@ items:
   name:
     CSharp: Platform
   qualifiedName:
-    CSharp: Platform
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.Platform
   type: Property
   source:
     remote:
@@ -409,7 +409,7 @@ items:
   name:
     CSharp: get_Platform
   qualifiedName:
-    CSharp: get_Platform
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_Platform
   source:
     remote:
       branch: master
@@ -424,7 +424,7 @@ items:
   name:
     CSharp: OptimizationLevel
   qualifiedName:
-    CSharp: OptimizationLevel
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.OptimizationLevel
   type: Property
   source:
     remote:
@@ -454,7 +454,7 @@ items:
   name:
     CSharp: get_OptimizationLevel
   qualifiedName:
-    CSharp: get_OptimizationLevel
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_OptimizationLevel
   source:
     remote:
       branch: master
@@ -469,7 +469,7 @@ items:
   name:
     CSharp: GeneralDiagnosticOption
   qualifiedName:
-    CSharp: GeneralDiagnosticOption
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.GeneralDiagnosticOption
   type: Property
   source:
     remote:
@@ -497,7 +497,7 @@ items:
   name:
     CSharp: get_GeneralDiagnosticOption
   qualifiedName:
-    CSharp: get_GeneralDiagnosticOption
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_GeneralDiagnosticOption
   source:
     remote:
       branch: master
@@ -512,7 +512,7 @@ items:
   name:
     CSharp: WarningLevel
   qualifiedName:
-    CSharp: WarningLevel
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WarningLevel
   type: Property
   source:
     remote:
@@ -540,7 +540,7 @@ items:
   name:
     CSharp: get_WarningLevel
   qualifiedName:
-    CSharp: get_WarningLevel
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_WarningLevel
   source:
     remote:
       branch: master
@@ -555,7 +555,7 @@ items:
   name:
     CSharp: ConcurrentBuild
   qualifiedName:
-    CSharp: ConcurrentBuild
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.ConcurrentBuild
   type: Property
   source:
     remote:
@@ -583,7 +583,7 @@ items:
   name:
     CSharp: get_ConcurrentBuild
   qualifiedName:
-    CSharp: get_ConcurrentBuild
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_ConcurrentBuild
   source:
     remote:
       branch: master
@@ -598,7 +598,7 @@ items:
   name:
     CSharp: SpecificDiagnosticOptions
   qualifiedName:
-    CSharp: SpecificDiagnosticOptions
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.SpecificDiagnosticOptions
   type: Property
   source:
     remote:
@@ -626,7 +626,7 @@ items:
   name:
     CSharp: get_SpecificDiagnosticOptions
   qualifiedName:
-    CSharp: get_SpecificDiagnosticOptions
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_SpecificDiagnosticOptions
   source:
     remote:
       branch: master
@@ -641,7 +641,7 @@ items:
   name:
     CSharp: MetadataReferenceResolver
   qualifiedName:
-    CSharp: MetadataReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.MetadataReferenceResolver
   type: Property
   source:
     remote:
@@ -671,7 +671,7 @@ items:
   name:
     CSharp: get_MetadataReferenceResolver
   qualifiedName:
-    CSharp: get_MetadataReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_MetadataReferenceResolver
   source:
     remote:
       branch: master
@@ -686,7 +686,7 @@ items:
   name:
     CSharp: XmlReferenceResolver
   qualifiedName:
-    CSharp: XmlReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.XmlReferenceResolver
   type: Property
   source:
     remote:
@@ -716,7 +716,7 @@ items:
   name:
     CSharp: get_XmlReferenceResolver
   qualifiedName:
-    CSharp: get_XmlReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_XmlReferenceResolver
   source:
     remote:
       branch: master
@@ -731,7 +731,7 @@ items:
   name:
     CSharp: SourceReferenceResolver
   qualifiedName:
-    CSharp: SourceReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.SourceReferenceResolver
   type: Property
   source:
     remote:
@@ -761,7 +761,7 @@ items:
   name:
     CSharp: get_SourceReferenceResolver
   qualifiedName:
-    CSharp: get_SourceReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_SourceReferenceResolver
   source:
     remote:
       branch: master
@@ -776,7 +776,7 @@ items:
   name:
     CSharp: StrongNameProvider
   qualifiedName:
-    CSharp: StrongNameProvider
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.StrongNameProvider
   type: Property
   source:
     remote:
@@ -806,7 +806,7 @@ items:
   name:
     CSharp: get_StrongNameProvider
   qualifiedName:
-    CSharp: get_StrongNameProvider
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_StrongNameProvider
   source:
     remote:
       branch: master
@@ -821,7 +821,7 @@ items:
   name:
     CSharp: AssemblyIdentityComparer
   qualifiedName:
-    CSharp: AssemblyIdentityComparer
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.AssemblyIdentityComparer
   type: Property
   source:
     remote:
@@ -851,7 +851,7 @@ items:
   name:
     CSharp: get_AssemblyIdentityComparer
   qualifiedName:
-    CSharp: get_AssemblyIdentityComparer
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_AssemblyIdentityComparer
   source:
     remote:
       branch: master
@@ -866,7 +866,7 @@ items:
   name:
     CSharp: WithGeneralDiagnosticOption
   qualifiedName:
-    CSharp: WithGeneralDiagnosticOption
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithGeneralDiagnosticOption(Microsoft.CodeAnalysis.ReportDiagnostic)
   type: Method
   source:
     remote:
@@ -896,7 +896,7 @@ items:
   name:
     CSharp: WithSpecificDiagnosticOptions
   qualifiedName:
-    CSharp: WithSpecificDiagnosticOptions
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithSpecificDiagnosticOptions(System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic})
   type: Method
   source:
     remote:
@@ -926,7 +926,7 @@ items:
   name:
     CSharp: WithSpecificDiagnosticOptions
   qualifiedName:
-    CSharp: WithSpecificDiagnosticOptions
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithSpecificDiagnosticOptions(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}})
   type: Method
   source:
     remote:
@@ -956,7 +956,7 @@ items:
   name:
     CSharp: WithOutputKind
   qualifiedName:
-    CSharp: WithOutputKind
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithOutputKind(Microsoft.CodeAnalysis.OutputKind)
   type: Method
   source:
     remote:
@@ -986,7 +986,7 @@ items:
   name:
     CSharp: WithPlatform
   qualifiedName:
-    CSharp: WithPlatform
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithPlatform(Microsoft.CodeAnalysis.Platform)
   type: Method
   source:
     remote:
@@ -1016,7 +1016,7 @@ items:
   name:
     CSharp: WithOptimizationLevel
   qualifiedName:
-    CSharp: WithOptimizationLevel
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithOptimizationLevel(Microsoft.CodeAnalysis.OptimizationLevel)
   type: Method
   source:
     remote:
@@ -1046,7 +1046,7 @@ items:
   name:
     CSharp: WithXmlReferenceResolver
   qualifiedName:
-    CSharp: WithXmlReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithXmlReferenceResolver(Microsoft.CodeAnalysis.XmlReferenceResolver)
   type: Method
   source:
     remote:
@@ -1073,7 +1073,7 @@ items:
   name:
     CSharp: WithSourceReferenceResolver
   qualifiedName:
-    CSharp: WithSourceReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithSourceReferenceResolver(Microsoft.CodeAnalysis.SourceReferenceResolver)
   type: Method
   source:
     remote:
@@ -1100,7 +1100,7 @@ items:
   name:
     CSharp: WithMetadataReferenceResolver
   qualifiedName:
-    CSharp: WithMetadataReferenceResolver
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithMetadataReferenceResolver(Microsoft.CodeAnalysis.MetadataReferenceResolver)
   type: Method
   source:
     remote:
@@ -1127,7 +1127,7 @@ items:
   name:
     CSharp: WithAssemblyIdentityComparer
   qualifiedName:
-    CSharp: WithAssemblyIdentityComparer
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithAssemblyIdentityComparer(Microsoft.CodeAnalysis.AssemblyIdentityComparer)
   type: Method
   source:
     remote:
@@ -1154,7 +1154,7 @@ items:
   name:
     CSharp: WithStrongNameProvider
   qualifiedName:
-    CSharp: WithStrongNameProvider
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.WithStrongNameProvider(Microsoft.CodeAnalysis.StrongNameProvider)
   type: Method
   source:
     remote:
@@ -1181,7 +1181,7 @@ items:
   name:
     CSharp: Errors
   qualifiedName:
-    CSharp: Errors
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.Errors
   type: Property
   source:
     remote:
@@ -1209,7 +1209,7 @@ items:
   name:
     CSharp: get_Errors
   qualifiedName:
-    CSharp: get_Errors
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.get_Errors
   source:
     remote:
       branch: master
@@ -1224,7 +1224,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -1251,7 +1251,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.GetHashCode
   type: Method
   source:
     remote:
@@ -1273,7 +1273,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.op_Equality(Microsoft.CodeAnalysis.CompilationOptions,Microsoft.CodeAnalysis.CompilationOptions)
   source:
     remote:
       branch: master
@@ -1288,7 +1288,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.CompilationOptions.op_Inequality(Microsoft.CodeAnalysis.CompilationOptions,Microsoft.CodeAnalysis.CompilationOptions)
   source:
     remote:
       branch: master

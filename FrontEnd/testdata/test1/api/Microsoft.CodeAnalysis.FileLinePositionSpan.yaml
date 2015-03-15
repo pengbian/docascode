@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
 name:
   CSharp: FileLinePositionSpan
 qualifiedName:
-  CSharp: FileLinePositionSpan
+  CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan
 type: Struct
 source:
   remote:
@@ -36,7 +36,7 @@ items:
   name:
     CSharp: Path
   qualifiedName:
-    CSharp: Path
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.Path
   type: Property
   source:
     remote:
@@ -64,7 +64,7 @@ items:
   name:
     CSharp: get_Path
   qualifiedName:
-    CSharp: get_Path
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.get_Path
   source:
     remote:
       branch: master
@@ -79,7 +79,7 @@ items:
   name:
     CSharp: HasMappedPath
   qualifiedName:
-    CSharp: HasMappedPath
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.HasMappedPath
   type: Property
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: get_HasMappedPath
   qualifiedName:
-    CSharp: get_HasMappedPath
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.get_HasMappedPath
   source:
     remote:
       branch: master
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: StartLinePosition
   qualifiedName:
-    CSharp: StartLinePosition
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.StartLinePosition
   type: Property
   source:
     remote:
@@ -150,7 +150,7 @@ items:
   name:
     CSharp: get_StartLinePosition
   qualifiedName:
-    CSharp: get_StartLinePosition
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.get_StartLinePosition
   source:
     remote:
       branch: master
@@ -165,7 +165,7 @@ items:
   name:
     CSharp: EndLinePosition
   qualifiedName:
-    CSharp: EndLinePosition
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.EndLinePosition
   type: Property
   source:
     remote:
@@ -193,7 +193,7 @@ items:
   name:
     CSharp: get_EndLinePosition
   qualifiedName:
-    CSharp: get_EndLinePosition
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.get_EndLinePosition
   source:
     remote:
       branch: master
@@ -208,7 +208,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.Span
   type: Property
   source:
     remote:
@@ -236,7 +236,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.get_Span
   source:
     remote:
       branch: master
@@ -249,9 +249,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
   href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
   name:
-    CSharp: .ctor
+    CSharp: FileLinePositionSpan(System.String,Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.FileLinePositionSpan(System.String,Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   type: Constructor
   source:
     remote:
@@ -290,9 +290,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.FileLinePositionSpan.yaml
   href: api\Microsoft.CodeAnalysis.FileLinePositionSpan
   name:
-    CSharp: .ctor
+    CSharp: FileLinePositionSpan(System.String,Microsoft.CodeAnalysis.Text.LinePositionSpan)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.FileLinePositionSpan(System.String,Microsoft.CodeAnalysis.Text.LinePositionSpan)
   type: Constructor
   source:
     remote:
@@ -327,7 +327,7 @@ items:
   name:
     CSharp: IsValid
   qualifiedName:
-    CSharp: IsValid
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid
   type: Property
   source:
     remote:
@@ -355,7 +355,7 @@ items:
   name:
     CSharp: get_IsValid
   qualifiedName:
-    CSharp: get_IsValid
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.get_IsValid
   source:
     remote:
       branch: master
@@ -370,7 +370,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.Equals(Microsoft.CodeAnalysis.FileLinePositionSpan)
   type: Method
   source:
     remote:
@@ -400,7 +400,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -430,7 +430,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.GetHashCode
   type: Method
   source:
     remote:
@@ -456,7 +456,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.FileLinePositionSpan.ToString
   type: Method
   source:
     remote:

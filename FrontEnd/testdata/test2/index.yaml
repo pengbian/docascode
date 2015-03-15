@@ -118,23 +118,15 @@ TestClass2:
   Name: TestClass2
   YamlPath: api\TestClass2.yaml
   Href: api\TestClass2
-TestClass2.Class1:
-  Name: TestClass2.Class1
-  YamlPath: api\TestClass2.Class1.yaml
-  Href: api\TestClass2.Class1
-TestClass2.Class1.Test1:
-  Name: TestClass2.Class1.Test1
-  YamlPath: api\TestClass2.Class1.yaml
-  Href: api\TestClass2.Class1
-TestClass2.Class1.Test2:
-  Name: TestClass2.Class1.Test2
-  YamlPath: api\TestClass2.Class1.yaml
-  Href: api\TestClass2.Class1
-TestClass2.Class1.Test3:
-  Name: TestClass2.Class1.Test3
-  YamlPath: api\TestClass2.Class1.yaml
-  Href: api\TestClass2.Class1
-TestClass2.Class1.Test4``1:
-  Name: TestClass2.Class1.Test4``1
-  YamlPath: api\TestClass2.Class1.yaml
-  Href: api\TestClass2.Class1
+TestClass2.Class2:
+  Name: TestClass2.Class2
+  YamlPath: api\TestClass2.Class2.yaml
+  Href: api\TestClass2.Class2
+TestClass2.Class2.#ctor(System.Int32):
+  Name: TestClass2.Class2.#ctor(System.Int32)
+  YamlPath: api\TestClass2.Class2.yaml
+  Href: api\TestClass2.Class2
+TestClass2.Class2.#ctor(System.String):
+  Name: TestClass2.Class2.#ctor(System.String)
+  YamlPath: api\TestClass2.Class2.yaml
+  Href: api\TestClass2.Class2

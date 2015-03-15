@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IParameterSymbol
 name:
   CSharp: IParameterSymbol
 qualifiedName:
-  CSharp: IParameterSymbol
+  CSharp: Microsoft.CodeAnalysis.IParameterSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: RefKind
   qualifiedName:
-    CSharp: RefKind
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.RefKind
   type: Property
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: get_RefKind
   qualifiedName:
-    CSharp: get_RefKind
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_RefKind
   source:
     remote:
       branch: master
@@ -70,7 +70,7 @@ items:
   name:
     CSharp: IsParams
   qualifiedName:
-    CSharp: IsParams
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.IsParams
   type: Property
   source:
     remote:
@@ -98,7 +98,7 @@ items:
   name:
     CSharp: get_IsParams
   qualifiedName:
-    CSharp: get_IsParams
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_IsParams
   source:
     remote:
       branch: master
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: IsOptional
   qualifiedName:
-    CSharp: IsOptional
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.IsOptional
   type: Property
   source:
     remote:
@@ -141,7 +141,7 @@ items:
   name:
     CSharp: get_IsOptional
   qualifiedName:
-    CSharp: get_IsOptional
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_IsOptional
   source:
     remote:
       branch: master
@@ -156,7 +156,7 @@ items:
   name:
     CSharp: IsThis
   qualifiedName:
-    CSharp: IsThis
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.IsThis
   type: Property
   source:
     remote:
@@ -184,7 +184,7 @@ items:
   name:
     CSharp: get_IsThis
   qualifiedName:
-    CSharp: get_IsThis
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_IsThis
   source:
     remote:
       branch: master
@@ -199,7 +199,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.Type
   type: Property
   source:
     remote:
@@ -227,7 +227,7 @@ items:
   name:
     CSharp: get_Type
   qualifiedName:
-    CSharp: get_Type
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_Type
   source:
     remote:
       branch: master
@@ -242,7 +242,7 @@ items:
   name:
     CSharp: CustomModifiers
   qualifiedName:
-    CSharp: CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.CustomModifiers
   type: Property
   source:
     remote:
@@ -270,7 +270,7 @@ items:
   name:
     CSharp: get_CustomModifiers
   qualifiedName:
-    CSharp: get_CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_CustomModifiers
   source:
     remote:
       branch: master
@@ -285,7 +285,7 @@ items:
   name:
     CSharp: Ordinal
   qualifiedName:
-    CSharp: Ordinal
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.Ordinal
   type: Property
   source:
     remote:
@@ -315,7 +315,7 @@ items:
   name:
     CSharp: get_Ordinal
   qualifiedName:
-    CSharp: get_Ordinal
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_Ordinal
   source:
     remote:
       branch: master
@@ -330,7 +330,7 @@ items:
   name:
     CSharp: HasExplicitDefaultValue
   qualifiedName:
-    CSharp: HasExplicitDefaultValue
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.HasExplicitDefaultValue
   type: Property
   source:
     remote:
@@ -362,7 +362,7 @@ items:
   name:
     CSharp: get_HasExplicitDefaultValue
   qualifiedName:
-    CSharp: get_HasExplicitDefaultValue
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_HasExplicitDefaultValue
   source:
     remote:
       branch: master
@@ -377,7 +377,7 @@ items:
   name:
     CSharp: ExplicitDefaultValue
   qualifiedName:
-    CSharp: ExplicitDefaultValue
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.ExplicitDefaultValue
   type: Property
   source:
     remote:
@@ -405,7 +405,7 @@ items:
   name:
     CSharp: get_ExplicitDefaultValue
   qualifiedName:
-    CSharp: get_ExplicitDefaultValue
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_ExplicitDefaultValue
   source:
     remote:
       branch: master
@@ -420,7 +420,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -452,7 +452,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IParameterSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master

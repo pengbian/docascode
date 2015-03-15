@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ChildSyntaxList.Reversed
 name:
   CSharp: Reversed
 qualifiedName:
-  CSharp: Reversed
+  CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Reversed
 type: Struct
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Reversed.GetEnumerator
   type: Method
   source:
     remote:
@@ -53,7 +53,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Reversed.GetHashCode
   type: Method
   source:
     remote:
@@ -75,7 +75,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Reversed.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Reversed.Equals(Microsoft.CodeAnalysis.ChildSyntaxList.Reversed)
   type: Method
   source:
     remote:

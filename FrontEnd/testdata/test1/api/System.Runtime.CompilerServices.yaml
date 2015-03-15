@@ -4,7 +4,7 @@ href: api\System.Runtime.CompilerServices
 name:
   CSharp: CompilerServices
 qualifiedName:
-  CSharp: CompilerServices
+  CSharp: System.Runtime.CompilerServices
 type: Namespace
 source:
   remote:

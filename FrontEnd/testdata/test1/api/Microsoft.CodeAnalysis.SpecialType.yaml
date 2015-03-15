@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SpecialType
 name:
   CSharp: SpecialType
 qualifiedName:
-  CSharp: SpecialType
+  CSharp: Microsoft.CodeAnalysis.SpecialType
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SpecialType.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: System_Object
   qualifiedName:
-    CSharp: System_Object
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Object
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: System_Enum
   qualifiedName:
-    CSharp: System_Enum
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Enum
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: System_MulticastDelegate
   qualifiedName:
-    CSharp: System_MulticastDelegate
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_MulticastDelegate
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: System_Delegate
   qualifiedName:
-    CSharp: System_Delegate
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Delegate
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: System_ValueType
   qualifiedName:
-    CSharp: System_ValueType
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_ValueType
   type: Field
   source:
     remote:
@@ -169,7 +169,7 @@ items:
   name:
     CSharp: System_Void
   qualifiedName:
-    CSharp: System_Void
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Void
   type: Field
   source:
     remote:
@@ -191,7 +191,7 @@ items:
   name:
     CSharp: System_Boolean
   qualifiedName:
-    CSharp: System_Boolean
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Boolean
   type: Field
   source:
     remote:
@@ -213,7 +213,7 @@ items:
   name:
     CSharp: System_Char
   qualifiedName:
-    CSharp: System_Char
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Char
   type: Field
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: System_SByte
   qualifiedName:
-    CSharp: System_SByte
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_SByte
   type: Field
   source:
     remote:
@@ -257,7 +257,7 @@ items:
   name:
     CSharp: System_Byte
   qualifiedName:
-    CSharp: System_Byte
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Byte
   type: Field
   source:
     remote:
@@ -279,7 +279,7 @@ items:
   name:
     CSharp: System_Int16
   qualifiedName:
-    CSharp: System_Int16
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Int16
   type: Field
   source:
     remote:
@@ -301,7 +301,7 @@ items:
   name:
     CSharp: System_UInt16
   qualifiedName:
-    CSharp: System_UInt16
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_UInt16
   type: Field
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: System_Int32
   qualifiedName:
-    CSharp: System_Int32
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Int32
   type: Field
   source:
     remote:
@@ -345,7 +345,7 @@ items:
   name:
     CSharp: System_UInt32
   qualifiedName:
-    CSharp: System_UInt32
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_UInt32
   type: Field
   source:
     remote:
@@ -367,7 +367,7 @@ items:
   name:
     CSharp: System_Int64
   qualifiedName:
-    CSharp: System_Int64
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Int64
   type: Field
   source:
     remote:
@@ -389,7 +389,7 @@ items:
   name:
     CSharp: System_UInt64
   qualifiedName:
-    CSharp: System_UInt64
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_UInt64
   type: Field
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: System_Decimal
   qualifiedName:
-    CSharp: System_Decimal
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Decimal
   type: Field
   source:
     remote:
@@ -433,7 +433,7 @@ items:
   name:
     CSharp: System_Single
   qualifiedName:
-    CSharp: System_Single
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Single
   type: Field
   source:
     remote:
@@ -455,7 +455,7 @@ items:
   name:
     CSharp: System_Double
   qualifiedName:
-    CSharp: System_Double
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Double
   type: Field
   source:
     remote:
@@ -477,7 +477,7 @@ items:
   name:
     CSharp: System_String
   qualifiedName:
-    CSharp: System_String
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_String
   type: Field
   source:
     remote:
@@ -499,7 +499,7 @@ items:
   name:
     CSharp: System_IntPtr
   qualifiedName:
-    CSharp: System_IntPtr
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_IntPtr
   type: Field
   source:
     remote:
@@ -521,7 +521,7 @@ items:
   name:
     CSharp: System_UIntPtr
   qualifiedName:
-    CSharp: System_UIntPtr
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_UIntPtr
   type: Field
   source:
     remote:
@@ -543,7 +543,7 @@ items:
   name:
     CSharp: System_Array
   qualifiedName:
-    CSharp: System_Array
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Array
   type: Field
   source:
     remote:
@@ -565,7 +565,7 @@ items:
   name:
     CSharp: System_Collections_IEnumerable
   qualifiedName:
-    CSharp: System_Collections_IEnumerable
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_IEnumerable
   type: Field
   source:
     remote:
@@ -587,7 +587,7 @@ items:
   name:
     CSharp: System_Collections_Generic_IEnumerable_T
   qualifiedName:
-    CSharp: System_Collections_Generic_IEnumerable_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IEnumerable_T
   type: Field
   source:
     remote:
@@ -609,7 +609,7 @@ items:
   name:
     CSharp: System_Collections_Generic_IList_T
   qualifiedName:
-    CSharp: System_Collections_Generic_IList_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IList_T
   type: Field
   source:
     remote:
@@ -631,7 +631,7 @@ items:
   name:
     CSharp: System_Collections_Generic_ICollection_T
   qualifiedName:
-    CSharp: System_Collections_Generic_ICollection_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_ICollection_T
   type: Field
   source:
     remote:
@@ -653,7 +653,7 @@ items:
   name:
     CSharp: System_Collections_IEnumerator
   qualifiedName:
-    CSharp: System_Collections_IEnumerator
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_IEnumerator
   type: Field
   source:
     remote:
@@ -675,7 +675,7 @@ items:
   name:
     CSharp: System_Collections_Generic_IEnumerator_T
   qualifiedName:
-    CSharp: System_Collections_Generic_IEnumerator_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IEnumerator_T
   type: Field
   source:
     remote:
@@ -697,7 +697,7 @@ items:
   name:
     CSharp: System_Collections_Generic_IReadOnlyList_T
   qualifiedName:
-    CSharp: System_Collections_Generic_IReadOnlyList_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IReadOnlyList_T
   type: Field
   source:
     remote:
@@ -719,7 +719,7 @@ items:
   name:
     CSharp: System_Collections_Generic_IReadOnlyCollection_T
   qualifiedName:
-    CSharp: System_Collections_Generic_IReadOnlyCollection_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Collections_Generic_IReadOnlyCollection_T
   type: Field
   source:
     remote:
@@ -741,7 +741,7 @@ items:
   name:
     CSharp: System_Nullable_T
   qualifiedName:
-    CSharp: System_Nullable_T
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Nullable_T
   type: Field
   source:
     remote:
@@ -763,7 +763,7 @@ items:
   name:
     CSharp: System_DateTime
   qualifiedName:
-    CSharp: System_DateTime
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_DateTime
   type: Field
   source:
     remote:
@@ -785,7 +785,7 @@ items:
   name:
     CSharp: System_Runtime_CompilerServices_IsVolatile
   qualifiedName:
-    CSharp: System_Runtime_CompilerServices_IsVolatile
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_Runtime_CompilerServices_IsVolatile
   type: Field
   source:
     remote:
@@ -807,7 +807,7 @@ items:
   name:
     CSharp: System_IDisposable
   qualifiedName:
-    CSharp: System_IDisposable
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_IDisposable
   type: Field
   source:
     remote:
@@ -829,7 +829,7 @@ items:
   name:
     CSharp: System_TypedReference
   qualifiedName:
-    CSharp: System_TypedReference
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_TypedReference
   type: Field
   source:
     remote:
@@ -851,7 +851,7 @@ items:
   name:
     CSharp: System_ArgIterator
   qualifiedName:
-    CSharp: System_ArgIterator
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_ArgIterator
   type: Field
   source:
     remote:
@@ -873,7 +873,7 @@ items:
   name:
     CSharp: System_RuntimeArgumentHandle
   qualifiedName:
-    CSharp: System_RuntimeArgumentHandle
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_RuntimeArgumentHandle
   type: Field
   source:
     remote:
@@ -895,7 +895,7 @@ items:
   name:
     CSharp: System_RuntimeFieldHandle
   qualifiedName:
-    CSharp: System_RuntimeFieldHandle
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_RuntimeFieldHandle
   type: Field
   source:
     remote:
@@ -917,7 +917,7 @@ items:
   name:
     CSharp: System_RuntimeMethodHandle
   qualifiedName:
-    CSharp: System_RuntimeMethodHandle
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_RuntimeMethodHandle
   type: Field
   source:
     remote:
@@ -939,7 +939,7 @@ items:
   name:
     CSharp: System_RuntimeTypeHandle
   qualifiedName:
-    CSharp: System_RuntimeTypeHandle
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_RuntimeTypeHandle
   type: Field
   source:
     remote:
@@ -961,7 +961,7 @@ items:
   name:
     CSharp: System_IAsyncResult
   qualifiedName:
-    CSharp: System_IAsyncResult
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_IAsyncResult
   type: Field
   source:
     remote:
@@ -983,7 +983,7 @@ items:
   name:
     CSharp: System_AsyncCallback
   qualifiedName:
-    CSharp: System_AsyncCallback
+    CSharp: Microsoft.CodeAnalysis.SpecialType.System_AsyncCallback
   type: Field
   source:
     remote:
@@ -1005,7 +1005,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.SpecialType.Count
   type: Field
   source:
     remote:

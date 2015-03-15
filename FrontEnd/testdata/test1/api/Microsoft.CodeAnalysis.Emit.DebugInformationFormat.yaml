@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
 name:
   CSharp: DebugInformationFormat
 qualifiedName:
-  CSharp: DebugInformationFormat
+  CSharp: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
 type: Enum
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Pdb
   qualifiedName:
-    CSharp: Pdb
+    CSharp: Microsoft.CodeAnalysis.Emit.DebugInformationFormat.Pdb
   type: Field
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle
 name:
   CSharp: SymbolDisplayExtensionMethodStyle
 qualifiedName:
-  CSharp: SymbolDisplayExtensionMethodStyle
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Default
   qualifiedName:
-    CSharp: Default
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle.Default
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: InstanceMethod
   qualifiedName:
-    CSharp: InstanceMethod
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle.InstanceMethod
   type: Field
   source:
     remote:
@@ -83,7 +83,7 @@ items:
   name:
     CSharp: StaticMethod
   qualifiedName:
-    CSharp: StaticMethod
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle.StaticMethod
   type: Field
   source:
     remote:

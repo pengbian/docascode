@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxNode
 name:
   CSharp: SyntaxNode
 qualifiedName:
-  CSharp: SyntaxNode
+  CSharp: Microsoft.CodeAnalysis.SyntaxNode
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: RawKind
   qualifiedName:
-    CSharp: RawKind
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.RawKind
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_RawKind
   qualifiedName:
-    CSharp: get_RawKind
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_RawKind
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Language
   qualifiedName:
-    CSharp: Language
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.Language
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_Language
   qualifiedName:
-    CSharp: get_Language
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_Language
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: SyntaxTree
   qualifiedName:
-    CSharp: SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.SyntaxTree
   type: Property
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
-    CSharp: get_SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_SyntaxTree
   source:
     remote:
       branch: master
@@ -162,7 +162,7 @@ items:
   name:
     CSharp: FullSpan
   qualifiedName:
-    CSharp: FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.FullSpan
   type: Property
   source:
     remote:
@@ -190,7 +190,7 @@ items:
   name:
     CSharp: get_FullSpan
   qualifiedName:
-    CSharp: get_FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_FullSpan
   source:
     remote:
       branch: master
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.Span
   type: Property
   source:
     remote:
@@ -233,7 +233,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_Span
   source:
     remote:
       branch: master
@@ -248,7 +248,7 @@ items:
   name:
     CSharp: SpanStart
   qualifiedName:
-    CSharp: SpanStart
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.SpanStart
   type: Property
   source:
     remote:
@@ -276,7 +276,7 @@ items:
   name:
     CSharp: get_SpanStart
   qualifiedName:
-    CSharp: get_SpanStart
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_SpanStart
   source:
     remote:
       branch: master
@@ -291,7 +291,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ToString
   type: Method
   source:
     remote:
@@ -317,7 +317,7 @@ items:
   name:
     CSharp: ToFullString
   qualifiedName:
-    CSharp: ToFullString
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ToFullString
   type: Method
   source:
     remote:
@@ -343,7 +343,7 @@ items:
   name:
     CSharp: WriteTo
   qualifiedName:
-    CSharp: WriteTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.WriteTo(System.IO.TextWriter)
   type: Method
   source:
     remote:
@@ -373,7 +373,7 @@ items:
   name:
     CSharp: GetText
   qualifiedName:
-    CSharp: GetText
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetText(System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
   type: Method
   source:
     remote:
@@ -417,7 +417,7 @@ items:
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
-    CSharp: IsEquivalentTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -447,7 +447,7 @@ items:
   name:
     CSharp: IsMissing
   qualifiedName:
-    CSharp: IsMissing
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.IsMissing
   type: Property
   source:
     remote:
@@ -481,7 +481,7 @@ items:
   name:
     CSharp: get_IsMissing
   qualifiedName:
-    CSharp: get_IsMissing
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_IsMissing
   source:
     remote:
       branch: master
@@ -496,7 +496,7 @@ items:
   name:
     CSharp: IsPartOfStructuredTrivia
   qualifiedName:
-    CSharp: IsPartOfStructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.IsPartOfStructuredTrivia
   type: Method
   source:
     remote:
@@ -521,7 +521,7 @@ items:
   name:
     CSharp: IsStructuredTrivia
   qualifiedName:
-    CSharp: IsStructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.IsStructuredTrivia
   type: Property
   source:
     remote:
@@ -549,7 +549,7 @@ items:
   name:
     CSharp: get_IsStructuredTrivia
   qualifiedName:
-    CSharp: get_IsStructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_IsStructuredTrivia
   source:
     remote:
       branch: master
@@ -564,7 +564,7 @@ items:
   name:
     CSharp: HasStructuredTrivia
   qualifiedName:
-    CSharp: HasStructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.HasStructuredTrivia
   type: Property
   source:
     remote:
@@ -592,7 +592,7 @@ items:
   name:
     CSharp: get_HasStructuredTrivia
   qualifiedName:
-    CSharp: get_HasStructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_HasStructuredTrivia
   source:
     remote:
       branch: master
@@ -607,7 +607,7 @@ items:
   name:
     CSharp: ContainsSkippedText
   qualifiedName:
-    CSharp: ContainsSkippedText
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ContainsSkippedText
   type: Property
   source:
     remote:
@@ -635,7 +635,7 @@ items:
   name:
     CSharp: get_ContainsSkippedText
   qualifiedName:
-    CSharp: get_ContainsSkippedText
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsSkippedText
   source:
     remote:
       branch: master
@@ -650,7 +650,7 @@ items:
   name:
     CSharp: ContainsDirectives
   qualifiedName:
-    CSharp: ContainsDirectives
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ContainsDirectives
   type: Property
   source:
     remote:
@@ -678,7 +678,7 @@ items:
   name:
     CSharp: get_ContainsDirectives
   qualifiedName:
-    CSharp: get_ContainsDirectives
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDirectives
   source:
     remote:
       branch: master
@@ -693,7 +693,7 @@ items:
   name:
     CSharp: ContainsDiagnostics
   qualifiedName:
-    CSharp: ContainsDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ContainsDiagnostics
   type: Property
   source:
     remote:
@@ -721,7 +721,7 @@ items:
   name:
     CSharp: get_ContainsDiagnostics
   qualifiedName:
-    CSharp: get_ContainsDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDiagnostics
   source:
     remote:
       branch: master
@@ -736,7 +736,7 @@ items:
   name:
     CSharp: Contains
   qualifiedName:
-    CSharp: Contains
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.Contains(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -766,7 +766,7 @@ items:
   name:
     CSharp: HasLeadingTrivia
   qualifiedName:
-    CSharp: HasLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.HasLeadingTrivia
   type: Property
   source:
     remote:
@@ -794,7 +794,7 @@ items:
   name:
     CSharp: get_HasLeadingTrivia
   qualifiedName:
-    CSharp: get_HasLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_HasLeadingTrivia
   source:
     remote:
       branch: master
@@ -809,7 +809,7 @@ items:
   name:
     CSharp: HasTrailingTrivia
   qualifiedName:
-    CSharp: HasTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.HasTrailingTrivia
   type: Property
   source:
     remote:
@@ -837,7 +837,7 @@ items:
   name:
     CSharp: get_HasTrailingTrivia
   qualifiedName:
-    CSharp: get_HasTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_HasTrailingTrivia
   source:
     remote:
       branch: master
@@ -852,7 +852,7 @@ items:
   name:
     CSharp: GetLocation
   qualifiedName:
-    CSharp: GetLocation
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetLocation
   type: Method
   source:
     remote:
@@ -874,7 +874,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetDiagnostics
   type: Method
   source:
     remote:
@@ -903,7 +903,7 @@ items:
   name:
     CSharp: GetReference
   qualifiedName:
-    CSharp: GetReference
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetReference
   type: Method
   source:
     remote:
@@ -932,7 +932,7 @@ items:
   name:
     CSharp: Parent
   qualifiedName:
-    CSharp: Parent
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.Parent
   type: Property
   source:
     remote:
@@ -960,7 +960,7 @@ items:
   name:
     CSharp: get_Parent
   qualifiedName:
-    CSharp: get_Parent
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_Parent
   source:
     remote:
       branch: master
@@ -975,7 +975,7 @@ items:
   name:
     CSharp: ParentTrivia
   qualifiedName:
-    CSharp: ParentTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ParentTrivia
   type: Property
   source:
     remote:
@@ -1000,7 +1000,7 @@ items:
   name:
     CSharp: get_ParentTrivia
   qualifiedName:
-    CSharp: get_ParentTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_ParentTrivia
   source:
     remote:
       branch: master
@@ -1015,7 +1015,7 @@ items:
   name:
     CSharp: ChildNodesAndTokens
   qualifiedName:
-    CSharp: ChildNodesAndTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ChildNodesAndTokens
   type: Method
   source:
     remote:
@@ -1040,7 +1040,7 @@ items:
   name:
     CSharp: ChildThatContainsPosition
   qualifiedName:
-    CSharp: ChildThatContainsPosition
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ChildThatContainsPosition(System.Int32)
   type: Method
   source:
     remote:
@@ -1067,7 +1067,7 @@ items:
   name:
     CSharp: ChildNodes
   qualifiedName:
-    CSharp: ChildNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ChildNodes
   type: Method
   source:
     remote:
@@ -1092,7 +1092,7 @@ items:
   name:
     CSharp: Ancestors
   qualifiedName:
-    CSharp: Ancestors
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.Ancestors(System.Boolean)
   type: Method
   source:
     remote:
@@ -1122,7 +1122,7 @@ items:
   name:
     CSharp: AncestorsAndSelf
   qualifiedName:
-    CSharp: AncestorsAndSelf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.AncestorsAndSelf(System.Boolean)
   type: Method
   source:
     remote:
@@ -1152,7 +1152,7 @@ items:
   name:
     CSharp: FirstAncestorOrSelf
   qualifiedName:
-    CSharp: FirstAncestorOrSelf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.FirstAncestorOrSelf``1(System.Func{``0,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1187,7 +1187,7 @@ items:
   name:
     CSharp: DescendantNodes
   qualifiedName:
-    CSharp: DescendantNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1224,7 +1224,7 @@ items:
   name:
     CSharp: DescendantNodes
   qualifiedName:
-    CSharp: DescendantNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1267,7 +1267,7 @@ items:
   name:
     CSharp: DescendantNodesAndSelf
   qualifiedName:
-    CSharp: DescendantNodesAndSelf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndSelf(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1304,7 +1304,7 @@ items:
   name:
     CSharp: DescendantNodesAndSelf
   qualifiedName:
-    CSharp: DescendantNodesAndSelf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndSelf(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1347,7 +1347,7 @@ items:
   name:
     CSharp: DescendantNodesAndTokens
   qualifiedName:
-    CSharp: DescendantNodesAndTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokens(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1384,7 +1384,7 @@ items:
   name:
     CSharp: DescendantNodesAndTokens
   qualifiedName:
-    CSharp: DescendantNodesAndTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokens(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1427,7 +1427,7 @@ items:
   name:
     CSharp: DescendantNodesAndTokensAndSelf
   qualifiedName:
-    CSharp: DescendantNodesAndTokensAndSelf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokensAndSelf(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1464,7 +1464,7 @@ items:
   name:
     CSharp: DescendantNodesAndTokensAndSelf
   qualifiedName:
-    CSharp: DescendantNodesAndTokensAndSelf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokensAndSelf(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1507,7 +1507,7 @@ items:
   name:
     CSharp: FindNode
   qualifiedName:
-    CSharp: FindNode
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.FindNode(Microsoft.CodeAnalysis.Text.TextSpan,System.Boolean,System.Boolean)
   type: Method
   source:
     remote:
@@ -1553,7 +1553,7 @@ items:
   name:
     CSharp: FindToken
   qualifiedName:
-    CSharp: FindToken
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.FindToken(System.Int32,System.Boolean)
   type: Method
   source:
     remote:
@@ -1593,7 +1593,7 @@ items:
   name:
     CSharp: GetFirstToken
   qualifiedName:
-    CSharp: GetFirstToken
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetFirstToken(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
   type: Method
   source:
     remote:
@@ -1639,7 +1639,7 @@ items:
   name:
     CSharp: GetLastToken
   qualifiedName:
-    CSharp: GetLastToken
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetLastToken(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
   type: Method
   source:
     remote:
@@ -1685,7 +1685,7 @@ items:
   name:
     CSharp: ChildTokens
   qualifiedName:
-    CSharp: ChildTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ChildTokens
   type: Method
   source:
     remote:
@@ -1710,7 +1710,7 @@ items:
   name:
     CSharp: DescendantTokens
   qualifiedName:
-    CSharp: DescendantTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1745,7 +1745,7 @@ items:
   name:
     CSharp: DescendantTokens
   qualifiedName:
-    CSharp: DescendantTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1785,7 +1785,7 @@ items:
   name:
     CSharp: GetLeadingTrivia
   qualifiedName:
-    CSharp: GetLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetLeadingTrivia
   type: Method
   source:
     remote:
@@ -1812,7 +1812,7 @@ items:
   name:
     CSharp: GetTrailingTrivia
   qualifiedName:
-    CSharp: GetTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetTrailingTrivia
   type: Method
   source:
     remote:
@@ -1839,7 +1839,7 @@ items:
   name:
     CSharp: FindTrivia
   qualifiedName:
-    CSharp: FindTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.FindTrivia(System.Int32,System.Boolean)
   type: Method
   source:
     remote:
@@ -1879,7 +1879,7 @@ items:
   name:
     CSharp: DescendantTrivia
   qualifiedName:
-    CSharp: DescendantTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1914,7 +1914,7 @@ items:
   name:
     CSharp: DescendantTrivia
   qualifiedName:
-    CSharp: DescendantTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
   type: Method
   source:
     remote:
@@ -1954,7 +1954,7 @@ items:
   name:
     CSharp: ContainsAnnotations
   qualifiedName:
-    CSharp: ContainsAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.ContainsAnnotations
   type: Property
   source:
     remote:
@@ -1982,7 +1982,7 @@ items:
   name:
     CSharp: get_ContainsAnnotations
   qualifiedName:
-    CSharp: get_ContainsAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsAnnotations
   source:
     remote:
       branch: master
@@ -1997,7 +1997,7 @@ items:
   name:
     CSharp: HasAnnotations
   qualifiedName:
-    CSharp: HasAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.HasAnnotations(System.String)
   type: Method
   source:
     remote:
@@ -2027,7 +2027,7 @@ items:
   name:
     CSharp: HasAnnotations
   qualifiedName:
-    CSharp: HasAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.HasAnnotations(System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
     remote:
@@ -2057,7 +2057,7 @@ items:
   name:
     CSharp: HasAnnotation
   qualifiedName:
-    CSharp: HasAnnotation
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.HasAnnotation(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -2087,7 +2087,7 @@ items:
   name:
     CSharp: GetAnnotations
   qualifiedName:
-    CSharp: GetAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotations(System.String)
   type: Method
   source:
     remote:
@@ -2117,7 +2117,7 @@ items:
   name:
     CSharp: GetAnnotations
   qualifiedName:
-    CSharp: GetAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotations(System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
     remote:
@@ -2147,7 +2147,7 @@ items:
   name:
     CSharp: GetAnnotatedNodesAndTokens
   qualifiedName:
-    CSharp: GetAnnotatedNodesAndTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodesAndTokens(System.String)
   type: Method
   source:
     remote:
@@ -2177,7 +2177,7 @@ items:
   name:
     CSharp: GetAnnotatedNodesAndTokens
   qualifiedName:
-    CSharp: GetAnnotatedNodesAndTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodesAndTokens(System.String[])
   type: Method
   source:
     remote:
@@ -2207,7 +2207,7 @@ items:
   name:
     CSharp: GetAnnotatedNodesAndTokens
   qualifiedName:
-    CSharp: GetAnnotatedNodesAndTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodesAndTokens(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -2237,7 +2237,7 @@ items:
   name:
     CSharp: GetAnnotatedNodes
   qualifiedName:
-    CSharp: GetAnnotatedNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodes(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -2267,7 +2267,7 @@ items:
   name:
     CSharp: GetAnnotatedNodes
   qualifiedName:
-    CSharp: GetAnnotatedNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodes(System.String)
   type: Method
   source:
     remote:
@@ -2297,7 +2297,7 @@ items:
   name:
     CSharp: GetAnnotatedTokens
   qualifiedName:
-    CSharp: GetAnnotatedTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTokens(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -2327,7 +2327,7 @@ items:
   name:
     CSharp: GetAnnotatedTokens
   qualifiedName:
-    CSharp: GetAnnotatedTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTokens(System.String)
   type: Method
   source:
     remote:
@@ -2357,7 +2357,7 @@ items:
   name:
     CSharp: GetAnnotatedTrivia
   qualifiedName:
-    CSharp: GetAnnotatedTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTrivia(System.String)
   type: Method
   source:
     remote:
@@ -2387,7 +2387,7 @@ items:
   name:
     CSharp: GetAnnotatedTrivia
   qualifiedName:
-    CSharp: GetAnnotatedTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTrivia(System.String[])
   type: Method
   source:
     remote:
@@ -2417,7 +2417,7 @@ items:
   name:
     CSharp: GetAnnotatedTrivia
   qualifiedName:
-    CSharp: GetAnnotatedTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTrivia(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -2447,7 +2447,7 @@ items:
   name:
     CSharp: CopyAnnotationsTo
   qualifiedName:
-    CSharp: CopyAnnotationsTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.CopyAnnotationsTo``1(``0)
   type: Method
   source:
     remote:
@@ -2477,7 +2477,7 @@ items:
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
-    CSharp: IsEquivalentTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
   type: Method
   source:
     remote:
@@ -2521,7 +2521,7 @@ items:
   name:
     CSharp: SerializeTo
   qualifiedName:
-    CSharp: SerializeTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxNode.SerializeTo(System.IO.Stream,System.Threading.CancellationToken)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolKind
 name:
   CSharp: SymbolKind
 qualifiedName:
-  CSharp: SymbolKind
+  CSharp: Microsoft.CodeAnalysis.SymbolKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Alias
   qualifiedName:
-    CSharp: Alias
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Alias
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: ArrayType
   qualifiedName:
-    CSharp: ArrayType
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.ArrayType
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Assembly
   qualifiedName:
-    CSharp: Assembly
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Assembly
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: DynamicType
   qualifiedName:
-    CSharp: DynamicType
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.DynamicType
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: ErrorType
   qualifiedName:
-    CSharp: ErrorType
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.ErrorType
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: Event
   qualifiedName:
-    CSharp: Event
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Event
   type: Field
   source:
     remote:
@@ -169,7 +169,7 @@ items:
   name:
     CSharp: Field
   qualifiedName:
-    CSharp: Field
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Field
   type: Field
   source:
     remote:
@@ -191,7 +191,7 @@ items:
   name:
     CSharp: Label
   qualifiedName:
-    CSharp: Label
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Label
   type: Field
   source:
     remote:
@@ -213,7 +213,7 @@ items:
   name:
     CSharp: Local
   qualifiedName:
-    CSharp: Local
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Local
   type: Field
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: Method
   qualifiedName:
-    CSharp: Method
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Method
   type: Field
   source:
     remote:
@@ -257,7 +257,7 @@ items:
   name:
     CSharp: NetModule
   qualifiedName:
-    CSharp: NetModule
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.NetModule
   type: Field
   source:
     remote:
@@ -279,7 +279,7 @@ items:
   name:
     CSharp: NamedType
   qualifiedName:
-    CSharp: NamedType
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.NamedType
   type: Field
   source:
     remote:
@@ -301,7 +301,7 @@ items:
   name:
     CSharp: Namespace
   qualifiedName:
-    CSharp: Namespace
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Namespace
   type: Field
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: Parameter
   qualifiedName:
-    CSharp: Parameter
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Parameter
   type: Field
   source:
     remote:
@@ -345,7 +345,7 @@ items:
   name:
     CSharp: PointerType
   qualifiedName:
-    CSharp: PointerType
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.PointerType
   type: Field
   source:
     remote:
@@ -367,7 +367,7 @@ items:
   name:
     CSharp: Property
   qualifiedName:
-    CSharp: Property
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Property
   type: Field
   source:
     remote:
@@ -389,7 +389,7 @@ items:
   name:
     CSharp: RangeVariable
   qualifiedName:
-    CSharp: RangeVariable
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.RangeVariable
   type: Field
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: TypeParameter
   qualifiedName:
-    CSharp: TypeParameter
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.TypeParameter
   type: Field
   source:
     remote:
@@ -433,7 +433,7 @@ items:
   name:
     CSharp: Preprocessing
   qualifiedName:
-    CSharp: Preprocessing
+    CSharp: Microsoft.CodeAnalysis.SymbolKind.Preprocessing
   type: Field
   source:
     remote:

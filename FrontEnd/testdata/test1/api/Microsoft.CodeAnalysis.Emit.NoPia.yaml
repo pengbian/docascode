@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.NoPia
 name:
   CSharp: NoPia
 qualifiedName:
-  CSharp: NoPia
+  CSharp: Microsoft.CodeAnalysis.Emit.NoPia
 type: Namespace
 source:
   remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
 name:
   CSharp: Enumerator
 qualifiedName:
-  CSharp: Enumerator
+  CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
 type: Struct
 source:
   remote:
@@ -29,9 +29,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
   name:
-    CSharp: .ctor
+    CSharp: Enumerator(Microsoft.CodeAnalysis.SyntaxTriviaList@)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.Enumerator(Microsoft.CodeAnalysis.SyntaxTriviaList@)
   type: Constructor
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: MoveNext
   qualifiedName:
-    CSharp: MoveNext
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.MoveNext
   type: Method
   source:
     remote:
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: Current
   qualifiedName:
-    CSharp: Current
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.Current
   type: Property
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: get_Current
   qualifiedName:
-    CSharp: get_Current
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.get_Current
   source:
     remote:
       branch: master

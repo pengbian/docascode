@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor
 name:
   CSharp: TriggerDiagnosticDescriptor
 qualifiedName:
-  CSharp: TriggerDiagnosticDescriptor
+  CSharp: Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor
 type: Class
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor.yaml
   href: api\Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor
   name:
-    CSharp: .ctor
+    CSharp: TriggerDiagnosticDescriptor(System.String,System.String[])
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.TriggerDiagnosticDescriptor.TriggerDiagnosticDescriptor(System.String,System.String[])
   type: Constructor
   source:
     remote:

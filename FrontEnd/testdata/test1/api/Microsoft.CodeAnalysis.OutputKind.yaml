@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.OutputKind
 name:
   CSharp: OutputKind
 qualifiedName:
-  CSharp: OutputKind
+  CSharp: Microsoft.CodeAnalysis.OutputKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: ConsoleApplication
   qualifiedName:
-    CSharp: ConsoleApplication
+    CSharp: Microsoft.CodeAnalysis.OutputKind.ConsoleApplication
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: WindowsApplication
   qualifiedName:
-    CSharp: WindowsApplication
+    CSharp: Microsoft.CodeAnalysis.OutputKind.WindowsApplication
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: DynamicallyLinkedLibrary
   qualifiedName:
-    CSharp: DynamicallyLinkedLibrary
+    CSharp: Microsoft.CodeAnalysis.OutputKind.DynamicallyLinkedLibrary
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: NetModule
   qualifiedName:
-    CSharp: NetModule
+    CSharp: Microsoft.CodeAnalysis.OutputKind.NetModule
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: WindowsRuntimeMetadata
   qualifiedName:
-    CSharp: WindowsRuntimeMetadata
+    CSharp: Microsoft.CodeAnalysis.OutputKind.WindowsRuntimeMetadata
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: WindowsRuntimeApplication
   qualifiedName:
-    CSharp: WindowsRuntimeApplication
+    CSharp: Microsoft.CodeAnalysis.OutputKind.WindowsRuntimeApplication
   type: Field
   source:
     remote:

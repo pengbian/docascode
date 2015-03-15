@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle
 name:
   CSharp: SymbolDisplayDelegateStyle
 qualifiedName:
-  CSharp: SymbolDisplayDelegateStyle
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: NameOnly
   qualifiedName:
-    CSharp: NameOnly
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.NameOnly
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: NameAndParameters
   qualifiedName:
-    CSharp: NameAndParameters
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.NameAndParameters
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: NameAndSignature
   qualifiedName:
-    CSharp: NameAndSignature
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.NameAndSignature
   type: Field
   source:
     remote:

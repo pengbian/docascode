@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ILocalSymbol
 name:
   CSharp: ILocalSymbol
 qualifiedName:
-  CSharp: ILocalSymbol
+  CSharp: Microsoft.CodeAnalysis.ILocalSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.Type
   type: Property
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: get_Type
   qualifiedName:
-    CSharp: get_Type
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.get_Type
   source:
     remote:
       branch: master
@@ -70,7 +70,7 @@ items:
   name:
     CSharp: IsConst
   qualifiedName:
-    CSharp: IsConst
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.IsConst
   type: Property
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: get_IsConst
   qualifiedName:
-    CSharp: get_IsConst
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.get_IsConst
   source:
     remote:
       branch: master
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: HasConstantValue
   qualifiedName:
-    CSharp: HasConstantValue
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.HasConstantValue
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_HasConstantValue
   qualifiedName:
-    CSharp: get_HasConstantValue
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.get_HasConstantValue
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: ConstantValue
   qualifiedName:
-    CSharp: ConstantValue
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.ConstantValue
   type: Property
   source:
     remote:
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: get_ConstantValue
   qualifiedName:
-    CSharp: get_ConstantValue
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.get_ConstantValue
   source:
     remote:
       branch: master
@@ -203,7 +203,7 @@ items:
   name:
     CSharp: IsFunctionValue
   qualifiedName:
-    CSharp: IsFunctionValue
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.IsFunctionValue
   type: Property
   source:
     remote:
@@ -228,7 +228,7 @@ items:
   name:
     CSharp: get_IsFunctionValue
   qualifiedName:
-    CSharp: get_IsFunctionValue
+    CSharp: Microsoft.CodeAnalysis.ILocalSymbol.get_IsFunctionValue
   source:
     remote:
       branch: master

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
 name:
   CSharp: SymbolAnalysisContext
 qualifiedName:
-  CSharp: SymbolAnalysisContext
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
 type: Struct
 source:
   remote:
@@ -36,7 +36,7 @@ items:
   name:
     CSharp: Symbol
   qualifiedName:
-    CSharp: Symbol
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Symbol
   type: Property
   source:
     remote:
@@ -64,7 +64,7 @@ items:
   name:
     CSharp: get_Symbol
   qualifiedName:
-    CSharp: get_Symbol
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Symbol
   source:
     remote:
       branch: master
@@ -79,7 +79,7 @@ items:
   name:
     CSharp: Compilation
   qualifiedName:
-    CSharp: Compilation
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Compilation
   type: Property
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: get_Compilation
   qualifiedName:
-    CSharp: get_Compilation
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Compilation
   source:
     remote:
       branch: master
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.Options
   type: Property
   source:
     remote:
@@ -150,7 +150,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_Options
   source:
     remote:
       branch: master
@@ -165,7 +165,7 @@ items:
   name:
     CSharp: CancellationToken
   qualifiedName:
-    CSharp: CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.CancellationToken
   type: Property
   source:
     remote:
@@ -193,7 +193,7 @@ items:
   name:
     CSharp: get_CancellationToken
   qualifiedName:
-    CSharp: get_CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.get_CancellationToken
   source:
     remote:
       branch: master
@@ -206,9 +206,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
   name:
-    CSharp: .ctor
+    CSharp: SymbolAnalysisContext(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.SymbolAnalysisContext(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   type: Constructor
   source:
     remote:
@@ -253,7 +253,7 @@ items:
   name:
     CSharp: ReportDiagnostic
   qualifiedName:
-    CSharp: ReportDiagnostic
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
   type: Method
   source:
     remote:

@@ -89,9 +89,9 @@ items:
     CSharp: TestClass2
   type: Namespace
   items:
-  - id: TestClass2.Class1
-    yaml: api\TestClass2.Class1.yaml
-    href: api\TestClass2.Class1
+  - id: TestClass2.Class2
+    yaml: api\TestClass2.Class2.yaml
+    href: api\TestClass2.Class2
     name:
-      CSharp: Class1
+      CSharp: Class2
     type: Class

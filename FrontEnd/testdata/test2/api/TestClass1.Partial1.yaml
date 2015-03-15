@@ -4,15 +4,15 @@ href: api\TestClass1.Partial1
 name:
   CSharp: Partial1
 qualifiedName:
-  CSharp: Partial1
+  CSharp: TestClass1.Partial1
 type: Class
 source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode\
-    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
   startLine: 12
 summary: >+
   Parital classes can not cross assemblies, ```Classes in assemblies are by definition complete.```
@@ -31,15 +31,15 @@ items:
   name:
     CSharp: Property2
   qualifiedName:
-    CSharp: Property2
+    CSharp: TestClass1.Partial1.Property2
   type: Property
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 17
   summary: >+
     This is the property from *partial* class
@@ -59,14 +59,14 @@ items:
   name:
     CSharp: get_Property2
   qualifiedName:
-    CSharp: get_Property2
+    CSharp: TestClass1.Partial1.get_Property2
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 17
 - id: TestClass1.Partial1.set_Property2(System.String)
   yaml: api\TestClass1.Partial1.yaml
@@ -74,12 +74,12 @@ items:
   name:
     CSharp: set_Property2
   qualifiedName:
-    CSharp: set_Property2
+    CSharp: TestClass1.Partial1.set_Property2(System.String)
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
     startLine: 17

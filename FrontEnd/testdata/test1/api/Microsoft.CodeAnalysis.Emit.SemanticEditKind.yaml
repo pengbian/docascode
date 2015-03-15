@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.SemanticEditKind
 name:
   CSharp: SemanticEditKind
 qualifiedName:
-  CSharp: SemanticEditKind
+  CSharp: Microsoft.CodeAnalysis.Emit.SemanticEditKind
 type: Enum
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEditKind.None
   type: Field
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: Update
   qualifiedName:
-    CSharp: Update
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Update
   type: Field
   source:
     remote:
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: Insert
   qualifiedName:
-    CSharp: Insert
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Insert
   type: Field
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: Delete
   qualifiedName:
-    CSharp: Delete
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEditKind.Delete
   type: Field
   source:
     remote:

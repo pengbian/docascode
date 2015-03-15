@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.TextLineCollection
 name:
   CSharp: TextLineCollection
 qualifiedName:
-  CSharp: TextLineCollection
+  CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.Count
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Count
   qualifiedName:
-    CSharp: get_Count
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.get_Count
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -93,7 +93,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -108,7 +108,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf(System.Int32)
   type: Method
   source:
     remote:
@@ -138,7 +138,7 @@ items:
   name:
     CSharp: GetLineFromPosition
   qualifiedName:
-    CSharp: GetLineFromPosition
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition(System.Int32)
   type: Method
   source:
     remote:
@@ -168,7 +168,7 @@ items:
   name:
     CSharp: GetLinePosition
   qualifiedName:
-    CSharp: GetLinePosition
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition(System.Int32)
   type: Method
   source:
     remote:
@@ -198,7 +198,7 @@ items:
   name:
     CSharp: GetLinePositionSpan
   qualifiedName:
-    CSharp: GetLinePositionSpan
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -228,7 +228,7 @@ items:
   name:
     CSharp: GetPosition
   qualifiedName:
-    CSharp: GetPosition
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition(Microsoft.CodeAnalysis.Text.LinePosition)
   type: Method
   source:
     remote:
@@ -258,7 +258,7 @@ items:
   name:
     CSharp: GetTextSpan
   qualifiedName:
-    CSharp: GetTextSpan
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan(Microsoft.CodeAnalysis.Text.LinePositionSpan)
   type: Method
   source:
     remote:
@@ -288,7 +288,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator
   type: Method
   source:
     remote:

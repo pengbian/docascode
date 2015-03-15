@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
 name:
   CSharp: CompilationStartAnalysisContext
 qualifiedName:
-  CSharp: CompilationStartAnalysisContext
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext
 type: Class
 source:
   remote:
@@ -35,7 +35,7 @@ items:
   name:
     CSharp: Compilation
   qualifiedName:
-    CSharp: Compilation
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Compilation
   type: Property
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: get_Compilation
   qualifiedName:
-    CSharp: get_Compilation
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Compilation
   source:
     remote:
       branch: master
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.Options
   type: Property
   source:
     remote:
@@ -106,7 +106,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_Options
   source:
     remote:
       branch: master
@@ -121,7 +121,7 @@ items:
   name:
     CSharp: CancellationToken
   qualifiedName:
-    CSharp: CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.CancellationToken
   type: Property
   source:
     remote:
@@ -149,7 +149,7 @@ items:
   name:
     CSharp: get_CancellationToken
   qualifiedName:
-    CSharp: get_CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.get_CancellationToken
   source:
     remote:
       branch: master
@@ -164,7 +164,7 @@ items:
   name:
     CSharp: RegisterCompilationEndAction
   qualifiedName:
-    CSharp: RegisterCompilationEndAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCompilationEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CompilationEndAnalysisContext})
   type: Method
   source:
     remote:
@@ -197,7 +197,7 @@ items:
   name:
     CSharp: RegisterSemanticModelAction
   qualifiedName:
-    CSharp: RegisterSemanticModelAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSemanticModelAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SemanticModelAnalysisContext})
   type: Method
   source:
     remote:
@@ -232,7 +232,7 @@ items:
   name:
     CSharp: RegisterSymbolAction
   qualifiedName:
-    CSharp: RegisterSymbolAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},Microsoft.CodeAnalysis.SymbolKind[])
   type: Method
   source:
     remote:
@@ -271,7 +271,7 @@ items:
   name:
     CSharp: RegisterSymbolAction
   qualifiedName:
-    CSharp: RegisterSymbolAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSymbolAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SymbolKind})
   type: Method
   source:
     remote:
@@ -310,7 +310,7 @@ items:
   name:
     CSharp: RegisterCodeBlockStartAction
   qualifiedName:
-    CSharp: RegisterCodeBlockStartAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
   type: Method
   source:
     remote:
@@ -345,7 +345,7 @@ items:
   name:
     CSharp: RegisterCodeBlockEndAction
   qualifiedName:
-    CSharp: RegisterCodeBlockEndAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
   type: Method
   source:
     remote:
@@ -378,7 +378,7 @@ items:
   name:
     CSharp: RegisterSyntaxTreeAction
   qualifiedName:
-    CSharp: RegisterSyntaxTreeAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxTreeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext})
   type: Method
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: RegisterSyntaxNodeAction
   qualifiedName:
-    CSharp: RegisterSyntaxNodeAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
   type: Method
   source:
     remote:
@@ -452,7 +452,7 @@ items:
   name:
     CSharp: RegisterSyntaxNodeAction
   qualifiedName:
-    CSharp: RegisterSyntaxNodeAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
   type: Method
   source:
     remote:

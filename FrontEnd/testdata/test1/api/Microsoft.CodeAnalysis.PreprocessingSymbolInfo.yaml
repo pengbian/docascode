@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo
 name:
   CSharp: PreprocessingSymbolInfo
 qualifiedName:
-  CSharp: PreprocessingSymbolInfo
+  CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo
 type: Struct
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Symbol
   qualifiedName:
-    CSharp: Symbol
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.Symbol
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Symbol
   qualifiedName:
-    CSharp: get_Symbol
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.get_Symbol
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: IsDefined
   qualifiedName:
-    CSharp: IsDefined
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.IsDefined
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_IsDefined
   qualifiedName:
-    CSharp: get_IsDefined
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.get_IsDefined
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.Equals(Microsoft.CodeAnalysis.PreprocessingSymbolInfo)
   type: Method
   source:
     remote:
@@ -144,7 +144,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -171,7 +171,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.PreprocessingSymbolInfo.GetHashCode
   type: Method
   source:
     remote:

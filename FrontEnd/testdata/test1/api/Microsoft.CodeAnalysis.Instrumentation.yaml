@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Instrumentation
 name:
   CSharp: Instrumentation
 qualifiedName:
-  CSharp: Instrumentation
+  CSharp: Microsoft.CodeAnalysis.Instrumentation
 type: Namespace
 source:
   remote:

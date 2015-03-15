@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
 name:
   CSharp: SyntaxAnnotation
 qualifiedName:
-  CSharp: SyntaxAnnotation
+  CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation
 type: Class
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: ElasticAnnotation
   qualifiedName:
-    CSharp: ElasticAnnotation
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.ElasticAnnotation
   type: Field
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.Kind
   type: Property
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Kind
   source:
     remote:
       branch: master
@@ -96,7 +96,7 @@ items:
   name:
     CSharp: Data
   qualifiedName:
-    CSharp: Data
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.Data
   type: Property
   source:
     remote:
@@ -121,7 +121,7 @@ items:
   name:
     CSharp: get_Data
   qualifiedName:
-    CSharp: get_Data
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.get_Data
   source:
     remote:
       branch: master
@@ -134,9 +134,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
   name:
-    CSharp: .ctor
+    CSharp: SyntaxAnnotation
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.SyntaxAnnotation
   type: Constructor
   source:
     remote:
@@ -154,9 +154,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
   name:
-    CSharp: .ctor
+    CSharp: SyntaxAnnotation(System.String)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.SyntaxAnnotation(System.String)
   type: Constructor
   source:
     remote:
@@ -179,9 +179,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SyntaxAnnotation.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
   name:
-    CSharp: .ctor
+    CSharp: SyntaxAnnotation(System.String,System.String)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.SyntaxAnnotation(System.String,System.String)
   type: Constructor
   source:
     remote:
@@ -211,7 +211,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.Equals(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -238,7 +238,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.op_Equality(Microsoft.CodeAnalysis.SyntaxAnnotation,Microsoft.CodeAnalysis.SyntaxAnnotation)
   source:
     remote:
       branch: master
@@ -253,7 +253,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.op_Inequality(Microsoft.CodeAnalysis.SyntaxAnnotation,Microsoft.CodeAnalysis.SyntaxAnnotation)
   source:
     remote:
       branch: master
@@ -268,7 +268,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -295,7 +295,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxAnnotation.GetHashCode
   type: Method
   source:
     remote:

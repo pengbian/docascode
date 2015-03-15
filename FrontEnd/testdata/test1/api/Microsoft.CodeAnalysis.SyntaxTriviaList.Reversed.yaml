@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed
 name:
   CSharp: Reversed
 qualifiedName:
-  CSharp: Reversed
+  CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed
 type: Struct
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.yaml
   href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed
   name:
-    CSharp: .ctor
+    CSharp: Reversed(Microsoft.CodeAnalysis.SyntaxTriviaList)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Reversed(Microsoft.CodeAnalysis.SyntaxTriviaList)
   type: Constructor
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.GetEnumerator
   type: Method
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.GetHashCode
   type: Method
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -130,7 +130,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Equals(Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed)
   type: Method
   source:
     remote:

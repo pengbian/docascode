@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.TypedConstantKind
 name:
   CSharp: TypedConstantKind
 qualifiedName:
-  CSharp: TypedConstantKind
+  CSharp: Microsoft.CodeAnalysis.TypedConstantKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Error
   qualifiedName:
-    CSharp: Error
+    CSharp: Microsoft.CodeAnalysis.TypedConstantKind.Error
   type: Field
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: Primitive
   qualifiedName:
-    CSharp: Primitive
+    CSharp: Microsoft.CodeAnalysis.TypedConstantKind.Primitive
   type: Field
   source:
     remote:
@@ -75,7 +75,7 @@ items:
   name:
     CSharp: Enum
   qualifiedName:
-    CSharp: Enum
+    CSharp: Microsoft.CodeAnalysis.TypedConstantKind.Enum
   type: Field
   source:
     remote:
@@ -94,7 +94,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.TypedConstantKind.Type
   type: Field
   source:
     remote:
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: Array
   qualifiedName:
-    CSharp: Array
+    CSharp: Microsoft.CodeAnalysis.TypedConstantKind.Array
   type: Field
   source:
     remote:

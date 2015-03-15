@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.UnresolvedMetadataReference
 name:
   CSharp: UnresolvedMetadataReference
 qualifiedName:
-  CSharp: UnresolvedMetadataReference
+  CSharp: Microsoft.CodeAnalysis.UnresolvedMetadataReference
 type: Class
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Reference
   qualifiedName:
-    CSharp: Reference
+    CSharp: Microsoft.CodeAnalysis.UnresolvedMetadataReference.Reference
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Reference
   qualifiedName:
-    CSharp: get_Reference
+    CSharp: Microsoft.CodeAnalysis.UnresolvedMetadataReference.get_Reference
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Display
   qualifiedName:
-    CSharp: Display
+    CSharp: Microsoft.CodeAnalysis.UnresolvedMetadataReference.Display
   type: Property
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: get_Display
   qualifiedName:
-    CSharp: get_Display
+    CSharp: Microsoft.CodeAnalysis.UnresolvedMetadataReference.get_Display
   source:
     remote:
       branch: master

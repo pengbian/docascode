@@ -8,10 +8,10 @@ TestClass1.Partial1:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode\
-    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
+    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
 TestClass1:
   id: TestClass1
-  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\Markdown\About.md
+  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\Markdown\About.md
   href: md\Assets_Markdown_About.md
   startLine: 373
   endLine: 692

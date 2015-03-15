@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxWalker
 name:
   CSharp: SyntaxWalker
 qualifiedName:
-  CSharp: SyntaxWalker
+  CSharp: Microsoft.CodeAnalysis.SyntaxWalker
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: Visit
   qualifiedName:
-    CSharp: Visit
+    CSharp: Microsoft.CodeAnalysis.SyntaxWalker.Visit(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:

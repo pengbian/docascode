@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
 name:
   CSharp: DiagnosticSeverity
 qualifiedName:
-  CSharp: DiagnosticSeverity
+  CSharp: Microsoft.CodeAnalysis.DiagnosticSeverity
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Hidden
   qualifiedName:
-    CSharp: Hidden
+    CSharp: Microsoft.CodeAnalysis.DiagnosticSeverity.Hidden
   type: Field
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: Info
   qualifiedName:
-    CSharp: Info
+    CSharp: Microsoft.CodeAnalysis.DiagnosticSeverity.Info
   type: Field
   source:
     remote:
@@ -85,7 +85,7 @@ items:
   name:
     CSharp: Warning
   qualifiedName:
-    CSharp: Warning
+    CSharp: Microsoft.CodeAnalysis.DiagnosticSeverity.Warning
   type: Field
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: Error
   qualifiedName:
-    CSharp: Error
+    CSharp: Microsoft.CodeAnalysis.DiagnosticSeverity.Error
   type: Field
   source:
     remote:

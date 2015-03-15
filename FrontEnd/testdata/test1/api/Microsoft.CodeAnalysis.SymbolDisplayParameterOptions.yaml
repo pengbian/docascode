@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
 name:
   CSharp: SymbolDisplayParameterOptions
 qualifiedName:
-  CSharp: SymbolDisplayParameterOptions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: IncludeExtensionThis
   qualifiedName:
-    CSharp: IncludeExtensionThis
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeExtensionThis
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: IncludeParamsRefOut
   qualifiedName:
-    CSharp: IncludeParamsRefOut
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeParamsRefOut
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: IncludeType
   qualifiedName:
-    CSharp: IncludeType
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeType
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: IncludeName
   qualifiedName:
-    CSharp: IncludeName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeName
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: IncludeDefaultValue
   qualifiedName:
-    CSharp: IncludeDefaultValue
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeDefaultValue
   type: Field
   source:
     remote:
@@ -169,7 +169,7 @@ items:
   name:
     CSharp: IncludeOptionalBrackets
   qualifiedName:
-    CSharp: IncludeOptionalBrackets
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.IncludeOptionalBrackets
   type: Field
   source:
     remote:

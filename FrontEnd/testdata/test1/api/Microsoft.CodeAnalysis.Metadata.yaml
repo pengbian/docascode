@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Metadata
 name:
   CSharp: Metadata
 qualifiedName:
-  CSharp: Metadata
+  CSharp: Microsoft.CodeAnalysis.Metadata
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.Metadata.Kind
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.Metadata.get_Kind
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Dispose
   qualifiedName:
-    CSharp: Dispose
+    CSharp: Microsoft.CodeAnalysis.Metadata.Dispose
   type: Method
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: Copy
   qualifiedName:
-    CSharp: Copy
+    CSharp: Microsoft.CodeAnalysis.Metadata.Copy
   type: Method
   source:
     remote:

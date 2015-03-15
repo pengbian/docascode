@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IAliasSymbol
 name:
   CSharp: IAliasSymbol
 qualifiedName:
-  CSharp: IAliasSymbol
+  CSharp: Microsoft.CodeAnalysis.IAliasSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: Target
   qualifiedName:
-    CSharp: Target
+    CSharp: Microsoft.CodeAnalysis.IAliasSymbol.Target
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_Target
   qualifiedName:
-    CSharp: get_Target
+    CSharp: Microsoft.CodeAnalysis.IAliasSymbol.get_Target
   source:
     remote:
       branch: master

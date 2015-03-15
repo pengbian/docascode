@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IPropertySymbol
 name:
   CSharp: IPropertySymbol
 qualifiedName:
-  CSharp: IPropertySymbol
+  CSharp: Microsoft.CodeAnalysis.IPropertySymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: IsIndexer
   qualifiedName:
-    CSharp: IsIndexer
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.IsIndexer
   type: Property
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: get_IsIndexer
   qualifiedName:
-    CSharp: get_IsIndexer
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_IsIndexer
   source:
     remote:
       branch: master
@@ -70,7 +70,7 @@ items:
   name:
     CSharp: IsReadOnly
   qualifiedName:
-    CSharp: IsReadOnly
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.IsReadOnly
   type: Property
   source:
     remote:
@@ -98,7 +98,7 @@ items:
   name:
     CSharp: get_IsReadOnly
   qualifiedName:
-    CSharp: get_IsReadOnly
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_IsReadOnly
   source:
     remote:
       branch: master
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: IsWriteOnly
   qualifiedName:
-    CSharp: IsWriteOnly
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.IsWriteOnly
   type: Property
   source:
     remote:
@@ -141,7 +141,7 @@ items:
   name:
     CSharp: get_IsWriteOnly
   qualifiedName:
-    CSharp: get_IsWriteOnly
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWriteOnly
   source:
     remote:
       branch: master
@@ -156,7 +156,7 @@ items:
   name:
     CSharp: IsWithEvents
   qualifiedName:
-    CSharp: IsWithEvents
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.IsWithEvents
   type: Property
   source:
     remote:
@@ -186,7 +186,7 @@ items:
   name:
     CSharp: get_IsWithEvents
   qualifiedName:
-    CSharp: get_IsWithEvents
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_IsWithEvents
   source:
     remote:
       branch: master
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.Type
   type: Property
   source:
     remote:
@@ -229,7 +229,7 @@ items:
   name:
     CSharp: get_Type
   qualifiedName:
-    CSharp: get_Type
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_Type
   source:
     remote:
       branch: master
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: Parameters
   qualifiedName:
-    CSharp: Parameters
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.Parameters
   type: Property
   source:
     remote:
@@ -276,7 +276,7 @@ items:
   name:
     CSharp: get_Parameters
   qualifiedName:
-    CSharp: get_Parameters
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_Parameters
   source:
     remote:
       branch: master
@@ -291,7 +291,7 @@ items:
   name:
     CSharp: GetMethod
   qualifiedName:
-    CSharp: GetMethod
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.GetMethod
   type: Property
   source:
     remote:
@@ -319,7 +319,7 @@ items:
   name:
     CSharp: get_GetMethod
   qualifiedName:
-    CSharp: get_GetMethod
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_GetMethod
   source:
     remote:
       branch: master
@@ -334,7 +334,7 @@ items:
   name:
     CSharp: SetMethod
   qualifiedName:
-    CSharp: SetMethod
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.SetMethod
   type: Property
   source:
     remote:
@@ -362,7 +362,7 @@ items:
   name:
     CSharp: get_SetMethod
   qualifiedName:
-    CSharp: get_SetMethod
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_SetMethod
   source:
     remote:
       branch: master
@@ -377,7 +377,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -409,7 +409,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -424,7 +424,7 @@ items:
   name:
     CSharp: OverriddenProperty
   qualifiedName:
-    CSharp: OverriddenProperty
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.OverriddenProperty
   type: Property
   source:
     remote:
@@ -452,7 +452,7 @@ items:
   name:
     CSharp: get_OverriddenProperty
   qualifiedName:
-    CSharp: get_OverriddenProperty
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_OverriddenProperty
   source:
     remote:
       branch: master
@@ -467,7 +467,7 @@ items:
   name:
     CSharp: ExplicitInterfaceImplementations
   qualifiedName:
-    CSharp: ExplicitInterfaceImplementations
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.ExplicitInterfaceImplementations
   type: Property
   source:
     remote:
@@ -495,7 +495,7 @@ items:
   name:
     CSharp: get_ExplicitInterfaceImplementations
   qualifiedName:
-    CSharp: get_ExplicitInterfaceImplementations
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_ExplicitInterfaceImplementations
   source:
     remote:
       branch: master
@@ -510,7 +510,7 @@ items:
   name:
     CSharp: TypeCustomModifiers
   qualifiedName:
-    CSharp: TypeCustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.TypeCustomModifiers
   type: Property
   source:
     remote:
@@ -538,7 +538,7 @@ items:
   name:
     CSharp: get_TypeCustomModifiers
   qualifiedName:
-    CSharp: get_TypeCustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IPropertySymbol.get_TypeCustomModifiers
   source:
     remote:
       branch: master

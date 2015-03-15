@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.LocationKind
 name:
   CSharp: LocationKind
 qualifiedName:
-  CSharp: LocationKind
+  CSharp: Microsoft.CodeAnalysis.LocationKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.LocationKind.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: SourceFile
   qualifiedName:
-    CSharp: SourceFile
+    CSharp: Microsoft.CodeAnalysis.LocationKind.SourceFile
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: MetadataFile
   qualifiedName:
-    CSharp: MetadataFile
+    CSharp: Microsoft.CodeAnalysis.LocationKind.MetadataFile
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: XmlFile
   qualifiedName:
-    CSharp: XmlFile
+    CSharp: Microsoft.CodeAnalysis.LocationKind.XmlFile
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: ExternalFile
   qualifiedName:
-    CSharp: ExternalFile
+    CSharp: Microsoft.CodeAnalysis.LocationKind.ExternalFile
   type: Field
   source:
     remote:

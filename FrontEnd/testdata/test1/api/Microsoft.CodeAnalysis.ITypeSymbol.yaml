@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ITypeSymbol
 name:
   CSharp: ITypeSymbol
 qualifiedName:
-  CSharp: ITypeSymbol
+  CSharp: Microsoft.CodeAnalysis.ITypeSymbol
 type: Interface
 source:
   remote:
@@ -24,7 +24,7 @@ items:
   name:
     CSharp: TypeKind
   qualifiedName:
-    CSharp: TypeKind
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.TypeKind
   type: Property
   source:
     remote:
@@ -52,7 +52,7 @@ items:
   name:
     CSharp: get_TypeKind
   qualifiedName:
-    CSharp: get_TypeKind
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_TypeKind
   source:
     remote:
       branch: master
@@ -67,7 +67,7 @@ items:
   name:
     CSharp: BaseType
   qualifiedName:
-    CSharp: BaseType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.BaseType
   type: Property
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: get_BaseType
   qualifiedName:
-    CSharp: get_BaseType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_BaseType
   source:
     remote:
       branch: master
@@ -114,7 +114,7 @@ items:
   name:
     CSharp: Interfaces
   qualifiedName:
-    CSharp: Interfaces
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.Interfaces
   type: Property
   source:
     remote:
@@ -146,7 +146,7 @@ items:
   name:
     CSharp: get_Interfaces
   qualifiedName:
-    CSharp: get_Interfaces
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_Interfaces
   source:
     remote:
       branch: master
@@ -161,7 +161,7 @@ items:
   name:
     CSharp: AllInterfaces
   qualifiedName:
-    CSharp: AllInterfaces
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.AllInterfaces
   type: Property
   source:
     remote:
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: get_AllInterfaces
   qualifiedName:
-    CSharp: get_AllInterfaces
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_AllInterfaces
   source:
     remote:
       branch: master
@@ -220,7 +220,7 @@ items:
   name:
     CSharp: IsReferenceType
   qualifiedName:
-    CSharp: IsReferenceType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType
   type: Property
   source:
     remote:
@@ -252,7 +252,7 @@ items:
   name:
     CSharp: get_IsReferenceType
   qualifiedName:
-    CSharp: get_IsReferenceType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_IsReferenceType
   source:
     remote:
       branch: master
@@ -267,7 +267,7 @@ items:
   name:
     CSharp: IsValueType
   qualifiedName:
-    CSharp: IsValueType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.IsValueType
   type: Property
   source:
     remote:
@@ -299,7 +299,7 @@ items:
   name:
     CSharp: get_IsValueType
   qualifiedName:
-    CSharp: get_IsValueType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_IsValueType
   source:
     remote:
       branch: master
@@ -314,7 +314,7 @@ items:
   name:
     CSharp: IsAnonymousType
   qualifiedName:
-    CSharp: IsAnonymousType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.IsAnonymousType
   type: Property
   source:
     remote:
@@ -342,7 +342,7 @@ items:
   name:
     CSharp: get_IsAnonymousType
   qualifiedName:
-    CSharp: get_IsAnonymousType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_IsAnonymousType
   source:
     remote:
       branch: master
@@ -357,7 +357,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -389,7 +389,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -404,7 +404,7 @@ items:
   name:
     CSharp: SpecialType
   qualifiedName:
-    CSharp: SpecialType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.SpecialType
   type: Property
   source:
     remote:
@@ -434,7 +434,7 @@ items:
   name:
     CSharp: get_SpecialType
   qualifiedName:
-    CSharp: get_SpecialType
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.get_SpecialType
   source:
     remote:
       branch: master
@@ -449,7 +449,7 @@ items:
   name:
     CSharp: FindImplementationForInterfaceMember
   qualifiedName:
-    CSharp: FindImplementationForInterfaceMember
+    CSharp: Microsoft.CodeAnalysis.ITypeSymbol.FindImplementationForInterfaceMember(Microsoft.CodeAnalysis.ISymbol)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.TypedConstant
 name:
   CSharp: TypedConstant
 qualifiedName:
-  CSharp: TypedConstant
+  CSharp: Microsoft.CodeAnalysis.TypedConstant
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.Kind
   type: Property
   source:
     remote:
@@ -62,7 +62,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.get_Kind
   source:
     remote:
       branch: master
@@ -77,7 +77,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.Type
   type: Property
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: get_Type
   qualifiedName:
-    CSharp: get_Type
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.get_Type
   source:
     remote:
       branch: master
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: IsNull
   qualifiedName:
-    CSharp: IsNull
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.IsNull
   type: Property
   source:
     remote:
@@ -150,7 +150,7 @@ items:
   name:
     CSharp: get_IsNull
   qualifiedName:
-    CSharp: get_IsNull
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.get_IsNull
   source:
     remote:
       branch: master
@@ -165,7 +165,7 @@ items:
   name:
     CSharp: Value
   qualifiedName:
-    CSharp: Value
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.Value
   type: Property
   source:
     remote:
@@ -193,7 +193,7 @@ items:
   name:
     CSharp: get_Value
   qualifiedName:
-    CSharp: get_Value
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.get_Value
   source:
     remote:
       branch: master
@@ -208,7 +208,7 @@ items:
   name:
     CSharp: Values
   qualifiedName:
-    CSharp: Values
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.Values
   type: Property
   source:
     remote:
@@ -236,7 +236,7 @@ items:
   name:
     CSharp: get_Values
   qualifiedName:
-    CSharp: get_Values
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.get_Values
   source:
     remote:
       branch: master
@@ -251,7 +251,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -278,7 +278,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.Equals(Microsoft.CodeAnalysis.TypedConstant)
   type: Method
   source:
     remote:
@@ -305,7 +305,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.TypedConstant.GetHashCode
   type: Method
   source:
     remote:

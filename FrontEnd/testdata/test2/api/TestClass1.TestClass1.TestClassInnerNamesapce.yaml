@@ -4,15 +4,15 @@ href: api\TestClass1.TestClass1.TestClassInnerNamesapce
 name:
   CSharp: TestClassInnerNamesapce
 qualifiedName:
-  CSharp: TestClassInnerNamesapce
+  CSharp: TestClass1.TestClass1.TestClassInnerNamesapce
 type: Namespace
 source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode\
-    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\TestClass1\Class1.cs
+    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
   startLine: 107
 items:
 - id: TestClass1.TestClass1.TestClassInnerNamesapce.ClassInInnerNamespace

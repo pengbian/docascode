@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
 name:
   CSharp: IArrayTypeSymbol
 qualifiedName:
-  CSharp: IArrayTypeSymbol
+  CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: Rank
   qualifiedName:
-    CSharp: Rank
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.Rank
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_Rank
   qualifiedName:
-    CSharp: get_Rank
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_Rank
   source:
     remote:
       branch: master
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: ElementType
   qualifiedName:
-    CSharp: ElementType
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.ElementType
   type: Property
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: get_ElementType
   qualifiedName:
-    CSharp: get_ElementType
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_ElementType
   source:
     remote:
       branch: master
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: CustomModifiers
   qualifiedName:
-    CSharp: CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.CustomModifiers
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_CustomModifiers
   qualifiedName:
-    CSharp: get_CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_CustomModifiers
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.IArrayTypeSymbol.Equals(Microsoft.CodeAnalysis.IArrayTypeSymbol)
   type: Method
   source:
     remote:

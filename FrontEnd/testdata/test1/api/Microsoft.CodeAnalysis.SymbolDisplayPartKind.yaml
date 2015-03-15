@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayPartKind
 name:
   CSharp: SymbolDisplayPartKind
 qualifiedName:
-  CSharp: SymbolDisplayPartKind
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: AliasName
   qualifiedName:
-    CSharp: AliasName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.AliasName
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: AssemblyName
   qualifiedName:
-    CSharp: AssemblyName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.AssemblyName
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: ClassName
   qualifiedName:
-    CSharp: ClassName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.ClassName
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: DelegateName
   qualifiedName:
-    CSharp: DelegateName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.DelegateName
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: EnumName
   qualifiedName:
-    CSharp: EnumName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.EnumName
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: ErrorTypeName
   qualifiedName:
-    CSharp: ErrorTypeName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.ErrorTypeName
   type: Field
   source:
     remote:
@@ -169,7 +169,7 @@ items:
   name:
     CSharp: EventName
   qualifiedName:
-    CSharp: EventName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.EventName
   type: Field
   source:
     remote:
@@ -191,7 +191,7 @@ items:
   name:
     CSharp: FieldName
   qualifiedName:
-    CSharp: FieldName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.FieldName
   type: Field
   source:
     remote:
@@ -213,7 +213,7 @@ items:
   name:
     CSharp: InterfaceName
   qualifiedName:
-    CSharp: InterfaceName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.InterfaceName
   type: Field
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: Keyword
   qualifiedName:
-    CSharp: Keyword
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.Keyword
   type: Field
   source:
     remote:
@@ -257,7 +257,7 @@ items:
   name:
     CSharp: LabelName
   qualifiedName:
-    CSharp: LabelName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.LabelName
   type: Field
   source:
     remote:
@@ -279,7 +279,7 @@ items:
   name:
     CSharp: LineBreak
   qualifiedName:
-    CSharp: LineBreak
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.LineBreak
   type: Field
   source:
     remote:
@@ -301,7 +301,7 @@ items:
   name:
     CSharp: NumericLiteral
   qualifiedName:
-    CSharp: NumericLiteral
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.NumericLiteral
   type: Field
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: StringLiteral
   qualifiedName:
-    CSharp: StringLiteral
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.StringLiteral
   type: Field
   source:
     remote:
@@ -345,7 +345,7 @@ items:
   name:
     CSharp: LocalName
   qualifiedName:
-    CSharp: LocalName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.LocalName
   type: Field
   source:
     remote:
@@ -367,7 +367,7 @@ items:
   name:
     CSharp: MethodName
   qualifiedName:
-    CSharp: MethodName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.MethodName
   type: Field
   source:
     remote:
@@ -389,7 +389,7 @@ items:
   name:
     CSharp: ModuleName
   qualifiedName:
-    CSharp: ModuleName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.ModuleName
   type: Field
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: NamespaceName
   qualifiedName:
-    CSharp: NamespaceName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.NamespaceName
   type: Field
   source:
     remote:
@@ -433,7 +433,7 @@ items:
   name:
     CSharp: Operator
   qualifiedName:
-    CSharp: Operator
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.Operator
   type: Field
   source:
     remote:
@@ -455,7 +455,7 @@ items:
   name:
     CSharp: ParameterName
   qualifiedName:
-    CSharp: ParameterName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.ParameterName
   type: Field
   source:
     remote:
@@ -477,7 +477,7 @@ items:
   name:
     CSharp: PropertyName
   qualifiedName:
-    CSharp: PropertyName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.PropertyName
   type: Field
   source:
     remote:
@@ -499,7 +499,7 @@ items:
   name:
     CSharp: Punctuation
   qualifiedName:
-    CSharp: Punctuation
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.Punctuation
   type: Field
   source:
     remote:
@@ -521,7 +521,7 @@ items:
   name:
     CSharp: Space
   qualifiedName:
-    CSharp: Space
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.Space
   type: Field
   source:
     remote:
@@ -543,7 +543,7 @@ items:
   name:
     CSharp: StructName
   qualifiedName:
-    CSharp: StructName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.StructName
   type: Field
   source:
     remote:
@@ -565,7 +565,7 @@ items:
   name:
     CSharp: AnonymousTypeIndicator
   qualifiedName:
-    CSharp: AnonymousTypeIndicator
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.AnonymousTypeIndicator
   type: Field
   source:
     remote:
@@ -587,7 +587,7 @@ items:
   name:
     CSharp: Text
   qualifiedName:
-    CSharp: Text
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.Text
   type: Field
   source:
     remote:
@@ -609,7 +609,7 @@ items:
   name:
     CSharp: TypeParameterName
   qualifiedName:
-    CSharp: TypeParameterName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.TypeParameterName
   type: Field
   source:
     remote:
@@ -631,7 +631,7 @@ items:
   name:
     CSharp: RangeVariableName
   qualifiedName:
-    CSharp: RangeVariableName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPartKind.RangeVariableName
   type: Field
   source:
     remote:

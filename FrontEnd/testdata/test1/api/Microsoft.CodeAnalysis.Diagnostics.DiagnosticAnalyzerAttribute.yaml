@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
 name:
   CSharp: DiagnosticAnalyzerAttribute
 qualifiedName:
-  CSharp: DiagnosticAnalyzerAttribute
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
 type: Class
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Languages
   qualifiedName:
-    CSharp: Languages
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.Languages
   type: Property
   source:
     remote:
@@ -62,7 +62,7 @@ items:
   name:
     CSharp: get_Languages
   qualifiedName:
-    CSharp: get_Languages
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.get_Languages
   source:
     remote:
       branch: master
@@ -75,9 +75,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute
   name:
-    CSharp: .ctor
+    CSharp: DiagnosticAnalyzerAttribute(System.String,System.String[])
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerAttribute.DiagnosticAnalyzerAttribute(System.String,System.String[])
   type: Constructor
   source:
     remote:

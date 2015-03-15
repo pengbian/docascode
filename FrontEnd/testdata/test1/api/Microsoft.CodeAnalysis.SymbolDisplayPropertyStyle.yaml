@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle
 name:
   CSharp: SymbolDisplayPropertyStyle
 qualifiedName:
-  CSharp: SymbolDisplayPropertyStyle
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: NameOnly
   qualifiedName:
-    CSharp: NameOnly
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle.NameOnly
   type: Field
   source:
     remote:
@@ -61,7 +61,7 @@ items:
   name:
     CSharp: ShowReadWriteDescriptor
   qualifiedName:
-    CSharp: ShowReadWriteDescriptor
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle.ShowReadWriteDescriptor
   type: Field
   source:
     remote:

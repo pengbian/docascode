@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.TextLine
 name:
   CSharp: TextLine
 qualifiedName:
-  CSharp: TextLine
+  CSharp: Microsoft.CodeAnalysis.Text.TextLine
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: FromSpan
   qualifiedName:
-    CSharp: FromSpan
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.FromSpan(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: Text
   qualifiedName:
-    CSharp: Text
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.Text
   type: Property
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: get_Text
   qualifiedName:
-    CSharp: get_Text
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_Text
   source:
     remote:
       branch: master
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: LineNumber
   qualifiedName:
-    CSharp: LineNumber
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.LineNumber
   type: Property
   source:
     remote:
@@ -143,7 +143,7 @@ items:
   name:
     CSharp: get_LineNumber
   qualifiedName:
-    CSharp: get_LineNumber
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_LineNumber
   source:
     remote:
       branch: master
@@ -158,7 +158,7 @@ items:
   name:
     CSharp: Start
   qualifiedName:
-    CSharp: Start
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.Start
   type: Property
   source:
     remote:
@@ -186,7 +186,7 @@ items:
   name:
     CSharp: get_Start
   qualifiedName:
-    CSharp: get_Start
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_Start
   source:
     remote:
       branch: master
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: End
   qualifiedName:
-    CSharp: End
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.End
   type: Property
   source:
     remote:
@@ -229,7 +229,7 @@ items:
   name:
     CSharp: get_End
   qualifiedName:
-    CSharp: get_End
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_End
   source:
     remote:
       branch: master
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: EndIncludingLineBreak
   qualifiedName:
-    CSharp: EndIncludingLineBreak
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.EndIncludingLineBreak
   type: Property
   source:
     remote:
@@ -272,7 +272,7 @@ items:
   name:
     CSharp: get_EndIncludingLineBreak
   qualifiedName:
-    CSharp: get_EndIncludingLineBreak
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_EndIncludingLineBreak
   source:
     remote:
       branch: master
@@ -287,7 +287,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.Span
   type: Property
   source:
     remote:
@@ -315,7 +315,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_Span
   source:
     remote:
       branch: master
@@ -330,7 +330,7 @@ items:
   name:
     CSharp: SpanIncludingLineBreak
   qualifiedName:
-    CSharp: SpanIncludingLineBreak
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.SpanIncludingLineBreak
   type: Property
   source:
     remote:
@@ -358,7 +358,7 @@ items:
   name:
     CSharp: get_SpanIncludingLineBreak
   qualifiedName:
-    CSharp: get_SpanIncludingLineBreak
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.get_SpanIncludingLineBreak
   source:
     remote:
       branch: master
@@ -373,7 +373,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.ToString
   type: Method
   source:
     remote:
@@ -395,7 +395,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.op_Equality(Microsoft.CodeAnalysis.Text.TextLine,Microsoft.CodeAnalysis.Text.TextLine)
   source:
     remote:
       branch: master
@@ -410,7 +410,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.op_Inequality(Microsoft.CodeAnalysis.Text.TextLine,Microsoft.CodeAnalysis.Text.TextLine)
   source:
     remote:
       branch: master
@@ -425,7 +425,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.Equals(Microsoft.CodeAnalysis.Text.TextLine)
   type: Method
   source:
     remote:
@@ -452,7 +452,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -479,7 +479,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Text.TextLine.GetHashCode
   type: Method
   source:
     remote:

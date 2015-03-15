@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
 name:
   CSharp: SourceReferenceResolver
 qualifiedName:
-  CSharp: SourceReferenceResolver
+  CSharp: Microsoft.CodeAnalysis.SourceReferenceResolver
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SourceReferenceResolver.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -58,7 +58,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SourceReferenceResolver.GetHashCode
   type: Method
   source:
     remote:
@@ -80,7 +80,7 @@ items:
   name:
     CSharp: NormalizePath
   qualifiedName:
-    CSharp: NormalizePath
+    CSharp: Microsoft.CodeAnalysis.SourceReferenceResolver.NormalizePath(System.String,System.String)
   type: Method
   source:
     remote:
@@ -118,7 +118,7 @@ items:
   name:
     CSharp: ResolveReference
   qualifiedName:
-    CSharp: ResolveReference
+    CSharp: Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)
   type: Method
   source:
     remote:
@@ -156,7 +156,7 @@ items:
   name:
     CSharp: OpenRead
   qualifiedName:
-    CSharp: OpenRead
+    CSharp: Microsoft.CodeAnalysis.SourceReferenceResolver.OpenRead(System.String)
   type: Method
   source:
     remote:

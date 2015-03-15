@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostic
 name:
   CSharp: Diagnostic
 qualifiedName:
-  CSharp: Diagnostic
+  CSharp: Microsoft.CodeAnalysis.Diagnostic
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Object[])
   type: Method
   source:
     remote:
@@ -75,7 +75,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Object[])
   type: Method
   source:
     remote:
@@ -130,7 +130,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
     remote:
@@ -242,7 +242,7 @@ items:
   name:
     CSharp: Descriptor
   qualifiedName:
-    CSharp: Descriptor
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Descriptor
   type: Property
   source:
     remote:
@@ -270,7 +270,7 @@ items:
   name:
     CSharp: get_Descriptor
   qualifiedName:
-    CSharp: get_Descriptor
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_Descriptor
   source:
     remote:
       branch: master
@@ -285,7 +285,7 @@ items:
   name:
     CSharp: Id
   qualifiedName:
-    CSharp: Id
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Id
   type: Property
   source:
     remote:
@@ -313,7 +313,7 @@ items:
   name:
     CSharp: get_Id
   qualifiedName:
-    CSharp: get_Id
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_Id
   source:
     remote:
       branch: master
@@ -328,7 +328,7 @@ items:
   name:
     CSharp: GetMessage
   qualifiedName:
-    CSharp: GetMessage
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.GetMessage(System.IFormatProvider)
   type: Method
   source:
     remote:
@@ -358,7 +358,7 @@ items:
   name:
     CSharp: DefaultSeverity
   qualifiedName:
-    CSharp: DefaultSeverity
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
   type: Property
   source:
     remote:
@@ -386,7 +386,7 @@ items:
   name:
     CSharp: get_DefaultSeverity
   qualifiedName:
-    CSharp: get_DefaultSeverity
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_DefaultSeverity
   source:
     remote:
       branch: master
@@ -401,7 +401,7 @@ items:
   name:
     CSharp: Severity
   qualifiedName:
-    CSharp: Severity
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Severity
   type: Property
   source:
     remote:
@@ -429,7 +429,7 @@ items:
   name:
     CSharp: get_Severity
   qualifiedName:
-    CSharp: get_Severity
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_Severity
   source:
     remote:
       branch: master
@@ -444,7 +444,7 @@ items:
   name:
     CSharp: WarningLevel
   qualifiedName:
-    CSharp: WarningLevel
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.WarningLevel
   type: Property
   source:
     remote:
@@ -474,7 +474,7 @@ items:
   name:
     CSharp: get_WarningLevel
   qualifiedName:
-    CSharp: get_WarningLevel
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_WarningLevel
   source:
     remote:
       branch: master
@@ -489,7 +489,7 @@ items:
   name:
     CSharp: IsWarningAsError
   qualifiedName:
-    CSharp: IsWarningAsError
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
   type: Property
   source:
     remote:
@@ -517,7 +517,7 @@ items:
   name:
     CSharp: get_IsWarningAsError
   qualifiedName:
-    CSharp: get_IsWarningAsError
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_IsWarningAsError
   source:
     remote:
       branch: master
@@ -532,7 +532,7 @@ items:
   name:
     CSharp: Location
   qualifiedName:
-    CSharp: Location
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Location
   type: Property
   source:
     remote:
@@ -560,7 +560,7 @@ items:
   name:
     CSharp: get_Location
   qualifiedName:
-    CSharp: get_Location
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_Location
   source:
     remote:
       branch: master
@@ -575,7 +575,7 @@ items:
   name:
     CSharp: AdditionalLocations
   qualifiedName:
-    CSharp: AdditionalLocations
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
   type: Property
   source:
     remote:
@@ -605,7 +605,7 @@ items:
   name:
     CSharp: get_AdditionalLocations
   qualifiedName:
-    CSharp: get_AdditionalLocations
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.get_AdditionalLocations
   source:
     remote:
       branch: master
@@ -620,7 +620,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.ToString
   type: Method
   source:
     remote:
@@ -642,7 +642,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -669,7 +669,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.GetHashCode
   type: Method
   source:
     remote:
@@ -691,7 +691,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Diagnostic.Equals(Microsoft.CodeAnalysis.Diagnostic)
   type: Method
   source:
     remote:

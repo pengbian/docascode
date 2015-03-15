@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags
 name:
   CSharp: WellKnownDiagnosticTags
 qualifiedName:
-  CSharp: WellKnownDiagnosticTags
+  CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: Unnecessary
   qualifiedName:
-    CSharp: Unnecessary
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.Unnecessary
   type: Field
   source:
     remote:
@@ -47,7 +47,7 @@ items:
   name:
     CSharp: EditAndContinue
   qualifiedName:
-    CSharp: EditAndContinue
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.EditAndContinue
   type: Field
   source:
     remote:
@@ -66,7 +66,7 @@ items:
   name:
     CSharp: Build
   qualifiedName:
-    CSharp: Build
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.Build
   type: Field
   source:
     remote:
@@ -85,7 +85,7 @@ items:
   name:
     CSharp: Compiler
   qualifiedName:
-    CSharp: Compiler
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.Compiler
   type: Field
   source:
     remote:
@@ -104,7 +104,7 @@ items:
   name:
     CSharp: Telemetry
   qualifiedName:
-    CSharp: Telemetry
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.Telemetry
   type: Field
   source:
     remote:
@@ -123,7 +123,7 @@ items:
   name:
     CSharp: NotConfigurable
   qualifiedName:
-    CSharp: NotConfigurable
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.NotConfigurable
   type: Field
   source:
     remote:
@@ -142,7 +142,7 @@ items:
   name:
     CSharp: AnalyzerException
   qualifiedName:
-    CSharp: AnalyzerException
+    CSharp: Microsoft.CodeAnalysis.WellKnownDiagnosticTags.AnalyzerException
   type: Field
   source:
     remote:

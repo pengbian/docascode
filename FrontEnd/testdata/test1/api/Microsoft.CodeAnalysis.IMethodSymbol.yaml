@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IMethodSymbol
 name:
   CSharp: IMethodSymbol
 qualifiedName:
-  CSharp: IMethodSymbol
+  CSharp: Microsoft.CodeAnalysis.IMethodSymbol
 type: Interface
 source:
   remote:
@@ -29,7 +29,7 @@ items:
   name:
     CSharp: MethodKind
   qualifiedName:
-    CSharp: MethodKind
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
   type: Property
   source:
     remote:
@@ -61,7 +61,7 @@ items:
   name:
     CSharp: get_MethodKind
   qualifiedName:
-    CSharp: get_MethodKind
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_MethodKind
   source:
     remote:
       branch: master
@@ -76,7 +76,7 @@ items:
   name:
     CSharp: Arity
   qualifiedName:
-    CSharp: Arity
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.Arity
   type: Property
   source:
     remote:
@@ -106,7 +106,7 @@ items:
   name:
     CSharp: get_Arity
   qualifiedName:
-    CSharp: get_Arity
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_Arity
   source:
     remote:
       branch: master
@@ -121,7 +121,7 @@ items:
   name:
     CSharp: IsGenericMethod
   qualifiedName:
-    CSharp: IsGenericMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
   type: Property
   source:
     remote:
@@ -149,7 +149,7 @@ items:
   name:
     CSharp: get_IsGenericMethod
   qualifiedName:
-    CSharp: get_IsGenericMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_IsGenericMethod
   source:
     remote:
       branch: master
@@ -164,7 +164,7 @@ items:
   name:
     CSharp: IsExtensionMethod
   qualifiedName:
-    CSharp: IsExtensionMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
   type: Property
   source:
     remote:
@@ -192,7 +192,7 @@ items:
   name:
     CSharp: get_IsExtensionMethod
   qualifiedName:
-    CSharp: get_IsExtensionMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_IsExtensionMethod
   source:
     remote:
       branch: master
@@ -207,7 +207,7 @@ items:
   name:
     CSharp: IsAsync
   qualifiedName:
-    CSharp: IsAsync
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
   type: Property
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: get_IsAsync
   qualifiedName:
-    CSharp: get_IsAsync
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_IsAsync
   source:
     remote:
       branch: master
@@ -250,7 +250,7 @@ items:
   name:
     CSharp: IsVararg
   qualifiedName:
-    CSharp: IsVararg
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
   type: Property
   source:
     remote:
@@ -276,7 +276,7 @@ items:
   name:
     CSharp: get_IsVararg
   qualifiedName:
-    CSharp: get_IsVararg
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_IsVararg
   source:
     remote:
       branch: master
@@ -291,7 +291,7 @@ items:
   name:
     CSharp: IsCheckedBuiltin
   qualifiedName:
-    CSharp: IsCheckedBuiltin
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
   type: Property
   source:
     remote:
@@ -319,7 +319,7 @@ items:
   name:
     CSharp: get_IsCheckedBuiltin
   qualifiedName:
-    CSharp: get_IsCheckedBuiltin
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_IsCheckedBuiltin
   source:
     remote:
       branch: master
@@ -334,7 +334,7 @@ items:
   name:
     CSharp: HidesBaseMethodsByName
   qualifiedName:
-    CSharp: HidesBaseMethodsByName
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
   type: Property
   source:
     remote:
@@ -366,7 +366,7 @@ items:
   name:
     CSharp: get_HidesBaseMethodsByName
   qualifiedName:
-    CSharp: get_HidesBaseMethodsByName
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_HidesBaseMethodsByName
   source:
     remote:
       branch: master
@@ -381,7 +381,7 @@ items:
   name:
     CSharp: ReturnsVoid
   qualifiedName:
-    CSharp: ReturnsVoid
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
   type: Property
   source:
     remote:
@@ -409,7 +409,7 @@ items:
   name:
     CSharp: get_ReturnsVoid
   qualifiedName:
-    CSharp: get_ReturnsVoid
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnsVoid
   source:
     remote:
       branch: master
@@ -424,7 +424,7 @@ items:
   name:
     CSharp: ReturnType
   qualifiedName:
-    CSharp: ReturnType
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
   type: Property
   source:
     remote:
@@ -452,7 +452,7 @@ items:
   name:
     CSharp: get_ReturnType
   qualifiedName:
-    CSharp: get_ReturnType
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnType
   source:
     remote:
       branch: master
@@ -467,7 +467,7 @@ items:
   name:
     CSharp: TypeArguments
   qualifiedName:
-    CSharp: TypeArguments
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
   type: Property
   source:
     remote:
@@ -499,7 +499,7 @@ items:
   name:
     CSharp: get_TypeArguments
   qualifiedName:
-    CSharp: get_TypeArguments
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeArguments
   source:
     remote:
       branch: master
@@ -514,7 +514,7 @@ items:
   name:
     CSharp: TypeParameters
   qualifiedName:
-    CSharp: TypeParameters
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
   type: Property
   source:
     remote:
@@ -544,7 +544,7 @@ items:
   name:
     CSharp: get_TypeParameters
   qualifiedName:
-    CSharp: get_TypeParameters
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_TypeParameters
   source:
     remote:
       branch: master
@@ -559,7 +559,7 @@ items:
   name:
     CSharp: Parameters
   qualifiedName:
-    CSharp: Parameters
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.Parameters
   type: Property
   source:
     remote:
@@ -589,7 +589,7 @@ items:
   name:
     CSharp: get_Parameters
   qualifiedName:
-    CSharp: get_Parameters
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_Parameters
   source:
     remote:
       branch: master
@@ -604,7 +604,7 @@ items:
   name:
     CSharp: ConstructedFrom
   qualifiedName:
-    CSharp: ConstructedFrom
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
   type: Property
   source:
     remote:
@@ -638,7 +638,7 @@ items:
   name:
     CSharp: get_ConstructedFrom
   qualifiedName:
-    CSharp: get_ConstructedFrom
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ConstructedFrom
   source:
     remote:
       branch: master
@@ -653,7 +653,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -685,7 +685,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -700,7 +700,7 @@ items:
   name:
     CSharp: OverriddenMethod
   qualifiedName:
-    CSharp: OverriddenMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
   type: Property
   source:
     remote:
@@ -730,7 +730,7 @@ items:
   name:
     CSharp: get_OverriddenMethod
   qualifiedName:
-    CSharp: get_OverriddenMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_OverriddenMethod
   source:
     remote:
       branch: master
@@ -745,7 +745,7 @@ items:
   name:
     CSharp: ReceiverType
   qualifiedName:
-    CSharp: ReceiverType
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
   type: Property
   source:
     remote:
@@ -773,7 +773,7 @@ items:
   name:
     CSharp: get_ReceiverType
   qualifiedName:
-    CSharp: get_ReceiverType
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ReceiverType
   source:
     remote:
       branch: master
@@ -788,7 +788,7 @@ items:
   name:
     CSharp: ReducedFrom
   qualifiedName:
-    CSharp: ReducedFrom
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
   type: Property
   source:
     remote:
@@ -818,7 +818,7 @@ items:
   name:
     CSharp: get_ReducedFrom
   qualifiedName:
-    CSharp: get_ReducedFrom
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ReducedFrom
   source:
     remote:
       branch: master
@@ -833,7 +833,7 @@ items:
   name:
     CSharp: GetTypeInferredDuringReduction
   qualifiedName:
-    CSharp: GetTypeInferredDuringReduction
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction(Microsoft.CodeAnalysis.ITypeParameterSymbol)
   type: Method
   source:
     remote:
@@ -865,7 +865,7 @@ items:
   name:
     CSharp: ReduceExtensionMethod
   qualifiedName:
-    CSharp: ReduceExtensionMethod
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod(Microsoft.CodeAnalysis.ITypeSymbol)
   type: Method
   source:
     remote:
@@ -897,7 +897,7 @@ items:
   name:
     CSharp: ExplicitInterfaceImplementations
   qualifiedName:
-    CSharp: ExplicitInterfaceImplementations
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
   type: Property
   source:
     remote:
@@ -925,7 +925,7 @@ items:
   name:
     CSharp: get_ExplicitInterfaceImplementations
   qualifiedName:
-    CSharp: get_ExplicitInterfaceImplementations
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ExplicitInterfaceImplementations
   source:
     remote:
       branch: master
@@ -940,7 +940,7 @@ items:
   name:
     CSharp: ReturnTypeCustomModifiers
   qualifiedName:
-    CSharp: ReturnTypeCustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
   type: Property
   source:
     remote:
@@ -968,7 +968,7 @@ items:
   name:
     CSharp: get_ReturnTypeCustomModifiers
   qualifiedName:
-    CSharp: get_ReturnTypeCustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_ReturnTypeCustomModifiers
   source:
     remote:
       branch: master
@@ -983,7 +983,7 @@ items:
   name:
     CSharp: GetReturnTypeAttributes
   qualifiedName:
-    CSharp: GetReturnTypeAttributes
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes
   type: Method
   source:
     remote:
@@ -1008,7 +1008,7 @@ items:
   name:
     CSharp: AssociatedSymbol
   qualifiedName:
-    CSharp: AssociatedSymbol
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
   type: Property
   source:
     remote:
@@ -1036,7 +1036,7 @@ items:
   name:
     CSharp: get_AssociatedSymbol
   qualifiedName:
-    CSharp: get_AssociatedSymbol
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_AssociatedSymbol
   source:
     remote:
       branch: master
@@ -1051,7 +1051,7 @@ items:
   name:
     CSharp: Construct
   qualifiedName:
-    CSharp: Construct
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
   type: Method
   source:
     remote:
@@ -1085,7 +1085,7 @@ items:
   name:
     CSharp: PartialDefinitionPart
   qualifiedName:
-    CSharp: PartialDefinitionPart
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
   type: Property
   source:
     remote:
@@ -1115,7 +1115,7 @@ items:
   name:
     CSharp: get_PartialDefinitionPart
   qualifiedName:
-    CSharp: get_PartialDefinitionPart
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_PartialDefinitionPart
   source:
     remote:
       branch: master
@@ -1130,7 +1130,7 @@ items:
   name:
     CSharp: PartialImplementationPart
   qualifiedName:
-    CSharp: PartialImplementationPart
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
   type: Property
   source:
     remote:
@@ -1162,7 +1162,7 @@ items:
   name:
     CSharp: get_PartialImplementationPart
   qualifiedName:
-    CSharp: get_PartialImplementationPart
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_PartialImplementationPart
   source:
     remote:
       branch: master
@@ -1177,7 +1177,7 @@ items:
   name:
     CSharp: GetDllImportData
   qualifiedName:
-    CSharp: GetDllImportData
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData
   type: Method
   source:
     remote:
@@ -1202,7 +1202,7 @@ items:
   name:
     CSharp: AssociatedAnonymousDelegate
   qualifiedName:
-    CSharp: AssociatedAnonymousDelegate
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
   type: Property
   source:
     remote:
@@ -1238,7 +1238,7 @@ items:
   name:
     CSharp: get_AssociatedAnonymousDelegate
   qualifiedName:
-    CSharp: get_AssociatedAnonymousDelegate
+    CSharp: Microsoft.CodeAnalysis.IMethodSymbol.get_AssociatedAnonymousDelegate
   source:
     remote:
       branch: master

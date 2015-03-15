@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.CustomModifier
 name:
   CSharp: CustomModifier
 qualifiedName:
-  CSharp: CustomModifier
+  CSharp: Microsoft.CodeAnalysis.CustomModifier
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: IsOptional
   qualifiedName:
-    CSharp: IsOptional
+    CSharp: Microsoft.CodeAnalysis.CustomModifier.IsOptional
   type: Property
   source:
     remote:
@@ -58,7 +58,7 @@ items:
   name:
     CSharp: get_IsOptional
   qualifiedName:
-    CSharp: get_IsOptional
+    CSharp: Microsoft.CodeAnalysis.CustomModifier.get_IsOptional
   source:
     remote:
       branch: master
@@ -73,7 +73,7 @@ items:
   name:
     CSharp: Modifier
   qualifiedName:
-    CSharp: Modifier
+    CSharp: Microsoft.CodeAnalysis.CustomModifier.Modifier
   type: Property
   source:
     remote:
@@ -101,7 +101,7 @@ items:
   name:
     CSharp: get_Modifier
   qualifiedName:
-    CSharp: get_Modifier
+    CSharp: Microsoft.CodeAnalysis.CustomModifier.get_Modifier
   source:
     remote:
       branch: master

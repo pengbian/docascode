@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.AssemblyIdentityParts
 name:
   CSharp: AssemblyIdentityParts
 qualifiedName:
-  CSharp: AssemblyIdentityParts
+  CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts
 type: Enum
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Name
   qualifiedName:
-    CSharp: Name
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.Name
   type: Field
   source:
     remote:
@@ -53,7 +53,7 @@ items:
   name:
     CSharp: Version
   qualifiedName:
-    CSharp: Version
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.Version
   type: Field
   source:
     remote:
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: VersionMajor
   qualifiedName:
-    CSharp: VersionMajor
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.VersionMajor
   type: Field
   source:
     remote:
@@ -91,7 +91,7 @@ items:
   name:
     CSharp: VersionMinor
   qualifiedName:
-    CSharp: VersionMinor
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.VersionMinor
   type: Field
   source:
     remote:
@@ -110,7 +110,7 @@ items:
   name:
     CSharp: VersionBuild
   qualifiedName:
-    CSharp: VersionBuild
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.VersionBuild
   type: Field
   source:
     remote:
@@ -129,7 +129,7 @@ items:
   name:
     CSharp: VersionRevision
   qualifiedName:
-    CSharp: VersionRevision
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.VersionRevision
   type: Field
   source:
     remote:
@@ -148,7 +148,7 @@ items:
   name:
     CSharp: Culture
   qualifiedName:
-    CSharp: Culture
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.Culture
   type: Field
   source:
     remote:
@@ -167,7 +167,7 @@ items:
   name:
     CSharp: PublicKey
   qualifiedName:
-    CSharp: PublicKey
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.PublicKey
   type: Field
   source:
     remote:
@@ -186,7 +186,7 @@ items:
   name:
     CSharp: PublicKeyToken
   qualifiedName:
-    CSharp: PublicKeyToken
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.PublicKeyToken
   type: Field
   source:
     remote:
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: PublicKeyOrToken
   qualifiedName:
-    CSharp: PublicKeyOrToken
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.PublicKeyOrToken
   type: Field
   source:
     remote:
@@ -224,7 +224,7 @@ items:
   name:
     CSharp: Retargetability
   qualifiedName:
-    CSharp: Retargetability
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.Retargetability
   type: Field
   source:
     remote:
@@ -243,7 +243,7 @@ items:
   name:
     CSharp: ContentType
   qualifiedName:
-    CSharp: ContentType
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.ContentType
   type: Field
   source:
     remote:
@@ -262,7 +262,7 @@ items:
   name:
     CSharp: Unknown
   qualifiedName:
-    CSharp: Unknown
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityParts.Unknown
   type: Field
   source:
     remote:

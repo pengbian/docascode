@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Accessibility
 name:
   CSharp: Accessibility
 qualifiedName:
-  CSharp: Accessibility
+  CSharp: Microsoft.CodeAnalysis.Accessibility
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: NotApplicable
   qualifiedName:
-    CSharp: NotApplicable
+    CSharp: Microsoft.CodeAnalysis.Accessibility.NotApplicable
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Private
   qualifiedName:
-    CSharp: Private
+    CSharp: Microsoft.CodeAnalysis.Accessibility.Private
   type: Field
   source:
     remote:
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: ProtectedAndInternal
   qualifiedName:
-    CSharp: ProtectedAndInternal
+    CSharp: Microsoft.CodeAnalysis.Accessibility.ProtectedAndInternal
   type: Field
   source:
     remote:
@@ -97,7 +97,7 @@ items:
   name:
     CSharp: ProtectedAndFriend
   qualifiedName:
-    CSharp: ProtectedAndFriend
+    CSharp: Microsoft.CodeAnalysis.Accessibility.ProtectedAndFriend
   type: Field
   source:
     remote:
@@ -116,7 +116,7 @@ items:
   name:
     CSharp: Protected
   qualifiedName:
-    CSharp: Protected
+    CSharp: Microsoft.CodeAnalysis.Accessibility.Protected
   type: Field
   source:
     remote:
@@ -135,7 +135,7 @@ items:
   name:
     CSharp: Internal
   qualifiedName:
-    CSharp: Internal
+    CSharp: Microsoft.CodeAnalysis.Accessibility.Internal
   type: Field
   source:
     remote:
@@ -154,7 +154,7 @@ items:
   name:
     CSharp: Friend
   qualifiedName:
-    CSharp: Friend
+    CSharp: Microsoft.CodeAnalysis.Accessibility.Friend
   type: Field
   source:
     remote:
@@ -173,7 +173,7 @@ items:
   name:
     CSharp: ProtectedOrInternal
   qualifiedName:
-    CSharp: ProtectedOrInternal
+    CSharp: Microsoft.CodeAnalysis.Accessibility.ProtectedOrInternal
   type: Field
   source:
     remote:
@@ -192,7 +192,7 @@ items:
   name:
     CSharp: ProtectedOrFriend
   qualifiedName:
-    CSharp: ProtectedOrFriend
+    CSharp: Microsoft.CodeAnalysis.Accessibility.ProtectedOrFriend
   type: Field
   source:
     remote:
@@ -211,7 +211,7 @@ items:
   name:
     CSharp: Public
   qualifiedName:
-    CSharp: Public
+    CSharp: Microsoft.CodeAnalysis.Accessibility.Public
   type: Field
   source:
     remote:

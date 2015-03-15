@@ -4,15 +4,15 @@ href: api\TestClass1.Base.BaseClassForTestClass1
 name:
   CSharp: BaseClassForTestClass1
 qualifiedName:
-  CSharp: BaseClassForTestClass1
+  CSharp: TestClass1.Base.BaseClassForTestClass1
 type: Class
 source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
     local: D:\Repo\docascode\
-    sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-  path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
   startLine: 8
 syntax:
   content:
@@ -28,15 +28,15 @@ items:
   name:
     CSharp: Property1
   qualifiedName:
-    CSharp: Property1
+    CSharp: TestClass1.Base.BaseClassForTestClass1.Property1
   type: Property
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13
   summary: >+
     This is the property from *base* class
@@ -56,14 +56,14 @@ items:
   name:
     CSharp: get_Property1
   qualifiedName:
-    CSharp: get_Property1
+    CSharp: TestClass1.Base.BaseClassForTestClass1.get_Property1
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13
 - id: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
   yaml: api\TestClass1.Base.BaseClassForTestClass1.yaml
@@ -71,12 +71,12 @@ items:
   name:
     CSharp: set_Property1
   qualifiedName:
-    CSharp: set_Property1
+    CSharp: TestClass1.Base.BaseClassForTestClass1.set_Property1(System.String)
   source:
     remote:
       branch: Refactor
       repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
       local: D:\Repo\docascode\
-      sha1: 57b17b32ffb1cba86d7a9ca5e615b738f8bf7372
-    path: TestResults\Deploy_lianwei 2015-03-12 22_23_26\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
+      sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\BaseClassForTestClass1\BaseClassForTestClass1.cs
     startLine: 13

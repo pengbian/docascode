@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IStructuredTriviaSyntax
 name:
   CSharp: IStructuredTriviaSyntax
 qualifiedName:
-  CSharp: IStructuredTriviaSyntax
+  CSharp: Microsoft.CodeAnalysis.IStructuredTriviaSyntax
 type: Interface
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: ParentTrivia
   qualifiedName:
-    CSharp: ParentTrivia
+    CSharp: Microsoft.CodeAnalysis.IStructuredTriviaSyntax.ParentTrivia
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_ParentTrivia
   qualifiedName:
-    CSharp: get_ParentTrivia
+    CSharp: Microsoft.CodeAnalysis.IStructuredTriviaSyntax.get_ParentTrivia
   source:
     remote:
       branch: master

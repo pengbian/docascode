@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.TextChange
 name:
   CSharp: TextChange
 qualifiedName:
-  CSharp: TextChange
+  CSharp: Microsoft.CodeAnalysis.Text.TextChange
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.Span
   type: Property
   source:
     remote:
@@ -62,7 +62,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.get_Span
   source:
     remote:
       branch: master
@@ -77,7 +77,7 @@ items:
   name:
     CSharp: NewText
   qualifiedName:
-    CSharp: NewText
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.NewText
   type: Property
   source:
     remote:
@@ -105,7 +105,7 @@ items:
   name:
     CSharp: get_NewText
   qualifiedName:
-    CSharp: get_NewText
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.get_NewText
   source:
     remote:
       branch: master
@@ -118,9 +118,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Text.TextChange.yaml
   href: api\Microsoft.CodeAnalysis.Text.TextChange
   name:
-    CSharp: .ctor
+    CSharp: TextChange(Microsoft.CodeAnalysis.Text.TextSpan,System.String)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.TextChange(Microsoft.CodeAnalysis.Text.TextSpan,System.String)
   type: Constructor
   source:
     remote:
@@ -155,7 +155,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.ToString
   type: Method
   source:
     remote:
@@ -180,7 +180,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -207,7 +207,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.Equals(Microsoft.CodeAnalysis.Text.TextChange)
   type: Method
   source:
     remote:
@@ -234,7 +234,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.GetHashCode
   type: Method
   source:
     remote:
@@ -256,7 +256,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.op_Equality(Microsoft.CodeAnalysis.Text.TextChange,Microsoft.CodeAnalysis.Text.TextChange)
   source:
     remote:
       branch: master
@@ -271,7 +271,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.op_Inequality(Microsoft.CodeAnalysis.Text.TextChange,Microsoft.CodeAnalysis.Text.TextChange)
   source:
     remote:
       branch: master
@@ -286,7 +286,7 @@ items:
   name:
     CSharp: op_Implicit
   qualifiedName:
-    CSharp: op_Implicit
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.op_Implicit(Microsoft.CodeAnalysis.Text.TextChange)~Microsoft.CodeAnalysis.Text.TextChangeRange
   source:
     remote:
       branch: master
@@ -304,7 +304,7 @@ items:
   name:
     CSharp: NoChanges
   qualifiedName:
-    CSharp: NoChanges
+    CSharp: Microsoft.CodeAnalysis.Text.TextChange.NoChanges
   type: Field
   source:
     remote:

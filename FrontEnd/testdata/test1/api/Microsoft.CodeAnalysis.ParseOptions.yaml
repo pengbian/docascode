@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ParseOptions
 name:
   CSharp: ParseOptions
 qualifiedName:
-  CSharp: ParseOptions
+  CSharp: Microsoft.CodeAnalysis.ParseOptions
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.Kind
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.get_Kind
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: DocumentationMode
   qualifiedName:
-    CSharp: DocumentationMode
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.DocumentationMode
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_DocumentationMode
   qualifiedName:
-    CSharp: get_DocumentationMode
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.get_DocumentationMode
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: WithKind
   qualifiedName:
-    CSharp: WithKind
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
   type: Method
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: WithDocumentationMode
   qualifiedName:
-    CSharp: WithDocumentationMode
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
   type: Method
   source:
     remote:
@@ -177,7 +177,7 @@ items:
   name:
     CSharp: WithFeatures
   qualifiedName:
-    CSharp: WithFeatures
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   type: Method
   source:
     remote:
@@ -207,7 +207,7 @@ items:
   name:
     CSharp: Features
   qualifiedName:
-    CSharp: Features
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.Features
   type: Property
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: get_Features
   qualifiedName:
-    CSharp: get_Features
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.get_Features
   source:
     remote:
       branch: master
@@ -250,7 +250,7 @@ items:
   name:
     CSharp: PreprocessorSymbolNames
   qualifiedName:
-    CSharp: PreprocessorSymbolNames
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.PreprocessorSymbolNames
   type: Property
   source:
     remote:
@@ -278,7 +278,7 @@ items:
   name:
     CSharp: get_PreprocessorSymbolNames
   qualifiedName:
-    CSharp: get_PreprocessorSymbolNames
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.get_PreprocessorSymbolNames
   source:
     remote:
       branch: master
@@ -293,7 +293,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -320,7 +320,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.GetHashCode
   type: Method
   source:
     remote:
@@ -342,7 +342,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.op_Equality(Microsoft.CodeAnalysis.ParseOptions,Microsoft.CodeAnalysis.ParseOptions)
   source:
     remote:
       branch: master
@@ -357,7 +357,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.ParseOptions.op_Inequality(Microsoft.CodeAnalysis.ParseOptions,Microsoft.CodeAnalysis.ParseOptions)
   source:
     remote:
       branch: master

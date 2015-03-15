@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
 name:
   CSharp: MetadataReferenceProperties
 qualifiedName:
-  CSharp: MetadataReferenceProperties
+  CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Module
   qualifiedName:
-    CSharp: Module
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.Module
   type: Field
   source:
     remote:
@@ -53,7 +53,7 @@ items:
   name:
     CSharp: Assembly
   qualifiedName:
-    CSharp: Assembly
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.Assembly
   type: Field
   source:
     remote:
@@ -70,9 +70,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.MetadataReferenceProperties.yaml
   href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
   name:
-    CSharp: .ctor
+    CSharp: MetadataReferenceProperties(Microsoft.CodeAnalysis.MetadataImageKind,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.MetadataReferenceProperties(Microsoft.CodeAnalysis.MetadataImageKind,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean)
   type: Constructor
   source:
     remote:
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: WithAliases
   qualifiedName:
-    CSharp: WithAliases
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.WithAliases(System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
     remote:
@@ -143,7 +143,7 @@ items:
   name:
     CSharp: WithAliases
   qualifiedName:
-    CSharp: WithAliases
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.WithAliases(System.Collections.Immutable.ImmutableArray{System.String})
   type: Method
   source:
     remote:
@@ -173,7 +173,7 @@ items:
   name:
     CSharp: WithEmbedInteropTypes
   qualifiedName:
-    CSharp: WithEmbedInteropTypes
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.WithEmbedInteropTypes(System.Boolean)
   type: Method
   source:
     remote:
@@ -203,7 +203,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.Kind
   type: Property
   source:
     remote:
@@ -231,7 +231,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.get_Kind
   source:
     remote:
       branch: master
@@ -246,7 +246,7 @@ items:
   name:
     CSharp: GlobalAlias
   qualifiedName:
-    CSharp: GlobalAlias
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.GlobalAlias
   type: Field
   source:
     remote:
@@ -265,7 +265,7 @@ items:
   name:
     CSharp: Aliases
   qualifiedName:
-    CSharp: Aliases
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.Aliases
   type: Property
   source:
     remote:
@@ -293,7 +293,7 @@ items:
   name:
     CSharp: get_Aliases
   qualifiedName:
-    CSharp: get_Aliases
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.get_Aliases
   source:
     remote:
       branch: master
@@ -308,7 +308,7 @@ items:
   name:
     CSharp: EmbedInteropTypes
   qualifiedName:
-    CSharp: EmbedInteropTypes
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes
   type: Property
   source:
     remote:
@@ -336,7 +336,7 @@ items:
   name:
     CSharp: get_EmbedInteropTypes
   qualifiedName:
-    CSharp: get_EmbedInteropTypes
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.get_EmbedInteropTypes
   source:
     remote:
       branch: master
@@ -351,7 +351,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -378,7 +378,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.Equals(Microsoft.CodeAnalysis.MetadataReferenceProperties)
   type: Method
   source:
     remote:
@@ -405,7 +405,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.GetHashCode
   type: Method
   source:
     remote:
@@ -427,7 +427,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.op_Equality(Microsoft.CodeAnalysis.MetadataReferenceProperties,Microsoft.CodeAnalysis.MetadataReferenceProperties)
   source:
     remote:
       branch: master
@@ -442,7 +442,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceProperties.op_Inequality(Microsoft.CodeAnalysis.MetadataReferenceProperties,Microsoft.CodeAnalysis.MetadataReferenceProperties)
   source:
     remote:
       branch: master

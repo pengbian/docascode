@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics
 name:
   CSharp: Diagnostics
 qualifiedName:
-  CSharp: Diagnostics
+  CSharp: Microsoft.CodeAnalysis.Diagnostics
 type: Namespace
 source:
   remote:

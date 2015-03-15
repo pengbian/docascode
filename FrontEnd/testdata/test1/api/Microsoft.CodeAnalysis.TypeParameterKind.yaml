@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.TypeParameterKind
 name:
   CSharp: TypeParameterKind
 qualifiedName:
-  CSharp: TypeParameterKind
+  CSharp: Microsoft.CodeAnalysis.TypeParameterKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.TypeParameterKind.Type
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Method
   qualifiedName:
-    CSharp: Method
+    CSharp: Microsoft.CodeAnalysis.TypeParameterKind.Method
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Cref
   qualifiedName:
-    CSharp: Cref
+    CSharp: Microsoft.CodeAnalysis.TypeParameterKind.Cref
   type: Field
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxTrivia
 name:
   CSharp: SyntaxTrivia
 qualifiedName:
-  CSharp: SyntaxTrivia
+  CSharp: Microsoft.CodeAnalysis.SyntaxTrivia
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: RawKind
   qualifiedName:
-    CSharp: RawKind
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.RawKind
   type: Property
   source:
     remote:
@@ -62,7 +62,7 @@ items:
   name:
     CSharp: get_RawKind
   qualifiedName:
-    CSharp: get_RawKind
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_RawKind
   source:
     remote:
       branch: master
@@ -77,7 +77,7 @@ items:
   name:
     CSharp: Language
   qualifiedName:
-    CSharp: Language
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.Language
   type: Property
   source:
     remote:
@@ -105,7 +105,7 @@ items:
   name:
     CSharp: get_Language
   qualifiedName:
-    CSharp: get_Language
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_Language
   source:
     remote:
       branch: master
@@ -120,7 +120,7 @@ items:
   name:
     CSharp: Token
   qualifiedName:
-    CSharp: Token
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.Token
   type: Property
   source:
     remote:
@@ -148,7 +148,7 @@ items:
   name:
     CSharp: get_Token
   qualifiedName:
-    CSharp: get_Token
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_Token
   source:
     remote:
       branch: master
@@ -163,7 +163,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.Span
   type: Property
   source:
     remote:
@@ -195,7 +195,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_Span
   source:
     remote:
       branch: master
@@ -210,7 +210,7 @@ items:
   name:
     CSharp: SpanStart
   qualifiedName:
-    CSharp: SpanStart
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.SpanStart
   type: Property
   source:
     remote:
@@ -238,7 +238,7 @@ items:
   name:
     CSharp: get_SpanStart
   qualifiedName:
-    CSharp: get_SpanStart
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_SpanStart
   source:
     remote:
       branch: master
@@ -253,7 +253,7 @@ items:
   name:
     CSharp: FullSpan
   qualifiedName:
-    CSharp: FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.FullSpan
   type: Property
   source:
     remote:
@@ -283,7 +283,7 @@ items:
   name:
     CSharp: get_FullSpan
   qualifiedName:
-    CSharp: get_FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_FullSpan
   source:
     remote:
       branch: master
@@ -298,7 +298,7 @@ items:
   name:
     CSharp: ContainsDiagnostics
   qualifiedName:
-    CSharp: ContainsDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.ContainsDiagnostics
   type: Property
   source:
     remote:
@@ -330,7 +330,7 @@ items:
   name:
     CSharp: get_ContainsDiagnostics
   qualifiedName:
-    CSharp: get_ContainsDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_ContainsDiagnostics
   source:
     remote:
       branch: master
@@ -345,7 +345,7 @@ items:
   name:
     CSharp: HasStructure
   qualifiedName:
-    CSharp: HasStructure
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.HasStructure
   type: Property
   source:
     remote:
@@ -373,7 +373,7 @@ items:
   name:
     CSharp: get_HasStructure
   qualifiedName:
-    CSharp: get_HasStructure
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_HasStructure
   source:
     remote:
       branch: master
@@ -388,7 +388,7 @@ items:
   name:
     CSharp: IsPartOfStructuredTrivia
   qualifiedName:
-    CSharp: IsPartOfStructuredTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.IsPartOfStructuredTrivia
   type: Method
   source:
     remote:
@@ -413,7 +413,7 @@ items:
   name:
     CSharp: HasAnnotations
   qualifiedName:
-    CSharp: HasAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.HasAnnotations(System.String)
   type: Method
   source:
     remote:
@@ -443,7 +443,7 @@ items:
   name:
     CSharp: HasAnnotations
   qualifiedName:
-    CSharp: HasAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.HasAnnotations(System.String[])
   type: Method
   source:
     remote:
@@ -473,7 +473,7 @@ items:
   name:
     CSharp: HasAnnotation
   qualifiedName:
-    CSharp: HasAnnotation
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.HasAnnotation(Microsoft.CodeAnalysis.SyntaxAnnotation)
   type: Method
   source:
     remote:
@@ -503,7 +503,7 @@ items:
   name:
     CSharp: GetAnnotations
   qualifiedName:
-    CSharp: GetAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.GetAnnotations(System.String)
   type: Method
   source:
     remote:
@@ -533,7 +533,7 @@ items:
   name:
     CSharp: GetAnnotations
   qualifiedName:
-    CSharp: GetAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.GetAnnotations(System.String[])
   type: Method
   source:
     remote:
@@ -563,7 +563,7 @@ items:
   name:
     CSharp: IsDirective
   qualifiedName:
-    CSharp: IsDirective
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.IsDirective
   type: Property
   source:
     remote:
@@ -591,7 +591,7 @@ items:
   name:
     CSharp: get_IsDirective
   qualifiedName:
-    CSharp: get_IsDirective
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_IsDirective
   source:
     remote:
       branch: master
@@ -606,7 +606,7 @@ items:
   name:
     CSharp: GetStructure
   qualifiedName:
-    CSharp: GetStructure
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.GetStructure
   type: Method
   source:
     remote:
@@ -635,7 +635,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.ToString
   type: Method
   source:
     remote:
@@ -663,7 +663,7 @@ items:
   name:
     CSharp: ToFullString
   qualifiedName:
-    CSharp: ToFullString
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.ToFullString
   type: Method
   source:
     remote:
@@ -691,7 +691,7 @@ items:
   name:
     CSharp: WriteTo
   qualifiedName:
-    CSharp: WriteTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.WriteTo(System.IO.TextWriter)
   type: Method
   source:
     remote:
@@ -721,7 +721,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.op_Equality(Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
   source:
     remote:
       branch: master
@@ -739,7 +739,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.op_Inequality(Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
   source:
     remote:
       branch: master
@@ -757,7 +757,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.Equals(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -789,7 +789,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -821,7 +821,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.GetHashCode
   type: Method
   source:
     remote:
@@ -846,7 +846,7 @@ items:
   name:
     CSharp: WithAdditionalAnnotations
   qualifiedName:
-    CSharp: WithAdditionalAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.WithAdditionalAnnotations(Microsoft.CodeAnalysis.SyntaxAnnotation[])
   type: Method
   source:
     remote:
@@ -876,7 +876,7 @@ items:
   name:
     CSharp: WithAdditionalAnnotations
   qualifiedName:
-    CSharp: WithAdditionalAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.WithAdditionalAnnotations(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation})
   type: Method
   source:
     remote:
@@ -906,7 +906,7 @@ items:
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
-    CSharp: WithoutAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.WithoutAnnotations(Microsoft.CodeAnalysis.SyntaxAnnotation[])
   type: Method
   source:
     remote:
@@ -936,7 +936,7 @@ items:
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
-    CSharp: WithoutAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.WithoutAnnotations(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation})
   type: Method
   source:
     remote:
@@ -966,7 +966,7 @@ items:
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
-    CSharp: WithoutAnnotations
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.WithoutAnnotations(System.String)
   type: Method
   source:
     remote:
@@ -996,7 +996,7 @@ items:
   name:
     CSharp: CopyAnnotationsTo
   qualifiedName:
-    CSharp: CopyAnnotationsTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.CopyAnnotationsTo(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -1026,7 +1026,7 @@ items:
   name:
     CSharp: SyntaxTree
   qualifiedName:
-    CSharp: SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.SyntaxTree
   type: Property
   source:
     remote:
@@ -1054,7 +1054,7 @@ items:
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
-    CSharp: get_SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.get_SyntaxTree
   source:
     remote:
       branch: master
@@ -1069,7 +1069,7 @@ items:
   name:
     CSharp: GetLocation
   qualifiedName:
-    CSharp: GetLocation
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.GetLocation
   type: Method
   source:
     remote:
@@ -1094,7 +1094,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.GetDiagnostics
   type: Method
   source:
     remote:
@@ -1123,7 +1123,7 @@ items:
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
-    CSharp: IsEquivalentTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxTrivia.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
 name:
   CSharp: SeparatedSyntaxList`1
 qualifiedName:
-  CSharp: SeparatedSyntaxList`1
+  CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Count
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Count
   qualifiedName:
-    CSharp: get_Count
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Count
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: SeparatorCount
   qualifiedName:
-    CSharp: SeparatorCount
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.SeparatorCount
   type: Property
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: get_SeparatorCount
   qualifiedName:
-    CSharp: get_SeparatorCount
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_SeparatorCount
   source:
     remote:
       branch: master
@@ -114,7 +114,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -130,7 +130,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: GetSeparator
   qualifiedName:
-    CSharp: GetSeparator
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetSeparator(System.Int32)
   type: Method
   source:
     remote:
@@ -176,7 +176,7 @@ items:
   name:
     CSharp: GetSeparators
   qualifiedName:
-    CSharp: GetSeparators
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetSeparators
   type: Method
   source:
     remote:
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: FullSpan
   qualifiedName:
-    CSharp: FullSpan
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.FullSpan
   type: Property
   source:
     remote:
@@ -229,7 +229,7 @@ items:
   name:
     CSharp: get_FullSpan
   qualifiedName:
-    CSharp: get_FullSpan
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_FullSpan
   source:
     remote:
       branch: master
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Span
   type: Property
   source:
     remote:
@@ -272,7 +272,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Span
   source:
     remote:
       branch: master
@@ -287,7 +287,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ToString
   type: Method
   source:
     remote:
@@ -315,7 +315,7 @@ items:
   name:
     CSharp: ToFullString
   qualifiedName:
-    CSharp: ToFullString
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ToFullString
   type: Method
   source:
     remote:
@@ -346,7 +346,7 @@ items:
   name:
     CSharp: First
   qualifiedName:
-    CSharp: First
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.First
   type: Method
   source:
     remote:
@@ -368,7 +368,7 @@ items:
   name:
     CSharp: FirstOrDefault
   qualifiedName:
-    CSharp: FirstOrDefault
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.FirstOrDefault
   type: Method
   source:
     remote:
@@ -390,7 +390,7 @@ items:
   name:
     CSharp: Last
   qualifiedName:
-    CSharp: Last
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Last
   type: Method
   source:
     remote:
@@ -412,7 +412,7 @@ items:
   name:
     CSharp: LastOrDefault
   qualifiedName:
-    CSharp: LastOrDefault
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastOrDefault
   type: Method
   source:
     remote:
@@ -434,7 +434,7 @@ items:
   name:
     CSharp: Contains
   qualifiedName:
-    CSharp: Contains
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Contains(`0)
   type: Method
   source:
     remote:
@@ -461,7 +461,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.IndexOf(`0)
   type: Method
   source:
     remote:
@@ -488,7 +488,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.IndexOf(System.Func{`0,System.Boolean})
   type: Method
   source:
     remote:
@@ -515,7 +515,7 @@ items:
   name:
     CSharp: LastIndexOf
   qualifiedName:
-    CSharp: LastIndexOf
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastIndexOf(`0)
   type: Method
   source:
     remote:
@@ -542,7 +542,7 @@ items:
   name:
     CSharp: LastIndexOf
   qualifiedName:
-    CSharp: LastIndexOf
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastIndexOf(System.Func{`0,System.Boolean})
   type: Method
   source:
     remote:
@@ -569,7 +569,7 @@ items:
   name:
     CSharp: Any
   qualifiedName:
-    CSharp: Any
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Any
   type: Method
   source:
     remote:
@@ -591,7 +591,7 @@ items:
   name:
     CSharp: GetWithSeparators
   qualifiedName:
-    CSharp: GetWithSeparators
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetWithSeparators
   type: Method
   source:
     remote:
@@ -613,7 +613,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.op_Equality(Microsoft.CodeAnalysis.SeparatedSyntaxList{`0},Microsoft.CodeAnalysis.SeparatedSyntaxList{`0})
   source:
     remote:
       branch: master
@@ -628,7 +628,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.op_Inequality(Microsoft.CodeAnalysis.SeparatedSyntaxList{`0},Microsoft.CodeAnalysis.SeparatedSyntaxList{`0})
   source:
     remote:
       branch: master
@@ -643,7 +643,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Equals(Microsoft.CodeAnalysis.SeparatedSyntaxList{`0})
   type: Method
   source:
     remote:
@@ -670,7 +670,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -697,7 +697,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetHashCode
   type: Method
   source:
     remote:
@@ -719,7 +719,7 @@ items:
   name:
     CSharp: Add
   qualifiedName:
-    CSharp: Add
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Add(`0)
   type: Method
   source:
     remote:
@@ -750,7 +750,7 @@ items:
   name:
     CSharp: AddRange
   qualifiedName:
-    CSharp: AddRange
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
   type: Method
   source:
     remote:
@@ -781,7 +781,7 @@ items:
   name:
     CSharp: Insert
   qualifiedName:
-    CSharp: Insert
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Insert(System.Int32,`0)
   type: Method
   source:
     remote:
@@ -818,7 +818,7 @@ items:
   name:
     CSharp: InsertRange
   qualifiedName:
-    CSharp: InsertRange
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
   type: Method
   source:
     remote:
@@ -855,7 +855,7 @@ items:
   name:
     CSharp: RemoveAt
   qualifiedName:
-    CSharp: RemoveAt
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.RemoveAt(System.Int32)
   type: Method
   source:
     remote:
@@ -886,7 +886,7 @@ items:
   name:
     CSharp: Remove
   qualifiedName:
-    CSharp: Remove
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Remove(`0)
   type: Method
   source:
     remote:
@@ -917,7 +917,7 @@ items:
   name:
     CSharp: Replace
   qualifiedName:
-    CSharp: Replace
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Replace(`0,`0)
   type: Method
   source:
     remote:
@@ -954,7 +954,7 @@ items:
   name:
     CSharp: ReplaceRange
   qualifiedName:
-    CSharp: ReplaceRange
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ReplaceRange(`0,System.Collections.Generic.IEnumerable{`0})
   type: Method
   source:
     remote:
@@ -991,7 +991,7 @@ items:
   name:
     CSharp: ReplaceSeparator
   qualifiedName:
-    CSharp: ReplaceSeparator
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ReplaceSeparator(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
   type: Method
   source:
     remote:
@@ -1028,7 +1028,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetEnumerator
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.SourceTextContainer
 name:
   CSharp: SourceTextContainer
 qualifiedName:
-  CSharp: SourceTextContainer
+  CSharp: Microsoft.CodeAnalysis.Text.SourceTextContainer
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: CurrentText
   qualifiedName:
-    CSharp: CurrentText
+    CSharp: Microsoft.CodeAnalysis.Text.SourceTextContainer.CurrentText
   type: Property
   source:
     remote:
@@ -61,7 +61,7 @@ items:
   name:
     CSharp: get_CurrentText
   qualifiedName:
-    CSharp: get_CurrentText
+    CSharp: Microsoft.CodeAnalysis.Text.SourceTextContainer.get_CurrentText
   source:
     remote:
       branch: master
@@ -76,7 +76,7 @@ items:
   name:
     CSharp: TextChanged
   qualifiedName:
-    CSharp: TextChanged
+    CSharp: Microsoft.CodeAnalysis.Text.SourceTextContainer.TextChanged
   type: Event
   source:
     remote:

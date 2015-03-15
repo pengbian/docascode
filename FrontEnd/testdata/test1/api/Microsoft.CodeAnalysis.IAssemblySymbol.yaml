@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IAssemblySymbol
 name:
   CSharp: IAssemblySymbol
 qualifiedName:
-  CSharp: IAssemblySymbol
+  CSharp: Microsoft.CodeAnalysis.IAssemblySymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: IsInteractive
   qualifiedName:
-    CSharp: IsInteractive
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.IsInteractive
   type: Property
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: get_IsInteractive
   qualifiedName:
-    CSharp: get_IsInteractive
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_IsInteractive
   source:
     remote:
       branch: master
@@ -70,7 +70,7 @@ items:
   name:
     CSharp: Identity
   qualifiedName:
-    CSharp: Identity
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.Identity
   type: Property
   source:
     remote:
@@ -98,7 +98,7 @@ items:
   name:
     CSharp: get_Identity
   qualifiedName:
-    CSharp: get_Identity
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_Identity
   source:
     remote:
       branch: master
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: GlobalNamespace
   qualifiedName:
-    CSharp: GlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.GlobalNamespace
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_GlobalNamespace
   qualifiedName:
-    CSharp: get_GlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_GlobalNamespace
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: Modules
   qualifiedName:
-    CSharp: Modules
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.Modules
   type: Property
   source:
     remote:
@@ -190,7 +190,7 @@ items:
   name:
     CSharp: get_Modules
   qualifiedName:
-    CSharp: get_Modules
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_Modules
   source:
     remote:
       branch: master
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: TypeNames
   qualifiedName:
-    CSharp: TypeNames
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.TypeNames
   type: Property
   source:
     remote:
@@ -233,7 +233,7 @@ items:
   name:
     CSharp: get_TypeNames
   qualifiedName:
-    CSharp: get_TypeNames
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_TypeNames
   source:
     remote:
       branch: master
@@ -248,7 +248,7 @@ items:
   name:
     CSharp: NamespaceNames
   qualifiedName:
-    CSharp: NamespaceNames
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.NamespaceNames
   type: Property
   source:
     remote:
@@ -276,7 +276,7 @@ items:
   name:
     CSharp: get_NamespaceNames
   qualifiedName:
-    CSharp: get_NamespaceNames
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_NamespaceNames
   source:
     remote:
       branch: master
@@ -291,7 +291,7 @@ items:
   name:
     CSharp: GivesAccessTo
   qualifiedName:
-    CSharp: GivesAccessTo
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.GivesAccessTo(Microsoft.CodeAnalysis.IAssemblySymbol)
   type: Method
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: GetTypeByMetadataName
   qualifiedName:
-    CSharp: GetTypeByMetadataName
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.GetTypeByMetadataName(System.String)
   type: Method
   source:
     remote:
@@ -355,7 +355,7 @@ items:
   name:
     CSharp: MightContainExtensionMethods
   qualifiedName:
-    CSharp: MightContainExtensionMethods
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.MightContainExtensionMethods
   type: Property
   source:
     remote:
@@ -385,7 +385,7 @@ items:
   name:
     CSharp: get_MightContainExtensionMethods
   qualifiedName:
-    CSharp: get_MightContainExtensionMethods
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.get_MightContainExtensionMethods
   source:
     remote:
       branch: master
@@ -400,7 +400,7 @@ items:
   name:
     CSharp: ResolveForwardedType
   qualifiedName:
-    CSharp: ResolveForwardedType
+    CSharp: Microsoft.CodeAnalysis.IAssemblySymbol.ResolveForwardedType(System.String)
   type: Method
   source:
     remote:

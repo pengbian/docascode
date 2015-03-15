@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
 name:
   CSharp: UnresolvedAnalyzerReference
 qualifiedName:
-  CSharp: UnresolvedAnalyzerReference
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
 type: Class
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference
   name:
-    CSharp: .ctor
+    CSharp: UnresolvedAnalyzerReference(System.String)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.UnresolvedAnalyzerReference(System.String)
   type: Constructor
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Display
   qualifiedName:
-    CSharp: Display
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.Display
   type: Property
   source:
     remote:
@@ -84,7 +84,7 @@ items:
   name:
     CSharp: get_Display
   qualifiedName:
-    CSharp: get_Display
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_Display
   source:
     remote:
       branch: master
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: FullPath
   qualifiedName:
-    CSharp: FullPath
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.FullPath
   type: Property
   source:
     remote:
@@ -124,7 +124,7 @@ items:
   name:
     CSharp: get_FullPath
   qualifiedName:
-    CSharp: get_FullPath
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_FullPath
   source:
     remote:
       branch: master
@@ -139,7 +139,7 @@ items:
   name:
     CSharp: IsUnresolved
   qualifiedName:
-    CSharp: IsUnresolved
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.IsUnresolved
   type: Property
   source:
     remote:
@@ -164,7 +164,7 @@ items:
   name:
     CSharp: get_IsUnresolved
   qualifiedName:
-    CSharp: get_IsUnresolved
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.get_IsUnresolved
   source:
     remote:
       branch: master
@@ -179,7 +179,7 @@ items:
   name:
     CSharp: GetAnalyzersForAllLanguages
   qualifiedName:
-    CSharp: GetAnalyzersForAllLanguages
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzersForAllLanguages
   type: Method
   source:
     remote:
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: GetAnalyzers
   qualifiedName:
-    CSharp: GetAnalyzers
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.UnresolvedAnalyzerReference.GetAnalyzers(System.String)
   type: Method
   source:
     remote:

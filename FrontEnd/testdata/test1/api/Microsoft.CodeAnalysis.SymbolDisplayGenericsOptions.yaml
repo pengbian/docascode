@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions
 name:
   CSharp: SymbolDisplayGenericsOptions
 qualifiedName:
-  CSharp: SymbolDisplayGenericsOptions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: IncludeTypeParameters
   qualifiedName:
-    CSharp: IncludeTypeParameters
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.IncludeTypeParameters
   type: Field
   source:
     remote:
@@ -83,7 +83,7 @@ items:
   name:
     CSharp: IncludeTypeConstraints
   qualifiedName:
-    CSharp: IncludeTypeConstraints
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.IncludeTypeConstraints
   type: Field
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: IncludeVariance
   qualifiedName:
-    CSharp: IncludeVariance
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.IncludeVariance
   type: Field
   source:
     remote:

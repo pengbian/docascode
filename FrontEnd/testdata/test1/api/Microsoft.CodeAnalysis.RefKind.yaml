@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.RefKind
 name:
   CSharp: RefKind
 qualifiedName:
-  CSharp: RefKind
+  CSharp: Microsoft.CodeAnalysis.RefKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.RefKind.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Ref
   qualifiedName:
-    CSharp: Ref
+    CSharp: Microsoft.CodeAnalysis.RefKind.Ref
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Out
   qualifiedName:
-    CSharp: Out
+    CSharp: Microsoft.CodeAnalysis.RefKind.Out
   type: Field
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
 name:
   CSharp: ITypeParameterSymbol
 qualifiedName:
-  CSharp: ITypeParameterSymbol
+  CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: Ordinal
   qualifiedName:
-    CSharp: Ordinal
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.Ordinal
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_Ordinal
   qualifiedName:
-    CSharp: get_Ordinal
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Ordinal
   source:
     remote:
       branch: master
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: Variance
   qualifiedName:
-    CSharp: Variance
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.Variance
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_Variance
   qualifiedName:
-    CSharp: get_Variance
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Variance
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: TypeParameterKind
   qualifiedName:
-    CSharp: TypeParameterKind
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.TypeParameterKind
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_TypeParameterKind
   qualifiedName:
-    CSharp: get_TypeParameterKind
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_TypeParameterKind
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: DeclaringMethod
   qualifiedName:
-    CSharp: DeclaringMethod
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.DeclaringMethod
   type: Property
   source:
     remote:
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: get_DeclaringMethod
   qualifiedName:
-    CSharp: get_DeclaringMethod
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_DeclaringMethod
   source:
     remote:
       branch: master
@@ -203,7 +203,7 @@ items:
   name:
     CSharp: DeclaringType
   qualifiedName:
-    CSharp: DeclaringType
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.DeclaringType
   type: Property
   source:
     remote:
@@ -231,7 +231,7 @@ items:
   name:
     CSharp: get_DeclaringType
   qualifiedName:
-    CSharp: get_DeclaringType
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_DeclaringType
   source:
     remote:
       branch: master
@@ -246,7 +246,7 @@ items:
   name:
     CSharp: HasReferenceTypeConstraint
   qualifiedName:
-    CSharp: HasReferenceTypeConstraint
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.HasReferenceTypeConstraint
   type: Property
   source:
     remote:
@@ -274,7 +274,7 @@ items:
   name:
     CSharp: get_HasReferenceTypeConstraint
   qualifiedName:
-    CSharp: get_HasReferenceTypeConstraint
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasReferenceTypeConstraint
   source:
     remote:
       branch: master
@@ -289,7 +289,7 @@ items:
   name:
     CSharp: HasValueTypeConstraint
   qualifiedName:
-    CSharp: HasValueTypeConstraint
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.HasValueTypeConstraint
   type: Property
   source:
     remote:
@@ -317,7 +317,7 @@ items:
   name:
     CSharp: get_HasValueTypeConstraint
   qualifiedName:
-    CSharp: get_HasValueTypeConstraint
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasValueTypeConstraint
   source:
     remote:
       branch: master
@@ -332,7 +332,7 @@ items:
   name:
     CSharp: HasConstructorConstraint
   qualifiedName:
-    CSharp: HasConstructorConstraint
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.HasConstructorConstraint
   type: Property
   source:
     remote:
@@ -360,7 +360,7 @@ items:
   name:
     CSharp: get_HasConstructorConstraint
   qualifiedName:
-    CSharp: get_HasConstructorConstraint
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasConstructorConstraint
   source:
     remote:
       branch: master
@@ -375,7 +375,7 @@ items:
   name:
     CSharp: ConstraintTypes
   qualifiedName:
-    CSharp: ConstraintTypes
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.ConstraintTypes
   type: Property
   source:
     remote:
@@ -403,7 +403,7 @@ items:
   name:
     CSharp: get_ConstraintTypes
   qualifiedName:
-    CSharp: get_ConstraintTypes
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ConstraintTypes
   source:
     remote:
       branch: master
@@ -418,7 +418,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -450,7 +450,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -465,7 +465,7 @@ items:
   name:
     CSharp: ReducedFrom
   qualifiedName:
-    CSharp: ReducedFrom
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.ReducedFrom
   type: Property
   source:
     remote:
@@ -495,7 +495,7 @@ items:
   name:
     CSharp: get_ReducedFrom
   qualifiedName:
-    CSharp: get_ReducedFrom
+    CSharp: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ReducedFrom
   source:
     remote:
       branch: master

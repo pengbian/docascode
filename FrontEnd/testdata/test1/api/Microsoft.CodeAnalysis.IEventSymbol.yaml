@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IEventSymbol
 name:
   CSharp: IEventSymbol
 qualifiedName:
-  CSharp: IEventSymbol
+  CSharp: Microsoft.CodeAnalysis.IEventSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.Type
   type: Property
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: get_Type
   qualifiedName:
-    CSharp: get_Type
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_Type
   source:
     remote:
       branch: master
@@ -70,7 +70,7 @@ items:
   name:
     CSharp: IsWindowsRuntimeEvent
   qualifiedName:
-    CSharp: IsWindowsRuntimeEvent
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.IsWindowsRuntimeEvent
   type: Property
   source:
     remote:
@@ -98,7 +98,7 @@ items:
   name:
     CSharp: get_IsWindowsRuntimeEvent
   qualifiedName:
-    CSharp: get_IsWindowsRuntimeEvent
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_IsWindowsRuntimeEvent
   source:
     remote:
       branch: master
@@ -113,7 +113,7 @@ items:
   name:
     CSharp: AddMethod
   qualifiedName:
-    CSharp: AddMethod
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.AddMethod
   type: Property
   source:
     remote:
@@ -141,7 +141,7 @@ items:
   name:
     CSharp: get_AddMethod
   qualifiedName:
-    CSharp: get_AddMethod
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_AddMethod
   source:
     remote:
       branch: master
@@ -156,7 +156,7 @@ items:
   name:
     CSharp: RemoveMethod
   qualifiedName:
-    CSharp: RemoveMethod
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.RemoveMethod
   type: Property
   source:
     remote:
@@ -184,7 +184,7 @@ items:
   name:
     CSharp: get_RemoveMethod
   qualifiedName:
-    CSharp: get_RemoveMethod
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_RemoveMethod
   source:
     remote:
       branch: master
@@ -199,7 +199,7 @@ items:
   name:
     CSharp: RaiseMethod
   qualifiedName:
-    CSharp: RaiseMethod
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.RaiseMethod
   type: Property
   source:
     remote:
@@ -227,7 +227,7 @@ items:
   name:
     CSharp: get_RaiseMethod
   qualifiedName:
-    CSharp: get_RaiseMethod
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_RaiseMethod
   source:
     remote:
       branch: master
@@ -242,7 +242,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -274,7 +274,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -289,7 +289,7 @@ items:
   name:
     CSharp: OverriddenEvent
   qualifiedName:
-    CSharp: OverriddenEvent
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.OverriddenEvent
   type: Property
   source:
     remote:
@@ -317,7 +317,7 @@ items:
   name:
     CSharp: get_OverriddenEvent
   qualifiedName:
-    CSharp: get_OverriddenEvent
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_OverriddenEvent
   source:
     remote:
       branch: master
@@ -332,7 +332,7 @@ items:
   name:
     CSharp: ExplicitInterfaceImplementations
   qualifiedName:
-    CSharp: ExplicitInterfaceImplementations
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.ExplicitInterfaceImplementations
   type: Property
   source:
     remote:
@@ -360,7 +360,7 @@ items:
   name:
     CSharp: get_ExplicitInterfaceImplementations
   qualifiedName:
-    CSharp: get_ExplicitInterfaceImplementations
+    CSharp: Microsoft.CodeAnalysis.IEventSymbol.get_ExplicitInterfaceImplementations
   source:
     remote:
       branch: master

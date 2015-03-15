@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IErrorTypeSymbol
 name:
   CSharp: IErrorTypeSymbol
 qualifiedName:
-  CSharp: IErrorTypeSymbol
+  CSharp: Microsoft.CodeAnalysis.IErrorTypeSymbol
 type: Interface
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: CandidateSymbols
   qualifiedName:
-    CSharp: CandidateSymbols
+    CSharp: Microsoft.CodeAnalysis.IErrorTypeSymbol.CandidateSymbols
   type: Property
   source:
     remote:
@@ -67,7 +67,7 @@ items:
   name:
     CSharp: get_CandidateSymbols
   qualifiedName:
-    CSharp: get_CandidateSymbols
+    CSharp: Microsoft.CodeAnalysis.IErrorTypeSymbol.get_CandidateSymbols
   source:
     remote:
       branch: master
@@ -82,7 +82,7 @@ items:
   name:
     CSharp: CandidateReason
   qualifiedName:
-    CSharp: CandidateReason
+    CSharp: Microsoft.CodeAnalysis.IErrorTypeSymbol.CandidateReason
   type: Property
   source:
     remote:
@@ -112,7 +112,7 @@ items:
   name:
     CSharp: get_CandidateReason
   qualifiedName:
-    CSharp: get_CandidateReason
+    CSharp: Microsoft.CodeAnalysis.IErrorTypeSymbol.get_CandidateReason
   source:
     remote:
       branch: master

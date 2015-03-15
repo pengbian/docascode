@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IDynamicTypeSymbol
 name:
   CSharp: IDynamicTypeSymbol
 qualifiedName:
-  CSharp: IDynamicTypeSymbol
+  CSharp: Microsoft.CodeAnalysis.IDynamicTypeSymbol
 type: Interface
 source:
   remote:

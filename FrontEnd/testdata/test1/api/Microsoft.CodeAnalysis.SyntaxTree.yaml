@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxTree
 name:
   CSharp: SyntaxTree
 qualifiedName:
-  CSharp: SyntaxTree
+  CSharp: Microsoft.CodeAnalysis.SyntaxTree
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: FilePath
   qualifiedName:
-    CSharp: FilePath
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.FilePath
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_FilePath
   qualifiedName:
-    CSharp: get_FilePath
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.get_FilePath
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: HasCompilationUnitRoot
   qualifiedName:
-    CSharp: HasCompilationUnitRoot
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.HasCompilationUnitRoot
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_HasCompilationUnitRoot
   qualifiedName:
-    CSharp: get_HasCompilationUnitRoot
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.get_HasCompilationUnitRoot
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.Options
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.get_Options
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: Length
   qualifiedName:
-    CSharp: Length
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.Length
   type: Property
   source:
     remote:
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: get_Length
   qualifiedName:
-    CSharp: get_Length
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.get_Length
   source:
     remote:
       branch: master
@@ -203,7 +203,7 @@ items:
   name:
     CSharp: TryGetText
   qualifiedName:
-    CSharp: TryGetText
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.TryGetText(Microsoft.CodeAnalysis.Text.SourceText@)
   type: Method
   source:
     remote:
@@ -233,7 +233,7 @@ items:
   name:
     CSharp: GetText
   qualifiedName:
-    CSharp: GetText
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetText(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -263,7 +263,7 @@ items:
   name:
     CSharp: GetTextAsync
   qualifiedName:
-    CSharp: GetTextAsync
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetTextAsync(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -293,7 +293,7 @@ items:
   name:
     CSharp: TryGetRoot
   qualifiedName:
-    CSharp: TryGetRoot
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.TryGetRoot(Microsoft.CodeAnalysis.SyntaxNode@)
   type: Method
   source:
     remote:
@@ -323,7 +323,7 @@ items:
   name:
     CSharp: GetRoot
   qualifiedName:
-    CSharp: GetRoot
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetRoot(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -353,7 +353,7 @@ items:
   name:
     CSharp: GetRootAsync
   qualifiedName:
-    CSharp: GetRootAsync
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetRootAsync(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -383,7 +383,7 @@ items:
   name:
     CSharp: WithChangedText
   qualifiedName:
-    CSharp: WithChangedText
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.WithChangedText(Microsoft.CodeAnalysis.Text.SourceText)
   type: Method
   source:
     remote:
@@ -421,7 +421,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -455,7 +455,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -489,7 +489,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxToken)
   type: Method
   source:
     remote:
@@ -523,7 +523,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -557,7 +557,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
   type: Method
   source:
     remote:
@@ -593,7 +593,7 @@ items:
   name:
     CSharp: GetLineSpan
   qualifiedName:
-    CSharp: GetLineSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetLineSpan(Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -634,7 +634,7 @@ items:
   name:
     CSharp: GetMappedLineSpan
   qualifiedName:
-    CSharp: GetMappedLineSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetMappedLineSpan(Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -674,7 +674,7 @@ items:
   name:
     CSharp: GetLineVisibility
   qualifiedName:
-    CSharp: GetLineVisibility
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetLineVisibility(System.Int32,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -711,7 +711,7 @@ items:
   name:
     CSharp: HasHiddenRegions
   qualifiedName:
-    CSharp: HasHiddenRegions
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.HasHiddenRegions
   type: Method
   source:
     remote:
@@ -737,7 +737,7 @@ items:
   name:
     CSharp: GetChangedSpans
   qualifiedName:
-    CSharp: GetChangedSpans
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetChangedSpans(Microsoft.CodeAnalysis.SyntaxTree)
   type: Method
   source:
     remote:
@@ -769,7 +769,7 @@ items:
   name:
     CSharp: GetLocation
   qualifiedName:
-    CSharp: GetLocation
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetLocation(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -799,7 +799,7 @@ items:
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
-    CSharp: IsEquivalentTo
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxTree,System.Boolean)
   type: Method
   source:
     remote:
@@ -841,7 +841,7 @@ items:
   name:
     CSharp: GetReference
   qualifiedName:
-    CSharp: GetReference
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetReference(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -875,7 +875,7 @@ items:
   name:
     CSharp: GetChanges
   qualifiedName:
-    CSharp: GetChanges
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.GetChanges(Microsoft.CodeAnalysis.SyntaxTree)
   type: Method
   source:
     remote:
@@ -906,7 +906,7 @@ items:
   name:
     CSharp: WithRootAndOptions
   qualifiedName:
-    CSharp: WithRootAndOptions
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.WithRootAndOptions(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ParseOptions)
   type: Method
   source:
     remote:
@@ -941,7 +941,7 @@ items:
   name:
     CSharp: WithFilePath
   qualifiedName:
-    CSharp: WithFilePath
+    CSharp: Microsoft.CodeAnalysis.SyntaxTree.WithFilePath(System.String)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.CodeGen
 name:
   CSharp: CodeGen
 qualifiedName:
-  CSharp: CodeGen
+  CSharp: Microsoft.CodeAnalysis.CodeGen
 type: Namespace
 source:
   remote:

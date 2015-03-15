@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit
 name:
   CSharp: Emit
 qualifiedName:
-  CSharp: Emit
+  CSharp: Microsoft.CodeAnalysis.Emit
 type: Namespace
 source:
   remote:

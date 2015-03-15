@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.INamespaceSymbol
 name:
   CSharp: INamespaceSymbol
 qualifiedName:
-  CSharp: INamespaceSymbol
+  CSharp: Microsoft.CodeAnalysis.INamespaceSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: GetMembers
   qualifiedName:
-    CSharp: GetMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.GetMembers
   type: Method
   source:
     remote:
@@ -52,7 +52,7 @@ items:
   name:
     CSharp: GetMembers
   qualifiedName:
-    CSharp: GetMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.GetMembers(System.String)
   type: Method
   source:
     remote:
@@ -82,7 +82,7 @@ items:
   name:
     CSharp: GetNamespaceMembers
   qualifiedName:
-    CSharp: GetNamespaceMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.GetNamespaceMembers
   type: Method
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: IsGlobalNamespace
   qualifiedName:
-    CSharp: IsGlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.IsGlobalNamespace
   type: Property
   source:
     remote:
@@ -137,7 +137,7 @@ items:
   name:
     CSharp: get_IsGlobalNamespace
   qualifiedName:
-    CSharp: get_IsGlobalNamespace
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.get_IsGlobalNamespace
   source:
     remote:
       branch: master
@@ -152,7 +152,7 @@ items:
   name:
     CSharp: NamespaceKind
   qualifiedName:
-    CSharp: NamespaceKind
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.NamespaceKind
   type: Property
   source:
     remote:
@@ -186,7 +186,7 @@ items:
   name:
     CSharp: get_NamespaceKind
   qualifiedName:
-    CSharp: get_NamespaceKind
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.get_NamespaceKind
   source:
     remote:
       branch: master
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: ContainingCompilation
   qualifiedName:
-    CSharp: ContainingCompilation
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.ContainingCompilation
   type: Property
   source:
     remote:
@@ -229,7 +229,7 @@ items:
   name:
     CSharp: get_ContainingCompilation
   qualifiedName:
-    CSharp: get_ContainingCompilation
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.get_ContainingCompilation
   source:
     remote:
       branch: master
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: ConstituentNamespaces
   qualifiedName:
-    CSharp: ConstituentNamespaces
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.ConstituentNamespaces
   type: Property
   source:
     remote:
@@ -278,7 +278,7 @@ items:
   name:
     CSharp: get_ConstituentNamespaces
   qualifiedName:
-    CSharp: get_ConstituentNamespaces
+    CSharp: Microsoft.CodeAnalysis.INamespaceSymbol.get_ConstituentNamespaces
   source:
     remote:
       branch: master

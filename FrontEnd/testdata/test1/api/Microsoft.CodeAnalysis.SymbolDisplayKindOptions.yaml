@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayKindOptions
 name:
   CSharp: SymbolDisplayKindOptions
 qualifiedName:
-  CSharp: SymbolDisplayKindOptions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayKindOptions
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayKindOptions.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: IncludeNamespaceKeyword
   qualifiedName:
-    CSharp: IncludeNamespaceKeyword
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayKindOptions.IncludeNamespaceKeyword
   type: Field
   source:
     remote:
@@ -83,7 +83,7 @@ items:
   name:
     CSharp: IncludeTypeKeyword
   qualifiedName:
-    CSharp: IncludeTypeKeyword
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayKindOptions.IncludeTypeKeyword
   type: Field
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: IncludeMemberKeyword
   qualifiedName:
-    CSharp: IncludeMemberKeyword
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayKindOptions.IncludeMemberKeyword
   type: Field
   source:
     remote:

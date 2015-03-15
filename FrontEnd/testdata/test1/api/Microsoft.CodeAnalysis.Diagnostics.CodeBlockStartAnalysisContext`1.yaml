@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
 name:
   CSharp: CodeBlockStartAnalysisContext`1
 qualifiedName:
-  CSharp: CodeBlockStartAnalysisContext`1
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
 type: Class
 source:
   remote:
@@ -40,7 +40,7 @@ items:
   name:
     CSharp: CodeBlock
   qualifiedName:
-    CSharp: CodeBlock
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock
   type: Property
   source:
     remote:
@@ -68,7 +68,7 @@ items:
   name:
     CSharp: get_CodeBlock
   qualifiedName:
-    CSharp: get_CodeBlock
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock
   source:
     remote:
       branch: master
@@ -83,7 +83,7 @@ items:
   name:
     CSharp: OwningSymbol
   qualifiedName:
-    CSharp: OwningSymbol
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.OwningSymbol
   type: Property
   source:
     remote:
@@ -111,7 +111,7 @@ items:
   name:
     CSharp: get_OwningSymbol
   qualifiedName:
-    CSharp: get_OwningSymbol
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol
   source:
     remote:
       branch: master
@@ -126,7 +126,7 @@ items:
   name:
     CSharp: SemanticModel
   qualifiedName:
-    CSharp: SemanticModel
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.SemanticModel
   type: Property
   source:
     remote:
@@ -154,7 +154,7 @@ items:
   name:
     CSharp: get_SemanticModel
   qualifiedName:
-    CSharp: get_SemanticModel
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel
   source:
     remote:
       branch: master
@@ -169,7 +169,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.Options
   type: Property
   source:
     remote:
@@ -197,7 +197,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options
   source:
     remote:
       branch: master
@@ -212,7 +212,7 @@ items:
   name:
     CSharp: CancellationToken
   qualifiedName:
-    CSharp: CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CancellationToken
   type: Property
   source:
     remote:
@@ -240,7 +240,7 @@ items:
   name:
     CSharp: get_CancellationToken
   qualifiedName:
-    CSharp: get_CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
   source:
     remote:
       branch: master
@@ -255,7 +255,7 @@ items:
   name:
     CSharp: RegisterCodeBlockEndAction
   qualifiedName:
-    CSharp: RegisterCodeBlockEndAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
   type: Method
   source:
     remote:
@@ -288,7 +288,7 @@ items:
   name:
     CSharp: RegisterSyntaxNodeAction
   qualifiedName:
-    CSharp: RegisterSyntaxNodeAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},`0[])
   type: Method
   source:
     remote:
@@ -329,7 +329,7 @@ items:
   name:
     CSharp: RegisterSyntaxNodeAction
   qualifiedName:
-    CSharp: RegisterSyntaxNodeAction
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
   type: Method
   source:
     remote:

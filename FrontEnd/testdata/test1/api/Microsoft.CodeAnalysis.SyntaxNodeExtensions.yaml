@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
 name:
   CSharp: SyntaxNodeExtensions
 qualifiedName:
-  CSharp: SyntaxNodeExtensions
+  CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: ReplaceSyntax
   qualifiedName:
-    CSharp: ReplaceSyntax
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceSyntax``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken},System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia},System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -110,7 +110,7 @@ items:
   name:
     CSharp: ReplaceNodes
   qualifiedName:
-    CSharp: ReplaceNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNodes``2(``0,System.Collections.Generic.IEnumerable{``1},System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
     remote:
@@ -158,7 +158,7 @@ items:
   name:
     CSharp: ReplaceNode
   qualifiedName:
-    CSharp: ReplaceNode
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: ReplaceNode
   qualifiedName:
-    CSharp: ReplaceNode
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
     remote:
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: InsertNodesBefore
   qualifiedName:
-    CSharp: InsertNodesBefore
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertNodesBefore``1(``0,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
     remote:
@@ -287,7 +287,7 @@ items:
   name:
     CSharp: InsertNodesAfter
   qualifiedName:
-    CSharp: InsertNodesAfter
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertNodesAfter``1(``0,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
     remote:
@@ -330,7 +330,7 @@ items:
   name:
     CSharp: ReplaceToken
   qualifiedName:
-    CSharp: ReplaceToken
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceToken``1(``0,Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken})
   type: Method
   source:
     remote:
@@ -373,7 +373,7 @@ items:
   name:
     CSharp: InsertTokensBefore
   qualifiedName:
-    CSharp: InsertTokensBefore
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTokensBefore``1(``0,Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken})
   type: Method
   source:
     remote:
@@ -416,7 +416,7 @@ items:
   name:
     CSharp: InsertTokensAfter
   qualifiedName:
-    CSharp: InsertTokensAfter
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTokensAfter``1(``0,Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken})
   type: Method
   source:
     remote:
@@ -459,7 +459,7 @@ items:
   name:
     CSharp: ReplaceTrivia
   qualifiedName:
-    CSharp: ReplaceTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -502,7 +502,7 @@ items:
   name:
     CSharp: InsertTriviaBefore
   qualifiedName:
-    CSharp: InsertTriviaBefore
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTriviaBefore``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -545,7 +545,7 @@ items:
   name:
     CSharp: InsertTriviaAfter
   qualifiedName:
-    CSharp: InsertTriviaAfter
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTriviaAfter``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -588,7 +588,7 @@ items:
   name:
     CSharp: ReplaceTokens
   qualifiedName:
-    CSharp: ReplaceTokens
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTokens``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken},System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken})
   type: Method
   source:
     remote:
@@ -636,7 +636,7 @@ items:
   name:
     CSharp: ReplaceToken
   qualifiedName:
-    CSharp: ReplaceToken
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceToken``1(``0,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
   type: Method
   source:
     remote:
@@ -682,7 +682,7 @@ items:
   name:
     CSharp: ReplaceTrivia
   qualifiedName:
-    CSharp: ReplaceTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia},System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -730,7 +730,7 @@ items:
   name:
     CSharp: ReplaceTrivia
   qualifiedName:
-    CSharp: ReplaceTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
   type: Method
   source:
     remote:
@@ -773,7 +773,7 @@ items:
   name:
     CSharp: RemoveNode
   qualifiedName:
-    CSharp: RemoveNode
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.RemoveNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxRemoveOptions)
   type: Method
   source:
     remote:
@@ -816,7 +816,7 @@ items:
   name:
     CSharp: RemoveNodes
   qualifiedName:
-    CSharp: RemoveNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.RemoveNodes``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxRemoveOptions)
   type: Method
   source:
     remote:
@@ -859,7 +859,7 @@ items:
   name:
     CSharp: NormalizeWhitespace
   qualifiedName:
-    CSharp: NormalizeWhitespace
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.NormalizeWhitespace``1(``0,System.String,System.Boolean)
   type: Method
   source:
     remote:
@@ -907,7 +907,7 @@ items:
   name:
     CSharp: WithTriviaFrom
   qualifiedName:
-    CSharp: WithTriviaFrom
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTriviaFrom``1(``0,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -942,7 +942,7 @@ items:
   name:
     CSharp: WithoutTrivia
   qualifiedName:
-    CSharp: WithoutTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutTrivia``1(``0)
   type: Method
   source:
     remote:
@@ -972,7 +972,7 @@ items:
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
-    CSharp: WithLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTriviaList)
   type: Method
   source:
     remote:
@@ -1007,7 +1007,7 @@ items:
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
-    CSharp: WithLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -1042,7 +1042,7 @@ items:
   name:
     CSharp: WithoutLeadingTrivia
   qualifiedName:
-    CSharp: WithoutLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutLeadingTrivia``1(``0)
   type: Method
   source:
     remote:
@@ -1072,7 +1072,7 @@ items:
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
-    CSharp: WithLeadingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia[])
   type: Method
   source:
     remote:
@@ -1107,7 +1107,7 @@ items:
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
-    CSharp: WithTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTriviaList)
   type: Method
   source:
     remote:
@@ -1142,7 +1142,7 @@ items:
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
-    CSharp: WithTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
   type: Method
   source:
     remote:
@@ -1177,7 +1177,7 @@ items:
   name:
     CSharp: WithoutTrailingTrivia
   qualifiedName:
-    CSharp: WithoutTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutTrailingTrivia``1(``0)
   type: Method
   source:
     remote:
@@ -1207,7 +1207,7 @@ items:
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
-    CSharp: WithTrailingTrivia
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia[])
   type: Method
   source:
     remote:
@@ -1242,7 +1242,7 @@ items:
   name:
     CSharp: TrackNodes
   qualifiedName:
-    CSharp: TrackNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.TrackNodes``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
   type: Method
   source:
     remote:
@@ -1285,7 +1285,7 @@ items:
   name:
     CSharp: TrackNodes
   qualifiedName:
-    CSharp: TrackNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.TrackNodes``1(``0,Microsoft.CodeAnalysis.SyntaxNode[])
   type: Method
   source:
     remote:
@@ -1328,7 +1328,7 @@ items:
   name:
     CSharp: GetCurrentNodes
   qualifiedName:
-    CSharp: GetCurrentNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.GetCurrentNodes``1(Microsoft.CodeAnalysis.SyntaxNode,``0)
   type: Method
   source:
     remote:
@@ -1367,7 +1367,7 @@ items:
   name:
     CSharp: GetCurrentNode
   qualifiedName:
-    CSharp: GetCurrentNode
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.GetCurrentNode``1(Microsoft.CodeAnalysis.SyntaxNode,``0)
   type: Method
   source:
     remote:
@@ -1406,7 +1406,7 @@ items:
   name:
     CSharp: GetCurrentNodes
   qualifiedName:
-    CSharp: GetCurrentNodes
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeExtensions.GetCurrentNodes``1(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{``0})
   type: Method
   source:
     remote:

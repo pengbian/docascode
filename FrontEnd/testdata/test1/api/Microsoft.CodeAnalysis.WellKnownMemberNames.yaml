@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
 name:
   CSharp: WellKnownMemberNames
 qualifiedName:
-  CSharp: WellKnownMemberNames
+  CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: EnumBackingFieldName
   qualifiedName:
-    CSharp: EnumBackingFieldName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.EnumBackingFieldName
   type: Field
   source:
     remote:
@@ -50,7 +50,7 @@ items:
   name:
     CSharp: InstanceConstructorName
   qualifiedName:
-    CSharp: InstanceConstructorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.InstanceConstructorName
   type: Field
   source:
     remote:
@@ -69,7 +69,7 @@ items:
   name:
     CSharp: StaticConstructorName
   qualifiedName:
-    CSharp: StaticConstructorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.StaticConstructorName
   type: Field
   source:
     remote:
@@ -88,7 +88,7 @@ items:
   name:
     CSharp: Indexer
   qualifiedName:
-    CSharp: Indexer
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.Indexer
   type: Field
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: DestructorName
   qualifiedName:
-    CSharp: DestructorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DestructorName
   type: Field
   source:
     remote:
@@ -126,7 +126,7 @@ items:
   name:
     CSharp: DelegateInvokeName
   qualifiedName:
-    CSharp: DelegateInvokeName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DelegateInvokeName
   type: Field
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: DelegateBeginInvokeName
   qualifiedName:
-    CSharp: DelegateBeginInvokeName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DelegateBeginInvokeName
   type: Field
   source:
     remote:
@@ -164,7 +164,7 @@ items:
   name:
     CSharp: DelegateEndInvokeName
   qualifiedName:
-    CSharp: DelegateEndInvokeName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DelegateEndInvokeName
   type: Field
   source:
     remote:
@@ -183,7 +183,7 @@ items:
   name:
     CSharp: EntryPointMethodName
   qualifiedName:
-    CSharp: EntryPointMethodName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.EntryPointMethodName
   type: Field
   source:
     remote:
@@ -202,7 +202,7 @@ items:
   name:
     CSharp: DefaultScriptClassName
   qualifiedName:
-    CSharp: DefaultScriptClassName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DefaultScriptClassName
   type: Field
   source:
     remote:
@@ -221,7 +221,7 @@ items:
   name:
     CSharp: ObjectToString
   qualifiedName:
-    CSharp: ObjectToString
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ObjectToString
   type: Field
   source:
     remote:
@@ -240,7 +240,7 @@ items:
   name:
     CSharp: ObjectEquals
   qualifiedName:
-    CSharp: ObjectEquals
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ObjectEquals
   type: Field
   source:
     remote:
@@ -259,7 +259,7 @@ items:
   name:
     CSharp: ObjectGetHashCode
   qualifiedName:
-    CSharp: ObjectGetHashCode
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ObjectGetHashCode
   type: Field
   source:
     remote:
@@ -278,7 +278,7 @@ items:
   name:
     CSharp: ImplicitConversionName
   qualifiedName:
-    CSharp: ImplicitConversionName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ImplicitConversionName
   type: Field
   source:
     remote:
@@ -297,7 +297,7 @@ items:
   name:
     CSharp: ExplicitConversionName
   qualifiedName:
-    CSharp: ExplicitConversionName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ExplicitConversionName
   type: Field
   source:
     remote:
@@ -316,7 +316,7 @@ items:
   name:
     CSharp: AdditionOperatorName
   qualifiedName:
-    CSharp: AdditionOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.AdditionOperatorName
   type: Field
   source:
     remote:
@@ -335,7 +335,7 @@ items:
   name:
     CSharp: BitwiseAndOperatorName
   qualifiedName:
-    CSharp: BitwiseAndOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.BitwiseAndOperatorName
   type: Field
   source:
     remote:
@@ -354,7 +354,7 @@ items:
   name:
     CSharp: BitwiseOrOperatorName
   qualifiedName:
-    CSharp: BitwiseOrOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.BitwiseOrOperatorName
   type: Field
   source:
     remote:
@@ -373,7 +373,7 @@ items:
   name:
     CSharp: DecrementOperatorName
   qualifiedName:
-    CSharp: DecrementOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DecrementOperatorName
   type: Field
   source:
     remote:
@@ -392,7 +392,7 @@ items:
   name:
     CSharp: DivisionOperatorName
   qualifiedName:
-    CSharp: DivisionOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.DivisionOperatorName
   type: Field
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: EqualityOperatorName
   qualifiedName:
-    CSharp: EqualityOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.EqualityOperatorName
   type: Field
   source:
     remote:
@@ -430,7 +430,7 @@ items:
   name:
     CSharp: ExclusiveOrOperatorName
   qualifiedName:
-    CSharp: ExclusiveOrOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ExclusiveOrOperatorName
   type: Field
   source:
     remote:
@@ -449,7 +449,7 @@ items:
   name:
     CSharp: FalseOperatorName
   qualifiedName:
-    CSharp: FalseOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.FalseOperatorName
   type: Field
   source:
     remote:
@@ -468,7 +468,7 @@ items:
   name:
     CSharp: GreaterThanOperatorName
   qualifiedName:
-    CSharp: GreaterThanOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.GreaterThanOperatorName
   type: Field
   source:
     remote:
@@ -487,7 +487,7 @@ items:
   name:
     CSharp: GreaterThanOrEqualOperatorName
   qualifiedName:
-    CSharp: GreaterThanOrEqualOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.GreaterThanOrEqualOperatorName
   type: Field
   source:
     remote:
@@ -506,7 +506,7 @@ items:
   name:
     CSharp: IncrementOperatorName
   qualifiedName:
-    CSharp: IncrementOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.IncrementOperatorName
   type: Field
   source:
     remote:
@@ -525,7 +525,7 @@ items:
   name:
     CSharp: InequalityOperatorName
   qualifiedName:
-    CSharp: InequalityOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.InequalityOperatorName
   type: Field
   source:
     remote:
@@ -544,7 +544,7 @@ items:
   name:
     CSharp: LeftShiftOperatorName
   qualifiedName:
-    CSharp: LeftShiftOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LeftShiftOperatorName
   type: Field
   source:
     remote:
@@ -563,7 +563,7 @@ items:
   name:
     CSharp: UnsignedLeftShiftOperatorName
   qualifiedName:
-    CSharp: UnsignedLeftShiftOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.UnsignedLeftShiftOperatorName
   type: Field
   source:
     remote:
@@ -582,7 +582,7 @@ items:
   name:
     CSharp: LessThanOperatorName
   qualifiedName:
-    CSharp: LessThanOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LessThanOperatorName
   type: Field
   source:
     remote:
@@ -601,7 +601,7 @@ items:
   name:
     CSharp: LessThanOrEqualOperatorName
   qualifiedName:
-    CSharp: LessThanOrEqualOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LessThanOrEqualOperatorName
   type: Field
   source:
     remote:
@@ -620,7 +620,7 @@ items:
   name:
     CSharp: LogicalNotOperatorName
   qualifiedName:
-    CSharp: LogicalNotOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LogicalNotOperatorName
   type: Field
   source:
     remote:
@@ -639,7 +639,7 @@ items:
   name:
     CSharp: LogicalOrOperatorName
   qualifiedName:
-    CSharp: LogicalOrOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LogicalOrOperatorName
   type: Field
   source:
     remote:
@@ -658,7 +658,7 @@ items:
   name:
     CSharp: LogicalAndOperatorName
   qualifiedName:
-    CSharp: LogicalAndOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LogicalAndOperatorName
   type: Field
   source:
     remote:
@@ -677,7 +677,7 @@ items:
   name:
     CSharp: ModulusOperatorName
   qualifiedName:
-    CSharp: ModulusOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ModulusOperatorName
   type: Field
   source:
     remote:
@@ -696,7 +696,7 @@ items:
   name:
     CSharp: MultiplyOperatorName
   qualifiedName:
-    CSharp: MultiplyOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.MultiplyOperatorName
   type: Field
   source:
     remote:
@@ -715,7 +715,7 @@ items:
   name:
     CSharp: OnesComplementOperatorName
   qualifiedName:
-    CSharp: OnesComplementOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.OnesComplementOperatorName
   type: Field
   source:
     remote:
@@ -734,7 +734,7 @@ items:
   name:
     CSharp: RightShiftOperatorName
   qualifiedName:
-    CSharp: RightShiftOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.RightShiftOperatorName
   type: Field
   source:
     remote:
@@ -753,7 +753,7 @@ items:
   name:
     CSharp: UnsignedRightShiftOperatorName
   qualifiedName:
-    CSharp: UnsignedRightShiftOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.UnsignedRightShiftOperatorName
   type: Field
   source:
     remote:
@@ -772,7 +772,7 @@ items:
   name:
     CSharp: SubtractionOperatorName
   qualifiedName:
-    CSharp: SubtractionOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.SubtractionOperatorName
   type: Field
   source:
     remote:
@@ -791,7 +791,7 @@ items:
   name:
     CSharp: TrueOperatorName
   qualifiedName:
-    CSharp: TrueOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.TrueOperatorName
   type: Field
   source:
     remote:
@@ -810,7 +810,7 @@ items:
   name:
     CSharp: UnaryNegationOperatorName
   qualifiedName:
-    CSharp: UnaryNegationOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.UnaryNegationOperatorName
   type: Field
   source:
     remote:
@@ -829,7 +829,7 @@ items:
   name:
     CSharp: UnaryPlusOperatorName
   qualifiedName:
-    CSharp: UnaryPlusOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.UnaryPlusOperatorName
   type: Field
   source:
     remote:
@@ -848,7 +848,7 @@ items:
   name:
     CSharp: ConcatenateOperatorName
   qualifiedName:
-    CSharp: ConcatenateOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ConcatenateOperatorName
   type: Field
   source:
     remote:
@@ -867,7 +867,7 @@ items:
   name:
     CSharp: ExponentOperatorName
   qualifiedName:
-    CSharp: ExponentOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ExponentOperatorName
   type: Field
   source:
     remote:
@@ -886,7 +886,7 @@ items:
   name:
     CSharp: IntegerDivisionOperatorName
   qualifiedName:
-    CSharp: IntegerDivisionOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.IntegerDivisionOperatorName
   type: Field
   source:
     remote:
@@ -905,7 +905,7 @@ items:
   name:
     CSharp: LikeOperatorName
   qualifiedName:
-    CSharp: LikeOperatorName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.LikeOperatorName
   type: Field
   source:
     remote:
@@ -924,7 +924,7 @@ items:
   name:
     CSharp: GetEnumeratorMethodName
   qualifiedName:
-    CSharp: GetEnumeratorMethodName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.GetEnumeratorMethodName
   type: Field
   source:
     remote:
@@ -943,7 +943,7 @@ items:
   name:
     CSharp: MoveNextMethodName
   qualifiedName:
-    CSharp: MoveNextMethodName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.MoveNextMethodName
   type: Field
   source:
     remote:
@@ -962,7 +962,7 @@ items:
   name:
     CSharp: CurrentPropertyName
   qualifiedName:
-    CSharp: CurrentPropertyName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.CurrentPropertyName
   type: Field
   source:
     remote:
@@ -981,7 +981,7 @@ items:
   name:
     CSharp: ValuePropertyName
   qualifiedName:
-    CSharp: ValuePropertyName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.ValuePropertyName
   type: Field
   source:
     remote:
@@ -1002,7 +1002,7 @@ items:
   name:
     CSharp: CollectionInitializerAddMethodName
   qualifiedName:
-    CSharp: CollectionInitializerAddMethodName
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.CollectionInitializerAddMethodName
   type: Field
   source:
     remote:
@@ -1019,7 +1019,7 @@ items:
   name:
     CSharp: GetAwaiter
   qualifiedName:
-    CSharp: GetAwaiter
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.GetAwaiter
   type: Field
   source:
     remote:
@@ -1036,7 +1036,7 @@ items:
   name:
     CSharp: IsCompleted
   qualifiedName:
-    CSharp: IsCompleted
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.IsCompleted
   type: Field
   source:
     remote:
@@ -1053,7 +1053,7 @@ items:
   name:
     CSharp: GetResult
   qualifiedName:
-    CSharp: GetResult
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.GetResult
   type: Field
   source:
     remote:
@@ -1070,7 +1070,7 @@ items:
   name:
     CSharp: OnCompleted
   qualifiedName:
-    CSharp: OnCompleted
+    CSharp: Microsoft.CodeAnalysis.WellKnownMemberNames.OnCompleted
   type: Field
   source:
     remote:

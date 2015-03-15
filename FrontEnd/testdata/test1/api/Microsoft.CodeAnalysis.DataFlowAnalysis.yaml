@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.DataFlowAnalysis
 name:
   CSharp: DataFlowAnalysis
 qualifiedName:
-  CSharp: DataFlowAnalysis
+  CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis
 type: Class
 source:
   remote:
@@ -39,7 +39,7 @@ items:
   name:
     CSharp: VariablesDeclared
   qualifiedName:
-    CSharp: VariablesDeclared
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.VariablesDeclared
   type: Property
   source:
     remote:
@@ -71,7 +71,7 @@ items:
   name:
     CSharp: get_VariablesDeclared
   qualifiedName:
-    CSharp: get_VariablesDeclared
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_VariablesDeclared
   source:
     remote:
       branch: master
@@ -86,7 +86,7 @@ items:
   name:
     CSharp: DataFlowsIn
   qualifiedName:
-    CSharp: DataFlowsIn
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.DataFlowsIn
   type: Property
   source:
     remote:
@@ -116,7 +116,7 @@ items:
   name:
     CSharp: get_DataFlowsIn
   qualifiedName:
-    CSharp: get_DataFlowsIn
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_DataFlowsIn
   source:
     remote:
       branch: master
@@ -131,7 +131,7 @@ items:
   name:
     CSharp: DataFlowsOut
   qualifiedName:
-    CSharp: DataFlowsOut
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.DataFlowsOut
   type: Property
   source:
     remote:
@@ -161,7 +161,7 @@ items:
   name:
     CSharp: get_DataFlowsOut
   qualifiedName:
-    CSharp: get_DataFlowsOut
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_DataFlowsOut
   source:
     remote:
       branch: master
@@ -176,7 +176,7 @@ items:
   name:
     CSharp: AlwaysAssigned
   qualifiedName:
-    CSharp: AlwaysAssigned
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.AlwaysAssigned
   type: Property
   source:
     remote:
@@ -206,7 +206,7 @@ items:
   name:
     CSharp: get_AlwaysAssigned
   qualifiedName:
-    CSharp: get_AlwaysAssigned
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_AlwaysAssigned
   source:
     remote:
       branch: master
@@ -221,7 +221,7 @@ items:
   name:
     CSharp: ReadInside
   qualifiedName:
-    CSharp: ReadInside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.ReadInside
   type: Property
   source:
     remote:
@@ -249,7 +249,7 @@ items:
   name:
     CSharp: get_ReadInside
   qualifiedName:
-    CSharp: get_ReadInside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_ReadInside
   source:
     remote:
       branch: master
@@ -264,7 +264,7 @@ items:
   name:
     CSharp: WrittenInside
   qualifiedName:
-    CSharp: WrittenInside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.WrittenInside
   type: Property
   source:
     remote:
@@ -292,7 +292,7 @@ items:
   name:
     CSharp: get_WrittenInside
   qualifiedName:
-    CSharp: get_WrittenInside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_WrittenInside
   source:
     remote:
       branch: master
@@ -307,7 +307,7 @@ items:
   name:
     CSharp: ReadOutside
   qualifiedName:
-    CSharp: ReadOutside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.ReadOutside
   type: Property
   source:
     remote:
@@ -335,7 +335,7 @@ items:
   name:
     CSharp: get_ReadOutside
   qualifiedName:
-    CSharp: get_ReadOutside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_ReadOutside
   source:
     remote:
       branch: master
@@ -350,7 +350,7 @@ items:
   name:
     CSharp: WrittenOutside
   qualifiedName:
-    CSharp: WrittenOutside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.WrittenOutside
   type: Property
   source:
     remote:
@@ -378,7 +378,7 @@ items:
   name:
     CSharp: get_WrittenOutside
   qualifiedName:
-    CSharp: get_WrittenOutside
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_WrittenOutside
   source:
     remote:
       branch: master
@@ -393,7 +393,7 @@ items:
   name:
     CSharp: Captured
   qualifiedName:
-    CSharp: Captured
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.Captured
   type: Property
   source:
     remote:
@@ -423,7 +423,7 @@ items:
   name:
     CSharp: get_Captured
   qualifiedName:
-    CSharp: get_Captured
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_Captured
   source:
     remote:
       branch: master
@@ -438,7 +438,7 @@ items:
   name:
     CSharp: UnsafeAddressTaken
   qualifiedName:
-    CSharp: UnsafeAddressTaken
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.UnsafeAddressTaken
   type: Property
   source:
     remote:
@@ -468,7 +468,7 @@ items:
   name:
     CSharp: get_UnsafeAddressTaken
   qualifiedName:
-    CSharp: get_UnsafeAddressTaken
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_UnsafeAddressTaken
   source:
     remote:
       branch: master
@@ -483,7 +483,7 @@ items:
   name:
     CSharp: Succeeded
   qualifiedName:
-    CSharp: Succeeded
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.Succeeded
   type: Property
   source:
     remote:
@@ -515,7 +515,7 @@ items:
   name:
     CSharp: get_Succeeded
   qualifiedName:
-    CSharp: get_Succeeded
+    CSharp: Microsoft.CodeAnalysis.DataFlowAnalysis.get_Succeeded
   source:
     remote:
       branch: master

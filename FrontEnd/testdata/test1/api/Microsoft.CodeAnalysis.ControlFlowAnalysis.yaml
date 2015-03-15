@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ControlFlowAnalysis
 name:
   CSharp: ControlFlowAnalysis
 qualifiedName:
-  CSharp: ControlFlowAnalysis
+  CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: EntryPoints
   qualifiedName:
-    CSharp: EntryPoints
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.EntryPoints
   type: Property
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: get_EntryPoints
   qualifiedName:
-    CSharp: get_EntryPoints
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EntryPoints
   source:
     remote:
       branch: master
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: ExitPoints
   qualifiedName:
-    CSharp: ExitPoints
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.ExitPoints
   type: Property
   source:
     remote:
@@ -108,7 +108,7 @@ items:
   name:
     CSharp: get_ExitPoints
   qualifiedName:
-    CSharp: get_ExitPoints
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ExitPoints
   source:
     remote:
       branch: master
@@ -123,7 +123,7 @@ items:
   name:
     CSharp: EndPointIsReachable
   qualifiedName:
-    CSharp: EndPointIsReachable
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.EndPointIsReachable
   type: Property
   source:
     remote:
@@ -153,7 +153,7 @@ items:
   name:
     CSharp: get_EndPointIsReachable
   qualifiedName:
-    CSharp: get_EndPointIsReachable
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_EndPointIsReachable
   source:
     remote:
       branch: master
@@ -168,7 +168,7 @@ items:
   name:
     CSharp: StartPointIsReachable
   qualifiedName:
-    CSharp: StartPointIsReachable
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.StartPointIsReachable
   type: Property
   source:
     remote:
@@ -193,7 +193,7 @@ items:
   name:
     CSharp: get_StartPointIsReachable
   qualifiedName:
-    CSharp: get_StartPointIsReachable
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_StartPointIsReachable
   source:
     remote:
       branch: master
@@ -208,7 +208,7 @@ items:
   name:
     CSharp: ReturnStatements
   qualifiedName:
-    CSharp: ReturnStatements
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.ReturnStatements
   type: Property
   source:
     remote:
@@ -236,7 +236,7 @@ items:
   name:
     CSharp: get_ReturnStatements
   qualifiedName:
-    CSharp: get_ReturnStatements
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_ReturnStatements
   source:
     remote:
       branch: master
@@ -251,7 +251,7 @@ items:
   name:
     CSharp: Succeeded
   qualifiedName:
-    CSharp: Succeeded
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.Succeeded
   type: Property
   source:
     remote:
@@ -281,7 +281,7 @@ items:
   name:
     CSharp: get_Succeeded
   qualifiedName:
-    CSharp: get_Succeeded
+    CSharp: Microsoft.CodeAnalysis.ControlFlowAnalysis.get_Succeeded
   source:
     remote:
       branch: master

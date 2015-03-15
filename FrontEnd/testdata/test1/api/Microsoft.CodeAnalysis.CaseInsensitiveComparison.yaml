@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.CaseInsensitiveComparison
 name:
   CSharp: CaseInsensitiveComparison
 qualifiedName:
-  CSharp: CaseInsensitiveComparison
+  CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Comparer
   qualifiedName:
-    CSharp: Comparer
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.Comparer
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Comparer
   qualifiedName:
-    CSharp: get_Comparer
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.get_Comparer
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.Equals(System.String,System.String)
   type: Method
   source:
     remote:
@@ -112,7 +112,7 @@ items:
   name:
     CSharp: EndsWith
   qualifiedName:
-    CSharp: EndsWith
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.EndsWith(System.String,System.String)
   type: Method
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: Compare
   qualifiedName:
-    CSharp: Compare
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.Compare(System.String,System.String)
   type: Method
   source:
     remote:
@@ -185,7 +185,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.GetHashCode(System.String)
   type: Method
   source:
     remote:
@@ -217,7 +217,7 @@ items:
   name:
     CSharp: ToLower
   qualifiedName:
-    CSharp: ToLower
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.ToLower(System.String)
   type: Method
   source:
     remote:
@@ -247,7 +247,7 @@ items:
   name:
     CSharp: ToLower
   qualifiedName:
-    CSharp: ToLower
+    CSharp: Microsoft.CodeAnalysis.CaseInsensitiveComparison.ToLower(System.Text.StringBuilder)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.SourceText
 name:
   CSharp: SourceText
 qualifiedName:
-  CSharp: SourceText
+  CSharp: Microsoft.CodeAnalysis.Text.SourceText
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: From
   qualifiedName:
-    CSharp: From
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.From(System.String,System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
   type: Method
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: From
   qualifiedName:
-    CSharp: From
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.From(System.IO.Stream,System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
   type: Method
   source:
     remote:
@@ -127,7 +127,7 @@ items:
   name:
     CSharp: ChecksumAlgorithm
   qualifiedName:
-    CSharp: ChecksumAlgorithm
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.ChecksumAlgorithm
   type: Property
   source:
     remote:
@@ -155,7 +155,7 @@ items:
   name:
     CSharp: get_ChecksumAlgorithm
   qualifiedName:
-    CSharp: get_ChecksumAlgorithm
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.get_ChecksumAlgorithm
   source:
     remote:
       branch: master
@@ -170,7 +170,7 @@ items:
   name:
     CSharp: Encoding
   qualifiedName:
-    CSharp: Encoding
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Encoding
   type: Property
   source:
     remote:
@@ -200,7 +200,7 @@ items:
   name:
     CSharp: get_Encoding
   qualifiedName:
-    CSharp: get_Encoding
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.get_Encoding
   source:
     remote:
       branch: master
@@ -215,7 +215,7 @@ items:
   name:
     CSharp: Length
   qualifiedName:
-    CSharp: Length
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Length
   type: Property
   source:
     remote:
@@ -243,7 +243,7 @@ items:
   name:
     CSharp: get_Length
   qualifiedName:
-    CSharp: get_Length
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.get_Length
   source:
     remote:
       branch: master
@@ -258,7 +258,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -277,7 +277,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -292,7 +292,7 @@ items:
   name:
     CSharp: CopyTo
   qualifiedName:
-    CSharp: CopyTo
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)
   type: Method
   source:
     remote:
@@ -337,7 +337,7 @@ items:
   name:
     CSharp: Container
   qualifiedName:
-    CSharp: Container
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Container
   type: Property
   source:
     remote:
@@ -365,7 +365,7 @@ items:
   name:
     CSharp: get_Container
   qualifiedName:
-    CSharp: get_Container
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.get_Container
   source:
     remote:
       branch: master
@@ -380,7 +380,7 @@ items:
   name:
     CSharp: GetSubText
   qualifiedName:
-    CSharp: GetSubText
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.GetSubText(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -410,7 +410,7 @@ items:
   name:
     CSharp: GetSubText
   qualifiedName:
-    CSharp: GetSubText
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.GetSubText(System.Int32)
   type: Method
   source:
     remote:
@@ -440,7 +440,7 @@ items:
   name:
     CSharp: Write
   qualifiedName:
-    CSharp: Write
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Write(System.IO.TextWriter,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -475,7 +475,7 @@ items:
   name:
     CSharp: Write
   qualifiedName:
-    CSharp: Write
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Write(System.IO.TextWriter,Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -515,7 +515,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.ToString
   type: Method
   source:
     remote:
@@ -540,7 +540,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.ToString(Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -570,7 +570,7 @@ items:
   name:
     CSharp: WithChanges
   qualifiedName:
-    CSharp: WithChanges
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.WithChanges(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextChange})
   type: Method
   source:
     remote:
@@ -600,7 +600,7 @@ items:
   name:
     CSharp: WithChanges
   qualifiedName:
-    CSharp: WithChanges
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.WithChanges(Microsoft.CodeAnalysis.Text.TextChange[])
   type: Method
   source:
     remote:
@@ -630,7 +630,7 @@ items:
   name:
     CSharp: Replace
   qualifiedName:
-    CSharp: Replace
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Replace(Microsoft.CodeAnalysis.Text.TextSpan,System.String)
   type: Method
   source:
     remote:
@@ -665,7 +665,7 @@ items:
   name:
     CSharp: Replace
   qualifiedName:
-    CSharp: Replace
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Replace(System.Int32,System.Int32,System.String)
   type: Method
   source:
     remote:
@@ -705,7 +705,7 @@ items:
   name:
     CSharp: GetChangeRanges
   qualifiedName:
-    CSharp: GetChangeRanges
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.GetChangeRanges(Microsoft.CodeAnalysis.Text.SourceText)
   type: Method
   source:
     remote:
@@ -739,7 +739,7 @@ items:
   name:
     CSharp: GetTextChanges
   qualifiedName:
-    CSharp: GetTextChanges
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.GetTextChanges(Microsoft.CodeAnalysis.Text.SourceText)
   type: Method
   source:
     remote:
@@ -773,7 +773,7 @@ items:
   name:
     CSharp: Lines
   qualifiedName:
-    CSharp: Lines
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.Lines
   type: Property
   source:
     remote:
@@ -801,7 +801,7 @@ items:
   name:
     CSharp: get_Lines
   qualifiedName:
-    CSharp: get_Lines
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.get_Lines
   source:
     remote:
       branch: master
@@ -816,7 +816,7 @@ items:
   name:
     CSharp: ContentEquals
   qualifiedName:
-    CSharp: ContentEquals
+    CSharp: Microsoft.CodeAnalysis.Text.SourceText.ContentEquals(Microsoft.CodeAnalysis.Text.SourceText)
   type: Method
   source:
     remote:

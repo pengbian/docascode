@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
 name:
   CSharp: INamespaceOrTypeSymbol
 qualifiedName:
-  CSharp: INamespaceOrTypeSymbol
+  CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: GetMembers
   qualifiedName:
-    CSharp: GetMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
   type: Method
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: GetMembers
   qualifiedName:
-    CSharp: GetMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(System.String)
   type: Method
   source:
     remote:
@@ -90,7 +90,7 @@ items:
   name:
     CSharp: GetTypeMembers
   qualifiedName:
-    CSharp: GetTypeMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
   type: Method
   source:
     remote:
@@ -119,7 +119,7 @@ items:
   name:
     CSharp: GetTypeMembers
   qualifiedName:
-    CSharp: GetTypeMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String)
   type: Method
   source:
     remote:
@@ -155,7 +155,7 @@ items:
   name:
     CSharp: GetTypeMembers
   qualifiedName:
-    CSharp: GetTypeMembers
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String,System.Int32)
   type: Method
   source:
     remote:
@@ -196,7 +196,7 @@ items:
   name:
     CSharp: IsNamespace
   qualifiedName:
-    CSharp: IsNamespace
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
   type: Property
   source:
     remote:
@@ -224,7 +224,7 @@ items:
   name:
     CSharp: get_IsNamespace
   qualifiedName:
-    CSharp: get_IsNamespace
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsNamespace
   source:
     remote:
       branch: master
@@ -239,7 +239,7 @@ items:
   name:
     CSharp: IsType
   qualifiedName:
-    CSharp: IsType
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
   type: Property
   source:
     remote:
@@ -267,7 +267,7 @@ items:
   name:
     CSharp: get_IsType
   qualifiedName:
-    CSharp: get_IsType
+    CSharp: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsType
   source:
     remote:
       branch: master

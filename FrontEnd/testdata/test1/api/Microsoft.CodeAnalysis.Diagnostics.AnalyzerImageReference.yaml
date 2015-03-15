@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
 name:
   CSharp: AnalyzerImageReference
 qualifiedName:
-  CSharp: AnalyzerImageReference
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
 type: Class
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference
   name:
-    CSharp: .ctor
+    CSharp: AnalyzerImageReference(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.AnalyzerImageReference(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},System.String,System.String)
   type: Constructor
   source:
     remote:
@@ -69,7 +69,7 @@ items:
   name:
     CSharp: GetAnalyzersForAllLanguages
   qualifiedName:
-    CSharp: GetAnalyzersForAllLanguages
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzersForAllLanguages
   type: Method
   source:
     remote:
@@ -91,7 +91,7 @@ items:
   name:
     CSharp: GetAnalyzers
   qualifiedName:
-    CSharp: GetAnalyzers
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.GetAnalyzers(System.String)
   type: Method
   source:
     remote:
@@ -118,7 +118,7 @@ items:
   name:
     CSharp: FullPath
   qualifiedName:
-    CSharp: FullPath
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.FullPath
   type: Property
   source:
     remote:
@@ -143,7 +143,7 @@ items:
   name:
     CSharp: get_FullPath
   qualifiedName:
-    CSharp: get_FullPath
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_FullPath
   source:
     remote:
       branch: master
@@ -158,7 +158,7 @@ items:
   name:
     CSharp: Display
   qualifiedName:
-    CSharp: Display
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.Display
   type: Property
   source:
     remote:
@@ -183,7 +183,7 @@ items:
   name:
     CSharp: get_Display
   qualifiedName:
-    CSharp: get_Display
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerImageReference.get_Display
   source:
     remote:
       branch: master

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
 name:
   CSharp: SyntaxNodeOrTokenList
 qualifiedName:
-  CSharp: SyntaxNodeOrTokenList
+  CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Count
   type: Property
   source:
     remote:
@@ -62,7 +62,7 @@ items:
   name:
     CSharp: get_Count
   qualifiedName:
-    CSharp: get_Count
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Count
   source:
     remote:
       branch: master
@@ -77,7 +77,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -96,7 +96,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -111,7 +111,7 @@ items:
   name:
     CSharp: FullSpan
   qualifiedName:
-    CSharp: FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.FullSpan
   type: Property
   source:
     remote:
@@ -139,7 +139,7 @@ items:
   name:
     CSharp: get_FullSpan
   qualifiedName:
-    CSharp: get_FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_FullSpan
   source:
     remote:
       branch: master
@@ -154,7 +154,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Span
   type: Property
   source:
     remote:
@@ -182,7 +182,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Span
   source:
     remote:
       branch: master
@@ -197,7 +197,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.ToString
   type: Method
   source:
     remote:
@@ -225,7 +225,7 @@ items:
   name:
     CSharp: ToFullString
   qualifiedName:
-    CSharp: ToFullString
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.ToFullString
   type: Method
   source:
     remote:
@@ -253,7 +253,7 @@ items:
   name:
     CSharp: First
   qualifiedName:
-    CSharp: First
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.First
   type: Method
   source:
     remote:
@@ -278,7 +278,7 @@ items:
   name:
     CSharp: FirstOrDefault
   qualifiedName:
-    CSharp: FirstOrDefault
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.FirstOrDefault
   type: Method
   source:
     remote:
@@ -303,7 +303,7 @@ items:
   name:
     CSharp: Last
   qualifiedName:
-    CSharp: Last
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Last
   type: Method
   source:
     remote:
@@ -328,7 +328,7 @@ items:
   name:
     CSharp: LastOrDefault
   qualifiedName:
-    CSharp: LastOrDefault
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.LastOrDefault
   type: Method
   source:
     remote:
@@ -353,7 +353,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.IndexOf(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
   type: Method
   source:
     remote:
@@ -385,7 +385,7 @@ items:
   name:
     CSharp: Any
   qualifiedName:
-    CSharp: Any
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Any
   type: Method
   source:
     remote:
@@ -411,7 +411,7 @@ items:
   name:
     CSharp: Add
   qualifiedName:
-    CSharp: Add
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Add(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
   type: Method
   source:
     remote:
@@ -442,7 +442,7 @@ items:
   name:
     CSharp: AddRange
   qualifiedName:
-    CSharp: AddRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.AddRange(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken})
   type: Method
   source:
     remote:
@@ -473,7 +473,7 @@ items:
   name:
     CSharp: Insert
   qualifiedName:
-    CSharp: Insert
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Insert(System.Int32,Microsoft.CodeAnalysis.SyntaxNodeOrToken)
   type: Method
   source:
     remote:
@@ -510,7 +510,7 @@ items:
   name:
     CSharp: InsertRange
   qualifiedName:
-    CSharp: InsertRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken})
   type: Method
   source:
     remote:
@@ -547,7 +547,7 @@ items:
   name:
     CSharp: RemoveAt
   qualifiedName:
-    CSharp: RemoveAt
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.RemoveAt(System.Int32)
   type: Method
   source:
     remote:
@@ -578,7 +578,7 @@ items:
   name:
     CSharp: Remove
   qualifiedName:
-    CSharp: Remove
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Remove(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
   type: Method
   source:
     remote:
@@ -609,7 +609,7 @@ items:
   name:
     CSharp: Replace
   qualifiedName:
-    CSharp: Replace
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Replace(Microsoft.CodeAnalysis.SyntaxNodeOrToken,Microsoft.CodeAnalysis.SyntaxNodeOrToken)
   type: Method
   source:
     remote:
@@ -646,7 +646,7 @@ items:
   name:
     CSharp: ReplaceRange
   qualifiedName:
-    CSharp: ReplaceRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.ReplaceRange(Microsoft.CodeAnalysis.SyntaxNodeOrToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken})
   type: Method
   source:
     remote:
@@ -683,7 +683,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.GetEnumerator
   type: Method
   source:
     remote:
@@ -708,7 +708,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.op_Equality(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList,Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
   source:
     remote:
       branch: master
@@ -726,7 +726,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.op_Inequality(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList,Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
   source:
     remote:
       branch: master
@@ -744,7 +744,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Equals(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
   type: Method
   source:
     remote:
@@ -779,7 +779,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -811,7 +811,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.GetHashCode
   type: Method
   source:
     remote:

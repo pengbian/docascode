@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.MethodKind
 name:
   CSharp: MethodKind
 qualifiedName:
-  CSharp: MethodKind
+  CSharp: Microsoft.CodeAnalysis.MethodKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: AnonymousFunction
   qualifiedName:
-    CSharp: AnonymousFunction
+    CSharp: Microsoft.CodeAnalysis.MethodKind.AnonymousFunction
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: LambdaMethod
   qualifiedName:
-    CSharp: LambdaMethod
+    CSharp: Microsoft.CodeAnalysis.MethodKind.LambdaMethod
   type: Field
   source:
     remote:
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: Constructor
   qualifiedName:
-    CSharp: Constructor
+    CSharp: Microsoft.CodeAnalysis.MethodKind.Constructor
   type: Field
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: Conversion
   qualifiedName:
-    CSharp: Conversion
+    CSharp: Microsoft.CodeAnalysis.MethodKind.Conversion
   type: Field
   source:
     remote:
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: DelegateInvoke
   qualifiedName:
-    CSharp: DelegateInvoke
+    CSharp: Microsoft.CodeAnalysis.MethodKind.DelegateInvoke
   type: Field
   source:
     remote:
@@ -144,7 +144,7 @@ items:
   name:
     CSharp: Destructor
   qualifiedName:
-    CSharp: Destructor
+    CSharp: Microsoft.CodeAnalysis.MethodKind.Destructor
   type: Field
   source:
     remote:
@@ -166,7 +166,7 @@ items:
   name:
     CSharp: EventAdd
   qualifiedName:
-    CSharp: EventAdd
+    CSharp: Microsoft.CodeAnalysis.MethodKind.EventAdd
   type: Field
   source:
     remote:
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: EventRaise
   qualifiedName:
-    CSharp: EventRaise
+    CSharp: Microsoft.CodeAnalysis.MethodKind.EventRaise
   type: Field
   source:
     remote:
@@ -210,7 +210,7 @@ items:
   name:
     CSharp: EventRemove
   qualifiedName:
-    CSharp: EventRemove
+    CSharp: Microsoft.CodeAnalysis.MethodKind.EventRemove
   type: Field
   source:
     remote:
@@ -232,7 +232,7 @@ items:
   name:
     CSharp: ExplicitInterfaceImplementation
   qualifiedName:
-    CSharp: ExplicitInterfaceImplementation
+    CSharp: Microsoft.CodeAnalysis.MethodKind.ExplicitInterfaceImplementation
   type: Field
   source:
     remote:
@@ -254,7 +254,7 @@ items:
   name:
     CSharp: UserDefinedOperator
   qualifiedName:
-    CSharp: UserDefinedOperator
+    CSharp: Microsoft.CodeAnalysis.MethodKind.UserDefinedOperator
   type: Field
   source:
     remote:
@@ -276,7 +276,7 @@ items:
   name:
     CSharp: Ordinary
   qualifiedName:
-    CSharp: Ordinary
+    CSharp: Microsoft.CodeAnalysis.MethodKind.Ordinary
   type: Field
   source:
     remote:
@@ -298,7 +298,7 @@ items:
   name:
     CSharp: PropertyGet
   qualifiedName:
-    CSharp: PropertyGet
+    CSharp: Microsoft.CodeAnalysis.MethodKind.PropertyGet
   type: Field
   source:
     remote:
@@ -320,7 +320,7 @@ items:
   name:
     CSharp: PropertySet
   qualifiedName:
-    CSharp: PropertySet
+    CSharp: Microsoft.CodeAnalysis.MethodKind.PropertySet
   type: Field
   source:
     remote:
@@ -342,7 +342,7 @@ items:
   name:
     CSharp: ReducedExtension
   qualifiedName:
-    CSharp: ReducedExtension
+    CSharp: Microsoft.CodeAnalysis.MethodKind.ReducedExtension
   type: Field
   source:
     remote:
@@ -364,7 +364,7 @@ items:
   name:
     CSharp: StaticConstructor
   qualifiedName:
-    CSharp: StaticConstructor
+    CSharp: Microsoft.CodeAnalysis.MethodKind.StaticConstructor
   type: Field
   source:
     remote:
@@ -386,7 +386,7 @@ items:
   name:
     CSharp: SharedConstructor
   qualifiedName:
-    CSharp: SharedConstructor
+    CSharp: Microsoft.CodeAnalysis.MethodKind.SharedConstructor
   type: Field
   source:
     remote:
@@ -405,7 +405,7 @@ items:
   name:
     CSharp: BuiltinOperator
   qualifiedName:
-    CSharp: BuiltinOperator
+    CSharp: Microsoft.CodeAnalysis.MethodKind.BuiltinOperator
   type: Field
   source:
     remote:
@@ -427,7 +427,7 @@ items:
   name:
     CSharp: DeclareMethod
   qualifiedName:
-    CSharp: DeclareMethod
+    CSharp: Microsoft.CodeAnalysis.MethodKind.DeclareMethod
   type: Field
   source:
     remote:

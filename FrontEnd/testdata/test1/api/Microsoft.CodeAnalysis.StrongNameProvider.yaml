@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.StrongNameProvider
 name:
   CSharp: StrongNameProvider
 qualifiedName:
-  CSharp: StrongNameProvider
+  CSharp: Microsoft.CodeAnalysis.StrongNameProvider
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.StrongNameProvider.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -58,7 +58,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.StrongNameProvider.GetHashCode
   type: Method
   source:
     remote:

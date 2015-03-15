@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle
 name:
   CSharp: SymbolDisplayTypeQualificationStyle
 qualifiedName:
-  CSharp: SymbolDisplayTypeQualificationStyle
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: NameOnly
   qualifiedName:
-    CSharp: NameOnly
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle.NameOnly
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: NameAndContainingTypes
   qualifiedName:
-    CSharp: NameAndContainingTypes
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle.NameAndContainingTypes
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: NameAndContainingTypesAndNamespaces
   qualifiedName:
-    CSharp: NameAndContainingTypesAndNamespaces
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle.NameAndContainingTypesAndNamespaces
   type: Field
   source:
     remote:

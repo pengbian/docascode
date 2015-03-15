@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SemanticModel
 name:
   CSharp: SemanticModel
 qualifiedName:
-  CSharp: SemanticModel
+  CSharp: Microsoft.CodeAnalysis.SemanticModel
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: Language
   qualifiedName:
-    CSharp: Language
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.Language
   type: Property
   source:
     remote:
@@ -61,7 +61,7 @@ items:
   name:
     CSharp: get_Language
   qualifiedName:
-    CSharp: get_Language
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.get_Language
   source:
     remote:
       branch: master
@@ -76,7 +76,7 @@ items:
   name:
     CSharp: Compilation
   qualifiedName:
-    CSharp: Compilation
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.Compilation
   type: Property
   source:
     remote:
@@ -104,7 +104,7 @@ items:
   name:
     CSharp: get_Compilation
   qualifiedName:
-    CSharp: get_Compilation
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.get_Compilation
   source:
     remote:
       branch: master
@@ -119,7 +119,7 @@ items:
   name:
     CSharp: SyntaxTree
   qualifiedName:
-    CSharp: SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.SyntaxTree
   type: Property
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
-    CSharp: get_SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.get_SyntaxTree
   source:
     remote:
       branch: master
@@ -162,7 +162,7 @@ items:
   name:
     CSharp: IsSpeculativeSemanticModel
   qualifiedName:
-    CSharp: IsSpeculativeSemanticModel
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.IsSpeculativeSemanticModel
   type: Property
   source:
     remote:
@@ -190,7 +190,7 @@ items:
   name:
     CSharp: get_IsSpeculativeSemanticModel
   qualifiedName:
-    CSharp: get_IsSpeculativeSemanticModel
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.get_IsSpeculativeSemanticModel
   source:
     remote:
       branch: master
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: OriginalPositionForSpeculation
   qualifiedName:
-    CSharp: OriginalPositionForSpeculation
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.OriginalPositionForSpeculation
   type: Property
   source:
     remote:
@@ -235,7 +235,7 @@ items:
   name:
     CSharp: get_OriginalPositionForSpeculation
   qualifiedName:
-    CSharp: get_OriginalPositionForSpeculation
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.get_OriginalPositionForSpeculation
   source:
     remote:
       branch: master
@@ -250,7 +250,7 @@ items:
   name:
     CSharp: ParentModel
   qualifiedName:
-    CSharp: ParentModel
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.ParentModel
   type: Property
   source:
     remote:
@@ -280,7 +280,7 @@ items:
   name:
     CSharp: get_ParentModel
   qualifiedName:
-    CSharp: get_ParentModel
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.get_ParentModel
   source:
     remote:
       branch: master
@@ -295,7 +295,7 @@ items:
   name:
     CSharp: GetSyntaxDiagnostics
   qualifiedName:
-    CSharp: GetSyntaxDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetSyntaxDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -340,7 +340,7 @@ items:
   name:
     CSharp: GetDeclarationDiagnostics
   qualifiedName:
-    CSharp: GetDeclarationDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetDeclarationDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -385,7 +385,7 @@ items:
   name:
     CSharp: GetMethodBodyDiagnostics
   qualifiedName:
-    CSharp: GetMethodBodyDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetMethodBodyDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -430,7 +430,7 @@ items:
   name:
     CSharp: GetDiagnostics
   qualifiedName:
-    CSharp: GetDiagnostics
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -477,7 +477,7 @@ items:
   name:
     CSharp: LookupSymbols
   qualifiedName:
-    CSharp: LookupSymbols
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)
   type: Method
   source:
     remote:
@@ -538,7 +538,7 @@ items:
   name:
     CSharp: LookupBaseMembers
   qualifiedName:
-    CSharp: LookupBaseMembers
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.LookupBaseMembers(System.Int32,System.String)
   type: Method
   source:
     remote:
@@ -626,7 +626,7 @@ items:
   name:
     CSharp: LookupStaticMembers
   qualifiedName:
-    CSharp: LookupStaticMembers
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.LookupStaticMembers(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String)
   type: Method
   source:
     remote:
@@ -685,7 +685,7 @@ items:
   name:
     CSharp: LookupNamespacesAndTypes
   qualifiedName:
-    CSharp: LookupNamespacesAndTypes
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.LookupNamespacesAndTypes(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String)
   type: Method
   source:
     remote:
@@ -740,7 +740,7 @@ items:
   name:
     CSharp: LookupLabels
   qualifiedName:
-    CSharp: LookupLabels
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.LookupLabels(System.Int32,System.String)
   type: Method
   source:
     remote:
@@ -786,7 +786,7 @@ items:
   name:
     CSharp: GetConstantValue
   qualifiedName:
-    CSharp: GetConstantValue
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetConstantValue(Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -825,7 +825,7 @@ items:
   name:
     CSharp: GetEnclosingSymbol
   qualifiedName:
-    CSharp: GetEnclosingSymbol
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetEnclosingSymbol(System.Int32,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -862,7 +862,7 @@ items:
   name:
     CSharp: IsAccessible
   qualifiedName:
-    CSharp: IsAccessible
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.IsAccessible(System.Int32,Microsoft.CodeAnalysis.ISymbol)
   type: Method
   source:
     remote:
@@ -905,7 +905,7 @@ items:
   name:
     CSharp: IsEventUsableAsField
   qualifiedName:
-    CSharp: IsEventUsableAsField
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.IsEventUsableAsField(System.Int32,Microsoft.CodeAnalysis.IEventSymbol)
   type: Method
   source:
     remote:
@@ -942,7 +942,7 @@ items:
   name:
     CSharp: GetPreprocessingSymbolInfo
   qualifiedName:
-    CSharp: GetPreprocessingSymbolInfo
+    CSharp: Microsoft.CodeAnalysis.SemanticModel.GetPreprocessingSymbolInfo(Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:

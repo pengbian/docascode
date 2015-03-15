@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IFieldSymbol
 name:
   CSharp: IFieldSymbol
 qualifiedName:
-  CSharp: IFieldSymbol
+  CSharp: Microsoft.CodeAnalysis.IFieldSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: AssociatedSymbol
   qualifiedName:
-    CSharp: AssociatedSymbol
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.AssociatedSymbol
   type: Property
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: get_AssociatedSymbol
   qualifiedName:
-    CSharp: get_AssociatedSymbol
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_AssociatedSymbol
   source:
     remote:
       branch: master
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: IsConst
   qualifiedName:
-    CSharp: IsConst
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.IsConst
   type: Property
   source:
     remote:
@@ -108,7 +108,7 @@ items:
   name:
     CSharp: get_IsConst
   qualifiedName:
-    CSharp: get_IsConst
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_IsConst
   source:
     remote:
       branch: master
@@ -123,7 +123,7 @@ items:
   name:
     CSharp: IsReadOnly
   qualifiedName:
-    CSharp: IsReadOnly
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.IsReadOnly
   type: Property
   source:
     remote:
@@ -151,7 +151,7 @@ items:
   name:
     CSharp: get_IsReadOnly
   qualifiedName:
-    CSharp: get_IsReadOnly
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_IsReadOnly
   source:
     remote:
       branch: master
@@ -166,7 +166,7 @@ items:
   name:
     CSharp: IsVolatile
   qualifiedName:
-    CSharp: IsVolatile
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.IsVolatile
   type: Property
   source:
     remote:
@@ -194,7 +194,7 @@ items:
   name:
     CSharp: get_IsVolatile
   qualifiedName:
-    CSharp: get_IsVolatile
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_IsVolatile
   source:
     remote:
       branch: master
@@ -209,7 +209,7 @@ items:
   name:
     CSharp: Type
   qualifiedName:
-    CSharp: Type
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.Type
   type: Property
   source:
     remote:
@@ -237,7 +237,7 @@ items:
   name:
     CSharp: get_Type
   qualifiedName:
-    CSharp: get_Type
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_Type
   source:
     remote:
       branch: master
@@ -252,7 +252,7 @@ items:
   name:
     CSharp: HasConstantValue
   qualifiedName:
-    CSharp: HasConstantValue
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.HasConstantValue
   type: Property
   source:
     remote:
@@ -282,7 +282,7 @@ items:
   name:
     CSharp: get_HasConstantValue
   qualifiedName:
-    CSharp: get_HasConstantValue
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_HasConstantValue
   source:
     remote:
       branch: master
@@ -297,7 +297,7 @@ items:
   name:
     CSharp: ConstantValue
   qualifiedName:
-    CSharp: ConstantValue
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.ConstantValue
   type: Property
   source:
     remote:
@@ -325,7 +325,7 @@ items:
   name:
     CSharp: get_ConstantValue
   qualifiedName:
-    CSharp: get_ConstantValue
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_ConstantValue
   source:
     remote:
       branch: master
@@ -340,7 +340,7 @@ items:
   name:
     CSharp: CustomModifiers
   qualifiedName:
-    CSharp: CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.CustomModifiers
   type: Property
   source:
     remote:
@@ -368,7 +368,7 @@ items:
   name:
     CSharp: get_CustomModifiers
   qualifiedName:
-    CSharp: get_CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_CustomModifiers
   source:
     remote:
       branch: master
@@ -383,7 +383,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -415,7 +415,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.IFieldSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master

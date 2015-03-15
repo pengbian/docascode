@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.NamespaceKind
 name:
   CSharp: NamespaceKind
 qualifiedName:
-  CSharp: NamespaceKind
+  CSharp: Microsoft.CodeAnalysis.NamespaceKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Module
   qualifiedName:
-    CSharp: Module
+    CSharp: Microsoft.CodeAnalysis.NamespaceKind.Module
   type: Field
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: Assembly
   qualifiedName:
-    CSharp: Assembly
+    CSharp: Microsoft.CodeAnalysis.NamespaceKind.Assembly
   type: Field
   source:
     remote:
@@ -75,7 +75,7 @@ items:
   name:
     CSharp: Compilation
   qualifiedName:
-    CSharp: Compilation
+    CSharp: Microsoft.CodeAnalysis.NamespaceKind.Compilation
   type: Field
   source:
     remote:

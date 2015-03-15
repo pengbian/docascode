@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SourceCodeKind
 name:
   CSharp: SourceCodeKind
 qualifiedName:
-  CSharp: SourceCodeKind
+  CSharp: Microsoft.CodeAnalysis.SourceCodeKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Regular
   qualifiedName:
-    CSharp: Regular
+    CSharp: Microsoft.CodeAnalysis.SourceCodeKind.Regular
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Script
   qualifiedName:
-    CSharp: Script
+    CSharp: Microsoft.CodeAnalysis.SourceCodeKind.Script
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Interactive
   qualifiedName:
-    CSharp: Interactive
+    CSharp: Microsoft.CodeAnalysis.SourceCodeKind.Interactive
   type: Field
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SubsystemVersion
 name:
   CSharp: SubsystemVersion
 qualifiedName:
-  CSharp: SubsystemVersion
+  CSharp: Microsoft.CodeAnalysis.SubsystemVersion
 type: Struct
 source:
   remote:
@@ -54,7 +54,7 @@ items:
   name:
     CSharp: Major
   qualifiedName:
-    CSharp: Major
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Major
   type: Field
   source:
     remote:
@@ -73,7 +73,7 @@ items:
   name:
     CSharp: Minor
   qualifiedName:
-    CSharp: Minor
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Minor
   type: Field
   source:
     remote:
@@ -92,7 +92,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.None
   type: Field
   source:
     remote:
@@ -111,7 +111,7 @@ items:
   name:
     CSharp: Windows2000
   qualifiedName:
-    CSharp: Windows2000
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Windows2000
   type: Field
   source:
     remote:
@@ -130,7 +130,7 @@ items:
   name:
     CSharp: WindowsXP
   qualifiedName:
-    CSharp: WindowsXP
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.WindowsXP
   type: Field
   source:
     remote:
@@ -149,7 +149,7 @@ items:
   name:
     CSharp: WindowsVista
   qualifiedName:
-    CSharp: WindowsVista
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.WindowsVista
   type: Field
   source:
     remote:
@@ -168,7 +168,7 @@ items:
   name:
     CSharp: Windows7
   qualifiedName:
-    CSharp: Windows7
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Windows7
   type: Field
   source:
     remote:
@@ -187,7 +187,7 @@ items:
   name:
     CSharp: Windows8
   qualifiedName:
-    CSharp: Windows8
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Windows8
   type: Field
   source:
     remote:
@@ -206,7 +206,7 @@ items:
   name:
     CSharp: TryParse
   qualifiedName:
-    CSharp: TryParse
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.TryParse(System.String,Microsoft.CodeAnalysis.SubsystemVersion@)
   type: Method
   source:
     remote:
@@ -244,7 +244,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Create(System.Int32,System.Int32)
   type: Method
   source:
     remote:
@@ -282,7 +282,7 @@ items:
   name:
     CSharp: IsValid
   qualifiedName:
-    CSharp: IsValid
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.IsValid
   type: Property
   source:
     remote:
@@ -310,7 +310,7 @@ items:
   name:
     CSharp: get_IsValid
   qualifiedName:
-    CSharp: get_IsValid
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.get_IsValid
   source:
     remote:
       branch: master
@@ -325,7 +325,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -352,7 +352,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.GetHashCode
   type: Method
   source:
     remote:
@@ -374,7 +374,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.Equals(Microsoft.CodeAnalysis.SubsystemVersion)
   type: Method
   source:
     remote:
@@ -401,7 +401,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SubsystemVersion.ToString
   type: Method
   source:
     remote:

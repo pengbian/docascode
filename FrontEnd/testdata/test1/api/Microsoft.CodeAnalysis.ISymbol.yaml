@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ISymbol
 name:
   CSharp: ISymbol
 qualifiedName:
-  CSharp: ISymbol
+  CSharp: Microsoft.CodeAnalysis.ISymbol
 type: Interface
 source:
   remote:
@@ -29,7 +29,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.ISymbol.Kind
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_Kind
   source:
     remote:
       branch: master
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: Language
   qualifiedName:
-    CSharp: Language
+    CSharp: Microsoft.CodeAnalysis.ISymbol.Language
   type: Property
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: get_Language
   qualifiedName:
-    CSharp: get_Language
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_Language
   source:
     remote:
       branch: master
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: Name
   qualifiedName:
-    CSharp: Name
+    CSharp: Microsoft.CodeAnalysis.ISymbol.Name
   type: Property
   source:
     remote:
@@ -143,7 +143,7 @@ items:
   name:
     CSharp: get_Name
   qualifiedName:
-    CSharp: get_Name
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_Name
   source:
     remote:
       branch: master
@@ -158,7 +158,7 @@ items:
   name:
     CSharp: MetadataName
   qualifiedName:
-    CSharp: MetadataName
+    CSharp: Microsoft.CodeAnalysis.ISymbol.MetadataName
   type: Property
   source:
     remote:
@@ -200,7 +200,7 @@ items:
   name:
     CSharp: get_MetadataName
   qualifiedName:
-    CSharp: get_MetadataName
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_MetadataName
   source:
     remote:
       branch: master
@@ -215,7 +215,7 @@ items:
   name:
     CSharp: ContainingSymbol
   qualifiedName:
-    CSharp: ContainingSymbol
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
   type: Property
   source:
     remote:
@@ -243,7 +243,7 @@ items:
   name:
     CSharp: get_ContainingSymbol
   qualifiedName:
-    CSharp: get_ContainingSymbol
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_ContainingSymbol
   source:
     remote:
       branch: master
@@ -258,7 +258,7 @@ items:
   name:
     CSharp: ContainingAssembly
   qualifiedName:
-    CSharp: ContainingAssembly
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
   type: Property
   source:
     remote:
@@ -288,7 +288,7 @@ items:
   name:
     CSharp: get_ContainingAssembly
   qualifiedName:
-    CSharp: get_ContainingAssembly
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_ContainingAssembly
   source:
     remote:
       branch: master
@@ -303,7 +303,7 @@ items:
   name:
     CSharp: ContainingModule
   qualifiedName:
-    CSharp: ContainingModule
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ContainingModule
   type: Property
   source:
     remote:
@@ -333,7 +333,7 @@ items:
   name:
     CSharp: get_ContainingModule
   qualifiedName:
-    CSharp: get_ContainingModule
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_ContainingModule
   source:
     remote:
       branch: master
@@ -348,7 +348,7 @@ items:
   name:
     CSharp: ContainingType
   qualifiedName:
-    CSharp: ContainingType
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ContainingType
   type: Property
   source:
     remote:
@@ -378,7 +378,7 @@ items:
   name:
     CSharp: get_ContainingType
   qualifiedName:
-    CSharp: get_ContainingType
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_ContainingType
   source:
     remote:
       branch: master
@@ -393,7 +393,7 @@ items:
   name:
     CSharp: ContainingNamespace
   qualifiedName:
-    CSharp: ContainingNamespace
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
   type: Property
   source:
     remote:
@@ -423,7 +423,7 @@ items:
   name:
     CSharp: get_ContainingNamespace
   qualifiedName:
-    CSharp: get_ContainingNamespace
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_ContainingNamespace
   source:
     remote:
       branch: master
@@ -438,7 +438,7 @@ items:
   name:
     CSharp: IsDefinition
   qualifiedName:
-    CSharp: IsDefinition
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsDefinition
   type: Property
   source:
     remote:
@@ -468,7 +468,7 @@ items:
   name:
     CSharp: get_IsDefinition
   qualifiedName:
-    CSharp: get_IsDefinition
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsDefinition
   source:
     remote:
       branch: master
@@ -483,7 +483,7 @@ items:
   name:
     CSharp: IsStatic
   qualifiedName:
-    CSharp: IsStatic
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsStatic
   type: Property
   source:
     remote:
@@ -511,7 +511,7 @@ items:
   name:
     CSharp: get_IsStatic
   qualifiedName:
-    CSharp: get_IsStatic
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsStatic
   source:
     remote:
       branch: master
@@ -526,7 +526,7 @@ items:
   name:
     CSharp: IsVirtual
   qualifiedName:
-    CSharp: IsVirtual
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsVirtual
   type: Property
   source:
     remote:
@@ -554,7 +554,7 @@ items:
   name:
     CSharp: get_IsVirtual
   qualifiedName:
-    CSharp: get_IsVirtual
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsVirtual
   source:
     remote:
       branch: master
@@ -569,7 +569,7 @@ items:
   name:
     CSharp: IsOverride
   qualifiedName:
-    CSharp: IsOverride
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsOverride
   type: Property
   source:
     remote:
@@ -597,7 +597,7 @@ items:
   name:
     CSharp: get_IsOverride
   qualifiedName:
-    CSharp: get_IsOverride
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsOverride
   source:
     remote:
       branch: master
@@ -612,7 +612,7 @@ items:
   name:
     CSharp: IsAbstract
   qualifiedName:
-    CSharp: IsAbstract
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsAbstract
   type: Property
   source:
     remote:
@@ -640,7 +640,7 @@ items:
   name:
     CSharp: get_IsAbstract
   qualifiedName:
-    CSharp: get_IsAbstract
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsAbstract
   source:
     remote:
       branch: master
@@ -655,7 +655,7 @@ items:
   name:
     CSharp: IsSealed
   qualifiedName:
-    CSharp: IsSealed
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsSealed
   type: Property
   source:
     remote:
@@ -683,7 +683,7 @@ items:
   name:
     CSharp: get_IsSealed
   qualifiedName:
-    CSharp: get_IsSealed
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsSealed
   source:
     remote:
       branch: master
@@ -698,7 +698,7 @@ items:
   name:
     CSharp: IsExtern
   qualifiedName:
-    CSharp: IsExtern
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsExtern
   type: Property
   source:
     remote:
@@ -726,7 +726,7 @@ items:
   name:
     CSharp: get_IsExtern
   qualifiedName:
-    CSharp: get_IsExtern
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsExtern
   source:
     remote:
       branch: master
@@ -741,7 +741,7 @@ items:
   name:
     CSharp: IsImplicitlyDeclared
   qualifiedName:
-    CSharp: IsImplicitlyDeclared
+    CSharp: Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
   type: Property
   source:
     remote:
@@ -771,7 +771,7 @@ items:
   name:
     CSharp: get_IsImplicitlyDeclared
   qualifiedName:
-    CSharp: get_IsImplicitlyDeclared
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_IsImplicitlyDeclared
   source:
     remote:
       branch: master
@@ -786,7 +786,7 @@ items:
   name:
     CSharp: CanBeReferencedByName
   qualifiedName:
-    CSharp: CanBeReferencedByName
+    CSharp: Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
   type: Property
   source:
     remote:
@@ -814,7 +814,7 @@ items:
   name:
     CSharp: get_CanBeReferencedByName
   qualifiedName:
-    CSharp: get_CanBeReferencedByName
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_CanBeReferencedByName
   source:
     remote:
       branch: master
@@ -829,7 +829,7 @@ items:
   name:
     CSharp: Locations
   qualifiedName:
-    CSharp: Locations
+    CSharp: Microsoft.CodeAnalysis.ISymbol.Locations
   type: Property
   source:
     remote:
@@ -861,7 +861,7 @@ items:
   name:
     CSharp: get_Locations
   qualifiedName:
-    CSharp: get_Locations
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_Locations
   source:
     remote:
       branch: master
@@ -876,7 +876,7 @@ items:
   name:
     CSharp: DeclaringSyntaxReferences
   qualifiedName:
-    CSharp: DeclaringSyntaxReferences
+    CSharp: Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
   type: Property
   source:
     remote:
@@ -920,7 +920,7 @@ items:
   name:
     CSharp: get_DeclaringSyntaxReferences
   qualifiedName:
-    CSharp: get_DeclaringSyntaxReferences
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_DeclaringSyntaxReferences
   source:
     remote:
       branch: master
@@ -935,7 +935,7 @@ items:
   name:
     CSharp: GetAttributes
   qualifiedName:
-    CSharp: GetAttributes
+    CSharp: Microsoft.CodeAnalysis.ISymbol.GetAttributes
   type: Method
   source:
     remote:
@@ -962,7 +962,7 @@ items:
   name:
     CSharp: DeclaredAccessibility
   qualifiedName:
-    CSharp: DeclaredAccessibility
+    CSharp: Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
   type: Property
   source:
     remote:
@@ -992,7 +992,7 @@ items:
   name:
     CSharp: get_DeclaredAccessibility
   qualifiedName:
-    CSharp: get_DeclaredAccessibility
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_DeclaredAccessibility
   source:
     remote:
       branch: master
@@ -1007,7 +1007,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.ISymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -1039,7 +1039,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -1054,7 +1054,7 @@ items:
   name:
     CSharp: Accept
   qualifiedName:
-    CSharp: Accept
+    CSharp: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
   type: Method
   source:
     remote:
@@ -1081,7 +1081,7 @@ items:
   name:
     CSharp: Accept
   qualifiedName:
-    CSharp: Accept
+    CSharp: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
   type: Method
   source:
     remote:
@@ -1108,7 +1108,7 @@ items:
   name:
     CSharp: GetDocumentationCommentId
   qualifiedName:
-    CSharp: GetDocumentationCommentId
+    CSharp: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
   type: Method
   source:
     remote:
@@ -1135,7 +1135,7 @@ items:
   name:
     CSharp: GetDocumentationCommentXml
   qualifiedName:
-    CSharp: GetDocumentationCommentXml
+    CSharp: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -1179,7 +1179,7 @@ items:
   name:
     CSharp: ToDisplayString
   qualifiedName:
-    CSharp: ToDisplayString
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
   type: Method
   source:
     remote:
@@ -1211,7 +1211,7 @@ items:
   name:
     CSharp: ToDisplayParts
   qualifiedName:
-    CSharp: ToDisplayParts
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
   type: Method
   source:
     remote:
@@ -1248,7 +1248,7 @@ items:
   name:
     CSharp: ToMinimalDisplayString
   qualifiedName:
-    CSharp: ToMinimalDisplayString
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
   type: Method
   source:
     remote:
@@ -1300,7 +1300,7 @@ items:
   name:
     CSharp: ToMinimalDisplayParts
   qualifiedName:
-    CSharp: ToMinimalDisplayParts
+    CSharp: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
   type: Method
   source:
     remote:
@@ -1352,7 +1352,7 @@ items:
   name:
     CSharp: HasUnsupportedMetadata
   qualifiedName:
-    CSharp: HasUnsupportedMetadata
+    CSharp: Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
   type: Property
   source:
     remote:
@@ -1412,7 +1412,7 @@ items:
   name:
     CSharp: get_HasUnsupportedMetadata
   qualifiedName:
-    CSharp: get_HasUnsupportedMetadata
+    CSharp: Microsoft.CodeAnalysis.ISymbol.get_HasUnsupportedMetadata
   source:
     remote:
       branch: master

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxList`1.Enumerator
 name:
   CSharp: Enumerator
 qualifiedName:
-  CSharp: Enumerator
+  CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator
 type: Struct
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: MoveNext
   qualifiedName:
-    CSharp: MoveNext
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator.MoveNext
   type: Method
   source:
     remote:
@@ -53,7 +53,7 @@ items:
   name:
     CSharp: Current
   qualifiedName:
-    CSharp: Current
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator.Current
   type: Property
   source:
     remote:
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: get_Current
   qualifiedName:
-    CSharp: get_Current
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator.get_Current
   source:
     remote:
       branch: master
@@ -93,7 +93,7 @@ items:
   name:
     CSharp: Reset
   qualifiedName:
-    CSharp: Reset
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator.Reset
   type: Method
   source:
     remote:
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -142,7 +142,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Enumerator.GetHashCode
   type: Method
   source:
     remote:

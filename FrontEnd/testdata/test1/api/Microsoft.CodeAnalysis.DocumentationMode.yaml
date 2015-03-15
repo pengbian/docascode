@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.DocumentationMode
 name:
   CSharp: DocumentationMode
 qualifiedName:
-  CSharp: DocumentationMode
+  CSharp: Microsoft.CodeAnalysis.DocumentationMode
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.DocumentationMode.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Parse
   qualifiedName:
-    CSharp: Parse
+    CSharp: Microsoft.CodeAnalysis.DocumentationMode.Parse
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Diagnose
   qualifiedName:
-    CSharp: Diagnose
+    CSharp: Microsoft.CodeAnalysis.DocumentationMode.Diagnose
   type: Field
   source:
     remote:

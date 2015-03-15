@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
 name:
   CSharp: EditAndContinueMethodDebugInformation
 qualifiedName:
-  CSharp: EditAndContinueMethodDebugInformation
+  CSharp: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation.Create(System.Collections.Immutable.ImmutableArray{System.Byte},System.Collections.Immutable.ImmutableArray{System.Byte})
   type: Method
   source:
     remote:

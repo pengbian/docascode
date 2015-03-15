@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
 name:
   CSharp: SyntaxTreeAnalysisContext
 qualifiedName:
-  CSharp: SyntaxTreeAnalysisContext
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
 type: Struct
 source:
   remote:
@@ -36,7 +36,7 @@ items:
   name:
     CSharp: Tree
   qualifiedName:
-    CSharp: Tree
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Tree
   type: Property
   source:
     remote:
@@ -64,7 +64,7 @@ items:
   name:
     CSharp: get_Tree
   qualifiedName:
-    CSharp: get_Tree
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Tree
   source:
     remote:
       branch: master
@@ -79,7 +79,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.Options
   type: Property
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_Options
   source:
     remote:
       branch: master
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: CancellationToken
   qualifiedName:
-    CSharp: CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.CancellationToken
   type: Property
   source:
     remote:
@@ -150,7 +150,7 @@ items:
   name:
     CSharp: get_CancellationToken
   qualifiedName:
-    CSharp: get_CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.get_CancellationToken
   source:
     remote:
       branch: master
@@ -163,9 +163,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext
   name:
-    CSharp: .ctor
+    CSharp: SyntaxTreeAnalysisContext(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.SyntaxTreeAnalysisContext(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   type: Constructor
   source:
     remote:
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: ReportDiagnostic
   qualifiedName:
-    CSharp: ReportDiagnostic
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxTreeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
   type: Method
   source:
     remote:

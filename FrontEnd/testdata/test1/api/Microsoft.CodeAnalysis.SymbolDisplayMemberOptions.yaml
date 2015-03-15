@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayMemberOptions
 name:
   CSharp: SymbolDisplayMemberOptions
 qualifiedName:
-  CSharp: SymbolDisplayMemberOptions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: IncludeType
   qualifiedName:
-    CSharp: IncludeType
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeType
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: IncludeModifiers
   qualifiedName:
-    CSharp: IncludeModifiers
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeModifiers
   type: Field
   source:
     remote:
@@ -105,7 +105,7 @@ items:
   name:
     CSharp: IncludeAccessibility
   qualifiedName:
-    CSharp: IncludeAccessibility
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeAccessibility
   type: Field
   source:
     remote:
@@ -129,7 +129,7 @@ items:
   name:
     CSharp: IncludeExplicitInterface
   qualifiedName:
-    CSharp: IncludeExplicitInterface
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeExplicitInterface
   type: Field
   source:
     remote:
@@ -155,7 +155,7 @@ items:
   name:
     CSharp: IncludeParameters
   qualifiedName:
-    CSharp: IncludeParameters
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeParameters
   type: Field
   source:
     remote:
@@ -177,7 +177,7 @@ items:
   name:
     CSharp: IncludeContainingType
   qualifiedName:
-    CSharp: IncludeContainingType
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeContainingType
   type: Field
   source:
     remote:
@@ -199,7 +199,7 @@ items:
   name:
     CSharp: IncludeConstantValue
   qualifiedName:
-    CSharp: IncludeConstantValue
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.IncludeConstantValue
   type: Field
   source:
     remote:

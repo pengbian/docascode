@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.OptimizationLevel
 name:
   CSharp: OptimizationLevel
 qualifiedName:
-  CSharp: OptimizationLevel
+  CSharp: Microsoft.CodeAnalysis.OptimizationLevel
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Debug
   qualifiedName:
-    CSharp: Debug
+    CSharp: Microsoft.CodeAnalysis.OptimizationLevel.Debug
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Release
   qualifiedName:
-    CSharp: Release
+    CSharp: Microsoft.CodeAnalysis.OptimizationLevel.Release
   type: Field
   source:
     remote:

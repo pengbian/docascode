@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ISymbolExtensions
 name:
   CSharp: ISymbolExtensions
 qualifiedName:
-  CSharp: ISymbolExtensions
+  CSharp: Microsoft.CodeAnalysis.ISymbolExtensions
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: GetConstructedReducedFrom
   qualifiedName:
-    CSharp: GetConstructedReducedFrom
+    CSharp: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
   type: Method
   source:
     remote:

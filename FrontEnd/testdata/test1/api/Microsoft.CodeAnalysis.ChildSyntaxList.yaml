@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ChildSyntaxList
 name:
   CSharp: ChildSyntaxList
 qualifiedName:
-  CSharp: ChildSyntaxList
+  CSharp: Microsoft.CodeAnalysis.ChildSyntaxList
 type: Struct
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Count
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Count
   qualifiedName:
-    CSharp: get_Count
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.get_Count
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -93,7 +93,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -108,7 +108,7 @@ items:
   name:
     CSharp: Any
   qualifiedName:
-    CSharp: Any
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Any
   type: Method
   source:
     remote:
@@ -130,7 +130,7 @@ items:
   name:
     CSharp: First
   qualifiedName:
-    CSharp: First
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.First
   type: Method
   source:
     remote:
@@ -156,7 +156,7 @@ items:
   name:
     CSharp: Last
   qualifiedName:
-    CSharp: Last
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Last
   type: Method
   source:
     remote:
@@ -182,7 +182,7 @@ items:
   name:
     CSharp: Reverse
   qualifiedName:
-    CSharp: Reverse
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Reverse
   type: Method
   source:
     remote:
@@ -208,7 +208,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.GetEnumerator
   type: Method
   source:
     remote:
@@ -234,7 +234,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -266,7 +266,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.Equals(Microsoft.CodeAnalysis.ChildSyntaxList)
   type: Method
   source:
     remote:
@@ -298,7 +298,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.GetHashCode
   type: Method
   source:
     remote:
@@ -324,7 +324,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.op_Equality(Microsoft.CodeAnalysis.ChildSyntaxList,Microsoft.CodeAnalysis.ChildSyntaxList)
   source:
     remote:
       branch: master
@@ -342,7 +342,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.ChildSyntaxList.op_Inequality(Microsoft.CodeAnalysis.ChildSyntaxList,Microsoft.CodeAnalysis.ChildSyntaxList)
   source:
     remote:
       branch: master

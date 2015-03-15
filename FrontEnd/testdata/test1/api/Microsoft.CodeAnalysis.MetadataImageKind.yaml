@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.MetadataImageKind
 name:
   CSharp: MetadataImageKind
 qualifiedName:
-  CSharp: MetadataImageKind
+  CSharp: Microsoft.CodeAnalysis.MetadataImageKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Assembly
   qualifiedName:
-    CSharp: Assembly
+    CSharp: Microsoft.CodeAnalysis.MetadataImageKind.Assembly
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Module
   qualifiedName:
-    CSharp: Module
+    CSharp: Microsoft.CodeAnalysis.MetadataImageKind.Module
   type: Field
   source:
     remote:

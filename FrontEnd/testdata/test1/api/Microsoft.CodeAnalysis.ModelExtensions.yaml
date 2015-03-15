@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ModelExtensions
 name:
   CSharp: ModelExtensions
 qualifiedName:
-  CSharp: ModelExtensions
+  CSharp: Microsoft.CodeAnalysis.ModelExtensions
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: GetSymbolInfo
   qualifiedName:
-    CSharp: GetSymbolInfo
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -73,7 +73,7 @@ items:
   name:
     CSharp: GetSpeculativeSymbolInfo
   qualifiedName:
-    CSharp: GetSpeculativeSymbolInfo
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
   type: Method
   source:
     remote:
@@ -141,7 +141,7 @@ items:
   name:
     CSharp: GetTypeInfo
   qualifiedName:
-    CSharp: GetTypeInfo
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -186,7 +186,7 @@ items:
   name:
     CSharp: GetAliasInfo
   qualifiedName:
-    CSharp: GetAliasInfo
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -233,7 +233,7 @@ items:
   name:
     CSharp: GetSpeculativeAliasInfo
   qualifiedName:
-    CSharp: GetSpeculativeAliasInfo
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
   type: Method
   source:
     remote:
@@ -298,7 +298,7 @@ items:
   name:
     CSharp: GetSpeculativeTypeInfo
   qualifiedName:
-    CSharp: GetSpeculativeTypeInfo
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
   type: Method
   source:
     remote:
@@ -366,7 +366,7 @@ items:
   name:
     CSharp: GetDeclaredSymbol
   qualifiedName:
-    CSharp: GetDeclaredSymbol
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -416,7 +416,7 @@ items:
   name:
     CSharp: GetMemberGroup
   qualifiedName:
-    CSharp: GetMemberGroup
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -458,7 +458,7 @@ items:
   name:
     CSharp: AnalyzeControlFlow
   qualifiedName:
-    CSharp: AnalyzeControlFlow
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -498,7 +498,7 @@ items:
   name:
     CSharp: AnalyzeControlFlow
   qualifiedName:
-    CSharp: AnalyzeControlFlow
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -533,7 +533,7 @@ items:
   name:
     CSharp: AnalyzeDataFlow
   qualifiedName:
-    CSharp: AnalyzeDataFlow
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:
@@ -573,7 +573,7 @@ items:
   name:
     CSharp: AnalyzeDataFlow
   qualifiedName:
-    CSharp: AnalyzeDataFlow
+    CSharp: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
   type: Method
   source:
     remote:

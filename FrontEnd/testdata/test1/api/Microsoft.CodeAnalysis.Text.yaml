@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text
 name:
   CSharp: Text
 qualifiedName:
-  CSharp: Text
+  CSharp: Microsoft.CodeAnalysis.Text
 type: Namespace
 source:
   remote:

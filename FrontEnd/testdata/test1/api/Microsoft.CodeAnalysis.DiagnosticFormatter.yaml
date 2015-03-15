@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.DiagnosticFormatter
 name:
   CSharp: DiagnosticFormatter
 qualifiedName:
-  CSharp: DiagnosticFormatter
+  CSharp: Microsoft.CodeAnalysis.DiagnosticFormatter
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Format
   qualifiedName:
-    CSharp: Format
+    CSharp: Microsoft.CodeAnalysis.DiagnosticFormatter.Format(Microsoft.CodeAnalysis.Diagnostic,System.IFormatProvider)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IPreprocessingSymbol
 name:
   CSharp: IPreprocessingSymbol
 qualifiedName:
-  CSharp: IPreprocessingSymbol
+  CSharp: Microsoft.CodeAnalysis.IPreprocessingSymbol
 type: Interface
 source:
   remote:

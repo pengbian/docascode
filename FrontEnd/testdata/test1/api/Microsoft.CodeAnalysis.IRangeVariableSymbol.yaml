@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IRangeVariableSymbol
 name:
   CSharp: IRangeVariableSymbol
 qualifiedName:
-  CSharp: IRangeVariableSymbol
+  CSharp: Microsoft.CodeAnalysis.IRangeVariableSymbol
 type: Interface
 source:
   remote:

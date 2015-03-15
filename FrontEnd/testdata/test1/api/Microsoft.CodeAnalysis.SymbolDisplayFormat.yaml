@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
 name:
   CSharp: SymbolDisplayFormat
 qualifiedName:
-  CSharp: SymbolDisplayFormat
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: CSharpErrorMessageFormat
   qualifiedName:
-    CSharp: CSharpErrorMessageFormat
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpErrorMessageFormat
   type: Field
   source:
     remote:
@@ -50,7 +50,7 @@ items:
   name:
     CSharp: CSharpShortErrorMessageFormat
   qualifiedName:
-    CSharp: CSharpShortErrorMessageFormat
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpShortErrorMessageFormat
   type: Field
   source:
     remote:
@@ -69,7 +69,7 @@ items:
   name:
     CSharp: VisualBasicErrorMessageFormat
   qualifiedName:
-    CSharp: VisualBasicErrorMessageFormat
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicErrorMessageFormat
   type: Field
   source:
     remote:
@@ -88,7 +88,7 @@ items:
   name:
     CSharp: VisualBasicShortErrorMessageFormat
   qualifiedName:
-    CSharp: VisualBasicShortErrorMessageFormat
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicShortErrorMessageFormat
   type: Field
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: FullyQualifiedFormat
   qualifiedName:
-    CSharp: FullyQualifiedFormat
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.FullyQualifiedFormat
   type: Field
   source:
     remote:
@@ -126,7 +126,7 @@ items:
   name:
     CSharp: MinimallyQualifiedFormat
   qualifiedName:
-    CSharp: MinimallyQualifiedFormat
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.MinimallyQualifiedFormat
   type: Field
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: GlobalNamespaceStyle
   qualifiedName:
-    CSharp: GlobalNamespaceStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.GlobalNamespaceStyle
   type: Property
   source:
     remote:
@@ -173,7 +173,7 @@ items:
   name:
     CSharp: get_GlobalNamespaceStyle
   qualifiedName:
-    CSharp: get_GlobalNamespaceStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_GlobalNamespaceStyle
   source:
     remote:
       branch: master
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: TypeQualificationStyle
   qualifiedName:
-    CSharp: TypeQualificationStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.TypeQualificationStyle
   type: Property
   source:
     remote:
@@ -216,7 +216,7 @@ items:
   name:
     CSharp: get_TypeQualificationStyle
   qualifiedName:
-    CSharp: get_TypeQualificationStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_TypeQualificationStyle
   source:
     remote:
       branch: master
@@ -231,7 +231,7 @@ items:
   name:
     CSharp: GenericsOptions
   qualifiedName:
-    CSharp: GenericsOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.GenericsOptions
   type: Property
   source:
     remote:
@@ -259,7 +259,7 @@ items:
   name:
     CSharp: get_GenericsOptions
   qualifiedName:
-    CSharp: get_GenericsOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_GenericsOptions
   source:
     remote:
       branch: master
@@ -274,7 +274,7 @@ items:
   name:
     CSharp: MemberOptions
   qualifiedName:
-    CSharp: MemberOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.MemberOptions
   type: Property
   source:
     remote:
@@ -302,7 +302,7 @@ items:
   name:
     CSharp: get_MemberOptions
   qualifiedName:
-    CSharp: get_MemberOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_MemberOptions
   source:
     remote:
       branch: master
@@ -317,7 +317,7 @@ items:
   name:
     CSharp: ParameterOptions
   qualifiedName:
-    CSharp: ParameterOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.ParameterOptions
   type: Property
   source:
     remote:
@@ -345,7 +345,7 @@ items:
   name:
     CSharp: get_ParameterOptions
   qualifiedName:
-    CSharp: get_ParameterOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_ParameterOptions
   source:
     remote:
       branch: master
@@ -360,7 +360,7 @@ items:
   name:
     CSharp: DelegateStyle
   qualifiedName:
-    CSharp: DelegateStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.DelegateStyle
   type: Property
   source:
     remote:
@@ -388,7 +388,7 @@ items:
   name:
     CSharp: get_DelegateStyle
   qualifiedName:
-    CSharp: get_DelegateStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_DelegateStyle
   source:
     remote:
       branch: master
@@ -403,7 +403,7 @@ items:
   name:
     CSharp: ExtensionMethodStyle
   qualifiedName:
-    CSharp: ExtensionMethodStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.ExtensionMethodStyle
   type: Property
   source:
     remote:
@@ -431,7 +431,7 @@ items:
   name:
     CSharp: get_ExtensionMethodStyle
   qualifiedName:
-    CSharp: get_ExtensionMethodStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_ExtensionMethodStyle
   source:
     remote:
       branch: master
@@ -446,7 +446,7 @@ items:
   name:
     CSharp: PropertyStyle
   qualifiedName:
-    CSharp: PropertyStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.PropertyStyle
   type: Property
   source:
     remote:
@@ -476,7 +476,7 @@ items:
   name:
     CSharp: get_PropertyStyle
   qualifiedName:
-    CSharp: get_PropertyStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_PropertyStyle
   source:
     remote:
       branch: master
@@ -491,7 +491,7 @@ items:
   name:
     CSharp: LocalOptions
   qualifiedName:
-    CSharp: LocalOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.LocalOptions
   type: Property
   source:
     remote:
@@ -519,7 +519,7 @@ items:
   name:
     CSharp: get_LocalOptions
   qualifiedName:
-    CSharp: get_LocalOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_LocalOptions
   source:
     remote:
       branch: master
@@ -534,7 +534,7 @@ items:
   name:
     CSharp: KindOptions
   qualifiedName:
-    CSharp: KindOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.KindOptions
   type: Property
   source:
     remote:
@@ -562,7 +562,7 @@ items:
   name:
     CSharp: get_KindOptions
   qualifiedName:
-    CSharp: get_KindOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_KindOptions
   source:
     remote:
       branch: master
@@ -577,7 +577,7 @@ items:
   name:
     CSharp: MiscellaneousOptions
   qualifiedName:
-    CSharp: MiscellaneousOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.MiscellaneousOptions
   type: Property
   source:
     remote:
@@ -605,7 +605,7 @@ items:
   name:
     CSharp: get_MiscellaneousOptions
   qualifiedName:
-    CSharp: get_MiscellaneousOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.get_MiscellaneousOptions
   source:
     remote:
       branch: master
@@ -618,9 +618,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SymbolDisplayFormat.yaml
   href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
   name:
-    CSharp: .ctor
+    CSharp: SymbolDisplayFormat(Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle,Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle,Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions,Microsoft.CodeAnalysis.SymbolDisplayMemberOptions,Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle,Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle,Microsoft.CodeAnalysis.SymbolDisplayParameterOptions,Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle,Microsoft.CodeAnalysis.SymbolDisplayLocalOptions,Microsoft.CodeAnalysis.SymbolDisplayKindOptions,Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.SymbolDisplayFormat(Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle,Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle,Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions,Microsoft.CodeAnalysis.SymbolDisplayMemberOptions,Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle,Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle,Microsoft.CodeAnalysis.SymbolDisplayParameterOptions,Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle,Microsoft.CodeAnalysis.SymbolDisplayLocalOptions,Microsoft.CodeAnalysis.SymbolDisplayKindOptions,Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)
   type: Constructor
   source:
     remote:
@@ -709,7 +709,7 @@ items:
   name:
     CSharp: WithMiscellaneousOptions
   qualifiedName:
-    CSharp: WithMiscellaneousOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithMiscellaneousOptions(Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)
   type: Method
   source:
     remote:
@@ -741,7 +741,7 @@ items:
   name:
     CSharp: AddMiscellaneousOptions
   qualifiedName:
-    CSharp: AddMiscellaneousOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.AddMiscellaneousOptions(Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)
   type: Method
   source:
     remote:
@@ -773,7 +773,7 @@ items:
   name:
     CSharp: WithGenericsOptions
   qualifiedName:
-    CSharp: WithGenericsOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithGenericsOptions(Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions)
   type: Method
   source:
     remote:
@@ -805,7 +805,7 @@ items:
   name:
     CSharp: AddGenericsOptions
   qualifiedName:
-    CSharp: AddGenericsOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.AddGenericsOptions(Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions)
   type: Method
   source:
     remote:
@@ -837,7 +837,7 @@ items:
   name:
     CSharp: WithMemberOptions
   qualifiedName:
-    CSharp: WithMemberOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithMemberOptions(Microsoft.CodeAnalysis.SymbolDisplayMemberOptions)
   type: Method
   source:
     remote:
@@ -869,7 +869,7 @@ items:
   name:
     CSharp: AddMemberOptions
   qualifiedName:
-    CSharp: AddMemberOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.AddMemberOptions(Microsoft.CodeAnalysis.SymbolDisplayMemberOptions)
   type: Method
   source:
     remote:
@@ -901,7 +901,7 @@ items:
   name:
     CSharp: RemoveMemberOptions
   qualifiedName:
-    CSharp: RemoveMemberOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveMemberOptions(Microsoft.CodeAnalysis.SymbolDisplayMemberOptions)
   type: Method
   source:
     remote:
@@ -933,7 +933,7 @@ items:
   name:
     CSharp: WithKindOptions
   qualifiedName:
-    CSharp: WithKindOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithKindOptions(Microsoft.CodeAnalysis.SymbolDisplayKindOptions)
   type: Method
   source:
     remote:
@@ -965,7 +965,7 @@ items:
   name:
     CSharp: AddKindOptions
   qualifiedName:
-    CSharp: AddKindOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.AddKindOptions(Microsoft.CodeAnalysis.SymbolDisplayKindOptions)
   type: Method
   source:
     remote:
@@ -997,7 +997,7 @@ items:
   name:
     CSharp: RemoveKindOptions
   qualifiedName:
-    CSharp: RemoveKindOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveKindOptions(Microsoft.CodeAnalysis.SymbolDisplayKindOptions)
   type: Method
   source:
     remote:
@@ -1029,7 +1029,7 @@ items:
   name:
     CSharp: WithParameterOptions
   qualifiedName:
-    CSharp: WithParameterOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithParameterOptions(Microsoft.CodeAnalysis.SymbolDisplayParameterOptions)
   type: Method
   source:
     remote:
@@ -1061,7 +1061,7 @@ items:
   name:
     CSharp: AddParameterOptions
   qualifiedName:
-    CSharp: AddParameterOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.AddParameterOptions(Microsoft.CodeAnalysis.SymbolDisplayParameterOptions)
   type: Method
   source:
     remote:
@@ -1093,7 +1093,7 @@ items:
   name:
     CSharp: RemoveParameterOptions
   qualifiedName:
-    CSharp: RemoveParameterOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveParameterOptions(Microsoft.CodeAnalysis.SymbolDisplayParameterOptions)
   type: Method
   source:
     remote:
@@ -1125,7 +1125,7 @@ items:
   name:
     CSharp: WithGlobalNamespaceStyle
   qualifiedName:
-    CSharp: WithGlobalNamespaceStyle
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithGlobalNamespaceStyle(Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle)
   type: Method
   source:
     remote:
@@ -1157,7 +1157,7 @@ items:
   name:
     CSharp: WithLocalOptions
   qualifiedName:
-    CSharp: WithLocalOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.WithLocalOptions(Microsoft.CodeAnalysis.SymbolDisplayLocalOptions)
   type: Method
   source:
     remote:
@@ -1189,7 +1189,7 @@ items:
   name:
     CSharp: AddLocalOptions
   qualifiedName:
-    CSharp: AddLocalOptions
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayFormat.AddLocalOptions(Microsoft.CodeAnalysis.SymbolDisplayLocalOptions)
   type: Method
   source:
     remote:

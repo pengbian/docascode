@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ResourceDescription
 name:
   CSharp: ResourceDescription
 qualifiedName:
-  CSharp: ResourceDescription
+  CSharp: Microsoft.CodeAnalysis.ResourceDescription
 type: Class
 source:
   remote:
@@ -29,9 +29,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.ResourceDescription.yaml
   href: api\Microsoft.CodeAnalysis.ResourceDescription
   name:
-    CSharp: .ctor
+    CSharp: ResourceDescription(System.String,System.Func{System.IO.Stream},System.Boolean)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.ResourceDescription.ResourceDescription(System.String,System.Func{System.IO.Stream},System.Boolean)
   type: Constructor
   source:
     remote:
@@ -73,9 +73,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.ResourceDescription.yaml
   href: api\Microsoft.CodeAnalysis.ResourceDescription
   name:
-    CSharp: .ctor
+    CSharp: ResourceDescription(System.String,System.String,System.Func{System.IO.Stream},System.Boolean)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.ResourceDescription.ResourceDescription(System.String,System.String,System.Func{System.IO.Stream},System.Boolean)
   type: Constructor
   source:
     remote:

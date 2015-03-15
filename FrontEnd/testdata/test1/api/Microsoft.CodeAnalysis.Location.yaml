@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Location
 name:
   CSharp: Location
 qualifiedName:
-  CSharp: Location
+  CSharp: Microsoft.CodeAnalysis.Location
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.Location.Kind
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.Location.get_Kind
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: IsInSource
   qualifiedName:
-    CSharp: IsInSource
+    CSharp: Microsoft.CodeAnalysis.Location.IsInSource
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_IsInSource
   qualifiedName:
-    CSharp: get_IsInSource
+    CSharp: Microsoft.CodeAnalysis.Location.get_IsInSource
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: IsInMetadata
   qualifiedName:
-    CSharp: IsInMetadata
+    CSharp: Microsoft.CodeAnalysis.Location.IsInMetadata
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_IsInMetadata
   qualifiedName:
-    CSharp: get_IsInMetadata
+    CSharp: Microsoft.CodeAnalysis.Location.get_IsInMetadata
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: SourceTree
   qualifiedName:
-    CSharp: SourceTree
+    CSharp: Microsoft.CodeAnalysis.Location.SourceTree
   type: Property
   source:
     remote:
@@ -188,7 +188,7 @@ items:
   name:
     CSharp: get_SourceTree
   qualifiedName:
-    CSharp: get_SourceTree
+    CSharp: Microsoft.CodeAnalysis.Location.get_SourceTree
   source:
     remote:
       branch: master
@@ -203,7 +203,7 @@ items:
   name:
     CSharp: MetadataModule
   qualifiedName:
-    CSharp: MetadataModule
+    CSharp: Microsoft.CodeAnalysis.Location.MetadataModule
   type: Property
   source:
     remote:
@@ -231,7 +231,7 @@ items:
   name:
     CSharp: get_MetadataModule
   qualifiedName:
-    CSharp: get_MetadataModule
+    CSharp: Microsoft.CodeAnalysis.Location.get_MetadataModule
   source:
     remote:
       branch: master
@@ -246,7 +246,7 @@ items:
   name:
     CSharp: SourceSpan
   qualifiedName:
-    CSharp: SourceSpan
+    CSharp: Microsoft.CodeAnalysis.Location.SourceSpan
   type: Property
   source:
     remote:
@@ -274,7 +274,7 @@ items:
   name:
     CSharp: get_SourceSpan
   qualifiedName:
-    CSharp: get_SourceSpan
+    CSharp: Microsoft.CodeAnalysis.Location.get_SourceSpan
   source:
     remote:
       branch: master
@@ -289,7 +289,7 @@ items:
   name:
     CSharp: GetLineSpan
   qualifiedName:
-    CSharp: GetLineSpan
+    CSharp: Microsoft.CodeAnalysis.Location.GetLineSpan
   type: Method
   source:
     remote:
@@ -315,7 +315,7 @@ items:
   name:
     CSharp: GetMappedLineSpan
   qualifiedName:
-    CSharp: GetMappedLineSpan
+    CSharp: Microsoft.CodeAnalysis.Location.GetMappedLineSpan
   type: Method
   source:
     remote:
@@ -346,7 +346,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Location.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -373,7 +373,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Location.GetHashCode
   type: Method
   source:
     remote:
@@ -395,7 +395,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Location.ToString
   type: Method
   source:
     remote:
@@ -417,7 +417,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.Location.op_Equality(Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.Location)
   source:
     remote:
       branch: master
@@ -432,7 +432,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.Location.op_Inequality(Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.Location)
   source:
     remote:
       branch: master
@@ -447,7 +447,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.Location.None
   type: Property
   source:
     remote:
@@ -475,7 +475,7 @@ items:
   name:
     CSharp: get_None
   qualifiedName:
-    CSharp: get_None
+    CSharp: Microsoft.CodeAnalysis.Location.get_None
   source:
     remote:
       branch: master
@@ -490,7 +490,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.Location.Create(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Text.TextSpan)
   type: Method
   source:
     remote:
@@ -525,7 +525,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.Location.Create(System.String,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
   type: Method
   source:
     remote:

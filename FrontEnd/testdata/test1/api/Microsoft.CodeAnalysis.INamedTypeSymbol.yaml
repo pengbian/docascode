@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
 name:
   CSharp: INamedTypeSymbol
 qualifiedName:
-  CSharp: INamedTypeSymbol
+  CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol
 type: Interface
 source:
   remote:
@@ -27,7 +27,7 @@ items:
   name:
     CSharp: Arity
   qualifiedName:
-    CSharp: Arity
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.Arity
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_Arity
   qualifiedName:
-    CSharp: get_Arity
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Arity
   source:
     remote:
       branch: master
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: IsGenericType
   qualifiedName:
-    CSharp: IsGenericType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.IsGenericType
   type: Property
   source:
     remote:
@@ -100,7 +100,7 @@ items:
   name:
     CSharp: get_IsGenericType
   qualifiedName:
-    CSharp: get_IsGenericType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsGenericType
   source:
     remote:
       branch: master
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: IsUnboundGenericType
   qualifiedName:
-    CSharp: IsUnboundGenericType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.IsUnboundGenericType
   type: Property
   source:
     remote:
@@ -151,7 +151,7 @@ items:
   name:
     CSharp: get_IsUnboundGenericType
   qualifiedName:
-    CSharp: get_IsUnboundGenericType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsUnboundGenericType
   source:
     remote:
       branch: master
@@ -166,7 +166,7 @@ items:
   name:
     CSharp: IsScriptClass
   qualifiedName:
-    CSharp: IsScriptClass
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.IsScriptClass
   type: Property
   source:
     remote:
@@ -196,7 +196,7 @@ items:
   name:
     CSharp: get_IsScriptClass
   qualifiedName:
-    CSharp: get_IsScriptClass
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsScriptClass
   source:
     remote:
       branch: master
@@ -211,7 +211,7 @@ items:
   name:
     CSharp: IsImplicitClass
   qualifiedName:
-    CSharp: IsImplicitClass
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.IsImplicitClass
   type: Property
   source:
     remote:
@@ -241,7 +241,7 @@ items:
   name:
     CSharp: get_IsImplicitClass
   qualifiedName:
-    CSharp: get_IsImplicitClass
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsImplicitClass
   source:
     remote:
       branch: master
@@ -256,7 +256,7 @@ items:
   name:
     CSharp: MemberNames
   qualifiedName:
-    CSharp: MemberNames
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.MemberNames
   type: Property
   source:
     remote:
@@ -284,7 +284,7 @@ items:
   name:
     CSharp: get_MemberNames
   qualifiedName:
-    CSharp: get_MemberNames
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MemberNames
   source:
     remote:
       branch: master
@@ -299,7 +299,7 @@ items:
   name:
     CSharp: TypeParameters
   qualifiedName:
-    CSharp: TypeParameters
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.TypeParameters
   type: Property
   source:
     remote:
@@ -329,7 +329,7 @@ items:
   name:
     CSharp: get_TypeParameters
   qualifiedName:
-    CSharp: get_TypeParameters
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeParameters
   source:
     remote:
       branch: master
@@ -344,7 +344,7 @@ items:
   name:
     CSharp: TypeArguments
   qualifiedName:
-    CSharp: TypeArguments
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.TypeArguments
   type: Property
   source:
     remote:
@@ -376,7 +376,7 @@ items:
   name:
     CSharp: get_TypeArguments
   qualifiedName:
-    CSharp: get_TypeArguments
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeArguments
   source:
     remote:
       branch: master
@@ -391,7 +391,7 @@ items:
   name:
     CSharp: OriginalDefinition
   qualifiedName:
-    CSharp: OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.OriginalDefinition
   type: Property
   source:
     remote:
@@ -423,7 +423,7 @@ items:
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
-    CSharp: get_OriginalDefinition
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_OriginalDefinition
   source:
     remote:
       branch: master
@@ -438,7 +438,7 @@ items:
   name:
     CSharp: DelegateInvokeMethod
   qualifiedName:
-    CSharp: DelegateInvokeMethod
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.DelegateInvokeMethod
   type: Property
   source:
     remote:
@@ -474,7 +474,7 @@ items:
   name:
     CSharp: get_DelegateInvokeMethod
   qualifiedName:
-    CSharp: get_DelegateInvokeMethod
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_DelegateInvokeMethod
   source:
     remote:
       branch: master
@@ -489,7 +489,7 @@ items:
   name:
     CSharp: EnumUnderlyingType
   qualifiedName:
-    CSharp: EnumUnderlyingType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.EnumUnderlyingType
   type: Property
   source:
     remote:
@@ -519,7 +519,7 @@ items:
   name:
     CSharp: get_EnumUnderlyingType
   qualifiedName:
-    CSharp: get_EnumUnderlyingType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_EnumUnderlyingType
   source:
     remote:
       branch: master
@@ -534,7 +534,7 @@ items:
   name:
     CSharp: ConstructedFrom
   qualifiedName:
-    CSharp: ConstructedFrom
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.ConstructedFrom
   type: Property
   source:
     remote:
@@ -566,7 +566,7 @@ items:
   name:
     CSharp: get_ConstructedFrom
   qualifiedName:
-    CSharp: get_ConstructedFrom
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_ConstructedFrom
   source:
     remote:
       branch: master
@@ -581,7 +581,7 @@ items:
   name:
     CSharp: Construct
   qualifiedName:
-    CSharp: Construct
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
   type: Method
   source:
     remote:
@@ -615,7 +615,7 @@ items:
   name:
     CSharp: ConstructUnboundGenericType
   qualifiedName:
-    CSharp: ConstructUnboundGenericType
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.ConstructUnboundGenericType
   type: Method
   source:
     remote:
@@ -640,7 +640,7 @@ items:
   name:
     CSharp: InstanceConstructors
   qualifiedName:
-    CSharp: InstanceConstructors
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.InstanceConstructors
   type: Property
   source:
     remote:
@@ -668,7 +668,7 @@ items:
   name:
     CSharp: get_InstanceConstructors
   qualifiedName:
-    CSharp: get_InstanceConstructors
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_InstanceConstructors
   source:
     remote:
       branch: master
@@ -683,7 +683,7 @@ items:
   name:
     CSharp: StaticConstructors
   qualifiedName:
-    CSharp: StaticConstructors
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.StaticConstructors
   type: Property
   source:
     remote:
@@ -711,7 +711,7 @@ items:
   name:
     CSharp: get_StaticConstructors
   qualifiedName:
-    CSharp: get_StaticConstructors
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_StaticConstructors
   source:
     remote:
       branch: master
@@ -726,7 +726,7 @@ items:
   name:
     CSharp: Constructors
   qualifiedName:
-    CSharp: Constructors
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.Constructors
   type: Property
   source:
     remote:
@@ -754,7 +754,7 @@ items:
   name:
     CSharp: get_Constructors
   qualifiedName:
-    CSharp: get_Constructors
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Constructors
   source:
     remote:
       branch: master
@@ -769,7 +769,7 @@ items:
   name:
     CSharp: AssociatedSymbol
   qualifiedName:
-    CSharp: AssociatedSymbol
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.AssociatedSymbol
   type: Property
   source:
     remote:
@@ -805,7 +805,7 @@ items:
   name:
     CSharp: get_AssociatedSymbol
   qualifiedName:
-    CSharp: get_AssociatedSymbol
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_AssociatedSymbol
   source:
     remote:
       branch: master
@@ -820,7 +820,7 @@ items:
   name:
     CSharp: MightContainExtensionMethods
   qualifiedName:
-    CSharp: MightContainExtensionMethods
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.MightContainExtensionMethods
   type: Property
   source:
     remote:
@@ -850,7 +850,7 @@ items:
   name:
     CSharp: get_MightContainExtensionMethods
   qualifiedName:
-    CSharp: get_MightContainExtensionMethods
+    CSharp: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MightContainExtensionMethods
   source:
     remote:
       branch: master

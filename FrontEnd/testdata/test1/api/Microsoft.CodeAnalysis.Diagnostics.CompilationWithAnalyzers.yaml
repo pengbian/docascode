@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
 name:
   CSharp: CompilationWithAnalyzers
 qualifiedName:
-  CSharp: CompilationWithAnalyzers
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: Compilation
   qualifiedName:
-    CSharp: Compilation
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.Compilation
   type: Property
   source:
     remote:
@@ -53,7 +53,7 @@ items:
   name:
     CSharp: get_Compilation
   qualifiedName:
-    CSharp: get_Compilation
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.get_Compilation
   source:
     remote:
       branch: master
@@ -66,9 +66,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers
   name:
-    CSharp: .ctor
+    CSharp: CompilationWithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.CompilationWithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
   type: Constructor
   source:
     remote:
@@ -115,7 +115,7 @@ items:
   name:
     CSharp: GetAnalyzerDiagnosticsAsync
   qualifiedName:
-    CSharp: GetAnalyzerDiagnosticsAsync
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAnalyzerDiagnosticsAsync
   type: Method
   source:
     remote:
@@ -140,7 +140,7 @@ items:
   name:
     CSharp: GetAllDiagnosticsAsync
   qualifiedName:
-    CSharp: GetAllDiagnosticsAsync
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetAllDiagnosticsAsync
   type: Method
   source:
     remote:
@@ -165,7 +165,7 @@ items:
   name:
     CSharp: GetEffectiveDiagnostics
   qualifiedName:
-    CSharp: GetEffectiveDiagnostics
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.GetEffectiveDiagnostics(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Diagnostic},Microsoft.CodeAnalysis.Compilation)
   type: Method
   source:
     remote:
@@ -208,7 +208,7 @@ items:
   name:
     CSharp: IsDiagnosticAnalyzerSuppressed
   qualifiedName:
-    CSharp: IsDiagnosticAnalyzerSuppressed
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.CompilationWithAnalyzers.IsDiagnosticAnalyzerSuppressed(Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,Microsoft.CodeAnalysis.CompilationOptions,System.Func{System.Exception,Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer,System.Boolean})
   type: Method
   source:
     remote:

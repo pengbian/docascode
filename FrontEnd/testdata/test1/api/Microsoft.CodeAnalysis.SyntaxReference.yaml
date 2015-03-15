@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxReference
 name:
   CSharp: SyntaxReference
 qualifiedName:
-  CSharp: SyntaxReference
+  CSharp: Microsoft.CodeAnalysis.SyntaxReference
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: SyntaxTree
   qualifiedName:
-    CSharp: SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SyntaxReference.SyntaxTree
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
-    CSharp: get_SyntaxTree
+    CSharp: Microsoft.CodeAnalysis.SyntaxReference.get_SyntaxTree
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxReference.Span
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxReference.get_Span
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: GetSyntax
   qualifiedName:
-    CSharp: GetSyntax
+    CSharp: Microsoft.CodeAnalysis.SyntaxReference.GetSyntax(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
@@ -150,7 +150,7 @@ items:
   name:
     CSharp: GetSyntaxAsync
   qualifiedName:
-    CSharp: GetSyntaxAsync
+    CSharp: Microsoft.CodeAnalysis.SyntaxReference.GetSyntaxAsync(System.Threading.CancellationToken)
   type: Method
   source:
     remote:

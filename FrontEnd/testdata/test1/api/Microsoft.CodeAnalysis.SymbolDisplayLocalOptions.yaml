@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayLocalOptions
 name:
   CSharp: SymbolDisplayLocalOptions
 qualifiedName:
-  CSharp: SymbolDisplayLocalOptions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayLocalOptions
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.None
   type: Field
   source:
     remote:
@@ -61,7 +61,7 @@ items:
   name:
     CSharp: IncludeType
   qualifiedName:
-    CSharp: IncludeType
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.IncludeType
   type: Field
   source:
     remote:
@@ -85,7 +85,7 @@ items:
   name:
     CSharp: IncludeConstantValue
   qualifiedName:
-    CSharp: IncludeConstantValue
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.IncludeConstantValue
   type: Field
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SyntaxList`1
 name:
   CSharp: SyntaxList`1
 qualifiedName:
-  CSharp: SyntaxList`1
+  CSharp: Microsoft.CodeAnalysis.SyntaxList`1
 type: Struct
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Count
   qualifiedName:
-    CSharp: Count
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Count
   type: Property
   source:
     remote:
@@ -65,7 +65,7 @@ items:
   name:
     CSharp: get_Count
   qualifiedName:
-    CSharp: get_Count
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.get_Count
   source:
     remote:
       branch: master
@@ -80,7 +80,7 @@ items:
   name:
     CSharp: Item
   qualifiedName:
-    CSharp: Item
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Item(System.Int32)
   type: Property
   source:
     remote:
@@ -99,7 +99,7 @@ items:
   name:
     CSharp: get_Item
   qualifiedName:
-    CSharp: get_Item
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.get_Item(System.Int32)
   source:
     remote:
       branch: master
@@ -114,7 +114,7 @@ items:
   name:
     CSharp: FullSpan
   qualifiedName:
-    CSharp: FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.FullSpan
   type: Property
   source:
     remote:
@@ -142,7 +142,7 @@ items:
   name:
     CSharp: get_FullSpan
   qualifiedName:
-    CSharp: get_FullSpan
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.get_FullSpan
   source:
     remote:
       branch: master
@@ -157,7 +157,7 @@ items:
   name:
     CSharp: Span
   qualifiedName:
-    CSharp: Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Span
   type: Property
   source:
     remote:
@@ -185,7 +185,7 @@ items:
   name:
     CSharp: get_Span
   qualifiedName:
-    CSharp: get_Span
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.get_Span
   source:
     remote:
       branch: master
@@ -200,7 +200,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.ToString
   type: Method
   source:
     remote:
@@ -228,7 +228,7 @@ items:
   name:
     CSharp: ToFullString
   qualifiedName:
-    CSharp: ToFullString
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.ToFullString
   type: Method
   source:
     remote:
@@ -256,7 +256,7 @@ items:
   name:
     CSharp: Add
   qualifiedName:
-    CSharp: Add
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Add(`0)
   type: Method
   source:
     remote:
@@ -287,7 +287,7 @@ items:
   name:
     CSharp: AddRange
   qualifiedName:
-    CSharp: AddRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
   type: Method
   source:
     remote:
@@ -318,7 +318,7 @@ items:
   name:
     CSharp: Insert
   qualifiedName:
-    CSharp: Insert
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Insert(System.Int32,`0)
   type: Method
   source:
     remote:
@@ -355,7 +355,7 @@ items:
   name:
     CSharp: InsertRange
   qualifiedName:
-    CSharp: InsertRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
   type: Method
   source:
     remote:
@@ -392,7 +392,7 @@ items:
   name:
     CSharp: RemoveAt
   qualifiedName:
-    CSharp: RemoveAt
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.RemoveAt(System.Int32)
   type: Method
   source:
     remote:
@@ -423,7 +423,7 @@ items:
   name:
     CSharp: Remove
   qualifiedName:
-    CSharp: Remove
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Remove(`0)
   type: Method
   source:
     remote:
@@ -454,7 +454,7 @@ items:
   name:
     CSharp: Replace
   qualifiedName:
-    CSharp: Replace
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Replace(`0,`0)
   type: Method
   source:
     remote:
@@ -491,7 +491,7 @@ items:
   name:
     CSharp: ReplaceRange
   qualifiedName:
-    CSharp: ReplaceRange
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.ReplaceRange(`0,System.Collections.Generic.IEnumerable{`0})
   type: Method
   source:
     remote:
@@ -528,7 +528,7 @@ items:
   name:
     CSharp: First
   qualifiedName:
-    CSharp: First
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.First
   type: Method
   source:
     remote:
@@ -553,7 +553,7 @@ items:
   name:
     CSharp: FirstOrDefault
   qualifiedName:
-    CSharp: FirstOrDefault
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.FirstOrDefault
   type: Method
   source:
     remote:
@@ -578,7 +578,7 @@ items:
   name:
     CSharp: Last
   qualifiedName:
-    CSharp: Last
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Last
   type: Method
   source:
     remote:
@@ -603,7 +603,7 @@ items:
   name:
     CSharp: LastOrDefault
   qualifiedName:
-    CSharp: LastOrDefault
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.LastOrDefault
   type: Method
   source:
     remote:
@@ -628,7 +628,7 @@ items:
   name:
     CSharp: Any
   qualifiedName:
-    CSharp: Any
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Any
   type: Method
   source:
     remote:
@@ -653,7 +653,7 @@ items:
   name:
     CSharp: GetEnumerator
   qualifiedName:
-    CSharp: GetEnumerator
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.GetEnumerator
   type: Method
   source:
     remote:
@@ -678,7 +678,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.op_Equality(Microsoft.CodeAnalysis.SyntaxList{`0},Microsoft.CodeAnalysis.SyntaxList{`0})
   source:
     remote:
       branch: master
@@ -693,7 +693,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.op_Inequality(Microsoft.CodeAnalysis.SyntaxList{`0},Microsoft.CodeAnalysis.SyntaxList{`0})
   source:
     remote:
       branch: master
@@ -708,7 +708,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Equals(Microsoft.CodeAnalysis.SyntaxList{`0})
   type: Method
   source:
     remote:
@@ -735,7 +735,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -762,7 +762,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.GetHashCode
   type: Method
   source:
     remote:
@@ -784,7 +784,7 @@ items:
   name:
     CSharp: op_Implicit
   qualifiedName:
-    CSharp: op_Implicit
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.op_Implicit(Microsoft.CodeAnalysis.SyntaxList{Microsoft.CodeAnalysis.SyntaxNode})~Microsoft.CodeAnalysis.SyntaxList{`0}
   source:
     remote:
       branch: master
@@ -799,7 +799,7 @@ items:
   name:
     CSharp: op_Implicit
   qualifiedName:
-    CSharp: op_Implicit
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.op_Implicit(Microsoft.CodeAnalysis.SyntaxList{`0})~Microsoft.CodeAnalysis.SyntaxList{Microsoft.CodeAnalysis.SyntaxNode}
   source:
     remote:
       branch: master
@@ -814,7 +814,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.IndexOf(`0)
   type: Method
   source:
     remote:
@@ -844,7 +844,7 @@ items:
   name:
     CSharp: IndexOf
   qualifiedName:
-    CSharp: IndexOf
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.IndexOf(System.Func{`0,System.Boolean})
   type: Method
   source:
     remote:
@@ -871,7 +871,7 @@ items:
   name:
     CSharp: LastIndexOf
   qualifiedName:
-    CSharp: LastIndexOf
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.LastIndexOf(`0)
   type: Method
   source:
     remote:
@@ -898,7 +898,7 @@ items:
   name:
     CSharp: LastIndexOf
   qualifiedName:
-    CSharp: LastIndexOf
+    CSharp: Microsoft.CodeAnalysis.SyntaxList`1.LastIndexOf(System.Func{`0,System.Boolean})
   type: Method
   source:
     remote:

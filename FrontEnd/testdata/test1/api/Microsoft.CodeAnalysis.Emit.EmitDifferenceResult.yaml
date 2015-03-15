@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
 name:
   CSharp: EmitDifferenceResult
 qualifiedName:
-  CSharp: EmitDifferenceResult
+  CSharp: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Baseline
   qualifiedName:
-    CSharp: Baseline
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.Baseline
   type: Property
   source:
     remote:
@@ -56,7 +56,7 @@ items:
   name:
     CSharp: get_Baseline
   qualifiedName:
-    CSharp: get_Baseline
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitDifferenceResult.get_Baseline
   source:
     remote:
       branch: master

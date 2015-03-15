@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
 name:
   CSharp: DiagnosticAnalyzerExtensions
 qualifiedName:
-  CSharp: DiagnosticAnalyzerExtensions
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: WithAnalyzers
   qualifiedName:
-    CSharp: WithAnalyzers
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzerExtensions.WithAnalyzers(Microsoft.CodeAnalysis.Compilation,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer},Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
   type: Method
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.LinePositionSpan
 name:
   CSharp: LinePositionSpan
 qualifiedName:
-  CSharp: LinePositionSpan
+  CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan
 type: Struct
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Text.LinePositionSpan.yaml
   href: api\Microsoft.CodeAnalysis.Text.LinePositionSpan
   name:
-    CSharp: .ctor
+    CSharp: LinePositionSpan(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.LinePositionSpan(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   type: Constructor
   source:
     remote:
@@ -69,7 +69,7 @@ items:
   name:
     CSharp: Start
   qualifiedName:
-    CSharp: Start
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
   type: Property
   source:
     remote:
@@ -97,7 +97,7 @@ items:
   name:
     CSharp: get_Start
   qualifiedName:
-    CSharp: get_Start
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.get_Start
   source:
     remote:
       branch: master
@@ -112,7 +112,7 @@ items:
   name:
     CSharp: End
   qualifiedName:
-    CSharp: End
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.End
   type: Property
   source:
     remote:
@@ -140,7 +140,7 @@ items:
   name:
     CSharp: get_End
   qualifiedName:
-    CSharp: get_End
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.get_End
   source:
     remote:
       branch: master
@@ -155,7 +155,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -182,7 +182,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
   type: Method
   source:
     remote:
@@ -209,7 +209,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode
   type: Method
   source:
     remote:
@@ -231,7 +231,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
   source:
     remote:
       branch: master
@@ -246,7 +246,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
   source:
     remote:
       branch: master
@@ -261,7 +261,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString
   type: Method
   source:
     remote:

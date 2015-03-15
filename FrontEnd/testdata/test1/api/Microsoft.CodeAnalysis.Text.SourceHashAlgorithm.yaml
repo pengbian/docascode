@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
 name:
   CSharp: SourceHashAlgorithm
 qualifiedName:
-  CSharp: SourceHashAlgorithm
+  CSharp: Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.Text.SourceHashAlgorithm.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Sha1
   qualifiedName:
-    CSharp: Sha1
+    CSharp: Microsoft.CodeAnalysis.Text.SourceHashAlgorithm.Sha1
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Sha256
   qualifiedName:
-    CSharp: Sha256
+    CSharp: Microsoft.CodeAnalysis.Text.SourceHashAlgorithm.Sha256
   type: Field
   source:
     remote:

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions
 name:
   CSharp: SymbolDisplayMiscellaneousOptions
 qualifiedName:
-  CSharp: SymbolDisplayMiscellaneousOptions
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: UseSpecialTypes
   qualifiedName:
-    CSharp: UseSpecialTypes
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.UseSpecialTypes
   type: Field
   source:
     remote:
@@ -85,7 +85,7 @@ items:
   name:
     CSharp: EscapeKeywordIdentifiers
   qualifiedName:
-    CSharp: EscapeKeywordIdentifiers
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.EscapeKeywordIdentifiers
   type: Field
   source:
     remote:
@@ -111,7 +111,7 @@ items:
   name:
     CSharp: UseAsterisksInMultiDimensionalArrays
   qualifiedName:
-    CSharp: UseAsterisksInMultiDimensionalArrays
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.UseAsterisksInMultiDimensionalArrays
   type: Field
   source:
     remote:
@@ -137,7 +137,7 @@ items:
   name:
     CSharp: UseErrorTypeSymbolName
   qualifiedName:
-    CSharp: UseErrorTypeSymbolName
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.UseErrorTypeSymbolName
   type: Field
   source:
     remote:
@@ -159,7 +159,7 @@ items:
   name:
     CSharp: RemoveAttributeSuffix
   qualifiedName:
-    CSharp: RemoveAttributeSuffix
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.RemoveAttributeSuffix
   type: Field
   source:
     remote:
@@ -181,7 +181,7 @@ items:
   name:
     CSharp: ExpandNullable
   qualifiedName:
-    CSharp: ExpandNullable
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.ExpandNullable
   type: Field
   source:
     remote:

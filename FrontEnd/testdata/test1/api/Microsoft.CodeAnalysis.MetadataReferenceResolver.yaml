@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
 name:
   CSharp: MetadataReferenceResolver
 qualifiedName:
-  CSharp: MetadataReferenceResolver
+  CSharp: Microsoft.CodeAnalysis.MetadataReferenceResolver
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceResolver.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -58,7 +58,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceResolver.GetHashCode
   type: Method
   source:
     remote:
@@ -80,7 +80,7 @@ items:
   name:
     CSharp: ResolveReference
   qualifiedName:
-    CSharp: ResolveReference
+    CSharp: Microsoft.CodeAnalysis.MetadataReferenceResolver.ResolveReference(System.String,System.String,Microsoft.CodeAnalysis.MetadataReferenceProperties)
   type: Method
   source:
     remote:

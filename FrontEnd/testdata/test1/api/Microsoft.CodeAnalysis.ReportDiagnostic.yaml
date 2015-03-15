@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.ReportDiagnostic
 name:
   CSharp: ReportDiagnostic
 qualifiedName:
-  CSharp: ReportDiagnostic
+  CSharp: Microsoft.CodeAnalysis.ReportDiagnostic
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: Default
   qualifiedName:
-    CSharp: Default
+    CSharp: Microsoft.CodeAnalysis.ReportDiagnostic.Default
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Error
   qualifiedName:
-    CSharp: Error
+    CSharp: Microsoft.CodeAnalysis.ReportDiagnostic.Error
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: Warn
   qualifiedName:
-    CSharp: Warn
+    CSharp: Microsoft.CodeAnalysis.ReportDiagnostic.Warn
   type: Field
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: Info
   qualifiedName:
-    CSharp: Info
+    CSharp: Microsoft.CodeAnalysis.ReportDiagnostic.Info
   type: Field
   source:
     remote:
@@ -125,7 +125,7 @@ items:
   name:
     CSharp: Hidden
   qualifiedName:
-    CSharp: Hidden
+    CSharp: Microsoft.CodeAnalysis.ReportDiagnostic.Hidden
   type: Field
   source:
     remote:
@@ -147,7 +147,7 @@ items:
   name:
     CSharp: Suppress
   qualifiedName:
-    CSharp: Suppress
+    CSharp: Microsoft.CodeAnalysis.ReportDiagnostic.Suppress
   type: Field
   source:
     remote:

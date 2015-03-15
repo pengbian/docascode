@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.AnnotationExtensions
 name:
   CSharp: AnnotationExtensions
 qualifiedName:
-  CSharp: AnnotationExtensions
+  CSharp: Microsoft.CodeAnalysis.AnnotationExtensions
 type: Class
 source:
   remote:
@@ -28,7 +28,7 @@ items:
   name:
     CSharp: WithAdditionalAnnotations
   qualifiedName:
-    CSharp: WithAdditionalAnnotations
+    CSharp: Microsoft.CodeAnalysis.AnnotationExtensions.WithAdditionalAnnotations``1(``0,Microsoft.CodeAnalysis.SyntaxAnnotation[])
   type: Method
   source:
     remote:
@@ -65,7 +65,7 @@ items:
   name:
     CSharp: WithAdditionalAnnotations
   qualifiedName:
-    CSharp: WithAdditionalAnnotations
+    CSharp: Microsoft.CodeAnalysis.AnnotationExtensions.WithAdditionalAnnotations``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation})
   type: Method
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
-    CSharp: WithoutAnnotations
+    CSharp: Microsoft.CodeAnalysis.AnnotationExtensions.WithoutAnnotations``1(``0,Microsoft.CodeAnalysis.SyntaxAnnotation[])
   type: Method
   source:
     remote:
@@ -139,7 +139,7 @@ items:
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
-    CSharp: WithoutAnnotations
+    CSharp: Microsoft.CodeAnalysis.AnnotationExtensions.WithoutAnnotations``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation})
   type: Method
   source:
     remote:
@@ -176,7 +176,7 @@ items:
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
-    CSharp: WithoutAnnotations
+    CSharp: Microsoft.CodeAnalysis.AnnotationExtensions.WithoutAnnotations``1(``0,System.String)
   type: Method
   source:
     remote:

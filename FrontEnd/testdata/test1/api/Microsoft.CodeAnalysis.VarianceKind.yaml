@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.VarianceKind
 name:
   CSharp: VarianceKind
 qualifiedName:
-  CSharp: VarianceKind
+  CSharp: Microsoft.CodeAnalysis.VarianceKind
 type: Enum
 source:
   remote:
@@ -37,7 +37,7 @@ items:
   name:
     CSharp: None
   qualifiedName:
-    CSharp: None
+    CSharp: Microsoft.CodeAnalysis.VarianceKind.None
   type: Field
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: Out
   qualifiedName:
-    CSharp: Out
+    CSharp: Microsoft.CodeAnalysis.VarianceKind.Out
   type: Field
   source:
     remote:
@@ -81,7 +81,7 @@ items:
   name:
     CSharp: In
   qualifiedName:
-    CSharp: In
+    CSharp: Microsoft.CodeAnalysis.VarianceKind.In
   type: Field
   source:
     remote:

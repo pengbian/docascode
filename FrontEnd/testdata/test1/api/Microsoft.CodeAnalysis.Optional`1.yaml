@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Optional`1
 name:
   CSharp: Optional`1
 qualifiedName:
-  CSharp: Optional`1
+  CSharp: Microsoft.CodeAnalysis.Optional`1
 type: Struct
 source:
   remote:
@@ -32,9 +32,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Optional`1.yaml
   href: api\Microsoft.CodeAnalysis.Optional`1
   name:
-    CSharp: .ctor
+    CSharp: Optional`1(`0)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Optional`1.Optional`1(`0)
   type: Constructor
   source:
     remote:
@@ -62,7 +62,7 @@ items:
   name:
     CSharp: HasValue
   qualifiedName:
-    CSharp: HasValue
+    CSharp: Microsoft.CodeAnalysis.Optional`1.HasValue
   type: Property
   source:
     remote:
@@ -90,7 +90,7 @@ items:
   name:
     CSharp: get_HasValue
   qualifiedName:
-    CSharp: get_HasValue
+    CSharp: Microsoft.CodeAnalysis.Optional`1.get_HasValue
   source:
     remote:
       branch: master
@@ -105,7 +105,7 @@ items:
   name:
     CSharp: Value
   qualifiedName:
-    CSharp: Value
+    CSharp: Microsoft.CodeAnalysis.Optional`1.Value
   type: Property
   source:
     remote:
@@ -133,7 +133,7 @@ items:
   name:
     CSharp: get_Value
   qualifiedName:
-    CSharp: get_Value
+    CSharp: Microsoft.CodeAnalysis.Optional`1.get_Value
   source:
     remote:
       branch: master
@@ -148,7 +148,7 @@ items:
   name:
     CSharp: op_Implicit
   qualifiedName:
-    CSharp: op_Implicit
+    CSharp: Microsoft.CodeAnalysis.Optional`1.op_Implicit(`0)~Microsoft.CodeAnalysis.Optional{`0}
   source:
     remote:
       branch: master

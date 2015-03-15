@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
 name:
   CSharp: SemanticEdit
 qualifiedName:
-  CSharp: SemanticEdit
+  CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit
 type: Struct
 source:
   remote:
@@ -36,7 +36,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.Kind
   type: Field
   source:
     remote:
@@ -55,7 +55,7 @@ items:
   name:
     CSharp: OldSymbol
   qualifiedName:
-    CSharp: OldSymbol
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.OldSymbol
   type: Field
   source:
     remote:
@@ -76,7 +76,7 @@ items:
   name:
     CSharp: NewSymbol
   qualifiedName:
-    CSharp: NewSymbol
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.NewSymbol
   type: Field
   source:
     remote:
@@ -97,7 +97,7 @@ items:
   name:
     CSharp: SyntaxMap
   qualifiedName:
-    CSharp: SyntaxMap
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.SyntaxMap
   type: Field
   source:
     remote:
@@ -120,7 +120,7 @@ items:
   name:
     CSharp: PreserveLocalVariables
   qualifiedName:
-    CSharp: PreserveLocalVariables
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.PreserveLocalVariables
   type: Field
   source:
     remote:
@@ -139,9 +139,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Emit.SemanticEdit.yaml
   href: api\Microsoft.CodeAnalysis.Emit.SemanticEdit
   name:
-    CSharp: .ctor
+    CSharp: SemanticEdit(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.SemanticEdit(Microsoft.CodeAnalysis.Emit.SemanticEditKind,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol,System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Boolean)
   type: Constructor
   source:
     remote:
@@ -194,7 +194,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.GetHashCode
   type: Method
   source:
     remote:
@@ -216,7 +216,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -243,7 +243,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Emit.SemanticEdit.Equals(Microsoft.CodeAnalysis.Emit.SemanticEdit)
   type: Method
   source:
     remote:

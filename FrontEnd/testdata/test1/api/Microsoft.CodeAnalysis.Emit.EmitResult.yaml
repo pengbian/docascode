@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.EmitResult
 name:
   CSharp: EmitResult
 qualifiedName:
-  CSharp: EmitResult
+  CSharp: Microsoft.CodeAnalysis.Emit.EmitResult
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Success
   qualifiedName:
-    CSharp: Success
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitResult.Success
   type: Property
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: get_Success
   qualifiedName:
-    CSharp: get_Success
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitResult.get_Success
   source:
     remote:
       branch: master
@@ -78,7 +78,7 @@ items:
   name:
     CSharp: Diagnostics
   qualifiedName:
-    CSharp: Diagnostics
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitResult.Diagnostics
   type: Property
   source:
     remote:
@@ -108,7 +108,7 @@ items:
   name:
     CSharp: get_Diagnostics
   qualifiedName:
-    CSharp: get_Diagnostics
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitResult.get_Diagnostics
   source:
     remote:
       branch: master

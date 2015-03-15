@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
 name:
   CSharp: SpeculativeBindingOption
 qualifiedName:
-  CSharp: SpeculativeBindingOption
+  CSharp: Microsoft.CodeAnalysis.SpeculativeBindingOption
 type: Enum
 source:
   remote:
@@ -39,7 +39,7 @@ items:
   name:
     CSharp: BindAsExpression
   qualifiedName:
-    CSharp: BindAsExpression
+    CSharp: Microsoft.CodeAnalysis.SpeculativeBindingOption.BindAsExpression
   type: Field
   source:
     remote:
@@ -63,7 +63,7 @@ items:
   name:
     CSharp: BindAsTypeOrNamespace
   qualifiedName:
-    CSharp: BindAsTypeOrNamespace
+    CSharp: Microsoft.CodeAnalysis.SpeculativeBindingOption.BindAsTypeOrNamespace
   type: Field
   source:
     remote:

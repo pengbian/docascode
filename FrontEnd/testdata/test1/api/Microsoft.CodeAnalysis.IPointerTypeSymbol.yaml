@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.IPointerTypeSymbol
 name:
   CSharp: IPointerTypeSymbol
 qualifiedName:
-  CSharp: IPointerTypeSymbol
+  CSharp: Microsoft.CodeAnalysis.IPointerTypeSymbol
 type: Interface
 source:
   remote:
@@ -29,7 +29,7 @@ items:
   name:
     CSharp: PointedAtType
   qualifiedName:
-    CSharp: PointedAtType
+    CSharp: Microsoft.CodeAnalysis.IPointerTypeSymbol.PointedAtType
   type: Property
   source:
     remote:
@@ -57,7 +57,7 @@ items:
   name:
     CSharp: get_PointedAtType
   qualifiedName:
-    CSharp: get_PointedAtType
+    CSharp: Microsoft.CodeAnalysis.IPointerTypeSymbol.get_PointedAtType
   source:
     remote:
       branch: master
@@ -72,7 +72,7 @@ items:
   name:
     CSharp: CustomModifiers
   qualifiedName:
-    CSharp: CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IPointerTypeSymbol.CustomModifiers
   type: Property
   source:
     remote:
@@ -106,7 +106,7 @@ items:
   name:
     CSharp: get_CustomModifiers
   qualifiedName:
-    CSharp: get_CustomModifiers
+    CSharp: Microsoft.CodeAnalysis.IPointerTypeSymbol.get_CustomModifiers
   source:
     remote:
       branch: master

@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.AssemblyMetadata
 name:
   CSharp: AssemblyMetadata
 qualifiedName:
-  CSharp: AssemblyMetadata
+  CSharp: Microsoft.CodeAnalysis.AssemblyMetadata
 type: Class
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: CreateFromImage
   qualifiedName:
-    CSharp: CreateFromImage
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
   type: Method
   source:
     remote:
@@ -65,7 +65,7 @@ items:
   name:
     CSharp: CreateFromImage
   qualifiedName:
-    CSharp: CreateFromImage
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Generic.IEnumerable{System.Byte})
   type: Method
   source:
     remote:
@@ -96,7 +96,7 @@ items:
   name:
     CSharp: CreateFromStream
   qualifiedName:
-    CSharp: CreateFromStream
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Boolean)
   type: Method
   source:
     remote:
@@ -133,7 +133,7 @@ items:
   name:
     CSharp: CreateFromStream
   qualifiedName:
-    CSharp: CreateFromStream
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
   type: Method
   source:
     remote:
@@ -170,7 +170,7 @@ items:
   name:
     CSharp: CreateFromFile
   qualifiedName:
-    CSharp: CreateFromFile
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile(System.String)
   type: Method
   source:
     remote:
@@ -201,7 +201,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata)
   type: Method
   source:
     remote:
@@ -232,7 +232,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata})
   type: Method
   source:
     remote:
@@ -263,7 +263,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata})
   type: Method
   source:
     remote:
@@ -294,7 +294,7 @@ items:
   name:
     CSharp: Create
   qualifiedName:
-    CSharp: Create
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata[])
   type: Method
   source:
     remote:
@@ -325,7 +325,7 @@ items:
   name:
     CSharp: GetModules
   qualifiedName:
-    CSharp: GetModules
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.GetModules
   type: Method
   source:
     remote:
@@ -350,7 +350,7 @@ items:
   name:
     CSharp: Dispose
   qualifiedName:
-    CSharp: Dispose
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.Dispose
   type: Method
   source:
     remote:
@@ -375,7 +375,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.Kind
   type: Property
   source:
     remote:
@@ -403,7 +403,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.get_Kind
   source:
     remote:
       branch: master
@@ -418,7 +418,7 @@ items:
   name:
     CSharp: GetReference
   qualifiedName:
-    CSharp: GetReference
+    CSharp: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean,System.String,System.String)
   type: Method
   source:
     remote:

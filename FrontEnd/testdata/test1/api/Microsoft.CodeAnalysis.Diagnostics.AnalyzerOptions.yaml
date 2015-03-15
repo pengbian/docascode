@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 name:
   CSharp: AnalyzerOptions
 qualifiedName:
-  CSharp: AnalyzerOptions
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: AdditionalFiles
   qualifiedName:
-    CSharp: AdditionalFiles
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AdditionalFiles
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_AdditionalFiles
   qualifiedName:
-    CSharp: get_AdditionalFiles
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.get_AdditionalFiles
   source:
     remote:
       branch: master
@@ -72,9 +72,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
   name:
-    CSharp: .ctor
+    CSharp: AnalyzerOptions(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.AnalyzerOptions(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
   type: Constructor
   source:
     remote:
@@ -103,7 +103,7 @@ items:
   name:
     CSharp: WithAdditionalFiles
   qualifiedName:
-    CSharp: WithAdditionalFiles
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.WithAdditionalFiles(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText})
   type: Method
   source:
     remote:

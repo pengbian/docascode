@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
 name:
   CSharp: AnalyzerReference
 qualifiedName:
-  CSharp: AnalyzerReference
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: FullPath
   qualifiedName:
-    CSharp: FullPath
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_FullPath
   qualifiedName:
-    CSharp: get_FullPath
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: Display
   qualifiedName:
-    CSharp: Display
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.Display
   type: Property
   source:
     remote:
@@ -102,7 +102,7 @@ items:
   name:
     CSharp: get_Display
   qualifiedName:
-    CSharp: get_Display
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display
   source:
     remote:
       branch: master
@@ -117,7 +117,7 @@ items:
   name:
     CSharp: IsUnresolved
   qualifiedName:
-    CSharp: IsUnresolved
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.IsUnresolved
   type: Property
   source:
     remote:
@@ -145,7 +145,7 @@ items:
   name:
     CSharp: get_IsUnresolved
   qualifiedName:
-    CSharp: get_IsUnresolved
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved
   source:
     remote:
       branch: master
@@ -160,7 +160,7 @@ items:
   name:
     CSharp: GetAnalyzersForAllLanguages
   qualifiedName:
-    CSharp: GetAnalyzersForAllLanguages
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzersForAllLanguages
   type: Method
   source:
     remote:
@@ -191,7 +191,7 @@ items:
   name:
     CSharp: GetAnalyzers
   qualifiedName:
-    CSharp: GetAnalyzers
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String)
   type: Method
   source:
     remote:

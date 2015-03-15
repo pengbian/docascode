@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Emit.EmitBaseline
 name:
   CSharp: EmitBaseline
 qualifiedName:
-  CSharp: EmitBaseline
+  CSharp: Microsoft.CodeAnalysis.Emit.EmitBaseline
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: CreateInitialBaseline
   qualifiedName:
-    CSharp: CreateInitialBaseline
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitBaseline.CreateInitialBaseline(Microsoft.CodeAnalysis.ModuleMetadata,System.Func{System.Reflection.Metadata.MethodDefinitionHandle,Microsoft.CodeAnalysis.Emit.EditAndContinueMethodDebugInformation})
   type: Method
   source:
     remote:
@@ -73,7 +73,7 @@ items:
   name:
     CSharp: OriginalMetadata
   qualifiedName:
-    CSharp: OriginalMetadata
+    CSharp: Microsoft.CodeAnalysis.Emit.EmitBaseline.OriginalMetadata
   type: Field
   source:
     remote:

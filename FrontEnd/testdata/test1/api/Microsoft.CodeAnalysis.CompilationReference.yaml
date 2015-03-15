@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.CompilationReference
 name:
   CSharp: CompilationReference
 qualifiedName:
-  CSharp: CompilationReference
+  CSharp: Microsoft.CodeAnalysis.CompilationReference
 type: Class
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Compilation
   qualifiedName:
-    CSharp: Compilation
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.Compilation
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Compilation
   qualifiedName:
-    CSharp: get_Compilation
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.get_Compilation
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: WithAliases
   qualifiedName:
-    CSharp: WithAliases
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.WithAliases(System.Collections.Generic.IEnumerable{System.String})
   type: Method
   source:
     remote:
@@ -105,7 +105,7 @@ items:
   name:
     CSharp: WithAliases
   qualifiedName:
-    CSharp: WithAliases
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.WithAliases(System.Collections.Immutable.ImmutableArray{System.String})
   type: Method
   source:
     remote:
@@ -136,7 +136,7 @@ items:
   name:
     CSharp: WithEmbedInteropTypes
   qualifiedName:
-    CSharp: WithEmbedInteropTypes
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.WithEmbedInteropTypes(System.Boolean)
   type: Method
   source:
     remote:
@@ -167,7 +167,7 @@ items:
   name:
     CSharp: WithProperties
   qualifiedName:
-    CSharp: WithProperties
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.WithProperties(Microsoft.CodeAnalysis.MetadataReferenceProperties)
   type: Method
   source:
     remote:
@@ -198,7 +198,7 @@ items:
   name:
     CSharp: Display
   qualifiedName:
-    CSharp: Display
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.Display
   type: Property
   source:
     remote:
@@ -223,7 +223,7 @@ items:
   name:
     CSharp: get_Display
   qualifiedName:
-    CSharp: get_Display
+    CSharp: Microsoft.CodeAnalysis.CompilationReference.get_Display
   source:
     remote:
       branch: master

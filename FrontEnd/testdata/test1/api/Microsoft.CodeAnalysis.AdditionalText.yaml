@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.AdditionalText
 name:
   CSharp: AdditionalText
 qualifiedName:
-  CSharp: AdditionalText
+  CSharp: Microsoft.CodeAnalysis.AdditionalText
 type: Class
 source:
   remote:
@@ -31,7 +31,7 @@ items:
   name:
     CSharp: Path
   qualifiedName:
-    CSharp: Path
+    CSharp: Microsoft.CodeAnalysis.AdditionalText.Path
   type: Property
   source:
     remote:
@@ -59,7 +59,7 @@ items:
   name:
     CSharp: get_Path
   qualifiedName:
-    CSharp: get_Path
+    CSharp: Microsoft.CodeAnalysis.AdditionalText.get_Path
   source:
     remote:
       branch: master
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: GetText
   qualifiedName:
-    CSharp: GetText
+    CSharp: Microsoft.CodeAnalysis.AdditionalText.GetText(System.Threading.CancellationToken)
   type: Method
   source:
     remote:

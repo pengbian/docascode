@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
 name:
   CSharp: SyntaxNodeAnalysisContext
 qualifiedName:
-  CSharp: SyntaxNodeAnalysisContext
+  CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
 type: Struct
 source:
   remote:
@@ -36,7 +36,7 @@ items:
   name:
     CSharp: Node
   qualifiedName:
-    CSharp: Node
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Node
   type: Property
   source:
     remote:
@@ -64,7 +64,7 @@ items:
   name:
     CSharp: get_Node
   qualifiedName:
-    CSharp: get_Node
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Node
   source:
     remote:
       branch: master
@@ -79,7 +79,7 @@ items:
   name:
     CSharp: SemanticModel
   qualifiedName:
-    CSharp: SemanticModel
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SemanticModel
   type: Property
   source:
     remote:
@@ -107,7 +107,7 @@ items:
   name:
     CSharp: get_SemanticModel
   qualifiedName:
-    CSharp: get_SemanticModel
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_SemanticModel
   source:
     remote:
       branch: master
@@ -122,7 +122,7 @@ items:
   name:
     CSharp: Options
   qualifiedName:
-    CSharp: Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Options
   type: Property
   source:
     remote:
@@ -150,7 +150,7 @@ items:
   name:
     CSharp: get_Options
   qualifiedName:
-    CSharp: get_Options
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Options
   source:
     remote:
       branch: master
@@ -165,7 +165,7 @@ items:
   name:
     CSharp: CancellationToken
   qualifiedName:
-    CSharp: CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.CancellationToken
   type: Property
   source:
     remote:
@@ -193,7 +193,7 @@ items:
   name:
     CSharp: get_CancellationToken
   qualifiedName:
-    CSharp: get_CancellationToken
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_CancellationToken
   source:
     remote:
       branch: master
@@ -206,9 +206,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
   href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
-    CSharp: .ctor
+    CSharp: SyntaxNodeAnalysisContext(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SyntaxNodeAnalysisContext(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   type: Constructor
   source:
     remote:
@@ -253,7 +253,7 @@ items:
   name:
     CSharp: ReportDiagnostic
   qualifiedName:
-    CSharp: ReportDiagnostic
+    CSharp: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
   type: Method
   source:
     remote:

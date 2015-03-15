@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.SymbolDisplayPart
 name:
   CSharp: SymbolDisplayPart
 qualifiedName:
-  CSharp: SymbolDisplayPart
+  CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart
 type: Struct
 source:
   remote:
@@ -36,7 +36,7 @@ items:
   name:
     CSharp: Kind
   qualifiedName:
-    CSharp: Kind
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart.Kind
   type: Property
   source:
     remote:
@@ -64,7 +64,7 @@ items:
   name:
     CSharp: get_Kind
   qualifiedName:
-    CSharp: get_Kind
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart.get_Kind
   source:
     remote:
       branch: master
@@ -79,7 +79,7 @@ items:
   name:
     CSharp: Symbol
   qualifiedName:
-    CSharp: Symbol
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart.Symbol
   type: Property
   source:
     remote:
@@ -109,7 +109,7 @@ items:
   name:
     CSharp: get_Symbol
   qualifiedName:
-    CSharp: get_Symbol
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart.get_Symbol
   source:
     remote:
       branch: master
@@ -122,9 +122,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.SymbolDisplayPart.yaml
   href: api\Microsoft.CodeAnalysis.SymbolDisplayPart
   name:
-    CSharp: .ctor
+    CSharp: SymbolDisplayPart(Microsoft.CodeAnalysis.SymbolDisplayPartKind,Microsoft.CodeAnalysis.ISymbol,System.String)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart.SymbolDisplayPart(Microsoft.CodeAnalysis.SymbolDisplayPartKind,Microsoft.CodeAnalysis.ISymbol,System.String)
   type: Constructor
   source:
     remote:
@@ -165,7 +165,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.SymbolDisplayPart.ToString
   type: Method
   source:
     remote:

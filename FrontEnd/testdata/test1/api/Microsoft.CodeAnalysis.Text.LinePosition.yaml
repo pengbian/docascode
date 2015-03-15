@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.Text.LinePosition
 name:
   CSharp: LinePosition
 qualifiedName:
-  CSharp: LinePosition
+  CSharp: Microsoft.CodeAnalysis.Text.LinePosition
 type: Struct
 source:
   remote:
@@ -34,7 +34,7 @@ items:
   name:
     CSharp: Zero
   qualifiedName:
-    CSharp: Zero
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.Zero
   type: Field
   source:
     remote:
@@ -51,9 +51,9 @@ items:
   yaml: api\Microsoft.CodeAnalysis.Text.LinePosition.yaml
   href: api\Microsoft.CodeAnalysis.Text.LinePosition
   name:
-    CSharp: .ctor
+    CSharp: LinePosition(System.Int32,System.Int32)
   qualifiedName:
-    CSharp: .ctor
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.LinePosition(System.Int32,System.Int32)
   type: Constructor
   source:
     remote:
@@ -88,7 +88,7 @@ items:
   name:
     CSharp: Line
   qualifiedName:
-    CSharp: Line
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.Line
   type: Property
   source:
     remote:
@@ -116,7 +116,7 @@ items:
   name:
     CSharp: get_Line
   qualifiedName:
-    CSharp: get_Line
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.get_Line
   source:
     remote:
       branch: master
@@ -131,7 +131,7 @@ items:
   name:
     CSharp: Character
   qualifiedName:
-    CSharp: Character
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.Character
   type: Property
   source:
     remote:
@@ -159,7 +159,7 @@ items:
   name:
     CSharp: get_Character
   qualifiedName:
-    CSharp: get_Character
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.get_Character
   source:
     remote:
       branch: master
@@ -174,7 +174,7 @@ items:
   name:
     CSharp: op_Equality
   qualifiedName:
-    CSharp: op_Equality
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.op_Equality(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   source:
     remote:
       branch: master
@@ -192,7 +192,7 @@ items:
   name:
     CSharp: op_Inequality
   qualifiedName:
-    CSharp: op_Inequality
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.op_Inequality(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   source:
     remote:
       branch: master
@@ -210,7 +210,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.Equals(Microsoft.CodeAnalysis.Text.LinePosition)
   type: Method
   source:
     remote:
@@ -241,7 +241,7 @@ items:
   name:
     CSharp: Equals
   qualifiedName:
-    CSharp: Equals
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.Equals(System.Object)
   type: Method
   source:
     remote:
@@ -272,7 +272,7 @@ items:
   name:
     CSharp: GetHashCode
   qualifiedName:
-    CSharp: GetHashCode
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.GetHashCode
   type: Method
   source:
     remote:
@@ -297,7 +297,7 @@ items:
   name:
     CSharp: ToString
   qualifiedName:
-    CSharp: ToString
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.ToString
   type: Method
   source:
     remote:
@@ -322,7 +322,7 @@ items:
   name:
     CSharp: CompareTo
   qualifiedName:
-    CSharp: CompareTo
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.CompareTo(Microsoft.CodeAnalysis.Text.LinePosition)
   type: Method
   source:
     remote:
@@ -349,7 +349,7 @@ items:
   name:
     CSharp: op_GreaterThan
   qualifiedName:
-    CSharp: op_GreaterThan
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.op_GreaterThan(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   source:
     remote:
       branch: master
@@ -364,7 +364,7 @@ items:
   name:
     CSharp: op_GreaterThanOrEqual
   qualifiedName:
-    CSharp: op_GreaterThanOrEqual
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.op_GreaterThanOrEqual(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   source:
     remote:
       branch: master
@@ -379,7 +379,7 @@ items:
   name:
     CSharp: op_LessThan
   qualifiedName:
-    CSharp: op_LessThan
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.op_LessThan(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   source:
     remote:
       branch: master
@@ -394,7 +394,7 @@ items:
   name:
     CSharp: op_LessThanOrEqual
   qualifiedName:
-    CSharp: op_LessThanOrEqual
+    CSharp: Microsoft.CodeAnalysis.Text.LinePosition.op_LessThanOrEqual(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
   source:
     remote:
       branch: master

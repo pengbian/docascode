@@ -4,7 +4,7 @@ href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
 name:
   CSharp: AssemblyIdentityComparer
 qualifiedName:
-  CSharp: AssemblyIdentityComparer
+  CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer
 type: Class
 source:
   remote:
@@ -33,7 +33,7 @@ items:
   name:
     CSharp: Default
   qualifiedName:
-    CSharp: Default
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default
   type: Field
   source:
     remote:
@@ -49,7 +49,7 @@ items:
   name:
     CSharp: SimpleNameComparer
   qualifiedName:
-    CSharp: SimpleNameComparer
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.SimpleNameComparer
   type: Property
   source:
     remote:
@@ -74,7 +74,7 @@ items:
   name:
     CSharp: get_SimpleNameComparer
   qualifiedName:
-    CSharp: get_SimpleNameComparer
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_SimpleNameComparer
   source:
     remote:
       branch: master
@@ -89,7 +89,7 @@ items:
   name:
     CSharp: CultureComparer
   qualifiedName:
-    CSharp: CultureComparer
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.CultureComparer
   type: Property
   source:
     remote:
@@ -114,7 +114,7 @@ items:
   name:
     CSharp: get_CultureComparer
   qualifiedName:
-    CSharp: get_CultureComparer
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.get_CultureComparer
   source:
     remote:
       branch: master
@@ -129,7 +129,7 @@ items:
   name:
     CSharp: ReferenceMatchesDefinition
   qualifiedName:
-    CSharp: ReferenceMatchesDefinition
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.ReferenceMatchesDefinition(System.String,Microsoft.CodeAnalysis.AssemblyIdentity)
   type: Method
   source:
     remote:
@@ -167,7 +167,7 @@ items:
   name:
     CSharp: ReferenceMatchesDefinition
   qualifiedName:
-    CSharp: ReferenceMatchesDefinition
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.ReferenceMatchesDefinition(Microsoft.CodeAnalysis.AssemblyIdentity,Microsoft.CodeAnalysis.AssemblyIdentity)
   type: Method
   source:
     remote:
@@ -205,7 +205,7 @@ items:
   name:
     CSharp: Compare
   qualifiedName:
-    CSharp: Compare
+    CSharp: Microsoft.CodeAnalysis.AssemblyIdentityComparer.Compare(Microsoft.CodeAnalysis.AssemblyIdentity,Microsoft.CodeAnalysis.AssemblyIdentity)
   type: Method
   source:
     remote:
