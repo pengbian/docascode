@@ -12,6 +12,9 @@ namespace UnitTest
     /// MEF is used for workspace host service provider, need to copy dll manually
     /// </summary>
     [TestClass]
+    [DeploymentItem("NativeBinaries", "NativeBinaries")]
+    [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.dll")]
+    [DeploymentItem("Microsoft.CodeAnalysis.CSharp.Workspaces.Desktop.dll")]
     public class MarkdownIndexBuilderUnitTest
     {
         [TestMethod]
@@ -21,7 +24,7 @@ namespace UnitTest
             string markdownFile = "About.md";
             string outputDirectory = "output";
             List<MarkdownIndex> indexes;
-            var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null,null, out indexes);
+            var result =  BuildMarkdownIndexHelper.TryParseCustomizedMarkdown(markdownFile, null, null, out indexes);
             foreach(var index in indexes)
             {
                 Console.WriteLine(index);

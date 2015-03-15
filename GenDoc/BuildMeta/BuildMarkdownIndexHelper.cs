@@ -173,6 +173,7 @@ namespace DocAsCode.BuildMeta
         public static ParseResult TryParseCustomizedMarkdown(string markdownFilePath, string resolvedContent, Func<YamlItemViewModel, ParseResult> yamlHandler, out List<MarkdownIndex> markdown)
         {
             var gitDetail = GitUtility.GetGitDetail(markdownFilePath);
+            if (string.IsNullOrEmpty(resolvedContent)) resolvedContent = File.ReadAllText(markdownFilePath);
             string markdownFile = resolvedContent;
             int length = markdownFile.Length;
             var yamlRegex = new Regex(@"\-\-\-((?!\n)\s)*\n((?!\n)\s)*(?<content>.*)((?!\n)\s)*\n\-\-\-((?!\n)\s)*\n", RegexOptions.Compiled | RegexOptions.Multiline);

@@ -141,6 +141,7 @@ namespace DocAsCode.Utility
             {
                 return null;
             }
+
             List<string> fileList = new List<string>();
 
             if (Path.GetExtension(filePath) == ListFileExtension)
@@ -152,10 +153,6 @@ namespace DocAsCode.Utility
                         fileList.Add(reader.ReadLine());
                     }
                 }
-            }
-            else
-            {
-                fileList = filePath.ToArray(StringSplitOptions.RemoveEmptyEntries, ',').ToList();
             }
 
             return fileList;

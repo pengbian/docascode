@@ -33,7 +33,7 @@ namespace UnitTest
      
            </member>";
             var summary = TripleSlashCommentParser.GetSummary(input, true);
-            Assert.AreEqual("Parital classes @T:System.AccessViolationException-@T:System.AccessViolationException-can not cross assemblies, ```Classes in assemblies are by definition complete.```", summary);
+            Assert.AreEqual("Parital classes @T:System.AccessViolationException-@T:System.AccessViolationException-can not cross assemblies, ```Classes in assemblies are by definition complete.```\r\n", summary);
 
             var returns = TripleSlashCommentParser.GetReturns(input, true);
             Assert.AreEqual("Task@T:System.AccessViolationException- returns", returns);
@@ -57,7 +57,7 @@ namespace UnitTest
             Assert.AreEqual("ahref@invalid", output);
             input = "a@link @T:link-";
             output = LinkParser.ResolveText(index, input, s => "[link](" + s + ")");
-            Assert.AreEqual("a[link](href) [link](href)", output);
+            Assert.AreEqual("a[link](href)  [link](href)", output);
         }
 
         [TestMethod]

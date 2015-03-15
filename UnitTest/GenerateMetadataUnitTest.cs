@@ -37,16 +37,16 @@ namespace UnitTest
             string[] slnPath = new string[] { "Assets/TestClass1/TestClass1.sln", @"Assets\TestClass1\TestClass1\TestClass1.csproj" };
             string fileList = "filelist.list";
             File.WriteAllText(fileList, slnPath.ToDelimitedString(Environment.NewLine));
-            string outputList = Path.GetRandomFileName() + ".list";
+            string outputList = "obj/inter.list";
             string outputDirectory = "output";
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
             await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
-            Assert.Fail();
+            //Assert.Fail();
         }
 
         [TestMethod]
@@ -61,11 +61,11 @@ namespace UnitTest
             string mdList = "md.list";
             File.WriteAllText(mdList, "Assets/Markdown/About.md");
             await BuildMetaHelper.GenerateMetadataFromProjectListAsync(fileList, outputList);
-            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", BuildMetaHelper.MetadataType.Yaml);
+            await BuildMetaHelper.MergeMetadataFromMetadataListAsync(outputList, outputDirectory, "index.yaml", "toc.yaml", "api", BuildMetaHelper.MetadataType.Yaml);
             await BuildMetaHelper.GenerateIndexForMarkdownListAsync(outputDirectory, "index.yaml", mdList, "md.yaml", "md");
             Console.WriteLine(Path.GetFullPath(outputDirectory));
             Assert.IsTrue(Directory.Exists(outputDirectory));
-            Assert.Fail();
+            // Assert.Fail();
         }
     }
 }

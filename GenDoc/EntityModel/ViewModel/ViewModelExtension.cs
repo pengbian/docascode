@@ -122,7 +122,7 @@ namespace EntityModel.ViewModel
                 string replacement = replaceHandler(id);
                 if (!string.IsNullOrEmpty(replacement))
                 {
-                    // For manally written link, append a whitespace
+                    // For manually written link, append a whitespace???
                     return replacement + " ";
                 }
             }

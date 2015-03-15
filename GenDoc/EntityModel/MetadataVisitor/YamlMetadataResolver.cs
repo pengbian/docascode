@@ -11,6 +11,11 @@ using DocAsCode.Utility;
 
 namespace EntityModel
 {
+    public class ResolverContext
+    {
+        public string ApiFolder { get; set; }
+    }
+
     public static class YamlMetadataResolver
     {
         // Order matters
@@ -31,15 +36,13 @@ namespace EntityModel
         // api.yaml # id-yaml mapping
         // api/{id}.yaml # items
         public const string YamlExtension = ".yaml";
-        public const string TocYamlFileName = "toc" + YamlExtension;
-        public const string ApiFolder = "api";
 
         /// <summary>
         /// TODO: input Namespace list instead
         /// </summary>
         /// <param name="allMembers"></param>
         /// <returns></returns>
-        public static YamlViewModel ResolveMetadata(Dictionary<string, YamlItemViewModel> allMembers)
+        public static YamlViewModel ResolveMetadata(Dictionary<string, YamlItemViewModel> allMembers, string apiFolder)
         {
             YamlViewModel viewModel = new YamlViewModel();
             viewModel.IndexYamlViewModel = new Dictionary<string, IndexYamlItemViewModel>();
@@ -47,22 +50,21 @@ namespace EntityModel
             {
                 Type = MemberType.Toc,
                 Items = allMembers.Where(s => s.Value.Type == MemberType.Namespace).Select(s => s.Value).ToList(),
-                YamlPath = TocYamlFileName,
             };
             viewModel.MemberYamlViewModelList = new List<YamlItemViewModel>();
-
-            var result = ExecutePipeline(viewModel);
+            ResolverContext context = new ResolverContext { ApiFolder = apiFolder };
+            var result = ExecutePipeline(viewModel, context);
 
             result.WriteToConsole();
             return viewModel;
         }
 
-        public static ParseResult ExecutePipeline(YamlViewModel yaml)
+        public static ParseResult ExecutePipeline(YamlViewModel yaml, ResolverContext context)
         {
             ParseResult result = new ParseResult(ResultLevel.Success);
             foreach(var pipeline in pipelines)
             {
-                result = pipeline.Run(yaml);
+                result = pipeline.Run(yaml, context);
                 if (result.ResultLevel == ResultLevel.Error)
                 {
                     return result;
@@ -79,12 +81,12 @@ namespace EntityModel
 
         public interface IResolverPipeline
         {
-            ParseResult Run(YamlViewModel yaml);
+            ParseResult Run(YamlViewModel yaml, ResolverContext context);
         }
 
         public class BuildToc : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 yaml.TocYamlViewModel = yaml.TocYamlViewModel.ShrinkToSimpleToc();
 
@@ -94,7 +96,7 @@ namespace EntityModel
 
         public class BuildMembers : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
                     (s) =>
@@ -118,7 +120,7 @@ namespace EntityModel
 
         public class BuildIndex : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
                     (s) =>
@@ -155,7 +157,7 @@ namespace EntityModel
             /// </summary>
             /// <param name="allMembers"></param>
             /// <returns></returns>
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 ParseResult overall = new ParseResult(ResultLevel.Success);
                 StringBuilder message = new StringBuilder();
@@ -297,7 +299,7 @@ namespace EntityModel
 
         public class ResolveRelativePath : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
                     (s) =>
@@ -310,8 +312,8 @@ namespace EntityModel
                         {
                             if (current.Type.IsPageLevel())
                             {
-                                current.YamlPath = ApiFolder.ForwardSlashCombine(current.Name + YamlExtension);
-                                current.Href = ApiFolder.ForwardSlashCombine(current.Name);
+                                current.YamlPath = context.ApiFolder.ForwardSlashCombine(current.Name + YamlExtension);
+                                current.Href = context.ApiFolder.ForwardSlashCombine(current.Name);
                             }
                             else
                             {
@@ -330,7 +332,7 @@ namespace EntityModel
 
         public class ResolvePath : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
                     (s) =>
@@ -391,7 +393,7 @@ namespace EntityModel
 
         public class ResolveLink : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 var index = yaml.IndexYamlViewModel;
 
@@ -432,7 +434,7 @@ namespace EntityModel
 
         public class ResolveGitPath : IResolverPipeline
         {
-            public ParseResult Run(YamlViewModel yaml)
+            public ParseResult Run(YamlViewModel yaml, ResolverContext context)
             {
                 TreeIterator.PreorderAsync<YamlItemViewModel>(yaml.TocYamlViewModel, null,
                     (s) =>
