@@ -425,6 +425,7 @@ namespace EntityModel
 
             private static string ResolveText(Dictionary<string, IndexYamlItemViewModel> dict, string input)
             {
+                if (string.IsNullOrEmpty(input)) return null;
                 return LinkParser.ResolveToMarkdownLink(dict, input);
             }
         }

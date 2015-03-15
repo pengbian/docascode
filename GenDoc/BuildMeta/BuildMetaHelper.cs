@@ -143,6 +143,7 @@ namespace DocAsCode.BuildMeta
             {
                 List<Project> projects = new List<Project>();
                 var fileExtension = Path.GetExtension(projectFile);
+                ParseResult.WriteToConsole(ResultLevel.Info, "Generating documentation metadata from {0} ...", projectFile);
                 if (fileExtension == ".sln")
                 {
                     var solution = await workspace.OpenSolutionAsync(projectFile);

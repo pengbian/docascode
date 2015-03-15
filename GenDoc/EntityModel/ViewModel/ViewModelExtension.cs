@@ -180,6 +180,7 @@ namespace EntityModel.ViewModel
 
         public static string GetParam(string xml, string param, bool trim)
         {
+            if (string.IsNullOrEmpty(xml)) return null;
             Debug.Assert(!string.IsNullOrEmpty(param));
             if (string.IsNullOrEmpty(param))
             {

@@ -187,10 +187,11 @@ namespace EntityModel
             {
                 Name = GetId(symbol),
                 DisplayNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.MetadataName } },
-                DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, symbol.MetadataName} },
                 RawComment = symbol.GetDocumentationCommentXml(),
             };
 
+            item.DisplayQualifiedNames = new Dictionary<SyntaxLanguage, string>() { { SyntaxLanguage.CSharp, item.Name } };
+            
             item.Source = GetSourceDetail(symbol);
             FeedComments(item);
             return item;
@@ -469,6 +470,18 @@ namespace EntityModel
             if (constructorSyntax != null)
             {
                 item.Type = MemberType.Constructor;
+                string parentName = parent.DisplayNames[SyntaxLanguage.CSharp];
+                string name = item.DisplayQualifiedNames[SyntaxLanguage.CSharp];
+                int index = name.IndexOf("#ctor");
+                Debug.Assert(index > -1);
+                if (index > -1)
+                {
+                    item.DisplayQualifiedNames[SyntaxLanguage.CSharp] = name.Replace("#ctor", parentName);
+
+                    // Special handles for constructor's displayName as .ctor is internal
+                    item.DisplayNames[SyntaxLanguage.CSharp] = item.DisplayQualifiedNames[SyntaxLanguage.CSharp].Substring(index);
+                }
+
                 if (item.Syntax == null)
                 {
                     item.Syntax = new SyntaxDetail { Content = new Dictionary<SyntaxLanguage, string>() };
