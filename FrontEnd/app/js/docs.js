@@ -125,6 +125,7 @@ angular.module('directives', [])
         }
     };
 })
+
 /**
  * backToTop Directive
  * @param  {Function} $anchorScroll
