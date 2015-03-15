@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxNode
-yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxNode
+yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxNode
 name:
   CSharp: SyntaxNode
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
   startLine: 20
 summary: >+
   Represents a non-terminal node in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxNode](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxNode](#).
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxNode.RawKind
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: RawKind
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 58
   summary: >+
     An integer representing the language specific kind of this node.
@@ -54,8 +54,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_RawKind
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_RawKind
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 60
 - id: Microsoft.CodeAnalysis.SyntaxNode.Language
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: Language
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 68
   summary: >+
     The language name that this node is syntax of.
@@ -97,8 +97,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Language
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_Language
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 68
 - id: Microsoft.CodeAnalysis.SyntaxNode.SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: SyntaxTree
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 89
   summary: >+
     Returns SyntaxTree that owns the node or null if node does not belong to a
@@ -140,10 +140,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
@@ -152,13 +152,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 91
 - id: Microsoft.CodeAnalysis.SyntaxNode.FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: FullSpan
   qualifiedName:
@@ -168,9 +168,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 108
   summary: >+
     The absolute span of this node in characters, including its leading and trailing trivia.
@@ -183,10 +183,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_FullSpan
   qualifiedName:
@@ -195,13 +195,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 110
 - id: Microsoft.CodeAnalysis.SyntaxNode.Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: Span
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 127
   summary: >+
     The absolute span of this node in characters, not including its leading and trailing trivia.
@@ -226,10 +226,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_Span
   qualifiedName:
@@ -238,13 +238,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 129
 - id: Microsoft.CodeAnalysis.SyntaxNode.SpanStart
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: SpanStart
   qualifiedName:
@@ -254,12 +254,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 154
   summary: >+
-    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api\Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxNode.Span](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api/Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxNode.Span](#/api/Microsoft.CodeAnalysis.SyntaxNode).
 
   syntax:
     content:
@@ -271,8 +271,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_SpanStart
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_SpanStart
   qualifiedName:
@@ -281,13 +281,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 156
 - id: Microsoft.CodeAnalysis.SyntaxNode.ToString
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ToString
   qualifiedName:
@@ -297,9 +297,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 349
   summary: >+
     Returns the string representation of this node, not including its leading and trailing trivia.
@@ -312,8 +312,8 @@ items:
       id: String
       description: The string representation of this node, not including its leading and trailing trivia.
 - id: Microsoft.CodeAnalysis.SyntaxNode.ToFullString
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ToFullString
   qualifiedName:
@@ -323,9 +323,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 356
   summary: >+
     Returns full string representation of this node including its leading and trailing trivia.
@@ -338,8 +338,8 @@ items:
       id: String
       description: The full string representation of this node including its leading and trailing trivia.
 - id: Microsoft.CodeAnalysis.SyntaxNode.WriteTo(System.IO.TextWriter)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: WriteTo
   qualifiedName:
@@ -349,9 +349,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 361
   summary: >+
     Writes the full text of this node to the specified [System.IO.TextWriter](#).
@@ -368,8 +368,8 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetText(System.Text.Encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetText
   qualifiedName:
@@ -379,12 +379,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 376
   summary: >+
-    Gets the full text of this node as an new [Microsoft.CodeAnalysis.Text.SourceText](#/api\Microsoft.CodeAnalysis.Text.SourceText) instance.
+    Gets the full text of this node as an new [Microsoft.CodeAnalysis.Text.SourceText](#/api/Microsoft.CodeAnalysis.Text.SourceText) instance.
 
   syntax:
     content:
@@ -400,20 +400,20 @@ items:
 
             null if the encoding is unspecified.
 
-            If the encoding is not specified the [Microsoft.CodeAnalysis.Text.SourceText](#/api\Microsoft.CodeAnalysis.Text.SourceText) isn't debuggable.
+            If the encoding is not specified the [Microsoft.CodeAnalysis.Text.SourceText](#/api/Microsoft.CodeAnalysis.Text.SourceText) isn't debuggable.
 
-            If an encoding-less [Microsoft.CodeAnalysis.Text.SourceText](#/api\Microsoft.CodeAnalysis.Text.SourceText) is written to a file a [System.Text.Encoding.UTF8](#) shall be used as a default.
+            If an encoding-less [Microsoft.CodeAnalysis.Text.SourceText](#/api/Microsoft.CodeAnalysis.Text.SourceText) is written to a file a [System.Text.Encoding.UTF8](#) shall be used as a default.
     - id: checksumAlgorithm
       type:
         id: Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
         name: SourceHashAlgorithm
-        href: api\Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
+        href: api/Microsoft.CodeAnalysis.Text.SourceHashAlgorithm
       description: Hash algorithm to use to calculate checksum of the text that's saved to PDB.
     return:
       id: SourceText
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
@@ -423,9 +423,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 386
   summary: >+
     Determine whether this node is structurally equivalent to another.
@@ -438,12 +438,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsMissing
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: IsMissing
   qualifiedName:
@@ -453,9 +453,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 397
   summary: >+
     Determines whether the node represents a language construct that was actually parsed
@@ -476,8 +476,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_IsMissing
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_IsMissing
   qualifiedName:
@@ -486,13 +486,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 399
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsPartOfStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: IsPartOfStructuredTrivia
   qualifiedName:
@@ -502,9 +502,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 408
   summary: >+
     Determines whether this node is a descendant of a structured trivia.
@@ -516,8 +516,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: IsStructuredTrivia
   qualifiedName:
@@ -527,9 +527,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 422
   summary: >+
     Determines whether this node represents a structured trivia.
@@ -544,8 +544,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_IsStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_IsStructuredTrivia
   qualifiedName:
@@ -554,13 +554,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 424
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: HasStructuredTrivia
   qualifiedName:
@@ -570,9 +570,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 433
   summary: >+
     Determines whether a descendant trivia of this node is structured.
@@ -587,8 +587,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_HasStructuredTrivia
   qualifiedName:
@@ -597,13 +597,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 435
 - id: Microsoft.CodeAnalysis.SyntaxNode.ContainsSkippedText
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ContainsSkippedText
   qualifiedName:
@@ -613,9 +613,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 444
   summary: >+
     Determines whether this node has any descendant skipped text.
@@ -630,8 +630,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsSkippedText
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_ContainsSkippedText
   qualifiedName:
@@ -640,13 +640,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 446
 - id: Microsoft.CodeAnalysis.SyntaxNode.ContainsDirectives
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ContainsDirectives
   qualifiedName:
@@ -656,9 +656,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 455
   summary: >+
     Determines whether this node has any descendant preprocessor directives.
@@ -673,8 +673,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDirectives
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_ContainsDirectives
   qualifiedName:
@@ -683,13 +683,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 457
 - id: Microsoft.CodeAnalysis.SyntaxNode.ContainsDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ContainsDiagnostics
   qualifiedName:
@@ -699,9 +699,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 466
   summary: >+
     Determines whether this node or any of its descendant nodes, tokens or trivia have any diagnostics on them.
@@ -716,8 +716,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_ContainsDiagnostics
   qualifiedName:
@@ -726,13 +726,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 468
 - id: Microsoft.CodeAnalysis.SyntaxNode.Contains(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: Contains
   qualifiedName:
@@ -742,9 +742,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 477
   summary: >+
     Determines if the specified node is a descendant of this node.
@@ -757,12 +757,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasLeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: HasLeadingTrivia
   qualifiedName:
@@ -772,9 +772,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 511
   summary: >+
     Determines whether this node has any leading trivia.
@@ -789,8 +789,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasLeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_HasLeadingTrivia
   qualifiedName:
@@ -799,13 +799,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 513
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasTrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: HasTrailingTrivia
   qualifiedName:
@@ -815,9 +815,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 522
   summary: >+
     Determines whether this node has any trailing trivia.
@@ -832,8 +832,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_HasTrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_HasTrailingTrivia
   qualifiedName:
@@ -842,13 +842,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 524
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetLocation
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetLocation
   qualifiedName:
@@ -858,9 +858,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 588
   syntax:
     content:
@@ -869,8 +869,8 @@ items:
     return:
       id: Location
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -880,9 +880,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 598
   summary: >+
     Gets a list of all the diagnostics in the sub tree that has this node as its root.
@@ -898,8 +898,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetReference
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetReference
   qualifiedName:
@@ -909,9 +909,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 608
   summary: >+
     Gets an SyntaxReference for this syntax node. CommonSyntaxReferences can be used to
@@ -927,8 +927,8 @@ items:
     return:
       id: SyntaxReference
 - id: Microsoft.CodeAnalysis.SyntaxNode.Parent
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: Parent
   qualifiedName:
@@ -938,12 +938,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 628
   summary: >+
-    The node that contains this node in its [Microsoft.CodeAnalysis.SyntaxNode.ChildNodes](#/api\Microsoft.CodeAnalysis.SyntaxNode) collection.
+    The node that contains this node in its [Microsoft.CodeAnalysis.SyntaxNode.ChildNodes](#/api/Microsoft.CodeAnalysis.SyntaxNode) collection.
 
   syntax:
     content:
@@ -953,10 +953,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_Parent
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_Parent
   qualifiedName:
@@ -965,13 +965,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 630
 - id: Microsoft.CodeAnalysis.SyntaxNode.ParentTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ParentTrivia
   qualifiedName:
@@ -981,9 +981,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 636
   syntax:
     content:
@@ -993,10 +993,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ParentTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_ParentTrivia
   qualifiedName:
@@ -1005,13 +1005,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 638
 - id: Microsoft.CodeAnalysis.SyntaxNode.ChildNodesAndTokens
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ChildNodesAndTokens
   qualifiedName:
@@ -1021,9 +1021,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 655
   summary: >+
     The list of child nodes and tokens of this node, where each element is a SyntaxNodeOrToken instance.
@@ -1035,8 +1035,8 @@ items:
     return:
       id: ChildSyntaxList
 - id: Microsoft.CodeAnalysis.SyntaxNode.ChildThatContainsPosition(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ChildThatContainsPosition
   qualifiedName:
@@ -1046,9 +1046,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 660
   syntax:
     content:
@@ -1062,8 +1062,8 @@ items:
     return:
       id: SyntaxNodeOrToken
 - id: Microsoft.CodeAnalysis.SyntaxNode.ChildNodes
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ChildNodes
   qualifiedName:
@@ -1073,9 +1073,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 671
   summary: >+
     Gets a list of the child nodes in prefix document order.
@@ -1087,8 +1087,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.Ancestors(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: Ancestors
   qualifiedName:
@@ -1098,9 +1098,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 685
   summary: >+
     Gets a list of ancestor nodes
@@ -1117,8 +1117,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.AncestorsAndSelf(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: AncestorsAndSelf
   qualifiedName:
@@ -1128,9 +1128,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 695
   summary: >+
     Gets a list of ancestor nodes (including this node)
@@ -1147,8 +1147,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.FirstAncestorOrSelf``1(System.Func{``0,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: FirstAncestorOrSelf
   qualifiedName:
@@ -1158,9 +1158,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 721
   summary: >+
     Gets the first node of type TNode that matches the predicate.
@@ -1182,8 +1182,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodes
   qualifiedName:
@@ -1193,9 +1193,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 741
   summary: >+
     Gets a list of descendant nodes in prefix document order.
@@ -1219,8 +1219,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodes(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodes
   qualifiedName:
@@ -1230,9 +1230,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 752
   summary: >+
     Gets a list of descendant nodes in prefix document order.
@@ -1245,7 +1245,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
@@ -1262,8 +1262,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndSelf(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodesAndSelf
   qualifiedName:
@@ -1273,9 +1273,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 762
   summary: >+
     Gets a list of descendant nodes (including this node) in prefix document order.
@@ -1299,8 +1299,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndSelf(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodesAndSelf
   qualifiedName:
@@ -1310,9 +1310,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 773
   summary: >+
     Gets a list of descendant nodes (including this node) in prefix document order.
@@ -1325,7 +1325,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
@@ -1342,8 +1342,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokens(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodesAndTokens
   qualifiedName:
@@ -1353,9 +1353,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 783
   summary: >+
     Gets a list of descendant nodes and tokens in prefix document order.
@@ -1379,8 +1379,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokens(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodesAndTokens
   qualifiedName:
@@ -1390,9 +1390,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 794
   summary: >+
     Gets a list of the descendant nodes and tokens in prefix document order.
@@ -1405,7 +1405,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
@@ -1422,8 +1422,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokensAndSelf(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodesAndTokensAndSelf
   qualifiedName:
@@ -1433,9 +1433,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 804
   summary: >+
     Gets a list of descendant nodes and tokens (including this node) in prefix document order.
@@ -1459,8 +1459,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantNodesAndTokensAndSelf(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantNodesAndTokensAndSelf
   qualifiedName:
@@ -1470,9 +1470,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 815
   summary: >+
     Gets a list of the descendant nodes and tokens (including this node) in prefix document order.
@@ -1485,7 +1485,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span the node's full span must intersect.
     - id: descendIntoChildren
       type:
@@ -1502,8 +1502,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.FindNode(Microsoft.CodeAnalysis.Text.TextSpan,System.Boolean,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: FindNode
   qualifiedName:
@@ -1513,12 +1513,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 830
   summary: >+
-    Finds the node with the smallest [Microsoft.CodeAnalysis.SyntaxNode.FullSpan](#/api\Microsoft.CodeAnalysis.SyntaxNode) that contains .
+    Finds the node with the smallest [Microsoft.CodeAnalysis.SyntaxNode.FullSpan](#/api/Microsoft.CodeAnalysis.SyntaxNode) that contains .
 
     is used to determine the behavior in case of a tie (i.e. a node having the same span as its parent).
 
@@ -1534,7 +1534,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     - id: findInsideTrivia
       type:
         id: System.Boolean
@@ -1548,8 +1548,8 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.SyntaxNode.FindToken(System.Int32,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: FindToken
   qualifiedName:
@@ -1559,9 +1559,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 871
   summary: >+
     Finds a descendant token of this node whose span includes the supplied position.
@@ -1588,8 +1588,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetFirstToken(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetFirstToken
   qualifiedName:
@@ -1599,9 +1599,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 880
   summary: >+
     Gets the first token of the tree rooted by this node. Skips zero-width tokens.
@@ -1634,8 +1634,8 @@ items:
       id: SyntaxToken
       description: The first token or default(SyntaxToken) if it doesn't exist.
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetLastToken(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetLastToken
   qualifiedName:
@@ -1645,9 +1645,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 889
   summary: >+
     Gets the last token of the tree rooted by this node. Skips zero-width tokens.
@@ -1680,8 +1680,8 @@ items:
       id: SyntaxToken
       description: The last token or default(SyntaxToken) if it doesn't exist.
 - id: Microsoft.CodeAnalysis.SyntaxNode.ChildTokens
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ChildTokens
   qualifiedName:
@@ -1691,9 +1691,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 897
   summary: >+
     Gets a list of the direct child tokens of this node.
@@ -1705,8 +1705,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantTokens
   qualifiedName:
@@ -1716,9 +1716,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 911
   summary: >+
     Gets a list of all the tokens in the span of this node.
@@ -1740,8 +1740,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantTokens(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantTokens
   qualifiedName:
@@ -1751,9 +1751,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 919
   summary: >+
     Gets a list of all the tokens in the full span of this node.
@@ -1766,7 +1766,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
@@ -1780,8 +1780,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetLeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetLeadingTrivia
   qualifiedName:
@@ -1791,9 +1791,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 931
   summary: >+
     The list of trivia that appears before this node in the source code and are attached to a token that is a
@@ -1807,8 +1807,8 @@ items:
     return:
       id: SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetTrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetTrailingTrivia
   qualifiedName:
@@ -1818,9 +1818,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 940
   summary: >+
     The list of trivia that appears after this node in the source code and are attached to a token that is a
@@ -1834,8 +1834,8 @@ items:
     return:
       id: SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxNode.FindTrivia(System.Int32,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: FindTrivia
   qualifiedName:
@@ -1845,9 +1845,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 953
   summary: >+
     Finds a descendant trivia of this node whose span includes the supplied position.
@@ -1874,8 +1874,8 @@ items:
     return:
       id: SyntaxTrivia
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia(System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantTrivia
   qualifiedName:
@@ -1885,9 +1885,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 961
   summary: >+
     Get a list of all the trivia associated with the descendant nodes and tokens.
@@ -1909,8 +1909,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.DescendantTrivia(Microsoft.CodeAnalysis.Text.TextSpan,System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean},System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: DescendantTrivia
   qualifiedName:
@@ -1920,9 +1920,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 969
   summary: >+
     Get a list of all the trivia associated with the descendant nodes and tokens.
@@ -1935,7 +1935,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     - id: descendIntoChildren
       type:
         id: System.Func{Microsoft.CodeAnalysis.SyntaxNode,System.Boolean}
@@ -1949,8 +1949,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.ContainsAnnotations
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: ContainsAnnotations
   qualifiedName:
@@ -1960,9 +1960,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 981
   summary: >+
     Determines whether this node or any sub node, token or trivia has annotations.
@@ -1977,8 +1977,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNode.get_ContainsAnnotations
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: get_ContainsAnnotations
   qualifiedName:
@@ -1987,13 +1987,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 983
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasAnnotations(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: HasAnnotations
   qualifiedName:
@@ -2003,9 +2003,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 989
   summary: >+
     Determines whether this node has any annotations with the specific annotation kind.
@@ -2022,8 +2022,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasAnnotations(System.Collections.Generic.IEnumerable{System.String})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: HasAnnotations
   qualifiedName:
@@ -2033,9 +2033,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 997
   summary: >+
     Determines whether this node has any annotations with any of the specific annotation kinds.
@@ -2052,8 +2052,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.HasAnnotation(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: HasAnnotation
   qualifiedName:
@@ -2063,9 +2063,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1005
   summary: >+
     Determines whether this node has the specific annotation.
@@ -2078,12 +2078,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxAnnotation
         name: SyntaxAnnotation
-        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
+        href: api/Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotations(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotations
   qualifiedName:
@@ -2093,9 +2093,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1013
   summary: >+
     Gets all the annotations with the specified annotation kind.
@@ -2112,8 +2112,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotations(System.Collections.Generic.IEnumerable{System.String})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotations
   qualifiedName:
@@ -2123,9 +2123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1021
   summary: >+
     Gets all the annotations with the specified annotation kinds.
@@ -2142,8 +2142,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodesAndTokens(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedNodesAndTokens
   qualifiedName:
@@ -2153,9 +2153,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1034
   summary: >+
     Gets all nodes and tokens with an annotation of the specified annotation kind.
@@ -2172,8 +2172,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodesAndTokens(System.String[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedNodesAndTokens
   qualifiedName:
@@ -2183,9 +2183,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1043
   summary: >+
     Gets all nodes and tokens with an annotation of the specified annotation kinds.
@@ -2202,8 +2202,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodesAndTokens(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedNodesAndTokens
   qualifiedName:
@@ -2213,9 +2213,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1052
   summary: >+
     Gets all nodes and tokens with the specified annotation.
@@ -2228,12 +2228,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxAnnotation
         name: SyntaxAnnotation
-        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
+        href: api/Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodes(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedNodes
   qualifiedName:
@@ -2243,9 +2243,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1061
   summary: >+
     Gets all nodes with the specified annotation.
@@ -2258,12 +2258,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxAnnotation
         name: SyntaxAnnotation
-        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
+        href: api/Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedNodes(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedNodes
   qualifiedName:
@@ -2273,9 +2273,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1071
   summary: >+
     Gets all nodes with the specified annotation kind.
@@ -2292,8 +2292,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTokens(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedTokens
   qualifiedName:
@@ -2303,9 +2303,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1079
   summary: >+
     Gets all tokens with the specified annotation.
@@ -2318,12 +2318,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxAnnotation
         name: SyntaxAnnotation
-        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
+        href: api/Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTokens(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedTokens
   qualifiedName:
@@ -2333,9 +2333,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1087
   summary: >+
     Gets all tokens with the specified annotation kind.
@@ -2352,8 +2352,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTrivia(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedTrivia
   qualifiedName:
@@ -2363,9 +2363,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1095
   summary: >+
     Gets all trivia with an annotation of the specified annotation kind.
@@ -2382,8 +2382,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTrivia(System.String[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedTrivia
   qualifiedName:
@@ -2393,9 +2393,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1104
   summary: >+
     Gets all trivia with an annotation of the specified annotation kinds.
@@ -2412,8 +2412,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.GetAnnotatedTrivia(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: GetAnnotatedTrivia
   qualifiedName:
@@ -2423,9 +2423,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1113
   summary: >+
     Gets all trivia with the specified annotation.
@@ -2438,12 +2438,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxAnnotation
         name: SyntaxAnnotation
-        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
+        href: api/Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNode.CopyAnnotationsTo``1(``0)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: CopyAnnotationsTo
   qualifiedName:
@@ -2453,9 +2453,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1141
   summary: >+
     Copies all SyntaxAnnotations, if any, from this SyntaxNode instance and attaches them to a new instance based on .
@@ -2472,8 +2472,8 @@ items:
     return:
       id: T
 - id: Microsoft.CodeAnalysis.SyntaxNode.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxNode,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
@@ -2483,9 +2483,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1167
   summary: >+
     Determines if two nodes are the same, disregarding trivia differences.
@@ -2498,7 +2498,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The node to compare against.
     - id: topLevel
       type:
@@ -2516,8 +2516,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxNode.SerializeTo(System.IO.Stream,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNode.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNode
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNode.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNode
   name:
     CSharp: SerializeTo
   qualifiedName:
@@ -2527,9 +2527,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNode.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNode.cs
     startLine: 1172
   syntax:
     content:

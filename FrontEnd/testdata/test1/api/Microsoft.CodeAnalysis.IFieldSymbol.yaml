@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.IFieldSymbol
-yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-href: api\Microsoft.CodeAnalysis.IFieldSymbol
+yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+href: api/Microsoft.CodeAnalysis.IFieldSymbol
 name:
   CSharp: IFieldSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
   startLine: 10
 summary: >+
   Represents a field in a class, struct or enum.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface IFieldSymbol
 items:
 - id: Microsoft.CodeAnalysis.IFieldSymbol.AssociatedSymbol
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: AssociatedSymbol
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 19
   summary: >+
     If this field serves as a backing variable for an automatically generated
@@ -56,10 +56,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_AssociatedSymbol
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_AssociatedSymbol
   qualifiedName:
@@ -68,13 +68,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 19
 - id: Microsoft.CodeAnalysis.IFieldSymbol.IsConst
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: IsConst
   qualifiedName:
@@ -84,9 +84,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 25
   summary: >+
     Returns true if this field was declared as "const" (i.e. is a constant declaration).
@@ -103,8 +103,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsConst
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_IsConst
   qualifiedName:
@@ -113,13 +113,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 25
 - id: Microsoft.CodeAnalysis.IFieldSymbol.IsReadOnly
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: IsReadOnly
   qualifiedName:
@@ -129,9 +129,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 30
   summary: >+
     Returns true if this field was declared as "readonly".
@@ -146,8 +146,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsReadOnly
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_IsReadOnly
   qualifiedName:
@@ -156,13 +156,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 30
 - id: Microsoft.CodeAnalysis.IFieldSymbol.IsVolatile
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: IsVolatile
   qualifiedName:
@@ -172,9 +172,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 35
   summary: >+
     Returns true if this field was declared as "volatile".
@@ -189,8 +189,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_IsVolatile
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_IsVolatile
   qualifiedName:
@@ -199,13 +199,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 35
 - id: Microsoft.CodeAnalysis.IFieldSymbol.Type
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: Type
   qualifiedName:
@@ -215,9 +215,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 40
   summary: >+
     Gets the type of this field.
@@ -230,10 +230,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeSymbol
         name: ITypeSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_Type
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_Type
   qualifiedName:
@@ -242,13 +242,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 40
 - id: Microsoft.CodeAnalysis.IFieldSymbol.HasConstantValue
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: HasConstantValue
   qualifiedName:
@@ -258,9 +258,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 46
   summary: >+
     Returns false if the field wasn't declared as "const", or constant value was omitted or errorneous.
@@ -277,8 +277,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_HasConstantValue
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_HasConstantValue
   qualifiedName:
@@ -287,13 +287,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 46
 - id: Microsoft.CodeAnalysis.IFieldSymbol.ConstantValue
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: ConstantValue
   qualifiedName:
@@ -303,9 +303,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 51
   summary: >+
     Gets the constant value of this field
@@ -320,8 +320,8 @@ items:
         name: System.Object
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_ConstantValue
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_ConstantValue
   qualifiedName:
@@ -330,13 +330,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 51
 - id: Microsoft.CodeAnalysis.IFieldSymbol.CustomModifiers
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: CustomModifiers
   qualifiedName:
@@ -346,9 +346,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 56
   summary: >+
     Gets the list of custom modifiers, if any, associated with the field.
@@ -363,8 +363,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         isExternal: true
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_CustomModifiers
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_CustomModifiers
   qualifiedName:
@@ -373,13 +373,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 56
 - id: Microsoft.CodeAnalysis.IFieldSymbol.OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: OriginalDefinition
   qualifiedName:
@@ -389,9 +389,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 63
   summary: >+
     Get the original definition of this symbol. If this symbol is derived from another
@@ -408,10 +408,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IFieldSymbol
         name: IFieldSymbol
-        href: api\Microsoft.CodeAnalysis.IFieldSymbol
+        href: api/Microsoft.CodeAnalysis.IFieldSymbol
 - id: Microsoft.CodeAnalysis.IFieldSymbol.get_OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.IFieldSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IFieldSymbol
+  yaml: api/Microsoft.CodeAnalysis.IFieldSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IFieldSymbol
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
@@ -420,7 +420,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IFieldSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IFieldSymbol.cs
     startLine: 63

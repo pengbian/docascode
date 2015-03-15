@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Emit.EmitOptions
-yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
 name:
   CSharp: EmitOptions
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+  path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
   startLine: 10
 summary: >+
   Represents compilation emit options.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: EmitMetadataOnly
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 17
   summary: >+
     True to emit an assembly excluding executable code such as method bodies.
@@ -54,8 +54,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_EmitMetadataOnly
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_EmitMetadataOnly
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 17
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.TolerateErrors
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: TolerateErrors
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 22
   summary: >+
     Tolerate errors, producing a PE stream and a success result even in the presence of (some) errors.
@@ -97,8 +97,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_TolerateErrors
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_TolerateErrors
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 22
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.IncludePrivateMembers
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: IncludePrivateMembers
   qualifiedName:
@@ -123,14 +123,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 31
   summary: >+
     Unless set (private) members that don't affect the language semantics of the resulting assembly will be excluded
 
-    when emitting with [Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly](#/api\Microsoft.CodeAnalysis.Emit.EmitOptions) on.
+    when emitting with [Microsoft.CodeAnalysis.Emit.EmitOptions.EmitMetadataOnly](#/api/Microsoft.CodeAnalysis.Emit.EmitOptions) on.
 
   syntax:
     content:
@@ -142,8 +142,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_IncludePrivateMembers
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_IncludePrivateMembers
   qualifiedName:
@@ -152,13 +152,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 31
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.SubsystemVersion
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: SubsystemVersion
   qualifiedName:
@@ -168,9 +168,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 36
   summary: >+
     Subsystem version
@@ -183,10 +183,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SubsystemVersion
         name: SubsystemVersion
-        href: api\Microsoft.CodeAnalysis.SubsystemVersion
+        href: api/Microsoft.CodeAnalysis.SubsystemVersion
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_SubsystemVersion
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_SubsystemVersion
   qualifiedName:
@@ -195,13 +195,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 36
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.FileAlignment
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: FileAlignment
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 45
   summary: >+
     Specifies the size of sections in the output file.
@@ -228,8 +228,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_FileAlignment
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_FileAlignment
   qualifiedName:
@@ -238,13 +238,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 45
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.HighEntropyVirtualAddressSpace
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: HighEntropyVirtualAddressSpace
   qualifiedName:
@@ -254,9 +254,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 50
   summary: >+
     True to enable high entropy virtual address space for the output binary.
@@ -271,8 +271,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_HighEntropyVirtualAddressSpace
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_HighEntropyVirtualAddressSpace
   qualifiedName:
@@ -281,13 +281,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 50
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.BaseAddress
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: BaseAddress
   qualifiedName:
@@ -297,9 +297,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 55
   summary: >+
     Specifies the preferred base address at which to load the output DLL.
@@ -314,8 +314,8 @@ items:
         name: System.UInt64
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_BaseAddress
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_BaseAddress
   qualifiedName:
@@ -324,13 +324,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 55
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.DebugInformationFormat
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: DebugInformationFormat
   qualifiedName:
@@ -340,9 +340,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 60
   summary: >+
     Debug information format.
@@ -355,10 +355,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
         name: DebugInformationFormat
-        href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+        href: api/Microsoft.CodeAnalysis.Emit.DebugInformationFormat
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_DebugInformationFormat
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_DebugInformationFormat
   qualifiedName:
@@ -367,13 +367,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 60
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.OutputNameOverride
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: OutputNameOverride
   qualifiedName:
@@ -383,9 +383,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 73
   summary: >+
     Assembly name override - file name and extension. If not specified the the compilation name is used.
@@ -400,8 +400,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_OutputNameOverride
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_OutputNameOverride
   qualifiedName:
@@ -410,13 +410,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 73
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.PdbFilePath
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: PdbFilePath
   qualifiedName:
@@ -426,9 +426,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 81
   summary: >+
     The name of the PDB file to be embedded in the PE image, or null to use the default.
@@ -443,8 +443,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_PdbFilePath
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_PdbFilePath
   qualifiedName:
@@ -453,13 +453,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 81
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.RuntimeMetadataVersion
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: RuntimeMetadataVersion
   qualifiedName:
@@ -469,9 +469,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 86
   summary: >+
     Runtime metadata version.
@@ -486,8 +486,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.get_RuntimeMetadataVersion
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: get_RuntimeMetadataVersion
   qualifiedName:
@@ -496,13 +496,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 86
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.#ctor(System.Boolean,Microsoft.CodeAnalysis.Emit.DebugInformationFormat,System.String,System.String,System.Int32,System.UInt64,System.Boolean,Microsoft.CodeAnalysis.SubsystemVersion,System.String,System.Boolean,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: EmitOptions(System.Boolean,Microsoft.CodeAnalysis.Emit.DebugInformationFormat,System.String,System.String,System.Int32,System.UInt64,System.Boolean,Microsoft.CodeAnalysis.SubsystemVersion,System.String,System.Boolean,System.Boolean)
   qualifiedName:
@@ -512,9 +512,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 88
   syntax:
     content:
@@ -529,7 +529,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
         name: DebugInformationFormat
-        href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+        href: api/Microsoft.CodeAnalysis.Emit.DebugInformationFormat
     - id: pdbFilePath
       type:
         id: System.String
@@ -559,7 +559,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SubsystemVersion
         name: SubsystemVersion
-        href: api\Microsoft.CodeAnalysis.SubsystemVersion
+        href: api/Microsoft.CodeAnalysis.SubsystemVersion
     - id: runtimeMetadataVersion
       type:
         id: System.String
@@ -576,8 +576,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: Equals
   qualifiedName:
@@ -587,9 +587,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 129
   syntax:
     content:
@@ -603,8 +603,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.Equals(Microsoft.CodeAnalysis.Emit.EmitOptions)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: Equals
   qualifiedName:
@@ -614,9 +614,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 134
   syntax:
     content:
@@ -626,12 +626,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Emit.EmitOptions
         name: EmitOptions
-        href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+        href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -641,9 +641,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 155
   syntax:
     content:
@@ -652,8 +652,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.op_Equality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -662,13 +662,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 170
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.op_Inequality(Microsoft.CodeAnalysis.Emit.EmitOptions,Microsoft.CodeAnalysis.Emit.EmitOptions)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -677,13 +677,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 175
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithEmitMetadataOnly(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithEmitMetadataOnly
   qualifiedName:
@@ -693,9 +693,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 223
   syntax:
     content:
@@ -709,8 +709,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithPdbFilePath(System.String)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithPdbFilePath
   qualifiedName:
@@ -720,9 +720,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 233
   syntax:
     content:
@@ -736,8 +736,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithOutputNameOverride(System.String)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithOutputNameOverride
   qualifiedName:
@@ -747,9 +747,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 243
   syntax:
     content:
@@ -763,8 +763,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithDebugInformationFormat(Microsoft.CodeAnalysis.Emit.DebugInformationFormat)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithDebugInformationFormat
   qualifiedName:
@@ -774,9 +774,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 253
   syntax:
     content:
@@ -786,12 +786,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Emit.DebugInformationFormat
         name: DebugInformationFormat
-        href: api\Microsoft.CodeAnalysis.Emit.DebugInformationFormat
+        href: api/Microsoft.CodeAnalysis.Emit.DebugInformationFormat
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithFileAlignment(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithFileAlignment
   qualifiedName:
@@ -801,9 +801,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 267
   summary: >+
     Sets the byte alignment for portable executable file sections.
@@ -821,8 +821,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithBaseAddress(System.UInt64)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithBaseAddress
   qualifiedName:
@@ -832,9 +832,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 277
   syntax:
     content:
@@ -848,8 +848,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithHighEntropyVirtualAddressSpace(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithHighEntropyVirtualAddressSpace
   qualifiedName:
@@ -859,9 +859,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 287
   syntax:
     content:
@@ -875,8 +875,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithSubsystemVersion(Microsoft.CodeAnalysis.SubsystemVersion)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithSubsystemVersion
   qualifiedName:
@@ -886,9 +886,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 297
   syntax:
     content:
@@ -898,12 +898,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SubsystemVersion
         name: SubsystemVersion
-        href: api\Microsoft.CodeAnalysis.SubsystemVersion
+        href: api/Microsoft.CodeAnalysis.SubsystemVersion
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithRuntimeMetadataVersion(System.String)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithRuntimeMetadataVersion
   qualifiedName:
@@ -913,9 +913,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 307
   syntax:
     content:
@@ -929,8 +929,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithTolerateErrors(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithTolerateErrors
   qualifiedName:
@@ -940,9 +940,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 317
   syntax:
     content:
@@ -956,8 +956,8 @@ items:
     return:
       id: EmitOptions
 - id: Microsoft.CodeAnalysis.Emit.EmitOptions.WithIncludePrivateMembers(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
-  href: api\Microsoft.CodeAnalysis.Emit.EmitOptions
+  yaml: api/Microsoft.CodeAnalysis.Emit.EmitOptions.yaml
+  href: api/Microsoft.CodeAnalysis.Emit.EmitOptions
   name:
     CSharp: WithIncludePrivateMembers
   qualifiedName:
@@ -967,9 +967,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Emit\EmitOptions.cs
+    path: src/Compilers/Core/Portable/Emit/EmitOptions.cs
     startLine: 327
   syntax:
     content:

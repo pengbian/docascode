@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Text.TextLine
-yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-href: api\Microsoft.CodeAnalysis.Text.TextLine
+yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+href: api/Microsoft.CodeAnalysis.Text.TextLine
 name:
   CSharp: TextLine
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Text\TextLine.cs
+  path: src/Compilers/Core/Portable/Text/TextLine.cs
   startLine: 11
 summary: >+
   Information about the character boundaries of a single line of text.
@@ -29,8 +29,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextLine.FromSpan(Microsoft.CodeAnalysis.Text.SourceText,Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: FromSpan
   qualifiedName:
@@ -40,12 +40,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 31
   summary: >+
-    Creates a [Microsoft.CodeAnalysis.Text.TextLine](#/api\Microsoft.CodeAnalysis.Text.TextLine) instance.
+    Creates a [Microsoft.CodeAnalysis.Text.TextLine](#/api/Microsoft.CodeAnalysis.Text.TextLine) instance.
 
   syntax:
     content:
@@ -55,20 +55,20 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.SourceText
         name: SourceText
-        href: api\Microsoft.CodeAnalysis.Text.SourceText
+        href: api/Microsoft.CodeAnalysis.Text.SourceText
       description: The source text.
     - id: span
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span of the line.
     return:
       id: TextLine
-      description: An instance of [Microsoft.CodeAnalysis.Text.TextLine](#/api\Microsoft.CodeAnalysis.Text.TextLine).
+      description: An instance of [Microsoft.CodeAnalysis.Text.TextLine](#/api/Microsoft.CodeAnalysis.Text.TextLine).
 - id: Microsoft.CodeAnalysis.Text.TextLine.Text
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: Text
   qualifiedName:
@@ -78,9 +78,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 85
   summary: >+
     Gets the source text.
@@ -93,10 +93,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.SourceText
         name: SourceText
-        href: api\Microsoft.CodeAnalysis.Text.SourceText
+        href: api/Microsoft.CodeAnalysis.Text.SourceText
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_Text
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_Text
   qualifiedName:
@@ -105,13 +105,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 87
 - id: Microsoft.CodeAnalysis.Text.TextLine.LineNumber
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: LineNumber
   qualifiedName:
@@ -121,9 +121,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 93
   summary: >+
     Gets the zero-based line number.
@@ -138,8 +138,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_LineNumber
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_LineNumber
   qualifiedName:
@@ -148,13 +148,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 95
 - id: Microsoft.CodeAnalysis.Text.TextLine.Start
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: Start
   qualifiedName:
@@ -164,9 +164,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 111
   summary: >+
     Gets the start position of the line.
@@ -181,8 +181,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_Start
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_Start
   qualifiedName:
@@ -191,13 +191,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 113
 - id: Microsoft.CodeAnalysis.Text.TextLine.End
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: End
   qualifiedName:
@@ -207,9 +207,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 119
   summary: >+
     Gets the end position of the line not including the line break.
@@ -224,8 +224,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_End
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_End
   qualifiedName:
@@ -234,13 +234,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 121
 - id: Microsoft.CodeAnalysis.Text.TextLine.EndIncludingLineBreak
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: EndIncludingLineBreak
   qualifiedName:
@@ -250,9 +250,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 145
   summary: >+
     Gets the end position of the line including the line break.
@@ -267,8 +267,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_EndIncludingLineBreak
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_EndIncludingLineBreak
   qualifiedName:
@@ -277,13 +277,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 147
 - id: Microsoft.CodeAnalysis.Text.TextLine.Span
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: Span
   qualifiedName:
@@ -293,9 +293,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 153
   summary: >+
     Gets the line span not including the line break.
@@ -308,10 +308,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_Span
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_Span
   qualifiedName:
@@ -320,13 +320,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 155
 - id: Microsoft.CodeAnalysis.Text.TextLine.SpanIncludingLineBreak
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: SpanIncludingLineBreak
   qualifiedName:
@@ -336,9 +336,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 161
   summary: >+
     Gets the line span including the line break.
@@ -351,10 +351,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.Text.TextLine.get_SpanIncludingLineBreak
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: get_SpanIncludingLineBreak
   qualifiedName:
@@ -363,13 +363,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 163
 - id: Microsoft.CodeAnalysis.Text.TextLine.ToString
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: ToString
   qualifiedName:
@@ -379,9 +379,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 166
   syntax:
     content:
@@ -390,8 +390,8 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Text.TextLine.op_Equality(Microsoft.CodeAnalysis.Text.TextLine,Microsoft.CodeAnalysis.Text.TextLine)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -400,13 +400,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 178
 - id: Microsoft.CodeAnalysis.Text.TextLine.op_Inequality(Microsoft.CodeAnalysis.Text.TextLine,Microsoft.CodeAnalysis.Text.TextLine)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -415,13 +415,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 183
 - id: Microsoft.CodeAnalysis.Text.TextLine.Equals(Microsoft.CodeAnalysis.Text.TextLine)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: Equals
   qualifiedName:
@@ -431,9 +431,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 188
   syntax:
     content:
@@ -443,12 +443,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextLine
         name: TextLine
-        href: api\Microsoft.CodeAnalysis.Text.TextLine
+        href: api/Microsoft.CodeAnalysis.Text.TextLine
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Text.TextLine.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: Equals
   qualifiedName:
@@ -458,9 +458,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 195
   syntax:
     content:
@@ -474,8 +474,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Text.TextLine.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.Text.TextLine.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextLine
+  yaml: api/Microsoft.CodeAnalysis.Text.TextLine.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextLine
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -485,9 +485,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextLine.cs
+    path: src/Compilers/Core/Portable/Text/TextLine.cs
     startLine: 205
   syntax:
     content:

@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1
-yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
 name:
   CSharp: SeparatedSyntaxList`1
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+  path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
   startLine: 12
 syntax:
   content:
@@ -29,8 +29,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Count
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Count
   qualifiedName:
@@ -40,9 +40,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 63
   syntax:
     content:
@@ -54,8 +54,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Count
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: get_Count
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 65
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.SeparatorCount
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: SeparatorCount
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 71
   syntax:
     content:
@@ -94,8 +94,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_SeparatorCount
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: get_SeparatorCount
   qualifiedName:
@@ -104,13 +104,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 73
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Item(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Item
   qualifiedName:
@@ -120,13 +120,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 79
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Item(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: get_Item
   qualifiedName:
@@ -135,13 +135,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 81
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetSeparator(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: GetSeparator
   qualifiedName:
@@ -151,9 +151,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 111
   summary: >+
     Gets the separator at the given index in this list.
@@ -171,8 +171,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetSeparators
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: GetSeparators
   qualifiedName:
@@ -182,9 +182,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 132
   summary: >+
     Returns the sequence of just the separator tokens.
@@ -196,8 +196,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: FullSpan
   qualifiedName:
@@ -207,9 +207,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 140
   summary: >+
     The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
@@ -222,10 +222,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: get_FullSpan
   qualifiedName:
@@ -234,13 +234,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 142
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Span
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Span
   qualifiedName:
@@ -250,9 +250,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 148
   summary: >+
     The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
@@ -265,10 +265,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.get_Span
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: get_Span
   qualifiedName:
@@ -277,13 +277,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 150
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ToString
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: ToString
   qualifiedName:
@@ -293,9 +293,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 161
   summary: >+
     Returns the string representation of the nodes in this list including separators but not including
@@ -310,8 +310,8 @@ items:
       id: String
       description: "The string representation of the nodes in this list including separators but not including \r\n    the first node's leading trivia and the last node or token's trailing trivia."
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ToFullString
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: ToFullString
   qualifiedName:
@@ -321,9 +321,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 174
   summary: >+
     Returns the full string representation of the nodes in this list including separators,
@@ -341,8 +341,8 @@ items:
 
             the first node's leading trivia, and the last node or token's trailing trivia.
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.First
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: First
   qualifiedName:
@@ -352,9 +352,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 179
   syntax:
     content:
@@ -363,8 +363,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.FirstOrDefault
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: FirstOrDefault
   qualifiedName:
@@ -374,9 +374,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 184
   syntax:
     content:
@@ -385,8 +385,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Last
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Last
   qualifiedName:
@@ -396,9 +396,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 196
   syntax:
     content:
@@ -407,8 +407,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastOrDefault
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: LastOrDefault
   qualifiedName:
@@ -418,9 +418,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 201
   syntax:
     content:
@@ -429,8 +429,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Contains(`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Contains
   qualifiedName:
@@ -440,9 +440,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 213
   syntax:
     content:
@@ -456,8 +456,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.IndexOf(`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: IndexOf
   qualifiedName:
@@ -467,9 +467,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 218
   syntax:
     content:
@@ -483,8 +483,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.IndexOf(System.Func{`0,System.Boolean})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: IndexOf
   qualifiedName:
@@ -494,9 +494,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 231
   syntax:
     content:
@@ -510,8 +510,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastIndexOf(`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: LastIndexOf
   qualifiedName:
@@ -521,9 +521,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 257
   syntax:
     content:
@@ -537,8 +537,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.LastIndexOf(System.Func{`0,System.Boolean})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: LastIndexOf
   qualifiedName:
@@ -548,9 +548,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 270
   syntax:
     content:
@@ -564,8 +564,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Any
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Any
   qualifiedName:
@@ -575,9 +575,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 283
   syntax:
     content:
@@ -586,8 +586,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetWithSeparators
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: GetWithSeparators
   qualifiedName:
@@ -597,9 +597,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 288
   syntax:
     content:
@@ -608,8 +608,8 @@ items:
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.op_Equality(Microsoft.CodeAnalysis.SeparatedSyntaxList{`0},Microsoft.CodeAnalysis.SeparatedSyntaxList{`0})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -618,13 +618,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 293
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.op_Inequality(Microsoft.CodeAnalysis.SeparatedSyntaxList{`0},Microsoft.CodeAnalysis.SeparatedSyntaxList{`0})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -633,13 +633,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 298
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Equals(Microsoft.CodeAnalysis.SeparatedSyntaxList{`0})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Equals
   qualifiedName:
@@ -649,9 +649,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 303
   syntax:
     content:
@@ -661,12 +661,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1
         name: SeparatedSyntaxList
-        href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+        href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Equals
   qualifiedName:
@@ -676,9 +676,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 308
   syntax:
     content:
@@ -692,8 +692,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -703,9 +703,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 313
   syntax:
     content:
@@ -714,8 +714,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Add(`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Add
   qualifiedName:
@@ -725,9 +725,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 322
   summary: >+
     Creates a new list with the specified node added to the end.
@@ -745,8 +745,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: AddRange
   qualifiedName:
@@ -756,9 +756,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 331
   summary: >+
     Creates a new list with the specified nodes added to the end.
@@ -776,8 +776,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Insert(System.Int32,`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Insert
   qualifiedName:
@@ -787,9 +787,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 341
   summary: >+
     Creates a new list with the specified node inserted at the index.
@@ -813,8 +813,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: InsertRange
   qualifiedName:
@@ -824,9 +824,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 356
   summary: >+
     Creates a new list with the specified nodes inserted at the index.
@@ -850,8 +850,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.RemoveAt(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: RemoveAt
   qualifiedName:
@@ -861,9 +861,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 426
   summary: >+
     Creates a new list with the element at the specified index removed.
@@ -881,8 +881,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Remove(`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Remove
   qualifiedName:
@@ -892,9 +892,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 440
   summary: >+
     Creates a new list with specified element removed.
@@ -912,8 +912,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.Replace(`0,`0)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: Replace
   qualifiedName:
@@ -923,9 +923,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 472
   summary: >+
     Creates a new list with the specified element replaced by the new node.
@@ -949,8 +949,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ReplaceRange(`0,System.Collections.Generic.IEnumerable{`0})
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: ReplaceRange
   qualifiedName:
@@ -960,9 +960,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 495
   summary: >+
     Creates a new list with the specified element replaced by the new nodes.
@@ -986,8 +986,8 @@ items:
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.ReplaceSeparator(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: ReplaceSeparator
   qualifiedName:
@@ -997,9 +997,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 534
   summary: >+
     Creates a new list with the specified separator token replaced with the new separator.
@@ -1012,19 +1012,19 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: The separator token to be replaced.
     - id: newSeparator
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: The new separator token.
     return:
       id: SeparatedSyntaxList
 - id: Microsoft.CodeAnalysis.SeparatedSyntaxList`1.GetEnumerator
-  yaml: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
-  href: api\Microsoft.CodeAnalysis.SeparatedSyntaxList`1
+  yaml: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1.yaml
+  href: api/Microsoft.CodeAnalysis.SeparatedSyntaxList`1
   name:
     CSharp: GetEnumerator
   qualifiedName:
@@ -1034,9 +1034,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SeparatedSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/SeparatedSyntaxList.cs
     startLine: 563
   syntax:
     content:

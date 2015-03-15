@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ITypeSymbol
-yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-href: api\Microsoft.CodeAnalysis.ITypeSymbol
+yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+href: api/Microsoft.CodeAnalysis.ITypeSymbol
 name:
   CSharp: ITypeSymbol
 qualifiedName:
@@ -10,17 +10,17 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
   startLine: 6
 syntax:
   content:
     CSharp: public interface ITypeSymbol
 items:
 - id: Microsoft.CodeAnalysis.ITypeSymbol.TypeKind
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: TypeKind
   qualifiedName:
@@ -30,9 +30,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 11
   summary: >+
     An enumerated value that identifies whether this type is an array, pointer, enum, and so on.
@@ -45,10 +45,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TypeKind
         name: TypeKind
-        href: api\Microsoft.CodeAnalysis.TypeKind
+        href: api/Microsoft.CodeAnalysis.TypeKind
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_TypeKind
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_TypeKind
   qualifiedName:
@@ -57,13 +57,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 11
 - id: Microsoft.CodeAnalysis.ITypeSymbol.BaseType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: BaseType
   qualifiedName:
@@ -73,9 +73,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 18
   summary: >+
     The declared base type of this type, or null. The object type, interface types,
@@ -92,10 +92,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_BaseType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_BaseType
   qualifiedName:
@@ -104,13 +104,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 18
 - id: Microsoft.CodeAnalysis.ITypeSymbol.Interfaces
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: Interfaces
   qualifiedName:
@@ -120,9 +120,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 25
   summary: >+
     Gets the set of interfaces that this type directly implements. This set does not include
@@ -141,8 +141,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_Interfaces
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_Interfaces
   qualifiedName:
@@ -151,13 +151,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 25
 - id: Microsoft.CodeAnalysis.ITypeSymbol.AllInterfaces
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: AllInterfaces
   qualifiedName:
@@ -167,9 +167,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 38
   summary: >+
     The list of all interfaces of which this type is a declared subtype, excluding this type
@@ -200,8 +200,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_AllInterfaces
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_AllInterfaces
   qualifiedName:
@@ -210,13 +210,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 38
 - id: Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: IsReferenceType
   qualifiedName:
@@ -226,16 +226,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 45
   summary: >+
     True if this type is known to be a reference type. It is never the case that
 
-    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
+    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
-    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
 
   syntax:
     content:
@@ -247,8 +247,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsReferenceType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_IsReferenceType
   qualifiedName:
@@ -257,13 +257,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 45
 - id: Microsoft.CodeAnalysis.ITypeSymbol.IsValueType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: IsValueType
   qualifiedName:
@@ -273,16 +273,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 52
   summary: >+
     True if this type is known to be a value type. It is never the case that
 
-    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
+    [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) both return true. However, for an unconstrained type
 
-    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api\Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
+    parameter, [Microsoft.CodeAnalysis.ITypeSymbol.IsReferenceType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) and [Microsoft.CodeAnalysis.ITypeSymbol.IsValueType](#/api/Microsoft.CodeAnalysis.ITypeSymbol) will both return false.
 
   syntax:
     content:
@@ -294,8 +294,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsValueType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_IsValueType
   qualifiedName:
@@ -304,13 +304,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 52
 - id: Microsoft.CodeAnalysis.ITypeSymbol.IsAnonymousType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: IsAnonymousType
   qualifiedName:
@@ -320,9 +320,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 57
   summary: >+
     Is this a symbol for an anonymous type (including anonymous VB delegate).
@@ -337,8 +337,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_IsAnonymousType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_IsAnonymousType
   qualifiedName:
@@ -347,13 +347,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 57
 - id: Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: OriginalDefinition
   qualifiedName:
@@ -363,14 +363,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 64
   summary: >+
     The original definition of this symbol. If this symbol is constructed from another
 
-    symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](#/api\Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
+    symbol by type substitution then [Microsoft.CodeAnalysis.ITypeSymbol.OriginalDefinition](#/api/Microsoft.CodeAnalysis.ITypeSymbol) gets the original symbol as it was defined in
 
     source or metadata.
 
@@ -382,10 +382,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeSymbol
         name: ITypeSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
@@ -394,13 +394,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 64
 - id: Microsoft.CodeAnalysis.ITypeSymbol.SpecialType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: SpecialType
   qualifiedName:
@@ -410,14 +410,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 70
   summary: >+
     An enumerated value that identifies certain 'special' types such as [System.Object](#).
 
-    Returns [Microsoft.CodeAnalysis.SpecialType.None](#/api\Microsoft.CodeAnalysis.SpecialType) if the type is not special.
+    Returns [Microsoft.CodeAnalysis.SpecialType.None](#/api/Microsoft.CodeAnalysis.SpecialType) if the type is not special.
 
   syntax:
     content:
@@ -427,10 +427,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SpecialType
         name: SpecialType
-        href: api\Microsoft.CodeAnalysis.SpecialType
+        href: api/Microsoft.CodeAnalysis.SpecialType
 - id: Microsoft.CodeAnalysis.ITypeSymbol.get_SpecialType
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: get_SpecialType
   qualifiedName:
@@ -439,13 +439,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 70
 - id: Microsoft.CodeAnalysis.ITypeSymbol.FindImplementationForInterfaceMember(Microsoft.CodeAnalysis.ISymbol)
-  yaml: api\Microsoft.CodeAnalysis.ITypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeSymbol
   name:
     CSharp: FindImplementationForInterfaceMember
   qualifiedName:
@@ -455,9 +455,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeSymbol.cs
     startLine: 82
   summary: >+
     Returns the corresponding symbol in this type or a base type that implements
@@ -478,7 +478,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
       description: Must be a non-null interface property, method, or event.
     return:
       id: ISymbol

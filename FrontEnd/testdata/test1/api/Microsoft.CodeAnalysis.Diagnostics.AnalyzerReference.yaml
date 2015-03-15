@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
-yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
 name:
   CSharp: AnalyzerReference
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+  path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
   startLine: 13
 summary: >+
   Represents an analyzer assembly reference that contains diagnostic analyzers.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.FullPath
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: FullPath
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 22
   summary: >+
     Full path describing the location of the analyzer reference, or null if the reference has no location.
@@ -54,8 +54,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_FullPath
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: get_FullPath
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 22
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.Display
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: Display
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 27
   summary: >+
     Path or name used in error messages to identity the reference.
@@ -97,8 +97,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_Display
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: get_Display
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 29
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.IsUnresolved
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: IsUnresolved
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 35
   summary: >+
     Returns true if this reference is an unresolved reference.
@@ -140,8 +140,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.get_IsUnresolved
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: get_IsUnresolved
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 37
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzersForAllLanguages
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: GetAnalyzersForAllLanguages
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 46
   summary: >+
     Gets all the diagnostic analyzers defined in this assembly reference, irrespective of the language supported by the analyzer.
@@ -177,7 +177,7 @@ items:
 
     In most instances, either the analyzer reference is associated with a project or is being queried for analyzers in a particular language context.
 
-    If so, use [Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String)](#/api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference) method.
+    If so, use [Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String)](#/api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference) method.
 
   syntax:
     content:
@@ -186,8 +186,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.GetAnalyzers(System.String)
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerReference
   name:
     CSharp: GetAnalyzers
   qualifiedName:
@@ -197,9 +197,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\AnalyzerReference.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/AnalyzerReference.cs
     startLine: 52
   summary: >+
     Gets all the diagnostic analyzers defined in this assembly reference for the given .

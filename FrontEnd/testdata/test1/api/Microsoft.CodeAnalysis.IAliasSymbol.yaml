@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.IAliasSymbol
-yaml: api\Microsoft.CodeAnalysis.IAliasSymbol.yaml
-href: api\Microsoft.CodeAnalysis.IAliasSymbol
+yaml: api/Microsoft.CodeAnalysis.IAliasSymbol.yaml
+href: api/Microsoft.CodeAnalysis.IAliasSymbol
 name:
   CSharp: IAliasSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\IAliasSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/IAliasSymbol.cs
   startLine: 9
 summary: >+
   Represents a using alias (Imports alias in Visual Basic).
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface IAliasSymbol
 items:
 - id: Microsoft.CodeAnalysis.IAliasSymbol.Target
-  yaml: api\Microsoft.CodeAnalysis.IAliasSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAliasSymbol
+  yaml: api/Microsoft.CodeAnalysis.IAliasSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAliasSymbol
   name:
     CSharp: Target
   qualifiedName:
@@ -33,12 +33,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAliasSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAliasSymbol.cs
     startLine: 15
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.INamespaceOrTypeSymbol](#/api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol) for the
+    Gets the [Microsoft.CodeAnalysis.INamespaceOrTypeSymbol](#/api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol) for the
 
     namespace or type referenced by the alias.
 
@@ -50,10 +50,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
         name: INamespaceOrTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
 - id: Microsoft.CodeAnalysis.IAliasSymbol.get_Target
-  yaml: api\Microsoft.CodeAnalysis.IAliasSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAliasSymbol
+  yaml: api/Microsoft.CodeAnalysis.IAliasSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAliasSymbol
   name:
     CSharp: get_Target
   qualifiedName:
@@ -62,7 +62,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAliasSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAliasSymbol.cs
     startLine: 15

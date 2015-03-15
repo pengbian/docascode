@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.CandidateReason
-yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-href: api\Microsoft.CodeAnalysis.CandidateReason
+yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+href: api/Microsoft.CodeAnalysis.CandidateReason
 name:
   CSharp: CandidateReason
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+  path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
   startLine: 12
 summary: >+
   Indicates the reasons why a candidate (or set of candidate) symbols were not considered
@@ -38,8 +38,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CandidateReason.None
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: None
   qualifiedName:
@@ -49,9 +49,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 17
   summary: >+
     No CandidateSymbols.
@@ -60,8 +60,8 @@ items:
     content:
       CSharp: None = 0
 - id: Microsoft.CodeAnalysis.CandidateReason.NotATypeOrNamespace
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotATypeOrNamespace
   qualifiedName:
@@ -71,9 +71,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 23
   summary: >+
     Only a type or namespace was valid in the given location, but the candidate symbols was
@@ -84,8 +84,8 @@ items:
     content:
       CSharp: NotATypeOrNamespace = 1
 - id: Microsoft.CodeAnalysis.CandidateReason.NotAnEvent
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotAnEvent
   qualifiedName:
@@ -95,9 +95,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 29
   summary: >+
     Only an event was valid in the given location, but the candidate symbols was
@@ -108,8 +108,8 @@ items:
     content:
       CSharp: NotAnEvent = 2
 - id: Microsoft.CodeAnalysis.CandidateReason.NotAWithEventsMember
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotAWithEventsMember
   qualifiedName:
@@ -119,9 +119,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 34
   summary: >+
     The candidate symbol must be a WithEvents member, but it was not.
@@ -130,8 +130,8 @@ items:
     content:
       CSharp: NotAWithEventsMember = 3
 - id: Microsoft.CodeAnalysis.CandidateReason.NotAnAttributeType
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotAnAttributeType
   qualifiedName:
@@ -141,9 +141,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 40
   summary: >+
     Only an attribute type was valid in the given location, but the candidate symbol was
@@ -154,8 +154,8 @@ items:
     content:
       CSharp: NotAnAttributeType = 4
 - id: Microsoft.CodeAnalysis.CandidateReason.WrongArity
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: WrongArity
   qualifiedName:
@@ -165,9 +165,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 45
   summary: >+
     The candidate symbol takes a different number of type parameters that was required.
@@ -176,8 +176,8 @@ items:
     content:
       CSharp: WrongArity = 5
 - id: Microsoft.CodeAnalysis.CandidateReason.NotCreatable
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotCreatable
   qualifiedName:
@@ -187,9 +187,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 51
   summary: >+
     The candidate symbol existed, but was not allowed to be created in a new expression.
@@ -200,8 +200,8 @@ items:
     content:
       CSharp: NotCreatable = 6
 - id: Microsoft.CodeAnalysis.CandidateReason.NotReferencable
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotReferencable
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 60
   summary: >+
     The candidate symbol existed, but was not allowed to be referenced. For example, the
@@ -230,8 +230,8 @@ items:
     content:
       CSharp: NotReferencable = 7
 - id: Microsoft.CodeAnalysis.CandidateReason.Inaccessible
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: Inaccessible
   qualifiedName:
@@ -241,9 +241,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 66
   summary: >+
     The candidate symbol had an accessibility modifier (private, protected, ...) that made
@@ -254,8 +254,8 @@ items:
     content:
       CSharp: Inaccessible = 8
 - id: Microsoft.CodeAnalysis.CandidateReason.NotAValue
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotAValue
   qualifiedName:
@@ -265,9 +265,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 72
   summary: >+
     The candidate symbol was in a place where a value was required, but was not a value
@@ -278,8 +278,8 @@ items:
     content:
       CSharp: NotAValue = 9
 - id: Microsoft.CodeAnalysis.CandidateReason.NotAVariable
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotAVariable
   qualifiedName:
@@ -289,9 +289,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 79
   summary: >+
     The candidate symbol was in a place where a variable (or sometimes, a property) was
@@ -304,8 +304,8 @@ items:
     content:
       CSharp: NotAVariable = 10
 - id: Microsoft.CodeAnalysis.CandidateReason.NotInvocable
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: NotInvocable
   qualifiedName:
@@ -315,9 +315,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 85
   summary: >+
     The candidate symbol was used in a way that an invocable member (method, or variable of
@@ -328,8 +328,8 @@ items:
     content:
       CSharp: NotInvocable = 11
 - id: Microsoft.CodeAnalysis.CandidateReason.StaticInstanceMismatch
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: StaticInstanceMismatch
   qualifiedName:
@@ -339,9 +339,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 91
   summary: >+
     The candidate symbol must be an instance variable, but was used as static, or the
@@ -352,8 +352,8 @@ items:
     content:
       CSharp: StaticInstanceMismatch = 12
 - id: Microsoft.CodeAnalysis.CandidateReason.OverloadResolutionFailure
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: OverloadResolutionFailure
   qualifiedName:
@@ -363,9 +363,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 97
   summary: >+
     Overload resolution did not choose a method. The candidate symbols are the methods there
@@ -376,8 +376,8 @@ items:
     content:
       CSharp: OverloadResolutionFailure = 13
 - id: Microsoft.CodeAnalysis.CandidateReason.LateBound
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: LateBound
   qualifiedName:
@@ -387,9 +387,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 104
   summary: >+
     Method could not be selected statically.
@@ -402,8 +402,8 @@ items:
     content:
       CSharp: LateBound = 14
 - id: Microsoft.CodeAnalysis.CandidateReason.Ambiguous
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: Ambiguous
   qualifiedName:
@@ -413,9 +413,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 112
   summary: >+
     Multiple ambiguous symbols were available with the same name. This can occur if "using"
@@ -430,8 +430,8 @@ items:
     content:
       CSharp: Ambiguous = 15
 - id: Microsoft.CodeAnalysis.CandidateReason.MemberGroup
-  yaml: api\Microsoft.CodeAnalysis.CandidateReason.yaml
-  href: api\Microsoft.CodeAnalysis.CandidateReason
+  yaml: api/Microsoft.CodeAnalysis.CandidateReason.yaml
+  href: api/Microsoft.CodeAnalysis.CandidateReason
   name:
     CSharp: MemberGroup
   qualifiedName:
@@ -441,9 +441,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CandidateReason.cs
+    path: src/Compilers/Core/Portable/Compilation/CandidateReason.cs
     startLine: 118
   summary: >+
     CandidateSymbols are members of a group of results. This is used when there isn't a problem,

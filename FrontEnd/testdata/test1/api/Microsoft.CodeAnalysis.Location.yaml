@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Location
-yaml: api\Microsoft.CodeAnalysis.Location.yaml
-href: api\Microsoft.CodeAnalysis.Location
+yaml: api/Microsoft.CodeAnalysis.Location.yaml
+href: api/Microsoft.CodeAnalysis.Location
 name:
   CSharp: Location
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+  path: src/Compilers/Core/Portable/Diagnostic/Location.cs
   startLine: 11
 summary: >+
   A program location in source code.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Location.Kind
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: Kind
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 21
   summary: >+
     Location kind (None/SourceFile/MetadataFile).
@@ -52,10 +52,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.LocationKind
         name: LocationKind
-        href: api\Microsoft.CodeAnalysis.LocationKind
+        href: api/Microsoft.CodeAnalysis.LocationKind
 - id: Microsoft.CodeAnalysis.Location.get_Kind
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_Kind
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 21
 - id: Microsoft.CodeAnalysis.Location.IsInSource
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: IsInSource
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 26
   summary: >+
     Returns true if the location represents a specific location in a source code file.
@@ -97,8 +97,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInSource
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_IsInSource
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 26
 - id: Microsoft.CodeAnalysis.Location.IsInMetadata
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: IsInMetadata
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 31
   summary: >+
     Returns true if the location is in metadata.
@@ -140,8 +140,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Location.get_IsInMetadata
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_IsInMetadata
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 31
 - id: Microsoft.CodeAnalysis.Location.SourceTree
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: SourceTree
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 36
   summary: >+
     The syntax tree this location is located in or null if not in a syntax tree.
@@ -181,10 +181,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.Location.get_SourceTree
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_SourceTree
   qualifiedName:
@@ -193,13 +193,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 36
 - id: Microsoft.CodeAnalysis.Location.MetadataModule
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: MetadataModule
   qualifiedName:
@@ -209,9 +209,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 45
   summary: >+
     Returns the metadata module the location is associated with or null if the module is not available.
@@ -224,10 +224,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IModuleSymbol
         name: IModuleSymbol
-        href: api\Microsoft.CodeAnalysis.IModuleSymbol
+        href: api/Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.Location.get_MetadataModule
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_MetadataModule
   qualifiedName:
@@ -236,13 +236,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 45
 - id: Microsoft.CodeAnalysis.Location.SourceSpan
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: SourceSpan
   qualifiedName:
@@ -252,9 +252,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 53
   summary: >+
     The location within the syntax tree that this location is associated with.
@@ -267,10 +267,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.Location.get_SourceSpan
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_SourceSpan
   qualifiedName:
@@ -279,13 +279,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 53
 - id: Microsoft.CodeAnalysis.Location.GetLineSpan
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: GetLineSpan
   qualifiedName:
@@ -295,9 +295,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 65
   summary: >+
     Gets the location in terms of path, line and column.
@@ -308,10 +308,10 @@ items:
     parameters: []
     return:
       id: FileLinePositionSpan
-      description: "[Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    Returns an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan)) if the information is not available.\r\n    \r\n    The values are not affected by line mapping directives (#line in C# or #ExternalSource in VB)."
+      description: "[Microsoft.CodeAnalysis.FileLinePositionSpan](#/api/Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    Returns an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api/Microsoft.CodeAnalysis.FileLinePositionSpan)) if the information is not available.\r\n    \r\n    The values are not affected by line mapping directives (#line in C# or #ExternalSource in VB)."
 - id: Microsoft.CodeAnalysis.Location.GetMappedLineSpan
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: GetMappedLineSpan
   qualifiedName:
@@ -321,9 +321,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 78
   summary: >+
     Gets the location in terms of path, line and column after applying source line mapping directives
@@ -337,12 +337,12 @@ items:
     return:
       id: FileLinePositionSpan
       description: >-
-        [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains file, line and column information,
+        [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api/Microsoft.CodeAnalysis.FileLinePositionSpan) that contains file, line and column information,
 
-            or an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan)) if not available.
+            or an invalid span (see [Microsoft.CodeAnalysis.FileLinePositionSpan.IsValid](#/api/Microsoft.CodeAnalysis.FileLinePositionSpan)) if not available.
 - id: Microsoft.CodeAnalysis.Location.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: Equals
   qualifiedName:
@@ -352,9 +352,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 84
   syntax:
     content:
@@ -368,8 +368,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Location.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -379,9 +379,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 85
   syntax:
     content:
@@ -390,8 +390,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.Location.ToString
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: ToString
   qualifiedName:
@@ -401,9 +401,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 87
   syntax:
     content:
@@ -412,8 +412,8 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Location.op_Equality(Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.Location)
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -422,13 +422,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 114
 - id: Microsoft.CodeAnalysis.Location.op_Inequality(Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.Location)
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -437,13 +437,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 124
 - id: Microsoft.CodeAnalysis.Location.None
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: None
   qualifiedName:
@@ -453,9 +453,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 145
   summary: >+
     A location of kind LocationKind.None.
@@ -468,10 +468,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Location
         name: Location
-        href: api\Microsoft.CodeAnalysis.Location
+        href: api/Microsoft.CodeAnalysis.Location
 - id: Microsoft.CodeAnalysis.Location.get_None
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: get_None
   qualifiedName:
@@ -480,13 +480,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 145
 - id: Microsoft.CodeAnalysis.Location.Create(Microsoft.CodeAnalysis.SyntaxTree,Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: Create
   qualifiedName:
@@ -496,12 +496,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 150
   summary: >+
-    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api\Microsoft.CodeAnalysis.Location) for a span in a [Microsoft.CodeAnalysis.SyntaxTree](#/api\Microsoft.CodeAnalysis.SyntaxTree).
+    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api/Microsoft.CodeAnalysis.Location) for a span in a [Microsoft.CodeAnalysis.SyntaxTree](#/api/Microsoft.CodeAnalysis.SyntaxTree).
 
   syntax:
     content:
@@ -511,17 +511,17 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
     - id: textSpan
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Location
 - id: Microsoft.CodeAnalysis.Location.Create(System.String,Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
-  yaml: api\Microsoft.CodeAnalysis.Location.yaml
-  href: api\Microsoft.CodeAnalysis.Location
+  yaml: api/Microsoft.CodeAnalysis.Location.yaml
+  href: api/Microsoft.CodeAnalysis.Location
   name:
     CSharp: Create
   qualifiedName:
@@ -531,12 +531,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\Location.cs
+    path: src/Compilers/Core/Portable/Diagnostic/Location.cs
     startLine: 163
   summary: >+
-    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api\Microsoft.CodeAnalysis.Location) for a span in a file.
+    Creates an instance of a [Microsoft.CodeAnalysis.Location](#/api/Microsoft.CodeAnalysis.Location) for a span in a file.
 
   syntax:
     content:
@@ -551,11 +551,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     - id: lineSpan
       type:
         id: Microsoft.CodeAnalysis.Text.LinePositionSpan
         name: LinePositionSpan
-        href: api\Microsoft.CodeAnalysis.Text.LinePositionSpan
+        href: api/Microsoft.CodeAnalysis.Text.LinePositionSpan
     return:
       id: Location

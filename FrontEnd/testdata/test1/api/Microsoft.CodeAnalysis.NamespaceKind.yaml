@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.NamespaceKind
-yaml: api\Microsoft.CodeAnalysis.NamespaceKind.yaml
-href: api\Microsoft.CodeAnalysis.NamespaceKind
+yaml: api/Microsoft.CodeAnalysis.NamespaceKind.yaml
+href: api/Microsoft.CodeAnalysis.NamespaceKind
 name:
   CSharp: NamespaceKind
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\NamespaceKind.cs
+  path: src/Compilers/Core/Portable/Symbols/NamespaceKind.cs
   startLine: 9
 summary: >+
   Describes the kind of the namespace extent.
@@ -32,8 +32,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.NamespaceKind.Module
-  yaml: api\Microsoft.CodeAnalysis.NamespaceKind.yaml
-  href: api\Microsoft.CodeAnalysis.NamespaceKind
+  yaml: api/Microsoft.CodeAnalysis.NamespaceKind.yaml
+  href: api/Microsoft.CodeAnalysis.NamespaceKind
   name:
     CSharp: Module
   qualifiedName:
@@ -43,16 +43,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\NamespaceKind.cs
+    path: src/Compilers/Core/Portable/Symbols/NamespaceKind.cs
     startLine: 11
   syntax:
     content:
       CSharp: Module = 1
 - id: Microsoft.CodeAnalysis.NamespaceKind.Assembly
-  yaml: api\Microsoft.CodeAnalysis.NamespaceKind.yaml
-  href: api\Microsoft.CodeAnalysis.NamespaceKind
+  yaml: api/Microsoft.CodeAnalysis.NamespaceKind.yaml
+  href: api/Microsoft.CodeAnalysis.NamespaceKind
   name:
     CSharp: Assembly
   qualifiedName:
@@ -62,16 +62,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\NamespaceKind.cs
+    path: src/Compilers/Core/Portable/Symbols/NamespaceKind.cs
     startLine: 12
   syntax:
     content:
       CSharp: Assembly = 2
 - id: Microsoft.CodeAnalysis.NamespaceKind.Compilation
-  yaml: api\Microsoft.CodeAnalysis.NamespaceKind.yaml
-  href: api\Microsoft.CodeAnalysis.NamespaceKind
+  yaml: api/Microsoft.CodeAnalysis.NamespaceKind.yaml
+  href: api/Microsoft.CodeAnalysis.NamespaceKind
   name:
     CSharp: Compilation
   qualifiedName:
@@ -81,9 +81,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\NamespaceKind.cs
+    path: src/Compilers/Core/Portable/Symbols/NamespaceKind.cs
     startLine: 13
   syntax:
     content:

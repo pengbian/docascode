@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ILocalSymbol
-yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-href: api\Microsoft.CodeAnalysis.ILocalSymbol
+yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+href: api/Microsoft.CodeAnalysis.ILocalSymbol
 name:
   CSharp: ILocalSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
   startLine: 7
 summary: >+
   Represents a local variable in method body.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface ILocalSymbol
 items:
 - id: Microsoft.CodeAnalysis.ILocalSymbol.Type
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: Type
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 12
   summary: >+
     Gets the type of this local variable.
@@ -48,10 +48,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeSymbol
         name: ITypeSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_Type
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: get_Type
   qualifiedName:
@@ -60,13 +60,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 12
 - id: Microsoft.CodeAnalysis.ILocalSymbol.IsConst
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: IsConst
   qualifiedName:
@@ -76,9 +76,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 18
   summary: >+
     Returns true if this local variable was declared as "const" (i.e. is a constant declaration).
@@ -95,8 +95,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_IsConst
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: get_IsConst
   qualifiedName:
@@ -105,13 +105,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 18
 - id: Microsoft.CodeAnalysis.ILocalSymbol.HasConstantValue
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: HasConstantValue
   qualifiedName:
@@ -121,9 +121,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 24
   summary: >+
     Returns false if the local variable wasn't declared as "const", or constant value was omitted or erroneous.
@@ -140,8 +140,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_HasConstantValue
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: get_HasConstantValue
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 24
 - id: Microsoft.CodeAnalysis.ILocalSymbol.ConstantValue
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: ConstantValue
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 29
   summary: >+
     Gets the constant value of this local variable.
@@ -183,8 +183,8 @@ items:
         name: System.Object
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_ConstantValue
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: get_ConstantValue
   qualifiedName:
@@ -193,13 +193,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 29
 - id: Microsoft.CodeAnalysis.ILocalSymbol.IsFunctionValue
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: IsFunctionValue
   qualifiedName:
@@ -209,9 +209,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 32
   syntax:
     content:
@@ -223,8 +223,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ILocalSymbol.get_IsFunctionValue
-  yaml: api\Microsoft.CodeAnalysis.ILocalSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ILocalSymbol
+  yaml: api/Microsoft.CodeAnalysis.ILocalSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ILocalSymbol
   name:
     CSharp: get_IsFunctionValue
   qualifiedName:
@@ -233,7 +233,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ILocalSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ILocalSymbol.cs
     startLine: 32

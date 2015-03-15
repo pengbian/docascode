@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.IArrayTypeSymbol
-yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
 name:
   CSharp: IArrayTypeSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
   startLine: 10
 summary: >+
   Represents an array.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface IArrayTypeSymbol
 items:
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.Rank
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: Rank
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 16
   summary: >+
     Gets the number of dimensions of this array. A regular single-dimensional array
@@ -52,8 +52,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_Rank
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: get_Rank
   qualifiedName:
@@ -62,13 +62,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 16
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.ElementType
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: ElementType
   qualifiedName:
@@ -78,9 +78,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 21
   summary: >+
     Gets the type of the elements stored in the array.
@@ -93,10 +93,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeSymbol
         name: ITypeSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_ElementType
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: get_ElementType
   qualifiedName:
@@ -105,13 +105,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 21
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.CustomModifiers
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: CustomModifiers
   qualifiedName:
@@ -121,9 +121,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 27
   summary: >+
     Gets the list of custom modifiers associated with the array.
@@ -140,8 +140,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
         isExternal: true
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.get_CustomModifiers
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: get_CustomModifiers
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 27
 - id: Microsoft.CodeAnalysis.IArrayTypeSymbol.Equals(Microsoft.CodeAnalysis.IArrayTypeSymbol)
-  yaml: api\Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.IArrayTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
   name:
     CSharp: Equals
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IArrayTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IArrayTypeSymbol.cs
     startLine: 29
   syntax:
     content:
@@ -178,6 +178,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IArrayTypeSymbol
         name: IArrayTypeSymbol
-        href: api\Microsoft.CodeAnalysis.IArrayTypeSymbol
+        href: api/Microsoft.CodeAnalysis.IArrayTypeSymbol
     return:
       id: Boolean

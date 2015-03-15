@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.AssemblyIdentity
-yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+href: api/Microsoft.CodeAnalysis.AssemblyIdentity
 name:
   CSharp: AssemblyIdentity
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+  path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
   startLine: 18
 summary: >+
   Represents an identity of an assembly as defined by CLI metadata specification.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.#ctor(System.String,System.Version,System.String,System.Collections.Immutable.ImmutableArray{System.Byte},System.Boolean,System.Boolean,System.Reflection.AssemblyContentType)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: AssemblyIdentity(System.String,System.Version,System.String,System.Collections.Immutable.ImmutableArray{System.Byte},System.Boolean,System.Boolean,System.Reflection.AssemblyContentType)
   qualifiedName:
@@ -37,12 +37,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 68
   summary: >+
-    Constructs an [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) from its constituent parts.
+    Constructs an [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) from its constituent parts.
 
   syntax:
     content:
@@ -91,8 +91,8 @@ items:
         isExternal: true
       description: Specifies the binding model for how this object will be treated in comparisons.
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Name
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: Name
   qualifiedName:
@@ -102,9 +102,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 222
   summary: >+
     The simple name of the assembly.
@@ -119,8 +119,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Name
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_Name
   qualifiedName:
@@ -129,13 +129,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 222
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Version
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: Version
   qualifiedName:
@@ -145,9 +145,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 227
   summary: >+
     The version of the assembly.
@@ -162,8 +162,8 @@ items:
         name: System.Version
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Version
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_Version
   qualifiedName:
@@ -172,13 +172,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 227
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.CultureName
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: CultureName
   qualifiedName:
@@ -188,9 +188,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 232
   summary: >+
     The culture name of the assembly, or empty if the culture is neutral.
@@ -205,8 +205,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_CultureName
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_CultureName
   qualifiedName:
@@ -215,13 +215,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 232
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Flags
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: Flags
   qualifiedName:
@@ -231,9 +231,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 237
   summary: >+
     The AssemblyNameFlags.
@@ -248,8 +248,8 @@ items:
         name: System.Reflection.AssemblyNameFlags
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_Flags
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_Flags
   qualifiedName:
@@ -258,13 +258,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 239
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.ContentType
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: ContentType
   qualifiedName:
@@ -274,9 +274,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 250
   summary: >+
     Specifies assembly binding model for the assembly definition or reference;
@@ -293,8 +293,8 @@ items:
         name: System.Reflection.AssemblyContentType
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_ContentType
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_ContentType
   qualifiedName:
@@ -303,13 +303,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 252
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.HasPublicKey
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: HasPublicKey
   qualifiedName:
@@ -319,9 +319,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 258
   summary: >+
     True if the assembly identity includes full public key.
@@ -336,8 +336,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_HasPublicKey
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_HasPublicKey
   qualifiedName:
@@ -346,13 +346,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 260
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.PublicKey
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: PublicKey
   qualifiedName:
@@ -362,9 +362,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 266
   summary: >+
     Full public key or empty.
@@ -379,8 +379,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{System.Byte}
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_PublicKey
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_PublicKey
   qualifiedName:
@@ -389,13 +389,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 268
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.PublicKeyToken
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: PublicKeyToken
   qualifiedName:
@@ -405,9 +405,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 274
   summary: >+
     Low 8 bytes of SHA1 hash of the public key, or empty.
@@ -422,8 +422,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{System.Byte}
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_PublicKeyToken
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_PublicKeyToken
   qualifiedName:
@@ -432,13 +432,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 276
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.IsStrongName
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: IsStrongName
   qualifiedName:
@@ -448,9 +448,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 290
   summary: >+
     True if the assembly identity has a strong name, ie. either a full public key or a token.
@@ -465,8 +465,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_IsStrongName
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_IsStrongName
   qualifiedName:
@@ -475,13 +475,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 292
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.IsRetargetable
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: IsRetargetable
   qualifiedName:
@@ -491,9 +491,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 304
   summary: >+
     Gets the value which specifies if the assembly is retargetable.
@@ -508,8 +508,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.get_IsRetargetable
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: get_IsRetargetable
   qualifiedName:
@@ -518,13 +518,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 306
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.op_Equality(Microsoft.CodeAnalysis.AssemblyIdentity,Microsoft.CodeAnalysis.AssemblyIdentity)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -533,16 +533,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 322
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) instances are equal.
+    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) instances are equal.
 
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.op_Inequality(Microsoft.CodeAnalysis.AssemblyIdentity,Microsoft.CodeAnalysis.AssemblyIdentity)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -551,16 +551,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 332
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api\Microsoft.CodeAnalysis.AssemblyIdentity) instances are not equal.
+    Determines whether two [Microsoft.CodeAnalysis.AssemblyIdentity](#/api/Microsoft.CodeAnalysis.AssemblyIdentity) instances are not equal.
 
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Equals(Microsoft.CodeAnalysis.AssemblyIdentity)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: Equals
   qualifiedName:
@@ -570,9 +570,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 341
   summary: >+
     Determines whether the specified instance is equal to the current instance.
@@ -585,13 +585,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentity
         name: AssemblyIdentity
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentity
       description: The object to be compared with the current instance.
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: Equals
   qualifiedName:
@@ -601,9 +601,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 352
   summary: >+
     Determines whether the specified instance is equal to the current instance.
@@ -621,8 +621,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -632,9 +632,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 361
   summary: >+
     Returns the hash code for the current instance.
@@ -646,8 +646,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.FromAssemblyDefinition(System.Reflection.Assembly)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: FromAssemblyDefinition
   qualifiedName:
@@ -657,9 +657,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.cs
     startLine: 463
   summary: >+
     Retrieves assembly definition identity from given runtime assembly.
@@ -678,8 +678,8 @@ items:
       id: AssemblyIdentity
       description: Assembly definition identity.
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.GetDisplayName(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: GetDisplayName
   qualifiedName:
@@ -689,9 +689,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.DisplayName.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 34
   summary: >+
     Returns the display name of the assembly identity.
@@ -710,8 +710,8 @@ items:
       id: String
       description: The display name.
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.ToString
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: ToString
   qualifiedName:
@@ -721,9 +721,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.DisplayName.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 52
   summary: >+
     Returns the display name of the current instance.
@@ -735,8 +735,8 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.TryParseDisplayName(System.String,Microsoft.CodeAnalysis.AssemblyIdentity@)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: TryParseDisplayName
   qualifiedName:
@@ -746,9 +746,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.DisplayName.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 129
   syntax:
     content:
@@ -763,12 +763,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentity
         name: AssemblyIdentity
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentity
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.AssemblyIdentity.TryParseDisplayName(System.String,Microsoft.CodeAnalysis.AssemblyIdentity@,Microsoft.CodeAnalysis.AssemblyIdentityParts@)
-  yaml: api\Microsoft.CodeAnalysis.AssemblyIdentity.yaml
-  href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+  yaml: api/Microsoft.CodeAnalysis.AssemblyIdentity.yaml
+  href: api/Microsoft.CodeAnalysis.AssemblyIdentity
   name:
     CSharp: TryParseDisplayName
   qualifiedName:
@@ -778,9 +778,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\AssemblyIdentity.DisplayName.cs
+    path: src/Compilers/Core/Portable/MetadataReference/AssemblyIdentity.DisplayName.cs
     startLine: 157
   summary: >+
     Parses display name filling defaults for any basic properties that are missing.
@@ -799,13 +799,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentity
         name: AssemblyIdentity
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentity
       description: A full assembly identity.
     - id: parts
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentityParts
         name: AssemblyIdentityParts
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentityParts
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentityParts
       description: "Parts of the assembly identity that were specified in the display name, \r\n    or 0 if the parsing failed."
     return:
       id: Boolean

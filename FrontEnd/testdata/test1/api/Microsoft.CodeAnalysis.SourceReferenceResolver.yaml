@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SourceReferenceResolver
-yaml: api\Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
-href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+yaml: api/Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
+href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
 name:
   CSharp: SourceReferenceResolver
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+  path: src/Compilers/Core/Portable/Compilation/SourceReferenceResolver.cs
   startLine: 10
 summary: >+
   Resolves references to source documents specified in the source.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SourceReferenceResolver.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
-  href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+  yaml: api/Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
+  href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
   name:
     CSharp: Equals
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+    path: src/Compilers/Core/Portable/Compilation/SourceReferenceResolver.cs
     startLine: 16
   syntax:
     content:
@@ -53,8 +53,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SourceReferenceResolver.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
-  href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+  yaml: api/Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
+  href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -64,9 +64,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+    path: src/Compilers/Core/Portable/Compilation/SourceReferenceResolver.cs
     startLine: 17
   syntax:
     content:
@@ -75,8 +75,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SourceReferenceResolver.NormalizePath(System.String,System.String)
-  yaml: api\Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
-  href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+  yaml: api/Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
+  href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
   name:
     CSharp: NormalizePath
   qualifiedName:
@@ -86,9 +86,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+    path: src/Compilers/Core/Portable/Compilation/SourceReferenceResolver.cs
     startLine: 25
   summary: >+
     Normalizes specified source path with respect to base file path.
@@ -113,8 +113,8 @@ items:
       id: String
       description: Normalized path, or null if  can't be normalized. The resulting path doesn't need to exist.
 - id: Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)
-  yaml: api\Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
-  href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+  yaml: api/Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
+  href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
   name:
     CSharp: ResolveReference
   qualifiedName:
@@ -124,9 +124,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+    path: src/Compilers/Core/Portable/Compilation/SourceReferenceResolver.cs
     startLine: 33
   summary: >+
     Resolves specified path with respect to base file path.
@@ -151,8 +151,8 @@ items:
       id: String
       description: Normalized path, or null if the file can't be resolved.
 - id: Microsoft.CodeAnalysis.SourceReferenceResolver.OpenRead(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
-  href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+  yaml: api/Microsoft.CodeAnalysis.SourceReferenceResolver.yaml
+  href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
   name:
     CSharp: OpenRead
   qualifiedName:
@@ -162,9 +162,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SourceReferenceResolver.cs
+    path: src/Compilers/Core/Portable/Compilation/SourceReferenceResolver.cs
     startLine: 42
   summary: >+
     Opens a [System.IO.Stream](#) that allows reading the content of the specified file.
@@ -178,6 +178,6 @@ items:
         id: System.String
         name: System.String
         isExternal: true
-      description: Path returned by [Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)](#/api\Microsoft.CodeAnalysis.SourceReferenceResolver).
+      description: Path returned by [Microsoft.CodeAnalysis.SourceReferenceResolver.ResolveReference(System.String,System.String)](#/api/Microsoft.CodeAnalysis.SourceReferenceResolver).
     return:
       id: Stream

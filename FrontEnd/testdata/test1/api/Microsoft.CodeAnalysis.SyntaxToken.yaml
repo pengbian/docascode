@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxToken
-yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxToken
+yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxToken
 name:
   CSharp: SyntaxToken
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
   startLine: 17
 summary: >+
   Represents a token in the syntax tree. This is the language agnostic equivalent of [Microsoft.CodeAnalysis.CSharp.SyntaxToken](#) and [Microsoft.CodeAnalysis.VisualBasic.SyntaxToken](#).
@@ -29,8 +29,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxToken.RawKind
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: RawKind
   qualifiedName:
@@ -40,9 +40,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 53
   summary: >+
     An integer representing the language specific kind of this token.
@@ -57,8 +57,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_RawKind
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_RawKind
   qualifiedName:
@@ -67,13 +67,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 55
 - id: Microsoft.CodeAnalysis.SyntaxToken.Language
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Language
   qualifiedName:
@@ -83,9 +83,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 61
   summary: >+
     The language name that this token is syntax of.
@@ -100,8 +100,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Language
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_Language
   qualifiedName:
@@ -110,13 +110,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 63
 - id: Microsoft.CodeAnalysis.SyntaxToken.Parent
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Parent
   qualifiedName:
@@ -126,9 +126,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 90
   summary: >+
     The node that contains this token in its Children collection.
@@ -141,10 +141,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Parent
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_Parent
   qualifiedName:
@@ -153,13 +153,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 92
 - id: Microsoft.CodeAnalysis.SyntaxToken.Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Span
   qualifiedName:
@@ -169,9 +169,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 135
   summary: >+
     The absolute span of this token in characters, not including its leading and trailing trivia.
@@ -184,10 +184,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_Span
   qualifiedName:
@@ -196,13 +196,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 137
 - id: Microsoft.CodeAnalysis.SyntaxToken.SpanStart
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: SpanStart
   qualifiedName:
@@ -212,12 +212,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 151
   summary: >+
-    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api\Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxToken.Span](#/api\Microsoft.CodeAnalysis.SyntaxToken).
+    Same as accessing [Microsoft.CodeAnalysis.Text.TextSpan.Start](#/api/Microsoft.CodeAnalysis.Text.TextSpan) on [Microsoft.CodeAnalysis.SyntaxToken.Span](#/api/Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -229,8 +229,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_SpanStart
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_SpanStart
   qualifiedName:
@@ -239,13 +239,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 153
 - id: Microsoft.CodeAnalysis.SyntaxToken.FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: FullSpan
   qualifiedName:
@@ -255,9 +255,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 159
   summary: >+
     The absolute span of this token in characters, including its leading and trailing trivia.
@@ -270,10 +270,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_FullSpan
   qualifiedName:
@@ -282,13 +282,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 161
 - id: Microsoft.CodeAnalysis.SyntaxToken.IsMissing
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: IsMissing
   qualifiedName:
@@ -298,9 +298,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 169
   summary: >+
     Determines whether this token represents a language construct that was actually parsed from source code.
@@ -319,8 +319,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_IsMissing
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_IsMissing
   qualifiedName:
@@ -329,13 +329,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 171
 - id: Microsoft.CodeAnalysis.SyntaxToken.Value
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Value
   qualifiedName:
@@ -345,9 +345,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 178
   summary: >+
     Returns the value of the token. For example, if the token represents an integer literal, then this property
@@ -364,8 +364,8 @@ items:
         name: System.Object
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Value
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_Value
   qualifiedName:
@@ -374,13 +374,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 180
 - id: Microsoft.CodeAnalysis.SyntaxToken.ValueText
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: ValueText
   qualifiedName:
@@ -390,9 +390,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 187
   summary: >+
     Returns the text representation of the value of the token. For example, if the token represents an integer
@@ -409,8 +409,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ValueText
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_ValueText
   qualifiedName:
@@ -419,13 +419,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 189
 - id: Microsoft.CodeAnalysis.SyntaxToken.Text
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Text
   qualifiedName:
@@ -435,9 +435,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 192
   syntax:
     content:
@@ -449,8 +449,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_Text
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_Text
   qualifiedName:
@@ -459,13 +459,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 194
 - id: Microsoft.CodeAnalysis.SyntaxToken.ToString
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: ToString
   qualifiedName:
@@ -475,9 +475,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 202
   summary: >+
     Returns the string representation of this token, not including its leading and trailing trivia.
@@ -490,8 +490,8 @@ items:
       id: String
       description: The string representation of this token, not including its leading and trailing trivia.
 - id: Microsoft.CodeAnalysis.SyntaxToken.ToFullString
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: ToFullString
   qualifiedName:
@@ -501,9 +501,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 212
   summary: >+
     Returns the full string representation of this token including its leading and trailing trivia.
@@ -516,8 +516,8 @@ items:
       id: String
       description: The full string representation of this token including its leading and trailing trivia.
 - id: Microsoft.CodeAnalysis.SyntaxToken.WriteTo(System.IO.TextWriter)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WriteTo
   qualifiedName:
@@ -527,9 +527,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 221
   summary: >+
     Writes the full text of this token to the specified TextWriter
@@ -546,8 +546,8 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.SyntaxToken.HasLeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: HasLeadingTrivia
   qualifiedName:
@@ -557,9 +557,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 243
   summary: >+
     Determines whether this token has any leading trivia.
@@ -574,8 +574,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasLeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_HasLeadingTrivia
   qualifiedName:
@@ -584,13 +584,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 245
 - id: Microsoft.CodeAnalysis.SyntaxToken.HasTrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: HasTrailingTrivia
   qualifiedName:
@@ -600,9 +600,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 251
   summary: >+
     Determines whether this token has any trailing trivia.
@@ -617,8 +617,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasTrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_HasTrailingTrivia
   qualifiedName:
@@ -627,13 +627,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 253
 - id: Microsoft.CodeAnalysis.SyntaxToken.ContainsDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: ContainsDiagnostics
   qualifiedName:
@@ -643,9 +643,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 275
   summary: >+
     Determines whether this token or any of its descendant trivia have any diagnostics on them.
@@ -660,8 +660,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_ContainsDiagnostics
   qualifiedName:
@@ -670,13 +670,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 277
 - id: Microsoft.CodeAnalysis.SyntaxToken.ContainsDirectives
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: ContainsDirectives
   qualifiedName:
@@ -686,9 +686,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 283
   summary: >+
     Determines whether this token has any descendant preprocessor directives.
@@ -703,8 +703,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsDirectives
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_ContainsDirectives
   qualifiedName:
@@ -713,13 +713,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 285
 - id: Microsoft.CodeAnalysis.SyntaxToken.IsPartOfStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: IsPartOfStructuredTrivia
   qualifiedName:
@@ -729,9 +729,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 291
   summary: >+
     Determines whether this token is a descendant of a structured trivia.
@@ -743,8 +743,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.HasStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: HasStructuredTrivia
   qualifiedName:
@@ -754,9 +754,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 299
   summary: >+
     Determines whether any of this token's trivia is structured.
@@ -771,8 +771,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_HasStructuredTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_HasStructuredTrivia
   qualifiedName:
@@ -781,13 +781,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 301
 - id: Microsoft.CodeAnalysis.SyntaxToken.ContainsAnnotations
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: ContainsAnnotations
   qualifiedName:
@@ -797,9 +797,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 308
   summary: >+
     True if this token or its trivia has any annotations.
@@ -814,8 +814,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_ContainsAnnotations
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_ContainsAnnotations
   qualifiedName:
@@ -824,13 +824,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 310
 - id: Microsoft.CodeAnalysis.SyntaxToken.HasAnnotations(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: HasAnnotations
   qualifiedName:
@@ -840,9 +840,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 316
   summary: >+
     True if this token has annotations of the specified annotation kind.
@@ -859,8 +859,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.HasAnnotations(System.String[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: HasAnnotations
   qualifiedName:
@@ -870,9 +870,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 324
   summary: >+
     True if this token has annotations of the specified annotation kinds.
@@ -889,8 +889,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.HasAnnotation(Microsoft.CodeAnalysis.SyntaxAnnotation)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: HasAnnotation
   qualifiedName:
@@ -900,9 +900,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 332
   summary: >+
     True if this token has the specified annotation.
@@ -915,12 +915,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxAnnotation
         name: SyntaxAnnotation
-        href: api\Microsoft.CodeAnalysis.SyntaxAnnotation
+        href: api/Microsoft.CodeAnalysis.SyntaxAnnotation
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetAnnotations(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetAnnotations
   qualifiedName:
@@ -930,9 +930,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 340
   summary: >+
     Gets all the annotations of the specified annotation kind.
@@ -949,8 +949,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetAnnotations(System.String[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetAnnotations
   qualifiedName:
@@ -960,9 +960,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 350
   summary: >+
     Gets all the annotations of the specified annotation kind.
@@ -979,8 +979,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetAnnotations(System.Collections.Generic.IEnumerable{System.String})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetAnnotations
   qualifiedName:
@@ -990,9 +990,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 358
   summary: >+
     Gets all the annotations of the specified annotation kind.
@@ -1009,8 +1009,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithAdditionalAnnotations(Microsoft.CodeAnalysis.SyntaxAnnotation[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithAdditionalAnnotations
   qualifiedName:
@@ -1020,9 +1020,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 369
   summary: >+
     Adds this annotation to a given syntax token, creating a new syntax token of the same type with the
@@ -1041,8 +1041,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithAdditionalAnnotations(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithAdditionalAnnotations
   qualifiedName:
@@ -1052,9 +1052,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 378
   summary: >+
     Adds this annotation to a given syntax token, creating a new syntax token of the same type with the
@@ -1073,8 +1073,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithoutAnnotations(Microsoft.CodeAnalysis.SyntaxAnnotation[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
@@ -1084,9 +1084,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 399
   summary: >+
     Creates a new syntax token identical to this one without the specified annotations.
@@ -1103,8 +1103,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithoutAnnotations(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxAnnotation})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
@@ -1114,9 +1114,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 407
   summary: >+
     Creates a new syntax token identical to this one without the specified annotations.
@@ -1133,8 +1133,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithoutAnnotations(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithoutAnnotations
   qualifiedName:
@@ -1144,9 +1144,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 429
   summary: >+
     Creates a new syntax token identical to this one without annotations of the specified kind.
@@ -1163,8 +1163,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.CopyAnnotationsTo(Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: CopyAnnotationsTo
   qualifiedName:
@@ -1174,9 +1174,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 452
   summary: >+
     Copies all SyntaxAnnotations, if any, from this SyntaxToken instance and attaches them to a new instance based on .
@@ -1189,12 +1189,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.LeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: LeadingTrivia
   qualifiedName:
@@ -1204,9 +1204,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 481
   summary: >+
     The list of trivia that appear before this token in the source code.
@@ -1219,10 +1219,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_LeadingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_LeadingTrivia
   qualifiedName:
@@ -1231,13 +1231,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 483
 - id: Microsoft.CodeAnalysis.SyntaxToken.TrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: TrailingTrivia
   qualifiedName:
@@ -1247,9 +1247,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 495
   summary: >+
     The list of trivia that appear after this token in the source code and are attached to this token or any of
@@ -1264,10 +1264,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_TrailingTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_TrailingTrivia
   qualifiedName:
@@ -1276,13 +1276,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 497
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithTriviaFrom(Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithTriviaFrom
   qualifiedName:
@@ -1292,9 +1292,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 528
   summary: >+
     Creates a new tokne from this token with the leading and trailing trivia from the specified token.
@@ -1307,12 +1307,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithLeadingTrivia(Microsoft.CodeAnalysis.SyntaxTriviaList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
@@ -1322,9 +1322,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 536
   summary: >+
     Creates a new token from this token with the leading trivia specified.
@@ -1337,12 +1337,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithLeadingTrivia(Microsoft.CodeAnalysis.SyntaxTrivia[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
@@ -1352,9 +1352,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 544
   summary: >+
     Creates a new token from this token with the leading trivia specified..
@@ -1371,8 +1371,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithLeadingTrivia(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
@@ -1382,9 +1382,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 552
   summary: >+
     Creates a new token from this token with the leading trivia specified..
@@ -1401,8 +1401,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithTrailingTrivia(Microsoft.CodeAnalysis.SyntaxTriviaList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
@@ -1412,9 +1412,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 564
   summary: >+
     Creates a new token from this token with the trailing trivia specified.
@@ -1427,12 +1427,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithTrailingTrivia(Microsoft.CodeAnalysis.SyntaxTrivia[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
@@ -1442,9 +1442,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 572
   summary: >+
     Creates a new token from this token with the trailing trivia specified.
@@ -1461,8 +1461,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.WithTrailingTrivia(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
@@ -1472,9 +1472,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 580
   summary: >+
     Creates a new token from this token with the trailing trivia specified.
@@ -1491,8 +1491,8 @@ items:
     return:
       id: SyntaxToken
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetAllTrivia
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetAllTrivia
   qualifiedName:
@@ -1502,9 +1502,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 592
   summary: >+
     Gets a list of all the trivia (both leading and trailing) for this token.
@@ -1516,8 +1516,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxToken.op_Equality(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -1526,16 +1526,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 616
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken)s are equal.
+    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken)s are equal.
 
 - id: Microsoft.CodeAnalysis.SyntaxToken.op_Inequality(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -1544,16 +1544,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 624
   summary: >+
-    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken)s are unequal.
+    Determines whether two [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken)s are unequal.
 
 - id: Microsoft.CodeAnalysis.SyntaxToken.Equals(Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Equals
   qualifiedName:
@@ -1563,14 +1563,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 633
   summary: >+
-    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken) is equal to this
+    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken) is equal to this
 
-    [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
+    [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -1580,12 +1580,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: Equals
   qualifiedName:
@@ -1595,14 +1595,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 645
   summary: >+
-    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken) is equal to this
+    Determines whether the supplied [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken) is equal to this
 
-    [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
+    [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -1616,8 +1616,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -1627,12 +1627,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 653
   summary: >+
-    Serves as hash function for [Microsoft.CodeAnalysis.SyntaxToken](#/api\Microsoft.CodeAnalysis.SyntaxToken).
+    Serves as hash function for [Microsoft.CodeAnalysis.SyntaxToken](#/api/Microsoft.CodeAnalysis.SyntaxToken).
 
   syntax:
     content:
@@ -1641,8 +1641,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetNextToken(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetNextToken
   qualifiedName:
@@ -1652,9 +1652,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 662
   summary: >+
     Gets the token that follows this token in the syntax tree.
@@ -1687,8 +1687,8 @@ items:
       id: SyntaxToken
       description: The token that follows this token in the syntax tree.
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetPreviousToken(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetPreviousToken
   qualifiedName:
@@ -1698,9 +1698,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 693
   summary: >+
     Gets the token that precedes this token in the syntax tree.
@@ -1733,8 +1733,8 @@ items:
       id: SyntaxToken
       description: The next token that follows this token in the syntax tree.
 - id: Microsoft.CodeAnalysis.SyntaxToken.SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: SyntaxTree
   qualifiedName:
@@ -1744,9 +1744,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 718
   summary: >+
     The SyntaxTree that contains this token.
@@ -1759,10 +1759,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxToken.get_SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
@@ -1771,13 +1771,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 720
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetLocation
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetLocation
   qualifiedName:
@@ -1787,9 +1787,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 730
   summary: >+
     Gets the location for this token.
@@ -1801,8 +1801,8 @@ items:
     return:
       id: Location
 - id: Microsoft.CodeAnalysis.SyntaxToken.GetDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -1812,9 +1812,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 742
   summary: >+
     Gets a list of all the diagnostics associated with this token and any related trivia.
@@ -1830,8 +1830,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxToken.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxToken.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxToken
+  yaml: api/Microsoft.CodeAnalysis.SyntaxToken.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxToken
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
@@ -1841,9 +1841,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxToken.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxToken.cs
     startLine: 752
   summary: >+
     Determines if this token is equivalent to the specified token.
@@ -1856,6 +1856,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: Boolean

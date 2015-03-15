@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ParseOptions
-yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-href: api\Microsoft.CodeAnalysis.ParseOptions
+yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+href: api/Microsoft.CodeAnalysis.ParseOptions
 name:
   CSharp: ParseOptions
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+  path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
   startLine: 14
 summary: >+
   Represents parse options common to C# and VB.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ParseOptions.Kind
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: Kind
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 19
   summary: >+
     Specifies whether to parse as regular code files, script files or interactive code.
@@ -52,10 +52,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SourceCodeKind
         name: SourceCodeKind
-        href: api\Microsoft.CodeAnalysis.SourceCodeKind
+        href: api/Microsoft.CodeAnalysis.SourceCodeKind
 - id: Microsoft.CodeAnalysis.ParseOptions.get_Kind
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: get_Kind
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 19
 - id: Microsoft.CodeAnalysis.ParseOptions.DocumentationMode
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: DocumentationMode
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 25
   summary: >+
     Gets a value indicating whether the documentation comments are parsed.
@@ -95,10 +95,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentationMode
         name: DocumentationMode
-        href: api\Microsoft.CodeAnalysis.DocumentationMode
+        href: api/Microsoft.CodeAnalysis.DocumentationMode
 - id: Microsoft.CodeAnalysis.ParseOptions.get_DocumentationMode
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: get_DocumentationMode
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 25
 - id: Microsoft.CodeAnalysis.ParseOptions.WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: WithKind
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 36
   summary: >+
     Creates a new options instance with the specified source code kind.
@@ -138,12 +138,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SourceCodeKind
         name: SourceCodeKind
-        href: api\Microsoft.CodeAnalysis.SourceCodeKind
+        href: api/Microsoft.CodeAnalysis.SourceCodeKind
     return:
       id: ParseOptions
 - id: Microsoft.CodeAnalysis.ParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: WithDocumentationMode
   qualifiedName:
@@ -153,9 +153,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 46
   summary: >+
     Creates a new options instance with the specified documentation mode.
@@ -168,12 +168,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentationMode
         name: DocumentationMode
-        href: api\Microsoft.CodeAnalysis.DocumentationMode
+        href: api/Microsoft.CodeAnalysis.DocumentationMode
     return:
       id: ParseOptions
 - id: Microsoft.CodeAnalysis.ParseOptions.WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: WithFeatures
   qualifiedName:
@@ -183,9 +183,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 56
   summary: >+
     Enable some experimental language features for testing.
@@ -202,8 +202,8 @@ items:
     return:
       id: ParseOptions
 - id: Microsoft.CodeAnalysis.ParseOptions.Features
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: Features
   qualifiedName:
@@ -213,9 +213,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 66
   summary: >+
     Returns the experimental features.
@@ -230,8 +230,8 @@ items:
         name: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ParseOptions.get_Features
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: get_Features
   qualifiedName:
@@ -240,13 +240,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 68
 - id: Microsoft.CodeAnalysis.ParseOptions.PreprocessorSymbolNames
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: PreprocessorSymbolNames
   qualifiedName:
@@ -256,9 +256,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 74
   summary: >+
     Names of defined preprocessor symbols.
@@ -273,8 +273,8 @@ items:
         name: System.Collections.Generic.IEnumerable{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ParseOptions.get_PreprocessorSymbolNames
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: get_PreprocessorSymbolNames
   qualifiedName:
@@ -283,13 +283,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 74
 - id: Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: Equals
   qualifiedName:
@@ -299,9 +299,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 76
   syntax:
     content:
@@ -315,8 +315,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ParseOptions.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -326,9 +326,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 92
   syntax:
     content:
@@ -337,8 +337,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.ParseOptions.op_Equality(Microsoft.CodeAnalysis.ParseOptions,Microsoft.CodeAnalysis.ParseOptions)
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -347,13 +347,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 115
 - id: Microsoft.CodeAnalysis.ParseOptions.op_Inequality(Microsoft.CodeAnalysis.ParseOptions,Microsoft.CodeAnalysis.ParseOptions)
-  yaml: api\Microsoft.CodeAnalysis.ParseOptions.yaml
-  href: api\Microsoft.CodeAnalysis.ParseOptions
+  yaml: api/Microsoft.CodeAnalysis.ParseOptions.yaml
+  href: api/Microsoft.CodeAnalysis.ParseOptions
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -362,7 +362,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\ParseOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/ParseOptions.cs
     startLine: 120

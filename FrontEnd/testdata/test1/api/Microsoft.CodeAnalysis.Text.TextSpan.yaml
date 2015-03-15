@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Text.TextSpan
-yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-href: api\Microsoft.CodeAnalysis.Text.TextSpan
+yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+href: api/Microsoft.CodeAnalysis.Text.TextSpan
 name:
   CSharp: TextSpan
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Text\TextSpan.cs
+  path: src/Compilers/Core/Portable/Text/TextSpan.cs
   startLine: 11
 summary: >+
   Immutable abstract representation of a span of text.  For example, in an error diagnostic that reports a
@@ -31,8 +31,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Text.TextSpan.#ctor(System.Int32,System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: TextSpan(System.Int32,System.Int32)
   qualifiedName:
@@ -42,9 +42,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 20
   summary: >+
     Creates a TextSpan instance beginning with the position Start and having the Length
@@ -66,8 +66,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Start
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Start
   qualifiedName:
@@ -77,9 +77,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 39
   summary: >+
     Start point of the Span.
@@ -94,8 +94,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Start
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: get_Start
   qualifiedName:
@@ -104,13 +104,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 41
 - id: Microsoft.CodeAnalysis.Text.TextSpan.End
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: End
   qualifiedName:
@@ -120,9 +120,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 50
   summary: >+
     End of the span.
@@ -137,8 +137,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_End
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: get_End
   qualifiedName:
@@ -147,13 +147,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 52
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Length
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Length
   qualifiedName:
@@ -163,9 +163,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 61
   summary: >+
     Length of the span.
@@ -180,8 +180,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_Length
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: get_Length
   qualifiedName:
@@ -190,13 +190,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 63
 - id: Microsoft.CodeAnalysis.Text.TextSpan.IsEmpty
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: IsEmpty
   qualifiedName:
@@ -206,9 +206,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 72
   summary: >+
     Determines whether or not the span is empty.
@@ -223,8 +223,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.Text.TextSpan.get_IsEmpty
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: get_IsEmpty
   qualifiedName:
@@ -233,13 +233,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 74
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Contains(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Contains
   qualifiedName:
@@ -249,9 +249,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 90
   summary: >+
     Determines whether the position lies within the span.
@@ -270,8 +270,8 @@ items:
       id: Boolean
       description: "true if the position is greater than or equal to Start and strictly less \r\n    than End, otherwise false."
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Contains(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Contains
   qualifiedName:
@@ -281,9 +281,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 104
   summary: >+
     Determines whether  falls completely within this span.
@@ -296,14 +296,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Boolean
       description: true if the specified span falls completely within this span, otherwise false.
 - id: Microsoft.CodeAnalysis.Text.TextSpan.OverlapsWith(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: OverlapsWith
   qualifiedName:
@@ -313,9 +313,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 120
   summary: >+
     Determines whether  overlaps this span. Two spans are considered to overlap
@@ -332,14 +332,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Boolean
       description: true if the spans overlap, otherwise false.
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Overlap(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Overlap
   qualifiedName:
@@ -349,9 +349,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 137
   summary: >+
     Returns the overlap with the given span, or null if there is no overlap.
@@ -364,14 +364,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Nullable
       description: The overlap of the spans, or null if the overlap is empty.
 - id: Microsoft.CodeAnalysis.Text.TextSpan.IntersectsWith(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: IntersectsWith
   qualifiedName:
@@ -381,9 +381,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 158
   summary: >+
     Determines whether  intersects this span. Two spans are considered to
@@ -400,14 +400,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Boolean
       description: true if the spans intersect, otherwise false.
 - id: Microsoft.CodeAnalysis.Text.TextSpan.IntersectsWith(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: IntersectsWith
   qualifiedName:
@@ -417,9 +417,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 174
   summary: >+
     Determines whether  intersects this span.
@@ -442,8 +442,8 @@ items:
       id: Boolean
       description: true if the position intersects, otherwise false.
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Intersection(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Intersection
   qualifiedName:
@@ -453,9 +453,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 188
   summary: >+
     Returns the intersection with the given span, or null if there is no intersection.
@@ -468,14 +468,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: The span to check.
     return:
       id: Nullable
       description: The intersection of the spans, or null if the intersection is empty.
 - id: Microsoft.CodeAnalysis.Text.TextSpan.FromBounds(System.Int32,System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: FromBounds
   qualifiedName:
@@ -485,12 +485,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 202
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) from  and  positions as opposed to a position and length.
+    Creates a new [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan) from  and  positions as opposed to a position and length.
 
   syntax:
     content:
@@ -509,8 +509,8 @@ items:
     return:
       id: TextSpan
 - id: Microsoft.CodeAnalysis.Text.TextSpan.op_Equality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -519,16 +519,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 220
   summary: >+
-    Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) are the same.
+    Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan) are the same.
 
 - id: Microsoft.CodeAnalysis.Text.TextSpan.op_Inequality(Microsoft.CodeAnalysis.Text.TextSpan,Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -537,16 +537,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 228
   summary: >+
-    Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) are different.
+    Determines if two instances of [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan) are different.
 
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Equals(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Equals
   qualifiedName:
@@ -556,12 +556,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 236
   summary: >+
-    Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+    Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
 
   syntax:
     content:
@@ -571,12 +571,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Text.TextSpan.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: Equals
   qualifiedName:
@@ -586,12 +586,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 244
   summary: >+
-    Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
+    Determines if current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan) is equal to another.
 
   syntax:
     content:
@@ -605,8 +605,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.Text.TextSpan.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -616,12 +616,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 252
   summary: >+
-    Produces a hash code for [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan).
+    Produces a hash code for [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan).
 
   syntax:
     content:
@@ -630,8 +630,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.Text.TextSpan.ToString
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: ToString
   qualifiedName:
@@ -641,12 +641,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 260
   summary: >+
-    Provides a string representation for [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan).
+    Provides a string representation for [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan).
 
   syntax:
     content:
@@ -655,8 +655,8 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.Text.TextSpan.CompareTo(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.Text.TextSpan.yaml
-  href: api\Microsoft.CodeAnalysis.Text.TextSpan
+  yaml: api/Microsoft.CodeAnalysis.Text.TextSpan.yaml
+  href: api/Microsoft.CodeAnalysis.Text.TextSpan
   name:
     CSharp: CompareTo
   qualifiedName:
@@ -666,12 +666,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Text\TextSpan.cs
+    path: src/Compilers/Core/Portable/Text/TextSpan.cs
     startLine: 268
   summary: >+
-    Compares current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api\Microsoft.CodeAnalysis.Text.TextSpan) with another.
+    Compares current instance of [Microsoft.CodeAnalysis.Text.TextSpan](#/api/Microsoft.CodeAnalysis.Text.TextSpan) with another.
 
   syntax:
     content:
@@ -681,6 +681,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Int32

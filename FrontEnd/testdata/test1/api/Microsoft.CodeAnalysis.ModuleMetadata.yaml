@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ModuleMetadata
-yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-href: api\Microsoft.CodeAnalysis.ModuleMetadata
+yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+href: api/Microsoft.CodeAnalysis.ModuleMetadata
 name:
   CSharp: ModuleMetadata
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+  path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
   startLine: 17
 summary: >+
   Represents an immutable snapshot of module CLI metadata.
@@ -26,11 +26,11 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.Metadata
   name: Metadata
-  href: api\Microsoft.CodeAnalysis.Metadata
+  href: api/Microsoft.CodeAnalysis.Metadata
 items:
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromMetadata(System.IntPtr,System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromMetadata
   qualifiedName:
@@ -40,9 +40,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 50
   summary: >+
     Create metadata module from a raw memory pointer to metadata directory of a PE image or .cormeta section of an object file.
@@ -68,8 +68,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromImage(System.IntPtr,System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromImage
   qualifiedName:
@@ -79,9 +79,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 79
   summary: >+
     Create metadata module from a raw memory pointer to a PE image or an object file.
@@ -105,8 +105,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromImage(System.Collections.Generic.IEnumerable{System.Byte})
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromImage
   qualifiedName:
@@ -116,9 +116,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 99
   summary: >+
     Create metadata module from a sequence of bytes.
@@ -136,8 +136,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromImage
   qualifiedName:
@@ -147,9 +147,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 114
   summary: >+
     Create metadata module from a byte array.
@@ -167,8 +167,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromStream(System.IO.Stream,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromStream
   qualifiedName:
@@ -178,9 +178,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 134
   summary: >+
     Create metadata module from a stream.
@@ -207,8 +207,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromStream
   qualifiedName:
@@ -218,9 +218,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 157
   summary: >+
     Create metadata module from a stream.
@@ -249,8 +249,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.CreateFromFile(System.String)
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: CreateFromFile
   qualifiedName:
@@ -260,9 +260,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 186
   summary: >+
     Creates metadata module from a file containing a portable executable image.
@@ -280,8 +280,8 @@ items:
     return:
       id: ModuleMetadata
 - id: Microsoft.CodeAnalysis.ModuleMetadata.Dispose
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: Dispose
   qualifiedName:
@@ -291,9 +291,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 214
   summary: >+
     Frees memory and handles allocated for the module.
@@ -305,8 +305,8 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.ModuleMetadata.Name
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: Name
   qualifiedName:
@@ -316,9 +316,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 247
   summary: >+
     Name of the module.
@@ -333,8 +333,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.ModuleMetadata.get_Name
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: get_Name
   qualifiedName:
@@ -343,13 +343,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 249
 - id: Microsoft.CodeAnalysis.ModuleMetadata.GetModuleVersionId
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: GetModuleVersionId
   qualifiedName:
@@ -359,9 +359,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 257
   summary: >+
     Version of the module content.
@@ -373,8 +373,8 @@ items:
     return:
       id: Guid
 - id: Microsoft.CodeAnalysis.ModuleMetadata.Kind
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: Kind
   qualifiedName:
@@ -384,12 +384,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 265
   summary: >+
-    Returns the [Microsoft.CodeAnalysis.MetadataImageKind](#/api\Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
+    Returns the [Microsoft.CodeAnalysis.MetadataImageKind](#/api/Microsoft.CodeAnalysis.MetadataImageKind) for this instance.
 
   syntax:
     content:
@@ -399,10 +399,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.MetadataImageKind
         name: MetadataImageKind
-        href: api\Microsoft.CodeAnalysis.MetadataImageKind
+        href: api/Microsoft.CodeAnalysis.MetadataImageKind
 - id: Microsoft.CodeAnalysis.ModuleMetadata.get_Kind
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: get_Kind
   qualifiedName:
@@ -411,13 +411,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 267
 - id: Microsoft.CodeAnalysis.ModuleMetadata.GetModuleNames
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: GetModuleNames
   qualifiedName:
@@ -427,9 +427,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 275
   summary: >+
     Returns the file names of linked managed modules.
@@ -441,8 +441,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.ModuleMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider,System.String,System.String)
-  yaml: api\Microsoft.CodeAnalysis.ModuleMetadata.yaml
-  href: api\Microsoft.CodeAnalysis.ModuleMetadata
+  yaml: api/Microsoft.CodeAnalysis.ModuleMetadata.yaml
+  href: api/Microsoft.CodeAnalysis.ModuleMetadata
   name:
     CSharp: GetReference
   qualifiedName:
@@ -452,9 +452,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\ModuleMetadata.cs
+    path: src/Compilers/Core/Portable/MetadataReference/ModuleMetadata.cs
     startLine: 297
   summary: >+
     Creates a reference to the module metadata.
@@ -467,7 +467,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DocumentationProvider
         name: DocumentationProvider
-        href: api\Microsoft.CodeAnalysis.DocumentationProvider
+        href: api/Microsoft.CodeAnalysis.DocumentationProvider
       description: Provider of XML documentation comments for the metadata symbols contained in the module.
     - id: filePath
       type:

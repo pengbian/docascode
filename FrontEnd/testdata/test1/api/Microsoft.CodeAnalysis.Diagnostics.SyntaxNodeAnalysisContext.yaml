@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
-yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
 name:
   CSharp: SyntaxNodeAnalysisContext
 qualifiedName:
@@ -10,14 +10,14 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+  path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
   startLine: 614
 summary: >+
   Context for a syntax node action.
 
-  A syntax node action can use a [Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext](#/api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext) to report [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s for a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+  A syntax node action can use a [Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext](#/api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext) to report [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic)s for a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode).
 
 syntax:
   content:
@@ -31,8 +31,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Node
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: Node
   qualifiedName:
@@ -42,12 +42,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 625
   summary: >+
-    [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode) that is the subject of the analysis.
+    [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode) that is the subject of the analysis.
 
   syntax:
     content:
@@ -57,10 +57,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Node
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: get_Node
   qualifiedName:
@@ -69,13 +69,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 625
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.SemanticModel
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: SemanticModel
   qualifiedName:
@@ -85,12 +85,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 630
   summary: >+
-    [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) that can provide semantic information about the [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+    [Microsoft.CodeAnalysis.SemanticModel](#/api/Microsoft.CodeAnalysis.SemanticModel) that can provide semantic information about the [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode).
 
   syntax:
     content:
@@ -100,10 +100,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_SemanticModel
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: get_SemanticModel
   qualifiedName:
@@ -112,13 +112,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 630
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.Options
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: Options
   qualifiedName:
@@ -128,9 +128,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 635
   summary: >+
     Options specified for the analysis.
@@ -143,10 +143,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
         name: AnalyzerOptions
-        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_Options
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: get_Options
   qualifiedName:
@@ -155,13 +155,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 635
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.CancellationToken
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: CancellationToken
   qualifiedName:
@@ -171,9 +171,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 640
   summary: >+
     Token to check for requested cancellation of the analysis.
@@ -188,8 +188,8 @@ items:
         name: System.Threading.CancellationToken
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.get_CancellationToken
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: get_CancellationToken
   qualifiedName:
@@ -198,13 +198,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 640
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.#ctor(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: SyntaxNodeAnalysisContext(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Action{Microsoft.CodeAnalysis.Diagnostic},System.Threading.CancellationToken)
   qualifiedName:
@@ -214,9 +214,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 642
   syntax:
     content:
@@ -226,17 +226,17 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     - id: semanticModel
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: options
       type:
         id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
         name: AnalyzerOptions
-        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
     - id: reportDiagnostic
       type:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostic}
@@ -248,8 +248,8 @@ items:
         name: System.Threading.CancellationToken
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
   name:
     CSharp: ReportDiagnostic
   qualifiedName:
@@ -259,12 +259,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 655
   summary: >+
-    Report a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) about a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+    Report a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) about a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode).
 
   syntax:
     content:
@@ -274,7 +274,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Diagnostic
         name: Diagnostic
-        href: api\Microsoft.CodeAnalysis.Diagnostic
-      description: '[Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic) to be reported.'
+        href: api/Microsoft.CodeAnalysis.Diagnostic
+      description: '[Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic) to be reported.'
     return:
       id: Void

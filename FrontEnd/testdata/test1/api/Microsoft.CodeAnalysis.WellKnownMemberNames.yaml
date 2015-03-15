@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.WellKnownMemberNames
-yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
 name:
   CSharp: WellKnownMemberNames
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+  path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
   startLine: 10
 summary: >+
   Specifies the member names known to the compiler (such as .ctor or op_Explicit).
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.EnumBackingFieldName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: EnumBackingFieldName
   qualifiedName:
@@ -37,16 +37,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 15
   summary: >+
     Name of the enum backing field.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.InstanceConstructorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: InstanceConstructorName
   qualifiedName:
@@ -56,16 +56,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 20
   summary: >+
     The name assigned to an instance constructor.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.StaticConstructorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: StaticConstructorName
   qualifiedName:
@@ -75,16 +75,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 25
   summary: >+
     The name assigned to the static constructor.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.Indexer
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: Indexer
   qualifiedName:
@@ -94,16 +94,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 33
   summary: >+
     The symbol name assigned to all indexers, other than explicit interface implementations.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DestructorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DestructorName
   qualifiedName:
@@ -113,16 +113,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 38
   summary: >+
     The name assigned to the destructor.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DelegateInvokeName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DelegateInvokeName
   qualifiedName:
@@ -132,16 +132,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 43
   summary: >+
     The name assigned to the delegate Invoke method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DelegateBeginInvokeName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DelegateBeginInvokeName
   qualifiedName:
@@ -151,16 +151,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 48
   summary: >+
     The name assigned to the delegate BeginInvoke method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DelegateEndInvokeName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DelegateEndInvokeName
   qualifiedName:
@@ -170,16 +170,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 53
   summary: >+
     The name assigned to the delegate EndInvoke method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.EntryPointMethodName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: EntryPointMethodName
   qualifiedName:
@@ -189,16 +189,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 58
   summary: >+
     The name of an entry point method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DefaultScriptClassName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DefaultScriptClassName
   qualifiedName:
@@ -208,16 +208,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 63
   summary: >+
     The default fully qualified name of a Script class.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ObjectToString
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ObjectToString
   qualifiedName:
@@ -227,16 +227,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 68
   summary: >+
     The name assigned to Object.ToString method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ObjectEquals
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ObjectEquals
   qualifiedName:
@@ -246,16 +246,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 73
   summary: >+
     The name assigned to Object.Equals method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ObjectGetHashCode
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ObjectGetHashCode
   qualifiedName:
@@ -265,16 +265,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 78
   summary: >+
     The name assigned to Object.GetHashCode method.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ImplicitConversionName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ImplicitConversionName
   qualifiedName:
@@ -284,16 +284,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 83
   summary: >+
     The name assigned to an implicit (widening) conversion.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ExplicitConversionName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ExplicitConversionName
   qualifiedName:
@@ -303,16 +303,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 88
   summary: >+
     The name assigned to an explicit (narrowing) conversion.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.AdditionOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: AdditionOperatorName
   qualifiedName:
@@ -322,16 +322,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 93
   summary: >+
     The name assigned to the Addition operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.BitwiseAndOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: BitwiseAndOperatorName
   qualifiedName:
@@ -341,16 +341,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 98
   summary: >+
     The name assigned to the BitwiseAnd operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.BitwiseOrOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: BitwiseOrOperatorName
   qualifiedName:
@@ -360,16 +360,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 103
   summary: >+
     The name assigned to the BitwiseOr operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DecrementOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DecrementOperatorName
   qualifiedName:
@@ -379,16 +379,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 108
   summary: >+
     The name assigned to the Decrement operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.DivisionOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: DivisionOperatorName
   qualifiedName:
@@ -398,16 +398,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 113
   summary: >+
     The name assigned to the Division operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.EqualityOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: EqualityOperatorName
   qualifiedName:
@@ -417,16 +417,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 118
   summary: >+
     The name assigned to the Equality operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ExclusiveOrOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ExclusiveOrOperatorName
   qualifiedName:
@@ -436,16 +436,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 123
   summary: >+
     The name assigned to the ExclusiveOr operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.FalseOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: FalseOperatorName
   qualifiedName:
@@ -455,16 +455,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 128
   summary: >+
     The name assigned to the False operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.GreaterThanOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: GreaterThanOperatorName
   qualifiedName:
@@ -474,16 +474,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 133
   summary: >+
     The name assigned to the GreaterThan operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.GreaterThanOrEqualOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: GreaterThanOrEqualOperatorName
   qualifiedName:
@@ -493,16 +493,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 138
   summary: >+
     The name assigned to the GreaterThanOrEqual operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.IncrementOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: IncrementOperatorName
   qualifiedName:
@@ -512,16 +512,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 143
   summary: >+
     The name assigned to the Increment operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.InequalityOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: InequalityOperatorName
   qualifiedName:
@@ -531,16 +531,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 148
   summary: >+
     The name assigned to the Inequality operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LeftShiftOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LeftShiftOperatorName
   qualifiedName:
@@ -550,16 +550,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 153
   summary: >+
     The name assigned to the LeftShift operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.UnsignedLeftShiftOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: UnsignedLeftShiftOperatorName
   qualifiedName:
@@ -569,16 +569,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 158
   summary: >+
     The name assigned to the UnsignedLeftShift operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LessThanOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LessThanOperatorName
   qualifiedName:
@@ -588,16 +588,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 163
   summary: >+
     The name assigned to the LessThan operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LessThanOrEqualOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LessThanOrEqualOperatorName
   qualifiedName:
@@ -607,16 +607,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 168
   summary: >+
     The name assigned to the LessThanOrEqual operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LogicalNotOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LogicalNotOperatorName
   qualifiedName:
@@ -626,16 +626,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 173
   summary: >+
     The name assigned to the LogicalNot operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LogicalOrOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LogicalOrOperatorName
   qualifiedName:
@@ -645,16 +645,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 178
   summary: >+
     The name assigned to the LogicalOr operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LogicalAndOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LogicalAndOperatorName
   qualifiedName:
@@ -664,16 +664,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 183
   summary: >+
     The name assigned to the LogicalAnd operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ModulusOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ModulusOperatorName
   qualifiedName:
@@ -683,16 +683,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 188
   summary: >+
     The name assigned to the Modulus operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.MultiplyOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: MultiplyOperatorName
   qualifiedName:
@@ -702,16 +702,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 193
   summary: >+
     The name assigned to the Multiply operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.OnesComplementOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: OnesComplementOperatorName
   qualifiedName:
@@ -721,16 +721,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 198
   summary: >+
     The name assigned to the OnesComplement operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.RightShiftOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: RightShiftOperatorName
   qualifiedName:
@@ -740,16 +740,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 203
   summary: >+
     The name assigned to the RightShift operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.UnsignedRightShiftOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: UnsignedRightShiftOperatorName
   qualifiedName:
@@ -759,16 +759,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 208
   summary: >+
     The name assigned to the UnsignedRightShift operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.SubtractionOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: SubtractionOperatorName
   qualifiedName:
@@ -778,16 +778,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 213
   summary: >+
     The name assigned to the Subtraction operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.TrueOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: TrueOperatorName
   qualifiedName:
@@ -797,16 +797,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 218
   summary: >+
     The name assigned to the True operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.UnaryNegationOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: UnaryNegationOperatorName
   qualifiedName:
@@ -816,16 +816,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 223
   summary: >+
     The name assigned to the UnaryNegation operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.UnaryPlusOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: UnaryPlusOperatorName
   qualifiedName:
@@ -835,16 +835,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 228
   summary: >+
     The name assigned to the UnaryPlus operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ConcatenateOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ConcatenateOperatorName
   qualifiedName:
@@ -854,16 +854,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 233
   summary: >+
     The name assigned to the Concatenate operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ExponentOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ExponentOperatorName
   qualifiedName:
@@ -873,16 +873,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 238
   summary: >+
     The name assigned to the Exponent operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.IntegerDivisionOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: IntegerDivisionOperatorName
   qualifiedName:
@@ -892,16 +892,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 243
   summary: >+
     The name assigned to the IntegerDivision operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.LikeOperatorName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: LikeOperatorName
   qualifiedName:
@@ -911,16 +911,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 248
   summary: >+
     The name assigned to the Like operator.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.GetEnumeratorMethodName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: GetEnumeratorMethodName
   qualifiedName:
@@ -930,16 +930,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 253
   summary: >+
     The required name for the GetEnumerator method used in a ForEach statement.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.MoveNextMethodName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: MoveNextMethodName
   qualifiedName:
@@ -949,16 +949,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 258
   summary: >+
     The required name for the MoveNext method used in a ForEach statement.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.CurrentPropertyName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: CurrentPropertyName
   qualifiedName:
@@ -968,16 +968,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 263
   summary: >+
     The required name for the Current property used in a ForEach statement.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.ValuePropertyName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: ValuePropertyName
   qualifiedName:
@@ -987,9 +987,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 269
   summary: >+
     The required name for the [System.Nullable`1.Value](#) property used in
@@ -997,8 +997,8 @@ items:
     a ForEach statement when the collection is a nullable struct.
 
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.CollectionInitializerAddMethodName
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: CollectionInitializerAddMethodName
   qualifiedName:
@@ -1008,14 +1008,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 275
   summary: "The name for the Add method to be invoked for each element in a collection initializer expression\r\n(see C# Specification, §7.6.10.3 Collection initializers).\r\n"
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.GetAwaiter
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: GetAwaiter
   qualifiedName:
@@ -1025,14 +1025,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 281
   summary: "The required name for the GetAwaiter method used to obtain an awaiter for a task\r\n(see C# Specification, §7.7.7.1 Awaitable expressions).\r\n"
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.IsCompleted
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: IsCompleted
   qualifiedName:
@@ -1042,14 +1042,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 287
   summary: "The required name for the IsCompleted property used to determine if a task is already complete\r\n(see C# Specification, §7.7.7.1 Awaitable expressions).\r\n"
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.GetResult
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: GetResult
   qualifiedName:
@@ -1059,14 +1059,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 293
   summary: "The required name for the GetResult method used to obtain the outcome of a task once it is complete\r\n(see C# Specification, §7.7.7.1 Awaitable expressions).\r\n"
 - id: Microsoft.CodeAnalysis.WellKnownMemberNames.OnCompleted
-  yaml: api\Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
-  href: api\Microsoft.CodeAnalysis.WellKnownMemberNames
+  yaml: api/Microsoft.CodeAnalysis.WellKnownMemberNames.yaml
+  href: api/Microsoft.CodeAnalysis.WellKnownMemberNames
   name:
     CSharp: OnCompleted
   qualifiedName:
@@ -1076,8 +1076,8 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\WellKnownMemberNames.cs
+    path: src/Compilers/Core/Portable/Symbols/WellKnownMemberNames.cs
     startLine: 299
   summary: "The name of the [System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)](#) method used to register a resumption delegate\r\n(see C# Specification, §7.7.7.1 Awaitable expressions).\r\n"

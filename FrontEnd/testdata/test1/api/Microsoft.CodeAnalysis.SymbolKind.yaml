@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SymbolKind
-yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-href: api\Microsoft.CodeAnalysis.SymbolKind
+yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+href: api/Microsoft.CodeAnalysis.SymbolKind
 name:
   CSharp: SymbolKind
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+  path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
   startLine: 7
 summary: >+
   Specifies the possible kinds of symbols.
@@ -32,8 +32,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SymbolKind.Alias
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Alias
   qualifiedName:
@@ -43,9 +43,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 12
   summary: >+
     Symbol is an alias.
@@ -54,8 +54,8 @@ items:
     content:
       CSharp: Alias = 0
 - id: Microsoft.CodeAnalysis.SymbolKind.ArrayType
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: ArrayType
   qualifiedName:
@@ -65,9 +65,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 17
   summary: >+
     Symbol is an array type.
@@ -76,8 +76,8 @@ items:
     content:
       CSharp: ArrayType = 1
 - id: Microsoft.CodeAnalysis.SymbolKind.Assembly
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Assembly
   qualifiedName:
@@ -87,9 +87,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 22
   summary: >+
     Symbol is an assembly.
@@ -98,8 +98,8 @@ items:
     content:
       CSharp: Assembly = 2
 - id: Microsoft.CodeAnalysis.SymbolKind.DynamicType
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: DynamicType
   qualifiedName:
@@ -109,9 +109,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 27
   summary: >+
     Symbol is a dynamic type.
@@ -120,8 +120,8 @@ items:
     content:
       CSharp: DynamicType = 3
 - id: Microsoft.CodeAnalysis.SymbolKind.ErrorType
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: ErrorType
   qualifiedName:
@@ -131,9 +131,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 32
   summary: >+
     Symbol that represents an error
@@ -142,8 +142,8 @@ items:
     content:
       CSharp: ErrorType = 4
 - id: Microsoft.CodeAnalysis.SymbolKind.Event
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Event
   qualifiedName:
@@ -153,9 +153,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 37
   summary: >+
     Symbol is an Event.
@@ -164,8 +164,8 @@ items:
     content:
       CSharp: Event = 5
 - id: Microsoft.CodeAnalysis.SymbolKind.Field
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Field
   qualifiedName:
@@ -175,9 +175,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 42
   summary: >+
     Symbol is a field.
@@ -186,8 +186,8 @@ items:
     content:
       CSharp: Field = 6
 - id: Microsoft.CodeAnalysis.SymbolKind.Label
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Label
   qualifiedName:
@@ -197,9 +197,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 47
   summary: >+
     Symbol is a label.
@@ -208,8 +208,8 @@ items:
     content:
       CSharp: Label = 7
 - id: Microsoft.CodeAnalysis.SymbolKind.Local
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Local
   qualifiedName:
@@ -219,9 +219,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 52
   summary: >+
     Symbol is a local.
@@ -230,8 +230,8 @@ items:
     content:
       CSharp: Local = 8
 - id: Microsoft.CodeAnalysis.SymbolKind.Method
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Method
   qualifiedName:
@@ -241,9 +241,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 57
   summary: >+
     Symbol is a method.
@@ -252,8 +252,8 @@ items:
     content:
       CSharp: Method = 9
 - id: Microsoft.CodeAnalysis.SymbolKind.NetModule
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: NetModule
   qualifiedName:
@@ -263,9 +263,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 62
   summary: >+
     Symbol is a netmodule.
@@ -274,8 +274,8 @@ items:
     content:
       CSharp: NetModule = 10
 - id: Microsoft.CodeAnalysis.SymbolKind.NamedType
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: NamedType
   qualifiedName:
@@ -285,9 +285,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 67
   summary: >+
     Symbol is a named type (e.g. class).
@@ -296,8 +296,8 @@ items:
     content:
       CSharp: NamedType = 11
 - id: Microsoft.CodeAnalysis.SymbolKind.Namespace
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Namespace
   qualifiedName:
@@ -307,9 +307,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 72
   summary: >+
     Symbol is a namespace.
@@ -318,8 +318,8 @@ items:
     content:
       CSharp: Namespace = 12
 - id: Microsoft.CodeAnalysis.SymbolKind.Parameter
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Parameter
   qualifiedName:
@@ -329,9 +329,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 77
   summary: >+
     Symbol is a parameter.
@@ -340,8 +340,8 @@ items:
     content:
       CSharp: Parameter = 13
 - id: Microsoft.CodeAnalysis.SymbolKind.PointerType
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: PointerType
   qualifiedName:
@@ -351,9 +351,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 82
   summary: >+
     Symbol is a pointer type.
@@ -362,8 +362,8 @@ items:
     content:
       CSharp: PointerType = 14
 - id: Microsoft.CodeAnalysis.SymbolKind.Property
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Property
   qualifiedName:
@@ -373,9 +373,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 87
   summary: >+
     Symbol is a property.
@@ -384,8 +384,8 @@ items:
     content:
       CSharp: Property = 15
 - id: Microsoft.CodeAnalysis.SymbolKind.RangeVariable
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: RangeVariable
   qualifiedName:
@@ -395,9 +395,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 92
   summary: >+
     Symbol is a range variable of a query expression.
@@ -406,8 +406,8 @@ items:
     content:
       CSharp: RangeVariable = 16
 - id: Microsoft.CodeAnalysis.SymbolKind.TypeParameter
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: TypeParameter
   qualifiedName:
@@ -417,9 +417,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 97
   summary: >+
     Symbol is a type parameter.
@@ -428,8 +428,8 @@ items:
     content:
       CSharp: TypeParameter = 17
 - id: Microsoft.CodeAnalysis.SymbolKind.Preprocessing
-  yaml: api\Microsoft.CodeAnalysis.SymbolKind.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolKind
+  yaml: api/Microsoft.CodeAnalysis.SymbolKind.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolKind
   name:
     CSharp: Preprocessing
   qualifiedName:
@@ -439,9 +439,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\SymbolKind.cs
+    path: src/Compilers/Core/Portable/Symbols/SymbolKind.cs
     startLine: 102
   summary: >+
     Symbol is a preprocessing/conditional compilation constant.

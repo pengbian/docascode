@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
-yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
 name:
   CSharp: INamespaceOrTypeSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
   startLine: 11
 summary: >+
   Represents either a namespace or a type.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface INamespaceOrTypeSymbol
 items:
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: GetMembers
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 18
   summary: >+
     Get all the members of this symbol.
@@ -51,8 +51,8 @@ items:
 
             returns an empty ImmutableArray. Never returns Null.
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(System.String)
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: GetMembers
   qualifiedName:
@@ -62,9 +62,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 25
   summary: >+
     Get all the members of this symbol that have a particular name.
@@ -85,8 +85,8 @@ items:
 
             no members with this name, returns an empty ImmutableArray. Never returns Null.
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: GetTypeMembers
   qualifiedName:
@@ -96,9 +96,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 32
   summary: >+
     Get all the members of this symbol that are types.
@@ -114,8 +114,8 @@ items:
 
             returns an empty ImmutableArray. Never returns null.
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String)
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: GetTypeMembers
   qualifiedName:
@@ -125,9 +125,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 40
   summary: >+
     Get all the members of this symbol that are types that have a particular name, of any arity.
@@ -150,8 +150,8 @@ items:
 
             returns an empty ImmutableArray. Never returns null.
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String,System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: GetTypeMembers
   qualifiedName:
@@ -161,9 +161,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 48
   summary: >+
     Get all the members of this symbol that are types that have a particular name and arity
@@ -191,8 +191,8 @@ items:
 
             returns an empty ImmutableArray. Never returns null.
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: IsNamespace
   qualifiedName:
@@ -202,9 +202,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 53
   summary: >+
     Returns true if this symbol is a namespace. If it is not a namespace, it must be a type.
@@ -219,8 +219,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsNamespace
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: get_IsNamespace
   qualifiedName:
@@ -229,13 +229,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 53
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: IsType
   qualifiedName:
@@ -245,9 +245,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 58
   summary: >+
     Returns true if this symbols is a type. If it is not a type, it must be a namespace.
@@ -262,8 +262,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.get_IsType
-  yaml: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
   name:
     CSharp: get_IsType
   qualifiedName:
@@ -272,7 +272,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceOrTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceOrTypeSymbol.cs
     startLine: 58

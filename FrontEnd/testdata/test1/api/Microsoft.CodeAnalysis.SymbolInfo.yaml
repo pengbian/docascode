@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SymbolInfo
-yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-href: api\Microsoft.CodeAnalysis.SymbolInfo
+yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+href: api/Microsoft.CodeAnalysis.SymbolInfo
 name:
   CSharp: SymbolInfo
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+  path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
   startLine: 10
 syntax:
   content:
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SymbolInfo.Symbol
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: Symbol
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 22
   summary: >+
     The symbol that was referred to by the syntax node, if any. Returns null if the given
@@ -58,10 +58,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_Symbol
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: get_Symbol
   qualifiedName:
@@ -70,13 +70,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 22
 - id: Microsoft.CodeAnalysis.SymbolInfo.CandidateSymbols
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: CandidateSymbols
   qualifiedName:
@@ -86,9 +86,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 31
   summary: >+
     If the expression did not successfully resolve to a symbol, but there were one or more
@@ -111,8 +111,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateSymbols
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: get_CandidateSymbols
   qualifiedName:
@@ -121,13 +121,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 33
 - id: Microsoft.CodeAnalysis.SymbolInfo.CandidateReason
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: CandidateReason
   qualifiedName:
@@ -137,9 +137,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 56
   summary: >+
     If the expression did not successfully resolve to a symbol, but there were one or more
@@ -156,10 +156,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.CandidateReason
         name: CandidateReason
-        href: api\Microsoft.CodeAnalysis.CandidateReason
+        href: api/Microsoft.CodeAnalysis.CandidateReason
 - id: Microsoft.CodeAnalysis.SymbolInfo.get_CandidateReason
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: get_CandidateReason
   qualifiedName:
@@ -168,13 +168,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 56
 - id: Microsoft.CodeAnalysis.SymbolInfo.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: Equals
   qualifiedName:
@@ -184,9 +184,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 91
   syntax:
     content:
@@ -200,8 +200,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SymbolInfo.Equals(Microsoft.CodeAnalysis.SymbolInfo)
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: Equals
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 96
   syntax:
     content:
@@ -223,12 +223,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolInfo
         name: SymbolInfo
-        href: api\Microsoft.CodeAnalysis.SymbolInfo
+        href: api/Microsoft.CodeAnalysis.SymbolInfo
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SymbolInfo.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.SymbolInfo.yaml
-  href: api\Microsoft.CodeAnalysis.SymbolInfo
+  yaml: api/Microsoft.CodeAnalysis.SymbolInfo.yaml
+  href: api/Microsoft.CodeAnalysis.SymbolInfo
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -238,9 +238,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SymbolInfo.cs
+    path: src/Compilers/Core/Portable/Compilation/SymbolInfo.cs
     startLine: 103
   syntax:
     content:

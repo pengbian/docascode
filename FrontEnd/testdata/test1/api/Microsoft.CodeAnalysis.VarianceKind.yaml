@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.VarianceKind
-yaml: api\Microsoft.CodeAnalysis.VarianceKind.yaml
-href: api\Microsoft.CodeAnalysis.VarianceKind
+yaml: api/Microsoft.CodeAnalysis.VarianceKind.yaml
+href: api/Microsoft.CodeAnalysis.VarianceKind
 name:
   CSharp: VarianceKind
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\VarianceKind.cs
+  path: src/Compilers/Core/Portable/Symbols/VarianceKind.cs
   startLine: 7
 summary: >+
   An enumeration declaring the kinds of variance supported for generic type parameters.
@@ -32,8 +32,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.VarianceKind.None
-  yaml: api\Microsoft.CodeAnalysis.VarianceKind.yaml
-  href: api\Microsoft.CodeAnalysis.VarianceKind
+  yaml: api/Microsoft.CodeAnalysis.VarianceKind.yaml
+  href: api/Microsoft.CodeAnalysis.VarianceKind
   name:
     CSharp: None
   qualifiedName:
@@ -43,9 +43,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\VarianceKind.cs
+    path: src/Compilers/Core/Portable/Symbols/VarianceKind.cs
     startLine: 12
   summary: >+
     Invariant.
@@ -54,8 +54,8 @@ items:
     content:
       CSharp: None = 0
 - id: Microsoft.CodeAnalysis.VarianceKind.Out
-  yaml: api\Microsoft.CodeAnalysis.VarianceKind.yaml
-  href: api\Microsoft.CodeAnalysis.VarianceKind
+  yaml: api/Microsoft.CodeAnalysis.VarianceKind.yaml
+  href: api/Microsoft.CodeAnalysis.VarianceKind
   name:
     CSharp: Out
   qualifiedName:
@@ -65,9 +65,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\VarianceKind.cs
+    path: src/Compilers/Core/Portable/Symbols/VarianceKind.cs
     startLine: 17
   summary: >+
     Covariant (out).
@@ -76,8 +76,8 @@ items:
     content:
       CSharp: Out = 1
 - id: Microsoft.CodeAnalysis.VarianceKind.In
-  yaml: api\Microsoft.CodeAnalysis.VarianceKind.yaml
-  href: api\Microsoft.CodeAnalysis.VarianceKind
+  yaml: api/Microsoft.CodeAnalysis.VarianceKind.yaml
+  href: api/Microsoft.CodeAnalysis.VarianceKind
   name:
     CSharp: In
   qualifiedName:
@@ -87,9 +87,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\VarianceKind.cs
+    path: src/Compilers/Core/Portable/Symbols/VarianceKind.cs
     startLine: 22
   summary: >+
     Contravariant (in).

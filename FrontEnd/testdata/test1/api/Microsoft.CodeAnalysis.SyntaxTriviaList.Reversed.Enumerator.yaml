@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
-yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
+yaml: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
 name:
   CSharp: Enumerator
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.Reversed.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxTriviaList.Reversed.cs
   startLine: 65
 syntax:
   content:
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.#ctor(Microsoft.CodeAnalysis.SyntaxTriviaList@)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
   name:
     CSharp: Enumerator(Microsoft.CodeAnalysis.SyntaxTriviaList@)
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.Reversed.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTriviaList.Reversed.cs
     startLine: 76
   syntax:
     content:
@@ -49,10 +49,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.MoveNext
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
   name:
     CSharp: MoveNext
   qualifiedName:
@@ -62,9 +62,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.Reversed.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTriviaList.Reversed.cs
     startLine: 94
   syntax:
     content:
@@ -73,8 +73,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.Current
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
   name:
     CSharp: Current
   qualifiedName:
@@ -84,9 +84,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.Reversed.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTriviaList.Reversed.cs
     startLine: 110
   syntax:
     content:
@@ -96,10 +96,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
 - id: Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.get_Current
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTriviaList.Reversed.Enumerator
   name:
     CSharp: get_Current
   qualifiedName:
@@ -108,7 +108,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTriviaList.Reversed.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTriviaList.Reversed.cs
     startLine: 112

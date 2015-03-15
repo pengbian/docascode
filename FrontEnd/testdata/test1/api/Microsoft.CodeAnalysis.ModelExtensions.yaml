@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ModelExtensions
-yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-href: api\Microsoft.CodeAnalysis.ModelExtensions
+yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+href: api/Microsoft.CodeAnalysis.ModelExtensions
 name:
   CSharp: ModelExtensions
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+  path: src/Compilers/Core/Portable/Compilation/Extensions.cs
   startLine: 12
 syntax:
   content:
@@ -23,8 +23,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetSymbolInfo
   qualifiedName:
@@ -34,9 +34,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 21
   summary: >+
     Gets symbol information about a syntax node.
@@ -49,12 +49,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: node
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The syntax node to get semantic information for.
     - id: cancellationToken
       type:
@@ -68,8 +68,8 @@ items:
     return:
       id: SymbolInfo
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetSpeculativeSymbolInfo
   qualifiedName:
@@ -79,9 +79,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 45
   summary: >+
     Binds the node in the context of the specified location and get semantic information
@@ -98,7 +98,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: position
       type:
         id: System.Int32
@@ -114,7 +114,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: >-
         A syntax node that represents a parsed expression. This syntax
 
@@ -125,7 +125,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SpeculativeBindingOption
         name: SpeculativeBindingOption
-        href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
+        href: api/Microsoft.CodeAnalysis.SpeculativeBindingOption
       description: >-
         Indicates whether to binding the expression as a full expressions,
 
@@ -136,8 +136,8 @@ items:
       id: SymbolInfo
       description: The semantic information for the topmost node of the expression.
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetTypeInfo
   qualifiedName:
@@ -147,9 +147,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 57
   summary: >+
     Gets type information about a syntax node.
@@ -162,12 +162,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: node
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The syntax node to get semantic information for.
     - id: cancellationToken
       type:
@@ -181,8 +181,8 @@ items:
     return:
       id: TypeInfo
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetAliasInfo
   qualifiedName:
@@ -192,9 +192,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 70
   summary: >+
     If "nameSyntax" resolves to an alias name, return the IAliasSymbol corresponding
@@ -209,12 +209,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: nameSyntax
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: Name to get alias info for.
     - id: cancellationToken
       type:
@@ -228,8 +228,8 @@ items:
     return:
       id: IAliasSymbol
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetSpeculativeAliasInfo
   qualifiedName:
@@ -239,9 +239,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 92
   summary: >+
     Binds the name in the context of the specified location and sees if it resolves to an
@@ -256,7 +256,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: position
       type:
         id: System.Int32
@@ -272,7 +272,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: >-
         A syntax node that represents a name. This syntax
 
@@ -283,7 +283,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SpeculativeBindingOption
         name: SpeculativeBindingOption
-        href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
+        href: api/Microsoft.CodeAnalysis.SpeculativeBindingOption
       description: >-
         Indicates whether to binding the name as a full expression,
 
@@ -293,8 +293,8 @@ items:
     return:
       id: IAliasSymbol
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetSpeculativeTypeInfo
   qualifiedName:
@@ -304,9 +304,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 116
   summary: >+
     Binds the node in the context of the specified location and get semantic information
@@ -323,7 +323,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: position
       type:
         id: System.Int32
@@ -339,7 +339,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: >-
         A syntax node that represents a parsed expression. This syntax
 
@@ -350,7 +350,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SpeculativeBindingOption
         name: SpeculativeBindingOption
-        href: api\Microsoft.CodeAnalysis.SpeculativeBindingOption
+        href: api/Microsoft.CodeAnalysis.SpeculativeBindingOption
       description: >-
         Indicates whether to binding the expression as a full expressions,
 
@@ -361,8 +361,8 @@ items:
       id: TypeInfo
       description: The semantic information for the topmost node of the expression.
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetDeclaredSymbol
   qualifiedName:
@@ -372,9 +372,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 132
   summary: >+
     Gets the symbol associated with a declaration syntax node.
@@ -387,12 +387,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: declaration
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: >-
         A syntax node that is a declaration. This can be any type
 
@@ -411,8 +411,8 @@ items:
       id: ISymbol
       description: The symbol declared by the node or null if the node is not a declaration.
 - id: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: GetMemberGroup
   qualifiedName:
@@ -422,9 +422,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 143
   summary: >+
     Gets a list of method or indexed property symbols for a syntax node.
@@ -437,12 +437,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: node
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The syntax node to get semantic information for.
     - id: cancellationToken
       type:
@@ -453,8 +453,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: AnalyzeControlFlow
   qualifiedName:
@@ -464,9 +464,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 151
   summary: >+
     Analyze control-flow within a part of a method body.
@@ -479,22 +479,22 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: firstStatement
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     - id: lastStatement
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: ControlFlowAnalysis
 - id: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: AnalyzeControlFlow
   qualifiedName:
@@ -504,9 +504,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 159
   summary: >+
     Analyze control-flow within a part of a method body.
@@ -519,17 +519,17 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: statement
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: ControlFlowAnalysis
 - id: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: AnalyzeDataFlow
   qualifiedName:
@@ -539,9 +539,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 167
   summary: >+
     Analyze data-flow within a part of a method body.
@@ -554,22 +554,22 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: firstStatement
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     - id: lastStatement
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: DataFlowAnalysis
 - id: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.ModelExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.ModelExtensions
+  yaml: api/Microsoft.CodeAnalysis.ModelExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.ModelExtensions
   name:
     CSharp: AnalyzeDataFlow
   qualifiedName:
@@ -579,9 +579,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\Extensions.cs
+    path: src/Compilers/Core/Portable/Compilation/Extensions.cs
     startLine: 175
   summary: >+
     Analyze data-flow within a part of a method body.
@@ -594,11 +594,11 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
     - id: statementOrExpression
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: DataFlowAnalysis

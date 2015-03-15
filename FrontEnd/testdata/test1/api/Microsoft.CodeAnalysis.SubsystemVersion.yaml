@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SubsystemVersion
-yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-href: api\Microsoft.CodeAnalysis.SubsystemVersion
+yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+href: api/Microsoft.CodeAnalysis.SubsystemVersion
 name:
   CSharp: SubsystemVersion
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+  path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
   startLine: 25
 summary: >+
   Represents subsystem version, see /subsystemversion command line
@@ -49,8 +49,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Major
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Major
   qualifiedName:
@@ -60,16 +60,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 30
   summary: >+
     Major subsystem version
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Minor
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Minor
   qualifiedName:
@@ -79,16 +79,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 35
   summary: >+
     Minor subsystem version
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.None
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: None
   qualifiedName:
@@ -98,16 +98,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 40
   summary: >+
     Subsystem version not specified
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Windows2000
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Windows2000
   qualifiedName:
@@ -117,16 +117,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 45
   summary: >+
     Subsystem version: Windows 2000
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.WindowsXP
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: WindowsXP
   qualifiedName:
@@ -136,16 +136,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 50
   summary: >+
     Subsystem version: Windows XP
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.WindowsVista
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: WindowsVista
   qualifiedName:
@@ -155,16 +155,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 55
   summary: >+
     Subsystem version: Windows Vista
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Windows7
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Windows7
   qualifiedName:
@@ -174,16 +174,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 60
   summary: >+
     Subsystem version: Windows 7
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Windows8
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Windows8
   qualifiedName:
@@ -193,16 +193,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 65
   summary: >+
     Subsystem version: Windows 8
 
 - id: Microsoft.CodeAnalysis.SubsystemVersion.TryParse(System.String,Microsoft.CodeAnalysis.SubsystemVersion@)
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: TryParse
   qualifiedName:
@@ -212,9 +212,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 79
   summary: >+
     Try parse subsystem version in "x.y" format. Note, no spaces are allowed in string representation.
@@ -233,14 +233,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SubsystemVersion
         name: SubsystemVersion
-        href: api\Microsoft.CodeAnalysis.SubsystemVersion
+        href: api/Microsoft.CodeAnalysis.SubsystemVersion
       description: the value if successfully parsed or None otherwise
     return:
       id: Boolean
       description: true if parsed successfully, false otherwise
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Create(System.Int32,System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Create
   qualifiedName:
@@ -250,9 +250,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 140
   summary: >+
     Create a new instance of subsystem version with specified major and minor values.
@@ -277,8 +277,8 @@ items:
       id: SubsystemVersion
       description: subsystem version with provided major and minor
 - id: Microsoft.CodeAnalysis.SubsystemVersion.IsValid
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: IsValid
   qualifiedName:
@@ -288,9 +288,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 175
   summary: >+
     True if the subsystem version has a valid value
@@ -305,8 +305,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SubsystemVersion.get_IsValid
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: get_IsValid
   qualifiedName:
@@ -315,13 +315,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 177
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Equals
   qualifiedName:
@@ -331,9 +331,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 185
   syntax:
     content:
@@ -347,8 +347,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SubsystemVersion.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -358,9 +358,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 190
   syntax:
     content:
@@ -369,8 +369,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.SubsystemVersion.Equals(Microsoft.CodeAnalysis.SubsystemVersion)
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: Equals
   qualifiedName:
@@ -380,9 +380,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 195
   syntax:
     content:
@@ -392,12 +392,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SubsystemVersion
         name: SubsystemVersion
-        href: api\Microsoft.CodeAnalysis.SubsystemVersion
+        href: api/Microsoft.CodeAnalysis.SubsystemVersion
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SubsystemVersion.ToString
-  yaml: api\Microsoft.CodeAnalysis.SubsystemVersion.yaml
-  href: api\Microsoft.CodeAnalysis.SubsystemVersion
+  yaml: api/Microsoft.CodeAnalysis.SubsystemVersion.yaml
+  href: api/Microsoft.CodeAnalysis.SubsystemVersion
   name:
     CSharp: ToString
   qualifiedName:
@@ -407,9 +407,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SubsystemVersion.cs
+    path: src/Compilers/Core/Portable/Compilation/SubsystemVersion.cs
     startLine: 200
   syntax:
     content:

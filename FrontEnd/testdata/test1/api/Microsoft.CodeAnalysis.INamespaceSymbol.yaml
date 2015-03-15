@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.INamespaceSymbol
-yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+href: api/Microsoft.CodeAnalysis.INamespaceSymbol
 name:
   CSharp: INamespaceSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
   startLine: 11
 summary: >+
   Represents a namespace.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface INamespaceSymbol
 items:
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.GetMembers
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: GetMembers
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 16
   summary: >+
     Get all the members of this symbol.
@@ -47,8 +47,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.GetMembers(System.String)
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: GetMembers
   qualifiedName:
@@ -58,9 +58,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 21
   summary: >+
     Get all the members of this symbol that have a particular name.
@@ -77,8 +77,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.GetNamespaceMembers
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: GetNamespaceMembers
   qualifiedName:
@@ -88,9 +88,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 26
   summary: >+
     Get all the members of this symbol that are namespaces.
@@ -102,8 +102,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.IsGlobalNamespace
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: IsGlobalNamespace
   qualifiedName:
@@ -113,9 +113,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 32
   summary: >+
     Returns whether this namespace is the unnamed, global namespace that is
@@ -132,8 +132,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_IsGlobalNamespace
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: get_IsGlobalNamespace
   qualifiedName:
@@ -142,13 +142,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 32
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.NamespaceKind
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: NamespaceKind
   qualifiedName:
@@ -158,9 +158,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 40
   summary: >+
     The kind of namespace: Module, Assembly or Compilation.
@@ -179,10 +179,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.NamespaceKind
         name: NamespaceKind
-        href: api\Microsoft.CodeAnalysis.NamespaceKind
+        href: api/Microsoft.CodeAnalysis.NamespaceKind
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_NamespaceKind
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: get_NamespaceKind
   qualifiedName:
@@ -191,13 +191,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 40
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.ContainingCompilation
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: ContainingCompilation
   qualifiedName:
@@ -207,9 +207,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 45
   summary: >+
     The containing compilation for compilation namespaces.
@@ -222,10 +222,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Compilation
         name: Compilation
-        href: api\Microsoft.CodeAnalysis.Compilation
+        href: api/Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_ContainingCompilation
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: get_ContainingCompilation
   qualifiedName:
@@ -234,13 +234,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 45
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.ConstituentNamespaces
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: ConstituentNamespaces
   qualifiedName:
@@ -250,9 +250,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 53
   summary: >+
     If a namespace is an assembly or compilation namespace, it may be composed of multiple
@@ -273,8 +273,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamespaceSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamespaceSymbol.get_ConstituentNamespaces
-  yaml: api\Microsoft.CodeAnalysis.INamespaceSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamespaceSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamespaceSymbol
   name:
     CSharp: get_ConstituentNamespaces
   qualifiedName:
@@ -283,7 +283,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamespaceSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamespaceSymbol.cs
     startLine: 53

@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
-yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
 name:
   CSharp: CodeBlockStartAnalysisContext`1
 qualifiedName:
@@ -10,14 +10,14 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+  path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
   startLine: 429
 summary: >+
   Context for a code block start action.
 
-  A code block start action can use a [Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1](#/api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1) to register actions to be executed
+  A code block start action can use a [Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1](#/api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1) to register actions to be executed
 
   at any of:
 
@@ -35,8 +35,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CodeBlock
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: CodeBlock
   qualifiedName:
@@ -46,9 +46,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 440
   summary: >+
     Method body or expression subjext to analysis.
@@ -61,10 +61,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CodeBlock
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: get_CodeBlock
   qualifiedName:
@@ -73,13 +73,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 440
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.OwningSymbol
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: OwningSymbol
   qualifiedName:
@@ -89,12 +89,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 445
   summary: >+
-    [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for which the code block provides a definition or value.
+    [Microsoft.CodeAnalysis.ISymbol](#/api/Microsoft.CodeAnalysis.ISymbol) for which the code block provides a definition or value.
 
   syntax:
     content:
@@ -104,10 +104,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_OwningSymbol
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: get_OwningSymbol
   qualifiedName:
@@ -116,13 +116,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 445
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.SemanticModel
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: SemanticModel
   qualifiedName:
@@ -132,12 +132,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 450
   summary: >+
-    [Microsoft.CodeAnalysis.SemanticModel](#/api\Microsoft.CodeAnalysis.SemanticModel) that can provide semantic information about the [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)s in the code block.
+    [Microsoft.CodeAnalysis.SemanticModel](#/api/Microsoft.CodeAnalysis.SemanticModel) that can provide semantic information about the [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode)s in the code block.
 
   syntax:
     content:
@@ -147,10 +147,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_SemanticModel
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: get_SemanticModel
   qualifiedName:
@@ -159,13 +159,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 450
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.Options
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: Options
   qualifiedName:
@@ -175,9 +175,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 455
   summary: >+
     Options specified for the analysis.
@@ -190,10 +190,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
         name: AnalyzerOptions
-        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+        href: api/Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_Options
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: get_Options
   qualifiedName:
@@ -202,13 +202,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 455
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.CancellationToken
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: CancellationToken
   qualifiedName:
@@ -218,9 +218,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 460
   summary: >+
     Token to check for requested cancellation of the analysis.
@@ -235,8 +235,8 @@ items:
         name: System.Threading.CancellationToken
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.get_CancellationToken
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: get_CancellationToken
   qualifiedName:
@@ -245,13 +245,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 460
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterCodeBlockEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockEndAnalysisContext})
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: RegisterCodeBlockEndAction
   qualifiedName:
@@ -261,14 +261,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 476
   summary: >+
     Register an action to be executed at the end of semantic analysis of a method body or an expression appearing outside a method body.
 
-    A code block end action reports [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about code blocks.
+    A code block end action reports [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic)s about code blocks.
 
   syntax:
     content:
@@ -283,8 +283,8 @@ items:
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},`0[])
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: RegisterSyntaxNodeAction
   qualifiedName:
@@ -294,14 +294,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 485
   summary: >+
-    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
+    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
 
-    A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
+    A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
 
     state information to be used by other syntax node actions or code block end actions.
 
@@ -314,18 +314,18 @@ items:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         isExternal: true
-      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
         id: System.Array
         name: System.Array
         isExternal: true
-      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
+      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.RegisterSyntaxNodeAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{`0})
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
   name:
     CSharp: RegisterSyntaxNodeAction
   qualifiedName:
@@ -335,14 +335,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalysisContext.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalysisContext.cs
     startLine: 497
   summary: >+
-    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
+    Register an action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode) with an appropriate Kind.
 
-    A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
+    A syntax node action can report [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic)s about [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode)s, and can also collect
 
     state information to be used by other syntax node actions or code block end actions.
 
@@ -355,12 +355,12 @@ items:
         id: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         name: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
         isExternal: true
-      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode).
+      description: Action to be executed at completion of semantic analysis of a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode).
     - id: syntaxKinds
       type:
         id: System.Collections.Immutable.ImmutableArray{`0}
         name: System.Collections.Immutable.ImmutableArray{`0}
         isExternal: true
-      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api\Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
+      description: Action will be executed only if a [Microsoft.CodeAnalysis.SyntaxNode](#/api/Microsoft.CodeAnalysis.SyntaxNode)'s Kind matches one of the syntax kind values.
     return:
       id: Void

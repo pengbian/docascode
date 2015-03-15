@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ChildSyntaxList
-yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+href: api/Microsoft.CodeAnalysis.ChildSyntaxList
 name:
   CSharp: ChildSyntaxList
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+  path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
   startLine: 12
 syntax:
   content:
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Count
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Count
   qualifiedName:
@@ -37,12 +37,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 26
   summary: >+
-    Gets the number of children contained in the [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList).
+    Gets the number of children contained in the [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList).
 
   syntax:
     content:
@@ -54,8 +54,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.get_Count
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: get_Count
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 28
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Item(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Item
   qualifiedName:
@@ -80,16 +80,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 61
   summary: >+
     Gets the child at the specified index.
 
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.get_Item(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: get_Item
   qualifiedName:
@@ -98,13 +98,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 63
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Any
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Any
   qualifiedName:
@@ -114,9 +114,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 304
   syntax:
     content:
@@ -125,8 +125,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.First
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: First
   qualifiedName:
@@ -136,9 +136,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 314
   summary: >+
     Returns the first child in the list.
@@ -151,8 +151,8 @@ items:
       id: SyntaxNodeOrToken
       description: The first child in the list.
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Last
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Last
   qualifiedName:
@@ -162,9 +162,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 329
   summary: >+
     Returns the last child in the list.
@@ -177,8 +177,8 @@ items:
       id: SyntaxNodeOrToken
       description: The last child in the list.
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Reverse
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Reverse
   qualifiedName:
@@ -188,12 +188,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 343
   summary: >+
-    Returns a list which contains all children of [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) in reversed order.
+    Returns a list which contains all children of [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) in reversed order.
 
   syntax:
     content:
@@ -201,10 +201,10 @@ items:
     parameters: []
     return:
       id: Reversed
-      description: '[Microsoft.CodeAnalysis.ChildSyntaxList.Reversed](#/api\Microsoft.CodeAnalysis.ChildSyntaxList.Reversed) which contains all children of [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) in reversed order'
+      description: '[Microsoft.CodeAnalysis.ChildSyntaxList.Reversed](#/api/Microsoft.CodeAnalysis.ChildSyntaxList.Reversed) which contains all children of [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) in reversed order'
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.GetEnumerator
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: GetEnumerator
   qualifiedName:
@@ -214,12 +214,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 350
   summary: >+
-    Returns an enumerator that iterates through the [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList).
+    Returns an enumerator that iterates through the [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList).
 
   syntax:
     content:
@@ -227,10 +227,10 @@ items:
     parameters: []
     return:
       id: Enumerator
-      description: A [Microsoft.CodeAnalysis.ChildSyntaxList.Enumerator](#/api\Microsoft.CodeAnalysis.ChildSyntaxList.Enumerator) for the [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList).
+      description: A [Microsoft.CodeAnalysis.ChildSyntaxList.Enumerator](#/api/Microsoft.CodeAnalysis.ChildSyntaxList.Enumerator) for the [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList).
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Equals
   qualifiedName:
@@ -240,9 +240,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 383
   summary: >+
     Determines whether the specified object is equal to the current instance.
@@ -259,10 +259,10 @@ items:
       description: The object to be compared with the current instance.
     return:
       id: Boolean
-      description: true if the specified object is a [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) structure and is equal to the current instance; otherwise, false.
+      description: true if the specified object is a [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) structure and is equal to the current instance; otherwise, false.
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.Equals(Microsoft.CodeAnalysis.ChildSyntaxList)
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: Equals
   qualifiedName:
@@ -272,12 +272,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 391
   summary: >+
-    Determines whether the specified [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) structure is equal to the current instance.
+    Determines whether the specified [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) structure is equal to the current instance.
 
   syntax:
     content:
@@ -287,14 +287,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ChildSyntaxList
         name: ChildSyntaxList
-        href: api\Microsoft.CodeAnalysis.ChildSyntaxList
-      description: The [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) structure to be compared with the current instance.
+        href: api/Microsoft.CodeAnalysis.ChildSyntaxList
+      description: The [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) structure to be compared with the current instance.
     return:
       id: Boolean
-      description: true if the specified [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) structure is equal to the current instance; otherwise, false.
+      description: true if the specified [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) structure is equal to the current instance; otherwise, false.
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -304,9 +304,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 398
   summary: >+
     Returns the hash code for the current instance.
@@ -319,8 +319,8 @@ items:
       id: Int32
       description: A 32-bit signed integer hash code.
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.op_Equality(Microsoft.CodeAnalysis.ChildSyntaxList,Microsoft.CodeAnalysis.ChildSyntaxList)
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -329,16 +329,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 407
   summary: >+
-    Indicates whether two [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) structures are equal.
+    Indicates whether two [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) structures are equal.
 
 - id: Microsoft.CodeAnalysis.ChildSyntaxList.op_Inequality(Microsoft.CodeAnalysis.ChildSyntaxList,Microsoft.CodeAnalysis.ChildSyntaxList)
-  yaml: api\Microsoft.CodeAnalysis.ChildSyntaxList.yaml
-  href: api\Microsoft.CodeAnalysis.ChildSyntaxList
+  yaml: api/Microsoft.CodeAnalysis.ChildSyntaxList.yaml
+  href: api/Microsoft.CodeAnalysis.ChildSyntaxList
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -347,10 +347,10 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\ChildSyntaxList.cs
+    path: src/Compilers/Core/Portable/Syntax/ChildSyntaxList.cs
     startLine: 416
   summary: >+
-    Indicates whether two [Microsoft.CodeAnalysis.ChildSyntaxList](#/api\Microsoft.CodeAnalysis.ChildSyntaxList) structures are unequal.
+    Indicates whether two [Microsoft.CodeAnalysis.ChildSyntaxList](#/api/Microsoft.CodeAnalysis.ChildSyntaxList) structures are unequal.
 

@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SemanticModel
-yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-href: api\Microsoft.CodeAnalysis.SemanticModel
+yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+href: api/Microsoft.CodeAnalysis.SemanticModel
 name:
   CSharp: SemanticModel
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+  path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
   startLine: 31
 summary: >+
   Allows asking semantic questions about a tree of syntax nodes in a Compilation. Typically,
@@ -28,8 +28,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SemanticModel.Language
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: Language
   qualifiedName:
@@ -39,9 +39,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 36
   summary: >+
     Gets the source language ("C#" or "Visual Basic").
@@ -56,8 +56,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_Language
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: get_Language
   qualifiedName:
@@ -66,13 +66,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 36
 - id: Microsoft.CodeAnalysis.SemanticModel.Compilation
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: Compilation
   qualifiedName:
@@ -82,9 +82,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 41
   summary: >+
     The compilation this model was obtained from.
@@ -97,10 +97,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Compilation
         name: Compilation
-        href: api\Microsoft.CodeAnalysis.Compilation
+        href: api/Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.SemanticModel.get_Compilation
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: get_Compilation
   qualifiedName:
@@ -109,13 +109,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 43
 - id: Microsoft.CodeAnalysis.SemanticModel.SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: SyntaxTree
   qualifiedName:
@@ -125,9 +125,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 54
   summary: >+
     The syntax tree this model was obtained from.
@@ -140,10 +140,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SemanticModel.get_SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
@@ -152,13 +152,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 56
 - id: Microsoft.CodeAnalysis.SemanticModel.IsSpeculativeSemanticModel
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: IsSpeculativeSemanticModel
   qualifiedName:
@@ -168,9 +168,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 212
   summary: >+
     Returns true if this is a speculative semantic model created with any of the TryGetSpeculativeSemanticModel methods.
@@ -185,8 +185,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_IsSpeculativeSemanticModel
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: get_IsSpeculativeSemanticModel
   qualifiedName:
@@ -195,13 +195,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 214
 - id: Microsoft.CodeAnalysis.SemanticModel.OriginalPositionForSpeculation
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: OriginalPositionForSpeculation
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 221
   summary: >+
     If this is a speculative semantic model, returns the original position at which the speculative model was created.
@@ -230,8 +230,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SemanticModel.get_OriginalPositionForSpeculation
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: get_OriginalPositionForSpeculation
   qualifiedName:
@@ -240,13 +240,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 223
 - id: Microsoft.CodeAnalysis.SemanticModel.ParentModel
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: ParentModel
   qualifiedName:
@@ -256,9 +256,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 230
   summary: >+
     If this is a speculative semantic model, then returns its parent semantic model.
@@ -273,10 +273,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
 - id: Microsoft.CodeAnalysis.SemanticModel.get_ParentModel
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: get_ParentModel
   qualifiedName:
@@ -285,13 +285,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 232
 - id: Microsoft.CodeAnalysis.SemanticModel.GetSyntaxDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetSyntaxDiagnostics
   qualifiedName:
@@ -301,9 +301,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 291
   summary: >+
     Get all of the syntax errors within the syntax tree associated with this
@@ -335,8 +335,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.GetDeclarationDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetDeclarationDiagnostics
   qualifiedName:
@@ -346,9 +346,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 305
   summary: >+
     Get all of the declaration errors within the syntax tree associated with this
@@ -380,8 +380,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.GetMethodBodyDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetMethodBodyDiagnostics
   qualifiedName:
@@ -391,9 +391,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 319
   summary: >+
     Get all of the method body and initializer errors within the syntax tree associated with this
@@ -425,8 +425,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.GetDiagnostics(System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan},System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -436,9 +436,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 336
   summary: >+
     Get all the errors within the syntax tree associated with this object. Includes errors
@@ -472,8 +472,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: LookupSymbols
   qualifiedName:
@@ -483,9 +483,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 413
   summary: >+
     Gets the available named symbols in the context of the specified location and optional container. Only
@@ -509,7 +509,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
         name: INamespaceOrTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -533,8 +533,8 @@ items:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
 - id: Microsoft.CodeAnalysis.SemanticModel.LookupBaseMembers(System.Int32,System.String)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: LookupBaseMembers
   qualifiedName:
@@ -544,14 +544,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 466
   summary: >+
     Gets the available base type members in the context of the specified location.  Akin to
 
-    calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](#/api\Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of
+    calling [Microsoft.CodeAnalysis.SemanticModel.LookupSymbols(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String,System.Boolean)](#/api/Microsoft.CodeAnalysis.SemanticModel) with the container set to the immediate base type of
 
     the type in which  occurs.  However, the accessibility rules
 
@@ -621,8 +621,8 @@ items:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
 - id: Microsoft.CodeAnalysis.SemanticModel.LookupStaticMembers(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: LookupStaticMembers
   qualifiedName:
@@ -632,9 +632,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 500
   summary: >+
     Gets the available named static member symbols in the context of the specified location and optional container.
@@ -662,7 +662,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
         name: INamespaceOrTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -680,8 +680,8 @@ items:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
 - id: Microsoft.CodeAnalysis.SemanticModel.LookupNamespacesAndTypes(System.Int32,Microsoft.CodeAnalysis.INamespaceOrTypeSymbol,System.String)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: LookupNamespacesAndTypes
   qualifiedName:
@@ -691,9 +691,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 534
   summary: >+
     Gets the available named namespace and type symbols in the context of the specified location and optional container.
@@ -717,7 +717,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
         name: INamespaceOrTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
       description: >-
         The container to search for symbols within. If null then the enclosing declaration
 
@@ -735,8 +735,8 @@ items:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
 - id: Microsoft.CodeAnalysis.SemanticModel.LookupLabels(System.Int32,System.String)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: LookupLabels
   qualifiedName:
@@ -746,9 +746,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 564
   summary: >+
     Gets the available named label symbols in the context of the specified location and optional container.
@@ -781,8 +781,8 @@ items:
       id: ImmutableArray
       description: A list of symbols that were found. If no symbols were found, an empty list is returned.
 - id: Microsoft.CodeAnalysis.SemanticModel.GetConstantValue(Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetConstantValue
   qualifiedName:
@@ -792,9 +792,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 695
   summary: >+
     If the node provided has a constant value an Optional value will be returned with
@@ -811,7 +811,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     - id: cancellationToken
       type:
         id: System.Threading.CancellationToken
@@ -820,8 +820,8 @@ items:
     return:
       id: Optional
 - id: Microsoft.CodeAnalysis.SemanticModel.GetEnclosingSymbol(System.Int32,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetEnclosingSymbol
   qualifiedName:
@@ -831,9 +831,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 728
   summary: >+
     Given a position in the SyntaxTree for this SemanticModel returns the innermost Symbol
@@ -857,8 +857,8 @@ items:
     return:
       id: ISymbol
 - id: Microsoft.CodeAnalysis.SemanticModel.IsAccessible(System.Int32,Microsoft.CodeAnalysis.ISymbol)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: IsAccessible
   qualifiedName:
@@ -868,9 +868,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 754
   summary: >+
     Determines if the symbol is accessible from the specified location.
@@ -894,14 +894,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
       description: The symbol that we are checking to see if it accessible.
     return:
       id: Boolean
       description: True if "symbol is accessible, false otherwise.
 - id: Microsoft.CodeAnalysis.SemanticModel.IsEventUsableAsField(System.Int32,Microsoft.CodeAnalysis.IEventSymbol)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: IsEventUsableAsField
   qualifiedName:
@@ -911,9 +911,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 783
   summary: >+
     Field-like events can be used as fields in types that can access private
@@ -933,12 +933,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IEventSymbol
         name: IEventSymbol
-        href: api\Microsoft.CodeAnalysis.IEventSymbol
+        href: api/Microsoft.CodeAnalysis.IEventSymbol
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SemanticModel.GetPreprocessingSymbolInfo(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SemanticModel.yaml
-  href: api\Microsoft.CodeAnalysis.SemanticModel
+  yaml: api/Microsoft.CodeAnalysis.SemanticModel.yaml
+  href: api/Microsoft.CodeAnalysis.SemanticModel
   name:
     CSharp: GetPreprocessingSymbolInfo
   qualifiedName:
@@ -948,12 +948,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\SemanticModel.cs
+    path: src/Compilers/Core/Portable/Compilation/SemanticModel.cs
     startLine: 802
   summary: >+
-    If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](#/api\Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
+    If  is an identifier name syntax node, return the [Microsoft.CodeAnalysis.PreprocessingSymbolInfo](#/api/Microsoft.CodeAnalysis.PreprocessingSymbolInfo) corresponding
 
     to it.
 
@@ -965,7 +965,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The nameSyntax node to get semantic information for.
     return:
       id: PreprocessingSymbolInfo

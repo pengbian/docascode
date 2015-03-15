@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.MethodKind
-yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-href: api\Microsoft.CodeAnalysis.MethodKind
+yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+href: api/Microsoft.CodeAnalysis.MethodKind
 name:
   CSharp: MethodKind
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+  path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
   startLine: 9
 summary: >+
   Enumeration for possible kinds of method symbols.
@@ -32,8 +32,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.MethodKind.AnonymousFunction
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: AnonymousFunction
   qualifiedName:
@@ -43,9 +43,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 14
   summary: >+
     An anonymous method or lambda expression
@@ -54,8 +54,8 @@ items:
     content:
       CSharp: AnonymousFunction = 0
 - id: Microsoft.CodeAnalysis.MethodKind.LambdaMethod
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: LambdaMethod
   qualifiedName:
@@ -65,16 +65,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 15
   syntax:
     content:
       CSharp: LambdaMethod = 0
 - id: Microsoft.CodeAnalysis.MethodKind.Constructor
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: Constructor
   qualifiedName:
@@ -84,9 +84,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 20
   summary: >+
     Method is a constructor.
@@ -95,8 +95,8 @@ items:
     content:
       CSharp: Constructor = 1
 - id: Microsoft.CodeAnalysis.MethodKind.Conversion
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: Conversion
   qualifiedName:
@@ -106,9 +106,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 25
   summary: >+
     Method is a conversion.
@@ -117,8 +117,8 @@ items:
     content:
       CSharp: Conversion = 2
 - id: Microsoft.CodeAnalysis.MethodKind.DelegateInvoke
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: DelegateInvoke
   qualifiedName:
@@ -128,9 +128,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 30
   summary: >+
     Method is a delegate invoke.
@@ -139,8 +139,8 @@ items:
     content:
       CSharp: DelegateInvoke = 3
 - id: Microsoft.CodeAnalysis.MethodKind.Destructor
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: Destructor
   qualifiedName:
@@ -150,9 +150,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 35
   summary: >+
     Method is a destructor.
@@ -161,8 +161,8 @@ items:
     content:
       CSharp: Destructor = 4
 - id: Microsoft.CodeAnalysis.MethodKind.EventAdd
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: EventAdd
   qualifiedName:
@@ -172,9 +172,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 40
   summary: >+
     Method is an event add.
@@ -183,8 +183,8 @@ items:
     content:
       CSharp: EventAdd = 5
 - id: Microsoft.CodeAnalysis.MethodKind.EventRaise
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: EventRaise
   qualifiedName:
@@ -194,9 +194,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 45
   summary: >+
     Method is an event raise.
@@ -205,8 +205,8 @@ items:
     content:
       CSharp: EventRaise = 6
 - id: Microsoft.CodeAnalysis.MethodKind.EventRemove
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: EventRemove
   qualifiedName:
@@ -216,9 +216,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 50
   summary: >+
     Method is an event remove.
@@ -227,8 +227,8 @@ items:
     content:
       CSharp: EventRemove = 7
 - id: Microsoft.CodeAnalysis.MethodKind.ExplicitInterfaceImplementation
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: ExplicitInterfaceImplementation
   qualifiedName:
@@ -238,9 +238,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 55
   summary: >+
     Method is an explicit interface implementation.
@@ -249,8 +249,8 @@ items:
     content:
       CSharp: ExplicitInterfaceImplementation = 8
 - id: Microsoft.CodeAnalysis.MethodKind.UserDefinedOperator
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: UserDefinedOperator
   qualifiedName:
@@ -260,9 +260,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 60
   summary: >+
     Method is an operator.
@@ -271,8 +271,8 @@ items:
     content:
       CSharp: UserDefinedOperator = 9
 - id: Microsoft.CodeAnalysis.MethodKind.Ordinary
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: Ordinary
   qualifiedName:
@@ -282,9 +282,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 65
   summary: >+
     Method is an ordinary method.
@@ -293,8 +293,8 @@ items:
     content:
       CSharp: Ordinary = 10
 - id: Microsoft.CodeAnalysis.MethodKind.PropertyGet
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: PropertyGet
   qualifiedName:
@@ -304,9 +304,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 70
   summary: >+
     Method is a property get.
@@ -315,8 +315,8 @@ items:
     content:
       CSharp: PropertyGet = 11
 - id: Microsoft.CodeAnalysis.MethodKind.PropertySet
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: PropertySet
   qualifiedName:
@@ -326,9 +326,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 75
   summary: >+
     Method is a property set.
@@ -337,8 +337,8 @@ items:
     content:
       CSharp: PropertySet = 12
 - id: Microsoft.CodeAnalysis.MethodKind.ReducedExtension
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: ReducedExtension
   qualifiedName:
@@ -348,9 +348,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 80
   summary: >+
     An extension method with the "this" parameter removed.
@@ -359,8 +359,8 @@ items:
     content:
       CSharp: ReducedExtension = 13
 - id: Microsoft.CodeAnalysis.MethodKind.StaticConstructor
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: StaticConstructor
   qualifiedName:
@@ -370,9 +370,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 85
   summary: >+
     Method is a static constructor.
@@ -381,8 +381,8 @@ items:
     content:
       CSharp: StaticConstructor = 14
 - id: Microsoft.CodeAnalysis.MethodKind.SharedConstructor
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: SharedConstructor
   qualifiedName:
@@ -392,16 +392,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 86
   syntax:
     content:
       CSharp: SharedConstructor = 14
 - id: Microsoft.CodeAnalysis.MethodKind.BuiltinOperator
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: BuiltinOperator
   qualifiedName:
@@ -411,9 +411,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 91
   summary: >+
     A built-in operator.
@@ -422,8 +422,8 @@ items:
     content:
       CSharp: BuiltinOperator = 15
 - id: Microsoft.CodeAnalysis.MethodKind.DeclareMethod
-  yaml: api\Microsoft.CodeAnalysis.MethodKind.yaml
-  href: api\Microsoft.CodeAnalysis.MethodKind
+  yaml: api/Microsoft.CodeAnalysis.MethodKind.yaml
+  href: api/Microsoft.CodeAnalysis.MethodKind
   name:
     CSharp: DeclareMethod
   qualifiedName:
@@ -433,9 +433,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\MethodKind.cs
+    path: src/Compilers/Core/Portable/Symbols/MethodKind.cs
     startLine: 96
   summary: >+
     Declare Sub or Function.

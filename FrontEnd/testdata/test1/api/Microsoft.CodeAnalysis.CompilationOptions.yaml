@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.CompilationOptions
-yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-href: api\Microsoft.CodeAnalysis.CompilationOptions
+yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+href: api/Microsoft.CodeAnalysis.CompilationOptions
 name:
   CSharp: CompilationOptions
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+  path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
   startLine: 13
 summary: >+
   Represents compilation options common to C# and VB.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.CompilationOptions.OutputKind
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: OutputKind
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 18
   summary: >+
     The kind of assembly generated when emitted.
@@ -52,10 +52,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.OutputKind
         name: OutputKind
-        href: api\Microsoft.CodeAnalysis.OutputKind
+        href: api/Microsoft.CodeAnalysis.OutputKind
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_OutputKind
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_OutputKind
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 18
 - id: Microsoft.CodeAnalysis.CompilationOptions.ModuleName
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: ModuleName
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 30
   summary: >+
     Name of the primary module, or null if a default name should be used.
@@ -97,8 +97,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ModuleName
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_ModuleName
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 30
 - id: Microsoft.CodeAnalysis.CompilationOptions.ScriptClassName
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: ScriptClassName
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 36
   summary: >+
     The full name of a global implicit class (script class). This class implicitly encapsulates top-level statements,
@@ -142,8 +142,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ScriptClassName
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_ScriptClassName
   qualifiedName:
@@ -152,13 +152,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 36
 - id: Microsoft.CodeAnalysis.CompilationOptions.MainTypeName
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: MainTypeName
   qualifiedName:
@@ -168,9 +168,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 42
   summary: >+
     The full name of a type that declares static Main method. Must be a valid non-generic namespace-qualified name.
@@ -187,8 +187,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MainTypeName
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_MainTypeName
   qualifiedName:
@@ -197,13 +197,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 42
 - id: Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: CryptoKeyFile
   qualifiedName:
@@ -213,9 +213,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 51
   summary: >+
     The name of the file containing the key with which to sign the output.
@@ -230,8 +230,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyFile
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_CryptoKeyFile
   qualifiedName:
@@ -240,13 +240,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 51
 - id: Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: CryptoKeyContainer
   qualifiedName:
@@ -256,9 +256,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 56
   summary: >+
     The CSP container containing the key with which to sign the output.
@@ -273,8 +273,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CryptoKeyContainer
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_CryptoKeyContainer
   qualifiedName:
@@ -283,13 +283,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 56
 - id: Microsoft.CodeAnalysis.CompilationOptions.DelaySign
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: DelaySign
   qualifiedName:
@@ -299,14 +299,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 62
   summary: >+
     Turn off strong name signing when you have supplied a key either through
 
-    attributes or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer](#/api\Microsoft.CodeAnalysis.CompilationOptions) or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile](#/api\Microsoft.CodeAnalysis.CompilationOptions).
+    attributes or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyContainer](#/api/Microsoft.CodeAnalysis.CompilationOptions) or [Microsoft.CodeAnalysis.CompilationOptions.CryptoKeyFile](#/api/Microsoft.CodeAnalysis.CompilationOptions).
 
   syntax:
     content:
@@ -318,8 +318,8 @@ items:
         name: System.Nullable{System.Boolean}
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_DelaySign
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_DelaySign
   qualifiedName:
@@ -328,13 +328,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 62
 - id: Microsoft.CodeAnalysis.CompilationOptions.CheckOverflow
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: CheckOverflow
   qualifiedName:
@@ -344,9 +344,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 67
   summary: >+
     Whether bounds checking on integer arithmetic is enforced by default or not.
@@ -361,8 +361,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_CheckOverflow
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_CheckOverflow
   qualifiedName:
@@ -371,13 +371,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 67
 - id: Microsoft.CodeAnalysis.CompilationOptions.Platform
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: Platform
   qualifiedName:
@@ -387,9 +387,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 72
   summary: >+
     Specifies which version of the common language runtime (CLR) can run the assembly.
@@ -402,10 +402,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Platform
         name: Platform
-        href: api\Microsoft.CodeAnalysis.Platform
+        href: api/Microsoft.CodeAnalysis.Platform
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Platform
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_Platform
   qualifiedName:
@@ -414,13 +414,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 72
 - id: Microsoft.CodeAnalysis.CompilationOptions.OptimizationLevel
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: OptimizationLevel
   qualifiedName:
@@ -430,9 +430,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 78
   summary: >+
     Specifies whether or not optimizations should be performed on the output IL.
@@ -447,10 +447,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.OptimizationLevel
         name: OptimizationLevel
-        href: api\Microsoft.CodeAnalysis.OptimizationLevel
+        href: api/Microsoft.CodeAnalysis.OptimizationLevel
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_OptimizationLevel
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_OptimizationLevel
   qualifiedName:
@@ -459,13 +459,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 78
 - id: Microsoft.CodeAnalysis.CompilationOptions.GeneralDiagnosticOption
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: GeneralDiagnosticOption
   qualifiedName:
@@ -475,9 +475,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 83
   summary: >+
     Global warning report option
@@ -490,10 +490,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ReportDiagnostic
         name: ReportDiagnostic
-        href: api\Microsoft.CodeAnalysis.ReportDiagnostic
+        href: api/Microsoft.CodeAnalysis.ReportDiagnostic
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_GeneralDiagnosticOption
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_GeneralDiagnosticOption
   qualifiedName:
@@ -502,13 +502,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 83
 - id: Microsoft.CodeAnalysis.CompilationOptions.WarningLevel
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WarningLevel
   qualifiedName:
@@ -518,9 +518,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 88
   summary: >+
     Global warning level (from 0 to 4).
@@ -535,8 +535,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_WarningLevel
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_WarningLevel
   qualifiedName:
@@ -545,13 +545,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 88
 - id: Microsoft.CodeAnalysis.CompilationOptions.ConcurrentBuild
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: ConcurrentBuild
   qualifiedName:
@@ -561,9 +561,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 93
   summary: >+
     Specifies whether building compilation may use multiple threads.
@@ -578,8 +578,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_ConcurrentBuild
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_ConcurrentBuild
   qualifiedName:
@@ -588,13 +588,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 93
 - id: Microsoft.CodeAnalysis.CompilationOptions.SpecificDiagnosticOptions
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: SpecificDiagnosticOptions
   qualifiedName:
@@ -604,9 +604,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 114
   summary: >+
     Warning report option for each warning.
@@ -621,8 +621,8 @@ items:
         name: System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SpecificDiagnosticOptions
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_SpecificDiagnosticOptions
   qualifiedName:
@@ -631,13 +631,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 114
 - id: Microsoft.CodeAnalysis.CompilationOptions.MetadataReferenceResolver
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: MetadataReferenceResolver
   qualifiedName:
@@ -647,9 +647,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 120
   summary: >+
     Resolves paths to metadata references specified in source via #r directives.
@@ -664,10 +664,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.MetadataReferenceResolver
         name: MetadataReferenceResolver
-        href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
+        href: api/Microsoft.CodeAnalysis.MetadataReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_MetadataReferenceResolver
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_MetadataReferenceResolver
   qualifiedName:
@@ -676,13 +676,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 120
 - id: Microsoft.CodeAnalysis.CompilationOptions.XmlReferenceResolver
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: XmlReferenceResolver
   qualifiedName:
@@ -692,9 +692,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 126
   summary: >+
     Gets the resolver for resolving XML document references for the compilation.
@@ -709,10 +709,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.XmlReferenceResolver
         name: XmlReferenceResolver
-        href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
+        href: api/Microsoft.CodeAnalysis.XmlReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_XmlReferenceResolver
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_XmlReferenceResolver
   qualifiedName:
@@ -721,13 +721,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 126
 - id: Microsoft.CodeAnalysis.CompilationOptions.SourceReferenceResolver
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: SourceReferenceResolver
   qualifiedName:
@@ -737,9 +737,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 132
   summary: >+
     Gets the resolver for resolving source document references for the compilation.
@@ -754,10 +754,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SourceReferenceResolver
         name: SourceReferenceResolver
-        href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+        href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_SourceReferenceResolver
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_SourceReferenceResolver
   qualifiedName:
@@ -766,13 +766,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 132
 - id: Microsoft.CodeAnalysis.CompilationOptions.StrongNameProvider
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: StrongNameProvider
   qualifiedName:
@@ -782,9 +782,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 138
   summary: >+
     Provides strong name and signature the source assembly.
@@ -799,10 +799,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.StrongNameProvider
         name: StrongNameProvider
-        href: api\Microsoft.CodeAnalysis.StrongNameProvider
+        href: api/Microsoft.CodeAnalysis.StrongNameProvider
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_StrongNameProvider
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_StrongNameProvider
   qualifiedName:
@@ -811,13 +811,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 138
 - id: Microsoft.CodeAnalysis.CompilationOptions.AssemblyIdentityComparer
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: AssemblyIdentityComparer
   qualifiedName:
@@ -827,14 +827,14 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 144
   summary: >+
     Used to compare assembly identities. May implement unification and portability policies specific to the target platform.
 
-    [Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default](#/api\Microsoft.CodeAnalysis.AssemblyIdentityComparer) if not specified.
+    [Microsoft.CodeAnalysis.AssemblyIdentityComparer.Default](#/api/Microsoft.CodeAnalysis.AssemblyIdentityComparer) if not specified.
 
   syntax:
     content:
@@ -844,10 +844,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentityComparer
         name: AssemblyIdentityComparer
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentityComparer
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_AssemblyIdentityComparer
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_AssemblyIdentityComparer
   qualifiedName:
@@ -856,13 +856,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 144
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithGeneralDiagnosticOption(Microsoft.CodeAnalysis.ReportDiagnostic)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithGeneralDiagnosticOption
   qualifiedName:
@@ -872,9 +872,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 249
   summary: >+
     Creates a new options instance with the specified general diagnostic option.
@@ -887,12 +887,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ReportDiagnostic
         name: ReportDiagnostic
-        href: api\Microsoft.CodeAnalysis.ReportDiagnostic
+        href: api/Microsoft.CodeAnalysis.ReportDiagnostic
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSpecificDiagnosticOptions(System.Collections.Immutable.ImmutableDictionary{System.String,Microsoft.CodeAnalysis.ReportDiagnostic})
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithSpecificDiagnosticOptions
   qualifiedName:
@@ -902,9 +902,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 257
   summary: >+
     Creates a new options instance with the specified diagnostic-specific options.
@@ -921,8 +921,8 @@ items:
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSpecificDiagnosticOptions(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.ReportDiagnostic}})
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithSpecificDiagnosticOptions
   qualifiedName:
@@ -932,9 +932,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 265
   summary: >+
     Creates a new options instance with the specified diagnostic-specific options.
@@ -951,8 +951,8 @@ items:
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithOutputKind(Microsoft.CodeAnalysis.OutputKind)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithOutputKind
   qualifiedName:
@@ -962,9 +962,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 273
   summary: >+
     Creates a new options instance with the specified output kind.
@@ -977,12 +977,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.OutputKind
         name: OutputKind
-        href: api\Microsoft.CodeAnalysis.OutputKind
+        href: api/Microsoft.CodeAnalysis.OutputKind
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithPlatform(Microsoft.CodeAnalysis.Platform)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithPlatform
   qualifiedName:
@@ -992,9 +992,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 281
   summary: >+
     Creates a new options instance with the specified platform.
@@ -1007,12 +1007,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Platform
         name: Platform
-        href: api\Microsoft.CodeAnalysis.Platform
+        href: api/Microsoft.CodeAnalysis.Platform
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithOptimizationLevel(Microsoft.CodeAnalysis.OptimizationLevel)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithOptimizationLevel
   qualifiedName:
@@ -1022,9 +1022,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 289
   summary: >+
     Creates a new options instance with optimizations enabled or disabled.
@@ -1037,12 +1037,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.OptimizationLevel
         name: OptimizationLevel
-        href: api\Microsoft.CodeAnalysis.OptimizationLevel
+        href: api/Microsoft.CodeAnalysis.OptimizationLevel
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithXmlReferenceResolver(Microsoft.CodeAnalysis.XmlReferenceResolver)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithXmlReferenceResolver
   qualifiedName:
@@ -1052,9 +1052,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 294
   syntax:
     content:
@@ -1064,12 +1064,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.XmlReferenceResolver
         name: XmlReferenceResolver
-        href: api\Microsoft.CodeAnalysis.XmlReferenceResolver
+        href: api/Microsoft.CodeAnalysis.XmlReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithSourceReferenceResolver(Microsoft.CodeAnalysis.SourceReferenceResolver)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithSourceReferenceResolver
   qualifiedName:
@@ -1079,9 +1079,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 299
   syntax:
     content:
@@ -1091,12 +1091,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SourceReferenceResolver
         name: SourceReferenceResolver
-        href: api\Microsoft.CodeAnalysis.SourceReferenceResolver
+        href: api/Microsoft.CodeAnalysis.SourceReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithMetadataReferenceResolver(Microsoft.CodeAnalysis.MetadataReferenceResolver)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithMetadataReferenceResolver
   qualifiedName:
@@ -1106,9 +1106,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 304
   syntax:
     content:
@@ -1118,12 +1118,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.MetadataReferenceResolver
         name: MetadataReferenceResolver
-        href: api\Microsoft.CodeAnalysis.MetadataReferenceResolver
+        href: api/Microsoft.CodeAnalysis.MetadataReferenceResolver
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithAssemblyIdentityComparer(Microsoft.CodeAnalysis.AssemblyIdentityComparer)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithAssemblyIdentityComparer
   qualifiedName:
@@ -1133,9 +1133,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 309
   syntax:
     content:
@@ -1145,12 +1145,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentityComparer
         name: AssemblyIdentityComparer
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentityComparer
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentityComparer
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.WithStrongNameProvider(Microsoft.CodeAnalysis.StrongNameProvider)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: WithStrongNameProvider
   qualifiedName:
@@ -1160,9 +1160,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 314
   syntax:
     content:
@@ -1172,12 +1172,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.StrongNameProvider
         name: StrongNameProvider
-        href: api\Microsoft.CodeAnalysis.StrongNameProvider
+        href: api/Microsoft.CodeAnalysis.StrongNameProvider
     return:
       id: CompilationOptions
 - id: Microsoft.CodeAnalysis.CompilationOptions.Errors
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: Errors
   qualifiedName:
@@ -1187,9 +1187,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 345
   summary: >+
     Errors collection related to an incompatible set of compilation options
@@ -1204,8 +1204,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Diagnostic}
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationOptions.get_Errors
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: get_Errors
   qualifiedName:
@@ -1214,13 +1214,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 347
 - id: Microsoft.CodeAnalysis.CompilationOptions.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: Equals
   qualifiedName:
@@ -1230,9 +1230,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 350
   syntax:
     content:
@@ -1246,8 +1246,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.CompilationOptions.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -1257,9 +1257,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 388
   syntax:
     content:
@@ -1268,8 +1268,8 @@ items:
     return:
       id: Int32
 - id: Microsoft.CodeAnalysis.CompilationOptions.op_Equality(Microsoft.CodeAnalysis.CompilationOptions,Microsoft.CodeAnalysis.CompilationOptions)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -1278,13 +1278,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 416
 - id: Microsoft.CodeAnalysis.CompilationOptions.op_Inequality(Microsoft.CodeAnalysis.CompilationOptions,Microsoft.CodeAnalysis.CompilationOptions)
-  yaml: api\Microsoft.CodeAnalysis.CompilationOptions.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationOptions
+  yaml: api/Microsoft.CodeAnalysis.CompilationOptions.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationOptions
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -1293,7 +1293,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Compilation\CompilationOptions.cs
+    path: src/Compilers/Core/Portable/Compilation/CompilationOptions.cs
     startLine: 421

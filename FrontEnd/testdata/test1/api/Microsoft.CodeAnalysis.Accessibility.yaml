@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Accessibility
-yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-href: api\Microsoft.CodeAnalysis.Accessibility
+yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+href: api/Microsoft.CodeAnalysis.Accessibility
 name:
   CSharp: Accessibility
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+  path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
   startLine: 9
 summary: >+
   Enumeration for common accessibility combinations.
@@ -32,8 +32,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Accessibility.NotApplicable
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: NotApplicable
   qualifiedName:
@@ -43,9 +43,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 14
   summary: >+
     No accessibility specified.
@@ -54,8 +54,8 @@ items:
     content:
       CSharp: NotApplicable = 0
 - id: Microsoft.CodeAnalysis.Accessibility.Private
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: Private
   qualifiedName:
@@ -65,16 +65,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 17
   syntax:
     content:
       CSharp: Private = 1
 - id: Microsoft.CodeAnalysis.Accessibility.ProtectedAndInternal
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: ProtectedAndInternal
   qualifiedName:
@@ -84,16 +84,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 19
   syntax:
     content:
       CSharp: ProtectedAndInternal = 2
 - id: Microsoft.CodeAnalysis.Accessibility.ProtectedAndFriend
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: ProtectedAndFriend
   qualifiedName:
@@ -103,16 +103,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 20
   syntax:
     content:
       CSharp: ProtectedAndFriend = ProtectedAndInternal
 - id: Microsoft.CodeAnalysis.Accessibility.Protected
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: Protected
   qualifiedName:
@@ -122,16 +122,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 22
   syntax:
     content:
       CSharp: Protected = 3
 - id: Microsoft.CodeAnalysis.Accessibility.Internal
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: Internal
   qualifiedName:
@@ -141,16 +141,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 24
   syntax:
     content:
       CSharp: Internal = 4
 - id: Microsoft.CodeAnalysis.Accessibility.Friend
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: Friend
   qualifiedName:
@@ -160,16 +160,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 25
   syntax:
     content:
       CSharp: Friend = Internal
 - id: Microsoft.CodeAnalysis.Accessibility.ProtectedOrInternal
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: ProtectedOrInternal
   qualifiedName:
@@ -179,16 +179,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 27
   syntax:
     content:
       CSharp: ProtectedOrInternal = 5
 - id: Microsoft.CodeAnalysis.Accessibility.ProtectedOrFriend
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: ProtectedOrFriend
   qualifiedName:
@@ -198,16 +198,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 28
   syntax:
     content:
       CSharp: ProtectedOrFriend = ProtectedOrInternal
 - id: Microsoft.CodeAnalysis.Accessibility.Public
-  yaml: api\Microsoft.CodeAnalysis.Accessibility.yaml
-  href: api\Microsoft.CodeAnalysis.Accessibility
+  yaml: api/Microsoft.CodeAnalysis.Accessibility.yaml
+  href: api/Microsoft.CodeAnalysis.Accessibility
   name:
     CSharp: Public
   qualifiedName:
@@ -217,9 +217,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Accessibility.cs
+    path: src/Compilers/Core/Portable/Symbols/Accessibility.cs
     startLine: 30
   syntax:
     content:

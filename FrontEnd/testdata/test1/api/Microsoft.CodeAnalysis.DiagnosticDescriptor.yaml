@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.DiagnosticDescriptor
-yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
 name:
   CSharp: DiagnosticDescriptor
 qualifiedName:
@@ -10,12 +10,12 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+  path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
   startLine: 13
 summary: >+
-  Provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic)
+  Provides a description about a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic)
 
 syntax:
   content:
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Id
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: Id
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 18
   summary: >+
     An unique identifier for the diagnostic.
@@ -54,8 +54,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Id
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_Id
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 18
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Title
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: Title
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 23
   summary: >+
     A short localizable title describing the diagnostic.
@@ -95,10 +95,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.LocalizableString
         name: LocalizableString
-        href: api\Microsoft.CodeAnalysis.LocalizableString
+        href: api/Microsoft.CodeAnalysis.LocalizableString
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Title
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_Title
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 23
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Description
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: Description
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 28
   summary: >+
     An optional longer localizable description for the diagnostic.
@@ -138,10 +138,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.LocalizableString
         name: LocalizableString
-        href: api\Microsoft.CodeAnalysis.LocalizableString
+        href: api/Microsoft.CodeAnalysis.LocalizableString
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Description
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_Description
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 28
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.HelpLinkUri
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: HelpLinkUri
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 33
   summary: >+
     An optional hyperlink that provides more detailed information regarding the diagnostic.
@@ -183,8 +183,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_HelpLinkUri
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_HelpLinkUri
   qualifiedName:
@@ -193,13 +193,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 33
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.MessageFormat
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: MessageFormat
   qualifiedName:
@@ -209,9 +209,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 39
   summary: >+
     A localizable format message string, which can be passed as the first argument to [System.String.Format(System.String,System.Object[])](#) when creating the diagnostic message with this descriptor.
@@ -224,10 +224,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.LocalizableString
         name: LocalizableString
-        href: api\Microsoft.CodeAnalysis.LocalizableString
+        href: api/Microsoft.CodeAnalysis.LocalizableString
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_MessageFormat
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_MessageFormat
   qualifiedName:
@@ -236,13 +236,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 39
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Category
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: Category
   qualifiedName:
@@ -252,9 +252,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 44
   summary: >+
     The category of the diagnostic (like Design, Naming etc.)
@@ -269,8 +269,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_Category
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_Category
   qualifiedName:
@@ -279,13 +279,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 44
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.DefaultSeverity
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: DefaultSeverity
   qualifiedName:
@@ -295,9 +295,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 49
   summary: >+
     The default severity of the diagnostic.
@@ -310,10 +310,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DiagnosticSeverity
         name: DiagnosticSeverity
-        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+        href: api/Microsoft.CodeAnalysis.DiagnosticSeverity
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_DefaultSeverity
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_DefaultSeverity
   qualifiedName:
@@ -322,13 +322,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 49
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.IsEnabledByDefault
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: IsEnabledByDefault
   qualifiedName:
@@ -338,9 +338,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 54
   summary: >+
     Returns true if the diagnostic is enabled by default.
@@ -355,8 +355,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_IsEnabledByDefault
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_IsEnabledByDefault
   qualifiedName:
@@ -365,13 +365,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 54
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.CustomTags
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: CustomTags
   qualifiedName:
@@ -381,9 +381,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 59
   summary: >+
     Custom tags for the diagnostic.
@@ -398,8 +398,8 @@ items:
         name: System.Collections.Generic.IEnumerable{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.get_CustomTags
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: get_CustomTags
   qualifiedName:
@@ -408,13 +408,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 59
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,System.String,System.String,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.String,System.String,System.String[])
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: DiagnosticDescriptor(System.String,System.String,System.String,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.String,System.String,System.String[])
   qualifiedName:
@@ -424,16 +424,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 76
   summary: >+
-    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic).
+    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic).
 
     NOTE: For localizable ,  and/or ,
 
-    use constructor overload [Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])](#/api\Microsoft.CodeAnalysis.DiagnosticDescriptor).
+    use constructor overload [Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])](#/api/Microsoft.CodeAnalysis.DiagnosticDescriptor).
 
   syntax:
     content:
@@ -470,7 +470,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DiagnosticSeverity
         name: DiagnosticSeverity
-        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+        href: api/Microsoft.CodeAnalysis.DiagnosticSeverity
       description: Default severity of the diagnostic.
     - id: isEnabledByDefault
       type:
@@ -495,10 +495,10 @@ items:
         id: System.Array
         name: System.Array
         isExternal: true
-      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
+      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api/Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.#ctor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: DiagnosticDescriptor(System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,System.String,System.String[])
   qualifiedName:
@@ -508,12 +508,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 113
   summary: >+
-    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api\Microsoft.CodeAnalysis.Diagnostic).
+    Create a DiagnosticDescriptor, which provides description about a [Microsoft.CodeAnalysis.Diagnostic](#/api/Microsoft.CodeAnalysis.Diagnostic).
 
   syntax:
     content:
@@ -529,13 +529,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.LocalizableString
         name: LocalizableString
-        href: api\Microsoft.CodeAnalysis.LocalizableString
+        href: api/Microsoft.CodeAnalysis.LocalizableString
       description: 'A short localizable title describing the diagnostic. For example, for CA1001: "Types that own disposable fields should be disposable".'
     - id: messageFormat
       type:
         id: Microsoft.CodeAnalysis.LocalizableString
         name: LocalizableString
-        href: api\Microsoft.CodeAnalysis.LocalizableString
+        href: api/Microsoft.CodeAnalysis.LocalizableString
       description: >-
         A localizable format message string, which can be passed as the first argument to [System.String.Format(System.String,System.Object[])](#) when creating the diagnostic message with this descriptor.
 
@@ -550,7 +550,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DiagnosticSeverity
         name: DiagnosticSeverity
-        href: api\Microsoft.CodeAnalysis.DiagnosticSeverity
+        href: api/Microsoft.CodeAnalysis.DiagnosticSeverity
       description: Default severity of the diagnostic.
     - id: isEnabledByDefault
       type:
@@ -562,7 +562,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.LocalizableString
         name: LocalizableString
-        href: api\Microsoft.CodeAnalysis.LocalizableString
+        href: api/Microsoft.CodeAnalysis.LocalizableString
       description: An optional longer localizable description of the diagnostic.
     - id: helpLinkUri
       type:
@@ -575,10 +575,10 @@ items:
         id: System.Array
         name: System.Array
         isExternal: true
-      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api\Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
+      description: Optional custom tags for the diagnostic. See [Microsoft.CodeAnalysis.WellKnownDiagnosticTags](#/api/Microsoft.CodeAnalysis.WellKnownDiagnosticTags) for some well known tags.
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Equals(Microsoft.CodeAnalysis.DiagnosticDescriptor)
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: Equals
   qualifiedName:
@@ -588,9 +588,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 169
   syntax:
     content:
@@ -600,12 +600,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.DiagnosticDescriptor
         name: DiagnosticDescriptor
-        href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+        href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: Equals
   qualifiedName:
@@ -615,9 +615,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 183
   syntax:
     content:
@@ -631,8 +631,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.DiagnosticDescriptor.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
-  href: api\Microsoft.CodeAnalysis.DiagnosticDescriptor
+  yaml: api/Microsoft.CodeAnalysis.DiagnosticDescriptor.yaml
+  href: api/Microsoft.CodeAnalysis.DiagnosticDescriptor
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -642,9 +642,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Diagnostic\DiagnosticDescriptor.cs
+    path: src/Compilers/Core/Portable/Diagnostic/DiagnosticDescriptor.cs
     startLine: 188
   syntax:
     content:

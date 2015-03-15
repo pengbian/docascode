@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
-yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+yaml: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+href: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
 name:
   CSharp: DiagnosticAnalyzer
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
+  path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzer.cs
   startLine: 9
 summary: >+
   The base type for diagnostic analyzers.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.SupportedDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
   name:
     CSharp: SupportedDiagnostics
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzer.cs
     startLine: 14
   summary: >+
     Returns a set of descriptors for the diagnostics that this analyzer is capable of producing.
@@ -54,8 +54,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.DiagnosticDescriptor}
         isExternal: true
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.get_SupportedDiagnostics
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
   name:
     CSharp: get_SupportedDiagnostics
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzer.cs
     startLine: 14
 - id: Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)
-  yaml: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
-  href: api\Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+  yaml: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer.yaml
+  href: api/Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
   name:
     CSharp: Initialize
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\DiagnosticAnalyzer\DiagnosticAnalyzer.cs
+    path: src/Compilers/Core/Portable/DiagnosticAnalyzer/DiagnosticAnalyzer.cs
     startLine: 20
   summary: >+
     Called once at session start to register actions in the analysis context.
@@ -95,6 +95,6 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
         name: AnalysisContext
-        href: api\Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
+        href: api/Microsoft.CodeAnalysis.Diagnostics.AnalysisContext
     return:
       id: Void

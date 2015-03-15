@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.LineVisibility
-yaml: api\Microsoft.CodeAnalysis.LineVisibility.yaml
-href: api\Microsoft.CodeAnalysis.LineVisibility
+yaml: api/Microsoft.CodeAnalysis.LineVisibility.yaml
+href: api/Microsoft.CodeAnalysis.LineVisibility
 name:
   CSharp: LineVisibility
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\LineVisibility.cs
+  path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
   startLine: 7
 summary: >+
   The state of the visibility of a line.
@@ -32,8 +32,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.LineVisibility.BeforeFirstLineDirective
-  yaml: api\Microsoft.CodeAnalysis.LineVisibility.yaml
-  href: api\Microsoft.CodeAnalysis.LineVisibility
+  yaml: api/Microsoft.CodeAnalysis.LineVisibility.yaml
+  href: api/Microsoft.CodeAnalysis.LineVisibility
   name:
     CSharp: BeforeFirstLineDirective
   qualifiedName:
@@ -43,9 +43,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\LineVisibility.cs
+    path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
     startLine: 14
   summary: >+
     The line is located before any #line directive and there is at least one #line directive present in this syntax tree.
@@ -58,8 +58,8 @@ items:
     content:
       CSharp: BeforeFirstLineDirective = 0
 - id: Microsoft.CodeAnalysis.LineVisibility.Hidden
-  yaml: api\Microsoft.CodeAnalysis.LineVisibility.yaml
-  href: api\Microsoft.CodeAnalysis.LineVisibility
+  yaml: api/Microsoft.CodeAnalysis.LineVisibility.yaml
+  href: api/Microsoft.CodeAnalysis.LineVisibility
   name:
     CSharp: Hidden
   qualifiedName:
@@ -69,9 +69,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\LineVisibility.cs
+    path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
     startLine: 19
   summary: >+
     The line is following a #line hidden directive.
@@ -80,8 +80,8 @@ items:
     content:
       CSharp: Hidden = 1
 - id: Microsoft.CodeAnalysis.LineVisibility.Visible
-  yaml: api\Microsoft.CodeAnalysis.LineVisibility.yaml
-  href: api\Microsoft.CodeAnalysis.LineVisibility
+  yaml: api/Microsoft.CodeAnalysis.LineVisibility.yaml
+  href: api/Microsoft.CodeAnalysis.LineVisibility
   name:
     CSharp: Visible
   qualifiedName:
@@ -91,9 +91,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\LineVisibility.cs
+    path: src/Compilers/Core/Portable/Syntax/LineVisibility.cs
     startLine: 25
   summary: >+
     The line is following a #line default directive or a #line directive with at least a line number.

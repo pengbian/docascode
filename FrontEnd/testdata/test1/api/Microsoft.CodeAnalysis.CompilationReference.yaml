@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.CompilationReference
-yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-href: api\Microsoft.CodeAnalysis.CompilationReference
+yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+href: api/Microsoft.CodeAnalysis.CompilationReference
 name:
   CSharp: CompilationReference
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+  path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
   startLine: 12
 summary: >+
   Reference to another C# or VB compilation.
@@ -26,11 +26,11 @@ inheritance:
   isExternal: true
 - id: Microsoft.CodeAnalysis.MetadataReference
   name: MetadataReference
-  href: api\Microsoft.CodeAnalysis.MetadataReference
+  href: api/Microsoft.CodeAnalysis.MetadataReference
 items:
 - id: Microsoft.CodeAnalysis.CompilationReference.Compilation
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: Compilation
   qualifiedName:
@@ -40,9 +40,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 14
   syntax:
     content:
@@ -52,10 +52,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Compilation
         name: Compilation
-        href: api\Microsoft.CodeAnalysis.Compilation
+        href: api/Microsoft.CodeAnalysis.Compilation
 - id: Microsoft.CodeAnalysis.CompilationReference.get_Compilation
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: get_Compilation
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 14
 - id: Microsoft.CodeAnalysis.CompilationReference.WithAliases(System.Collections.Generic.IEnumerable{System.String})
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: WithAliases
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 48
   summary: >+
     Returns an instance of the reference with specified aliases.
@@ -100,8 +100,8 @@ items:
     return:
       id: CompilationReference
 - id: Microsoft.CodeAnalysis.CompilationReference.WithAliases(System.Collections.Immutable.ImmutableArray{System.String})
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: WithAliases
   qualifiedName:
@@ -111,9 +111,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 58
   summary: >+
     Returns an instance of the reference with specified aliases.
@@ -131,8 +131,8 @@ items:
     return:
       id: CompilationReference
 - id: Microsoft.CodeAnalysis.CompilationReference.WithEmbedInteropTypes(System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: WithEmbedInteropTypes
   qualifiedName:
@@ -142,9 +142,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 68
   summary: >+
     Returns an instance of the reference with specified interop types embedding.
@@ -158,12 +158,12 @@ items:
         id: System.Boolean
         name: System.Boolean
         isExternal: true
-      description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api\Microsoft.CodeAnalysis.MetadataReferenceProperties).
+      description: The new value for [Microsoft.CodeAnalysis.MetadataReferenceProperties.EmbedInteropTypes](#/api/Microsoft.CodeAnalysis.MetadataReferenceProperties).
     return:
       id: CompilationReference
 - id: Microsoft.CodeAnalysis.CompilationReference.WithProperties(Microsoft.CodeAnalysis.MetadataReferenceProperties)
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: WithProperties
   qualifiedName:
@@ -173,9 +173,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 78
   summary: >+
     Returns an instance of the reference with specified properties, or this instance if properties haven't changed.
@@ -188,13 +188,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.MetadataReferenceProperties
         name: MetadataReferenceProperties
-        href: api\Microsoft.CodeAnalysis.MetadataReferenceProperties
+        href: api/Microsoft.CodeAnalysis.MetadataReferenceProperties
       description: The new properties for the reference.
     return:
       id: CompilationReference
 - id: Microsoft.CodeAnalysis.CompilationReference.Display
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: Display
   qualifiedName:
@@ -204,9 +204,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 105
   syntax:
     content:
@@ -218,8 +218,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.CompilationReference.get_Display
-  yaml: api\Microsoft.CodeAnalysis.CompilationReference.yaml
-  href: api\Microsoft.CodeAnalysis.CompilationReference
+  yaml: api/Microsoft.CodeAnalysis.CompilationReference.yaml
+  href: api/Microsoft.CodeAnalysis.CompilationReference
   name:
     CSharp: get_Display
   qualifiedName:
@@ -228,7 +228,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\MetadataReference\CompilationReference.cs
+    path: src/Compilers/Core/Portable/MetadataReference/CompilationReference.cs
     startLine: 107

@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxReference
-yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxReference
+yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxReference
 name:
   CSharp: SyntaxReference
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
   startLine: 11
 summary: >+
   A reference to a syntax node.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxReference.SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxReference
+  yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxReference
   name:
     CSharp: SyntaxTree
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
     startLine: 16
   summary: >+
     The syntax tree that this references a node within.
@@ -52,10 +52,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxReference.get_SyntaxTree
-  yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxReference
+  yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxReference
   name:
     CSharp: get_SyntaxTree
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
     startLine: 16
 - id: Microsoft.CodeAnalysis.SyntaxReference.Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxReference
+  yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxReference
   name:
     CSharp: Span
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
     startLine: 21
   summary: >+
     The span of the node referenced.
@@ -95,10 +95,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxReference.get_Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxReference
+  yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxReference
   name:
     CSharp: get_Span
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
     startLine: 21
 - id: Microsoft.CodeAnalysis.SyntaxReference.GetSyntax(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxReference
+  yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxReference
   name:
     CSharp: GetSyntax
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
     startLine: 28
   summary: >+
     Retrieves the original referenced syntax node.
@@ -145,8 +145,8 @@ items:
       id: SyntaxNode
       description: The original referenced syntax node.
 - id: Microsoft.CodeAnalysis.SyntaxReference.GetSyntaxAsync(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxReference.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxReference
+  yaml: api/Microsoft.CodeAnalysis.SyntaxReference.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxReference
   name:
     CSharp: GetSyntaxAsync
   qualifiedName:
@@ -156,9 +156,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxReference.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxReference.cs
     startLine: 35
   summary: >+
     Retrieves the original referenced syntax node.

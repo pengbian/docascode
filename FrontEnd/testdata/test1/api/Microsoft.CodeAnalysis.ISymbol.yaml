@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ISymbol
-yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-href: api\Microsoft.CodeAnalysis.ISymbol
+yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+href: api/Microsoft.CodeAnalysis.ISymbol
 name:
   CSharp: ISymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
   startLine: 15
 summary: >+
   Represents a symbol (namespace, class, method, parameter, etc.)
@@ -24,8 +24,8 @@ syntax:
     CSharp: public interface ISymbol
 items:
 - id: Microsoft.CodeAnalysis.ISymbol.Kind
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: Kind
   qualifiedName:
@@ -35,12 +35,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 21
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.SymbolKind](#/api\Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
+    Gets the [Microsoft.CodeAnalysis.SymbolKind](#/api/Microsoft.CodeAnalysis.SymbolKind) indicating what kind of symbol it is.
 
   syntax:
     content:
@@ -50,10 +50,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolKind
         name: SymbolKind
-        href: api\Microsoft.CodeAnalysis.SymbolKind
+        href: api/Microsoft.CodeAnalysis.SymbolKind
 - id: Microsoft.CodeAnalysis.ISymbol.get_Kind
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_Kind
   qualifiedName:
@@ -62,13 +62,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 21
 - id: Microsoft.CodeAnalysis.ISymbol.Language
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: Language
   qualifiedName:
@@ -78,9 +78,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 26
   summary: >+
     Gets the source language ("C#" or "Visual Basic").
@@ -95,8 +95,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Language
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_Language
   qualifiedName:
@@ -105,13 +105,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 26
 - id: Microsoft.CodeAnalysis.ISymbol.Name
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: Name
   qualifiedName:
@@ -121,9 +121,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 31
   summary: >+
     Gets the symbol name. Returns the empty string if unnamed.
@@ -138,8 +138,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Name
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_Name
   qualifiedName:
@@ -148,13 +148,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 31
 - id: Microsoft.CodeAnalysis.ISymbol.MetadataName
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: MetadataName
   qualifiedName:
@@ -164,9 +164,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 43
   summary: >+
     Gets the name of a symbol as it appears in metadata. Most of the time, this
@@ -195,8 +195,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_MetadataName
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_MetadataName
   qualifiedName:
@@ -205,13 +205,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 43
 - id: Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ContainingSymbol
   qualifiedName:
@@ -221,12 +221,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 48
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
+    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api/Microsoft.CodeAnalysis.ISymbol) for the immediately containing symbol.
 
   syntax:
     content:
@@ -236,10 +236,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingSymbol
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_ContainingSymbol
   qualifiedName:
@@ -248,13 +248,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 48
 - id: Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ContainingAssembly
   qualifiedName:
@@ -264,12 +264,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 54
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](#/api\Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.IAssemblySymbol](#/api/Microsoft.CodeAnalysis.IAssemblySymbol) for the containing assembly. Returns null if the
 
     symbol is shared across multiple assemblies.
 
@@ -281,10 +281,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IAssemblySymbol
         name: IAssemblySymbol
-        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+        href: api/Microsoft.CodeAnalysis.IAssemblySymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingAssembly
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_ContainingAssembly
   qualifiedName:
@@ -293,13 +293,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 54
 - id: Microsoft.CodeAnalysis.ISymbol.ContainingModule
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ContainingModule
   qualifiedName:
@@ -309,12 +309,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 60
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](#/api\Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.IModuleSymbol](#/api/Microsoft.CodeAnalysis.IModuleSymbol) for the containing module. Returns null if the
 
     symbol is shared across multiple modules.
 
@@ -326,10 +326,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IModuleSymbol
         name: IModuleSymbol
-        href: api\Microsoft.CodeAnalysis.IModuleSymbol
+        href: api/Microsoft.CodeAnalysis.IModuleSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingModule
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_ContainingModule
   qualifiedName:
@@ -338,13 +338,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 60
 - id: Microsoft.CodeAnalysis.ISymbol.ContainingType
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ContainingType
   qualifiedName:
@@ -354,12 +354,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 66
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](#/api\Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.INamedTypeSymbol](#/api/Microsoft.CodeAnalysis.INamedTypeSymbol) for the containing type. Returns null if the
 
     symbol is not contained within a type.
 
@@ -371,10 +371,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingType
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_ContainingType
   qualifiedName:
@@ -383,13 +383,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 66
 - id: Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ContainingNamespace
   qualifiedName:
@@ -399,12 +399,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 72
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](#/api\Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
+    Gets the [Microsoft.CodeAnalysis.INamespaceSymbol](#/api/Microsoft.CodeAnalysis.INamespaceSymbol) for the nearest enclosing namespace. Returns null if the
 
     symbol isn't contained in a namespace.
 
@@ -416,10 +416,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamespaceSymbol
         name: INamespaceSymbol
-        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+        href: api/Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_ContainingNamespace
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_ContainingNamespace
   qualifiedName:
@@ -428,13 +428,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 72
 - id: Microsoft.CodeAnalysis.ISymbol.IsDefinition
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsDefinition
   qualifiedName:
@@ -444,9 +444,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 78
   summary: >+
     Gets a value indicating whether the symbol is the original definition. Returns false
@@ -463,8 +463,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsDefinition
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsDefinition
   qualifiedName:
@@ -473,13 +473,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 78
 - id: Microsoft.CodeAnalysis.ISymbol.IsStatic
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsStatic
   qualifiedName:
@@ -489,9 +489,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 83
   summary: >+
     Gets a value indicating whether the symbol is static.
@@ -506,8 +506,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsStatic
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsStatic
   qualifiedName:
@@ -516,13 +516,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 83
 - id: Microsoft.CodeAnalysis.ISymbol.IsVirtual
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsVirtual
   qualifiedName:
@@ -532,9 +532,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 88
   summary: >+
     Gets a value indicating whether the symbol is virtual.
@@ -549,8 +549,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsVirtual
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsVirtual
   qualifiedName:
@@ -559,13 +559,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 88
 - id: Microsoft.CodeAnalysis.ISymbol.IsOverride
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsOverride
   qualifiedName:
@@ -575,9 +575,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 93
   summary: >+
     Gets a value indicating whether the symbol is an override of a base class symbol.
@@ -592,8 +592,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsOverride
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsOverride
   qualifiedName:
@@ -602,13 +602,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 93
 - id: Microsoft.CodeAnalysis.ISymbol.IsAbstract
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsAbstract
   qualifiedName:
@@ -618,9 +618,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 98
   summary: >+
     Gets a value indicating whether the symbol is abstract.
@@ -635,8 +635,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsAbstract
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsAbstract
   qualifiedName:
@@ -645,13 +645,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 98
 - id: Microsoft.CodeAnalysis.ISymbol.IsSealed
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsSealed
   qualifiedName:
@@ -661,9 +661,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 103
   summary: >+
     Gets a value indicating whether the symbol is sealed.
@@ -678,8 +678,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsSealed
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsSealed
   qualifiedName:
@@ -688,13 +688,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 103
 - id: Microsoft.CodeAnalysis.ISymbol.IsExtern
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsExtern
   qualifiedName:
@@ -704,9 +704,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 108
   summary: >+
     Gets a value indicating whether the symbol is defined externally.
@@ -721,8 +721,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsExtern
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsExtern
   qualifiedName:
@@ -731,13 +731,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 108
 - id: Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: IsImplicitlyDeclared
   qualifiedName:
@@ -747,9 +747,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 128
   summary: >+
     Returns true if this symbol was automatically created by the compiler, and does not have
@@ -766,8 +766,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_IsImplicitlyDeclared
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_IsImplicitlyDeclared
   qualifiedName:
@@ -776,13 +776,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 128
 - id: Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: CanBeReferencedByName
   qualifiedName:
@@ -792,9 +792,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 133
   summary: >+
     Returns true if this symbol can be referenced by its name in code.
@@ -809,8 +809,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_CanBeReferencedByName
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_CanBeReferencedByName
   qualifiedName:
@@ -819,13 +819,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 133
 - id: Microsoft.CodeAnalysis.ISymbol.Locations
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: Locations
   qualifiedName:
@@ -835,9 +835,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 140
   summary: >+
     Gets the locations where the symbol was originally defined, either in source or
@@ -856,8 +856,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.Location}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_Locations
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_Locations
   qualifiedName:
@@ -866,13 +866,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 140
 - id: Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: DeclaringSyntaxReferences
   qualifiedName:
@@ -882,9 +882,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 157
   summary: >+
     Get the syntax node(s) where this symbol was declared in source. Some symbols (for example,
@@ -915,8 +915,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.SyntaxReference}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaringSyntaxReferences
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_DeclaringSyntaxReferences
   qualifiedName:
@@ -925,13 +925,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 157
 - id: Microsoft.CodeAnalysis.ISymbol.GetAttributes
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: GetAttributes
   qualifiedName:
@@ -941,9 +941,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 163
   summary: >+
     Gets the attributes for the symbol. Returns an empty [System.Collections.Generic.IEnumerable`1](#)
@@ -957,8 +957,8 @@ items:
     return:
       id: ImmutableArray
 - id: Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: DeclaredAccessibility
   qualifiedName:
@@ -968,12 +968,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 169
   summary: >+
-    Gets a [Microsoft.CodeAnalysis.Accessibility](#/api\Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
+    Gets a [Microsoft.CodeAnalysis.Accessibility](#/api/Microsoft.CodeAnalysis.Accessibility) indicating the declared accessibility for the symbol.
 
     Returns NotApplicable if no accessibility is declared.
 
@@ -985,10 +985,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Accessibility
         name: Accessibility
-        href: api\Microsoft.CodeAnalysis.Accessibility
+        href: api/Microsoft.CodeAnalysis.Accessibility
 - id: Microsoft.CodeAnalysis.ISymbol.get_DeclaredAccessibility
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_DeclaredAccessibility
   qualifiedName:
@@ -997,13 +997,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 169
 - id: Microsoft.CodeAnalysis.ISymbol.OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: OriginalDefinition
   qualifiedName:
@@ -1013,12 +1013,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 176
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api\Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
+    Gets the [Microsoft.CodeAnalysis.ISymbol](#/api/Microsoft.CodeAnalysis.ISymbol) for the original definition of the symbol.
 
     If this symbol is derived from another symbol, by type substitution for instance,
 
@@ -1032,10 +1032,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.ISymbol.get_OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
@@ -1044,13 +1044,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 176
 - id: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: Accept
   qualifiedName:
@@ -1060,9 +1060,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 178
   syntax:
     content:
@@ -1072,12 +1072,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolVisitor
         name: SymbolVisitor
-        href: api\Microsoft.CodeAnalysis.SymbolVisitor
+        href: api/Microsoft.CodeAnalysis.SymbolVisitor
     return:
       id: Void
 - id: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: Accept
   qualifiedName:
@@ -1087,9 +1087,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 179
   syntax:
     content:
@@ -1103,8 +1103,8 @@ items:
     return:
       id: TResult
 - id: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: GetDocumentationCommentId
   qualifiedName:
@@ -1114,9 +1114,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 185
   summary: >+
     Returns the Documentation Comment ID for the symbol, or null if the symbol doesn't
@@ -1130,8 +1130,8 @@ items:
     return:
       id: String
 - id: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: GetDocumentationCommentXml
   qualifiedName:
@@ -1141,9 +1141,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 194
   summary: >+
     Gets the XML (as text) for the comment associated with the symbol.
@@ -1174,8 +1174,8 @@ items:
       id: String
       description: The XML that would be written to the documentation file for the symbol.
 - id: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ToDisplayString
   qualifiedName:
@@ -1185,9 +1185,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 201
   summary: >+
     Converts the symbol to a string representation.
@@ -1200,14 +1200,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolDisplayFormat
         name: SymbolDisplayFormat
-        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
+        href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: Format or null for the default.
     return:
       id: String
       description: A formatted string representation of the symbol.
 - id: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ToDisplayParts
   qualifiedName:
@@ -1217,9 +1217,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 210
   summary: >+
     Convert a symbol to an array of string parts, each of which has a kind. Useful for
@@ -1234,7 +1234,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolDisplayFormat
         name: SymbolDisplayFormat
-        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
+        href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1243,8 +1243,8 @@ items:
       id: ImmutableArray
       description: A read-only array of string parts.
 - id: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ToMinimalDisplayString
   qualifiedName:
@@ -1254,9 +1254,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 222
   summary: >+
     Convert a symbol to a string that can be displayed to the user. May be tailored to a
@@ -1271,7 +1271,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
       description: >-
         Binding information (for determining names appropriate to
 
@@ -1286,7 +1286,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolDisplayFormat
         name: SymbolDisplayFormat
-        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
+        href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1295,8 +1295,8 @@ items:
       id: String
       description: A formatted string that can be displayed to the user.
 - id: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: ToMinimalDisplayParts
   qualifiedName:
@@ -1306,9 +1306,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 237
   summary: >+
     Convert a symbol to an array of string parts, each of which has a kind. May be tailored
@@ -1323,7 +1323,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SemanticModel
         name: SemanticModel
-        href: api\Microsoft.CodeAnalysis.SemanticModel
+        href: api/Microsoft.CodeAnalysis.SemanticModel
       description: >-
         Binding information (for determining names appropriate to
 
@@ -1338,7 +1338,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SymbolDisplayFormat
         name: SymbolDisplayFormat
-        href: api\Microsoft.CodeAnalysis.SymbolDisplayFormat
+        href: api/Microsoft.CodeAnalysis.SymbolDisplayFormat
       description: >-
         Formatting rules - null implies
 
@@ -1347,8 +1347,8 @@ items:
       id: ImmutableArray
       description: A read-only array of string parts.
 - id: Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: HasUnsupportedMetadata
   qualifiedName:
@@ -1358,9 +1358,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 261
   summary: >+
     Indicates that this symbol uses metadata that cannot be supported by the language.
@@ -1407,8 +1407,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ISymbol.get_HasUnsupportedMetadata
-  yaml: api\Microsoft.CodeAnalysis.ISymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ISymbol
+  yaml: api/Microsoft.CodeAnalysis.ISymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ISymbol
   name:
     CSharp: get_HasUnsupportedMetadata
   qualifiedName:
@@ -1417,7 +1417,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ISymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ISymbol.cs
     startLine: 261

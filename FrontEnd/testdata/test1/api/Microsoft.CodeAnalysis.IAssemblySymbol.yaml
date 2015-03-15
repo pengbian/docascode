@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.IAssemblySymbol
-yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+href: api/Microsoft.CodeAnalysis.IAssemblySymbol
 name:
   CSharp: IAssemblySymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
   startLine: 10
 summary: >+
   Represents a .NET assembly, consisting of one or more modules.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface IAssemblySymbol
 items:
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.IsInteractive
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: IsInteractive
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 15
   summary: >+
     True if the assembly contains interactive code.
@@ -50,8 +50,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_IsInteractive
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_IsInteractive
   qualifiedName:
@@ -60,13 +60,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 15
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.Identity
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: Identity
   qualifiedName:
@@ -76,9 +76,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 20
   summary: >+
     Gets the name of this assembly.
@@ -91,10 +91,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.AssemblyIdentity
         name: AssemblyIdentity
-        href: api\Microsoft.CodeAnalysis.AssemblyIdentity
+        href: api/Microsoft.CodeAnalysis.AssemblyIdentity
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Identity
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_Identity
   qualifiedName:
@@ -103,13 +103,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 20
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.GlobalNamespace
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: GlobalNamespace
   qualifiedName:
@@ -119,9 +119,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 27
   summary: >+
     Gets the merged root namespace that contains all namespaces and types defined in the modules
@@ -138,10 +138,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamespaceSymbol
         name: INamespaceSymbol
-        href: api\Microsoft.CodeAnalysis.INamespaceSymbol
+        href: api/Microsoft.CodeAnalysis.INamespaceSymbol
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_GlobalNamespace
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_GlobalNamespace
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 27
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.Modules
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: Modules
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 33
   summary: >+
     Gets the modules in this assembly. (There must be at least one.) The first one is the main module
@@ -185,8 +185,8 @@ items:
         name: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.IModuleSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_Modules
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_Modules
   qualifiedName:
@@ -195,13 +195,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 33
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.TypeNames
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: TypeNames
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 38
   summary: >+
     Gets the set of type identifiers from this assembly.
@@ -228,8 +228,8 @@ items:
         name: System.Collections.Generic.ICollection{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_TypeNames
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_TypeNames
   qualifiedName:
@@ -238,13 +238,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 38
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.NamespaceNames
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: NamespaceNames
   qualifiedName:
@@ -254,9 +254,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 43
   summary: >+
     Gets the set of namespace names from this assembly.
@@ -271,8 +271,8 @@ items:
         name: System.Collections.Generic.ICollection{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_NamespaceNames
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_NamespaceNames
   qualifiedName:
@@ -281,13 +281,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 43
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.GivesAccessTo(Microsoft.CodeAnalysis.IAssemblySymbol)
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: GivesAccessTo
   qualifiedName:
@@ -297,9 +297,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 48
   summary: >+
     Gets a value indicating whether this assembly gives
@@ -314,12 +314,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IAssemblySymbol
         name: IAssemblySymbol
-        href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+        href: api/Microsoft.CodeAnalysis.IAssemblySymbol
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.GetTypeByMetadataName(System.String)
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: GetTypeByMetadataName
   qualifiedName:
@@ -329,9 +329,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 55
   summary: >+
     Lookup a type within the assembly using the canonical CLR metadata name of the type.
@@ -350,8 +350,8 @@ items:
       id: INamedTypeSymbol
       description: Symbol for the type or null if type cannot be found or is ambiguous.
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.MightContainExtensionMethods
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: MightContainExtensionMethods
   qualifiedName:
@@ -361,9 +361,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 61
   summary: >+
     Determines if the assembly might contain extension methods.
@@ -380,8 +380,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.get_MightContainExtensionMethods
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: get_MightContainExtensionMethods
   qualifiedName:
@@ -390,13 +390,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 61
 - id: Microsoft.CodeAnalysis.IAssemblySymbol.ResolveForwardedType(System.String)
-  yaml: api\Microsoft.CodeAnalysis.IAssemblySymbol.yaml
-  href: api\Microsoft.CodeAnalysis.IAssemblySymbol
+  yaml: api/Microsoft.CodeAnalysis.IAssemblySymbol.yaml
+  href: api/Microsoft.CodeAnalysis.IAssemblySymbol
   name:
     CSharp: ResolveForwardedType
   qualifiedName:
@@ -406,9 +406,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\IAssemblySymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/IAssemblySymbol.cs
     startLine: 68
   summary: >+
     Returns the type symbol for a forwarded type based its canonical CLR metadata name.

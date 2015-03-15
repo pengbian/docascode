@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.INamedTypeSymbol
-yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 name:
   CSharp: INamedTypeSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
   startLine: 10
 summary: >+
   Represents a type other than an array, a pointer, a type parameter.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface INamedTypeSymbol
 items:
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.Arity
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: Arity
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 16
   summary: >+
     Returns the arity of this type, or the number of type parameters it takes.
@@ -52,8 +52,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Arity
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_Arity
   qualifiedName:
@@ -62,13 +62,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 16
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.IsGenericType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: IsGenericType
   qualifiedName:
@@ -78,9 +78,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 21
   summary: >+
     True if this type or some containing type has type parameters.
@@ -95,8 +95,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsGenericType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_IsGenericType
   qualifiedName:
@@ -105,13 +105,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 21
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.IsUnboundGenericType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: IsUnboundGenericType
   qualifiedName:
@@ -121,9 +121,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 30
   summary: >+
     True if this is a reference to an unbound generic type. A generic type is
@@ -146,8 +146,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsUnboundGenericType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_IsUnboundGenericType
   qualifiedName:
@@ -156,13 +156,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 30
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.IsScriptClass
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: IsScriptClass
   qualifiedName:
@@ -172,9 +172,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 36
   summary: >+
     Returns true if the type is a Script class.
@@ -191,8 +191,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsScriptClass
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_IsScriptClass
   qualifiedName:
@@ -201,13 +201,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 36
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.IsImplicitClass
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: IsImplicitClass
   qualifiedName:
@@ -217,9 +217,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 42
   summary: >+
     Returns true if the type is the implicit class that holds onto invalid global members (like methods or
@@ -236,8 +236,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_IsImplicitClass
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_IsImplicitClass
   qualifiedName:
@@ -246,13 +246,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 42
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.MemberNames
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: MemberNames
   qualifiedName:
@@ -262,9 +262,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 47
   summary: >+
     Returns collection of names of members declared within this type.
@@ -279,8 +279,8 @@ items:
         name: System.Collections.Generic.IEnumerable{System.String}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MemberNames
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_MemberNames
   qualifiedName:
@@ -289,13 +289,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 47
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.TypeParameters
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: TypeParameters
   qualifiedName:
@@ -305,9 +305,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 53
   summary: >+
     Returns the type parameters that this type has. If this is a non-generic type,
@@ -324,8 +324,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeParameters
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_TypeParameters
   qualifiedName:
@@ -334,13 +334,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 53
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.TypeArguments
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: TypeArguments
   qualifiedName:
@@ -350,9 +350,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 60
   summary: >+
     Returns the type arguments that have been substituted for the type parameters.
@@ -371,8 +371,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_TypeArguments
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_TypeArguments
   qualifiedName:
@@ -381,13 +381,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 60
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: OriginalDefinition
   qualifiedName:
@@ -397,9 +397,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 67
   summary: >+
     Get the original definition of this type symbol. If this symbol is derived from another
@@ -416,10 +416,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
@@ -428,13 +428,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 67
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.DelegateInvokeMethod
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: DelegateInvokeMethod
   qualifiedName:
@@ -444,9 +444,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 76
   summary: >+
     For delegate types, gets the delegate's invoke method.  Returns null on
@@ -467,10 +467,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IMethodSymbol
         name: IMethodSymbol
-        href: api\Microsoft.CodeAnalysis.IMethodSymbol
+        href: api/Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_DelegateInvokeMethod
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_DelegateInvokeMethod
   qualifiedName:
@@ -479,13 +479,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 76
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.EnumUnderlyingType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: EnumUnderlyingType
   qualifiedName:
@@ -495,9 +495,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 82
   summary: >+
     For enum types, gets the underlying type. Returns null on all other
@@ -512,10 +512,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_EnumUnderlyingType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_EnumUnderlyingType
   qualifiedName:
@@ -524,13 +524,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 82
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.ConstructedFrom
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: ConstructedFrom
   qualifiedName:
@@ -540,9 +540,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 89
   summary: >+
     Returns the type symbol that this type was constructed from. This type symbol
@@ -559,10 +559,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_ConstructedFrom
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_ConstructedFrom
   qualifiedName:
@@ -571,13 +571,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 89
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: Construct
   qualifiedName:
@@ -587,9 +587,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 96
   summary: >+
     Returns a constructed type given its type arguments.
@@ -610,8 +610,8 @@ items:
     return:
       id: INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.ConstructUnboundGenericType
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: ConstructUnboundGenericType
   qualifiedName:
@@ -621,9 +621,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 101
   summary: >+
     Returns an unbound generic type of this named type.
@@ -635,8 +635,8 @@ items:
     return:
       id: INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.InstanceConstructors
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: InstanceConstructors
   qualifiedName:
@@ -646,9 +646,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 106
   summary: >+
     Get the instance constructors for this type.
@@ -663,8 +663,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_InstanceConstructors
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_InstanceConstructors
   qualifiedName:
@@ -673,13 +673,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 106
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.StaticConstructors
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: StaticConstructors
   qualifiedName:
@@ -689,9 +689,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 111
   summary: >+
     Get the static constructors for this type.
@@ -706,8 +706,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_StaticConstructors
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_StaticConstructors
   qualifiedName:
@@ -716,13 +716,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 111
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.Constructors
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: Constructors
   qualifiedName:
@@ -732,9 +732,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 116
   summary: >+
     Get the both instance and static constructors for this type.
@@ -749,8 +749,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_Constructors
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_Constructors
   qualifiedName:
@@ -759,13 +759,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 116
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.AssociatedSymbol
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: AssociatedSymbol
   qualifiedName:
@@ -775,9 +775,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 125
   summary: >+
     For implicitly declared delegate types returns the EventSymbol that caused this
@@ -798,10 +798,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ISymbol
         name: ISymbol
-        href: api\Microsoft.CodeAnalysis.ISymbol
+        href: api/Microsoft.CodeAnalysis.ISymbol
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_AssociatedSymbol
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_AssociatedSymbol
   qualifiedName:
@@ -810,13 +810,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 125
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.MightContainExtensionMethods
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: MightContainExtensionMethods
   qualifiedName:
@@ -826,9 +826,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 131
   summary: >+
     Determines if the symbol might contain extension methods.
@@ -845,8 +845,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.INamedTypeSymbol.get_MightContainExtensionMethods
-  yaml: api\Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+  yaml: api/Microsoft.CodeAnalysis.INamedTypeSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
   name:
     CSharp: get_MightContainExtensionMethods
   qualifiedName:
@@ -855,7 +855,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\INamedTypeSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/INamedTypeSymbol.cs
     startLine: 131

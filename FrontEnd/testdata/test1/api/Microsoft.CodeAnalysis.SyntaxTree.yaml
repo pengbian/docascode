@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxTree
-yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxTree
+yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxTree
 name:
   CSharp: SyntaxTree
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
   startLine: 18
 summary: >+
   The parsed representation of a source document.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxTree.FilePath
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: FilePath
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 43
   summary: >+
     The path of the source document file.
@@ -54,8 +54,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTree.get_FilePath
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: get_FilePath
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 43
 - id: Microsoft.CodeAnalysis.SyntaxTree.HasCompilationUnitRoot
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: HasCompilationUnitRoot
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 48
   summary: >+
     Returns true if this syntax tree has a root with SyntaxKind "CompilationUnit".
@@ -97,8 +97,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTree.get_HasCompilationUnitRoot
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: get_HasCompilationUnitRoot
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 48
 - id: Microsoft.CodeAnalysis.SyntaxTree.Options
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: Options
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 53
   summary: >+
     The options used by the parser to produce the syntax tree.
@@ -138,10 +138,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ParseOptions
         name: ParseOptions
-        href: api\Microsoft.CodeAnalysis.ParseOptions
+        href: api/Microsoft.CodeAnalysis.ParseOptions
 - id: Microsoft.CodeAnalysis.SyntaxTree.get_Options
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: get_Options
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 55
 - id: Microsoft.CodeAnalysis.SyntaxTree.Length
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: Length
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 69
   summary: >+
     The length of the text of the syntax tree.
@@ -183,8 +183,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxTree.get_Length
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: get_Length
   qualifiedName:
@@ -193,13 +193,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 69
 - id: Microsoft.CodeAnalysis.SyntaxTree.TryGetText(Microsoft.CodeAnalysis.Text.SourceText@)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: TryGetText
   qualifiedName:
@@ -209,9 +209,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 74
   summary: >+
     Gets the syntax tree's text if it is available.
@@ -224,12 +224,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.SourceText
         name: SourceText
-        href: api\Microsoft.CodeAnalysis.Text.SourceText
+        href: api/Microsoft.CodeAnalysis.Text.SourceText
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetText(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetText
   qualifiedName:
@@ -239,9 +239,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 79
   summary: >+
     Gets the text of the source document.
@@ -258,8 +258,8 @@ items:
     return:
       id: SourceText
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetTextAsync(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetTextAsync
   qualifiedName:
@@ -269,9 +269,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 88
   summary: >+
     Gets the text of the source document asynchronously.
@@ -288,8 +288,8 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.SyntaxTree.TryGetRoot(Microsoft.CodeAnalysis.SyntaxNode@)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: TryGetRoot
   qualifiedName:
@@ -299,9 +299,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 97
   summary: >+
     Gets the root of the syntax tree if it is available.
@@ -314,12 +314,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetRoot(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetRoot
   qualifiedName:
@@ -329,9 +329,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 110
   summary: >+
     Gets the root node of the syntax tree, causing computation if necessary.
@@ -348,8 +348,8 @@ items:
     return:
       id: SyntaxNode
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetRootAsync(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetRootAsync
   qualifiedName:
@@ -359,9 +359,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 123
   summary: >+
     Gets the root node of the syntax tree asynchronously.
@@ -378,8 +378,8 @@ items:
     return:
       id: Task
 - id: Microsoft.CodeAnalysis.SyntaxTree.WithChangedText(Microsoft.CodeAnalysis.Text.SourceText)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: WithChangedText
   qualifiedName:
@@ -389,9 +389,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 140
   summary: >+
     Create a new syntax tree based off this tree using a new source text.
@@ -412,12 +412,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.SourceText
         name: SourceText
-        href: api\Microsoft.CodeAnalysis.Text.SourceText
+        href: api/Microsoft.CodeAnalysis.Text.SourceText
     return:
       id: SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -427,9 +427,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 147
   summary: >+
     Gets a list of all the diagnostics in the syntax tree.
@@ -450,8 +450,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -461,9 +461,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 154
   summary: >+
     Gets a list of all the diagnostics in the sub tree that has the specified node as its root.
@@ -480,12 +480,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -495,9 +495,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 161
   summary: >+
     Gets a list of all the diagnostics associated with the token and any related trivia.
@@ -514,12 +514,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxTrivia)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -529,9 +529,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 168
   summary: >+
     Gets a list of all the diagnostics associated with the trivia.
@@ -548,12 +548,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetDiagnostics(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetDiagnostics
   qualifiedName:
@@ -563,9 +563,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 176
   summary: >+
     Gets a list of all the diagnostics in either the sub tree that has the specified node as its root or
@@ -584,12 +584,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetLineSpan(Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetLineSpan
   qualifiedName:
@@ -599,9 +599,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 187
   summary: >+
     Gets the location in terms of path, line and column for a given span.
@@ -614,7 +614,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: Span within the tree.
     - id: cancellationToken
       type:
@@ -625,12 +625,12 @@ items:
     return:
       id: FileLinePositionSpan
       description: >-
-        A valid [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.
+        A valid [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api/Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.
 
             The values are not affected by line mapping directives (#line).
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetMappedLineSpan(Microsoft.CodeAnalysis.Text.TextSpan,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetMappedLineSpan
   qualifiedName:
@@ -640,9 +640,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 204
   summary: >+
     Gets the location in terms of path, line and column after applying source line mapping directives
@@ -657,7 +657,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
       description: Span within the tree.
     - id: cancellationToken
       type:
@@ -667,10 +667,10 @@ items:
       description: Cancallation token.
     return:
       id: FileLinePositionSpan
-      description: "A valid [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api\\Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    If the location path is mapped the resulting path is the path specified in the corresponding #line,\r\n    otherwise it's [Microsoft.CodeAnalysis.SyntaxTree.FilePath](#/api\\Microsoft.CodeAnalysis.SyntaxTree).\r\n    \r\n    A location path is considered mapped if the first #line directive that preceeds it and that \r\n    either specifies an explicit file path or is #line default exists and specifies an explicit path."
+      description: "A valid [Microsoft.CodeAnalysis.FileLinePositionSpan](#/api/Microsoft.CodeAnalysis.FileLinePositionSpan) that contains path, line and column information.\r\n    \r\n    If the location path is mapped the resulting path is the path specified in the corresponding #line,\r\n    otherwise it's [Microsoft.CodeAnalysis.SyntaxTree.FilePath](#/api/Microsoft.CodeAnalysis.SyntaxTree).\r\n    \r\n    A location path is considered mapped if the first #line directive that preceeds it and that \r\n    either specifies an explicit file path or is #line default exists and specifies an explicit path."
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetLineVisibility(System.Int32,System.Threading.CancellationToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetLineVisibility
   qualifiedName:
@@ -680,9 +680,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 211
   summary: >+
     Returns the visibility for the line at the given position.
@@ -706,8 +706,8 @@ items:
     return:
       id: LineVisibility
 - id: Microsoft.CodeAnalysis.SyntaxTree.HasHiddenRegions
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: HasHiddenRegions
   qualifiedName:
@@ -717,9 +717,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 272
   summary: >+
     Are there any hidden regions in the tree?
@@ -732,8 +732,8 @@ items:
       id: Boolean
       description: True if there is at least one hidden region.
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetChangedSpans(Microsoft.CodeAnalysis.SyntaxTree)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetChangedSpans
   qualifiedName:
@@ -743,9 +743,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 278
   summary: >+
     Returns a list of the changed regions between this tree and the specified tree. The list is conservative for
@@ -760,12 +760,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
     return:
       id: IList
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetLocation(Microsoft.CodeAnalysis.Text.TextSpan)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetLocation
   qualifiedName:
@@ -775,9 +775,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 283
   summary: >+
     Gets a location for the specified text span.
@@ -790,12 +790,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
     return:
       id: Location
 - id: Microsoft.CodeAnalysis.SyntaxTree.IsEquivalentTo(Microsoft.CodeAnalysis.SyntaxTree,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: IsEquivalentTo
   qualifiedName:
@@ -805,9 +805,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 293
   summary: >+
     Determines if two trees are the same, disregarding trivia differences.
@@ -820,7 +820,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
       description: The tree to compare against.
     - id: topLevel
       type:
@@ -836,8 +836,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetReference(Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetReference
   qualifiedName:
@@ -847,9 +847,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 300
   summary: >+
     Gets a SyntaxReference for a specified syntax node. SyntaxReferences can be used to
@@ -866,12 +866,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: SyntaxReference
 - id: Microsoft.CodeAnalysis.SyntaxTree.GetChanges(Microsoft.CodeAnalysis.SyntaxTree)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: GetChanges
   qualifiedName:
@@ -881,9 +881,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 308
   summary: >+
     Gets a list of text changes that when applied to the old tree produce this tree.
@@ -896,13 +896,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTree
         name: SyntaxTree
-        href: api\Microsoft.CodeAnalysis.SyntaxTree
+        href: api/Microsoft.CodeAnalysis.SyntaxTree
       description: The old tree.
     return:
       id: IList
 - id: Microsoft.CodeAnalysis.SyntaxTree.WithRootAndOptions(Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.ParseOptions)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: WithRootAndOptions
   qualifiedName:
@@ -912,9 +912,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 332
   summary: >+
     Returns a new tree whose root and options are as specified and other properties are copied from the current tree.
@@ -927,17 +927,17 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     - id: options
       type:
         id: Microsoft.CodeAnalysis.ParseOptions
         name: ParseOptions
-        href: api\Microsoft.CodeAnalysis.ParseOptions
+        href: api/Microsoft.CodeAnalysis.ParseOptions
     return:
       id: SyntaxTree
 - id: Microsoft.CodeAnalysis.SyntaxTree.WithFilePath(System.String)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxTree.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxTree
+  yaml: api/Microsoft.CodeAnalysis.SyntaxTree.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxTree
   name:
     CSharp: WithFilePath
   qualifiedName:
@@ -947,12 +947,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxTree.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxTree.cs
     startLine: 337
   summary: >+
-    Returns a new tree whose [Microsoft.CodeAnalysis.SyntaxTree.FilePath](#/api\Microsoft.CodeAnalysis.SyntaxTree) is the specified node and other properties are copied from the current tree.
+    Returns a new tree whose [Microsoft.CodeAnalysis.SyntaxTree.FilePath](#/api/Microsoft.CodeAnalysis.SyntaxTree) is the specified node and other properties are copied from the current tree.
 
   syntax:
     content:

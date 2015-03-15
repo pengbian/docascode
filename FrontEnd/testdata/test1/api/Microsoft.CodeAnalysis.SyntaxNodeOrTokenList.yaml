@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
-yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
 name:
   CSharp: SyntaxNodeOrTokenList
 qualifiedName:
@@ -10,12 +10,12 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
   startLine: 16
 summary: >+
-  A list of [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) structures.
+  A list of [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrToken) structures.
 
 syntax:
   content:
@@ -29,8 +29,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Count
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Count
   qualifiedName:
@@ -40,9 +40,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 71
   summary: >+
     Gets the count of nodes in this list
@@ -57,8 +57,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Count
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: get_Count
   qualifiedName:
@@ -67,13 +67,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 73
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Item(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Item
   qualifiedName:
@@ -83,16 +83,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 81
   summary: >+
-    Gets the [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken) at the specified index.
+    Gets the [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrToken) at the specified index.
 
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Item(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: get_Item
   qualifiedName:
@@ -101,13 +101,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 83
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: FullSpan
   qualifiedName:
@@ -117,9 +117,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 118
   summary: >+
     The absolute span of the list elements in characters, not including the leading and trailing trivia of the first and last elements.
@@ -132,10 +132,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_FullSpan
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: get_FullSpan
   qualifiedName:
@@ -144,13 +144,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 120
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Span
   qualifiedName:
@@ -160,9 +160,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 136
   summary: >+
     The absolute span of the list elements in characters, including the leading and trailing trivia of the first and last elements.
@@ -175,10 +175,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.Text.TextSpan
         name: TextSpan
-        href: api\Microsoft.CodeAnalysis.Text.TextSpan
+        href: api/Microsoft.CodeAnalysis.Text.TextSpan
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.get_Span
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: get_Span
   qualifiedName:
@@ -187,13 +187,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 138
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.ToString
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: ToString
   qualifiedName:
@@ -203,9 +203,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 159
   summary: >+
     Returns the string representation of the nodes and tokens in this list, not including the first node or token's leading trivia
@@ -220,8 +220,8 @@ items:
       id: String
       description: "The string representation of the nodes and tokens in this list, not including the first node or token's leading trivia \r\n    and the last node or token's trailing trivia."
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.ToFullString
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: ToFullString
   qualifiedName:
@@ -231,9 +231,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 172
   summary: >+
     Returns the full string representation of the nodes and tokens in this list including the first node or token's leading trivia
@@ -248,8 +248,8 @@ items:
       id: String
       description: "The full string representation of the nodes and tokens in this list including the first node or token's leading trivia \r\n    and the last node or token's trailing trivia."
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.First
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: First
   qualifiedName:
@@ -259,9 +259,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 180
   summary: >+
     Gets the first SyntaxNodeOrToken structure from this list.
@@ -273,8 +273,8 @@ items:
     return:
       id: SyntaxNodeOrToken
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.FirstOrDefault
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: FirstOrDefault
   qualifiedName:
@@ -284,9 +284,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 188
   summary: >+
     Gets the first SyntaxNodeOrToken structure from this list if present, else default(SyntaxNodeOrToken).
@@ -298,8 +298,8 @@ items:
     return:
       id: SyntaxNodeOrToken
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Last
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Last
   qualifiedName:
@@ -309,9 +309,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 203
   summary: >+
     Gets the last SyntaxNodeOrToken structure from this list.
@@ -323,8 +323,8 @@ items:
     return:
       id: SyntaxNodeOrToken
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.LastOrDefault
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: LastOrDefault
   qualifiedName:
@@ -334,9 +334,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 211
   summary: >+
     Gets the last SyntaxNodeOrToken structure from this list if present, else default(SyntaxNodeOrToken).
@@ -348,8 +348,8 @@ items:
     return:
       id: SyntaxNodeOrToken
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.IndexOf(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: IndexOf
   qualifiedName:
@@ -359,12 +359,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 228
   summary: >+
-    Returns the index from the list for the given [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrToken).
+    Returns the index from the list for the given [Microsoft.CodeAnalysis.SyntaxNodeOrToken](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrToken).
 
   syntax:
     content:
@@ -374,14 +374,14 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to search for in the list.
     return:
       id: Int32
       description: The index of the found nodeOrToken, or -1 if it wasn't found
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Any
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Any
   qualifiedName:
@@ -391,9 +391,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 248
   summary: >+
     Indicates whether there is any element in the list.
@@ -406,8 +406,8 @@ items:
       id: Boolean
       description: true if there are any elements in the list, else false.
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Add(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Add
   qualifiedName:
@@ -417,12 +417,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 272
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token added to the end.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token added to the end.
 
   syntax:
     content:
@@ -432,13 +432,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to add.
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.AddRange(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: AddRange
   qualifiedName:
@@ -448,12 +448,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 281
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens added to the end.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens added to the end.
 
   syntax:
     content:
@@ -468,8 +468,8 @@ items:
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Insert(System.Int32,Microsoft.CodeAnalysis.SyntaxNodeOrToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Insert
   qualifiedName:
@@ -479,12 +479,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 291
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token inserted at the index.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified node or token inserted at the index.
 
   syntax:
     content:
@@ -500,13 +500,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The node or token to insert.
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: InsertRange
   qualifiedName:
@@ -516,12 +516,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 306
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens inserted at the index.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified nodes or tokens inserted at the index.
 
   syntax:
     content:
@@ -542,8 +542,8 @@ items:
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.RemoveAt(System.Int32)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: RemoveAt
   qualifiedName:
@@ -553,12 +553,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 348
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the element at the specified index removed.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the element at the specified index removed.
 
   syntax:
     content:
@@ -573,8 +573,8 @@ items:
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Remove(Microsoft.CodeAnalysis.SyntaxNodeOrToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Remove
   qualifiedName:
@@ -584,12 +584,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 365
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element removed.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element removed.
 
   syntax:
     content:
@@ -599,13 +599,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to remove.
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Replace(Microsoft.CodeAnalysis.SyntaxNodeOrToken,Microsoft.CodeAnalysis.SyntaxNodeOrToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Replace
   qualifiedName:
@@ -615,12 +615,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 383
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new node or token.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new node or token.
 
   syntax:
     content:
@@ -630,19 +630,19 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to replace.
     - id: newNodeOrToken
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The new node or token.
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.ReplaceRange(Microsoft.CodeAnalysis.SyntaxNodeOrToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNodeOrToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: ReplaceRange
   qualifiedName:
@@ -652,12 +652,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 398
   summary: >+
-    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new nodes and tokens.
+    Creates a new [Microsoft.CodeAnalysis.SyntaxNodeOrTokenList](#/api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList) with the specified element replaced with a new nodes and tokens.
 
   syntax:
     content:
@@ -667,7 +667,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrToken
         name: SyntaxNodeOrToken
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrToken
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrToken
       description: The element to replace.
     - id: newNodesAndTokens
       type:
@@ -678,8 +678,8 @@ items:
     return:
       id: SyntaxNodeOrTokenList
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.GetEnumerator
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: GetEnumerator
   qualifiedName:
@@ -689,9 +689,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 423
   summary: >+
     Gets the enumerator.
@@ -703,8 +703,8 @@ items:
     return:
       id: Enumerator
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.op_Equality(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList,Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: op_Equality
   qualifiedName:
@@ -713,16 +713,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 458
   summary: >+
     Implements the operator ==.
 
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.op_Inequality(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList,Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: op_Inequality
   qualifiedName:
@@ -731,16 +731,16 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 471
   summary: >+
     Implements the operator !=.
 
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Equals(Microsoft.CodeAnalysis.SyntaxNodeOrTokenList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Equals
   qualifiedName:
@@ -750,9 +750,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 484
   summary: >+
     Indicates whether the current object is equal to another object of the same type.
@@ -765,7 +765,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
         name: SyntaxNodeOrTokenList
-        href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+        href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
       description: An object to compare with this object.
     return:
       id: Boolean
@@ -774,8 +774,8 @@ items:
 
             false.
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: Equals
   qualifiedName:
@@ -785,9 +785,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 496
   summary: >+
     Determines whether the specified [System.Object](#) is equal to this instance.
@@ -806,8 +806,8 @@ items:
       id: Boolean
       description: true if the specified [System.Object](#) is equal to this instance; otherwise, false.
 - id: Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeOrTokenList
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -817,9 +817,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeOrTokenList.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeOrTokenList.cs
     startLine: 507
   summary: >+
     Returns a hash code for this instance.

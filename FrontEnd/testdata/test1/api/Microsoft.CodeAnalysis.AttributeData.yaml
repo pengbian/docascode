@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.AttributeData
-yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-href: api\Microsoft.CodeAnalysis.AttributeData
+yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+href: api/Microsoft.CodeAnalysis.AttributeData
 name:
   CSharp: AttributeData
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+  path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
   startLine: 14
 syntax:
   content:
@@ -23,8 +23,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.AttributeData.AttributeClass
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: AttributeClass
   qualifiedName:
@@ -34,9 +34,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 23
   summary: >+
     The attribute class.
@@ -49,10 +49,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.AttributeData.get_AttributeClass
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: get_AttributeClass
   qualifiedName:
@@ -61,13 +61,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 23
 - id: Microsoft.CodeAnalysis.AttributeData.AttributeConstructor
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: AttributeConstructor
   qualifiedName:
@@ -77,9 +77,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 29
   summary: >+
     The constructor on the attribute class.
@@ -92,10 +92,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IMethodSymbol
         name: IMethodSymbol
-        href: api\Microsoft.CodeAnalysis.IMethodSymbol
+        href: api/Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.AttributeData.get_AttributeConstructor
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: get_AttributeConstructor
   qualifiedName:
@@ -104,13 +104,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 29
 - id: Microsoft.CodeAnalysis.AttributeData.ApplicationSyntaxReference
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: ApplicationSyntaxReference
   qualifiedName:
@@ -120,9 +120,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 32
   syntax:
     content:
@@ -132,10 +132,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxReference
         name: SyntaxReference
-        href: api\Microsoft.CodeAnalysis.SyntaxReference
+        href: api/Microsoft.CodeAnalysis.SyntaxReference
 - id: Microsoft.CodeAnalysis.AttributeData.get_ApplicationSyntaxReference
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: get_ApplicationSyntaxReference
   qualifiedName:
@@ -144,13 +144,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 32
 - id: Microsoft.CodeAnalysis.AttributeData.ConstructorArguments
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: ConstructorArguments
   qualifiedName:
@@ -160,9 +160,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 39
   summary: >+
     Constructor arguments on the attribute.
@@ -177,8 +177,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_ConstructorArguments
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: get_ConstructorArguments
   qualifiedName:
@@ -187,13 +187,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 39
 - id: Microsoft.CodeAnalysis.AttributeData.NamedArguments
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: NamedArguments
   qualifiedName:
@@ -203,9 +203,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 45
   summary: >+
     Named (property value) arguments on the attribute.
@@ -220,8 +220,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{System.Collections.Generic.KeyValuePair{System.String,Microsoft.CodeAnalysis.TypedConstant}}
         isExternal: true
 - id: Microsoft.CodeAnalysis.AttributeData.get_NamedArguments
-  yaml: api\Microsoft.CodeAnalysis.AttributeData.yaml
-  href: api\Microsoft.CodeAnalysis.AttributeData
+  yaml: api/Microsoft.CodeAnalysis.AttributeData.yaml
+  href: api/Microsoft.CodeAnalysis.AttributeData
   name:
     CSharp: get_NamedArguments
   qualifiedName:
@@ -230,7 +230,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\Attributes\CommonAttributeData.cs
+    path: src/Compilers/Core/Portable/Symbols/Attributes/CommonAttributeData.cs
     startLine: 45

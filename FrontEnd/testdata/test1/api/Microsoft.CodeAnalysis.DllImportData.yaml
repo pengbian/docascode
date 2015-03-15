@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.DllImportData
-yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-href: api\Microsoft.CodeAnalysis.DllImportData
+yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+href: api/Microsoft.CodeAnalysis.DllImportData
 name:
   CSharp: DllImportData
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+  path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
   startLine: 12
 summary: >+
   Information that describes how a method from the underlying Platform is to be invoked.
@@ -26,8 +26,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.DllImportData.ModuleName
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: ModuleName
   qualifiedName:
@@ -37,9 +37,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 28
   summary: >+
     Module name. Null if value specified in the attribute is not valid.
@@ -54,8 +54,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ModuleName
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_ModuleName
   qualifiedName:
@@ -64,13 +64,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 30
 - id: Microsoft.CodeAnalysis.DllImportData.EntryPointName
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: EntryPointName
   qualifiedName:
@@ -80,9 +80,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 36
   summary: >+
     Name of the native entry point or null if not specified (the effective name is the same as the name of the target method).
@@ -97,8 +97,8 @@ items:
         name: System.String
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_EntryPointName
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_EntryPointName
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 38
 - id: Microsoft.CodeAnalysis.DllImportData.ExactSpelling
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: ExactSpelling
   qualifiedName:
@@ -123,12 +123,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 50
   summary: >+
-    Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](#/api\Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime
+    Controls whether the [Microsoft.CodeAnalysis.DllImportData.CharacterSet](#/api/Microsoft.CodeAnalysis.DllImportData) field causes the common language runtime
 
     to search an unmanaged DLL for entry-point names other than the one specified.
 
@@ -142,8 +142,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ExactSpelling
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_ExactSpelling
   qualifiedName:
@@ -152,13 +152,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 52
 - id: Microsoft.CodeAnalysis.DllImportData.CharacterSet
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: CharacterSet
   qualifiedName:
@@ -168,9 +168,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 61
   summary: >+
     Indicates how to marshal string parameters and controls name mangling.
@@ -185,8 +185,8 @@ items:
         name: System.Runtime.InteropServices.CharSet
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CharacterSet
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_CharacterSet
   qualifiedName:
@@ -195,13 +195,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 63
 - id: Microsoft.CodeAnalysis.DllImportData.SetLastError
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: SetLastError
   qualifiedName:
@@ -211,9 +211,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 87
   summary: >+
     Indicates whether the callee calls the SetLastError Win32 API function before returning from the attributed method.
@@ -228,8 +228,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_SetLastError
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_SetLastError
   qualifiedName:
@@ -238,13 +238,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 89
 - id: Microsoft.CodeAnalysis.DllImportData.CallingConvention
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: CallingConvention
   qualifiedName:
@@ -254,9 +254,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 98
   summary: >+
     Indicates the calling convention of an entry point.
@@ -271,8 +271,8 @@ items:
         name: System.Runtime.InteropServices.CallingConvention
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_CallingConvention
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_CallingConvention
   qualifiedName:
@@ -281,13 +281,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 100
 - id: Microsoft.CodeAnalysis.DllImportData.BestFitMapping
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: BestFitMapping
   qualifiedName:
@@ -297,9 +297,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 127
   summary: >+
     Enables or disables best-fit mapping behavior when converting Unicode characters to ANSI characters.
@@ -316,8 +316,8 @@ items:
         name: System.Nullable{System.Boolean}
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_BestFitMapping
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_BestFitMapping
   qualifiedName:
@@ -326,13 +326,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 129
 - id: Microsoft.CodeAnalysis.DllImportData.ThrowOnUnmappableCharacter
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: ThrowOnUnmappableCharacter
   qualifiedName:
@@ -342,9 +342,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 149
   summary: >+
     Enables or disables the throwing of an exception on an unmappable Unicode character that is converted to an ANSI "?" character.
@@ -361,8 +361,8 @@ items:
         name: System.Nullable{System.Boolean}
         isExternal: true
 - id: Microsoft.CodeAnalysis.DllImportData.get_ThrowOnUnmappableCharacter
-  yaml: api\Microsoft.CodeAnalysis.DllImportData.yaml
-  href: api\Microsoft.CodeAnalysis.DllImportData
+  yaml: api/Microsoft.CodeAnalysis.DllImportData.yaml
+  href: api/Microsoft.CodeAnalysis.DllImportData
   name:
     CSharp: get_ThrowOnUnmappableCharacter
   qualifiedName:
@@ -371,7 +371,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\PlatformInvokeInformation.cs
+    path: src/Compilers/Core/Portable/Symbols/PlatformInvokeInformation.cs
     startLine: 151

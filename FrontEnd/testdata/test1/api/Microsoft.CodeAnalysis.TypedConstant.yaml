@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.TypedConstant
-yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-href: api\Microsoft.CodeAnalysis.TypedConstant
+yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+href: api/Microsoft.CodeAnalysis.TypedConstant
 name:
   CSharp: TypedConstant
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+  path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
   startLine: 16
 summary: >+
   Represents a constant value used as an argument to a custom attribute.
@@ -29,8 +29,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.TypedConstant.Kind
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: Kind
   qualifiedName:
@@ -40,9 +40,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 38
   summary: >+
     The kind of the constant.
@@ -55,10 +55,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TypedConstantKind
         name: TypedConstantKind
-        href: api\Microsoft.CodeAnalysis.TypedConstantKind
+        href: api/Microsoft.CodeAnalysis.TypedConstantKind
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Kind
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: get_Kind
   qualifiedName:
@@ -67,13 +67,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 40
 - id: Microsoft.CodeAnalysis.TypedConstant.Type
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: Type
   qualifiedName:
@@ -83,12 +83,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 47
   summary: >+
-    Returns the [Microsoft.CodeAnalysis.ITypeSymbol](#/api\Microsoft.CodeAnalysis.ITypeSymbol) of the constant,
+    Returns the [Microsoft.CodeAnalysis.ITypeSymbol](#/api/Microsoft.CodeAnalysis.ITypeSymbol) of the constant,
 
     or null if the type can't be determined (error).
 
@@ -100,10 +100,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeSymbol
         name: ITypeSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeSymbol
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Type
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: get_Type
   qualifiedName:
@@ -112,13 +112,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 49
 - id: Microsoft.CodeAnalysis.TypedConstant.IsNull
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: IsNull
   qualifiedName:
@@ -128,9 +128,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 55
   summary: >+
     True if the constant represents a null reference.
@@ -145,8 +145,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_IsNull
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: get_IsNull
   qualifiedName:
@@ -155,13 +155,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 57
 - id: Microsoft.CodeAnalysis.TypedConstant.Value
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: Value
   qualifiedName:
@@ -171,9 +171,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 66
   summary: >+
     The value for a non-array constant.
@@ -188,8 +188,8 @@ items:
         name: System.Object
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Value
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: get_Value
   qualifiedName:
@@ -198,13 +198,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 68
 - id: Microsoft.CodeAnalysis.TypedConstant.Values
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: Values
   qualifiedName:
@@ -214,12 +214,12 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 82
   summary: >+
-    The value for an [Microsoft.CodeAnalysis.TypedConstant](#/api\Microsoft.CodeAnalysis.TypedConstant) array.
+    The value for an [Microsoft.CodeAnalysis.TypedConstant](#/api/Microsoft.CodeAnalysis.TypedConstant) array.
 
   syntax:
     content:
@@ -231,8 +231,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.TypedConstant}
         isExternal: true
 - id: Microsoft.CodeAnalysis.TypedConstant.get_Values
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: get_Values
   qualifiedName:
@@ -241,13 +241,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 84
 - id: Microsoft.CodeAnalysis.TypedConstant.Equals(System.Object)
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: Equals
   qualifiedName:
@@ -257,9 +257,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 162
   syntax:
     content:
@@ -273,8 +273,8 @@ items:
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TypedConstant.Equals(Microsoft.CodeAnalysis.TypedConstant)
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: Equals
   qualifiedName:
@@ -284,9 +284,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 167
   syntax:
     content:
@@ -296,12 +296,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TypedConstant
         name: TypedConstant
-        href: api\Microsoft.CodeAnalysis.TypedConstant
+        href: api/Microsoft.CodeAnalysis.TypedConstant
     return:
       id: Boolean
 - id: Microsoft.CodeAnalysis.TypedConstant.GetHashCode
-  yaml: api\Microsoft.CodeAnalysis.TypedConstant.yaml
-  href: api\Microsoft.CodeAnalysis.TypedConstant
+  yaml: api/Microsoft.CodeAnalysis.TypedConstant.yaml
+  href: api/Microsoft.CodeAnalysis.TypedConstant
   name:
     CSharp: GetHashCode
   qualifiedName:
@@ -311,9 +311,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\TypedConstant.cs
+    path: src/Compilers/Core/Portable/Symbols/TypedConstant.cs
     startLine: 174
   syntax:
     content:

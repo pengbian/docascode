@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.ITypeParameterSymbol
-yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
 name:
   CSharp: ITypeParameterSymbol
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+  path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
   startLine: 9
 summary: >+
   Represents a type parameter in a generic type or generic method.
@@ -22,8 +22,8 @@ syntax:
     CSharp: public interface ITypeParameterSymbol
 items:
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.Ordinal
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: Ordinal
   qualifiedName:
@@ -33,9 +33,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 15
   summary: >+
     The ordinal position of the type parameter in the parameter list which declares
@@ -52,8 +52,8 @@ items:
         name: System.Int32
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Ordinal
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_Ordinal
   qualifiedName:
@@ -62,13 +62,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 15
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.Variance
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: Variance
   qualifiedName:
@@ -78,9 +78,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 21
   summary: >+
     The variance annotation, if any, of the type parameter declaration. Type parameters may be
@@ -95,10 +95,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.VarianceKind
         name: VarianceKind
-        href: api\Microsoft.CodeAnalysis.VarianceKind
+        href: api/Microsoft.CodeAnalysis.VarianceKind
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_Variance
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_Variance
   qualifiedName:
@@ -107,13 +107,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 21
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.TypeParameterKind
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: TypeParameterKind
   qualifiedName:
@@ -123,9 +123,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 26
   summary: >+
     The type parameter kind of this type parameter.
@@ -138,10 +138,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.TypeParameterKind
         name: TypeParameterKind
-        href: api\Microsoft.CodeAnalysis.TypeParameterKind
+        href: api/Microsoft.CodeAnalysis.TypeParameterKind
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_TypeParameterKind
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_TypeParameterKind
   qualifiedName:
@@ -150,13 +150,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 26
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.DeclaringMethod
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: DeclaringMethod
   qualifiedName:
@@ -166,9 +166,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 31
   summary: >+
     The method that declares the type parameter, or null.
@@ -181,10 +181,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.IMethodSymbol
         name: IMethodSymbol
-        href: api\Microsoft.CodeAnalysis.IMethodSymbol
+        href: api/Microsoft.CodeAnalysis.IMethodSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_DeclaringMethod
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_DeclaringMethod
   qualifiedName:
@@ -193,13 +193,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 31
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.DeclaringType
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: DeclaringType
   qualifiedName:
@@ -209,9 +209,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 36
   summary: >+
     The type that declares the type parameter, or null.
@@ -224,10 +224,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.INamedTypeSymbol
         name: INamedTypeSymbol
-        href: api\Microsoft.CodeAnalysis.INamedTypeSymbol
+        href: api/Microsoft.CodeAnalysis.INamedTypeSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_DeclaringType
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_DeclaringType
   qualifiedName:
@@ -236,13 +236,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 36
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.HasReferenceTypeConstraint
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: HasReferenceTypeConstraint
   qualifiedName:
@@ -252,9 +252,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 41
   summary: >+
     True if the reference type constraint (class) was specified for the type parameter.
@@ -269,8 +269,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasReferenceTypeConstraint
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_HasReferenceTypeConstraint
   qualifiedName:
@@ -279,13 +279,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 41
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.HasValueTypeConstraint
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: HasValueTypeConstraint
   qualifiedName:
@@ -295,9 +295,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 46
   summary: >+
     True if the value type constraint (struct)was specified for the type parameter.
@@ -312,8 +312,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasValueTypeConstraint
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_HasValueTypeConstraint
   qualifiedName:
@@ -322,13 +322,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 46
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.HasConstructorConstraint
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: HasConstructorConstraint
   qualifiedName:
@@ -338,9 +338,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 51
   summary: >+
     True if the parameterless constructor constraint (new()) was specified for the type parameter.
@@ -355,8 +355,8 @@ items:
         name: System.Boolean
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_HasConstructorConstraint
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_HasConstructorConstraint
   qualifiedName:
@@ -365,13 +365,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 51
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.ConstraintTypes
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: ConstraintTypes
   qualifiedName:
@@ -381,9 +381,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 56
   summary: >+
     The types that were directly specified as constraints on the type parameter.
@@ -398,8 +398,8 @@ items:
         name: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
         isExternal: true
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ConstraintTypes
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_ConstraintTypes
   qualifiedName:
@@ -408,13 +408,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 56
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: OriginalDefinition
   qualifiedName:
@@ -424,9 +424,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 63
   summary: >+
     Get the original definition of this type symbol. If this symbol is derived from another
@@ -443,10 +443,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeParameterSymbol
         name: ITypeParameterSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_OriginalDefinition
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_OriginalDefinition
   qualifiedName:
@@ -455,13 +455,13 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 63
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.ReducedFrom
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: ReducedFrom
   qualifiedName:
@@ -471,9 +471,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 69
   summary: >+
     If this is a type parameter of a reduced extension method, gets the type parameter definition that
@@ -488,10 +488,10 @@ items:
       type:
         id: Microsoft.CodeAnalysis.ITypeParameterSymbol
         name: ITypeParameterSymbol
-        href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+        href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
 - id: Microsoft.CodeAnalysis.ITypeParameterSymbol.get_ReducedFrom
-  yaml: api\Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
-  href: api\Microsoft.CodeAnalysis.ITypeParameterSymbol
+  yaml: api/Microsoft.CodeAnalysis.ITypeParameterSymbol.yaml
+  href: api/Microsoft.CodeAnalysis.ITypeParameterSymbol
   name:
     CSharp: get_ReducedFrom
   qualifiedName:
@@ -500,7 +500,7 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Symbols\ITypeParameterSymbol.cs
+    path: src/Compilers/Core/Portable/Symbols/ITypeParameterSymbol.cs
     startLine: 69

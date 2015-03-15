@@ -1,6 +1,6 @@
 id: Microsoft.CodeAnalysis.SyntaxNodeExtensions
-yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
 name:
   CSharp: SyntaxNodeExtensions
 qualifiedName:
@@ -10,9 +10,9 @@ source:
   remote:
     branch: master
     repo: https://github.com/dotnet/roslyn.git
-    local: D:\Repo\RoslynGit\
+    local: D:/Repo/RoslynGit/
     sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-  path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+  path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
   startLine: 8
 syntax:
   content:
@@ -23,8 +23,8 @@ inheritance:
   isExternal: true
 items:
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceSyntax``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},System.Func{Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken},System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken},System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia},System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceSyntax
   qualifiedName:
@@ -34,9 +34,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 27
   summary: >+
     Creates a new tree of nodes with the specified nodes, tokens and trivia replaced.
@@ -105,8 +105,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNodes``2(``0,System.Collections.Generic.IEnumerable{``1},System.Func{``1,``1,Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceNodes
   qualifiedName:
@@ -116,9 +116,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 53
   summary: >+
     Creates a new tree of nodes with the specified old node replaced with a new node.
@@ -153,8 +153,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceNode
   qualifiedName:
@@ -164,9 +164,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 67
   summary: >+
     Creates a new tree of nodes with the specified old node replaced with a new node.
@@ -185,19 +185,19 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The node to be replaced; a descendant of the root node.
     - id: newNode
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The new node to use in the new tree in place of the old node.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceNode
   qualifiedName:
@@ -207,9 +207,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 80
   summary: >+
     Creates a new tree of nodes with specified old node replaced with a new nodes.
@@ -228,7 +228,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The node to be replaced; a descendant of the root node and an element of a list member.
     - id: newNodes
       type:
@@ -239,8 +239,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertNodesBefore``1(``0,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: InsertNodesBefore
   qualifiedName:
@@ -250,9 +250,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 93
   summary: >+
     Creates a new tree of nodes with new nodes inserted before the specified node.
@@ -271,7 +271,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The node to insert before; a descendant of the root node an element of a list member.
     - id: newNodes
       type:
@@ -282,8 +282,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertNodesAfter``1(``0,Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: InsertNodesAfter
   qualifiedName:
@@ -293,9 +293,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 106
   summary: >+
     Creates a new tree of nodes with new nodes inserted after the specified node.
@@ -314,7 +314,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The node to insert after; a descendant of the root node an element of a list member.
     - id: newNodes
       type:
@@ -325,8 +325,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceToken``1(``0,Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceToken
   qualifiedName:
@@ -336,9 +336,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 119
   summary: >+
     Creates a new tree of nodes with the specified old token replaced with new tokens.
@@ -357,7 +357,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: The token to be replaced; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
@@ -368,8 +368,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTokensBefore``1(``0,Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: InsertTokensBefore
   qualifiedName:
@@ -379,9 +379,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 132
   summary: >+
     Creates a new tree of nodes with new tokens inserted before the specified token.
@@ -400,7 +400,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: The token to insert before; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
@@ -411,8 +411,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTokensAfter``1(``0,Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: InsertTokensAfter
   qualifiedName:
@@ -422,9 +422,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 145
   summary: >+
     Creates a new tree of nodes with new tokens inserted after the specified token.
@@ -443,7 +443,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: The token to insert after; a descendant of the root node and an element of a list member.
     - id: newTokens
       type:
@@ -454,8 +454,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceTrivia
   qualifiedName:
@@ -465,9 +465,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 158
   summary: >+
     Creates a new tree of nodes with the specified old trivia replaced with new trivia.
@@ -486,7 +486,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to be replaced; a descendant of the root node.
     - id: newTrivia
       type:
@@ -497,8 +497,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTriviaBefore``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: InsertTriviaBefore
   qualifiedName:
@@ -508,9 +508,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 171
   summary: >+
     Creates a new tree of nodes with new trivia inserted before the specified trivia.
@@ -529,7 +529,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to insert before; a descendant of the root node.
     - id: newTrivia
       type:
@@ -540,8 +540,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.InsertTriviaAfter``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: InsertTriviaAfter
   qualifiedName:
@@ -551,9 +551,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 184
   summary: >+
     Creates a new tree of nodes with new trivia inserted after the specified trivia.
@@ -572,7 +572,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to insert after; a descendant of the root node.
     - id: newTrivia
       type:
@@ -583,8 +583,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTokens``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxToken},System.Func{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceTokens
   qualifiedName:
@@ -594,9 +594,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 199
   summary: >+
     Creates a new tree of nodes with the specified old node replaced with a new node.
@@ -631,8 +631,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceToken``1(``0,Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxToken)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceToken
   qualifiedName:
@@ -642,9 +642,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 213
   summary: >+
     Creates a new tree of nodes with the specified old token replaced with a new token.
@@ -663,13 +663,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: The token to be replaced.
     - id: newToken
       type:
         id: Microsoft.CodeAnalysis.SyntaxToken
         name: SyntaxToken
-        href: api\Microsoft.CodeAnalysis.SyntaxToken
+        href: api/Microsoft.CodeAnalysis.SyntaxToken
       description: >-
         The new token to use in the new tree in place of the old
 
@@ -677,8 +677,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia},System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceTrivia
   qualifiedName:
@@ -688,9 +688,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 228
   summary: >+
     Creates a new tree of nodes with the specified trivia replaced with new trivia.
@@ -725,8 +725,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: ReplaceTrivia
   qualifiedName:
@@ -736,9 +736,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 241
   summary: >+
     Creates a new tree of nodes with the specified trivia replaced with new trivia.
@@ -757,19 +757,19 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
       description: The trivia to be replaced.
     - id: newTrivia
       type:
         id: Microsoft.CodeAnalysis.SyntaxTrivia
         name: SyntaxTrivia
-        href: api\Microsoft.CodeAnalysis.SyntaxTrivia
+        href: api/Microsoft.CodeAnalysis.SyntaxTrivia
       description: The new trivia to use in the new tree in place of the old trivia.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.RemoveNode``1(``0,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxRemoveOptions)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: RemoveNode
   qualifiedName:
@@ -779,9 +779,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 254
   summary: >+
     Creates a new tree of nodes with the specified node removed.
@@ -800,19 +800,19 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The node to remove.
     - id: options
       type:
         id: Microsoft.CodeAnalysis.SyntaxRemoveOptions
         name: SyntaxRemoveOptions
-        href: api\Microsoft.CodeAnalysis.SyntaxRemoveOptions
+        href: api/Microsoft.CodeAnalysis.SyntaxRemoveOptions
       description: Options that determine how the node's trivia is treated.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.RemoveNodes``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode},Microsoft.CodeAnalysis.SyntaxRemoveOptions)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: RemoveNodes
   qualifiedName:
@@ -822,9 +822,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 269
   summary: >+
     Creates a new tree of nodes with the specified nodes removed.
@@ -849,13 +849,13 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxRemoveOptions
         name: SyntaxRemoveOptions
-        href: api\Microsoft.CodeAnalysis.SyntaxRemoveOptions
+        href: api/Microsoft.CodeAnalysis.SyntaxRemoveOptions
       description: Options that determine how the nodes' trivia is treated.
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.NormalizeWhitespace``1(``0,System.String,System.Boolean)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: NormalizeWhitespace
   qualifiedName:
@@ -865,9 +865,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 289
   summary: >+
     Creates a new syntax node with all whitespace and end of line trivia replaced with
@@ -902,8 +902,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTriviaFrom``1(``0,Microsoft.CodeAnalysis.SyntaxNode)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithTriviaFrom
   qualifiedName:
@@ -913,9 +913,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 298
   summary: >+
     Creates a new node from this node with both the leading and trailing trivia of the specified node.
@@ -933,12 +933,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutTrivia``1(``0)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithoutTrivia
   qualifiedName:
@@ -948,9 +948,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 307
   summary: >+
     Creates a new node from this node without leading or trailing trivia.
@@ -967,8 +967,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTriviaList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
@@ -978,9 +978,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 316
   summary: >+
     Creates a new node from this node with the leading trivia replaced.
@@ -998,12 +998,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
@@ -1013,9 +1013,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 328
   summary: >+
     Creates a new node from this node with the leading trivia replaced.
@@ -1037,8 +1037,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutLeadingTrivia``1(``0)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithoutLeadingTrivia
   qualifiedName:
@@ -1048,9 +1048,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 340
   summary: >+
     Creates a new node from this node with the leading trivia removed.
@@ -1067,8 +1067,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithLeadingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithLeadingTrivia
   qualifiedName:
@@ -1078,9 +1078,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 350
   summary: >+
     Creates a new node from this node with the leading trivia replaced.
@@ -1102,8 +1102,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTriviaList)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
@@ -1113,9 +1113,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 360
   summary: >+
     Creates a new node from this node with the trailing trivia replaced.
@@ -1133,12 +1133,12 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxTriviaList
         name: SyntaxTriviaList
-        href: api\Microsoft.CodeAnalysis.SyntaxTriviaList
+        href: api/Microsoft.CodeAnalysis.SyntaxTriviaList
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
@@ -1148,9 +1148,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 372
   summary: >+
     Creates a new node from this node with the trailing trivia replaced.
@@ -1172,8 +1172,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithoutTrailingTrivia``1(``0)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithoutTrailingTrivia
   qualifiedName:
@@ -1183,9 +1183,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 384
   summary: >+
     Creates a new node from this node with the trailing trivia removed.
@@ -1202,8 +1202,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.WithTrailingTrivia``1(``0,Microsoft.CodeAnalysis.SyntaxTrivia[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: WithTrailingTrivia
   qualifiedName:
@@ -1213,9 +1213,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions.cs
     startLine: 394
   summary: >+
     Creates a new node from this node with the trailing trivia replaced.
@@ -1237,8 +1237,8 @@ items:
     return:
       id: TSyntax
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.TrackNodes``1(``0,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxNode})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: TrackNodes
   qualifiedName:
@@ -1248,9 +1248,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 29
   summary: >+
     Creates a new tree of nodes with the specified nodes being tracked.
@@ -1280,8 +1280,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.TrackNodes``1(``0,Microsoft.CodeAnalysis.SyntaxNode[])
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: TrackNodes
   qualifiedName:
@@ -1291,9 +1291,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 59
   summary: >+
     Creates a new tree of nodes with the specified nodes being tracked.
@@ -1323,8 +1323,8 @@ items:
     return:
       id: TRoot
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.GetCurrentNodes``1(Microsoft.CodeAnalysis.SyntaxNode,``0)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: GetCurrentNodes
   qualifiedName:
@@ -1334,9 +1334,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 71
   summary: >+
     Gets the nodes within the subtree corresponding to the original tracked node.
@@ -1351,7 +1351,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The root of the subtree containing the current node corresponding to the original tracked node.
     - id: node
       type:
@@ -1362,8 +1362,8 @@ items:
     return:
       id: IEnumerable
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.GetCurrentNode``1(Microsoft.CodeAnalysis.SyntaxNode,``0)
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: GetCurrentNode
   qualifiedName:
@@ -1373,9 +1373,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 88
   summary: >+
     Gets the node within the subtree corresponding to the original tracked node.
@@ -1390,7 +1390,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The root of the subtree containing the current node corresponding to the original tracked node.
     - id: node
       type:
@@ -1401,8 +1401,8 @@ items:
     return:
       id: TNode
 - id: Microsoft.CodeAnalysis.SyntaxNodeExtensions.GetCurrentNodes``1(Microsoft.CodeAnalysis.SyntaxNode,System.Collections.Generic.IEnumerable{``0})
-  yaml: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
-  href: api\Microsoft.CodeAnalysis.SyntaxNodeExtensions
+  yaml: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions.yaml
+  href: api/Microsoft.CodeAnalysis.SyntaxNodeExtensions
   name:
     CSharp: GetCurrentNodes
   qualifiedName:
@@ -1412,9 +1412,9 @@ items:
     remote:
       branch: master
       repo: https://github.com/dotnet/roslyn.git
-      local: D:\Repo\RoslynGit\
+      local: D:/Repo/RoslynGit/
       sha1: 6bda666d110ac87a7ad853dbe45e8366d8bb8744
-    path: src\Compilers\Core\Portable\Syntax\SyntaxNodeExtensions_Tracking.cs
+    path: src/Compilers/Core/Portable/Syntax/SyntaxNodeExtensions_Tracking.cs
     startLine: 100
   summary: >+
     Gets the nodes within the subtree corresponding to the original tracked nodes.
@@ -1429,7 +1429,7 @@ items:
       type:
         id: Microsoft.CodeAnalysis.SyntaxNode
         name: SyntaxNode
-        href: api\Microsoft.CodeAnalysis.SyntaxNode
+        href: api/Microsoft.CodeAnalysis.SyntaxNode
       description: The root of the subtree containing the current nodes corresponding to the original tracked nodes.
     - id: nodes
       type:
