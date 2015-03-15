@@ -310,8 +310,8 @@ namespace EntityModel
                         {
                             if (current.Type.IsPageLevel())
                             {
-                                current.YamlPath = Path.Combine(ApiFolder, current.Name + YamlExtension);
-                                current.Href = Path.Combine(ApiFolder, current.Name);
+                                current.YamlPath = ApiFolder.ForwardSlashCombine(current.Name + YamlExtension);
+                                current.Href = ApiFolder.ForwardSlashCombine(current.Name);
                             }
                             else
                             {

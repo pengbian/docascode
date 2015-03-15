@@ -1,6 +1,6 @@
 id: TestClass1.TestClass1
-yaml: api\TestClass1.TestClass1.yaml
-href: api\TestClass1.TestClass1
+yaml: api/TestClass1.TestClass1.yaml
+href: api/TestClass1.TestClass1
 name:
   CSharp: TestClass1
 qualifiedName:
@@ -10,7 +10,7 @@ source:
   remote:
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:\Repo\docascode\
-    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
-  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\TestClass1\TestClass1\Class1.cs
+    local: D:/Repo/docascode/
+    sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
+  path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/TestClass1/TestClass1/Class1.cs
   startLine: 107

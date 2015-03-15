@@ -8,7 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using Utility;
+using DocAsCode.Utility;
 
 namespace DocAsCode.BuildMeta
 {

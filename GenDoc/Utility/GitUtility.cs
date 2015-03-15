@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LibGit2Sharp;
-namespace Utility
+
+namespace DocAsCode.Utility
 {
     public class GitDetail
     {
@@ -35,7 +36,9 @@ namespace Utility
                 var repo = new Repository(repoPath);
 
                 detail = new GitDetail();
-                detail.LocalWorkingDirectory = repo.Info.WorkingDirectory;
+
+                // Convert to forward slash
+                detail.LocalWorkingDirectory = repo.Info.WorkingDirectory.BackSlashToForwardSlash();
                 if (repo.Head == null) return detail;
                 var remote = repo.Head.Remote;
                 if (remote == null) return detail;

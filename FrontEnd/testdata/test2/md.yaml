@@ -1,18 +1,18 @@
 TestClass1.Partial1:
   id: TestClass1.Partial1
   path: Assets/Markdown/About.md
-  href: md\Assets_Markdown_About.md
+  href: md/Assets_Markdown_About.md
   startLine: 35
   endLine: 346
   remote: &o0
     branch: Refactor
     repo: https://capservice.visualstudio.com/DefaultCollection/CAPS/_git/DocAsCode
-    local: D:\Repo\docascode\
-    sha1: 52a918f2d17a282add019360d9d55ba5a1d411a8
+    local: D:/Repo/docascode/
+    sha1: e39202f44a4dc858e2ae5e4db57e0af33e012e96
 TestClass1:
   id: TestClass1
-  path: TestResults\Deploy_lianwei 2015-03-15 11_19_02\Out\Assets\Markdown\About.md
-  href: md\Assets_Markdown_About.md
+  path: TestResults/Deploy_lianwei 2015-03-15 11_46_41/Out/Assets/Markdown/About.md
+  href: md/Assets_Markdown_About.md
   startLine: 373
   endLine: 692
   remote: *o0

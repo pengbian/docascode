@@ -8,8 +8,8 @@
     <ProjectGuid>{619EC13D-8939-4F23-B7DC-7A98964BB9A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Utility</RootNamespace>
-    <AssemblyName>Utility</AssemblyName>
+    <RootNamespace>DocAsCode.Utility</RootNamespace>
+    <AssemblyName>DocAsCode.Utility</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>adcb05eb</NuGetPackageImportStamp>
@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleParameterParser.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="GitUtility.cs" />
     <Compile Include="ProcessUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
