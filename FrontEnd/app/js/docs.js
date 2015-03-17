@@ -182,7 +182,7 @@ angular.module('DocsController', [])
   };
 
   $scope.getNumber = function(num) {
-      return new Array(num + 1);   
+      return new Array(num + 1);
   }
 
   $scope.GetDetail = function(e){
@@ -229,8 +229,8 @@ angular.module('DocsController', [])
             }
         }
     $http.get(req.url, req)
-        .success( 
-            function(result){ 
+        .success(
+            function(result){
             if (success) success(result);
             deferred.resolve();
 
@@ -244,91 +244,84 @@ angular.module('DocsController', [])
     return deferred.promise;
   }
 
-  var getIndex = asyncFetchIndex('index.yaml', function(result){
-    NG_PAGES = jsyaml.load(result);
-  });
+// var getIndex = asyncFetchIndex('index.yaml', function(result){
+//   NG_PAGES = jsyaml.load(result);
+// });
 
-  var getToc = asyncFetchIndex('toc.yaml', function(result){
-    $scope.currentArea = jsyaml.load(result);
-  });
-
-  var getMdIndex = asyncFetchIndex('md.yaml', function(result){
-    $scope.mdIndex = jsyaml.load(result);
-  });
-
-  getIndex.then(function(result){
-    getToc.then(function(result){
-      $scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
-
-          path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
-
-          currentPage = $scope.currentPage = path;//NG_PAGES[path];
-
-          // TODO: check if it is inside NG_PAGES
-          // If current page exists in NG_PAGES
-          if ( currentPage ) {
-
-            var promise = asyncFetchIndex(path + ".yaml", function(result){
-                $scope.partialModel = jsyaml.load(result);
-                $scope.title = $scope.partialModel.id;
-              if ($scope.partialModel.type.toLowerCase() == 'namespace'){
-                $scope.itemtypes = NG_ITEMTYPES.namespace;
-                for(var i in $scope.partialModel.items){
-                  var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-                  if (itemtype){
-                    itemtype.show = true;
-                  }
-                }
-                $scope.partialPath = 'template' + '/namespace.tmpl';
-              }
-              else {
-                $scope.itemtypes = NG_ITEMTYPES.class;
-                for(var i in $scope.itemtypes){
-                  $scope.itemtypes[i].show = false;
-                }
-                for(var i in $scope.partialModel.items){
-                  var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
-                  if (itemtype){
-                    itemtype.show = true;
-                  }
-                }
-                $scope.partialPath = 'template' + '/class.tmpl';
-              }
-            });
-            var pathParts = currentPage.split('/');
-            var breadcrumb = $scope.breadcrumb = [];
-            var breadcrumbPath = '';
-            angular.forEach(pathParts, function(part) {
-              breadcrumbPath += part;
-              breadcrumb.push({ name: (NG_PAGES[breadcrumbPath]&&NG_PAGES[breadcrumbPath].name) || part, url: breadcrumbPath });
-              breadcrumbPath += '/';
-            });
-          } else {
-            $scope.currentArea = 'api';
-            $scope.breadcrumb = [];
-            $scope.partialPath = 'Error404.html';
-          }
-        });
-      getMdIndex.then(function(result){
-        
-      $scope.$watch(function modelWatch() {return $scope.partialModel; }, function modelWatchAction(path) {
-            if ($scope.mdIndex && $scope.partialModel){
-              var mdPath = $scope.mdIndex[$scope.partialModel.id];
-              if (mdPath){
-                if (mdPath.href){
-                  $scope.partialModel.mdHref = getRemoteUrl(mdPath);
-                  var getMdIndex = asyncFetchIndex(mdPath.href, 
-                    function(result){
-                      var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
-                      $scope.partialModel.mdContent = md;
-                    });
-                }
-              }
-            }
-        });
-      });
-    });
+var getToc = asyncFetchIndex('toc.yaml', function(result){
+  $scope.currentArea = jsyaml.load(result);
 });
+
+var getMdIndex = asyncFetchIndex('md.yaml', function(result){
+  $scope.mdIndex = jsyaml.load(result);
+});
+
+$scope.$watch(function docsPathWatch() {return $location.path(); }, function docsPathWatchAction(path) {
+
+    path = path.replace(/^\/?(.+?)(\/index)?\/?$/, '$1');
+
+    currentPage = $scope.currentPage = path;//NG_PAGES[path];
+
+    // TODO: check if it is inside NG_PAGES
+    // If current page exists in NG_PAGES
+    if (currentPage ) {
+      var promise = asyncFetchIndex(path + ".yaml", function(result){
+          $scope.partialModel = jsyaml.load(result);
+          $scope.title = $scope.partialModel.id;
+        if ($scope.partialModel.type.toLowerCase() == 'namespace'){
+          $scope.itemtypes = NG_ITEMTYPES.namespace;
+          for(var i in $scope.partialModel.items){
+            var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
+            if (itemtype){
+              itemtype.show = true;
+            }
+          }
+          $scope.partialPath = 'template' + '/namespace.tmpl';
+        }
+        else {
+          $scope.itemtypes = NG_ITEMTYPES.class;
+          for(var i in $scope.itemtypes){
+            $scope.itemtypes[i].show = false;
+          }
+          for(var i in $scope.partialModel.items){
+            var itemtype = $scope.itemtypes[$scope.partialModel.items[i].type];
+            if (itemtype){
+              itemtype.show = true;
+            }
+          }
+          $scope.partialPath = 'template' + '/class.tmpl';
+        }
+      });
+      var pathParts = currentPage.split('/');
+      var breadcrumb = $scope.breadcrumb = [];
+      var breadcrumbPath = '';
+      angular.forEach(pathParts, function(part) {
+        breadcrumbPath += part;
+        breadcrumb.push({ name: part, url: breadcrumbPath });
+        breadcrumbPath += '/';
+      });
+    } else {
+      $scope.currentArea = 'api';
+      $scope.breadcrumb = [];
+      $scope.partialPath = 'Error404.html';
+    }
+  });
+
+$scope.$watch(function modelWatch() {return $scope.partialModel; }, function modelWatchAction(path) {
+      if ($scope.mdIndex && $scope.partialModel){
+        var mdPath = $scope.mdIndex[$scope.partialModel.id];
+        if (mdPath){
+          if (mdPath.href){
+            $scope.partialModel.mdHref = getRemoteUrl(mdPath);
+            var getMdIndex = asyncFetchIndex(mdPath.href,
+              function(result){
+                var md = result.substr(mdPath.startLine, mdPath.endLine - mdPath.startLine + 1);
+                $scope.partialModel.mdContent = md;
+              });
+          }
+        }
+      }
+  });
 
   /**********************************
    Initialize
