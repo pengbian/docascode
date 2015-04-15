@@ -1,4 +1,4 @@
-Doc-as-Code
+Doc-As-Code
 ===========
 Easily build and publish your API documentation. We currently support C# and VB projects.
 
@@ -16,15 +16,26 @@ Note that if you are just adding to table of contents or authoring in markdown, 
 
 Adding conceptual content
 -------------------------
-The structure of the project looks like this:
+The components of the project you care about now are as follows:
 ```
-\api
+api/
+article/
+  about.md
+  index.md
+toc.yaml
 ```
-The root\toc.yaml is the main table of contents file that generates the navbar you will see on the top. It consists of a name and HREF pair
-
-
-
-
+api/ is reserved for your API section. **in the future we will add an index.md file so you can customize the root page of the API reference**
+article/ is where you put all of the self authored topics
+toc.yaml is the main table of contents file that generates the navbar you will see on the top. It looks like this:
+```
+- id: Home
+  href: articles/index.md
+- id: About
+  href: articles/about.md
+- id: Api Documentation
+  href: api
+```
+You can 
 
 Understanding the URL
 ---------------------
