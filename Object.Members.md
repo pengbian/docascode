@@ -106,3 +106,6 @@ We recommend that all of your API reference markdown files go in the api/ folder
 
 ###Linking to another API
 Currently for linking to another API you simply add an "@" followed by the fully qualified name of your API. Currently we will need to preprocess this syntax so adding this will require a rebuild.
+
+###Including code samples from source
+Todo...
