@@ -28,14 +28,52 @@ toc.yaml
 * article/ is where you put all of the self authored topics.
 * toc.yaml is the main table of contents file that generates the navbar you will see on the top. It looks like this:
 ```
-- id: Home
+- id  : Home
   href: articles/index.md
-- id: About
+- id  : About
   href: articles/about.md
-- id: Api Documentation
+- id  : Api Documentation
   href: api
 ```
-Say I want to add another tutorial section, here's how I would go about it
-
+Say I want to add another tutorial section, here's how I would go about it:
+* Create another folder under article called tutorial, and some additional markdown files as well as another toc.yaml file like so:
+```
+api/
+article/
+  tutorial/
+    overview.md
+    getting_started.md
+    lessions.md
+    creating_your_first_website.md
+    adding_your_own_content.md
+    incorporating_code_snippets.md
+    publishing_to_github_pages.md
+    toc.yaml
+  about.md
+  index.md
+toc.yaml
+```
+* The root toc.yaml file will have an additional entry for the tutorial section, and the system will know it's a section because there's a toc.yaml in the tutorial folder.
+```
+- id  : Home
+  href: articles/index.md
+- id  : About
+  href: articles/about.md
+- id  : Tutorial
+  href: articles/tutorial
+- id  : Api Documentation
+  href: api
+```
+* in the tutorial section's toc.yaml file I have the following:
+```
+- id  : Home
+  href: articles/index.md
+- id  : About
+  href: articles/about.md
+- id  : Tutorial
+  href: articles/tutorial
+- id  : Api Documentation
+  href: api
+```
 Understanding the URL
 ---------------------
