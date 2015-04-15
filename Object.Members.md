@@ -12,7 +12,7 @@ As a prerequisite, you will need either VS 2015 or VS 2013 with Roslyn compiler 
 * Add a source project to References (all your triple slash comments will be imported to the final website)
 * Build / view in browser (CTRL + SHIFT + W)
 
-Note that if you are just adding to table of contents or authoring in markdown, you can simply refresh the page and the changes should take effect. However, you will need to rebuild if you are adding a new markdown file to the API reference section.
+*Note that if you are just adding to table of contents or authoring in markdown, you can simply refresh the page and the changes should take effect. However, you will need to rebuild if you are adding a new markdown file to the API reference section.*
 
 Adding conceptual content
 -------------------------
@@ -24,7 +24,7 @@ article/
   index.md
 toc.yaml
 ```
-* api/ is reserved for your API section. **in the future we will add an index.md file so you can customize the root page of the API reference**
+* api/ is reserved for your API section. *Note that in the future we will add an index.md file so you can customize the root page of the API reference.*
 * article/ is where you put all of the self authored topics.
 * toc.yaml is the main table of contents file that generates the navbar you will see on the top. It looks like this:
 ```
@@ -43,7 +43,7 @@ article/
   tutorial/
     overview.md
     getting_started.md
-    lessions.md
+    lessons.md
     creating_your_first_website.md
     adding_your_own_content.md
     incorporating_code_snippets.md
@@ -70,7 +70,8 @@ toc.yaml
   href: overview.md
 - id  : Getting Started
   href: getting_started.md
-- id  : Lessions
+- id  : Lessons
+  href: lessons.md
   items:
     - id  : Creating Your First Website
       href: creating_your_first_website.md
@@ -81,9 +82,20 @@ toc.yaml
     - id  : Publishing to GitHub Pages
       href: publishing_to_github_pages.md
 ```
-Note that we have not implemented the index page of sections yet, we plan to do this by expanding the toc.yaml schema to include an index href.
+*Note that we have not implemented the index page of sections yet, we plan to do this by expanding the toc.yaml schema to include an index href.*
 
 That's it, refresh your website and you should see the newly created tutorial section. Anything in the markdown files will be dynamically rendered.
 
 Adding markdown to API reference
 --------------------------------
+To make authoring your API reference section easier we allow you to directly add a markdown section to any of your APIs. Create a markdown file and add the following header:
+```
+---
+id: System.String
+---
+your markdown goes here.
+```
+Where "id" is the fully qualified name of your API. 
+
+When you build the project again, we will add the markdown section you just created into the reference content of the API.
+
