@@ -24,11 +24,9 @@ article/
   index.md
 toc.yaml
 ```
-api/ is reserved for your API section. **in the future we will add an index.md file so you can customize the root page of the API reference**
-
-article/ is where you put all of the self authored topics.
-
-toc.yaml is the main table of contents file that generates the navbar you will see on the top. It looks like this:
+* api/ is reserved for your API section. **in the future we will add an index.md file so you can customize the root page of the API reference**
+* article/ is where you put all of the self authored topics.
+* toc.yaml is the main table of contents file that generates the navbar you will see on the top. It looks like this:
 ```
 - id: Home
   href: articles/index.md
