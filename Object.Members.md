@@ -86,16 +86,24 @@ toc.yaml
 
 That's it, refresh your website and you should see the newly created tutorial section. Anything in the markdown files will be dynamically rendered.
 
+A couple of additional details:
+* You can use an external link for href.
+
+
 Adding markdown to API reference
 --------------------------------
 To make authoring your API reference section easier we allow you to directly add a markdown section to any of your APIs. Create a markdown file and add the following header:
 ```
 ---
-id: System.String
+id: system.string
 ---
 your markdown goes here.
 ```
 Where "id" is the fully qualified name of your API. 
 
-When you build the project again, we will add the markdown section you just created into the reference content of the API.
+When you build the project again, we will add the markdown section you just created into the reference content of the API. It will be added to the location right after summary and before declarations.
 
+We recommend that all of your API reference markdown files go in the api/ folder, although technically you can put the markdown file anywhere.
+
+Adding markdown to API reference
+--------------------------------
