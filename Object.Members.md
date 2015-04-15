@@ -89,7 +89,6 @@ That's it, refresh your website and you should see the newly created tutorial se
 A couple of additional details:
 * You can use an external link for href.
 
-
 Adding markdown to API reference
 --------------------------------
 To make authoring your API reference section easier we allow you to directly add a markdown section to any of your APIs. Create a markdown file and add the following header:
@@ -105,5 +104,5 @@ When you build the project again, we will add the markdown section you just crea
 
 We recommend that all of your API reference markdown files go in the api/ folder, although technically you can put the markdown file anywhere.
 
-Adding markdown to API reference
---------------------------------
+####Linking to another API
+Currently for linking to another API you simply add an "@" followed by the fully qualified name of your API. Currently we will need to preprocess this syntax so adding this will require a rebuild.
