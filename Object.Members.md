@@ -64,16 +64,26 @@ toc.yaml
 - id  : Api Documentation
   href: api
 ```
-* in the tutorial section's toc.yaml file I have the following:
+* In the tutorial section's toc.yaml file I have the following:
 ```
-- id  : Home
-  href: articles/index.md
-- id  : About
-  href: articles/about.md
-- id  : Tutorial
-  href: articles/tutorial
-- id  : Api Documentation
-  href: api
+- id  : Overview
+  href: overview.md
+- id  : Getting Started
+  href: getting_started.md
+- id  : Lessions
+  items:
+    - id  : Creating Your First Website
+      href: creating_your_first_website.md
+    - id  : Adding Your Own Content
+      href: adding_your_own_content.md
+    - id  : Incorporating Code Snippets
+      href: incorporating_code_snippets.md
+    - id  : Publishing to GitHub Pages
+      href: publishing_to_github_pages.md
 ```
-Understanding the URL
----------------------
+Note that we have not implemented the index page of sections yet, we plan to do this by expanding the toc.yaml schema to include an index href.
+
+That's it, refresh your website and you should see the newly created tutorial section. Anything in the markdown files will be dynamically rendered.
+
+Adding markdown to API reference
+--------------------------------
