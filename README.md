@@ -5,7 +5,7 @@ Easily build and publish your API documentation. We currently support C# and VB 
 Getting started
 ---------------
 As a prerequisite, you will need either VS 2015 or VS 2013 with Roslyn compiler installed.
-* Install "docascode.msi" from <a href="\\kenchen2\share\docascode">here</a>
+* Install "docascode.msi" from \\\kenchen2\share\docascode
   * Alternatively if you've cloned our source code can grab the build output from \DocAsCode\Drop\Debug\Installer\docascode.msi
 * Create new project
 * Select Installed > Templates > Visual C# on the left pane, and scroll down to DocumentationWebsite in the center pane
